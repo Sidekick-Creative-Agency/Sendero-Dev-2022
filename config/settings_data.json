@@ -444,46 +444,11 @@
       "header_3": {
         "type": "header_3",
         "blocks": {
-          "ec1e6927-0210-49c0-9869-445dae47e1a3": {
-            "type": "list",
-            "settings": {
-              "title": "Demo",
-              "url": "https:\/\/kalles-demo.myshopify.com\/?preview_theme_id=",
-              "open_link": "_self",
-              "menu": "",
-              "col": "4",
-              "icon": "",
-              "cus_cl": false,
-              "cl": "#ec0101",
-              "lb": "",
-              "lb_cl": "",
-              "lazy_mn": true,
-              "pos": "center",
-              "wid": "cus",
-              "cus_wid": 750,
-              "enable_cat": true,
-              "cat_design": "1",
-              "hoverz": true,
-              "cat_ratio": "ratio_adapt",
-              "cat_size": "nt_cover",
-              "cat_position": "8",
-              "enable_pr": true,
-              "pr_des": "1",
-              "show_vendor": false,
-              "use_cdt": false,
-              "round_cd": false,
-              "cdt_des": "1",
-              "use_eq_height": false,
-              "image_ratio": "ratio_nt",
-              "image_size": "nt_cover",
-              "image_position": "8"
-            }
-          },
           "1585641227863": {
             "type": "mega",
             "settings": {
-              "title": "Shop",
-              "url": "",
+              "title": "Hats",
+              "url": "shopify:\/\/collections\/hats",
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
@@ -597,38 +562,6 @@
               "col": "10"
             }
           },
-          "1585641802325": {
-            "type": "dropdown",
-            "settings": {
-              "title": "Portfolio",
-              "url": "https:\/\/kalles-demo.myshopify.com\/blogs\/portfolio\/?preview_theme_id=",
-              "open_link": "_self",
-              "menu": "",
-              "icon": "",
-              "cus_cl": false,
-              "cl": "#ec0101",
-              "lb": "",
-              "lb_cl": "",
-              "lazy_mn": true,
-              "pos": "right"
-            }
-          },
-          "1585641835304": {
-            "type": "dropdown",
-            "settings": {
-              "title": "Lookbook",
-              "url": "https:\/\/kalles-demo.myshopify.com\/blogs\/life-style\/the-easiest-way-to-break-out-on-top-1\/?preview_theme_id=",
-              "open_link": "_self",
-              "menu": "",
-              "icon": "",
-              "cus_cl": false,
-              "cl": "#ec0101",
-              "lb": "",
-              "lb_cl": "",
-              "lazy_mn": true,
-              "pos": "right"
-            }
-          },
           "1585641843539": {
             "type": "dropdown",
             "settings": {
@@ -647,7 +580,6 @@
           }
         },
         "block_order": [
-          "ec1e6927-0210-49c0-9869-445dae47e1a3",
           "1585641227863",
           "1585991609385",
           "1585991685838",
@@ -655,8 +587,6 @@
           "504c41cf-3799-4c0f-ba94-a387ae791984",
           "1586767100450",
           "1586767123172",
-          "1585641802325",
-          "1585641835304",
           "1585641843539"
         ],
         "settings": {
