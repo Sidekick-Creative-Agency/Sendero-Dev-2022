@@ -6165,8 +6165,7 @@ font-weight: 400;
 .branding img {
     padding-top: 5px;
     padding-bottom: 5px;
-    margin-left: 20px;
-        perspective: 800px;
+    perspective: 800px;
     -webkit-perspective: 800px;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
