@@ -45,10 +45,10 @@
     "logo_svg": "",
     "logo": "shopify:\/\/shop_images\/header-logo.png",
     "logo_retina": "shopify:\/\/shop_images\/header-logo.png",
-    "logo_width": 185,
+    "logo_width": 200,
     "logos": "",
     "logos_retina": "",
-    "logos_width": 100,
+    "logos_width": 130,
     "logo_mb": "",
     "logo_mb_retina": "",
     "logo_mb_width": 100,
@@ -590,7 +590,7 @@
           "1585641843539"
         ],
         "settings": {
-          "height": 120,
+          "height": 60,
           "arrow": false,
           "align": "tc",
           "hover": "hover_side_up"
@@ -1831,6 +1831,52 @@
         "type": "header_10",
         "settings": {
           "height": 80
+        }
+      },
+      "sidebar_shop2": {
+        "type": "sidebar_shop2",
+        "blocks": {
+          "sidebar_shop2-0": {
+            "type": "category",
+            "settings": {
+              "title": "Product Categories",
+              "cat_source": "1",
+              "cat_link_list": "",
+              "count": true
+            }
+          },
+          "sidebar_shop2-1": {
+            "type": "text",
+            "settings": {
+              "title": "Talk about your brand",
+              "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+            }
+          },
+          "sidebar_shop2-2": {
+            "type": "shipping",
+            "settings": {
+              "title": "Shipping & Delivery",
+              "shipping_1": "truck,FREE SHIPPING,Free shipping for all US order",
+              "shipping_2": "headset,SUPPORT 24\/7,We support 24 hours a day",
+              "shipping_3": "exchange-alt,30 DAYS RETURN,You have 30 days to return",
+              "shipping_4": "",
+              "shipping_5": "",
+              "shipping_6": ""
+            }
+          },
+          "sidebar_shop2-3": {
+            "type": "filters",
+            "settings": {
+            }
+          }
+        },
+        "block_order": [
+          "sidebar_shop2-0",
+          "sidebar_shop2-1",
+          "sidebar_shop2-2",
+          "sidebar_shop2-3"
+        ],
+        "settings": {
         }
       }
     },
