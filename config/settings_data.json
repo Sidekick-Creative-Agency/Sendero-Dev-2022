@@ -494,8 +494,8 @@
           "504c41cf-3799-4c0f-ba94-a387ae791984": {
             "type": "list",
             "settings": {
-              "title": "Product",
-              "url": "https:\/\/kalles-demo.myshopify.com\/collections\/trending\/products\/blush-beanie\/?preview_theme_id=",
+              "title": "Shirts",
+              "url": "shopify:\/\/collections\/shirts",
               "open_link": "_self",
               "menu": "",
               "col": "3",
