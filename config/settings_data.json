@@ -457,7 +457,7 @@
               "lb_cl": "#e07e2a",
               "lazy_mn": true,
               "pos": "center",
-              "wid": "cus",
+              "wid": "full",
               "cus_wid": 1000
             }
           },
@@ -468,7 +468,7 @@
               "url": "",
               "open_link": "_self",
               "menu": "hats-first-column",
-              "col": "3"
+              "col": "2"
             }
           },
           "b2a92544-5ae9-4b7d-ae20-2955f2017770": {
@@ -478,7 +478,7 @@
               "url": "",
               "open_link": "_self",
               "menu": "hats-column-two",
-              "col": "3"
+              "col": "2"
             }
           },
           "424acdb6-f2e8-4436-9941-b00668644353": {
@@ -488,7 +488,7 @@
               "hoverz": true,
               "collection": "hats",
               "title": "Fall 2021 Hats",
-              "col": "3"
+              "col": "2"
             }
           },
           "72527a58-acee-461c-8425-85bbf19000e1": {
@@ -498,7 +498,7 @@
               "hoverz": true,
               "collection": "hats",
               "title": "Signature Hats",
-              "col": "3"
+              "col": "2"
             }
           },
           "504c41cf-3799-4c0f-ba94-a387ae791984": {
