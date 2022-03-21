@@ -43,19 +43,19 @@
     "c_3": "",
     "c_4": "",
     "logo_svg": "",
-    "logo": "shopify:\/\/shop_images\/header-logo.png",
-    "logo_retina": "shopify:\/\/shop_images\/header-logo.png",
-    "logo_width": 200,
-    "logos": "",
-    "logos_retina": "",
+    "logo": "shopify:\/\/shop_images\/header-logo-pad.png",
+    "logo_retina": "shopify:\/\/shop_images\/header-logo-pad.png",
+    "logo_width": 350,
+    "logos": "shopify:\/\/shop_images\/header-logo.png",
+    "logos_retina": "shopify:\/\/shop_images\/header-logo.png",
     "logos_width": 130,
-    "logo_mb": "",
-    "logo_mb_retina": "",
+    "logo_mb": "shopify:\/\/shop_images\/header-logo.png",
+    "logo_mb_retina": "shopify:\/\/shop_images\/header-logo.png",
     "logo_mb_width": 100,
     "logo_tr_svg": "",
-    "logo_tr": "",
-    "logo_tr_retina": "",
-    "logo_tr_width": 185,
+    "logo_tr": "shopify:\/\/shop_images\/header-logo-pad.png",
+    "logo_tr_retina": "shopify:\/\/shop_images\/header-logo-pad.png",
+    "logo_tr_width": 350,
     "h_banner": true,
     "h_topbar": false,
     "full_header": true,
@@ -454,30 +454,30 @@
               "cus_cl": false,
               "cl": "#ffffff",
               "lb": "New",
-              "lb_cl": "#00badb",
+              "lb_cl": "#e07e2a",
               "lazy_mn": true,
               "pos": "center",
               "wid": "full",
               "cus_wid": 1200
             }
           },
-          "1585991609385": {
+          "3237df59-19be-4aea-b04a-b0f1e8c10f56": {
             "type": "link",
             "settings": {
-              "tt_hd": "SHOP PAGES",
-              "url": "shopify:\/\/products\/logo-hat",
+              "tt_hd": "",
+              "url": "",
               "open_link": "_self",
-              "menu": "main-menu",
+              "menu": "hats-first-column",
               "col": "2"
             }
           },
-          "1585991685838": {
+          "b2a92544-5ae9-4b7d-ae20-2955f2017770": {
             "type": "link",
             "settings": {
-              "tt_hd": "FEATURES",
-              "url": "https:\/\/kalles-demo.myshopify.com\/collections\/women\/?preview_theme_id=",
+              "tt_hd": "",
+              "url": "",
               "open_link": "_self",
-              "menu": "footer",
+              "menu": "hats-column-two",
               "col": "2"
             }
           },
@@ -486,9 +486,19 @@
             "settings": {
               "cat_design": "1",
               "hoverz": true,
-              "collection": "",
-              "title": "",
-              "col": "4"
+              "collection": "hats",
+              "title": "Fall 2021 Hats",
+              "col": "2"
+            }
+          },
+          "72527a58-acee-461c-8425-85bbf19000e1": {
+            "type": "cat",
+            "settings": {
+              "cat_design": "1",
+              "hoverz": true,
+              "collection": "hats",
+              "title": "Signature Hats",
+              "col": "2"
             }
           },
           "504c41cf-3799-4c0f-ba94-a387ae791984": {
@@ -536,7 +546,7 @@
               "cus_cl": false,
               "cl": "#ffffff",
               "lb": "Sale",
-              "lb_cl": "#00badb",
+              "lb_cl": "#e07e2a",
               "lazy_mn": true,
               "pos": "center",
               "wid": "cus",
@@ -581,9 +591,10 @@
         },
         "block_order": [
           "1585641227863",
-          "1585991609385",
-          "1585991685838",
+          "3237df59-19be-4aea-b04a-b0f1e8c10f56",
+          "b2a92544-5ae9-4b7d-ae20-2955f2017770",
           "424acdb6-f2e8-4436-9941-b00668644353",
+          "72527a58-acee-461c-8425-85bbf19000e1",
           "504c41cf-3799-4c0f-ba94-a387ae791984",
           "1586767100450",
           "1586767123172",
