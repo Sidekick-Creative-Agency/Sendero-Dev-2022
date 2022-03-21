@@ -461,11 +461,11 @@
               "cus_wid": 1200
             }
           },
-          "e42d9c9f-9c16-4ba0-8d89-c87198ff0651": {
+          "eb8320b6-de9c-4f8d-85ba-1b0aa4179ab3": {
             "type": "html",
             "settings": {
               "html": "<h1>Outerwear<\/h1>\n<h6>Shop All<\/h6>",
-              "col": "3"
+              "col": "4"
             }
           },
           "3237df59-19be-4aea-b04a-b0f1e8c10f56": {
@@ -598,7 +598,7 @@
         },
         "block_order": [
           "1585641227863",
-          "e42d9c9f-9c16-4ba0-8d89-c87198ff0651",
+          "eb8320b6-de9c-4f8d-85ba-1b0aa4179ab3",
           "3237df59-19be-4aea-b04a-b0f1e8c10f56",
           "b2a92544-5ae9-4b7d-ae20-2955f2017770",
           "424acdb6-f2e8-4436-9941-b00668644353",
