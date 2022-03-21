@@ -11,7 +11,7 @@
   assign se_height = se_stts.se_height
   assign sid = section.id
   assign pr_txt = se_stts.pr_txt
-  assign cimg = 'https://placehold.jp/50/f76b6a/fff/530x600.png?text=Collection+Image'
+  assign cimg = 'placeholder.jpg' | asset_url
   if layout == 'wrap'
    assign html_layout = '<div class="container">__</div>' |split:"__"
   else

@@ -4,7 +4,7 @@
   assign layout = se_stts.layout
   assign image = se_stts.image
   assign pr_txt = se_stts.pr_txt
-  assign cimg = 'https://placehold.jp/50/f76b6a/fff/530x600.png?text=Collection+Image'
+  assign cimg = 'placeholder.jpg' | asset_url
   assign ccol = 'col-lg-1x col-md-2x col-3x' | replace: '1x', se_stts.col | replace: '2x', se_stts.col_md | replace: '3x', se_stts.col_mb
   if layout == 'wrap'
    assign html_layout = '<div class="container">__</div>' | split:'__'

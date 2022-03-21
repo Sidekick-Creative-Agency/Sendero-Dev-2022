@@ -20,7 +20,7 @@
             <div class="nt_bg_lz lazyloadt4s item__position {{se_stts.img_align}}" data-bgset="{{ image | img_url: '1x1' }}" data-ratio="{{ratio}}" data-sizes="auto" data-parent-fit="cover"></div>
             {%- endif -%}
           {%- else -%}
-            <div class="nt_bg_lz lazyloadt4s item__position {{se_stts.img_align}}" data-bg="https://placehold.jp/1/56cfe1/56cfe1/1170x400.png?text=1" style="padding-top:51.282051282051285%;"></div>
+            <div class="nt_bg_lz lazyloadt4s item__position {{se_stts.img_align}}" data-bg="{{ 'placeholder.jpg' | asset_url }}" style="padding-top:51.282051282051285%;"></div>
           {%- endif -%}
         </a>
         <div class="txt_content pa t__0 l__0 b__0 r__0 caption-w-{{se_stts.caption_w}} flex column shadow_wrap {{se_stts.txt_align}}{% if url != blank %} pe_none{% endif %}">

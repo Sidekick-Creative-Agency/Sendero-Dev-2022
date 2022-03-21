@@ -18,7 +18,7 @@
               <div class="nt_bg_lz lazyloadt4s item__position {{bk_stts.img_align}}" data-bgset="{{ image | img_url: '1x1' }}" data-ratio="{{image.aspect_ratio}}" data-sizes="auto" data-parent-fit="cover"{% if ck %} style="padding-top:{{ 1 | divided_by: image.aspect_ratio | times: 100}}%"{% endif %}></div>
             {%- else -%}
               {%- capture cl -%}{% cycle 'a8dacc', '56cfe1' %}{%- endcapture -%}
-              <div class="nt_bg_lz lazyloadt4s item__position {{bk_stts.img_align}}" data-bg="https://placehold.jp/{{cl}}/{{cl}}/530x600.png?text=1" style="padding-top:52.63157894736842%"></div>
+              <div class="nt_bg_lz lazyloadt4s item__position {{bk_stts.img_align}}" data-bg="{{ 'placeholder.jpg' | asset_url }}" style="padding-top:52.63157894736842%"></div>
             {%- endif -%}
           </a>
           <div class="pa t__0 l__0 b__0 r__0 flex column shadow_wrap {{bk_stts.txt_align}} {{bk_stts.banner_align}}{% if bk_stts.url != blank %} pe_none{% endif %}">

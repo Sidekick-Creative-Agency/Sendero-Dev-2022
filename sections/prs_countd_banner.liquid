@@ -29,7 +29,7 @@
                         {%- if image != blank -%}
                            <div class="pr_lazy_img nt_bg_lz lazyloadt4s" data-bgset="{{ image | img_url: '1x1' }}" data-wiis data-ratio="{{image.aspect_ratio}}" data-sizes="auto" style="padding-top:{{ 1 | divided_by: image.aspect_ratio | times: 100}}%;"></div>
                         {%- else -%}
-                           <div class="pr_lazy_img nt_bg_lz lazyloadt4s" style="padding-top: 127.586%;" data-bg="https://placehold.jp/1/E7F0F5/E7F0F5/370x472.png?text=Banner+IMG"></div>
+                           <div class="pr_lazy_img nt_bg_lz lazyloadt4s" style="padding-top: 127.586%;" data-bg="{{ 'placeholder.jpg' | asset_url }}"></div>
                         {%- endif -%}
                      {%- endcapture -%}
                      {%- if url != blank -%}
@@ -72,7 +72,7 @@
                         {%- if image != blank -%}
                            <div class="pr_lazy_img nt_bg_lz lazyloadt4s" data-bgset="{{ image | img_url: '1x1' }}" data-wiis data-ratio="{{image.aspect_ratio}}" data-sizes="auto" style="padding-top:{{ 1 | divided_by: image.aspect_ratio | times: 100}}%;"></div>
                         {%- else -%}
-                           <div class="pr_lazy_img nt_bg_lz lazyloadt4s" style="padding-top: 127.586%;" data-bg="https://placehold.jp/1/E7F0F5/E7F0F5/370x472.png?text=Banner+IMG"></div>
+                           <div class="pr_lazy_img nt_bg_lz lazyloadt4s" style="padding-top: 127.586%;" data-bg="{{ 'placeholder.jpg' | asset_url }}"></div>
                         {%- endif -%}
                      {%- endcapture -%}
                      {%- if url != blank -%}

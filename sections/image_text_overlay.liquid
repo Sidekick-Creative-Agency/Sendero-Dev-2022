@@ -15,7 +15,7 @@
             <div class="js_full_ht4 lazyloadt4s item__position bg_rp_norepeat bg_sz_cover {{se_stts.img_align}}" data-bgset="{{ img_url_1_1 }}" data-ratio="{{ratio}}" data-sizes="auto" data-parent-fit="cover" style="background-image: url({{img_url_1_1}})"></div>
             {%- endif -%}
           {%- else -%}
-            <div class="js_full_ht4 lazyloadt4s item__position bg_rp_norepeat bg_sz_cover {{se_stts.img_align}}" data-bg="https://placehold.jp/1/56cfe1/56cfe1/1x1.png?text=1" style="padding-top:51.282051282051285%;"></div>
+            <div class="js_full_ht4 lazyloadt4s item__position bg_rp_norepeat bg_sz_cover {{se_stts.img_align}}" data-bg="{{ 'placeholder.jpg' | asset_url }}" style="padding-top:51.282051282051285%;"></div>
           {%- endif -%}
         <div class="txt_content pa t__0 l__0 b__0 r__0 caption-w-{{se_stts.caption_w}} flex column shadow_wrap {{se_stts.txt_align}} {{se_stts.txt_align_mb}} pe_none z__100">
           <div class="pa pa_txts mb_h_pos{{se_stts.cap_h_pos_mb}} mb_v_pos{{se_stts.cap_v_pos_mb}} h_pos{{se_stts.cap_h_pos}} v_pos{{se_stts.cap_v_pos}}">

@@ -43,7 +43,7 @@
                   <div class="nt_bg_lz pr_lazy_img lazyloadt4s item__position {{bk_stts.img_align}}" data-bgset="{{ image | img_url: '1x1' }}" data-ratio="{{image.aspect_ratio}}" data-sizes="auto" data-parent-fit="cover"></div>
                 {%- else -%}
                   {%- capture cl -%}{% cycle 'a8dacc', '56cfe1' %}{%- endcapture -%}
-                  <div class="nt_bg_lz pr_lazy_img lazyloadt4s item__position {{bk_stts.img_align}}" data-bg="https://placehold.jp/1/{{cl}}/{{cl}}/530x600.png?text=1" style="padding-top:100%;"></div>
+                  <div class="nt_bg_lz pr_lazy_img lazyloadt4s item__position {{bk_stts.img_align}}" data-bg="{{ 'placeholder.jpg' | asset_url }}" style="padding-top:100%;"></div>
                 {%- endif -%}
                 {%- if bk_stts.url != blank %}<a href="{{ bk_stts.url }}" target="{{bk_stts.open_link}}" class="pa t__0 l__0 r__0 b__0"></a>{% endif -%}
                 <div class="nt_promotion_html pa t__0 l__0 {{bk_stts.txt_align}} pe_none">{{bk_stts.html}}</div>
@@ -82,7 +82,7 @@
                      {%- if image != blank -%}
                        <div class="cat_grid_item__overlay item__position nt_bg_lz lazyloadt4s" data-bgset="{{ image | img_url: '1x1' }}" data-ratio="{{image.aspect_ratio}}" data-sizes="auto" data-parent-fit="width" style="padding-top:{{ 1 | divided_by: image.aspect_ratio | times: 100}}%;"></div>
                      {%- else -%}
-                       <div class="cat_grid_item__overlay item__position nt_bg_lz lazyloadt4s" data-bg="https://placehold.jp/1/a6d7cb/a6d7cb/1x1.png?text=570x300" style="padding-top:127%;"></div>
+                       <div class="cat_grid_item__overlay item__position nt_bg_lz lazyloadt4s" data-bg="{{ 'placeholder.jpg' | asset_url }}" style="padding-top:127%;"></div>
                      {%- endif -%}
                    </a>
                    <div class="cat_grid_item__wrapper pe_none">

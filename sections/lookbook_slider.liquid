@@ -18,7 +18,7 @@
                   {%- if image != blank -%}{% assign ratio = image.aspect_ratio |default:1.77777778 -%}
                   <div class="pin__image nt_bg_lz lazyloadt4s" data-bgset="{{ image | img_url: '1x1' }}" data-ratio="{{ratio}}" data-sizes="auto" style="padding-top:{{ 1 | divided_by: ratio | times: 100}}%"></div>
                   {%- else -%}
-                  <div class="pin__image nt_bg_lz lazyloadt4s" data-bg="https://placehold.jp/100/f5f5f5/999/1920x1080.png" style="padding-top:56.25%"></div>
+                  <div class="pin__image nt_bg_lz lazyloadt4s" data-bg="{{ 'placeholder.jpg' | asset_url }}" style="padding-top:56.25%"></div>
                   {%- endif -%}
 
                   {%- if section_blocks.size > 0 -%}

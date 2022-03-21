@@ -19,7 +19,7 @@
             <div class="nt_bg_lz pr_lazy_img lazyloadt4s item__position {{bk_stts.img_align}}" data-bgset="{{ image | img_url: '1x1' }}" data-ratio="{{image.aspect_ratio}}" data-sizes="auto" data-parent-fit="cover"></div>
           {%- else -%}
             {%- capture cl -%}{% cycle 'a8dacc', '56cfe1' %}{%- endcapture -%}
-            <div class="nt_bg_lz pr_lazy_img lazyloadt4s item__position {{bk_stts.img_align}}" data-bg="https://placehold.jp/1/{{cl}}/{{cl}}/530x600.png?text=1" style="padding-top:52.63157894736842%"></div>
+            <div class="nt_bg_lz pr_lazy_img lazyloadt4s item__position {{bk_stts.img_align}}" data-bg="{{ 'placeholder.jpg' | asset_url }}" style="padding-top:52.63157894736842%"></div>
           {%- endif -%}
           <a href="{{ bk_stts.url }}" target="{{bk_stts.open_link}}" class="pa t__0 l__0 r__0 b__0{% if bk_stts.url == blank %} pe_none{% endif %}"></a>
           <div class="nt_promotion_html pa t__0_ l__0_ {{bk_stts.txt_align}} pe_none pa_txts mb_h_pos{{bk_stts.cap_h_pos}} mb_v_pos{{bk_stts.cap_v_pos}} h_pos{{bk_stts.cap_h_pos}} v_pos{{bk_stts.cap_v_pos}}">{{bk_stts.html}}</div>

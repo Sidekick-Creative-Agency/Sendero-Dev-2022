@@ -38,11 +38,11 @@
 
             {%- if url != blank -%}
               <a data-no-instant rel="nofollow" class="wrap_ins_img db pr oh" href="{{url}}" target="{{open_link}}">
-                <div class="lazyloadt4s nt_bg_lz pr_lazy_img" data-bgset="{% if image != blank %}{{ image | img_url: '1x1' }}{% else %}https://placehold.jp/80/f5f5f5/999/1080x1080.png{% endif %}" data-ratio="{{ratio}}" data-sizes="auto"></div>
+                <div class="lazyloadt4s nt_bg_lz pr_lazy_img" data-bgset="{% if image != blank %}{{ image | img_url: '1x1' }}{% else %}{{ 'placeholder.jpg' | asset_url }}{% endif %}" data-ratio="{{ratio}}" data-sizes="auto"></div>
                 {%- if check %}<div class="info pa tc flex ts__03 fl_center al_center op__0 t__0 l__0 r__0 b__0 h__100 pe_none"><span class="pr cw mr__5 ml__5"><i class="facl facl-instagram"></i></span></div>{%- endif -%}
               </a>
             {%- else -%}
-              <div class="wrap_ins_img db pr oh"><div class="lazyloadt4s nt_bg_lz pr_lazy_img" data-bgset="{% if image != blank %}{{ image | img_url: '1x1' }}{% else %}https://placehold.jp/80/f5f5f5/999/1080x1080.png{% endif %}" data-ratio="{{ratio}}" data-sizes="auto"></div></div>
+              <div class="wrap_ins_img db pr oh"><div class="lazyloadt4s nt_bg_lz pr_lazy_img" data-bgset="{% if image != blank %}{{ image | img_url: '1x1' }}{% else %}{{ 'placeholder.jpg' | asset_url }}{% endif %}" data-ratio="{{ratio}}" data-sizes="auto"></div></div>
             {%- endif -%}
             
           </div>

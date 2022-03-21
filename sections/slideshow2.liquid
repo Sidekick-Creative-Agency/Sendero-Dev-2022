@@ -38,7 +38,7 @@
                      <div class="bg_rp_norepeat bg_sz_cover lazyloadt4s item__position {{bk_stts.pos_img}} img_{{ani_img}} pa l__0 t__0 r__0 b__0" data-bgset="{{ image_mb | img_url: '1x1' }}" data-ratio="{{ratio_mb}}" data-sizes="auto"></div>
                   </div>
                 {%- else -%}
-                  <div class="js_full_ht4 lazyloadt4s item__position {{bk_stts.pos_img}} img_{{ani_img}}" data-bg="https://placehold.jp/1/f5f5f5/f5f5f5/1170x600.png?text=1" style="padding-top:51.282051282051285%"></div>
+                  <div class="js_full_ht4 lazyloadt4s item__position {{bk_stts.pos_img}} img_{{ani_img}}" data-bg="{{ 'placeholder.jpg' | asset_url }}" style="padding-top:51.282051282051285%"></div>
                 {%- endif -%}
 
                  <div class="caption-wrap caption-w-{{bk_stts.caption_w}} pe_none z_100 {{bk_stts.txt_align}} {{bk_stts.txt_align_mb}}">

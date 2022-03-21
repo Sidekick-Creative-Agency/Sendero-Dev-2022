@@ -27,7 +27,7 @@
               {%- if image != blank -%}
                  <div class="pin__image nt_bg_lz lazyloadt4s" data-bgset="{{ image | img_url: '1x1' }}" data-ratio="{{ratio}}" data-sizes="auto"{% unless sett_equal %} style="padding-top:{{ 1 | divided_by: ratio | times: 100}}%;"{% endunless %}></div>
               {%- else -%}
-                 <div class="pin__image nt_bg_lz lazyloadt4s" data-bg="https://placehold.jp/50/56cfe1/ffffff/870x1110.png?text=Lookbook Packery"{% unless sett_equal %} style="padding-top:127.586%;"{% endunless %}></div>
+                 <div class="pin__image nt_bg_lz lazyloadt4s" data-bg="{{ 'placeholder.jpg' | asset_url }}"{% unless sett_equal %} style="padding-top:127.586%;"{% endunless %}></div>
               {%- endif -%}
               {%- for block in section_blocks offset:offset -%}
                 {%- case block.type -%}

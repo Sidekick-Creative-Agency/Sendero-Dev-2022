@@ -23,7 +23,7 @@
       {%- if image != blank -%}
         <div class="nt_bg_lz lazyloadt4s item__position {{se_stts.img_align}}" data-bgset="{{ image | img_url: '1x1' }}" data-sizes="auto" data-ratio="{{image.aspect_ratio}}" data-parent-fit="cover" style="padding-top:{{ 1 | divided_by: image.aspect_ratio | times: 100}}%;"></div>
       {%- else -%}
-        <div class="nt_bg_lz lazyloadt4s item__position {{se_stts.img_align}}" data-bg="https://placehold.jp/50/{% cycle 'a8dacc', '56cfe1', 'f99077','c8b09b' %}/fff/570x630.png?text=Image+with+text" style="padding-top: 111.1111111111111%;"></div>
+        <div class="nt_bg_lz lazyloadt4s item__position {{se_stts.img_align}}" data-bg="{{ 'placeholder.jpg' | asset_url }}" style="padding-top: 111.1111111111111%;"></div>
       {%- endif -%}
     {%- comment -%}</a>{%- endcomment -%}
   </div>
