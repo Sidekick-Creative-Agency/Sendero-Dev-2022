@@ -465,7 +465,7 @@
             "type": "html",
             "settings": {
               "html": "<h1>Outerwear<\/h1>\n<h6>Shop All<\/h6>",
-              "col": "4"
+              "col": "3"
             }
           },
           "3237df59-19be-4aea-b04a-b0f1e8c10f56": {
@@ -478,16 +478,6 @@
               "col": "2"
             }
           },
-          "b2a92544-5ae9-4b7d-ae20-2955f2017770": {
-            "type": "link",
-            "settings": {
-              "tt_hd": "",
-              "url": "",
-              "open_link": "_self",
-              "menu": "hats-column-two",
-              "col": "2"
-            }
-          },
           "424acdb6-f2e8-4436-9941-b00668644353": {
             "type": "cat",
             "settings": {
@@ -495,7 +485,7 @@
               "hoverz": true,
               "collection": "hats",
               "title": "Fall 2021 Hats",
-              "col": "2"
+              "col": "3"
             }
           },
           "72527a58-acee-461c-8425-85bbf19000e1": {
@@ -505,7 +495,7 @@
               "hoverz": true,
               "collection": "hats",
               "title": "Signature Hats",
-              "col": "2"
+              "col": "3"
             }
           },
           "504c41cf-3799-4c0f-ba94-a387ae791984": {
@@ -600,7 +590,6 @@
           "1585641227863",
           "eb8320b6-de9c-4f8d-85ba-1b0aa4179ab3",
           "3237df59-19be-4aea-b04a-b0f1e8c10f56",
-          "b2a92544-5ae9-4b7d-ae20-2955f2017770",
           "424acdb6-f2e8-4436-9941-b00668644353",
           "72527a58-acee-461c-8425-85bbf19000e1",
           "504c41cf-3799-4c0f-ba94-a387ae791984",
