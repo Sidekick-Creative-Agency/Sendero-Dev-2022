@@ -491,6 +491,16 @@
               "col": "3"
             }
           },
+          "72527a58-acee-461c-8425-85bbf19000e1": {
+            "type": "cat",
+            "settings": {
+              "cat_design": "1",
+              "hoverz": true,
+              "collection": "hats",
+              "title": "Signature Hats",
+              "col": "3"
+            }
+          },
           "504c41cf-3799-4c0f-ba94-a387ae791984": {
             "type": "list",
             "settings": {
@@ -584,6 +594,7 @@
           "3237df59-19be-4aea-b04a-b0f1e8c10f56",
           "b2a92544-5ae9-4b7d-ae20-2955f2017770",
           "424acdb6-f2e8-4436-9941-b00668644353",
+          "72527a58-acee-461c-8425-85bbf19000e1",
           "504c41cf-3799-4c0f-ba94-a387ae791984",
           "1586767100450",
           "1586767123172",
