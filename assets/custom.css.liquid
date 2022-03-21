@@ -21,10 +21,18 @@
         text-transform: uppercase;
       }
 
-      .nt_menu >li>a:active {
-        border-bottom: 5px solid red;
-      }
-
+      .nt_menu >li>a:hover:after, .nt_menu >li>a:focus:after {
+        content: "";
+        background: #999;
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        right: 0;
+        margin-left: auto; 
+        margin-right: auto;
+        height: 2px;
+        width: 70%;
+        }
 
 /*---------------- Custom CSS for only desktop -------------------*/
 @media (min-width: 1025px) {
