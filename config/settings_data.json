@@ -454,31 +454,11 @@
               "cus_cl": false,
               "cl": "#ffffff",
               "lb": "New",
-              "lb_cl": "#00badb",
+              "lb_cl": "#e07e2a",
               "lazy_mn": true,
               "pos": "center",
               "wid": "full",
               "cus_wid": 1200
-            }
-          },
-          "1585991609385": {
-            "type": "link",
-            "settings": {
-              "tt_hd": "SHOP PAGES",
-              "url": "shopify:\/\/products\/logo-hat",
-              "open_link": "_self",
-              "menu": "main-menu",
-              "col": "2"
-            }
-          },
-          "1585991685838": {
-            "type": "link",
-            "settings": {
-              "tt_hd": "FEATURES",
-              "url": "https:\/\/kalles-demo.myshopify.com\/collections\/women\/?preview_theme_id=",
-              "open_link": "_self",
-              "menu": "footer",
-              "col": "2"
             }
           },
           "424acdb6-f2e8-4436-9941-b00668644353": {
@@ -486,9 +466,9 @@
             "settings": {
               "cat_design": "1",
               "hoverz": true,
-              "collection": "",
-              "title": "",
-              "col": "4"
+              "collection": "hats",
+              "title": "Fall 2021 Hats",
+              "col": "3"
             }
           },
           "504c41cf-3799-4c0f-ba94-a387ae791984": {
@@ -536,7 +516,7 @@
               "cus_cl": false,
               "cl": "#ffffff",
               "lb": "Sale",
-              "lb_cl": "#00badb",
+              "lb_cl": "#e07e2a",
               "lazy_mn": true,
               "pos": "center",
               "wid": "cus",
@@ -581,8 +561,6 @@
         },
         "block_order": [
           "1585641227863",
-          "1585991609385",
-          "1585991685838",
           "424acdb6-f2e8-4436-9941-b00668644353",
           "504c41cf-3799-4c0f-ba94-a387ae791984",
           "1586767100450",
