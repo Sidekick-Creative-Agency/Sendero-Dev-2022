@@ -457,8 +457,8 @@
               "lb_cl": "#e07e2a",
               "lazy_mn": true,
               "pos": "center",
-              "wid": "full",
-              "cus_wid": 1200
+              "wid": "cus",
+              "cus_wid": 1000
             }
           },
           "3237df59-19be-4aea-b04a-b0f1e8c10f56": {
@@ -468,7 +468,7 @@
               "url": "",
               "open_link": "_self",
               "menu": "hats-first-column",
-              "col": "2"
+              "col": "3"
             }
           },
           "b2a92544-5ae9-4b7d-ae20-2955f2017770": {
@@ -478,7 +478,7 @@
               "url": "",
               "open_link": "_self",
               "menu": "hats-column-two",
-              "col": "2"
+              "col": "3"
             }
           },
           "424acdb6-f2e8-4436-9941-b00668644353": {
