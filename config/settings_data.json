@@ -461,13 +461,6 @@
               "cus_wid": 1200
             }
           },
-          "7ac2c5be-7fc4-4941-a32b-ad91135f9dca": {
-            "type": "title",
-            "settings": {
-              "title": "Hats",
-              "col": "3"
-            }
-          },
           "3237df59-19be-4aea-b04a-b0f1e8c10f56": {
             "type": "link",
             "settings": {
@@ -588,7 +581,6 @@
         },
         "block_order": [
           "1585641227863",
-          "7ac2c5be-7fc4-4941-a32b-ad91135f9dca",
           "3237df59-19be-4aea-b04a-b0f1e8c10f56",
           "424acdb6-f2e8-4436-9941-b00668644353",
           "72527a58-acee-461c-8425-85bbf19000e1",
