@@ -461,6 +461,13 @@
               "cus_wid": 1200
             }
           },
+          "a00add2f-99ed-45f5-aa0f-999849eb4eab": {
+            "type": "mega-menu-title",
+            "settings": {
+              "mega-menu-title": "Hats",
+              "col": "3"
+            }
+          },
           "3237df59-19be-4aea-b04a-b0f1e8c10f56": {
             "type": "link",
             "settings": {
@@ -468,7 +475,7 @@
               "url": "",
               "open_link": "_self",
               "menu": "hats-first-column",
-              "col": "2"
+              "col": "3"
             }
           },
           "424acdb6-f2e8-4436-9941-b00668644353": {
@@ -491,103 +498,61 @@
               "col": "3"
             }
           },
-          "504c41cf-3799-4c0f-ba94-a387ae791984": {
-            "type": "list",
+          "922ef6d3-2b8a-4f62-84ae-f7944a9ba720": {
+            "type": "mega",
             "settings": {
               "title": "Shirts",
               "url": "shopify:\/\/collections\/shirts",
               "open_link": "_self",
-              "menu": "",
-              "col": "3",
               "icon": "",
               "cus_cl": false,
               "cl": "#ec0101",
               "lb": "",
               "lb_cl": "",
               "lazy_mn": true,
-              "pos": "center",
-              "wid": "cus",
-              "cus_wid": 1050,
-              "enable_cat": true,
+              "pos": "default",
+              "wid": "full",
+              "cus_wid": 1200
+            }
+          },
+          "3145e827-1b62-45cc-afb0-32a4410119e4": {
+            "type": "mega-menu-title",
+            "settings": {
+              "mega-menu-title": "Shirts",
+              "col": "3"
+            }
+          },
+          "33a8f26b-80ee-4107-8d43-d3d39fab6036": {
+            "type": "link",
+            "settings": {
+              "tt_hd": "",
+              "url": "",
+              "open_link": "_self",
+              "menu": "hats-column-two",
+              "col": "3"
+            }
+          },
+          "9334ad88-4bc9-428e-af30-263554dfa4d9": {
+            "type": "cat",
+            "settings": {
               "cat_design": "1",
               "hoverz": true,
-              "cat_ratio": "ratio_adapt",
-              "cat_size": "nt_cover",
-              "cat_position": "8",
-              "enable_pr": true,
-              "pr_des": "1",
-              "show_vendor": false,
-              "use_cdt": false,
-              "round_cd": false,
-              "cdt_des": "1",
-              "use_eq_height": false,
-              "image_ratio": "ratio_nt",
-              "image_size": "nt_cover",
-              "image_position": "8"
-            }
-          },
-          "1586767100450": {
-            "type": "mega",
-            "settings": {
-              "title": "Sale",
-              "url": "shopify:\/\/collections\/collection",
-              "open_link": "_self",
-              "icon": "",
-              "cus_cl": false,
-              "cl": "#ffffff",
-              "lb": "Sale",
-              "lb_cl": "#e07e2a",
-              "lazy_mn": true,
-              "pos": "center",
-              "wid": "cus",
-              "cus_wid": 1000
-            }
-          },
-          "1586767123172": {
-            "type": "pr",
-            "settings": {
-              "limit": 6,
-              "id_cat": "trending",
-              "column_pr": 4,
-              "pr_des": "1",
-              "show_vendor": false,
-              "pr_lay": "2",
-              "use_cdt": false,
-              "round_cd": false,
-              "cdt_des": "1",
-              "use_eq_height": false,
-              "image_ratio": "ratio_nt",
-              "image_size": "nt_cover",
-              "image_position": "8",
-              "col": "12"
-            }
-          },
-          "1585641843539": {
-            "type": "dropdown",
-            "settings": {
-              "title": "Blog",
-              "url": "shopify:\/\/blogs\/life-style",
-              "open_link": "_self",
-              "menu": "",
-              "icon": "",
-              "cus_cl": false,
-              "cl": "#ec0101",
-              "lb": "",
-              "lb_cl": "",
-              "lazy_mn": true,
-              "pos": "right"
+              "collection": "shirts",
+              "title": "",
+              "col": "4"
             }
           }
         },
         "block_order": [
           "1585641227863",
+          "a00add2f-99ed-45f5-aa0f-999849eb4eab",
           "3237df59-19be-4aea-b04a-b0f1e8c10f56",
           "424acdb6-f2e8-4436-9941-b00668644353",
           "72527a58-acee-461c-8425-85bbf19000e1",
-          "504c41cf-3799-4c0f-ba94-a387ae791984",
-          "1586767100450",
-          "1586767123172",
-          "1585641843539"
+          "922ef6d3-2b8a-4f62-84ae-f7944a9ba720",
+          "3145e827-1b62-45cc-afb0-32a4410119e4",
+          "33a8f26b-80ee-4107-8d43-d3d39fab6036",
+          "9334ad88-4bc9-428e-af30-263554dfa4d9"
         ],
         "settings": {
           "height": 60,
