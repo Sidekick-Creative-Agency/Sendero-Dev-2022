@@ -146,7 +146,7 @@
                {%- for link in llists -%}<a href="{{ link.url }}">{%- render 'tt_inc',title:link.title -%}</a>{%- endfor -%}
             </div>
 
-         {%- when 'html' -%}<div id="bk_{{block.id}}" class="type_mn_html menu-item sub-column-item col-{{bk_stts.col}}" {{ block.shopify_attributes }}>{{- bk_stts.html -}}</div>
+         {%- when 'html' -%}<div id="bk_{{block.id}}" class="type_mn_html menu-item sub-column-item col-{{bk_stts.col}}" {{ block.shopify_attributes }}>Hello {%- render 'title_menu',block:block -%} {{- bk_stts.html -}}</div>
          {%- else -%}<style>#item_{{bid}} .sub-menu {display: none !important}</style>
 
      {%- endcase -%}
