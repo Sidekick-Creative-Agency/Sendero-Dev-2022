@@ -128,68 +128,114 @@
         "pd_mb": ""
       }
     },
-    "1647706079921db001": {
-      "type": "collection-list",
+    "16479793797a3eb3fa": {
+      "type": "collection-list_manual",
       "blocks": {
-        "1647706079c8d6c170-0": {
+        "1647979379675fd7e4-0": {
           "type": "collection",
           "settings": {
             "collection": "",
             "img_align": "center",
             "title": "",
-            "url": ""
+            "url": "",
+            "col": "3",
+            "col_md": "3",
+            "col_mb": "6"
           }
         },
-        "1647706079c8d6c170-1": {
+        "1647979379675fd7e4-1": {
           "type": "collection",
           "settings": {
             "collection": "",
             "img_align": "center",
             "title": "",
-            "url": ""
+            "url": "",
+            "col": "3",
+            "col_md": "3",
+            "col_mb": "6"
           }
         },
-        "1647706079c8d6c170-2": {
+        "1647979379675fd7e4-2": {
           "type": "collection",
           "settings": {
             "collection": "",
             "img_align": "center",
             "title": "",
-            "url": ""
+            "url": "",
+            "col": "3",
+            "col_md": "3",
+            "col_mb": "6"
           }
         },
-        "1647706079c8d6c170-3": {
+        "1647979379675fd7e4-3": {
           "type": "collection",
           "settings": {
             "collection": "",
             "img_align": "center",
             "title": "",
-            "url": ""
+            "url": "",
+            "col": "3",
+            "col_md": "3",
+            "col_mb": "6"
+          }
+        },
+        "8b5ed70f-a9ad-45f7-a91a-4c15054e63a6": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "img_align": "center",
+            "title": "",
+            "url": "",
+            "col": "3",
+            "col_md": "3",
+            "col_mb": "6"
+          }
+        },
+        "2b87029d-0fb4-477f-9f94-10e6f6728668": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "img_align": "center",
+            "title": "",
+            "url": "",
+            "col": "3",
+            "col_md": "3",
+            "col_mb": "6"
+          }
+        },
+        "c7f47ed5-5018-4b0e-8a80-03981976e323": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "img_align": "center",
+            "title": "",
+            "url": "",
+            "col": "3",
+            "col_md": "3",
+            "col_mb": "6"
           }
         }
       },
       "block_order": [
-        "1647706079c8d6c170-0",
-        "1647706079c8d6c170-1",
-        "1647706079c8d6c170-2",
-        "1647706079c8d6c170-3"
+        "1647979379675fd7e4-0",
+        "1647979379675fd7e4-1",
+        "1647979379675fd7e4-2",
+        "1647979379675fd7e4-3",
+        "8b5ed70f-a9ad-45f7-a91a-4c15054e63a6",
+        "2b87029d-0fb4-477f-9f94-10e6f6728668",
+        "c7f47ed5-5018-4b0e-8a80-03981976e323"
       ],
       "settings": {
-        "title": "Collection list",
+        "title": "Collection list Manual",
         "sub_title": "Sub Text",
         "sub_font": "2",
         "style_title": "title_1",
         "ic_tt": "gem",
         "show_clpr": false,
-        "round": 0,
         "cat_layout": "1",
         "hoverz": true,
         "cat_design": "1",
         "cat_space": "30",
-        "image_ratio": "ratio2_3",
-        "col": "3",
-        "col_md": "3",
-        "col_mb": "6",
         "pr_txt": "products",
         "loop": true,
         "autoplay": false,
@@ -215,6 +261,6 @@
   },
   "order": [
     "16357021760efbe511",
-    "1647706079921db001"
+    "16479793797a3eb3fa"
   ]
 }
