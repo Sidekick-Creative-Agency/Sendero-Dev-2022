@@ -277,7 +277,7 @@
 	         	{%- for link in llists -%}<a href="{{ link.url }}">{%- render 'tt_inc',title:link.title -%}</a>{%- endfor -%}
 	         </div>
 
-	      {%- when 'mmtitle' -%}<div id="bk_{{block.id}}" class="type_mn_html menu-item sub-column-item col-{{bk_stts.col}}"><h1>{{- bk_stts.mmtitle -}}</h1><div class="shop-all">Shop All<i class="las la-arrow-right"></i></div></div>
+	      {%- when 'mmtitle' -%}<div id="bk_{{block.id}}" class="type_mn_html menu-item sub-column-item col-{{bk_stts.col}}"><h2>{{- bk_stts.mmtitle -}}</h2><div class="shop-all">Shop All<i class="las la-arrow-right"></i></div></div>
 	      {%- else -%}<style>#item_{{bid}} .sub-menu {display: none !important}</style>
 
 	  {%- endcase -%}
