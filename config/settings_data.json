@@ -551,6 +551,7 @@
           "9334ad88-4bc9-428e-af30-263554dfa4d9": {
             "type": "cat",
             "settings": {
+              "image": "shopify:\/\/shop_images\/Big_Bend_Shirt_Lifestyle.jpg",
               "cat_design": "1",
               "hoverz": true,
               "collection": "shirts",
