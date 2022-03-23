@@ -468,8 +468,8 @@
           "bc349ccd-7167-466b-aab8-2c2534a91320": {
             "type": "mmtitle",
             "settings": {
-              "mmtitle": "Mega Menu Title",
-              "col": "3"
+              "mmtitle": "Hats",
+              "col": "2"
             }
           },
           "3237df59-19be-4aea-b04a-b0f1e8c10f56": {
@@ -479,7 +479,17 @@
               "url": "",
               "open_link": "_self",
               "menu": "hats-first-column",
-              "col": "3"
+              "col": "2"
+            }
+          },
+          "321dc9c2-00b3-46de-b52d-9b60ac580c7a": {
+            "type": "link",
+            "settings": {
+              "tt_hd": "",
+              "url": "",
+              "open_link": "_self",
+              "menu": "hats-column-two",
+              "col": "2"
             }
           },
           "424acdb6-f2e8-4436-9941-b00668644353": {
@@ -489,7 +499,7 @@
               "cat_design": "1",
               "hoverz": true,
               "collection": "hats",
-              "title": "Fall 2021 Hats",
+              "title": "Fall 2021",
               "col": "3"
             }
           },
@@ -500,7 +510,7 @@
               "cat_design": "1",
               "hoverz": true,
               "collection": "hats",
-              "title": "Signature Hats",
+              "title": "Signature",
               "col": "3"
             }
           },
@@ -553,6 +563,7 @@
           "1585641227863",
           "bc349ccd-7167-466b-aab8-2c2534a91320",
           "3237df59-19be-4aea-b04a-b0f1e8c10f56",
+          "321dc9c2-00b3-46de-b52d-9b60ac580c7a",
           "424acdb6-f2e8-4436-9941-b00668644353",
           "72527a58-acee-461c-8425-85bbf19000e1",
           "922ef6d3-2b8a-4f62-84ae-f7944a9ba720",
@@ -1848,6 +1859,70 @@
           "sidebar_shop2-3"
         ],
         "settings": {
+        }
+      },
+      "wis_heading": {
+        "type": "wis_heading",
+        "blocks": {
+          "wis_heading-0": {
+            "type": "2",
+            "settings": {
+              "text": "<p>View your wishlist products<\/p>",
+              "color": "#ededed"
+            }
+          }
+        },
+        "block_order": [
+          "wis_heading-0"
+        ],
+        "settings": {
+          "parallax": false,
+          "color": "#000",
+          "overlay": 54,
+          "padding": 50,
+          "paddingmb": 50,
+          "bg_pos": "center center",
+          "bg_repeat": "no-repeat",
+          "bg_size": "cover",
+          "bg_att": "scroll"
+        }
+      },
+      "wishlist_page": {
+        "type": "wishlist_page",
+        "blocks": {
+          "wishlist_page-0": {
+            "type": "btn",
+            "settings": {
+              "title": "Return To Shop",
+              "url": "",
+              "style": "primary tu"
+            }
+          }
+        },
+        "block_order": [
+          "wishlist_page-0"
+        ],
+        "settings": {
+          "shop_layout": "default",
+          "show_col_switch": true,
+          "limit": 12,
+          "space": 30,
+          "use_pagination": "default",
+          "use_bar_lm": true,
+          "btn_rd": true,
+          "btn_style": "default",
+          "col_pr": "3",
+          "col_pr_tb": "3",
+          "col_pr_mb": "6",
+          "pr_des": "1",
+          "show_vendor": false,
+          "use_cdt": false,
+          "round_cd": false,
+          "cdt_des": "1",
+          "use_eq_height": false,
+          "image_ratio": "ratio_nt",
+          "image_size": "nt_cover",
+          "image_position": "8"
         }
       }
     },
