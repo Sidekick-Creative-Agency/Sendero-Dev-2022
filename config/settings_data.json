@@ -468,8 +468,8 @@
           "bc349ccd-7167-466b-aab8-2c2534a91320": {
             "type": "mmtitle",
             "settings": {
-              "mmtitle": "Mega Menu Title",
-              "col": "3"
+              "mmtitle": "Hats",
+              "col": "2"
             }
           },
           "3237df59-19be-4aea-b04a-b0f1e8c10f56": {
@@ -479,7 +479,17 @@
               "url": "",
               "open_link": "_self",
               "menu": "hats-first-column",
-              "col": "3"
+              "col": "2"
+            }
+          },
+          "321dc9c2-00b3-46de-b52d-9b60ac580c7a": {
+            "type": "link",
+            "settings": {
+              "tt_hd": "",
+              "url": "",
+              "open_link": "_self",
+              "menu": "hats-column-two",
+              "col": "2"
             }
           },
           "424acdb6-f2e8-4436-9941-b00668644353": {
@@ -553,6 +563,7 @@
           "1585641227863",
           "bc349ccd-7167-466b-aab8-2c2534a91320",
           "3237df59-19be-4aea-b04a-b0f1e8c10f56",
+          "321dc9c2-00b3-46de-b52d-9b60ac580c7a",
           "424acdb6-f2e8-4436-9941-b00668644353",
           "72527a58-acee-461c-8425-85bbf19000e1",
           "922ef6d3-2b8a-4f62-84ae-f7944a9ba720",
