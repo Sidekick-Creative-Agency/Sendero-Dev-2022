@@ -211,7 +211,7 @@
 					  <div class="cat_grid_item__content pr oh">
 					    <a href="{{ collection.url | default:'/' }}" class="db cat_grid_item__link">
 					      {%- if image != blank -%}
-					        <div class="cat_grid_item__overlay item__position nt_bg_lz lazyloadt4s" data-bgset="{{ image | img_url: '1x1' }}" data-ratio="{{image.aspect_ratio}}" data-sizes="auto" data-parent-fit="width" style="padding-top:{{ 1 | divided_by: image.aspect_ratio | times: 100}}%;"></div>
+					        <div class="cat_grid_item__overlay item__position nt_bg_lz lazyloadt4s" data-bgset="{{ image | img_url: '1x1' }}" data-ratio="{{image.aspect_ratio}}" data-sizes="auto" data-parent-fit="width" style="padding-top:80%;"></div>
 					      {%- else -%}
 					        <div class="cat_grid_item__overlay item__position nt_bg_lz lazyloadt4s" data-bg="{{ 'placeholder.jpg' | asset_url }}" style="padding-top:127%;"></div>
 					      {%- endif -%}
