@@ -88,6 +88,15 @@
     -webkit-transform: translateY(-50%);
 }
 
+.cat_grid_item__wrapper h3 {
+    letter-spacing: 0.2em;
+}
+
+.shop-all {
+    font-size:11px;
+    color:#fff;
+    letter-spacing: 0.2em;
+}
 
 /*-----------------------------------------------------------------------------/
 / Custom CSS For Screen Sizes
