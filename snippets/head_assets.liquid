@@ -46,7 +46,7 @@ var T4stt_str = {
   <link rel="preload" href="https://fonts.googleapis.com/css?family={{font_var}}&display=swap" as="style" onload="onloadt4relcss(this)">
 {%- endif -%}
 {%- if settings.colors_css %}<link id="sett_clt4" rel="preload" href="{{'colors.css' | asset_url}}" as="style" onload="onloadt4relcss(this)">{% endif -%} 
-{%- if settings.custom_css %}<link rel="preload" as="style" href="{{'custom.css' | asset_url}}">{{'custom.css' | asset_url | stylesheet_tag}}{% endif -%}
+{%- if settings.custom_css %}<link rel="preload" as="style" href="{{'custom.css' | asset_url}}">{{'custom.css' | asset_url | stylesheet_tag}}<link rel="preload" as="style" href="{{ 'sk-custom.css' | asset_url }}">{{'sk-custom.css' | asset_url | stylesheet_tag}}{% endif -%}
 <link rel="preload" href="{{ 'line-awesome.min.css' | asset_url }}" as="style" onload="onloadt4relcss(this)">
 <script id="js_lzt4" src="{{ 'lazysizes.min.js' | asset_url }}" defer="defer"></script>
 <script src="{{ vendor_js | asset_url }}" defer="defer" id="js_ntt4"
