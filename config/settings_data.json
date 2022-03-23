@@ -461,6 +461,13 @@
               "cus_wid": 1200
             }
           },
+          "bc349ccd-7167-466b-aab8-2c2534a91320": {
+            "type": "mmtitle",
+            "settings": {
+              "mmtitle": "Mega Menu Title",
+              "col": "3"
+            }
+          },
           "3237df59-19be-4aea-b04a-b0f1e8c10f56": {
             "type": "link",
             "settings": {
@@ -474,6 +481,7 @@
           "424acdb6-f2e8-4436-9941-b00668644353": {
             "type": "cat",
             "settings": {
+              "image": "shopify:\/\/shop_images\/Fall_2021_Hat.webp",
               "cat_design": "1",
               "hoverz": true,
               "collection": "hats",
@@ -484,6 +492,7 @@
           "72527a58-acee-461c-8425-85bbf19000e1": {
             "type": "cat",
             "settings": {
+              "image": "shopify:\/\/shop_images\/Spring_2022_Hat.webp",
               "cat_design": "1",
               "hoverz": true,
               "collection": "hats",
@@ -508,6 +517,13 @@
               "cus_wid": 1200
             }
           },
+          "7b5386c0-ea4e-468a-9810-a4ee8ae8f6e3": {
+            "type": "mmtitle",
+            "settings": {
+              "mmtitle": "Mega Menu Title",
+              "col": "4"
+            }
+          },
           "33a8f26b-80ee-4107-8d43-d3d39fab6036": {
             "type": "link",
             "settings": {
@@ -525,16 +541,18 @@
               "hoverz": true,
               "collection": "shirts",
               "title": "",
-              "col": "4"
+              "col": "3"
             }
           }
         },
         "block_order": [
           "1585641227863",
+          "bc349ccd-7167-466b-aab8-2c2534a91320",
           "3237df59-19be-4aea-b04a-b0f1e8c10f56",
           "424acdb6-f2e8-4436-9941-b00668644353",
           "72527a58-acee-461c-8425-85bbf19000e1",
           "922ef6d3-2b8a-4f62-84ae-f7944a9ba720",
+          "7b5386c0-ea4e-468a-9810-a4ee8ae8f6e3",
           "33a8f26b-80ee-4107-8d43-d3d39fab6036",
           "9334ad88-4bc9-428e-af30-263554dfa4d9"
         ],
