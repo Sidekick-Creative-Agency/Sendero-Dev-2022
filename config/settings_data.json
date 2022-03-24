@@ -61,7 +61,6 @@
     "full_header": true,
     "sticky_header": true,
     "scroll_header": false,
-    "header_design": "3",
     "h_transparent": true,
     "h_tr_top": false,
     "h_chan_space": false,
@@ -285,6 +284,7 @@
     "checkout_accent_color": "#197bbd",
     "checkout_button_color": "#197bbd",
     "checkout_error_color": "#e32c2b",
+    "header_design": "3",
     "return_register": "",
     "des_pr_design": "1",
     "pr_sidebar": "none",
@@ -448,6 +448,32 @@
       "header_main": {
         "type": "header_main",
         "blocks": {
+          "1c7b4546-24e2-4b6e-94d4-3435557ce99a": {
+            "type": "mega",
+            "settings": {
+              "title": "Spring 2022",
+              "url": "shopify:\/\/collections\/collection",
+              "open_link": "_self",
+              "icon": "",
+              "cus_cl": false,
+              "cl": "#ec0101",
+              "lb": "",
+              "lb_cl": "",
+              "lazy_mn": true,
+              "pos": "default",
+              "wid": "full",
+              "cus_wid": 1200
+            }
+          },
+          "570529be-599c-4b82-8bc1-f2a44b2e99e2": {
+            "type": "mmtitle",
+            "settings": {
+              "mmtitle": "Spring 2022",
+              "url": "shopify:\/\/collections\/collection",
+              "open_link": "_self",
+              "col": "4"
+            }
+          },
           "1585641227863": {
             "type": "mega",
             "settings": {
@@ -519,7 +545,7 @@
           "922ef6d3-2b8a-4f62-84ae-f7944a9ba720": {
             "type": "mega",
             "settings": {
-              "title": "Shirts",
+              "title": "T-Shirts",
               "url": "shopify:\/\/collections\/shirts",
               "open_link": "_self",
               "icon": "",
@@ -536,10 +562,10 @@
           "7b5386c0-ea4e-468a-9810-a4ee8ae8f6e3": {
             "type": "mmtitle",
             "settings": {
-              "mmtitle": "Mega Menu Title",
-              "url": "",
+              "mmtitle": "T-Shirts",
+              "url": "shopify:\/\/collections\/shirts",
               "open_link": "_self",
-              "col": "3"
+              "col": "2"
             }
           },
           "33a8f26b-80ee-4107-8d43-d3d39fab6036": {
@@ -572,9 +598,21 @@
               "title": "",
               "col": "3"
             }
+          },
+          "2fcd5a05-92d0-4592-9d18-1e578f0c8323": {
+            "type": "cat",
+            "settings": {
+              "cat_design": "1",
+              "hoverz": true,
+              "collection": "frontpage",
+              "title": "",
+              "col": "3"
+            }
           }
         },
         "block_order": [
+          "1c7b4546-24e2-4b6e-94d4-3435557ce99a",
+          "570529be-599c-4b82-8bc1-f2a44b2e99e2",
           "1585641227863",
           "bc349ccd-7167-466b-aab8-2c2534a91320",
           "3237df59-19be-4aea-b04a-b0f1e8c10f56",
@@ -585,7 +623,8 @@
           "7b5386c0-ea4e-468a-9810-a4ee8ae8f6e3",
           "33a8f26b-80ee-4107-8d43-d3d39fab6036",
           "61fda3d2-5725-4d65-8f36-62eee9e6b1cc",
-          "9334ad88-4bc9-428e-af30-263554dfa4d9"
+          "9334ad88-4bc9-428e-af30-263554dfa4d9",
+          "2fcd5a05-92d0-4592-9d18-1e578f0c8323"
         ],
         "settings": {
           "height": 60,
@@ -1497,202 +1536,6 @@
           "scroll_delay": 800
         }
       },
-      "header_1": {
-        "type": "header_1",
-        "settings": {
-          "height": 62
-        }
-      },
-      "header_2": {
-        "type": "header_2",
-        "blocks": {
-          "header_2-0": {
-            "type": "simple",
-            "settings": {
-              "title": "Heading 1",
-              "url": "#",
-              "open_link": "_self",
-              "icon": "",
-              "cus_cl": false,
-              "cl": "#ec0101",
-              "lb": "",
-              "lb_cl": ""
-            }
-          },
-          "header_2-1": {
-            "type": "logo",
-            "settings": {
-            }
-          },
-          "header_2-2": {
-            "type": "simple",
-            "settings": {
-              "title": "Heading 2",
-              "url": "#",
-              "open_link": "_self",
-              "icon": "",
-              "cus_cl": false,
-              "cl": "#ec0101",
-              "lb": "",
-              "lb_cl": ""
-            }
-          }
-        },
-        "block_order": [
-          "header_2-0",
-          "header_2-1",
-          "header_2-2"
-        ],
-        "settings": {
-          "height": 62,
-          "arrow": false,
-          "source": "1",
-          "txt": "Welcome to our store!",
-          "social": "2",
-          "align": "tc",
-          "hover": "hover_side_up"
-        }
-      },
-      "header_4": {
-        "type": "header_4",
-        "blocks": {
-          "header_4-0": {
-            "type": "simple",
-            "settings": {
-              "title": "Heading 1",
-              "url": "#",
-              "open_link": "_self",
-              "icon": "",
-              "cus_cl": false,
-              "cl": "#ec0101",
-              "lb": "",
-              "lb_cl": ""
-            }
-          },
-          "header_4-1": {
-            "type": "simple",
-            "settings": {
-              "title": "Heading 2",
-              "url": "#",
-              "open_link": "_self",
-              "icon": "",
-              "cus_cl": false,
-              "cl": "#ec0101",
-              "lb": "",
-              "lb_cl": ""
-            }
-          }
-        },
-        "block_order": [
-          "header_4-0",
-          "header_4-1"
-        ],
-        "settings": {
-          "height": 62,
-          "height_2": 63,
-          "arrow": false,
-          "border": true,
-          "color": "#ececec",
-          "source": "1",
-          "txt": "Welcome to our store!",
-          "social": "2",
-          "align": "tc",
-          "hover": "hover_side_up"
-        }
-      },
-      "header_5": {
-        "type": "header_5",
-        "blocks": {
-          "header_5-0": {
-            "type": "simple",
-            "settings": {
-              "title": "Heading 1",
-              "url": "#",
-              "open_link": "_self",
-              "icon": "",
-              "cus_cl": false,
-              "cl": "#ec0101",
-              "lb": "",
-              "lb_cl": ""
-            }
-          },
-          "header_5-1": {
-            "type": "simple",
-            "settings": {
-              "title": "Heading 2",
-              "url": "#",
-              "open_link": "_self",
-              "icon": "",
-              "cus_cl": false,
-              "cl": "#ec0101",
-              "lb": "",
-              "lb_cl": ""
-            }
-          }
-        },
-        "block_order": [
-          "header_5-0",
-          "header_5-1"
-        ],
-        "settings": {
-          "height": 62,
-          "arrow": false,
-          "align": "tl",
-          "hover": "hover_side_up"
-        }
-      },
-      "header_6": {
-        "type": "header_6",
-        "settings": {
-          "height": 62,
-          "source": "2",
-          "txt": "Welcome to our store!",
-          "social": "2"
-        }
-      },
-      "header_7": {
-        "type": "header_7",
-        "blocks": {
-          "header_7-0": {
-            "type": "menu",
-            "settings": {
-              "title": "Heading 1",
-              "url": "#",
-              "open_link": "_self",
-              "menu": "",
-              "icon": "",
-              "cus_cl": false,
-              "cl": "#ec0101",
-              "lb": "",
-              "lb_cl": ""
-            }
-          },
-          "header_7-1": {
-            "type": "menu",
-            "settings": {
-              "title": "Heading 2",
-              "url": "#",
-              "open_link": "_self",
-              "menu": "",
-              "icon": "",
-              "cus_cl": false,
-              "cl": "#ec0101",
-              "lb": "",
-              "lb_cl": ""
-            }
-          }
-        },
-        "block_order": [
-          "header_7-0",
-          "header_7-1"
-        ],
-        "settings": {
-          "show_currencies": true,
-          "source": "2",
-          "txt": "Welcome to our store!",
-          "social": "2"
-        }
-      },
       "hcat_nav": {
         "type": "hcat_nav",
         "blocks": {
@@ -1730,105 +1573,6 @@
           "hcat_nav-1"
         ],
         "settings": {
-        }
-      },
-      "header_8": {
-        "type": "header_8",
-        "blocks": {
-          "header_8-0": {
-            "type": "simple",
-            "settings": {
-              "title": "Heading 1",
-              "url": "#",
-              "open_link": "_self",
-              "icon": "",
-              "cus_cl": false,
-              "cl": "#ec0101",
-              "lb": "",
-              "lb_cl": ""
-            }
-          },
-          "header_8-1": {
-            "type": "simple",
-            "settings": {
-              "title": "Heading 2",
-              "url": "#",
-              "open_link": "_self",
-              "icon": "",
-              "cus_cl": false,
-              "cl": "#ec0101",
-              "lb": "",
-              "lb_cl": ""
-            }
-          }
-        },
-        "block_order": [
-          "header_8-0",
-          "header_8-1"
-        ],
-        "settings": {
-          "height": 90,
-          "height_2": 50,
-          "arrow": false,
-          "border": true,
-          "color": "#dddddd",
-          "search_w": "1",
-          "align": "tl",
-          "hover": "hover_side_up",
-          "bg": "#56cfe1",
-          "cl_txt": "#fff",
-          "text": "<i class=\"las la-phone fs__14\"><\/i> +01 23456789 <i class=\"las la-envelope fs__14 ml__15\"><\/i> <a class=\"cg\" href=\"mailto:kalles@domain.com\">kalles@domain.com<\/a>",
-          "shop_cat": true,
-          "txt_cat": "SHOP BY CATEGORY",
-          "bgcat": "#007e91",
-          "clcat": "#fff"
-        }
-      },
-      "header_9": {
-        "type": "header_9",
-        "blocks": {
-          "header_9-0": {
-            "type": "simple",
-            "settings": {
-              "title": "Heading 1",
-              "url": "#",
-              "open_link": "_self",
-              "icon": "",
-              "cus_cl": false,
-              "cl": "#ec0101",
-              "lb": "",
-              "lb_cl": ""
-            }
-          },
-          "header_9-1": {
-            "type": "simple",
-            "settings": {
-              "title": "Heading 2",
-              "url": "#",
-              "open_link": "_self",
-              "icon": "",
-              "cus_cl": false,
-              "cl": "#ec0101",
-              "lb": "",
-              "lb_cl": ""
-            }
-          }
-        },
-        "block_order": [
-          "header_9-0",
-          "header_9-1"
-        ],
-        "settings": {
-          "height": 92,
-          "arrow": false,
-          "align": "tl",
-          "hover": "hover_side_up"
-        }
-      },
-      "header_10": {
-        "type": "header_10",
-        "settings": {
-          "height": 80
         }
       },
       "sidebar_shop2": {
