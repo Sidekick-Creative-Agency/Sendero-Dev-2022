@@ -1731,7 +1731,27 @@
             "label": "Mega Menu Title",
             "default": "Mega Menu Title"
           },
-         {
+          {
+            "label": "Link to (Optional)",
+            "id": "url",
+            "type": "url"
+          },
+            {
+              "type": "select",
+              "id": "open_link",
+              "options": [
+                {
+                  "value": "_self",
+                  "label": "Current window (_self)"
+                },
+               {
+                  "value": "_blank",
+                  "label": "New window (_blank)"
+                }
+              ],
+              "label": "Open link in"
+            },
+           {
           "type": "select",
           "id": "col",
           "default": "4",
