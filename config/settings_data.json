@@ -448,6 +448,32 @@
       "header_main": {
         "type": "header_main",
         "blocks": {
+          "1c7b4546-24e2-4b6e-94d4-3435557ce99a": {
+            "type": "mega",
+            "settings": {
+              "title": "Spring 2022",
+              "url": "shopify:\/\/collections\/collection",
+              "open_link": "_self",
+              "icon": "",
+              "cus_cl": false,
+              "cl": "#ec0101",
+              "lb": "",
+              "lb_cl": "",
+              "lazy_mn": true,
+              "pos": "default",
+              "wid": "full",
+              "cus_wid": 1200
+            }
+          },
+          "570529be-599c-4b82-8bc1-f2a44b2e99e2": {
+            "type": "mmtitle",
+            "settings": {
+              "mmtitle": "Spring 2022",
+              "url": "shopify:\/\/collections\/collection",
+              "open_link": "_self",
+              "col": "4"
+            }
+          },
           "1585641227863": {
             "type": "mega",
             "settings": {
@@ -585,6 +611,8 @@
           }
         },
         "block_order": [
+          "1c7b4546-24e2-4b6e-94d4-3435557ce99a",
+          "570529be-599c-4b82-8bc1-f2a44b2e99e2",
           "1585641227863",
           "bc349ccd-7167-466b-aab8-2c2534a91320",
           "3237df59-19be-4aea-b04a-b0f1e8c10f56",
