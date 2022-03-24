@@ -89,6 +89,154 @@
 	  ],
     "blocks": [
       {
+        "type": "simple",
+        "name":"Item no children (lv 1)",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Heading",
+            "default": "Heading"
+          },
+         {
+            "type": "url",
+            "id": "url",
+            "label": "Link",
+            "default": "/"
+         },
+          {
+            "type": "select",
+            "id": "open_link",
+            "options": [
+              {
+                "value": "_self",
+                "label": "Current window (_self)"
+              },
+             {
+                "value": "_blank",
+                "label": "New window (_blank)"
+              }
+            ],
+            "label": "Open link in"
+          },
+          {
+            "id": "icon",
+            "type": "text",
+            "label": "Icon",
+            "info":"[Get icons Line awesome](https://icons8.com/line-awesome)"
+          },
+          {
+            "type": "checkbox",
+            "id": "cus_cl",
+            "label": "Use custom heading color?",
+            "default": false
+          },
+          {
+            "type":"color",
+            "id":"cl",
+            "default": "#ec0101",
+            "label":"Heading color"
+          },
+          {
+            "type":"text",
+            "id":"lb",
+            "label":"Label text"
+          },
+          {
+            "type":"color",
+            "id":"lb_cl",
+            "label":"Label color"
+          }
+        ]
+      },
+      {
+        "type": "dropdown",
+        "name": "Dropdown Menu (lv 1)",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Heading",
+            "default": "Heading"
+          },
+         {
+            "type": "url",
+            "id": "url",
+            "label": "Link"
+         },
+          {
+            "type": "select",
+            "id": "open_link",
+            "options": [
+              {
+                "value": "_self",
+                "label": "Current window (_self)"
+              },
+             {
+                "value": "_blank",
+                "label": "New window (_blank)"
+              }
+            ],
+            "label": "Open link in"
+          },
+          {
+            "type": "link_list",
+            "id": "menu",
+            "label": "Add menu"
+          },
+          {
+            "id": "icon",
+            "type": "text",
+            "label": "Icon",
+            "info":"[Get icons Line awesome](https://icons8.com/line-awesome)"
+          },
+          {
+            "type": "checkbox",
+            "id": "cus_cl",
+            "label": "Use custom heading color?",
+            "default": false
+          },
+          {
+            "type":"color",
+            "id":"cl",
+            "default": "#ec0101",
+            "label":"Heading color"
+          },
+          {
+            "type":"text",
+            "id":"lb",
+            "label":"Label text"
+          },
+          {
+            "type":"color",
+            "id":"lb_cl",
+            "label":"Label color"
+          },
+          {
+            "type": "checkbox",
+            "id": "lazy_mn",
+            "label": "Enable Lazy menu?",
+            "info": "improve page load speed",
+            "default": true
+          },
+          {
+            "type": "select",
+            "id": "pos",
+            "options": [
+              {
+                "value": "right",
+                "label": "Right"
+              },
+              {
+                "value": "left",
+                "label": "Left"
+              }
+            ],
+            "label": "Position Submenu:"
+          }
+        ]
+      },
+      {
         "type": "mega",
         "name": "Mega Menu (Parent)",
         "settings": [
@@ -200,151 +348,87 @@
         ]
       },
       {
-        "type": "dropdown",
-        "name": "Dropdown Menu (lv 1)",
+        "type": "mmtitle",
+        "name":"Mega Menu Title (child)",
         "settings": [
           {
             "type": "text",
-            "id": "title",
-            "label": "Heading",
-            "default": "Heading"
+            "id": "mmtitle",
+            "label": "Mega Menu Title",
+            "default": "Mega Menu Title"
           },
-         {
-            "type": "url",
+          {
+            "label": "Link to (Optional)",
             "id": "url",
-            "label": "Link"
-         },
-          {
-            "type": "select",
-            "id": "open_link",
-            "options": [
-              {
-                "value": "_self",
-                "label": "Current window (_self)"
-              },
-             {
-                "value": "_blank",
-                "label": "New window (_blank)"
-              }
-            ],
-            "label": "Open link in"
+            "type": "url"
           },
-          {
-            "type": "link_list",
-            "id": "menu",
-            "label": "Add menu"
-          },
-          {
-            "id": "icon",
-            "type": "text",
-            "label": "Icon",
-            "info":"[Get icons Line awesome](https://icons8.com/line-awesome)"
-          },
-          {
-            "type": "checkbox",
-            "id": "cus_cl",
-            "label": "Use custom heading color?",
-            "default": false
-          },
-          {
-            "type":"color",
-            "id":"cl",
-            "default": "#ec0101",
-            "label":"Heading color"
-          },
-          {
-            "type":"text",
-            "id":"lb",
-            "label":"Label text"
-          },
-          {
-            "type":"color",
-            "id":"lb_cl",
-            "label":"Label color"
-          },
-          {
-            "type": "checkbox",
-            "id": "lazy_mn",
-            "label": "Enable Lazy menu?",
-            "info": "improve page load speed",
-            "default": true
-          },
-          {
-            "type": "select",
-            "id": "pos",
-            "options": [
-              {
-                "value": "right",
-                "label": "Right"
-              },
-              {
-                "value": "left",
-                "label": "Left"
-              }
-            ],
-            "label": "Position Submenu:"
-          }
-        ]
-      },
-      {
-        "type": "simple",
-        "name":"Item no children (lv 1)",
-        "settings": [
-          {
-            "type": "text",
-            "id": "title",
-            "label": "Heading",
-            "default": "Heading"
-          },
-         {
-            "type": "url",
-            "id": "url",
-            "label": "Link",
-            "default": "/"
-         },
-          {
-            "type": "select",
-            "id": "open_link",
-            "options": [
-              {
-                "value": "_self",
-                "label": "Current window (_self)"
-              },
-             {
-                "value": "_blank",
-                "label": "New window (_blank)"
-              }
-            ],
-            "label": "Open link in"
-          },
-          {
-            "id": "icon",
-            "type": "text",
-            "label": "Icon",
-            "info":"[Get icons Line awesome](https://icons8.com/line-awesome)"
-          },
-          {
-            "type": "checkbox",
-            "id": "cus_cl",
-            "label": "Use custom heading color?",
-            "default": false
-          },
-          {
-            "type":"color",
-            "id":"cl",
-            "default": "#ec0101",
-            "label":"Heading color"
-          },
-          {
-            "type":"text",
-            "id":"lb",
-            "label":"Label text"
-          },
-          {
-            "type":"color",
-            "id":"lb_cl",
-            "label":"Label color"
-          }
+            {
+              "type": "select",
+              "id": "open_link",
+              "options": [
+                {
+                  "value": "_self",
+                  "label": "Current window (_self)"
+                },
+               {
+                  "value": "_blank",
+                  "label": "New window (_blank)"
+                }
+              ],
+              "label": "Open link in"
+            },
+           {
+          "type": "select",
+          "id": "col",
+          "default": "4",
+          "options": [
+            {
+              "value": "1",
+              "label": "1/12 (8.333333%)"
+            },
+            {
+              "value": "2",
+              "label": "2/12 (16.666667%)"
+            },
+            {
+              "value": "3",
+              "label": "3/12 (25%)"
+            },
+            {
+              "value": "4",
+              "label": "4/12 (33.333333%)"
+            },
+            {
+              "value": "6",
+              "label": "6/12 (50%)"
+            },
+            {
+              "value": "7",
+              "label": "7/12 (58.333333%)"
+            },
+            {
+              "value": "8",
+              "label": "8/12 (66.666667%)"
+            },
+            {
+              "value": "9",
+              "label": "9/12 (75%)"
+            },
+            {
+              "value": "10",
+              "label": "10/12 (83.333333%)"
+            },
+            {
+              "value": "11",
+              "label": "11/12 (91.666667%)"
+            },
+            {
+              "value": "12",
+              "label": "12/12 (100%)"
+            }
+          ],
+          "label": "Width col:"
+         }
         ]
       },
       {
@@ -495,90 +579,6 @@
             "info": "Leave empty to use 'collection title' title."
           },
          {
-          "type": "select",
-          "id": "col",
-          "default": "4",
-          "options": [
-            {
-              "value": "1",
-              "label": "1/12 (8.333333%)"
-            },
-            {
-              "value": "2",
-              "label": "2/12 (16.666667%)"
-            },
-            {
-              "value": "3",
-              "label": "3/12 (25%)"
-            },
-            {
-              "value": "4",
-              "label": "4/12 (33.333333%)"
-            },
-            {
-              "value": "6",
-              "label": "6/12 (50%)"
-            },
-            {
-              "value": "7",
-              "label": "7/12 (58.333333%)"
-            },
-            {
-              "value": "8",
-              "label": "8/12 (66.666667%)"
-            },
-            {
-              "value": "9",
-              "label": "9/12 (75%)"
-            },
-            {
-              "value": "10",
-              "label": "10/12 (83.333333%)"
-            },
-            {
-              "value": "11",
-              "label": "11/12 (91.666667%)"
-            },
-            {
-              "value": "12",
-              "label": "12/12 (100%)"
-            }
-          ],
-          "label": "Width col:"
-         }
-        ]
-      },
-      {
-        "type": "mmtitle",
-        "name":"Mega Menu Title (child)",
-        "settings": [
-          {
-            "type": "text",
-            "id": "mmtitle",
-            "label": "Mega Menu Title",
-            "default": "Mega Menu Title"
-          },
-          {
-            "label": "Link to (Optional)",
-            "id": "url",
-            "type": "url"
-          },
-            {
-              "type": "select",
-              "id": "open_link",
-              "options": [
-                {
-                  "value": "_self",
-                  "label": "Current window (_self)"
-                },
-               {
-                  "value": "_blank",
-                  "label": "New window (_blank)"
-                }
-              ],
-              "label": "Open link in"
-            },
-           {
           "type": "select",
           "id": "col",
           "default": "4",
