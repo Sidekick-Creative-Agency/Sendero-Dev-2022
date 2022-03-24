@@ -37,7 +37,7 @@
 </div></div>
 
   {%- style -%}.h__top {min-height:{{se_stts.height}}px;font-size:{{se_stts.fontsize}}px;}
-  {%- if settings.h_transparent and settings.header_design != '7' and settings.h_tr_top and template.name == 'index' -%}
+  {%- if settings.h_transparent and settings.header_design != '7' and settings.h_tr_top -%}
   {%- assign bg_op = se_stts.bg_op_tr | divided_by: 100.0 -%}.h__top,.h__top.bgbl { background-color: {{ se_stts.bg_tr | color_modify: 'alpha', bg_op }};{% if se_stts.show_border_tr %}border-bottom: 1px solid {{ se_stts.bd_cl_tr }};{% endif %};color:{{se_stts.cl_tr}} } .header-text >.cg,.h__top .nt_currency,.h__top .nt-social .cb { color:{{se_stts.cl_tr}}  } .h__top .cr { color:{{se_stts.cl_cr_tr}}  } .header-text >a:not(.cg),.dark_mode_true .header-text>a:not(.cg) { color:{{se_stts.cl_a_tr}}  } 
   {%- else -%}
   {%- assign bg_op = se_stts.bg_op | divided_by: 100.0 -%}h__top,.h__top.bgbl { background-color: {{ se_stts.bg | color_modify: 'alpha', bg_op }};{% if se_stts.show_border %}border-bottom: 1px solid {{ se_stts.bd_cl }};{% endif %}color:{{se_stts.cl}} } .header-text >.cg,.h__top .nt_currency,.h__top .nt-social .cb { color:{{se_stts.cl}}  } .h__top .cr { color:{{se_stts.cl_cr}}  } .header-text >a:not(.cg),.dark_mode_true .header-text>a:not(.cg) { color:{{se_stts.cl_a}}  } 
