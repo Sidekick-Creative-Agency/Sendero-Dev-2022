@@ -469,6 +469,8 @@
             "type": "mmtitle",
             "settings": {
               "mmtitle": "Hats",
+              "url": "shopify:\/\/collections\/hats",
+              "open_link": "_self",
               "col": "2"
             }
           },
@@ -535,6 +537,8 @@
             "type": "mmtitle",
             "settings": {
               "mmtitle": "Mega Menu Title",
+              "url": "",
+              "open_link": "_self",
               "col": "3"
             }
           },
