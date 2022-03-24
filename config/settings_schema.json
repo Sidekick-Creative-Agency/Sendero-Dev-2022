@@ -290,6 +290,24 @@
             { "type": "checkbox", "id": "full_header", "info": "Make header full width", "label": "Full Width?", "default": true },
             { "type": "checkbox", "id": "sticky_header", "info": "Enable/disable sticky header option, not working with header design 7", "label": "Sticky Header", "default": true },
             { "type": "checkbox", "id": "scroll_header", "info": "Enable/disable hide sticky header on Scroll Down?", "label": "Hide Sticky Header on Scroll", "default": true },
+            // {
+            //     "type": "select",
+            //     "id": "header_design",
+            //     "options": [
+            //         { "value": "1", "label": "Header Design 1" },
+            //         { "value": "2", "label": "Header Design 2" },
+            //         { "value": "3", "label": "Header Design 3" },
+            //         { "value": "4", "label": "Header Design 4" },
+            //         { "value": "5", "label": "Header Design 5" },
+            //         { "value": "6", "label": "Header Design 6" },
+            //         { "value": "7", "label": "Header Design 7" },
+            //         { "value": "8", "label": "Header Design 8" },
+            //         { "value": "9", "label": "Header Design 9" },
+            //         { "value": "10", "label": "Header Design 10" }
+            //     ],
+            //     "label": "Header Design",
+            //     "default": "3"
+            // },
             { "type": "checkbox", "id": "h_transparent", "info": "Header transparent only active on homepage, not working with header design 7", "label": "Header transparent?", "default": false },
             { "type": "checkbox", "id": "h_tr_top", "info": "Header top transparent only active when header transparent active", "label": "Header Top transparent?", "default": false },
             { "type": "checkbox", "id": "h_chan_space", "info": "Only active on homepage and Header transparent enable, not working with header design 7", "label": "Header transparent Space?", "default": false },
