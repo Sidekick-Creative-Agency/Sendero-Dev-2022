@@ -57,12 +57,12 @@
     "logo_tr_retina": "shopify:\/\/shop_images\/header-logo-pad.png",
     "logo_tr_width": 350,
     "h_banner": true,
-    "h_topbar": false,
+    "h_topbar": true,
     "full_header": true,
     "sticky_header": true,
     "scroll_header": false,
     "h_transparent": true,
-    "h_tr_top": false,
+    "h_tr_top": true,
     "h_chan_space": false,
     "h_navmb": 62,
     "mb_cat": true,
@@ -1683,6 +1683,66 @@
           "image_ratio": "ratio_nt",
           "image_size": "nt_cover",
           "image_position": "8"
+        }
+      },
+      "article-sidebar": {
+        "type": "article-sidebar",
+        "blocks": {
+          "article-sidebar-0": {
+            "type": "category",
+            "settings": {
+              "title": "Blog Categories",
+              "cat_link_list": "",
+              "count": true
+            }
+          },
+          "article-sidebar-1": {
+            "type": "post",
+            "settings": {
+              "title": "Recent Post",
+              "blog": "",
+              "date": "date",
+              "limit": 3
+            }
+          },
+          "article-sidebar-2": {
+            "type": "instagram",
+            "settings": {
+              "title": "Instagram",
+              "acc2": "",
+              "limit": 9,
+              "open_link": "_blank",
+              "space": "2",
+              "rounded_ins": "0",
+              "col_pr": "4",
+              "col_pr_tb": "4",
+              "col_pr_mb": "4"
+            }
+          },
+          "article-sidebar-3": {
+            "type": "collection",
+            "settings": {
+              "title": "Sale Products",
+              "collection": "",
+              "limit": 3
+            }
+          },
+          "article-sidebar-4": {
+            "type": "tags",
+            "settings": {
+              "title": "Blog Tags",
+              "count": true
+            }
+          }
+        },
+        "block_order": [
+          "article-sidebar-0",
+          "article-sidebar-1",
+          "article-sidebar-2",
+          "article-sidebar-3",
+          "article-sidebar-4"
+        ],
+        "settings": {
         }
       }
     },
