@@ -7568,7 +7568,7 @@ background-position: 50% 50%;
       padding-left: 30px;
   }
   .calc_footer_sticky:not(.template-index) #nt_content {padding-bottom: 10px;}
-  .des_header_3 .col_group_btns {
+  .des_header_main .col_group_btns {
     min-width: 16.666667%;
   }
   .nt_action>a, .nt_action>div {
@@ -7682,7 +7682,7 @@ background-position: 50% 50%;
   .des_header_7 #nt_wrapper,.des_header_7 .sticky_atc_wrap,.des_header_7:not(.h_calc_ready) #shopify-section-header_banner {
     padding-left: 280px;
   }
-  .des_header_3.header_full_true .branding>a {margin-left:10px}
+  .des_header_main.header_full_true .branding>a {margin-left:10px}
   .header_7 {
       position: fixed;
       width: 280px;

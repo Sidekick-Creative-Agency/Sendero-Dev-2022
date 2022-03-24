@@ -445,8 +445,8 @@
           "bd_cl_tr": "#b3b3b3"
         }
       },
-      "header_3": {
-        "type": "header_3",
+      "header_main": {
+        "type": "header_main",
         "blocks": {
           "1585641227863": {
             "type": "mega",
