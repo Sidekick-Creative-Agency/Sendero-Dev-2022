@@ -519,7 +519,7 @@
           "922ef6d3-2b8a-4f62-84ae-f7944a9ba720": {
             "type": "mega",
             "settings": {
-              "title": "Shirts",
+              "title": "T-Shirts",
               "url": "shopify:\/\/collections\/shirts",
               "open_link": "_self",
               "icon": "",
@@ -536,7 +536,7 @@
           "7b5386c0-ea4e-468a-9810-a4ee8ae8f6e3": {
             "type": "mmtitle",
             "settings": {
-              "mmtitle": "Shirts",
+              "mmtitle": "T-Shirts",
               "url": "shopify:\/\/collections\/shirts",
               "open_link": "_self",
               "col": "2"
