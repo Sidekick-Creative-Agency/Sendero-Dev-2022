@@ -2889,9 +2889,10 @@ html.wf-fontawesome5free-n4-loading .fas:before {opacity: 0}
     color: #ededed;
   }
   .page-head h1 {
-    font-size: 20px;
+    font-size: 45px;
     line-height: 20px;
     font-weight: 500;
+    text-transform: uppercase;
   }
   .page-head:before {
     content: '';
