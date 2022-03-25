@@ -1,52 +1,5 @@
 {
   "sections": {
-    "16482359772b440f9c": {
-      "type": "image_text_overlay",
-      "blocks": {
-        "1648235977d5dc7271-0": {
-          "type": "1",
-          "settings": {
-            "title": "ADVENTURE ON BLOG",
-            "color": "#fff",
-            "fw_text": 500,
-            "fs_text": 45.5,
-            "lh_text": 0,
-            "ls_text": 0,
-            "fs_mb_text": 15,
-            "lh_mb_text": 0,
-            "ls_mb_text": 0
-          }
-        }
-      },
-      "block_order": [
-        "1648235977d5dc7271-0"
-      ],
-      "settings": {
-        "se_height": "cus_h",
-        "use_custom_h": "1",
-        "h_des": "400px",
-        "h_tb": "500px",
-        "h_mb": "350px",
-        "image": "shopify:\/\/shop_images\/ganapathy-kumar-L75D18aVal8-unsplash.jpg",
-        "use_pr": false,
-        "img_align": "center",
-        "caption_w": "2",
-        "cap_v_pos": 50,
-        "cap_h_pos": 50,
-        "txt_align": "tc_md",
-        "cap_v_pos_mb": 50,
-        "cap_h_pos_mb": 50,
-        "txt_align_mb": "tc",
-        "use_shadow": false,
-        "cl_overlay": "#393939",
-        "cl_opacity": 34,
-        "layout": "nt_full",
-        "mg": "50px,,50px,",
-        "pd": "",
-        "mg_mb": "",
-        "pd_mb": ""
-      }
-    },
     "blog-heading": {
       "type": "blog-heading",
       "blocks": {
@@ -55,24 +8,18 @@
           "settings": {
             "color": "#ffffff"
           }
-        },
-        "a6881cf8-9db3-4fc2-80c0-5d5acc6bf6ed": {
-          "type": "2",
-          "settings": {
-            "color": "#ededed"
-          }
         }
       },
       "block_order": [
-        "c32e1213-b35d-4cab-a4dc-b59deef433e3",
-        "a6881cf8-9db3-4fc2-80c0-5d5acc6bf6ed"
+        "c32e1213-b35d-4cab-a4dc-b59deef433e3"
       ],
       "settings": {
-        "shown": false,
+        "shown": true,
+        "image": "shopify:\/\/shop_images\/ganapathy-kumar-L75D18aVal8-unsplash.jpg",
         "parallax": false,
         "color": "#000000",
-        "overlay": 54,
-        "padding": 50,
+        "overlay": 40,
+        "padding": 100,
         "paddingmb": 50,
         "bg_pos": "center center",
         "bg_repeat": "no-repeat",
@@ -149,7 +96,6 @@
     }
   },
   "order": [
-    "16482359772b440f9c",
     "blog-heading",
     "blog-slider",
     "main"
