@@ -543,7 +543,7 @@ background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w
 
 {% endif %}
 
-{% if settings.h_transparent and des_header != '7' and template.name == 'blog' or template.name == 'article' or template.name == 'index' %}
+{% if template.name == 'blog' or template.name == 'article' or template.name == 'index' %}
   {% assign opnavtr = settings.opnavtr | divided_by: 100.0 %}
     .h_transparent_true .ntheader:not(.live_stuck) .push-menu-btn>svg {fill: {{ clnavtr | color_modify: 'alpha', 0.8 }} }
     .h_transparent_true .ntheader:not(.live_stuck) .sp_header_mid { background-color: {{ settings.bgnavtr | color_modify: 'alpha', opnavtr }} }
