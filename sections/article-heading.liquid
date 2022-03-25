@@ -23,7 +23,7 @@
        <div class="container pr z_100">
           {%- for block in se_bks -%}
             {%- case block.type -%}
-             {%- when '1' -%}<h1 class="tu cw mb__10" style="color:{{block.settings.color}}">{{ article.title }}</h1>
+             {%- when '1' -%}<h1 class="tu cw mb__10" style="color:{{block.settings.color}}">{{ blog.title }}</h1>
              {%- when '2' -%}<time class="entry-date published updated f__libre" datetime="{{ article.published_at }}" style="color:{{block.settings.color}}">{{ article.published_at | date: format: 'date' }}</time>
              {%- else -%}<div class="pr mt__10" style="color:{{block.settings.color}}"><span>{{ 'blogs.article.in' | t }} <a href="{{ blog.url }}" rel="category tag">{{ blog.title }}</a> </span><span class="comment-number pr"><a href="{{ article.url }}{{cm_link}}">{{ 'blogs.comments.with_count' | t: count: article.comments_count }}</a></span></div>
             {%- endcase -%}
