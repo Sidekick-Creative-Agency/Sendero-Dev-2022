@@ -64,7 +64,7 @@
     font-size:12px;
 }
 
-.h_transparent_true .ntheader:not(.live_stuck) .nt_menu .type_mega .sub-menu {
+.h_transparent_true.template-index .ntheader:not(.live_stuck) .nt_menu .type_mega .sub-menu {
     top:-80px;
     padding-top: 170px;
 }

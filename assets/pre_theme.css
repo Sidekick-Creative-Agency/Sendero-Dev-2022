@@ -2682,10 +2682,10 @@ html.wf-fontawesome5free-n4-loading .fas:before {opacity: 0}
   .menu_wid_full .sub-menu, .menu_wid_full .sub-menu.lazyloadt4sed {width: 100vw;padding: 10px 20px}
   .menu_wid_12 .sub-menu, .menu_wid_12 .sub-menu.lazyloadt4sed {width: 1200px}
   .menu_wid_full .container {max-width: 100%}
-/*   .h_transparent_true #ntheader {
+/*   .h_transparent_true.template-index #ntheader {
     height: auto !important;
   } */
-  .h_transparent_true #ntheader .ntheader_wrapper {
+  .h_transparent_true.template-index #ntheader .ntheader_wrapper {
       position: absolute;
       top: 0;
       right: 0;
@@ -7552,18 +7552,18 @@ background-position: 50% 50%;
       background-position: 50% 0;
   } */
 @media (min-width: 1025px) {
-  .h_chan_space_true.header_full_false.h_transparent_true  .ntheader:not(.live_stuck) .ntheader_wrapper {
+  .h_chan_space_true.header_full_false.h_transparent_true.template-index  .ntheader:not(.live_stuck) .ntheader_wrapper {
       max-width: 1170px;
       margin-left: auto;
       margin-right: auto;
       box-shadow: none !important;
   }
-  .h_chan_space_true.header_full_false.h_transparent_true  .ntheader:not(.live_stuck) .ntheader_wrapper:before {
+  .h_chan_space_true.header_full_false.h_transparent_true.template-index  .ntheader:not(.live_stuck) .ntheader_wrapper:before {
       content: "";
       display: block;
       height: 30px;
   }
-  .h_chan_space_true.header_full_false.h_transparent_true .ntheader:not(.live_stuck) .sp_header_mid .header__mid>.container {
+  .h_chan_space_true.header_full_false.h_transparent_true.template-index .ntheader:not(.live_stuck) .sp_header_mid .header__mid>.container {
       padding-right: 30px;
       padding-left: 30px;
   }
@@ -7606,7 +7606,7 @@ background-position: 50% 50%;
     margin: 0 auto;
   }
   .wrapper_boxed #ntheader .ntheader_wrapper,
-  .wrapper_boxed.h_transparent_true #ntheader .ntheader_wrapper {
+  .wrapper_boxed.h_transparent_true.template-index #ntheader .ntheader_wrapper {
       left: auto;
       right: auto;
       width: 100vw;

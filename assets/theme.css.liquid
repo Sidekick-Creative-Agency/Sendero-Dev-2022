@@ -545,31 +545,31 @@ background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w
 
 {% if settings.h_transparent and des_header != '7' %}
   {% assign opnavtr = settings.opnavtr | divided_by: 100.0 %}
-    .h_transparent_true .ntheader:not(.live_stuck) .push-menu-btn>svg {fill: {{ clnavtr | color_modify: 'alpha', 0.8 }} }
-    .h_transparent_true .ntheader:not(.live_stuck) .sp_header_mid { background-color: {{ settings.bgnavtr | color_modify: 'alpha', opnavtr }} }
-    .h_transparent_true .ntheader:not(.live_stuck) .nt_menu>li>a,
-    .h_transparent_true .ntheader:not(.live_stuck) .nt_action>a,
-    .h_transparent_true .ntheader:not(.live_stuck) .nt_action .ssw-topauth .push_side,
-    .h_transparent_true .ntheader:not(.live_stuck) .nt_action>div>a,
-    .h_transparent_true .ntheader:not(.live_stuck) .sp_header_mid .nt-social a,
-    .h_transparent_true .ntheader:not(.live_stuck) .cus_txt_h,
-    .h_transparent_true .ntheader:not(.live_stuck) .header_categories,
-    .h_transparent_true .ntheader:not(.live_stuck) .header_search input.search__input,
-    .h_transparent_true .ntheader:not(.live_stuck) .js_cat_ttprice,
-    .h_transparent_true .ntheader:not(.live_stuck) .branding>a {
+    .h_transparent_true.template-index .ntheader:not(.live_stuck) .push-menu-btn>svg {fill: {{ clnavtr | color_modify: 'alpha', 0.8 }} }
+    .h_transparent_true.template-index .ntheader:not(.live_stuck) .sp_header_mid { background-color: {{ settings.bgnavtr | color_modify: 'alpha', opnavtr }} }
+    .h_transparent_true.template-index .ntheader:not(.live_stuck) .nt_menu>li>a,
+    .h_transparent_true.template-index .ntheader:not(.live_stuck) .nt_action>a,
+    .h_transparent_true.template-index .ntheader:not(.live_stuck) .nt_action .ssw-topauth .push_side,
+    .h_transparent_true.template-index .ntheader:not(.live_stuck) .nt_action>div>a,
+    .h_transparent_true.template-index .ntheader:not(.live_stuck) .sp_header_mid .nt-social a,
+    .h_transparent_true.template-index .ntheader:not(.live_stuck) .cus_txt_h,
+    .h_transparent_true.template-index .ntheader:not(.live_stuck) .header_categories,
+    .h_transparent_true.template-index .ntheader:not(.live_stuck) .header_search input.search__input,
+    .h_transparent_true.template-index .ntheader:not(.live_stuck) .js_cat_ttprice,
+    .h_transparent_true.template-index .ntheader:not(.live_stuck) .branding>a {
       color: {{ clnavtr | color_modify: 'alpha', 1 }}
     }
-    .h_transparent_true .ntheader:not(.live_stuck) .nt_menu >li.has-children>a>i {
+    .h_transparent_true.template-index .ntheader:not(.live_stuck) .nt_menu >li.has-children>a>i {
       color: {{ clnavtr | color_modify: 'alpha', 0.8 }}
     }
-    .h_transparent_true .ntheader:not(.live_stuck) .nt_menu >li.has-children>a:after {
+    .h_transparent_true.template-index .ntheader:not(.live_stuck) .nt_menu >li.has-children>a:after {
       color: {{ clnavtr | color_modify: 'alpha', 0.45 }}
     }
-    .h_transparent_true .ntheader:not(.live_stuck) .header_search input.search__input,
-    .h_transparent_true .ntheader:not(.live_stuck) .header_search input.search__input:focus { background-color:transparent;border-color: {{ clnavtr | color_modify: 'alpha', 0.45 }} }
+    .h_transparent_true.template-index .ntheader:not(.live_stuck) .header_search input.search__input,
+    .h_transparent_true.template-index .ntheader:not(.live_stuck) .header_search input.search__input:focus { background-color:transparent;border-color: {{ clnavtr | color_modify: 'alpha', 0.45 }} }
 
-    .h_transparent_true .ntheader:not(.live_stuck) .nt_menu>li>a:hover, .h_transparent_true .ntheader:not(.live_stuck) .nt_action>a:hover, .h_transparent_true .ntheader:not(.live_stuck) .nt_action>div>a:hover,.h_transparent_true .ntheader:not(.live_stuck) .nt_action .ssw-topauth .push_side:hover,
-    .h_transparent_true .ntheader:not(.live_stuck) .nt_menu>li>a:focus, .h_transparent_true .ntheader:not(.live_stuck) .nt_action>a:focus, .h_transparent_true .ntheader:not(.live_stuck) .nt_action>div>a:focus,.h_transparent_true .ntheader:not(.live_stuck) .nt_action .ssw-topauth .push_side:focus {
+    .h_transparent_true.template-index .ntheader:not(.live_stuck) .nt_menu>li>a:hover, .h_transparent_true.template-index .ntheader:not(.live_stuck) .nt_action>a:hover, .h_transparent_true.template-index .ntheader:not(.live_stuck) .nt_action>div>a:hover,.h_transparent_true.template-index .ntheader:not(.live_stuck) .nt_action .ssw-topauth .push_side:hover,
+    .h_transparent_true.template-index .ntheader:not(.live_stuck) .nt_menu>li>a:focus, .h_transparent_true.template-index .ntheader:not(.live_stuck) .nt_action>a:focus, .h_transparent_true.template-index .ntheader:not(.live_stuck) .nt_action>div>a:focus,.h_transparent_true.template-index .ntheader:not(.live_stuck) .nt_action .ssw-topauth .push_side:focus {
       color: {{clnavtr_hover}} !important;
     }
 {% endif %}
