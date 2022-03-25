@@ -18,10 +18,10 @@
   if t_name != 'index' 
     assign h_transparent = false
   endif
-  if t_name == 'blog' 
+  if template.name == 'blog' 
     assign h_transparent = settings.h_transparent
   endif
-  if t_name == 'article' 
+  if template.name == 'article' 
     assign h_transparent = settings.h_transparent
   endif
   assign h__bgimg = settings.h__bgimg -%}
