@@ -10,7 +10,7 @@
     assign lg_w_1 = lg_w | plus:40 | append:'x'
     assign logom = settings.logo_mb | default:logo
     assign logom_retina = settings.logo_mb_retina | default:logom 
-    if template.name == 'index' and settings.h_transparent and settings.header_design != '7'
+    if settings.h_transparent and settings.header_design != '7'
        assign svg = settings.logo_tr_svg | default:svg
 	   assign logo = settings.logo_tr | default:logo
 	   assign logo_retina = settings.logo_tr_retina | default:logo
