@@ -18,6 +18,12 @@
   if t_name != 'index' 
     assign h_transparent = false
   endif
+  if t_name == 'blog' 
+    assign h_transparent = settings.h_transparent
+  endif
+  if t_name == 'article' 
+    assign h_transparent = settings.h_transparent
+  endif
   assign h__bgimg = settings.h__bgimg -%}
 
 <header id="ntheader" class="ntheader header_{{des_header}} h_icon_{{settings.h_icon}}{% if h__bgimg != blank and des_header == '7' %} lazyloadt4s h__lz_img" data-bgset="{{ h__bgimg | img_url: '1x1' }}" data-ratio="{{h__bgimg.aspect_ratio}}" data-sizes="auto"{% else %}"{% endif %}>
