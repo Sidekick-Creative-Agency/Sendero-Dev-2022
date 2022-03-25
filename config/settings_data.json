@@ -448,32 +448,6 @@
       "header_main": {
         "type": "header_main",
         "blocks": {
-          "1c7b4546-24e2-4b6e-94d4-3435557ce99a": {
-            "type": "mega",
-            "settings": {
-              "title": "Spring 2022",
-              "url": "shopify:\/\/collections\/collection",
-              "open_link": "_self",
-              "icon": "",
-              "cus_cl": false,
-              "cl": "#ec0101",
-              "lb": "",
-              "lb_cl": "",
-              "lazy_mn": true,
-              "pos": "default",
-              "wid": "full",
-              "cus_wid": 1200
-            }
-          },
-          "570529be-599c-4b82-8bc1-f2a44b2e99e2": {
-            "type": "mmtitle",
-            "settings": {
-              "mmtitle": "Spring 2022",
-              "url": "shopify:\/\/collections\/collection",
-              "open_link": "_self",
-              "col": "4"
-            }
-          },
           "1585641227863": {
             "type": "mega",
             "settings": {
@@ -608,11 +582,25 @@
               "title": "",
               "col": "3"
             }
+          },
+          "bf06875c-82c0-441e-8fc7-a6bffd852daf": {
+            "type": "dropdown",
+            "settings": {
+              "title": "Brand",
+              "url": "",
+              "open_link": "_self",
+              "menu": "main-menu",
+              "icon": "",
+              "cus_cl": false,
+              "cl": "#ec0101",
+              "lb": "",
+              "lb_cl": "",
+              "lazy_mn": true,
+              "pos": "right"
+            }
           }
         },
         "block_order": [
-          "1c7b4546-24e2-4b6e-94d4-3435557ce99a",
-          "570529be-599c-4b82-8bc1-f2a44b2e99e2",
           "1585641227863",
           "bc349ccd-7167-466b-aab8-2c2534a91320",
           "3237df59-19be-4aea-b04a-b0f1e8c10f56",
@@ -624,7 +612,8 @@
           "33a8f26b-80ee-4107-8d43-d3d39fab6036",
           "61fda3d2-5725-4d65-8f36-62eee9e6b1cc",
           "9334ad88-4bc9-428e-af30-263554dfa4d9",
-          "2fcd5a05-92d0-4592-9d18-1e578f0c8323"
+          "2fcd5a05-92d0-4592-9d18-1e578f0c8323",
+          "bf06875c-82c0-441e-8fc7-a6bffd852daf"
         ],
         "settings": {
           "height": 60,
@@ -1683,6 +1672,66 @@
           "image_ratio": "ratio_nt",
           "image_size": "nt_cover",
           "image_position": "8"
+        }
+      },
+      "article-sidebar": {
+        "type": "article-sidebar",
+        "blocks": {
+          "article-sidebar-0": {
+            "type": "category",
+            "settings": {
+              "title": "Blog Categories",
+              "cat_link_list": "",
+              "count": true
+            }
+          },
+          "article-sidebar-1": {
+            "type": "post",
+            "settings": {
+              "title": "Recent Post",
+              "blog": "",
+              "date": "date",
+              "limit": 3
+            }
+          },
+          "article-sidebar-2": {
+            "type": "instagram",
+            "settings": {
+              "title": "Instagram",
+              "acc2": "",
+              "limit": 9,
+              "open_link": "_blank",
+              "space": "2",
+              "rounded_ins": "0",
+              "col_pr": "4",
+              "col_pr_tb": "4",
+              "col_pr_mb": "4"
+            }
+          },
+          "article-sidebar-3": {
+            "type": "collection",
+            "settings": {
+              "title": "Sale Products",
+              "collection": "",
+              "limit": 3
+            }
+          },
+          "article-sidebar-4": {
+            "type": "tags",
+            "settings": {
+              "title": "Blog Tags",
+              "count": true
+            }
+          }
+        },
+        "block_order": [
+          "article-sidebar-0",
+          "article-sidebar-1",
+          "article-sidebar-2",
+          "article-sidebar-3",
+          "article-sidebar-4"
+        ],
+        "settings": {
         }
       }
     },

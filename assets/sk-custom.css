@@ -64,10 +64,6 @@
     font-size:12px;
 }
 
-.nt_menu>li .sub-menu {
-    z-index:-2;
-}
-
 .h_transparent_true.template-index .ntheader:not(.live_stuck) .nt_menu .type_mega .sub-menu {
     top:-80px;
     padding-top: 170px;
@@ -79,6 +75,7 @@
     padding-bottom: 20px;
     box-shadow: none;
     -webkit-box-shadow: none;
+    z-index:-2;
 }
 
 .nt_menu .sub-menu .sub-column-item {
