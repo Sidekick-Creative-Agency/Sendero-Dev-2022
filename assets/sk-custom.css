@@ -69,6 +69,16 @@
     padding-top: 170px;
 }
 
+.h_transparent_true.template-blog .ntheader:not(.live_stuck) .nt_menu .type_mega .sub-menu {
+    top:-80px;
+    padding-top: 170px;
+}
+
+.h_transparent_true.template-article .ntheader:not(.live_stuck) .nt_menu .type_mega .sub-menu {
+    top:-80px;
+    padding-top: 170px;
+}
+
 .nt_menu .type_mega .sub-menu {
     background: #000;
     padding-top: 20px;
