@@ -19,16 +19,6 @@
             "review_liquid": ""
           }
         },
-        "des": {
-          "type": "des",
-          "settings": {
-            "des": "2",
-            "text": "",
-            "length": 31,
-            "readm": false,
-            "readm_txt": "Read more"
-          }
-        },
         "frm": {
           "type": "frm",
           "settings": {
@@ -61,12 +51,22 @@
         "meta": {
           "type": "meta",
           "settings": {
-            "show_pr_vendor": true,
-            "show_sku": true,
+            "show_pr_vendor": false,
+            "show_sku": false,
             "show_barcode": false,
             "show_available": true,
-            "show_category_product": true,
-            "show_tag_product": true
+            "show_category_product": false,
+            "show_tag_product": false
+          }
+        },
+        "des": {
+          "type": "des",
+          "settings": {
+            "des": "1",
+            "text": "",
+            "length": 31,
+            "readm": true,
+            "readm_txt": "Read more"
           }
         },
         "social": {
@@ -79,10 +79,10 @@
       "block_order": [
         "title",
         "pricereview",
-        "des",
         "frm",
         "size",
         "meta",
+        "des",
         "social"
       ],
       "settings": {
