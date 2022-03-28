@@ -62,9 +62,9 @@
         "des": {
           "type": "des",
           "settings": {
-            "des": "1",
+            "des": "2",
             "text": "",
-            "length": 31,
+            "length": 45,
             "readm": true,
             "readm_txt": "Read more"
           }
