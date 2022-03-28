@@ -118,25 +118,17 @@
           "settings": {
             "title": "Additional Information"
           }
-        },
-        "rivui": {
-          "type": "rivui",
-          "settings": {
-            "title": "Reviews",
-            "review_liquid": ""
-          }
         }
       },
       "block_order": [
         "des",
-        "add",
-        "rivui"
+        "add"
       ],
       "settings": {
         "des_pr_design": "1",
         "show": true,
-        "bgcl": "#fff",
-        "bgclmb": "#fff",
+        "bgcl": "#ffffff",
+        "bgclmb": "#ffffff",
         "des_w": "1",
         "des_mb": "2",
         "auto": true,
