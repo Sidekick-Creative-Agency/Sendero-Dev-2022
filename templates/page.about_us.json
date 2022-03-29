@@ -1,1 +1,54 @@
-{"sections":{"heading":{"type":"us_heading","blocks":{"89b1a94e-2cf5-4075-a6af-0969fbaeae2c":{"type":"1","settings":{}}},"block_order":["89b1a94e-2cf5-4075-a6af-0969fbaeae2c"],"settings":{}},"main":{"type":"page_about_us","settings":{}}},"order":["heading","main"]}
+{
+  "sections": {
+    "heading": {
+      "type": "us_heading",
+      "blocks": {
+        "89b1a94e-2cf5-4075-a6af-0969fbaeae2c": {
+          "type": "1",
+          "settings": {
+            "title": "ABOUT US",
+            "color": "#fff"
+          }
+        }
+      },
+      "block_order": [
+        "89b1a94e-2cf5-4075-a6af-0969fbaeae2c"
+      ],
+      "settings": {
+        "parallax": false,
+        "color": "#000",
+        "overlay": 54,
+        "padding": 50,
+        "paddingmb": 50,
+        "bg_pos": "center center",
+        "bg_repeat": "no-repeat",
+        "bg_size": "cover",
+        "bg_att": "scroll"
+      }
+    },
+    "main": {
+      "type": "page_about_us",
+      "blocks": {
+        "dac4c0d6-1046-4a8d-a446-59405e5773de": {
+          "type": "1",
+          "settings": {
+            "title": "OUR ROOTS",
+            "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam.",
+            "al": "txtn",
+            "cl": "6",
+            "cl_mb": "12"
+          }
+        }
+      },
+      "block_order": [
+        "dac4c0d6-1046-4a8d-a446-59405e5773de"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "heading",
+    "main"
+  ]
+}
