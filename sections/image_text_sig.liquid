@@ -2,6 +2,7 @@
   assign sid = section.id
   assign se_stts = section.settings
   assign img_ratio = se_stts.image_ratio 
+  assign img = blocks.settings.image
   assign ck = false 
  if img_ratio == 'auto' 
   assign ck = true 
@@ -21,10 +22,10 @@
   <div class="nt_img_txt oh pr middle center">
     {%- comment -%}<a href="{{ url | default:'#' }}" class="db">{%- endcomment -%}
       {%- if image != blank -%}
-      {%- comment -%}  <div class="nt_bg_lz lazyloadt4s item__position {{se_stts.img_align}}" data-bgset="{{ image | img_url: '1x1' }}" data-sizes="auto" data-ratio="{{image.aspect_ratio}}" data-parent-fit="cover" style="padding-top:{{ 1 | divided_by: image.aspect_ratio | times: 100}}%;"></div>
+        <div class="nt_bg_lz lazyloadt4s item__position {{se_stts.img_align}}" data-bgset="{{ image | img_url: '1x1' }}" data-sizes="auto" data-ratio="{{image.aspect_ratio}}" data-parent-fit="cover" style="padding-top:{{ 1 | divided_by: image.aspect_ratio | times: 100}}%;"></div>
       {%- else -%}
         <div class="nt_bg_lz lazyloadt4s item__position {{se_stts.img_align}}" data-bg="{{ 'placeholder.jpg' | asset_url }}" style="padding-top: 111.1111111111111%;"></div>
-    {%- endcomment -%} 
+
     {%- endif -%}
     
     {%- comment -%}</a>{%- endcomment -%}
@@ -38,7 +39,9 @@
       <div class="flex column pl__20 pr__20 pb__20 pt__20 shadow_wrap {{se_stts.txt_align}} {{cl_arr[1]}}">
           <h3 class="mb__20 mt__0 fs__{{fs_arr[0]}} {{cl_arr[0]}} lh__1">{{se_stts.title}}</h3>
           {{se_stts.text}}
-          {%- if url != blank and se_stts.button_label -%}<p class="mg__0"><a class="button {{cl_arr[2]}}" href="{{url}}" target="{{se_stts.open_link}}">{{se_stts.button_label}}</a></p>{%- endif -%}
+        	{%- if img != null -%}
+          	{%- if url != blank and se_stts.button_label -%}<p class="mg__0"><a class="button {{cl_arr[2]}}" href="{{url}}" target="{{se_stts.open_link}}">{{se_stts.button_label}}</a></p>{%- endif -%}
+    	 {%- endif -%}
       </div>
       <div class="mb__15 about_us_sig tc" {{ block.shopify_attributes }}><img class="lazyloadt4s lz_op_ef"{% if image != blank %} {% assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20{{image.width}}%20{{image.height}}%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="{{ img_url }}" data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-sizes="auto" style="max-width:{{image.width}}px"{% else %} src="//cdn.shopify.com/s/files/1/0259/8538/4520/files/signature_150x.png?v=1572830297"{% endif %} alt="{{image.alt | escape}}"></div>
     </div>
