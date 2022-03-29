@@ -44,8 +44,8 @@
          {%- if url != blank and se_stts.button_label -%}<p class="mg__0"><a class="button {{cl_arr[2]}}" href="{{url}}" target="{{se_stts.open_link}}">{{se_stts.button_label}}</a></p>{%- endif -%}
    		 <div class="mg__0 pl__20 pr__20 pb__20 pt__20 about_us_sig tc" style="text-align: left;" {{ block.shopify_attributes }}><img  class="lazyloadt4s lz_op_ef"{% if img != blank %} {% assign img_url = img | img_url: '1x1' %}src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20{{img.width}}%20{{img.height}}%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="{{ img_url }}" data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-sizes="auto" style="min-width: 90px; max-width:{{img.width}}px"{% else %} src="//cdn.shopify.com/s/files/1/0259/8538/4520/files/signature_150x.png?v=1572830297"{% endif %} alt="{{img.alt | escape}}"></div>	
     {%- endif -%} 
-     	<h4 class="mg__0 {{fs_arr[0]}} {{cl_arr[0]}} lh__1">{{se_stts.title}}</h4>
-    	<h5 class="mg__0 {{fs_arr[0]}} {{cl_arr[0]}} lh__1">{{se_stts.title}}</h5>
+     	<h4 class="mg__0 pl__20 {{fs_arr[0]}} {{cl_arr[0]}} lh__1">{{se_stts.sig_title}}</h4>
+    	<h5 class="mg__0 pl__20 {{fs_arr[0]}} {{cl_arr[0]}} lh__1">{{se_stts.sig_sub_title}}</h5>
     </div>
     
     
@@ -77,7 +77,7 @@
 		 "label": "Image Your signature"
        },
 	  {
-         "type": "text",
+        "type": "text",
 		"id": "sig_title",
 		"label": "Name",
 		"default":"Some Name"
