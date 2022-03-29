@@ -1,1 +1,287 @@
-{"sections":{"heading":{"type":"us_heading","blocks":{"89b1a94e-2cf5-4075-a6af-0969fbaeae2c":{"type":"1","settings":{}}},"block_order":["89b1a94e-2cf5-4075-a6af-0969fbaeae2c"],"settings":{}},"main":{"type":"page_about_us","settings":{}}},"order":["heading","main"]}
+{
+  "sections": {
+    "heading": {
+      "type": "us_heading",
+      "blocks": {
+        "89b1a94e-2cf5-4075-a6af-0969fbaeae2c": {
+          "type": "1",
+          "settings": {
+            "title": "ABOUT US",
+            "color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "89b1a94e-2cf5-4075-a6af-0969fbaeae2c"
+      ],
+      "settings": {
+        "parallax": false,
+        "color": "#000000",
+        "overlay": 54,
+        "padding": 50,
+        "paddingmb": 50,
+        "bg_pos": "center center",
+        "bg_repeat": "no-repeat",
+        "bg_size": "cover",
+        "bg_att": "scroll"
+      }
+    },
+    "main": {
+      "type": "page_about_us",
+      "blocks": {
+        "dac4c0d6-1046-4a8d-a446-59405e5773de": {
+          "type": "1",
+          "settings": {
+            "title": "OUR ROOTS",
+            "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam.",
+            "al": "txtn",
+            "cl": "6",
+            "cl_mb": "12"
+          }
+        }
+      },
+      "block_order": [
+        "dac4c0d6-1046-4a8d-a446-59405e5773de"
+      ],
+      "settings": {
+      }
+    },
+    "164856885666aace2e": {
+      "type": "image_text_sig",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/IMG_0248_1024x1024_48d1f0c4-e069-4ab7-ba9c-c2ba8a991eaf.webp",
+        "img": "shopify:\/\/shop_images\/Hunter-Signature.png",
+        "sig_title": "HUNTER HARLOW",
+        "sig_sub_title": "FOUNDER & CEO",
+        "sub_font": "2",
+        "img_align": "center",
+        "img_position": "1",
+        "image_ratio": "auto",
+        "text_size2": "30,14",
+        "title": "HANDWRITTEN NOTE",
+        "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p><p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+        "button_label": "Shop Now",
+        "button_link": "",
+        "open_link": "_blank",
+        "txt_align": "tl",
+        "use_shadow": false,
+        "cl_txt": "dark",
+        "layout": "nt_full",
+        "mg": "50px,,50px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    },
+    "164857039020bd60ed": {
+      "type": "image_text",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Reduced-02_1024x1024_033be2a1-e638-4635-961e-4b208e6f3cb5.png",
+        "img_align": "center",
+        "img_position": "2",
+        "image_ratio": "auto",
+        "text_size2": "30,14",
+        "title": "SPIRIT OF THE WEST",
+        "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p><p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+        "button_label": "Shop Now",
+        "button_link": "",
+        "open_link": "_blank",
+        "txt_align": "tl",
+        "use_shadow": false,
+        "cl_txt": "dark",
+        "layout": "nt_full",
+        "mg": "50px,,50px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    },
+    "1648570607be123660": {
+      "type": "brand_list",
+      "blocks": {
+        "16485706070962a0a0-0": {
+          "type": "brand",
+          "settings": {
+            "url": "",
+            "open_link": "_blank"
+          }
+        },
+        "16485706070962a0a0-1": {
+          "type": "brand",
+          "settings": {
+            "url": "",
+            "open_link": "_blank"
+          }
+        },
+        "16485706070962a0a0-2": {
+          "type": "brand",
+          "settings": {
+            "url": "",
+            "open_link": "_blank"
+          }
+        },
+        "16485706070962a0a0-3": {
+          "type": "brand",
+          "settings": {
+            "url": "",
+            "open_link": "_blank"
+          }
+        },
+        "16485706070962a0a0-4": {
+          "type": "brand",
+          "settings": {
+            "url": "",
+            "open_link": "_blank"
+          }
+        },
+        "16485706070962a0a0-5": {
+          "type": "brand",
+          "settings": {
+            "url": "",
+            "open_link": "_blank"
+          }
+        }
+      },
+      "block_order": [
+        "16485706070962a0a0-0",
+        "16485706070962a0a0-1",
+        "16485706070962a0a0-2",
+        "16485706070962a0a0-3",
+        "16485706070962a0a0-4",
+        "16485706070962a0a0-5"
+      ],
+      "settings": {
+        "title": "MEET OUR TEAM",
+        "sub_title": "",
+        "sub_font": "2",
+        "style_title": "title_1",
+        "ic_tt": "gem",
+        "show_clpr": false,
+        "brand_layout": "1",
+        "cat_space": "30",
+        "col": "4",
+        "col_md": "6",
+        "col_mb": "6",
+        "brand_hover": "0",
+        "loop": true,
+        "autoplay": false,
+        "au_time": 0,
+        "au_hover": true,
+        "button": false,
+        "btn_vi": "1",
+        "btn_owl": "2",
+        "btn_color": "0",
+        "dot": true,
+        "dot_owl": "1",
+        "dot_color": "1",
+        "layout": "wrap",
+        "cl_bg": "",
+        "mg": "50px,,50px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    },
+    "164858119070664023": {
+      "type": "manual_blog",
+      "blocks": {
+        "164858119079a54d5c-0": {
+          "type": "article",
+          "settings": {
+            "article": ""
+          }
+        },
+        "164858119079a54d5c-1": {
+          "type": "article",
+          "settings": {
+            "article": ""
+          }
+        },
+        "164858119079a54d5c-2": {
+          "type": "article",
+          "settings": {
+            "article": ""
+          }
+        }
+      },
+      "block_order": [
+        "164858119079a54d5c-0",
+        "164858119079a54d5c-1",
+        "164858119079a54d5c-2"
+      ],
+      "settings": {
+        "title": "Blog posts",
+        "sub_title": "Sub Text",
+        "sub_font": "2",
+        "style_title": "title_1",
+        "ic_tt": "pencil-alt",
+        "show_clpr": false,
+        "layout_des": "1",
+        "art_des": "1",
+        "date": "date",
+        "col_pr": "4",
+        "col_pr_tb": "4",
+        "col_pr_mb": "12",
+        "show_cnt": true,
+        "show_au": true,
+        "show_dt": true,
+        "show_cm": false,
+        "show_rm": false,
+        "loop": false,
+        "au_time": 0,
+        "au_hover": true,
+        "button": false,
+        "btn_vi": "1",
+        "btn_owl": "1",
+        "btn_color": "0",
+        "dot": true,
+        "dot_owl": "1",
+        "dot_color": "1",
+        "use_eq_height": true,
+        "image_ratio": "ratio4_3",
+        "image_size": "nt_cover",
+        "image_position": "8",
+        "layout": "wrap",
+        "cl_bg": "",
+        "mg": "50px,,50px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    },
+    "16485817723adff103": {
+      "type": "image_text_sig",
+      "settings": {
+        "sig_title": "Some Name",
+        "sig_sub_title": "Owner",
+        "sub_font": "2",
+        "img_align": "center",
+        "img_position": "1",
+        "image_ratio": "auto",
+        "text_size2": "30,14",
+        "title": "Image with text",
+        "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+        "button_label": "Shop Now",
+        "button_link": "",
+        "open_link": "_blank",
+        "txt_align": "tc",
+        "use_shadow": false,
+        "cl_txt": "dark",
+        "layout": "container",
+        "mg": "50px,,50px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    }
+  },
+  "order": [
+    "heading",
+    "main",
+    "164856885666aace2e",
+    "164857039020bd60ed",
+    "1648570607be123660",
+    "164858119070664023",
+    "16485817723adff103"
+  ]
+}
