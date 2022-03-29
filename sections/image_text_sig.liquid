@@ -2,7 +2,7 @@
   assign sid = section.id
   assign se_stts = section.settings
   assign img_ratio = se_stts.image_ratio 
-  assign img = blocks.settings.image
+  assign img = se_stts.img
   assign ck = false 
  if img_ratio == 'auto' 
   assign ck = true 
