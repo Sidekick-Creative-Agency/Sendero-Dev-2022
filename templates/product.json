@@ -72,7 +72,7 @@
         "social": {
           "type": "social",
           "settings": {
-            "class": "tc"
+            "class": "tdf"
           }
         }
       },
