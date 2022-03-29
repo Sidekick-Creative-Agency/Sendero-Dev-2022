@@ -48,18 +48,8 @@
     },
     "164856885666aace2e": {
       "type": "image_text_sig",
-      "blocks": {
-        "c8725e46-83c5-4164-963e-a6724996c43c": {
-          "type": "sig",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Hunter-Signature.png"
-          }
-        }
-      },
-      "block_order": [
-        "c8725e46-83c5-4164-963e-a6724996c43c"
-      ],
       "settings": {
+        "img": "shopify:\/\/shop_images\/Hunter-Signature.png",
         "img_align": "center",
         "img_position": "1",
         "image_ratio": "auto",
@@ -228,7 +218,7 @@
       ],
       "settings": {
         "layout": "nt_full",
-        "cl_bg": "#fff",
+        "cl_bg": "#ffffff",
         "mg": "50px,,20px,",
         "pd": "",
         "mg_mb": "",
