@@ -21,10 +21,12 @@
   <div class="nt_img_txt oh pr middle center">
     {%- comment -%}<a href="{{ url | default:'#' }}" class="db">{%- endcomment -%}
       {%- if image != blank -%}
-        <div class="nt_bg_lz lazyloadt4s item__position {{se_stts.img_align}}" data-bgset="{{ image | img_url: '1x1' }}" data-sizes="auto" data-ratio="{{image.aspect_ratio}}" data-parent-fit="cover" style="padding-top:{{ 1 | divided_by: image.aspect_ratio | times: 100}}%;"></div>
+      {%- comment -%}  <div class="nt_bg_lz lazyloadt4s item__position {{se_stts.img_align}}" data-bgset="{{ image | img_url: '1x1' }}" data-sizes="auto" data-ratio="{{image.aspect_ratio}}" data-parent-fit="cover" style="padding-top:{{ 1 | divided_by: image.aspect_ratio | times: 100}}%;"></div>
       {%- else -%}
         <div class="nt_bg_lz lazyloadt4s item__position {{se_stts.img_align}}" data-bg="{{ 'placeholder.jpg' | asset_url }}" style="padding-top: 111.1111111111111%;"></div>
-      {%- endif -%}
+    {%- endcomment -%} 
+    {%- endif -%}
+    
     {%- comment -%}</a>{%- endcomment -%}
   </div>
 </div>
