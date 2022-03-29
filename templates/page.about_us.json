@@ -78,11 +78,121 @@
         "mg_mb": "",
         "pd_mb": ""
       }
+    },
+    "164857039020bd60ed": {
+      "type": "image_text",
+      "settings": {
+        "img_align": "center",
+        "img_position": "2",
+        "image_ratio": "auto",
+        "text_size2": "30,14",
+        "title": "SPIRIT OF THE WEST",
+        "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p><p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+        "button_label": "Shop Now",
+        "button_link": "",
+        "open_link": "_blank",
+        "txt_align": "tl",
+        "use_shadow": false,
+        "cl_txt": "dark",
+        "layout": "nt_full",
+        "mg": "50px,,50px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    },
+    "1648570607be123660": {
+      "type": "brand_list",
+      "blocks": {
+        "16485706070962a0a0-0": {
+          "type": "brand",
+          "settings": {
+            "url": "",
+            "open_link": "_blank"
+          }
+        },
+        "16485706070962a0a0-1": {
+          "type": "brand",
+          "settings": {
+            "url": "",
+            "open_link": "_blank"
+          }
+        },
+        "16485706070962a0a0-2": {
+          "type": "brand",
+          "settings": {
+            "url": "",
+            "open_link": "_blank"
+          }
+        },
+        "16485706070962a0a0-3": {
+          "type": "brand",
+          "settings": {
+            "url": "",
+            "open_link": "_blank"
+          }
+        },
+        "16485706070962a0a0-4": {
+          "type": "brand",
+          "settings": {
+            "url": "",
+            "open_link": "_blank"
+          }
+        },
+        "16485706070962a0a0-5": {
+          "type": "brand",
+          "settings": {
+            "url": "",
+            "open_link": "_blank"
+          }
+        }
+      },
+      "block_order": [
+        "16485706070962a0a0-0",
+        "16485706070962a0a0-1",
+        "16485706070962a0a0-2",
+        "16485706070962a0a0-3",
+        "16485706070962a0a0-4",
+        "16485706070962a0a0-5"
+      ],
+      "settings": {
+        "title": "MEET OUR TEAM",
+        "sub_title": "",
+        "sub_font": "2",
+        "style_title": "title_1",
+        "ic_tt": "gem",
+        "show_clpr": false,
+        "brand_layout": "1",
+        "cat_space": "30",
+        "col": "4",
+        "col_md": "6",
+        "col_mb": "6",
+        "brand_hover": "0",
+        "loop": true,
+        "autoplay": false,
+        "au_time": 0,
+        "au_hover": true,
+        "button": false,
+        "btn_vi": "1",
+        "btn_owl": "2",
+        "btn_color": "0",
+        "dot": true,
+        "dot_owl": "1",
+        "dot_color": "1",
+        "layout": "wrap",
+        "cl_bg": "",
+        "mg": "50px,,50px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
     }
   },
   "order": [
     "heading",
     "main",
-    "164856885666aace2e"
+    "164856885666aace2e",
+    "164857039020bd60ed",
+    "1648570607be123660"
   ]
 }
