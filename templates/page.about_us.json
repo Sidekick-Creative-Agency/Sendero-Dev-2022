@@ -45,10 +45,45 @@
       ],
       "settings": {
       }
+    },
+    "164856885666aace2e": {
+      "type": "image_text_sig",
+      "blocks": {
+        "c8725e46-83c5-4164-963e-a6724996c43c": {
+          "type": "sig",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Hunter-Signature.png"
+          }
+        }
+      },
+      "block_order": [
+        "c8725e46-83c5-4164-963e-a6724996c43c"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/IMG_0248_1024x1024_48d1f0c4-e069-4ab7-ba9c-c2ba8a991eaf.webp",
+        "img_align": "center",
+        "img_position": "1",
+        "image_ratio": "auto",
+        "text_size2": "30,14",
+        "title": "Image with text",
+        "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+        "button_label": "Shop Now",
+        "button_link": "",
+        "open_link": "_blank",
+        "txt_align": "tc",
+        "use_shadow": false,
+        "cl_txt": "dark",
+        "layout": "container",
+        "mg": "50px,,50px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
     }
   },
   "order": [
     "heading",
-    "main"
+    "main",
+    "164856885666aace2e"
   ]
 }
