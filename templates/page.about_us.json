@@ -51,6 +51,9 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/IMG_0248_1024x1024_48d1f0c4-e069-4ab7-ba9c-c2ba8a991eaf.webp",
         "img": "shopify:\/\/shop_images\/Hunter-Signature.png",
+        "sig_title": "HUNTER HARLOW",
+        "sig_sub_title": "FOUNDER & CEO",
+        "sub_font": "2",
         "img_align": "center",
         "img_position": "1",
         "image_ratio": "auto",
