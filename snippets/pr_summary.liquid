@@ -288,8 +288,9 @@ assign se_stts = section.settings
 
       {%- for i in (1..1) -%}
 
-
-  {%- unless se_stts.show %}<style>#wrap_des_pr,.id_pr_description {display: none !important}</style>{% break %}{% endunless -%}
+{%- comment -%}
+  <style>#wrap_des_pr,.id_pr_description {display: none !important}</style>{% break %}
+  {%- endcomment -%}
   <div id="wrap_des_pr"><div class="container container_des">
     <ul class="ul_none ul_tabs is-flex fl_center fs__16 des_mb_{{cl_mb}} des_style_{{cl_des}}">
 {%- comment -%}

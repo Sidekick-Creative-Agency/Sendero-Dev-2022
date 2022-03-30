@@ -82,10 +82,19 @@
         "frm",
         "size",
         "meta",
-        "social",
-        "des"
+        "des",
+        "social"
       ],
       "settings": {
+        "des_pr_design": "1",
+        "show": true,
+        "bgcl": "#fff",
+        "bgclmb": "#fff",
+        "des_w": "1",
+        "des_mb": "2",
+        "auto": false,
+        "mg": "30px,,30px,",
+        "mg_mb": "0,,0,",
         "pr_layout": "default",
         "design_products": "4",
         "size_img_pr": "2",
@@ -101,29 +110,11 @@
         "pr_size_sidebar": "2",
         "breadcrumb_pr": true,
         "back_next_pr": true,
-        "auto": false
+        "autobox": false
       }
     },
     "product-description": {
       "type": "pr_description",
-      "blocks": {
-        "des": {
-          "type": "des",
-          "settings": {
-            "title": "Description"
-          }
-        },
-        "add": {
-          "type": "add",
-          "settings": {
-            "title": "Additional Information"
-          }
-        }
-      },
-      "block_order": [
-        "des",
-        "add"
-      ],
       "settings": {
         "des_pr_design": "1",
         "show": true,
