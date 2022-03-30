@@ -629,7 +629,7 @@
             "type": "menu",
             "settings": {
               "title": "SUPPORT",
-              "menu": "",
+              "menu": "support-footer",
               "order": "1",
               "cl": "2",
               "cl_tb": "6",
@@ -666,12 +666,24 @@
               "cl_tb": "6",
               "cl_mb": "12"
             }
+          },
+          "eb9f9808-b453-4179-8064-12d5ccfd65dc": {
+            "type": "menu",
+            "settings": {
+              "title": "QUICK LINKS",
+              "menu": "quick-links-footer",
+              "order": "1",
+              "cl": "2",
+              "cl_tb": "6",
+              "cl_mb": "12"
+            }
           }
         },
         "block_order": [
           "1581507824602",
           "1581507835369",
-          "1581507819652"
+          "1581507819652",
+          "eb9f9808-b453-4179-8064-12d5ccfd65dc"
         ],
         "settings": {
           "sticky": false,
@@ -710,7 +722,7 @@
         ],
         "settings": {
           "layout": "12",
-          "bg": "#000",
+          "bg": "#000000",
           "cl": "#dcdcdc",
           "cl_a": "#dcdcdc",
           "cl_hover": "#999999"
