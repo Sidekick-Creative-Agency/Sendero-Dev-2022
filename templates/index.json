@@ -303,7 +303,6 @@
         "1648654393d1eaf576-4"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/74162361_102268317897142_7558348142593179648_n.jpg",
         "source": "1",
         "video_url": "https:\/\/www.youtube.com\/watch?v=-2icZZ9tbwc&list=PLZf3m6mi50t3HFAcYQWk7EYl-2LtrNImu",
         "file_name": "The Desert Tapes",
@@ -318,7 +317,7 @@
         "txt_align": "tl",
         "use_shadow": false,
         "cl_overlay": "rgba(0,0,0,0)",
-        "cl_opacity": 0,
+        "cl_opacity": 48,
         "layout": "nt_full",
         "mg": "50px,,50px,",
         "pd": "",
