@@ -223,11 +223,115 @@
         "mg_mb": "",
         "pd_mb": ""
       }
+    },
+    "164865439396016512": {
+      "type": "hero_video",
+      "blocks": {
+        "1648654393d1eaf576-2": {
+          "type": "2",
+          "settings": {
+            "font": "f__libre",
+            "title": "NEW SENDERO SESSION",
+            "color": "#fff",
+            "fw_text": 400,
+            "fs_text": 14,
+            "lh_text": 32,
+            "ls_text": 0,
+            "fs_mb_text": 14,
+            "lh_mb_text": 0,
+            "ls_mb_text": 0,
+            "hide": false
+          }
+        },
+        "1648654393d1eaf576-0": {
+          "type": "1",
+          "settings": {
+            "title": "THE DESSERT TAPES",
+            "color": "#fff",
+            "fw_text": 600,
+            "fs_text": 30,
+            "lh_text": 0,
+            "ls_text": 0,
+            "fs_mb_text": 15,
+            "lh_mb_text": 0,
+            "ls_mb_text": 0
+          }
+        },
+        "1648654393d1eaf576-1": {
+          "type": "6",
+          "settings": {
+            "sp": 10,
+            "sp_mb": 10
+          }
+        },
+        "1648654393d1eaf576-3": {
+          "type": "6",
+          "settings": {
+            "sp": 10,
+            "sp_mb": 10
+          }
+        },
+        "1648654393d1eaf576-4": {
+          "type": "3",
+          "settings": {
+            "title": "Shop Now",
+            "btn_link": "",
+            "open_link": "_blank",
+            "title2": "Shop Now 2",
+            "btn_link2": "",
+            "open_link2": "_blank",
+            "btn_w": false,
+            "btn_round": true,
+            "btn_icon": false,
+            "cl_txt": "#fff",
+            "cl_bg": "#222",
+            "cl_bd": "#222",
+            "fs_text": 14,
+            "fw_text": 600,
+            "h": 40,
+            "ls_text": 0,
+            "fs_mb_text": 14,
+            "h_mb": 40,
+            "ls_mb_text": 0
+          }
+        }
+      },
+      "block_order": [
+        "1648654393d1eaf576-2",
+        "1648654393d1eaf576-0",
+        "1648654393d1eaf576-1",
+        "1648654393d1eaf576-3",
+        "1648654393d1eaf576-4"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/74162361_102268317897142_7558348142593179648_n.jpg",
+        "source": "1",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=-2icZZ9tbwc&list=PLZf3m6mi50t3HFAcYQWk7EYl-2LtrNImu",
+        "file_name": "",
+        "se_height": "cus_h",
+        "use_custom_h": "1",
+        "h_des": "600px",
+        "h_tb": "500px",
+        "h_mb": "350px",
+        "caption_w": "2",
+        "cap_v_pos": 50,
+        "cap_h_pos": 50,
+        "txt_align": "tc",
+        "use_shadow": false,
+        "cl_overlay": "#000",
+        "cl_opacity": 0,
+        "layout": "nt_full",
+        "mg": "50px,,50px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
     }
   },
   "order": [
     "16357021760efbe511",
     "16479809910f68859a",
-    "1648558600123b2516"
+    "1648558600123b2516",
+    "164865439396016512"
   ]
 }
