@@ -6,7 +6,7 @@
         "89b1a94e-2cf5-4075-a6af-0969fbaeae2c": {
           "type": "1",
           "settings": {
-            "title": "ABOUT US",
+            "title": "OUR STORY",
             "color": "#ffffff"
           }
         }
@@ -15,11 +15,12 @@
         "89b1a94e-2cf5-4075-a6af-0969fbaeae2c"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/homepage_hero_image_2.jpg",
         "parallax": false,
         "color": "#000000",
-        "overlay": 54,
-        "padding": 50,
-        "paddingmb": 50,
+        "overlay": 47,
+        "padding": 100,
+        "paddingmb": 66,
         "bg_pos": "center center",
         "bg_repeat": "no-repeat",
         "bg_size": "cover",
