@@ -725,7 +725,7 @@
           "1581507860120": {
             "type": "copy",
             "settings": {
-              "text": "<h5>COPYRIGHT © [year] SENDERO PROVISIONS CO. ALL RIGHTS RESERVED.<\/h5>"
+              "text": "<h5 style=\"color:grey\">COPYRIGHT © [year] SENDERO PROVISIONS CO. ALL RIGHTS RESERVED.<\/h5>"
             }
           }
         },
