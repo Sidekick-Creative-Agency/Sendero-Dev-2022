@@ -28,7 +28,7 @@
         "color": "#000000",
         "overlay": 54,
         "padding": 100,
-        "paddingmb": 50,
+        "paddingmb": 100,
         "bg_pos": "center center",
         "bg_repeat": "no-repeat",
         "bg_size": "cover",

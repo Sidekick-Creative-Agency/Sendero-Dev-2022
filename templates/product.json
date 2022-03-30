@@ -82,8 +82,8 @@
         "frm",
         "size",
         "meta",
-        "des",
-        "social"
+        "social",
+        "des"
       ],
       "settings": {
         "pr_layout": "default",
