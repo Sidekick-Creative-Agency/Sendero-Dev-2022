@@ -324,12 +324,152 @@
         "mg_mb": "",
         "pd_mb": ""
       }
+    },
+    "16486544001d10f470": {
+      "type": "featured_collection_owl",
+      "settings": {
+        "title": "Collection Slider",
+        "sub_title": "Sub Text",
+        "sub_font": "2",
+        "btn_title": "See all products",
+        "style_title": "title_1",
+        "ic_tt": "gem",
+        "show_clpr": false,
+        "collection": "",
+        "limit": 8,
+        "space": 30,
+        "use_pagination": "none",
+        "btn_rd": true,
+        "btn_icon": false,
+        "btn_style": "default",
+        "col_pr": "3",
+        "col_pr_tb": "3",
+        "col_pr_mb": "6",
+        "pr_des": "1",
+        "show_vendor": false,
+        "use_cdt": false,
+        "round_cd": false,
+        "cdt_des": "1",
+        "loop": true,
+        "au_time": 0,
+        "au_hover": true,
+        "button": false,
+        "btn_vi": "1",
+        "btn_owl": "1",
+        "btn_color": "0",
+        "dot": true,
+        "dot_owl": "1",
+        "dot_color": "1",
+        "use_eq_height": false,
+        "image_ratio": "ratio_nt",
+        "image_size": "nt_cover",
+        "image_position": "8",
+        "cp_code": false,
+        "layout": "wrap",
+        "cl_bg": "",
+        "mg": "50px,,50px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    },
+    "1648656519e4bb75df": {
+      "type": "instagram_feed",
+      "blocks": {
+        "16486565198c9838b8-0": {
+          "type": "1",
+          "settings": {
+            "title": "@ FOLLOW US ON INSTAGRAM",
+            "sub_title": "",
+            "sub_font": "2",
+            "style_title": "title_1",
+            "ic_tt": "gem",
+            "show_clpr": false
+          }
+        },
+        "16486565198c9838b8-1": {
+          "type": "img",
+          "settings": {
+            "url": ""
+          }
+        },
+        "16486565198c9838b8-2": {
+          "type": "img",
+          "settings": {
+            "url": ""
+          }
+        },
+        "16486565198c9838b8-3": {
+          "type": "img",
+          "settings": {
+            "url": ""
+          }
+        },
+        "16486565198c9838b8-4": {
+          "type": "img",
+          "settings": {
+            "url": ""
+          }
+        },
+        "16486565198c9838b8-5": {
+          "type": "img",
+          "settings": {
+            "url": ""
+          }
+        },
+        "16486565198c9838b8-6": {
+          "type": "img",
+          "settings": {
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "16486565198c9838b8-0",
+        "16486565198c9838b8-1",
+        "16486565198c9838b8-2",
+        "16486565198c9838b8-3",
+        "16486565198c9838b8-4",
+        "16486565198c9838b8-5",
+        "16486565198c9838b8-6"
+      ],
+      "settings": {
+        "open_link": "_self",
+        "layout_des": "1",
+        "space": "0",
+        "rounded_ins": "0",
+        "col_pr": "3",
+        "col_pr_tb": "3",
+        "col_pr_mb": "6",
+        "loop": false,
+        "au_time": 0,
+        "au_hover": true,
+        "button": false,
+        "btn_vi": "1",
+        "btn_owl": "1",
+        "btn_color": "0",
+        "dot": true,
+        "dot_owl": "1",
+        "dot_color": "1",
+        "use_eq_height": true,
+        "image_ratio": "ratio1_1",
+        "image_size": "nt_cover",
+        "image_position": "8",
+        "layout": "container",
+        "cl_bg": "#fff",
+        "mg": "200px,,200px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
     }
   },
   "order": [
     "16357021760efbe511",
     "16479809910f68859a",
     "1648558600123b2516",
-    "164865439396016512"
+    "164865439396016512",
+    "16486544001d10f470",
+    "1648656519e4bb75df"
   ]
 }
