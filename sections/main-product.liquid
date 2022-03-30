@@ -869,56 +869,124 @@
       "limit": 1,
       "settings": [
         {
-          "type": "select",
-          "id": "des",
-          "options": [
-            {
-              "value": "1",
-              "label": "Full description"
-            },
-            {
-              "value": "2",
-              "label": "Short description"
-            }
-          ],
-          "label": "Description mode:",
-          "default": "2"
-        },
-        {
-          "type": "paragraph",
-          "content": "—————————————————"
-        },
-        {
-          "type": "paragraph",
-          "content": "== Short description settings:"
-        },
-        {
-          "type": "richtext",
-          "id": "text",
-          "label": "Short description",
-          "info": "This page content will appear. Short description page that will be displayed for each product content if you don't set metafield excerpt for each product content."
-        },
-      {
-        "type": "number",
-        "id": "length",
-        "label": "Excerpt length (integer)",
-        "info": "Number of words that will be displayed for each product content if you don't set short description page or set metafield excerpt for each product content.",
-        "default": 31
-      },
-      {
-       "type": "checkbox",
-       "id": "readm",
-       "label": "Use Read more?",
-       "default": false
-      },
-      {
-       "type": "text",
-       "id": "readm_txt",
-       "label": "Read more title",
-       "default": "Read more"
-      }
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "Description"
+        }
       ]
     },
+    {
+      "type": "buy",
+      "name": "Bought Together",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "Only active when enable Frequently Bought Together on inside description."
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "Frequently Bought Together"
+        },
+        {
+          "type": "paragraph",
+          "content": "[Tutorials Doc](https://kalles-docs.the4.co/features/bundle#config-bundle-from-kalles-1-1)"
+        }/*,
+        {
+          "type": "paragraph",
+          "content": "[Tutorials Video](https://kalles-docs.the4.co/features/bundle#config-bundle-from-kalles-1-1)"
+        }*/
+      ]
+    },
+    {
+      "type": "add",
+      "name": "Additional Information",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "Additional Information"
+        }
+      ]
+    },
+   
+    /*{
+      "type": "shipping",
+      "name": "shipping Information",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "shipping"
+        }
+      ]
+    },*/
+    {
+      "type": "custon_html",
+      "name": "Custom HTML",
+      "settings": [
+       {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "Custom tab"
+        },
+        {
+          "type": "page",
+          "id": "page",
+          "label": "Tab content",
+          "info": "This page content will appear in the extra tab."
+        }
+      ]
+    },
+    {
+      "type": "size_pr",
+      "limit": 1,
+      "name": "Product type - Size guide",
+      "settings": [
+       {
+          "type": "paragraph",
+          "content": "Only show this tab when page has title 'Size The4 Name'. Name: product type"
+        },
+       {
+          "type": "paragraph",
+          "content": "This page content will appear in the extra tab."
+        },
+       {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "Size guide"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "Text",
+      "limit": 10,
+      "settings": [
+          {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "Talk about your brand"
+          },
+          {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text",
+          "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+          }
+       ]
+    },
+    
       {
         "type": "title",
         "name": "Product Title",
@@ -2337,30 +2405,7 @@
          }
         ]
       },
-      {
-        "type": "text",
-        "name": "Text",
-        "settings": [
-            {
-            "type": "richtext",
-            "id": "text",
-            "label": "Text",
-            "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
-            }
-         ]
-      },
-      {
-        "type": "html",
-        "name": "Custom HTML",
-        "settings": [
-          {
-            "type": "page",
-            "id": "page",
-            "label": "Content page",
-            "info": "This page content will appear."
-          }
-        ]
-      },
+     
       {
         "type": "@app"
       },
@@ -2389,25 +2434,7 @@
           }
          ]
       },
-      {
-        "type": "tab_rivui",
-        "name": "Collapsible Review",
-        "limit": 1,
-        "settings": [
-          {
-            "type": "text",
-            "id": "title",
-            "label": "Heading",
-            "default": "Reviews"
-          },
-          { 
-            "type": "liquid",
-            "id": "review_liquid",
-            "label": "Add Snippets Liquid",
-            "info": "Add app snippets reviews to show a 'write reviews' on product page. Will working when you use 'Other app review'"
-          }
-         ]
-      },
+      
       {
         "type": "tab",
         "name": "Collapsible tab",
@@ -2787,5 +2814,66 @@ THIS PART GOES IN 'BLOCKS' SECTION
 
 {%- endfor -%}
 </div></div>
+
+
+
+
+
+{
+      "type": "des",
+      "name": "Description",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "select",
+          "id": "des",
+          "options": [
+            {
+              "value": "1",
+              "label": "Full description"
+            },
+            {
+              "value": "2",
+              "label": "Short description"
+            }
+          ],
+          "label": "Description mode:",
+          "default": "2"
+        },
+        {
+          "type": "paragraph",
+          "content": "—————————————————"
+        },
+        {
+          "type": "paragraph",
+          "content": "== Short description settings:"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Short description",
+          "info": "This page content will appear. Short description page that will be displayed for each product content if you don't set metafield excerpt for each product content."
+        },
+      {
+        "type": "number",
+        "id": "length",
+        "label": "Excerpt length (integer)",
+        "info": "Number of words that will be displayed for each product content if you don't set short description page or set metafield excerpt for each product content.",
+        "default": 31
+      },
+      {
+       "type": "checkbox",
+       "id": "readm",
+       "label": "Use Read more?",
+       "default": false
+      },
+      {
+       "type": "text",
+       "id": "readm_txt",
+       "label": "Read more title",
+       "default": "Read more"
+      }
+      ]
+    },
 
 {%- endcomment -%}

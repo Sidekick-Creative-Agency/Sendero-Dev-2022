@@ -283,24 +283,15 @@ assign se_stts = section.settings
 
       {%- when 'des' -%}
 
-
-
-
       {%- for i in (1..1) -%}
 
-{%- comment -%}
-  <style>#wrap_des_pr,.id_pr_description {display: none !important}</style>{% break %}
-  {%- endcomment -%}
   <div id="wrap_des_pr"><div class="container container_des">
     <ul class="ul_none ul_tabs is-flex fl_center fs__16 des_mb_{{cl_mb}} des_style_{{cl_des}}">
-{%- comment -%}
-      {%- for block in section.blocks %}{% assign bk_setts = block.settings -%}
-      {%- endfor -%}
-{%- endcomment -%}
+
 <li class="tab_title_block{% if ck %} active{% assign ck = false %}{% endif %}"><a class="db cg truncate pr" data-id-dest4s href="#tab_des">Description</a></li>
 <li class="tab_title_block{% if ck %} active{% assign ck = false %}{% endif %}"><a class="db cg truncate pr" data-id-dest4s href="#tab_add">Additional Information</a></li>
 {%- comment -%}
-{%- for i in (1..3) -%}}
+
         {%- case block.type -%}
 
           {%- when 'add' %}{% if product.has_only_default_variant %}{% continue %}{% endif -%}
@@ -323,9 +314,6 @@ assign se_stts = section.settings
           {%- when 'html' -%}{%- if bk_setts.title == blank or pages[bk_setts.page].content == blank %}{% continue %}{% endif -%}
           <li class="tab_title_block{% if ck %} active{% assign ck = false %}{% endif %}"><a class="db cg truncate pr" href="#tab_{{block.id}}">{{bk_setts.title}}</a></li>
           
-          {%- when 'custom_liquid' -%}{%- if bk_setts.title == blank or bk_setts.custom_liquid == blank %}{% continue %}{% endif -%}
-             <li class="tab_title_block{% if ck %} active{% assign ck = false %}{% endif %}"><a class="db cg truncate pr" href="#tab_{{block.id}}">{{bk_setts.title}}</a></li>
-
           {%- else -%}{%- if bk_setts.title == blank or bk_setts.text == blank %}{% continue %}{% endif -%}
             <li class="tab_title_block{% if ck %} active{% assign ck = false %}{% endif %}"><a class="db cg truncate pr" href="#tab_{{block.id}}">{{bk_setts.title}}</a></li>
         
