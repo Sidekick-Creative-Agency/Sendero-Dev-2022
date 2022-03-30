@@ -1,9 +1,18 @@
 {%- comment -%}
   The contents of the product.liquid template can be found in /sections/pr_summary.liquid
 {%- endcomment -%}
-
-{%- comment -%} FIRST PART TAKEN FROM pr_description.liquid {%- endcomment -%}
 {%- liquid
+  assign se_stts = section.settings
+  assign img_zoom_size = 'master'
+  assign img_size = product.images.size
+  assign eq_imgtb = se_stts.ratio_img_main
+  assign img_size_main = se_stts.img_size_main
+  assign img_pos_main = se_stts.img_pos_main
+  assign ratio_img_thumb = se_stts.ratio_img_thumb
+  assign img_size_thumb = se_stts.img_size_thumb
+  assign img_pos_thumb = se_stts.img_pos_thumb
+  assign sett_pr = se_stts.design_products
+  assign image = product.images[0] | default:settings.placeholder_img
 
   assign se_stts = section.settings
   assign cl_des = se_stts.des_pr_design
@@ -29,20 +38,256 @@
   assign pr_tags = product.tags
   assign tag_arr_size = pr_tags | where:'tabt4_' | size 
 
-  
-  assign se_stts = section.settings
-  assign img_zoom_size = 'master'
-  assign img_size = product.images.size
-  assign eq_imgtb = se_stts.ratio_img_main
-  assign img_size_main = se_stts.img_size_main
-  assign img_pos_main = se_stts.img_pos_main
-  assign ratio_img_thumb = se_stts.ratio_img_thumb
-  assign img_size_thumb = se_stts.img_size_thumb
-  assign img_pos_thumb = se_stts.img_pos_thumb
-  assign sett_pr = se_stts.design_products
-  assign image = product.images[0] | default:settings.placeholder_img
--%}
-  {%- for i in (1..1) -%}
+  case sett_pr
+    when '2'
+     assign singles_sp = 'sp-single-2'
+     assign cl_tb = '2'
+    when '3'
+     assign singles_sp = 'sp-single-3'
+     assign cl_tb = '3'
+    when '7'
+     assign singles_sp = 'sp-single-7'
+     assign cl_tb = '7'
+    when '4'
+     assign singles_sp = 'sp-single-4'
+     assign cl_tb = 'bottom'
+    when '5'
+     assign singles_sp = 'sp-single-5'
+     assign cl_tb = 'right'
+    when '6'
+     assign singles_sp = 'sp-single-6'
+     assign cl_tb = 'none'
+    else
+     assign singles_sp = 'sp-single-1'
+     assign cl_tb = 'left'
+  endcase
+
+  case se_stts.size_img_pr
+    when '1'
+     assign class_images = 'col-md-4'
+     assign class_summary = 'col-md-8'
+    when '2'
+     assign class_images = 'col-md-6'
+     assign class_summary = 'col-md-6'
+    when '3'
+     assign class_images = 'col-md-7'
+     assign class_summary = 'col-md-5'
+  endcase 
+  assign zoom_tp = settings.zoom_tp
+  assign main_click = settings.main_click
+  assign pr_media = product.media
+  assign class_main = '12'
+  assign no_sidebar = true
+  assign pr_sidebar = se_stts.pr_sidebar
+  case pr_sidebar
+    when 'right'
+      assign no_sidebar = false
+      case se_stts.pr_size_sidebar
+        when '1'
+          assign class_main = '10 order-1'
+          assign class_sidebar = '2 order-12'
+        when '2'
+          assign class_main = '9 order-1'
+          assign class_sidebar = '3 order-12'
+         when '3'
+          assign class_main = '8 order-1'
+           assign class_sidebar = '4 order-12'
+      endcase
+    when 'left'
+      assign no_sidebar = false
+      case se_stts.pr_size_sidebar
+        when '1'
+          assign class_main = '10 order-lg-12 order-1'
+          assign class_sidebar = '2 order-lg-1 order-12'
+        when '2'
+          assign class_main = '9 order-lg-12 order-1'
+          assign class_sidebar = '3 order-lg-1 order-12'
+        when '3'
+          assign class_main = '8 order-lg-12 order-1'
+          assign class_sidebar = '4 order-lg-1 order-12'
+       endcase
+   endcase
+  assign currently_var = product.selected_or_first_available_variant
+  assign cur_var_id = currently_var.id
+  assign pid = product.id
+  assign hd_up = 'fbt-' |append:pid
+  assign fbt_tag = product.tags| where:'fbtt4_' | first | default:hd_up | remove:'fbtt4_'
+  assign nav_up = linklists[fbt_tag].links | where:'type','product_link'
+  assign nav_up_size = nav_up.size 
+  if product.available == false or settings.fbt_pos == '2'
+    assign nav_up_size = 0
+  endif
+  assign ck_next_pr = false
+  if se_stts.back_next_pr and collection != blank
+  assign ck_next_pr = true
+  endif -%}
+
+<div class="sp-single {{singles_sp}} des_pr_layout_1">
+  {%- if ck_next_pr or se_stts.breadcrumb_pr -%}
+  <div class="bgbl pt__20 pb__20 lh__1 breadcrumb_pr_wrap">
+   <div class="container">
+    <div class="row al_center">
+      <div class="col">{% if se_stts.breadcrumb_pr %}<nav class="sp-breadcrumb"><a href="{{ routes.root_url }}" class="dib">{{ 'general.breadcrumbs.home' | t }}</a>{% if collection.url != blank %}<i class="facl facl-angle-right"></i><a href="{{collection.url}}" class="dib">{{collection.title}}</a>{% endif %}<i class="facl facl-angle-right"></i>{{product.title}}</nav>{% endif %}</div>
+      {%- if ck_next_pr -%}
+      <div class="col-auto flex al_center">
+        {%- assign next_pr = collection.next_product -%}
+        {%- assign prev_pr = collection.previous_product -%}
+        
+        {%- if prev_pr -%}<a href="{{prev_pr.url}}" class="pl__5 pr__5 fs__18 cd chp ttip_nt tooltip_bottom_left"><i class="las la-angle-left"></i><span class="tt_txt">{{prev_pr.title}}</span></a>{%- endif -%}
+        <a href="{{collection.url}}" class="pl__5 pr__5 fs__20 cd chp ttip_nt tooltip_bottom_left"><i class="fwb iccl iccl-grid fs__15"></i><span class="tt_txt">{{'products.product.back_to' | t:title:collection.title}}</span></a>
+        {%- if next_pr -%}<a href="{{next_pr.url}}" class="pl__5 pr__5 fs__18 cd chp ttip_nt tooltip_bottom_left"><i class="las la-angle-right"></i><span class="tt_txt">{{next_pr.title}}</span></a>{%- endif -%}
+      </div>
+      {%- endif -%} 
+    </div>
+   </div>
+  </div>
+  {%- endif -%} 
+
+
+  <div class="container container_cat cat_{{se_stts.pr_layout}} sticky_des_{{se_stts.use_sticky_des}}">
+      <div class="row product mt__40" id="product-{{product.id}}" data-featured-product-se data-id="_ppr">
+         {%- unless no_sidebar %}<div class="col-lg-{{class_sidebar}} col-12 sidebar sidebar_pr lazyloadt4s lazypreloadt4s" data-t4sid="pr-sidebar" data-set4url="/?section_id=pr-sidebar" data-rendert4s="{{product.url}}"><div class="nt_svg_loader dn"></div></div>{% endunless -%}
+         <div class="col-md-{{class_main}} col-12 thumb_{{cl_tb}}">
+            <div class="row mb__50 pr_sticky_content">
+               <div class="{{class_images}} col-12 pr product-images img_action_{{main_click}} pr_sticky_img" data-pr-single-media-group>
+                  <div class="row theiaStickySidebar">
+                     {%- if image != blank and pr_media.size < 2 -%}{%- assign ratio = image.aspect_ratio -%}{%- assign iw = image.width -%}
+                        <div class="col-12">
+                           <div class="p-thumb sp-pr-gallery equal_nt {{img_size_main}} {{eq_imgtb}} position_{{img_pos_main}}">
+                              <div {% if alt contains 'imgt4_colorsolid' %}data-widths="[1]" {% endif %}data-grname="{{alt_arr | first | handleize }}" data-grpvl="{{alt_arr | last | handleize}}" class="img_ptw p_ptw js-sl-item p-item sp-pr-gallery__img w__100 media_id_{{media.id}}" data-mdid="{{media.id}}" data-mdtype="image" data-bgset="{{ image | img_url: '1x1' }}" data-ratio="{{ratio}}" data-rationav="{{ratio_nav}}" data-sizes="auto" data-src="{{ image | img_url: img_zoom_size }}" data-width="{{ image.width }}" data-height="{{ image.height }}" data-cap="{{ txt_alt }}">
+                                 <div class="pr oh nt_bg_lz"{% if eq_imgtb == 'ratio_imgtrue' %} style="padding-top:{{ 1 | divided_by: ratio | times: 100}}%;"{% endif %}>
+                                  <img src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20{{image.width}}%20{{image.height}}%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="{{ image | img_url: '1x1' }}" data-widths="[180, 360, 540, 720, 900, 1080]" data-optimumx="2" data-sizes="auto" class="w__100 lazyloadt4s t4s-media-img" alt="{{image.alt | escape }}">
+                                  <span class="t4s-img-loader"></span>
+                                   <noscript><img class="t4s-img-noscript" src="{{ image | img_url: img_zoom_size }}" loading="lazy" alt="{{ txt_alt }}"></noscript>
+                                </div>
+                                {%- render 'product_labels',on:'singe' -%}
+                                {%- render 'p_group_btns',main_click:main_click -%}
+                               </div>
+                           </div>
+                        </div>
+                     {%- elsif pr_media.size > 0 -%}
+                        {%- render 'page_pr_img',main_click:main_click,nav_img_pr:se_stts.nav_img_pr,call_cl:'_ppr', pr_media:pr_media, sett_pr:sett_pr, eq_imgtb:eq_imgtb, e_imgnv:ratio_img_thumb, img_size_main:img_size_main, img_pos_main:img_pos_main, ratio_img_thumb:ratio_img_thumb, img_size_thumb:img_size_thumb, img_pos_thumb:img_pos_thumb -%}
+                     {%- endif -%}
+                     {%- if zoom_tp == '2' %}<div class="dt_img_zoom pa t__0 r__0 dib"></div>{% endif -%}
+                  </div>
+               </div>
+               <div class="{{class_summary}} col-12 product-infors pr_sticky_su"><div class="theiaStickySidebar">{%- render 'pr_summary',section:section -%}</div></div>
+            </div>
+         </div>
+      </div>
+  </div>
+  {%- if nav_up_size > 0 %}<div id="wrap_fbt" class="container">{%- render 'fbt_snipet',nav_up:nav_up,currently_var:currently_var,cur_var_id:cur_var_id,pid:pid -%}</div>{% endif -%}
+
+
+
+</div>
+<script type="application/ld+json">{%- assign current_variant = product.selected_or_first_available_variant | default:product.variants.first -%}{%- assign image = product.featured_image | default: product.images.first -%}
+{
+  "@context": "http://schema.org/",
+  "@type": "Product",
+  "name": {{ product.title | json }},
+  "url": "{{ shop.url }}{{ product.url }}",
+  {%- if image != blank -%}
+    {%- assign image_size = image.width | append: 'x' -%}
+    "image": [
+      "https:{{ image.src | img_url: image_size }}"
+    ],
+  {%- endif -%}
+  "description": {{ product.description | strip_html | escape | strip_newlines | json }},
+  "sku": "{{ current_variant.sku |default:current_variant.id }}",
+  "mpn": "{{ current_variant.barcode}}",
+  "productID": "{{ product.id }}",
+  "brand": {
+    "@type": "Thing",
+    "name": "{{ product.vendor | escape }}"
+  },
+  {%- if product.price_varies -%}
+  "offers": [
+    {%- capture not_change -%}
+       "@type" : "Offer",
+       "availability" : "http://schema.org/{% if product.available %}InStock{% else %}OutOfStock{% endif %}",
+       "priceCurrency" : "{{ cart.currency.iso_code }}",
+       "itemCondition": "https://schema.org/NewCondition",
+       "priceValidUntil": "{{ 'now' | date: '%s' | plus: 31536000 | date: '%Y-%m-%d' | uri_encode | replace:'+','%20' }}",
+    {%- endcapture -%}
+    {%- assign shop_secure_url = shop.secure_url -%}
+    {%- for variant in product.variants -%}{%- assign barcode_size = variant.barcode.size -%}
+      {
+        {{not_change}}
+        "sku": "{{ variant.sku | default: variant.id }}",
+        "price" : "{{ variant.price | divided_by: 100.00 }}",
+        "mpn": "{{ variant.barcode }}",
+        {%- if barcode_size == 12 or barcode_size == 13 or barcode_size == 14 -%}"gtin{{barcode_size}}": "{{ variant.barcode }}",{%- endif -%}
+        "url" : "{{ shop_secure_url }}{{ variant.url }}"
+      }{% unless forloop.last %},{% endunless -%}
+    {%- endfor -%}
+  ]
+  {%- else -%}
+  "offers": {
+        "@type" : "Offer",
+        "sku": "{{ current_variant.sku |default: current_variant.id }}",
+        "availability" : "http://schema.org/{% if product.available %}InStock{% else %}OutOfStock{% endif %}",
+        "price" : "{{ product.price | divided_by: 100.00 }}",
+        "priceCurrency" : "{{ cart.currency.iso_code }}",
+        "itemCondition": "https://schema.org/NewCondition",
+        "url" : "{{ shop.secure_url }}{{ product.url }}",
+        "mpn": "{{ current_variant.barcode }}",
+        {%- assign barcode_size = current_variant.barcode.size -%}{%- if barcode_size == 12 or barcode_size == 13 or barcode_size == 14 -%}"gtin{{barcode_size}}": "{{ variant.barcode }}",{%- endif -%}
+        "priceValidUntil": "{{ 'now' | date: '%s' | plus: 31536000 | date: '%Y-%m-%d' | uri_encode | replace:'+','%20' }}"
+  }
+  {%- endif -%}
+    {%- assign review_app = settings.app_review |default:'1' -%}
+    {%- case review_app -%}
+      {%- when '1' -%}
+       {%- assign meta_spr = product.metafields.spr.reviews -%}
+       {%- assign ratingname = meta_spr | split: 'itemprop="name" content="' | last | split: '"' | first -%}
+       {%- assign ratingCount = meta_spr | split: 'reviewCount" content="' | last | split: '"' | first -%}
+        {%- if ratingCount != "0" and ratingCount != blank and ratingname == product.title -%}
+        ,"aggregateRating": {
+         "@type": "AggregateRating",
+         "ratingCount": {{ ratingCount | plus: 0 }},
+         "ratingValue": {{ meta_spr | split: 'ratingValue" content="' | last | split: '"' | first | plus: 0 }}
+        }
+        {%- endif -%}
+      {%- when '2' -%}{%- assign aggregateRating = product.metafields.ryviu.product_reviews_info | split: ";" -%}{%- assign ratingCount = aggregateRating[0] -%}
+        {%- if ratingCount != "0" and ratingCount != blank -%}
+        ,"aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingCount": {{ ratingCount | plus: 0 }},
+        "ratingValue": {{ aggregateRating[1] | plus: 0 }}
+        }
+        {%- endif -%}
+      {%- when '3' -%}{%- assign ratingCount = product.metafields.ali.reviews_count -%}
+        {%- if ratingCount != "0" and ratingCount != blank -%}
+        ,"aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingCount": {{ ratingCount }},
+        "ratingValue": {{ product.metafields.ali.reviews_average }}
+        }
+        {%- endif -%}
+      {%- when '4' -%}{%- assign ratingCount = product.metafields.loox.num_reviews -%}
+        {%- if ratingCount != "0" and ratingCount != blank -%}
+        ,"aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingCount": {{ ratingCount }},
+        "ratingValue": {{ product.metafields.loox.avg_rating }}
+        }
+        {%- endif -%}
+      {%- when 'stamped' -%}{%- assign ratingCount = product.metafields.stamped.reviews_count -%}
+        {%- if ratingCount != "0" and ratingCount != blank -%}
+        ,"aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingCount": {{ ratingCount }},
+        "ratingValue": {{ product.metafields.stamped.reviews_average }}
+        }
+        {%- endif -%}
+    {%- endcase -%}
+}
+</script>
+
+
+
+{%- for i in (1..1) -%}
   {%- unless se_stts.show %}<style>#wrap_des_pr,.id_pr_description {display: none !important}</style>{% break %}{% endunless -%}
   <div id="wrap_des_pr"><div class="container container_des">
     <ul class="ul_none ul_tabs is-flex fl_center fs__16 des_mb_{{cl_mb}} des_style_{{cl_des}}">
@@ -62,10 +307,11 @@
             {%- assign page_sizet4 = pages[size_pr] -%}
             {%- if page_sizet4.content == blank %}{% continue %}{% endif -%}{%- assign ck_page_sizet4 = true -%}
             <li class="tab_title_block{% if ck %} active{% assign ck = false %}{% endif %}"><a class="db cg truncate pr" href="#tab_{{block.id}}">{{bk_setts.title}}</a></li>
-          
+          {%- comment -%}
           {%- when 'des' %}
             <li class="tab_title_block{% if ck %} active{% assign ck = false %}{% endif %}"><a class="db cg truncate pr" data-id-dest4s href="#tab_{{block.id}}">{{bk_setts.title}}</a></li>
-          {%- when 'rivui' %}
+          {%- endcomment -%}
+            {%- when 'rivui' %}
             <li class="tab_title_block{% if ck %} active{% assign ck = false %}{% endif %}"><a class="db cg truncate pr" data-id-reviewt4s href="#tab_{{block.id}}">{{bk_setts.title}}</a></li>
           
           {%- when 'html' -%}{%- if bk_setts.title == blank or pages[bk_setts.page].content == blank %}{% continue %}{% endif -%}
@@ -91,12 +337,19 @@
           <div class="sp-tab-content">{{ bk_setts.custom_liquid }}</div>
         </div>
 
+    {%- comment -%} THIS CODE IS THE ORIGINAL FULL DESCRIPTION BELOW PRODUCT IMAGE	
         {%- when 'des' -%}
         <div class="panel entry-content sp-tab des_mb_{{cl_mb}} des_style_{{cl_des}}{% if ck %} active{% assign ck = false %}{% else %} dn{% endif %}" data-id-dest4s id="tab_{{block.id}}" {{ block.shopify_attributes }}>
-        	<div class="js_ck_view"></div><div class="heading bgbl dn"><a class="tab-heading flex al_center fl_between pr cd chp fwm" href="#tab_{{block.id}}"><span class="txt_h_tab">{{bk_setts.title}}</span><span class="nav_link_icon ml__5"></span></a></div>
-        	<div class="sp-tab-content rtet4">{{- product.description -}}</div>
-        </div>
+        
 
+          <div class="js_ck_view"></div><div class="heading bgbl dn"><a class="tab-heading flex al_center fl_between pr cd chp fwm" href="#tab_{{block.id}}"><span class="txt_h_tab">{{bk_setts.title}}</span><span class="nav_link_icon ml__5"></span></a></div>
+        	<div class="sp-tab-content rtet4">{{- product.description -}}</div>
+          
+       
+        </div>
+    {%- endcomment -%}
+
+{%- comment -%}
         {%- when 'buy' -%}{% if nav_up_size == 0 %}{% continue %}{% endif -%} 
         <div class="panel entry-content sp-tab des_mb_{{cl_mb}} des_style_{{cl_des}}{% if ck %} active{% assign ck = false %}{% else %} dn{% endif %}" id="tab_{{block.id}}" {{ block.shopify_attributes }}>
           <div class="js_ck_view"></div><div class="heading bgbl dn"><a class="tab-heading flex al_center fl_between pr cd chp fwm" href="#tab_{{block.id}}"><span class="txt_h_tab">{{bk_setts.title}}</span><span class="nav_link_icon ml__5"></span></a></div>
@@ -285,254 +538,10 @@
   {%- endstyle -%}
 
   {%- endfor -%}
+</div></div>
+{%- endcomment -%}
 
-  case sett_pr
-    when '2'
-     assign singles_sp = 'sp-single-2'
-     assign cl_tb = '2'
-    when '3'
-     assign singles_sp = 'sp-single-3'
-     assign cl_tb = '3'
-    when '7'
-     assign singles_sp = 'sp-single-7'
-     assign cl_tb = '7'
-    when '4'
-     assign singles_sp = 'sp-single-4'
-     assign cl_tb = 'bottom'
-    when '5'
-     assign singles_sp = 'sp-single-5'
-     assign cl_tb = 'right'
-    when '6'
-     assign singles_sp = 'sp-single-6'
-     assign cl_tb = 'none'
-    else
-     assign singles_sp = 'sp-single-1'
-     assign cl_tb = 'left'
-  endcase
-
-  case se_stts.size_img_pr
-    when '1'
-     assign class_images = 'col-md-4'
-     assign class_summary = 'col-md-8'
-    when '2'
-     assign class_images = 'col-md-6'
-     assign class_summary = 'col-md-6'
-    when '3'
-     assign class_images = 'col-md-7'
-     assign class_summary = 'col-md-5'
-  endcase 
-  assign zoom_tp = settings.zoom_tp
-  assign main_click = settings.main_click
-  assign pr_media = product.media
-  assign class_main = '12'
-  assign no_sidebar = true
-  assign pr_sidebar = se_stts.pr_sidebar
-  case pr_sidebar
-    when 'right'
-      assign no_sidebar = false
-      case se_stts.pr_size_sidebar
-        when '1'
-          assign class_main = '10 order-1'
-          assign class_sidebar = '2 order-12'
-        when '2'
-          assign class_main = '9 order-1'
-          assign class_sidebar = '3 order-12'
-         when '3'
-          assign class_main = '8 order-1'
-           assign class_sidebar = '4 order-12'
-      endcase
-    when 'left'
-      assign no_sidebar = false
-      case se_stts.pr_size_sidebar
-        when '1'
-          assign class_main = '10 order-lg-12 order-1'
-          assign class_sidebar = '2 order-lg-1 order-12'
-        when '2'
-          assign class_main = '9 order-lg-12 order-1'
-          assign class_sidebar = '3 order-lg-1 order-12'
-        when '3'
-          assign class_main = '8 order-lg-12 order-1'
-          assign class_sidebar = '4 order-lg-1 order-12'
-       endcase
-   endcase
-  assign currently_var = product.selected_or_first_available_variant
-  assign cur_var_id = currently_var.id
-  assign pid = product.id
-  assign hd_up = 'fbt-' |append:pid
-  assign fbt_tag = product.tags| where:'fbtt4_' | first | default:hd_up | remove:'fbtt4_'
-  assign nav_up = linklists[fbt_tag].links | where:'type','product_link'
-  assign nav_up_size = nav_up.size 
-  if product.available == false or settings.fbt_pos == '2'
-    assign nav_up_size = 0
-  endif
-  assign ck_next_pr = false
-  if se_stts.back_next_pr and collection != blank
-  assign ck_next_pr = true
-  endif -%}
-
-<div class="sp-single {{singles_sp}} des_pr_layout_1">
-  {%- if ck_next_pr or se_stts.breadcrumb_pr -%}
-  <div class="bgbl pt__20 pb__20 lh__1 breadcrumb_pr_wrap">
-   <div class="container">
-    <div class="row al_center">
-      <div class="col">{% if se_stts.breadcrumb_pr %}<nav class="sp-breadcrumb"><a href="{{ routes.root_url }}" class="dib">{{ 'general.breadcrumbs.home' | t }}</a>{% if collection.url != blank %}<i class="facl facl-angle-right"></i><a href="{{collection.url}}" class="dib">{{collection.title}}</a>{% endif %}<i class="facl facl-angle-right"></i>{{product.title}}</nav>{% endif %}</div>
-      {%- if ck_next_pr -%}
-      <div class="col-auto flex al_center">
-        {%- assign next_pr = collection.next_product -%}
-        {%- assign prev_pr = collection.previous_product -%}
-        
-        {%- if prev_pr -%}<a href="{{prev_pr.url}}" class="pl__5 pr__5 fs__18 cd chp ttip_nt tooltip_bottom_left"><i class="las la-angle-left"></i><span class="tt_txt">{{prev_pr.title}}</span></a>{%- endif -%}
-        <a href="{{collection.url}}" class="pl__5 pr__5 fs__20 cd chp ttip_nt tooltip_bottom_left"><i class="fwb iccl iccl-grid fs__15"></i><span class="tt_txt">{{'products.product.back_to' | t:title:collection.title}}</span></a>
-        {%- if next_pr -%}<a href="{{next_pr.url}}" class="pl__5 pr__5 fs__18 cd chp ttip_nt tooltip_bottom_left"><i class="las la-angle-right"></i><span class="tt_txt">{{next_pr.title}}</span></a>{%- endif -%}
-      </div>
-      {%- endif -%} 
-    </div>
-   </div>
-  </div>
-  {%- endif -%} 
-
-
-  <div class="container container_cat cat_{{se_stts.pr_layout}} sticky_des_{{se_stts.use_sticky_des}}">
-      <div class="row product mt__40" id="product-{{product.id}}" data-featured-product-se data-id="_ppr">
-         {%- unless no_sidebar %}<div class="col-lg-{{class_sidebar}} col-12 sidebar sidebar_pr lazyloadt4s lazypreloadt4s" data-t4sid="pr-sidebar" data-set4url="/?section_id=pr-sidebar" data-rendert4s="{{product.url}}"><div class="nt_svg_loader dn"></div></div>{% endunless -%}
-         <div class="col-md-{{class_main}} col-12 thumb_{{cl_tb}}">
-            <div class="row mb__50 pr_sticky_content">
-               <div class="{{class_images}} col-12 pr product-images img_action_{{main_click}} pr_sticky_img" data-pr-single-media-group>
-                  <div class="row theiaStickySidebar">
-                     {%- if image != blank and pr_media.size < 2 -%}{%- assign ratio = image.aspect_ratio -%}{%- assign iw = image.width -%}
-                        <div class="col-12">
-                           <div class="p-thumb images sp-pr-gallery equal_nt {{img_size_main}} {{eq_imgtb}} position_{{img_pos_main}}">
-                              <div {% if alt contains 'imgt4_colorsolid' %}data-widths="[1]" {% endif %}data-grname="{{alt_arr | first | handleize }}" data-grpvl="{{alt_arr | last | handleize}}" class="img_ptw p_ptw js-sl-item p-item sp-pr-gallery__img w__100 media_id_{{media.id}}" data-mdid="{{media.id}}" data-mdtype="image" data-bgset="{{ image | img_url: '1x1' }}" data-ratio="{{ratio}}" data-rationav="{{ratio_nav}}" data-sizes="auto" data-src="{{ image | img_url: img_zoom_size }}" data-width="{{ image.width }}" data-height="{{ image.height }}" data-cap="{{ txt_alt }}">
-                                 <div class="pr oh nt_bg_lz"{% if eq_imgtb == 'ratio_imgtrue' %} style="padding-top:{{ 1 | divided_by: ratio | times: 100}}%;"{% endif %}>
-                                   <img src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20{{image.width}}%20{{image.height}}%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="{{ image | img_url: '1x1' }}" data-widths="[180, 360, 540, 720, 900, 1080]" data-optimumx="2" data-sizes="auto" class="w__100 lazyloadt4s t4s-media-img" alt="{{image.alt | escape }}">
-                                   <span class="t4s-img-loader"></span>
-                                   <noscript><img class="t4s-img-noscript" src="{{ image | img_url: img_zoom_size }}" loading="lazy" alt="{{ txt_alt }}"></noscript>
-                                </div>
-                               </div>
-                           </div>
-                           {%- render 'product_labels',on:'singe' -%}
-                           {%- render 'p_group_btns',main_click:main_click -%}
-                        </div>
-                     {%- elsif pr_media.size > 0 -%}
-                        {%- render 'page_pr_img',main_click:main_click,nav_img_pr:se_stts.nav_img_pr,call_cl:'_ppr', pr_media:pr_media, sett_pr:sett_pr, eq_imgtb:eq_imgtb, e_imgnv:ratio_img_thumb, img_size_main:img_size_main, img_pos_main:img_pos_main, ratio_img_thumb:ratio_img_thumb, img_size_thumb:img_size_thumb, img_pos_thumb:img_pos_thumb -%}
-                     {%- endif -%}
-                     {%- if zoom_tp == '2' %}<div class="dt_img_zoom pa t__0 r__0 dib"></div>{% endif -%}
-                  </div>
-               </div>
-               <div class="{{class_summary}} col-12 product-infors pr_sticky_su"><div class="theiaStickySidebar">{%- render 'pr_summary',section:section -%}</div></div>
-            </div>
-         </div>
-      </div>
-  </div>
-  {%- if nav_up_size > 0 %}<div id="wrap_fbt" class="container">{%- render 'fbt_snipet',nav_up:nav_up,currently_var:currently_var,cur_var_id:cur_var_id,pid:pid -%}</div>{% endif -%}
-
-
-
-</div>
-<script type="application/ld+json">{%- assign current_variant = product.selected_or_first_available_variant | default:product.variants.first -%}{%- assign image = product.featured_image | default: product.images.first -%}
-{
-  "@context": "http://schema.org/",
-  "@type": "Product",
-  "name": {{ product.title | json }},
-  "url": "{{ shop.url }}{{ product.url }}",
-  {%- if image != blank -%}
-    {%- assign image_size = image.width | append: 'x' -%}
-    "image": [
-      "https:{{ image.src | img_url: image_size }}"
-    ],
-  {%- endif -%}
-  "description": {{ product.description | strip_html | escape | strip_newlines | json }},
-  "sku": "{{ current_variant.sku |default:current_variant.id }}",
-  "mpn": "{{ current_variant.barcode}}",
-  "productID": "{{ product.id }}",
-  "brand": {
-    "@type": "Thing",
-    "name": "{{ product.vendor | escape }}"
-  },
-  {%- if product.price_varies -%}
-  "offers": [
-    {%- capture not_change -%}
-       "@type" : "Offer",
-       "availability" : "http://schema.org/{% if product.available %}InStock{% else %}OutOfStock{% endif %}",
-       "priceCurrency" : "{{ cart.currency.iso_code }}",
-       "itemCondition": "https://schema.org/NewCondition",
-       "priceValidUntil": "{{ 'now' | date: '%s' | plus: 31536000 | date: '%Y-%m-%d' | uri_encode | replace:'+','%20' }}",
-    {%- endcapture -%}
-    {%- assign shop_secure_url = shop.secure_url -%}
-    {%- for variant in product.variants -%}{%- assign barcode_size = variant.barcode.size -%}
-      {
-        {{not_change}}
-        "sku": "{{ variant.sku | default: variant.id }}",
-        "price" : "{{ variant.price | divided_by: 100.00 }}",
-        "mpn": "{{ variant.barcode }}",
-        {%- if barcode_size == 12 or barcode_size == 13 or barcode_size == 14 -%}"gtin{{barcode_size}}": "{{ variant.barcode }}",{%- endif -%}
-        "url" : "{{ shop_secure_url }}{{ variant.url }}"
-      }{% unless forloop.last %},{% endunless -%}
-    {%- endfor -%}
-  ]
-  {%- else -%}
-  "offers": {
-        "@type" : "Offer",
-        "sku": "{{ current_variant.sku |default: current_variant.id }}",
-        "availability" : "http://schema.org/{% if product.available %}InStock{% else %}OutOfStock{% endif %}",
-        "price" : "{{ product.price | divided_by: 100.00 }}",
-        "priceCurrency" : "{{ cart.currency.iso_code }}",
-        "itemCondition": "https://schema.org/NewCondition",
-        "url" : "{{ shop.secure_url }}{{ product.url }}",
-        "mpn": "{{ current_variant.barcode }}",
-        {%- assign barcode_size = current_variant.barcode.size -%}{%- if barcode_size == 12 or barcode_size == 13 or barcode_size == 14 -%}"gtin{{barcode_size}}": "{{ variant.barcode }}",{%- endif -%}
-        "priceValidUntil": "{{ 'now' | date: '%s' | plus: 31536000 | date: '%Y-%m-%d' | uri_encode | replace:'+','%20' }}"
-  }
-  {%- endif -%}
-    {%- assign review_app = settings.app_review |default:'1' -%}
-    {%- case review_app -%}
-      {%- when '1' -%}
-       {%- assign meta_spr = product.metafields.spr.reviews -%}
-       {%- assign ratingname = meta_spr | split: 'itemprop="name" content="' | last | split: '"' | first -%}
-       {%- assign ratingCount = meta_spr | split: 'reviewCount" content="' | last | split: '"' | first -%}
-        {%- if ratingCount != "0" and ratingCount != blank and ratingname == product.title -%}
-        ,"aggregateRating": {
-         "@type": "AggregateRating",
-         "ratingCount": {{ ratingCount | plus: 0 }},
-         "ratingValue": {{ meta_spr | split: 'ratingValue" content="' | last | split: '"' | first | plus: 0 }}
-        }
-        {%- endif -%}
-      {%- when '2' -%}{%- assign aggregateRating = product.metafields.ryviu.product_reviews_info | split: ";" -%}{%- assign ratingCount = aggregateRating[0] -%}
-        {%- if ratingCount != "0" and ratingCount != blank -%}
-        ,"aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingCount": {{ ratingCount | plus: 0 }},
-        "ratingValue": {{ aggregateRating[1] | plus: 0 }}
-        }
-        {%- endif -%}
-      {%- when '3' -%}{%- assign ratingCount = product.metafields.ali.reviews_count -%}
-        {%- if ratingCount != "0" and ratingCount != blank -%}
-        ,"aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingCount": {{ ratingCount }},
-        "ratingValue": {{ product.metafields.ali.reviews_average }}
-        }
-        {%- endif -%}
-      {%- when '4' -%}{%- assign ratingCount = product.metafields.loox.num_reviews -%}
-        {%- if ratingCount != "0" and ratingCount != blank -%}
-        ,"aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingCount": {{ ratingCount }},
-        "ratingValue": {{ product.metafields.loox.avg_rating }}
-        }
-        {%- endif -%}
-      {%- when 'stamped' -%}{%- assign ratingCount = product.metafields.stamped.reviews_count -%}
-        {%- if ratingCount != "0" and ratingCount != blank -%}
-        ,"aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingCount": {{ ratingCount }},
-        "ratingValue": {{ product.metafields.stamped.reviews_average }}
-        }
-        {%- endif -%}
-    {%- endcase -%}
-}
-</script>
-
+{%- endcase -%}
 {%- schema -%}
   {
     "name": "Product summary",
@@ -540,271 +549,109 @@
     "max_blocks": 30,
     "settings": [
     {
-      "type": "select",
-      "id": "des_pr_design",
-      "label": "Product description design",
-      "info": "Choose between different predefined designs",
-      "default": "1",
-      "options": [
-        {
-          "value": "1",
-          "label": "Product Tab Description"
-        },
-        {
-          "value": "2",
-          "label": "Product Tab Accordion"
-        }
-      ]
-    },
-    /*{
-      "type": "paragraph",
-      "content": "Custom Metafields (namespace: additions)"
-    },*/
-    {
-      "type": "checkbox",
-      "id": "show",
-      "label": "Show Tab Descriptions?",
-      "default": true
-    },
-    {
-      "type": "color",
-      "id": "bgcl",
-      "label": "Background Color",
-      "info": "Not working when enable description sidebar",
-      "default": "#fff"
-    },
-    {
-      "type": "color",
-      "id": "bgclmb",
-      "label": "Background Color (mobile)",
-      "info": "Not working when enable description sidebar",
-      "default": "#fff"
-    },
-    {
-      "type": "select",
-      "id": "des_w",
-      "default": "1",
-      "info": "Not working when enable description sidebar",
-      "options": [
-        {
-          "value": "1",
-          "label": "Default"
-        },
-        {
-          "value": "2",
-          "label": "Wide (1600px)"
-        },
-        {
-          "value": "3",
-          "label": "full Width"
-        },
-        {
-          "value": "4",
-          "label": "Content full Width"
-        }
-      ],
-      "label": "Description Layout"
-    },
-    {
-      "type": "select",
-      "id": "des_mb",
-      "label": "Description design mobile",
-      /*"info": "Only working in Product Tab Description",*/
-      "default": "2",
-      "options": [
-        {
-          "value": "1","label": "Design 1"
-        },
-        {
-          "value": "2","label": "Design 2"
-        }
-      ]
-    },  
-    {
-    "type": "checkbox",
-    "id": "auto",
-    "label": "Enable auto open?",
-    /*"info": "Only working in Product Tab Accordions",*/
-    "default": true
-    },
-    {
-      "type": "text",
-      "id": "mg",
-      "label": "Margin",
-      "default": "30px,,30px,",
-      "placeholder": "30px,,30px,"
-    },
-    {
-      "type": "text",
-      "id": "mg_mb",
-      "label": "Margin Mobile",
-      "default": "0,,0,",
-      "placeholder": "0,,0,"
-    }
-  ],
-  "blocks": [
-    /*{
-      "type": "@app"
-    },*/
-    {
-      "type": "des",
-      "name": "Description",
-      "limit": 1,
-      "settings": [
-        {
-          "type": "text",
-          "id": "title",
-          "label": "Heading",
-          "default": "Description"
-        }
-      ]
-    },
-    {
-      "type": "buy",
-      "name": "Bought Together",
-      "limit": 1,
-      "settings": [
-        {
-          "type": "paragraph",
-          "content": "Only active when enable Frequently Bought Together on inside description."
-        },
-        {
-          "type": "text",
-          "id": "title",
-          "label": "Heading",
-          "default": "Frequently Bought Together"
-        },
-        {
-          "type": "paragraph",
-          "content": "[Tutorials Doc](https://kalles-docs.the4.co/features/bundle#config-bundle-from-kalles-1-1)"
-        }/*,
-        {
-          "type": "paragraph",
-          "content": "[Tutorials Video](https://kalles-docs.the4.co/features/bundle#config-bundle-from-kalles-1-1)"
-        }*/
-      ]
-    },
-    {
-      "type": "add",
-      "name": "Additional Information",
-      "limit": 1,
-      "settings": [
-        {
-          "type": "text",
-          "id": "title",
-          "label": "Heading",
-          "default": "Additional Information"
-        }
-      ]
-    },
-   {
-    "type": "custom_liquid",
-    "name": "Custom Liquid",
-    "settings": [
-        {
-          "type": "text",
-          "id": "title",
-          "label": "Heading",
-          "default": "Custom Liquid"
-        },
-      {
-        "type": "liquid",
-        "id": "custom_liquid",
-        "label": "Custom Liquid",
-        "info": "Add app snippets or other Liquid code to create advanced customizations."
-      }
-    ]
-   },
-    {
-      "type": "rivui",
-      "name": "Review",
-      "limit": 1,
-      "settings": [
-        {
-          "type": "text",
-          "id": "title",
-          "label": "Heading",
-          "default": "Reviews"
-        },
-        { 
-          "type": "liquid",
-          "id": "review_liquid",
-          "label": "Add Snippets Liquid",
-          "info": "Add app snippets reviews to show a 'write reviews' on product page. Will working when you use 'Other app review'"
-        }
-      ]
-    },
-    /*{
-      "type": "shipping",
-      "name": "shipping Information",
-      "limit": 1,
-      "settings": [
-        {
-          "type": "text",
-          "id": "title",
-          "label": "Heading",
-          "default": "shipping"
-        }
-      ]
-    },*/
-    {
-      "type": "html",
-      "name": "Custom HTML",
-      "settings": [
-       {
-          "type": "text",
-          "id": "title",
-          "label": "Heading",
-          "default": "Custom tab"
-        },
-        {
-          "type": "page",
-          "id": "page",
-          "label": "Tab content",
-          "info": "This page content will appear in the extra tab."
-        }
-      ]
-    },
-    {
-      "type": "size_pr",
-      "limit": 1,
-      "name": "Product type - Size guide",
-      "settings": [
-       {
-          "type": "paragraph",
-          "content": "Only show this tab when page has title 'Size The4 Name'. Name: product type"
-        },
-       {
-          "type": "paragraph",
-          "content": "This page content will appear in the extra tab."
-        },
-       {
-          "type": "text",
-          "id": "title",
-          "label": "Heading",
-          "default": "Size guide"
-        }
-      ]
-    },
-    {
-      "type": "text",
-      "name": "Text",
-      "limit": 10,
-      "settings": [
+    "type": "select",
+        "id": "des_pr_design",
+        "label": "Product description design",
+        "info": "Choose between different predefined designs",
+        "default": "1",
+        "options": [
           {
-          "type": "text",
-          "id": "title",
-          "label": "Heading",
-          "default": "Talk about your brand"
+            "value": "1",
+            "label": "Product Tab Description"
           },
           {
-          "type": "richtext",
-          "id": "text",
-          "label": "Text",
-          "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+            "value": "2",
+            "label": "Product Tab Accordion"
           }
-       ]
-    },
+        ]
+      },
+      /*{
+        "type": "paragraph",
+        "content": "Custom Metafields (namespace: additions)"
+      },*/
+      {
+        "type": "checkbox",
+        "id": "show",
+        "label": "Show Tab Descriptions?",
+        "default": true
+      },
+      {
+        "type": "color",
+        "id": "bgcl",
+        "label": "Background Color",
+        "info": "Not working when enable description sidebar",
+        "default": "#fff"
+      },
+      {
+        "type": "color",
+        "id": "bgclmb",
+        "label": "Background Color (mobile)",
+        "info": "Not working when enable description sidebar",
+        "default": "#fff"
+      },
+      {
+        "type": "select",
+        "id": "des_w",
+        "default": "1",
+        "info": "Not working when enable description sidebar",
+        "options": [
+          {
+            "value": "1",
+            "label": "Default"
+          },
+          {
+            "value": "2",
+            "label": "Wide (1600px)"
+          },
+          {
+            "value": "3",
+            "label": "full Width"
+          },
+          {
+            "value": "4",
+            "label": "Content full Width"
+          }
+        ],
+        "label": "Description Layout"
+      },
+      {
+        "type": "select",
+        "id": "des_mb",
+        "label": "Description design mobile",
+        /*"info": "Only working in Product Tab Description",*/
+        "default": "2",
+        "options": [
+          {
+            "value": "1","label": "Design 1"
+          },
+          {
+            "value": "2","label": "Design 2"
+          }
+        ]
+      },  
+      {
+      "type": "checkbox",
+      "id": "auto",
+      "label": "Enable auto open?",
+      /*"info": "Only working in Product Tab Accordions",*/
+      "default": true
+      },
+      {
+        "type": "text",
+        "id": "mg",
+        "label": "Margin",
+        "default": "30px,,30px,",
+        "placeholder": "30px,,30px,"
+      },
+      {
+        "type": "text",
+        "id": "mg_mb",
+        "label": "Margin Mobile",
+        "default": "0,,0,",
+        "placeholder": "0,,0,"
+      },
+
+
       {
         "type": "select",
         "id": "pr_layout",
@@ -1281,7 +1128,7 @@
       },
       {
       "type": "checkbox",
-      "id": "auto",
+      "id": "autobox",
       "label": "Enable auto open?",
       "info": "Only working with block 'Collapsible'",
       "default": false
@@ -1362,62 +1209,6 @@
             "label": "Add Snippets Liquid",
             "info": "Add app snippets reviews to show star rating on product page. Will working when you use 'Other app review'"
           }
-        ]
-      },
-      {
-        "type": "des",
-        "name": "Description",
-        "limit": 1,
-        "settings": [
-          {
-            "type": "select",
-            "id": "des",
-            "options": [
-              {
-                "value": "1",
-                "label": "Full description"
-              },
-              {
-                "value": "2",
-                "label": "Short description"
-              }
-            ],
-            "label": "Description mode:",
-            "default": "2"
-          },
-          {
-            "type": "paragraph",
-            "content": "—————————————————"
-          },
-          {
-            "type": "paragraph",
-            "content": "== Short description settings:"
-          },
-          {
-            "type": "richtext",
-            "id": "text",
-            "label": "Short description",
-            "info": "This page content will appear. Short description page that will be displayed for each product content if you don't set metafield excerpt for each product content."
-          },
-        {
-          "type": "number",
-          "id": "length",
-          "label": "Excerpt length (integer)",
-          "info": "Number of words that will be displayed for each product content if you don't set short description page or set metafield excerpt for each product content.",
-          "default": 31
-        },
-        {
-         "type": "checkbox",
-         "id": "readm",
-         "label": "Use Read more?",
-         "default": false
-        },
-        {
-         "type": "text",
-         "id": "readm_txt",
-         "label": "Read more title",
-         "default": "Read more"
-        }
         ]
       },
       {
@@ -2885,8 +2676,72 @@
    ],
     "default": {
       "blocks": [
-        { "type": "title" },{ "type": "pricereview" },{ "type": "des" },{ "type": "frm" },{ "type": "size" },{ "type": "meta" },{ "type": "social" }
+        { "type": "title" },{ "type": "pricereview" },{ "type": "frm" },{ "type": "size" },{ "type": "meta" },{ "type": "social" }
       ]
     }
   }
 {% endschema %}
+{%- comment -%}
+THIS PART GOES IN 'BLOCKS' SECTION
+--------------------
+{ "type": "des" },
+--------------------
+
+
+{
+        "type": "des",
+        "name": "Description",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "select",
+            "id": "des",
+            "options": [
+              {
+                "value": "1",
+                "label": "Full description"
+              },
+              {
+                "value": "2",
+                "label": "Short description"
+              }
+            ],
+            "label": "Description mode:",
+            "default": "2"
+          },
+          {
+            "type": "paragraph",
+            "content": "—————————————————"
+          },
+          {
+            "type": "paragraph",
+            "content": "== Short description settings:"
+          },
+          {
+            "type": "richtext",
+            "id": "text",
+            "label": "Short description",
+            "info": "This page content will appear. Short description page that will be displayed for each product content if you don't set metafield excerpt for each product content."
+          },
+        {
+          "type": "number",
+          "id": "length",
+          "label": "Excerpt length (integer)",
+          "info": "Number of words that will be displayed for each product content if you don't set short description page or set metafield excerpt for each product content.",
+          "default": 31
+        },
+        {
+         "type": "checkbox",
+         "id": "readm",
+         "label": "Use Read more?",
+         "default": false
+        },
+        {
+         "type": "text",
+         "id": "readm_txt",
+         "label": "Read more title",
+         "default": "Read more"
+        }
+        ]
+      },
+{%- endcomment -%}
