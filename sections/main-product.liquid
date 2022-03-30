@@ -14,30 +14,7 @@
   assign sett_pr = se_stts.design_products
   assign image = product.images[0] | default:settings.placeholder_img
 
-  assign se_stts = section.settings
-  assign cl_des = se_stts.des_pr_design
-  assign cl_mb  = se_stts.des_mb
-  if cl_des == '2'
-    assign ck = se_stts.auto
-  else
-    assign ck = true
-  endif 
-  assign additions = product.metafields.additions
-  assign currently_var = product.selected_or_first_available_variant
-  assign cur_var_id = currently_var.id
-  assign pid = product.id
-  assign hd_up = 'fbt-' |append:pid
-  assign fbt_tag = product.tags| where:'fbtt4_' | first | default:hd_up | remove:'fbtt4_'
-  assign nav_up = linklists[fbt_tag].links | where:'type','product_link'
-  assign nav_up_size = nav_up.size 
-  if product.available == false or settings.fbt_pos == '1'
-    assign nav_up_size = 0
-  endif 
-  assign des_w  = se_stts.des_w
-  assign des_pr_layout = '1'
-  assign pr_tags = product.tags
-  assign tag_arr_size = pr_tags | where:'tabt4_' | size 
-
+  
   case sett_pr
     when '2'
      assign singles_sp = 'sp-single-2'
@@ -399,7 +376,8 @@
         "default": "0,,0,",
         "placeholder": "0,,0,"
       },
-
+      
+      
 
       {
         "type": "select",

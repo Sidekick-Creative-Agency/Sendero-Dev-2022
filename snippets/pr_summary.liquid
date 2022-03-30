@@ -296,6 +296,9 @@ assign se_stts = section.settings
       {%- for block in section.blocks %}{% assign bk_setts = block.settings -%}
       {%- endfor -%}
 {%- endcomment -%}
+<li class="tab_title_block{% if ck %} active{% assign ck = false %}{% endif %}"><a class="db cg truncate pr" data-id-dest4s href="#tab_des">Description</a></li>
+<li class="tab_title_block{% if ck %} active{% assign ck = false %}{% endif %}"><a class="db cg truncate pr" data-id-dest4s href="#tab_add">Additional Information</a></li>
+{%- comment -%}
 {%- for i in (1..3) -%}}
         {%- case block.type -%}
 
@@ -327,7 +330,7 @@ assign se_stts = section.settings
         
         {%- endcase -%}
       {%- endfor -%}
-
+{%- endcomment -%}
     </ul>
     {%- if cl_des == '2' %}{% assign ck = se_stts.auto %}{% else -%}{% assign ck = true %}{% endif -%} 
     {%- for block in section.blocks %}{% assign bk_setts = block.settings -%}
