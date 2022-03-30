@@ -2,20 +2,8 @@
   "sections": {
     "cat_shop": {
       "type": "cat_shop",
-      "blocks": {
-        "b8b93ae1-fc06-493f-98f5-5f00c4051039": {
-          "type": "cat",
-          "settings": {
-            "collection": "",
-            "icon": ""
-          }
-        }
-      },
-      "block_order": [
-        "b8b93ae1-fc06-493f-98f5-5f00c4051039"
-      ],
       "settings": {
-        "shown": false,
+        "shown": true,
         "source": "1",
         "sort": "alphabetical"
       }
@@ -64,7 +52,7 @@
     "sub": {
       "type": "sub-collections",
       "settings": {
-        "show_sub": true,
+        "show_sub": false,
         "layout": "default",
         "cat_design": "5",
         "cat_space": "30",
