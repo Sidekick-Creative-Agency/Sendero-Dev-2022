@@ -663,6 +663,17 @@
               "cl_mb": "12"
             }
           },
+          "fe034fc2-e963-4e67-998b-6ea77da04d15": {
+            "type": "menu",
+            "settings": {
+              "title": "Quick links",
+              "menu": "",
+              "order": "1",
+              "cl": "2",
+              "cl_tb": "6",
+              "cl_mb": "12"
+            }
+          },
           "1581507819652": {
             "type": "logo",
             "settings": {
@@ -684,6 +695,7 @@
           "1581507824602",
           "eb9f9808-b453-4179-8064-12d5ccfd65dc",
           "1581507835369",
+          "fe034fc2-e963-4e67-998b-6ea77da04d15",
           "1581507819652"
         ],
         "settings": {
@@ -691,7 +703,7 @@
           "accordions": true,
           "border": false,
           "bd_cl": "#ededed",
-          "cl_h": "#222222",
+          "cl_h": "#b3b3b3",
           "cl": "#878787",
           "cl_a": "#878787",
           "cl_hover": "#b3b3b3",
