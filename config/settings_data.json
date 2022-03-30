@@ -725,26 +725,19 @@
           "1581507860120": {
             "type": "copy",
             "settings": {
-              "text": "Copyright © [year] <span class=\"cp\">Sendero Provisions Co.<\/span> all rights reserved."
-            }
-          },
-          "1581507855652": {
-            "type": "menu",
-            "settings": {
-              "menu": "footer"
+              "text": "<h5>COPYRIGHT © [year] <span class=\"cp\">SENDERO PROVISIONS CO.<\/span> ALL RIGHTS RESERVED. <\/h5>"
             }
           }
         },
         "block_order": [
-          "1581507860120",
-          "1581507855652"
+          "1581507860120"
         ],
         "settings": {
-          "layout": "6",
-          "bg": "#ffffff",
-          "cl": "#878787",
-          "cl_a": "#878787",
-          "cl_hover": "#56cfe1"
+          "layout": "12",
+          "bg": "#000",
+          "cl": "#504f4f",
+          "cl_a": "#dcdcdc",
+          "cl_hover": "#999999"
         }
       },
       "cart_widget": {
