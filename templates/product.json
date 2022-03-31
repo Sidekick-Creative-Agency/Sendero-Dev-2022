@@ -62,11 +62,7 @@
         "des": {
           "type": "des",
           "settings": {
-            "des": "2",
-            "text": "",
-            "length": 45,
-            "readm": true,
-            "readm_txt": "Read more"
+            "title": "Description"
           }
         },
         "social": {
@@ -88,8 +84,8 @@
       "settings": {
         "des_pr_design": "1",
         "show": true,
-        "bgcl": "#fff",
-        "bgclmb": "#fff",
+        "bgcl": "#ffffff",
+        "bgclmb": "#ffffff",
         "des_w": "1",
         "des_mb": "2",
         "auto": false,
@@ -113,6 +109,52 @@
         "autobox": false
       }
     },
+    "1648735918a2a5985b": {
+      "type": "image_text",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Backcountry-Trout-Cook-How-To_07_1024x1024_ec49145e-158d-46c1-896d-0ba3195fde02.jpg",
+        "img_align": "center",
+        "img_position": "1",
+        "image_ratio": "auto",
+        "text_size2": "30,14",
+        "title": "QUALITY HATS, MADE FOR THE WILD WEST",
+        "text": "<p>OUR QUALITY GUARANTEE<\/p><p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p><p>SUSTAINABLY SOURCED<\/p><p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p><p>NATURAL MATERIALS<\/p><p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+        "button_label": "Shop Now",
+        "button_link": "",
+        "open_link": "_blank",
+        "txt_align": "tl",
+        "use_shadow": false,
+        "cl_txt": "dark",
+        "layout": "nt_full",
+        "mg": "50px,,50px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    },
+    "1648736181e62d2166": {
+      "type": "image_text",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Big_Bend_Shirt_Lifestyle.jpg",
+        "img_align": "center",
+        "img_position": "2",
+        "image_ratio": "auto",
+        "text_size2": "30,14",
+        "title": "ABOUT SENDERO PRODUCTS",
+        "text": "<p>OUR QUALITY GUARANTEE<\/p><p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p><p>NO FEAR BUYING<\/p><p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p><p>STILL NOT SURE<\/p><p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+        "button_label": "Shop Now",
+        "button_link": "",
+        "open_link": "_blank",
+        "txt_align": "tl",
+        "use_shadow": false,
+        "cl_txt": "dark",
+        "layout": "nt_full",
+        "mg": "50px,,50px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    },
     "product-description": {
       "type": "pr_description",
       "settings": {
@@ -131,9 +173,9 @@
       "type": "product-recommendations",
       "settings": {
         "show": true,
-        "title": "You may also like",
+        "title": "MORE PICKS FOR YOU",
         "sub_title": "",
-        "sub_font": "2",
+        "sub_font": "1",
         "style_title": "title_1",
         "ic_tt": "gem",
         "show_clpr": false,
@@ -151,9 +193,9 @@
         "loop": true,
         "au_time": 0,
         "au_hover": true,
-        "button": false,
+        "button": true,
         "btn_vi": "1",
-        "btn_owl": "1",
+        "btn_owl": "2",
         "btn_color": "0",
         "dot": false,
         "dot_owl": "1",
@@ -169,7 +211,7 @@
       "settings": {
         "show": true,
         "unavailable_prs": "show",
-        "title": "Recently viewed products",
+        "title": "BEST SELLERS",
         "sub_title": "",
         "sub_font": "2",
         "style_title": "title_1",
@@ -189,9 +231,9 @@
         "loop": true,
         "au_time": 0,
         "au_hover": true,
-        "button": false,
+        "button": true,
         "btn_vi": "1",
-        "btn_owl": "1",
+        "btn_owl": "2",
         "btn_color": "0",
         "dot": false,
         "dot_owl": "1",
@@ -205,6 +247,8 @@
   },
   "order": [
     "main",
+    "1648735918a2a5985b",
+    "1648736181e62d2166",
     "product-description",
     "product-recommendations",
     "recently-viewed-products"
