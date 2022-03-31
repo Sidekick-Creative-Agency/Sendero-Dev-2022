@@ -143,7 +143,7 @@ assign se_stts = section.settings
   {%- endif -%}
 {%- endcapture -%}
 
-<div id="shopify-section-pr_summary" class="shopify-section summary entry-summary mt__30 sp-tabs">
+<div id="shopify-section-pr_summary" class="shopify-section summary entry-summary mt__30 sp-tabs pl__50">
 {%- for block in section.blocks %}{% assign bk_stts = block.settings -%}
    {%- case block.type -%}
 
@@ -285,8 +285,8 @@ assign se_stts = section.settings
 
       {%- for i in (1..1) -%}
 
-  <div id="wrap_des_pr"><div class="container container_des">
-    <ul class="ul_none ul_tabs is-flex fl_center fs__16 des_mb_{{cl_mb}} des_style_{{cl_des}}">
+  <div id="wrap_des_pr"><div class="container container_des" style="padding: 0">
+    <ul class="ul_none ul_tabs is-flex fl_center fs__16 des_mb_{{cl_mb}} des_style_{{cl_des}}" style="justify-content: left;">
 
 <li class="tab_title_block{% if ck %} active{% assign ck = false %}{% endif %}"><a class="db cg truncate pr" data-id-dest4s href="#tab_des">Description</a></li>
 <li class="tab_title_block{% if ck %} active{% assign ck = false %}{% endif %}"><a class="db cg truncate pr" data-id-dest4s href="#tab_add">Additional Information</a></li>
@@ -335,6 +335,13 @@ assign se_stts = section.settings
         <div class="panel entry-content sp-tab des_mb_{{cl_mb}} des_style_{{cl_des}}{% if ck %} active{% assign ck = false %}{% else %} dn{% endif %}" data-id-dest4s id="tab_{{block.id}}" {{ block.shopify_attributes }}>
         	<div class="js_ck_view"></div><div class="heading bgbl dn"><a class="tab-heading flex al_center fl_between pr cd chp fwm" href="#tab_{{block.id}}"><span class="txt_h_tab">{{bk_setts.title}}</span><span class="nav_link_icon ml__5"></span></a></div>
         	<div class="sp-tab-content rtet4">{{- product.description -}}</div>
+        </div>
+
+        {%- when 'add' %}{% if product.has_only_default_variant %}{% continue %}{% endif -%}
+        <div class="panel entry-content sp-tab des_mb_{{cl_mb}} des_style_{{cl_des}}{% if ck %} active{% assign ck = false %}{% else %} dn{% endif %}" data-id-dest4s id="tab_{{block.id}}" {{ block.shopify_attributes }}>
+        	<div class="js_ck_view"></div><div class="heading bgbl dn"><a class="tab-heading flex al_center fl_between pr cd chp fwm" href="#tab_{{block.id}}"><span class="txt_h_tab">{{bk_setts.title}}</span><span class="nav_link_icon ml__5"></span></a></div>
+        	<div class="sp-tab-content rtet4">{{- product.description -}}</div>
+          <h1>HEELO</h1>
         </div>
 
         {%- when 'buy' -%}{% if nav_up_size == 0 %}{% continue %}{% endif -%} 

@@ -29,13 +29,20 @@
   </div>
 </div>
 {%- endcapture -%}
-<div class="nt_se_{{sid}} {{se_stts.layout}} txt_shadow_{{se_stts.use_shadow}}">
+<div class="nt_se_{{sid}} {{se_stts.layout}} txt_shadow_{{se_stts.use_shadow}}" style="margin: 0 auto !important">
   <div class="row no-gutters equal_nt {{img_ratio}} al_center">
     {%- if se_stts.img_position == '1' -%}{{- image_layout -}}{%- endif -%}
     <div class="col-12 col-md-6 txt_col_img">
-      <div class="flex column pl__20 pr__20 pb__20 pt__20 shadow_wrap {{se_stts.txt_align}} {{cl_arr[1]}}">
+      <div class="flex column pl__50 pr__50 shadow_wrap {{se_stts.txt_align}} {{cl_arr[1]}}">
           <h3 class="mb__20 mt__0 fs__{{fs_arr[0]}} {{cl_arr[0]}} lh__1">{{se_stts.title}}</h3>
-          {{se_stts.text}}
+          <h5 >{{se_stts.subtitle1}}</h5>
+          {{se_stts.text1}}
+          <br>
+          <h5>{{se_stts.subtitle2}}</h5>
+          {{se_stts.text2}}
+          <br>
+          <h5>{{se_stts.subtitle3}}</h5>
+          {{se_stts.text3}}
           {%- if url != blank and se_stts.button_label -%}<p class="mg__0"><a class="button {{cl_arr[2]}}" href="{{url}}" target="{{se_stts.open_link}}">{{se_stts.button_label}}</a></p>{%- endif -%}
       </div>
     </div>
@@ -207,8 +214,38 @@
         "default": "Image with text"
       },
       {
+        "type": "text",
+        "id": "subtitle1",
+        "label": "Subtitle",
+        "default": "OUR QUALITY GUARANTEE"
+      },
+      {
+        "type": "text",
+        "id": "subtitle2",
+        "label": "Subtitle",
+        "default": "SUSTAINABLY SOURCED"
+      },
+      {
+        "type": "text",
+        "id": "subtitle3",
+        "label": "Subtitle",
+        "default": "NATURAL MATERIALS"
+      },
+      {
         "type": "richtext",
-        "id": "text",
+        "id": "text1",
+        "label": "Text",
+        "default": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>"
+      },
+      {
+        "type": "richtext",
+        "id": "text2",
+        "label": "Text",
+        "default": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>"
+      },
+      {
+        "type": "richtext",
+        "id": "text3",
         "label": "Text",
         "default": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>"
       },
