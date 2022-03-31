@@ -105,6 +105,14 @@
     letter-spacing: 0.15em;
 }
 
+.shop-all-blk {
+    padding: 0 20px;
+    font-size:12px;
+    font-weight:400;
+    color:#000;
+    letter-spacing: 0.15em;
+}
+
 .cat_grid_item__link:hover {
     opacity: 0.5;
 }
@@ -118,6 +126,29 @@
     background-color: rgba(33,43,54,1);;
     border: 1px solid rgba(33,43,54,.9) !important;
 }
+
+
+/*--------------------------------------------------------/
+/ Category & Collection Pages
+/--------------------------------------------------------*/
+
+
+.sk-breadcrumbs {
+    margin:70px 90px;
+}
+
+.sk-collection-top {
+    margin:70px 0 70px 90px;
+}
+
+.flickityt4s-slider {
+    width:108%;
+}
+
+.image-title {
+    color:#fff;
+}
+
 
 
 /*-----------------------------------------------------------------------------/
