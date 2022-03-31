@@ -143,7 +143,7 @@ assign se_stts = section.settings
   {%- endif -%}
 {%- endcapture -%}
 
-<div id="shopify-section-pr_summary" class="shopify-section summary entry-summary mt__30 sp-tabs pl__50">
+<div id="shopify-section-pr_summary" class="shopify-section summary entry-summary mt__30 sp-tabs pl__50 remove_padding_on_mobile">
 {%- for block in section.blocks %}{% assign bk_stts = block.settings -%}
    {%- case block.type -%}
 
@@ -275,7 +275,13 @@ assign se_stts = section.settings
           </div>
         {%- endif -%}
 
-
+        <style>
+          @media screen and (max-width: 767px) {
+            .remove_padding_on_mobile {
+              padding-left: 15px !important;
+            }
+          } 
+        </style>
 
 
 

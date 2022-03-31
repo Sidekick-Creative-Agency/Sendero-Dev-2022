@@ -33,18 +33,26 @@
   <div class="row no-gutters equal_nt {{img_ratio}} al_center">
     {%- if se_stts.img_position == '1' -%}{{- image_layout -}}{%- endif -%}
     <div class="col-12 col-md-6 txt_col_img">
-      <div class="flex column pl__50 pr__50 shadow_wrap {{se_stts.txt_align}} {{cl_arr[1]}}">
+      <div class="flex column pl__50 pr__50 shadow_wrap {{se_stts.txt_align}} {{cl_arr[1]}} remove_padding_on_mobile">
           <h3 class="mb__20 mt__0 fs__{{fs_arr[0]}} {{cl_arr[0]}} lh__1">{{se_stts.title}}</h3>
           <h5 >{{se_stts.subtitle1}}</h5>
           {{se_stts.text1}}
-          <br>
+          
           <h5>{{se_stts.subtitle2}}</h5>
           {{se_stts.text2}}
-          <br>
+          
           <h5>{{se_stts.subtitle3}}</h5>
           {{se_stts.text3}}
           {%- if url != blank and se_stts.button_label -%}<p class="mg__0"><a class="button {{cl_arr[2]}}" href="{{url}}" target="{{se_stts.open_link}}">{{se_stts.button_label}}</a></p>{%- endif -%}
       </div>
+      <style>
+        @media screen and (max-width: 767px) {
+          .remove_padding_on_mobile {
+            padding-left: 15px !important;
+          }
+        } 
+      </style>
+
     </div>
     <style>.nt_se_{{sid}} .txt_col_img p {font-size: {{fs_arr[1]}}px}</style>
     {%- if se_stts.img_position == '2' -%}{{- image_layout -}}{%- endif -%}
