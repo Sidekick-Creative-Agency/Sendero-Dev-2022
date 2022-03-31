@@ -109,6 +109,17 @@
     opacity: 0.5;
 }
 
+/*---------------- ADD TO CART BUTTON -------------------*/
+.single_add_to_cart_button {
+    background-color: rgba(33,43,54,.9);
+    border: 1px solid rgba(33,43,54,.9);
+}
+.single_add_to_cart_button:hover {
+    background-color: rgba(33,43,54,1);;
+    border: 1px solid rgba(33,43,54,.9) !important;
+}
+
+
 /*-----------------------------------------------------------------------------/
 / Custom CSS For Screen Sizes
 /-----------------------------------------------------------------------------*/
