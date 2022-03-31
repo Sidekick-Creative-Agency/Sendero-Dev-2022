@@ -105,8 +105,31 @@
     letter-spacing: 0.15em;
 }
 
+.shop-all-blk {
+    padding: 0 20px;
+    font-size:12px;
+    font-weight:400;
+    color:#000;
+    letter-spacing: 0.15em;
+}
+
 .cat_grid_item__link:hover {
     opacity: 0.5;
+}
+
+/*--------------------------------------------------------/
+/ HEADER & MEGA MENU
+/--------------------------------------------------------*/
+
+
+/*---------------- Logo & Icon Spacing -------------------*/
+
+.sk-breadcrumbs {
+    margin:70px 90px;
+}
+
+.sk-collection-top {
+    margin:70px 0 70px 90px;
 }
 
 /*-----------------------------------------------------------------------------/
