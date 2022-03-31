@@ -118,11 +118,9 @@
 }
 
 /*--------------------------------------------------------/
-/ HEADER & MEGA MENU
+/ Category & Collection Pages
 /--------------------------------------------------------*/
 
-
-/*---------------- Logo & Icon Spacing -------------------*/
 
 .sk-breadcrumbs {
     margin:70px 90px;
@@ -131,6 +129,16 @@
 .sk-collection-top {
     margin:70px 0 70px 90px;
 }
+
+.flickityt4s-slider {
+    width:108%;
+}
+
+.image-title {
+    color:#fff;
+}
+
+
 
 /*-----------------------------------------------------------------------------/
 / Custom CSS For Screen Sizes

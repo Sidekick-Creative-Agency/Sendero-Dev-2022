@@ -1,9 +1,9 @@
 {
   "sections": {
     "16479809910f68859a": {
-      "type": "best_seller_slider",
+      "type": "category-page-top",
       "settings": {
-        "title": "Collection Slider",
+        "title": "Category Page Top",
         "sub_title": "Sub Text",
         "sub_font": "2",
         "btn_title": "See all products",

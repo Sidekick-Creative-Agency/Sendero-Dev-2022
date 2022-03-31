@@ -140,15 +140,7 @@ endif -%}
 {%- else -%}
 
 
-     <div class="sk-breadcrumbs">
-        {%- if se_settings.breadcrumb_pr %}<nav class="sp-breadcrumb mt__10" aria-label="Breadcrumbs"><a href="{{ routes.root_url }}" class="dib">{{ 'general.breadcrumbs.home' | t }}</a><i class="facl facl-angle-right"></i>{{collection.title}}{% endif -%}
-        {%- assign get_url = '' | link_to_remove_tag: '' | split:'href="' | last | split:'"' | first | remove:'?customer_posted=true' -%}
-        {%- assign sy = collection.sort_by -%}
-        {%- if collection.current_type or sy != blank or collection.current_vendor or get_url contains '?' %}{% assign get_url = get_url | append:'&' %}{% else %}{% assign get_url = get_url | append:'/?' %}{% endif -%}
-        {%- assign sort_by = sy | default: collection.default_sort_by -%}
-     </div>
-
-     <div class="container container_cat {{settings.pop_style}} cat_{{se_settings.shop_layout}} mb__60">
+<div class="container container_cat {{settings.pop_style}} cat_{{se_settings.shop_layout}} mb__60">
       <div class="cat_toolbar row fl_center al_center mt__30" style="max-width:1450px">
         <div class="cat_filter col op__0 pe_none">
         {%- assign ck = true -%}
