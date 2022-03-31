@@ -18,10 +18,10 @@
 
  
 
- {%- capture image_layout1 -%}
+ {%- capture layout1 -%}
 <div class="nt_se_{{sid}} {{se_stts.layout}} txt_shadow_{{se_stts.use_shadow}}" style="margin: 0 auto !important;">
-  <div class="row no-gutters equal_nt {{img_ratio}} al_center flex_wrap_reverse">
-<div class="col-12 col-md-6 flex_wrap_reverse">
+  <div class="row no-gutters equal_nt {{img_ratio}} al_center">
+<div class="col-12 col-md-6">
   <div class="nt_img_txt oh pr middle center" style="max-width: 987px;">
     {%- comment -%}<a href="{{ url | default:'#' }}" class="db">{%- endcomment -%}
       {%- if image != blank -%}
@@ -58,9 +58,9 @@
 </div>
 {%- endcapture -%}
 
-{%- capture image_layout2 -%}
+{%- capture layout2 -%}
 <div class="nt_se_{{sid}} {{se_stts.layout}} txt_shadow_{{se_stts.use_shadow}}" style="margin: 0 auto !important;">
-  <div class="row no-gutters equal_nt {{img_ratio}} al_center flex_wrap_reverse">
+  <div class="row no-gutters equal_nt {{img_ratio}} al_center flex_wrap_reverse" id="flex_wrap">
     <div class="col-12 col-md-6 txt_col_img">
       <div class="flex column pl__50 pr__50 shadow_wrap {{se_stts.txt_align}} {{cl_arr[1]}} remove_padding_on_mobile" style="max-width: 635px;">
           <h3 class="mb__20 mt__0 fs__{{fs_arr[0]}} {{cl_arr[0]}} lh__1">{{se_stts.title}}</h3>
@@ -98,8 +98,12 @@
 </div>
 {%- endcapture -%}
 
+{%- if se_stts.img_position == '1' -%}
+{{- layout1 -}}
+{%- else-if se_stts.img_position == '2' -%}
+{{- layout2 -}}
+{%- endif -%}
 
-{%- if se_stts.img_position == '2' -%}{{- image_layout2 -}}{%- endif -%}
  
     <style>
       .nt_se_{{sid}} .txt_col_img p {

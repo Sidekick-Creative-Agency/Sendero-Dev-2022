@@ -109,8 +109,8 @@
         "autobox": false
       }
     },
-    "1648735918a2a5985b": {
-      "type": "image_text",
+    "1648757478999cc57a": {
+      "type": "image_text_product_page",
       "settings": {
         "image": "shopify:\/\/shop_images\/IMG_0248_1024x1024_48d1f0c4-e069-4ab7-ba9c-c2ba8a991eaf.webp",
         "img_align": "center",
@@ -137,18 +137,18 @@
         "pd_mb": ""
       }
     },
-    "1648736181e62d2166": {
-      "type": "image_text",
+    "164875753916b49a9b": {
+      "type": "image_text_product_page",
       "settings": {
         "image": "shopify:\/\/shop_images\/Big_Bend_Shirt_Lifestyle.jpg",
         "img_align": "center",
         "img_position": "2",
         "image_ratio": "auto",
         "text_size2": "30,14",
-        "title": "ABOUT SENDERO PRODUCTS",
+        "title": "Image with text",
         "subtitle1": "OUR QUALITY GUARANTEE",
         "subtitle2": "NO FEAR BUYING",
-        "subtitle3": "STILL NOT SURE",
+        "subtitle3": "NOT SURE YET",
         "text1": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
         "text2": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
         "text3": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
@@ -257,8 +257,8 @@
   },
   "order": [
     "main",
-    "1648735918a2a5985b",
-    "1648736181e62d2166",
+    "1648757478999cc57a",
+    "164875753916b49a9b",
     "product-description",
     "product-recommendations",
     "recently-viewed-products"
