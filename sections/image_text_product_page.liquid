@@ -16,8 +16,12 @@
  assign cl_arr = cl_txt | split:","
  assign fs_arr = se_stts.text_size2 | split:"," -%}
 
-{%- capture image_layout -%}
-<div class="col-12 col-md-6">
+ 
+
+ {%- capture image_layout1 -%}
+<div class="nt_se_{{sid}} {{se_stts.layout}} txt_shadow_{{se_stts.use_shadow}}" style="margin: 0 auto !important;">
+  <div class="row no-gutters equal_nt {{img_ratio}} al_center flex_wrap_reverse">
+<div class="col-12 col-md-6 flex_wrap_reverse">
   <div class="nt_img_txt oh pr middle center" style="max-width: 987px;">
     {%- comment -%}<a href="{{ url | default:'#' }}" class="db">{%- endcomment -%}
       {%- if image != blank -%}
@@ -28,10 +32,35 @@
     {%- comment -%}</a>{%- endcomment -%}
   </div>
 </div>
+<div class="col-12 col-md-6 txt_col_img">
+  <div class="flex column pl__50 pr__50 shadow_wrap {{se_stts.txt_align}} {{cl_arr[1]}} remove_padding_on_mobile" style="max-width: 635px;">
+      <h3 class="mb__20 mt__0 fs__{{fs_arr[0]}} {{cl_arr[0]}} lh__1">{{se_stts.title}}</h3>
+      <h5 >{{se_stts.subtitle1}}</h5>
+      {{se_stts.text1}}
+      
+      <h5>{{se_stts.subtitle2}}</h5>
+      {{se_stts.text2}}
+      
+      <h5>{{se_stts.subtitle3}}</h5>
+      {{se_stts.text3}}
+      {%- if url != blank and se_stts.button_label -%}<p class="mg__0"><a class="button {{cl_arr[2]}}" href="{{url}}" target="{{se_stts.open_link}}">{{se_stts.button_label}}</a></p>{%- endif -%}
+  </div>
+  <style>
+    @media screen and (max-width: 767px) {
+      .remove_padding_on_mobile {
+        padding-left: 15px !important;
+      }
+    } 
+  </style>
+
+</div>
+</div>
+</div>
 {%- endcapture -%}
+
+{%- capture image_layout2 -%}
 <div class="nt_se_{{sid}} {{se_stts.layout}} txt_shadow_{{se_stts.use_shadow}}" style="margin: 0 auto !important;">
-  <div class="row no-gutters equal_nt {{img_ratio}} al_center">
-    {%- if se_stts.img_position == '1' -%}{{- image_layout -}}{%- endif -%}
+  <div class="row no-gutters equal_nt {{img_ratio}} al_center flex_wrap_reverse">
     <div class="col-12 col-md-6 txt_col_img">
       <div class="flex column pl__50 pr__50 shadow_wrap {{se_stts.txt_align}} {{cl_arr[1]}} remove_padding_on_mobile" style="max-width: 635px;">
           <h3 class="mb__20 mt__0 fs__{{fs_arr[0]}} {{cl_arr[0]}} lh__1">{{se_stts.title}}</h3>
@@ -54,16 +83,35 @@
       </style>
 
     </div>
-    <style>.nt_se_{{sid}} .txt_col_img p {font-size: {{fs_arr[1]}}px}</style>
-    {%- if se_stts.img_position == '2' -%}{{- image_layout -}}{%- endif -%}
+    <div class="col-12 col-md-6 ">
+      <div class="nt_img_txt oh pr middle center" style="max-width: 987px;">
+        {%- comment -%}<a href="{{ url | default:'#' }}" class="db">{%- endcomment -%}
+          {%- if image != blank -%}
+            <div class="nt_bg_lz lazyloadt4s item__position {{se_stts.img_align}}" data-bgset="{{ image | img_url: '1x1' }}" data-sizes="auto" data-ratio="{{image.aspect_ratio}}" data-parent-fit="cover" style="padding-top:{{ 1 | divided_by: image.aspect_ratio | times: 100}}%;"></div>
+          {%- else -%}
+            <div class="nt_bg_lz lazyloadt4s item__position {{se_stts.img_align}}" data-bg="{{ 'placeholder.jpg' | asset_url }}" style="padding-top: 111.1111111111111%;"></div>
+          {%- endif -%}
+        {%- comment -%}</a>{%- endcomment -%}
+      </div>
+    </div>
   </div>
 </div>
+{%- endcapture -%}
+
+
+{%- if se_stts.img_position == '2' -%}{{- image_layout2 -}}{%- endif -%}
+ 
+    <style>
+      .nt_se_{{sid}} .txt_col_img p {
+        font-size: {{fs_arr[1]}}px;
+      }
+      </style>
 
 {%- render 'section_css' -%}
 
 {%- schema -%}
   {
-    "name": "Image with text",
+    "name": "Image with text product",
     "class": "nt_section type_image_text",
     "settings": [
       {

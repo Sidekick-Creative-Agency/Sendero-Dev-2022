@@ -671,7 +671,7 @@ assign se_stts = section.settings
                     {%- assign PR_buy_pr = true -%}
                     {%- endif -%}
                     <div class="variations_button in_flex column w__100 buy_qv_{{PR_buy_pr}}">
-                       <div class="flex wrap">
+                       <div class="flex wrap" style="flex-direction: column;">
                           {%- if ck_external -%}<a href="{{link}}" rel="nofollow" target="_blank" class="truncate external_btn button">{{title}}</a>{%- render 'nt_add_w',class:"order-3",tooltip:"ttip_nt tooltip_top_left" -%}
                           {%- elsif no_sold_out == false -%}
                                 <a rel="nofollow" data-no-instant href="#" class="truncate out_stock button pe_none" id="out_stock{{call_cl}}">{{'products.product.outofstock' | t}}</a>
@@ -682,9 +682,11 @@ assign se_stts = section.settings
                                 <div class="qty tc fs__14"><button type="button" class="plus db cb pa pd__0 pr__15 tr r__0"><i class="facl facl-plus"></i></button><button type="button" class="minus db cb pa pd__0 pl__15 tl l__0"><i class="facl facl-minus"></i></button></div>
                              </div> 
                              <a rel="nofollow" data-no-instant href="#" class="single_stt out_stock button pe_none order-2" id="out_stock{{call_cl}}">{{'products.product.outofstock' | t}}</a>
-                             {%- render 'nt_add_w',class:"order-3",tooltip:"ttip_nt tooltip_top_left" -%}
-                             <button type="submit" data-time='{{bk_stts.time}}000' data-ani='{{bk_stts.ani}}' class="single_add_to_cart_button button truncate js_frm_cart w__100 mt__20 order-4{% if PR_no_pick %} disabled{% endif %}"><span class="txt_add {{classdn1}}">{{'products.product.add_to_cart' | t}}</span><span class="txt_pre {{classdn2}}">{{'products.product.pre_orders' | t}}</span></button>
-                          {%- endif -%}
+                             {%- comment -%}{%- render 'nt_add_w',class:"order-3",tooltip:"ttip_nt tooltip_top_left" -%}
+                            {%- endcomment -%}
+                             <button type="submit" data-time='{{bk_stts.time}}000' data-ani='{{bk_stts.ani}}' class="single_add_to_cart_button button truncate js_frm_cart w__100 mt__20 order-4{% if PR_no_pick %} disabled{% endif %}" style="margin: 10px 0"><span class="txt_add {{classdn1}}">{{'products.product.add_to_cart' | t}}</span><span class="txt_pre {{classdn2}}">{{'products.product.pre_orders' | t}}</span></button>
+                             
+                            {%- endif -%}
                        </div>
                        {%- if PR_buy_pr -%}{{- form | payment_button -}}{%- endif -%} 
                     </div>
@@ -738,6 +740,7 @@ assign se_stts = section.settings
         </div>
 
       {%- when 'size' -%}
+      {%- comment -%}
         <div class="extra-link mt__35 fwsb" {{ block.shopify_attributes }}>
            {%- if bk_stts.size_chart != '1' and pos_sizeg == '1' -%}
               {%- liquid
@@ -771,17 +774,17 @@ assign se_stts = section.settings
            <a class="ajax_pp_js cd chp mr__20" href="#" data-no-instant rel="nofollow" data-id='dl_ajax_pp_js' data-url="{{page_delivery.url}}/?view=AjaxPopup">{{ 'products.product.delivery_return' | t }}</a>
            {%- endif -%}
            
-           {%- comment -%}
+        
            {%- assign page_ask = pages[bk_stts.page_ask] %}{% if bk_stts.ask and page_ask != blank -%}
            <a class="ajax_pp_js cd chp" href="#" data-no-instant rel="nofollow" data-id='ask_ajax_pp_js' data-url="{{page_ask.url}}/?view=AjaxContact">{{ 'products.product.ask_question' | t }}</a>
            {%- endif -%}
-           {%- endcomment -%}
+           
            {%- if bk_stts.ask -%}
            <a class="ajax_pp_js cd chp" href="#" data-no-instant rel="nofollow" data-id='ask_ajax_pp_js' data-url="{{routes.search_url}}/?section_id=main-ajaxcontact" data-title='{{product.title | escape}}' data-handle='{{ shop.url }}{{product.url}}'>{{ 'products.product.ask_question' | t }}</a>
            {%- endif -%}
            
         </div>
-
+{%- endcomment -%}
       {%- when 'meta' -%}
         {%- assign ck_meta = false -%}
         {%- capture meta -%}

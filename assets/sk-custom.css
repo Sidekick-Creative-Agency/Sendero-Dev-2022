@@ -138,6 +138,9 @@
 /*---------------- Custom CSS for only mobile -------------------*/
 @media (max-width: 767px){
 
-
+/*  TEXT WITH IMAGE FOR PRODUCT PAGE */
+.flex_wrap_reverse {
+    flex-wrap: wrap-reverse;
+}
 
 }
