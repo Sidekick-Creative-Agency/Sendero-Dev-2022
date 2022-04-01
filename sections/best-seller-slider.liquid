@@ -41,32 +41,8 @@
     </div>
   
   {%- endif -%}
-{%- comment -%}
-    <div class="sk-breadcrumbs">
-      <nav class="sp-breadcrumb mt__10" aria-label="Breadcrumbs"><a href="{{ routes.root_url }}" class="dib">{{ 'general.breadcrumbs.home' | t }}</a><i class="facl facl-angle-right"></i>{{collection.title}}
-      {%- assign get_url = '' | link_to_remove_tag: '' | split:'href="' | last | split:'"' | first | remove:'?customer_posted=true' -%}
-      {%- assign sy = collection.sort_by -%}
-      {%- if collection.current_type or sy != blank or collection.current_vendor or get_url contains '?' %}{% assign get_url = get_url | append:'&' %}{% else %}{% assign get_url = get_url | append:'/?' %}{% endif -%}
-      {%- assign sort_by = sy | default: collection.default_sort_by -%}
-    </div>
-{%- endcomment -%}
     <div class="sk-collection-top">
       <div class="row equal_nt auto al_center"></div>
-        {%- comment -%}
-        <div class="col-12 col-md-6" style="padding-right: 40px !important;">
-          <div class="nt_img_txt oh pr middle center">
-            <a href="#content">
-            <div class="nt_bg_lz lazyloadt4s item__position center" data-bgset="{{ image | img_url: '1x1' }}" style="padding-top: 70%;">
-              <div class="txt_content pa t__0 l__0 b__0 r__0 caption-w-2 flex column shadow_wrap tc_md tc pe_none z__100">
-                <div class="pa pa_txts mb_h_pos50 mb_v_pos50 h_pos50 v_pos50">
-                  <h1 class="image-title">{{page_handle}}</h1><h6 class="shop-all pt__10">Shop All<i class="las la-arrow-right"></i></h6>
-                </div>
-              </div>
-            </div>
-          </a>
-          </div>
-        </div>
-        {%- endcomment -%}
         <div class="mobile-remove-left-padding col-md-6 txt_col_img" style="padding-left: 40px; max-width: 100%; padding-right: 0">
           <a href="{{ collection.url | remove:'/collections/' | prepend: 'best-seller-' }}"><div class="flex pl__20 pr__20 pt__20 shadow_wrap tl" style="align-items:center;">
             <span><h2>Best Seller</h2></span><span><h6 class="shop-all-blk">Shop All<i class="las la-arrow-right"></i></h6></span>
@@ -86,12 +62,9 @@
             </div>
           </div>
         </div>
-      
-    </div>
-
+      </div>
     <a name="content"></a>
   
-
 {%- schema -%}
   {
     "name": "Best Seller Slider",

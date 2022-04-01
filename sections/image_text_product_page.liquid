@@ -6,6 +6,7 @@
  if img_ratio == 'auto' 
   assign ck = true 
  endif
+ assign image = "/admin/co"
  assign image = se_stts.image
  assign url = se_stts.button_link 
  if se_stts.cl_txt == 'dark' 
@@ -16,7 +17,6 @@
  assign cl_arr = cl_txt | split:","
  assign fs_arr = se_stts.text_size2 | split:"," -%}
 
- 
 
  {%- capture layout1 -%}
 <div class="img-text-indiv-product-container nt_se_{{sid}} {{se_stts.layout}} txt_shadow_{{se_stts.use_shadow}}" style="margin: 0 auto !important;">
