@@ -48,6 +48,85 @@
         "pd_mb": ""
       }
     },
+    "16488315326088f3a4": {
+      "type": "collection-list_packery",
+      "blocks": {
+        "1648831532aa982f8e-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "hats",
+            "img_align": "center",
+            "title": "",
+            "url": ""
+          }
+        },
+        "1648831532aa982f8e-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "t-shirts",
+            "img_align": "center",
+            "title": "",
+            "url": ""
+          }
+        },
+        "1648831532aa982f8e-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "img_align": "center",
+            "title": "",
+            "url": ""
+          }
+        },
+        "1648831532aa982f8e-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "img_align": "center",
+            "title": "",
+            "url": ""
+          }
+        },
+        "e9679b8b-2e6d-4f0f-8284-6bc64f144b92": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "img_align": "center",
+            "title": "",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "1648831532aa982f8e-0",
+        "1648831532aa982f8e-1",
+        "1648831532aa982f8e-2",
+        "1648831532aa982f8e-3",
+        "e9679b8b-2e6d-4f0f-8284-6bc64f144b92"
+      ],
+      "settings": {
+        "title": "Collection list Packery",
+        "sub_title": "Sub Text",
+        "sub_font": "2",
+        "style_title": "title_1",
+        "ic_tt": "gem",
+        "show_clpr": false,
+        "hoverz": true,
+        "cat_design": "1",
+        "cat_space": "30",
+        "pr_txt": "products",
+        "cat_lay4": 1,
+        "cat_lay5": 1,
+        "cp_code": false,
+        "layout": "wrap",
+        "cl_bg": "",
+        "hide_bgimg": false,
+        "mg": "50px,,50px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    },
     "main": {
       "type": "category_page",
       "settings": {
@@ -179,6 +258,7 @@
   },
   "order": [
     "16479809910f68859a",
+    "16488315326088f3a4",
     "main",
     "164882807276a2e749"
   ]
