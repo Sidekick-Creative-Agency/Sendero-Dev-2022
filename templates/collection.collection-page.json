@@ -48,6 +48,75 @@
         "pd_mb": ""
       }
     },
+    "16488315326088f3a4": {
+      "type": "collection-list_packery",
+      "blocks": {
+        "1648831532aa982f8e-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "hats",
+            "img_align": "center",
+            "title": "",
+            "url": ""
+          }
+        },
+        "1648831532aa982f8e-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "t-shirts",
+            "img_align": "center",
+            "title": "",
+            "url": ""
+          }
+        },
+        "1648831532aa982f8e-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "img_align": "center",
+            "title": "",
+            "url": ""
+          }
+        },
+        "1648831532aa982f8e-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "img_align": "center",
+            "title": "",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "1648831532aa982f8e-0",
+        "1648831532aa982f8e-1",
+        "1648831532aa982f8e-2",
+        "1648831532aa982f8e-3"
+      ],
+      "settings": {
+        "title": "Shop This Collection",
+        "sub_title": "",
+        "sub_font": "2",
+        "style_title": "title_1",
+        "ic_tt": "gem",
+        "show_clpr": false,
+        "hoverz": true,
+        "cat_design": "1",
+        "cat_space": "30",
+        "pr_txt": "products",
+        "cat_lay4": 1,
+        "cat_lay5": 1,
+        "cp_code": false,
+        "layout": "wrap",
+        "cl_bg": "",
+        "hide_bgimg": false,
+        "mg": "50px,,50px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    },
     "main": {
       "type": "category_page",
       "settings": {
@@ -78,7 +147,7 @@
         "16488280725e7f0d65-0": {
           "type": "collection",
           "settings": {
-            "collection": "hats",
+            "collection": "",
             "img_align": "center",
             "title": "",
             "url": ""
@@ -87,7 +156,7 @@
         "16488280725e7f0d65-1": {
           "type": "collection",
           "settings": {
-            "collection": "t-shirts",
+            "collection": "",
             "img_align": "center",
             "title": "",
             "url": ""
@@ -96,7 +165,7 @@
         "16488280725e7f0d65-2": {
           "type": "collection",
           "settings": {
-            "collection": "outerwear",
+            "collection": "",
             "img_align": "center",
             "title": "",
             "url": ""
@@ -105,7 +174,7 @@
         "16488280725e7f0d65-3": {
           "type": "collection",
           "settings": {
-            "collection": "stickers-1",
+            "collection": "",
             "img_align": "center",
             "title": "",
             "url": ""
@@ -114,7 +183,7 @@
         "6236469b-85c9-4415-9ee4-368d4cfef55b": {
           "type": "collection",
           "settings": {
-            "collection": "kids-gear",
+            "collection": "",
             "img_align": "center",
             "title": "",
             "url": ""
@@ -123,7 +192,7 @@
         "7d2d449a-83f0-459e-a956-21e212b81841": {
           "type": "collection",
           "settings": {
-            "collection": "spring-2022",
+            "collection": "",
             "img_align": "center",
             "title": "",
             "url": ""
@@ -150,7 +219,7 @@
         "hoverz": true,
         "cat_design": "1",
         "cat_space": "10",
-        "image_ratio": "ratio1_1",
+        "image_ratio": "ratio2_3",
         "col": "15",
         "col_md": "3",
         "col_mb": "6",
@@ -167,7 +236,7 @@
         "dot_owl": "1",
         "dot_color": "1",
         "cp_code": false,
-        "layout": "nt_full",
+        "layout": "container",
         "cl_bg": "",
         "hide_bgimg": false,
         "mg": "50px,,50px,",
@@ -179,6 +248,7 @@
   },
   "order": [
     "16479809910f68859a",
+    "16488315326088f3a4",
     "main",
     "164882807276a2e749"
   ]

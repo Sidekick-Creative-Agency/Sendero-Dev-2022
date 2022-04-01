@@ -142,7 +142,9 @@
 .sk-collection-top {
     margin:70px 0 70px 90px;
 }
-
+/* .container_cat {
+    margin:70px 90px;
+} */
 .flickityt4s-slider {
     width:108%;
     justify-content:flex-start !important;
@@ -152,9 +154,13 @@
     color:#fff;
 }
 
+.cat-top-img {
+    padding-right:80px;
+}
+
 
 /*--------------------------------------------------------/
-/ Individual Product Pagee
+/ Individual Product Page
 /--------------------------------------------------------*/
 
 .sk-best-seller-img-slider, .indiv-product-rec-img-slider {
@@ -170,6 +176,41 @@
     max-width: 1450px;
 }
 
+.product-info {
+    text-align:center;
+}
+
+/*---------------- Quick View and Add to Cart on Hover -------------------*/
+
+.hover_button, .product-attr {
+    display:none;
+}
+
+
+/*---------------- Pagination -------------------*/
+
+.pagination-page {
+    font-family: Oswald;
+    letter-spacing:0.2em;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.page-numbers {
+    padding:5px;
+}
+
+.page-numbers li {
+    margin:0;
+}
+
+a.next.page-numbers {
+    margin-left:60px;
+}
+
+a.prev.page-numbers {
+    margin-right:60px;
+}
 
 
 /*-----------------------------------------------------------------------------/
@@ -187,10 +228,17 @@
 /*---------------- Custom CSS for tablet, mobile -------------------*/
 @media (max-width: 1024px) {
     .sk-collection-top {
-        margin:70px 0 70px 0px;
+        margin:40px 0 40px 40px;
     }
-    
-
+    .sk-collection-top .container {
+        padding:0;
+    }
+    .sk-breadcrumbs {
+        margin:40px 40px 0 40px;
+    }
+    .container_cat {
+        padding:40px;
+    }
 }
 
 /*---------------- Custom CSS for only tablet -------------------*/
@@ -203,15 +251,28 @@
 /*---------------- Custom CSS for only mobile -------------------*/
 @media (max-width: 767px){
 
-/*  TEXT WITH IMAGE FOR PRODUCT PAGE */
-.flex_wrap_reverse {
-    flex-wrap: wrap-reverse;
-}
-.mobile-remove-left-padding, .indiv-product-rec-container, .best-seller-img-container {
-    padding-left: 0 !important;
-}
-.flickityt4s-slider {
-    width:100%;
-    justify-content:flex-start !important;
-}
+    .sk-breadcrumbs {
+        margin:20px 25px;
+    }
+    
+    .sk-collection-top {
+        margin:20px;
+    }
+
+    .cat-top-img {
+        padding:6px;
+    }
+
+    
+    .flickityt4s-slider {
+        width:100%;
+    }
+    
+    /*  TEXT WITH IMAGE FOR PRODUCT PAGE */
+    .flex_wrap_reverse {
+        flex-wrap: wrap-reverse;
+    }
+    .mobile-remove-left-padding, .indiv-product-rec-container, .best-seller-img-container {
+        padding-left: 0 !important;
+    }
 }

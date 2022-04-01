@@ -52,7 +52,7 @@
 
     <div class="sk-collection-top">
       <div class="row equal_nt auto al_center">
-        <div class="col-12 col-md-6" style="padding-right: 40px !important;">
+        <div class="cat-top-img col-12 col-md-6">
           <div class="nt_img_txt oh pr middle center">
             <a href="#content">
             <div class="nt_bg_lz lazyloadt4s item__position center" data-bgset="{{ image | img_url: '1x1' }}" style="padding-top: 70%;">
@@ -65,9 +65,9 @@
           </a>
           </div>
         </div>
-        <div class="col-12 col-md-6 txt_col_img" style="padding-left: 40px !important;">
-          <a href="{{ collection.url | remove:'/collections/' | prepend: 'best-seller-' }}"><div class="flex pl__20 pr__20 pt__20 shadow_wrap tl" style="align-items:center;">
-            <span><h2>Page Top</h2></span><span><h6 class="shop-all-blk">Shop All<i class="las la-arrow-right"></i></h6></span>
+        <div class="col-12 col-md-6 txt_col_img">
+          <a href="{{ collection.url | remove:'/collections/' | prepend: 'best-seller-' }}"><div class="flex pt__20 shadow_wrap tl" style="align-items:center;">
+            <span><h2>Best Sellers</h2></span><span><h6 class="shop-all-blk">Shop All<i class="las la-arrow-right"></i></h6></span>
           </div></a>
           <div class="container">
             <div class="products nt_products_holder row row_pr_{{inc_pr}} cdt_des_{{se_stts.cdt_des}} round_cd_{{se_stts.round_cd}} js_carousel nt_slider {{se_stts.image_size}} {{se_stts.image_ratio}} position_{{se_stts.image_position}} space_{{se_stts.space}} prev_next_{{se_stts.btn_color}} btn_owl_{{se_stts.btn_owl}} dot_owl_{{se_stts.dot_owl}} dot_color_{{se_stts.dot_color}} btn_vi_{{se_stts.btn_vi}}{% if sett_equal %} equal_nt{% endif %}" data-flickityt4s-js='{"imagesLoaded": 0,"adaptiveHeight": 0, "contain": 1, "groupCells": "100%", "dragThreshold" : 5, "cellAlign": "left","wrapAround": {{se_stts.loop}},"prevNextButtons": {{se_stts.button}},"percentPosition": 1,"pageDots": {{se_stts.dot}}, "autoPlay" : {{ se_stts.au_time | times: 1000 }}, "pauseAutoPlayOnHover" : {{se_stts.au_hover}}, "rightToLeft": {{settings.use_rtl}} }'>
