@@ -86,27 +86,17 @@
             "title": "",
             "url": ""
           }
-        },
-        "e9679b8b-2e6d-4f0f-8284-6bc64f144b92": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "img_align": "center",
-            "title": "",
-            "url": ""
-          }
         }
       },
       "block_order": [
         "1648831532aa982f8e-0",
         "1648831532aa982f8e-1",
         "1648831532aa982f8e-2",
-        "1648831532aa982f8e-3",
-        "e9679b8b-2e6d-4f0f-8284-6bc64f144b92"
+        "1648831532aa982f8e-3"
       ],
       "settings": {
-        "title": "Collection list Packery",
-        "sub_title": "Sub Text",
+        "title": "Shop This Collection",
+        "sub_title": "",
         "sub_font": "2",
         "style_title": "title_1",
         "ic_tt": "gem",

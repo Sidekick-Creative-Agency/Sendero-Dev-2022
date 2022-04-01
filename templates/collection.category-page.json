@@ -78,7 +78,7 @@
         "16488280725e7f0d65-0": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "hats",
             "img_align": "center",
             "title": "",
             "url": ""
@@ -87,7 +87,7 @@
         "16488280725e7f0d65-1": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "t-shirts",
             "img_align": "center",
             "title": "",
             "url": ""
@@ -96,7 +96,7 @@
         "16488280725e7f0d65-2": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "outerwear",
             "img_align": "center",
             "title": "",
             "url": ""
@@ -105,7 +105,7 @@
         "16488280725e7f0d65-3": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "stickers-1",
             "img_align": "center",
             "title": "",
             "url": ""
@@ -114,7 +114,7 @@
         "6236469b-85c9-4415-9ee4-368d4cfef55b": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "kids-gear",
             "img_align": "center",
             "title": "",
             "url": ""
@@ -123,7 +123,7 @@
         "7d2d449a-83f0-459e-a956-21e212b81841": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "spring-2022",
             "img_align": "center",
             "title": "",
             "url": ""
@@ -150,7 +150,7 @@
         "hoverz": true,
         "cat_design": "1",
         "cat_space": "10",
-        "image_ratio": "ratio2_3",
+        "image_ratio": "ratio1_1",
         "col": "15",
         "col_md": "3",
         "col_mb": "6",
@@ -167,7 +167,7 @@
         "dot_owl": "1",
         "dot_color": "1",
         "cp_code": false,
-        "layout": "container",
+        "layout": "nt_full",
         "cl_bg": "",
         "hide_bgimg": false,
         "mg": "50px,,50px,",

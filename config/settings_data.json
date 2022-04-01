@@ -626,22 +626,48 @@
       "footer_top": {
         "type": "footer_top",
         "blocks": {
+          "1581507819652": {
+            "type": "logo",
+            "settings": {
+              "align": "tl_md",
+              "align_mb": "tl",
+              "logo_width": 95,
+              "title": "Get in touch",
+              "content": "<p><i class=\"pegk pe-7s-map-marker\"> <\/i><span>184 Main Rd E, St Albans <br> <span class=\"pl__30\">VIC 3021, Australia<\/span><\/span><\/p><p><i class=\"pegk pe-7s-mail\"><\/i><span> <a href=\"mailto:contact@company.com\">contact@company.com<\/a><\/span><\/p><p><i class=\"pegk pe-7s-call\"><\/i> <span>+001 2233 456 <\/span><\/p>",
+              "social_mode": "3",
+              "order": "1",
+              "cl": "3",
+              "cl_tb": "6",
+              "cl_mb": "12"
+            }
+          },
           "1581507824602": {
             "type": "menu",
             "settings": {
-              "title": "SUPPORT",
-              "menu": "support-footer",
+              "title": "Categories",
+              "menu": "",
               "order": "1",
               "cl": "2",
               "cl_tb": "6",
               "cl_mb": "12"
             }
           },
-          "eb9f9808-b453-4179-8064-12d5ccfd65dc": {
+          "1581507828337": {
             "type": "menu",
             "settings": {
-              "title": "QUICK LINKS",
-              "menu": "quick-links-footer",
+              "title": "Infomation",
+              "menu": "",
+              "order": "1",
+              "cl": "2",
+              "cl_tb": "6",
+              "cl_mb": "12"
+            }
+          },
+          "1581507840818": {
+            "type": "menu",
+            "settings": {
+              "title": "Useful links",
+              "menu": "",
               "order": "1",
               "cl": "2",
               "cl_tb": "6",
@@ -653,8 +679,8 @@
             "settings": {
               "newl_des": "1",
               "btn_icon": false,
-              "title": "EMAIL SIGN-UP",
-              "sub_title": "Subscribe to be the first to hear about our exclusive offers and latest arrivals!",
+              "title": "Newsletter Signup",
+              "sub_title": "Subscribe to our newsletter and get 10% off your first purchase",
               "source": "1",
               "svg": "amazon_payments,american_express,apple_pay,bitcoin,dankort,diners_club,discover,dogecoin,dwolla,forbrugsforeningen,interac,google_pay,jcb,klarna,klarna-pay-later,litecoin,maestro,master,paypal,shopify_pay,sofort,visa",
               "height": 30,
@@ -663,44 +689,29 @@
               "cl_tb": "6",
               "cl_mb": "12"
             }
-          },
-          "1581507819652": {
-            "type": "logo",
-            "settings": {
-              "align": "tl_md",
-              "align_mb": "tl",
-              "image": "shopify:\/\/shop_images\/header-logo-pad_8fd942d3-0949-4316-9104-4f8519a3bab8.png",
-              "logo_width": 325,
-              "title": "CONTACT",
-              "content": "<p><i class=\"pegk pe-7s-map-marker\"> <\/i><span>184 Main Rd E, St Albans <br> <span class=\"pl__30\">VIC 3021, Australia<\/span><\/span><\/p><p><i class=\"pegk pe-7s-mail\"><\/i><span> <a href=\"mailto:contact@company.com\">contact@company.com<\/a><\/span><\/p><p><i class=\"pegk pe-7s-call\"><\/i> <span>+001 2233 456 <\/span><\/p>",
-              "social_mode": "3",
-              "order": "1",
-              "cl": "3",
-              "cl_tb": "6",
-              "cl_mb": "12"
-            }
           }
         },
         "block_order": [
+          "1581507819652",
           "1581507824602",
-          "eb9f9808-b453-4179-8064-12d5ccfd65dc",
-          "1581507835369",
-          "1581507819652"
+          "1581507828337",
+          "1581507840818",
+          "1581507835369"
         ],
         "settings": {
           "sticky": false,
           "accordions": true,
           "border": false,
           "bd_cl": "#ededed",
-          "cl_h": "#b3b3b3",
+          "cl_h": "#222222",
           "cl": "#878787",
           "cl_a": "#878787",
-          "cl_hover": "#b3b3b3",
+          "cl_hover": "#56cfe1",
           "cl_ip": "#878787",
           "bd_ip": "#878787",
           "cl_btn": "#222222",
           "cl_txt": "#ffffff",
-          "bg": "#181818",
+          "bg": "#f6f6f8",
           "bg_repeat": "no-repeat",
           "bg_size": "cover",
           "bg_att": "scroll",
@@ -715,19 +726,26 @@
           "1581507860120": {
             "type": "copy",
             "settings": {
-              "text": "<h5 style=\"color:grey\">COPYRIGHT © [year] SENDERO PROVISIONS CO. ALL RIGHTS RESERVED.<\/h5>"
+              "text": "Copyright © [year] <span class=\"cp\">Sendero Provisions Co.<\/span> all rights reserved."
+            }
+          },
+          "1581507855652": {
+            "type": "menu",
+            "settings": {
+              "menu": "footer"
             }
           }
         },
         "block_order": [
-          "1581507860120"
+          "1581507860120",
+          "1581507855652"
         ],
         "settings": {
-          "layout": "12",
-          "bg": "#000000",
-          "cl": "#dcdcdc",
-          "cl_a": "#dcdcdc",
-          "cl_hover": "#999999"
+          "layout": "6",
+          "bg": "#ffffff",
+          "cl": "#878787",
+          "cl_a": "#878787",
+          "cl_hover": "#56cfe1"
         }
       },
       "cart_widget": {
