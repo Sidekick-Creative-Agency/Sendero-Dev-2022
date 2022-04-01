@@ -131,22 +131,22 @@
     "16479809910f68859a": {
       "type": "featured_collection_owl",
       "settings": {
-        "title": "Collection Slider",
-        "sub_title": "Sub Text",
+        "title": "SHOP BY CATEGORY",
+        "sub_title": "BROWSE ALL",
         "sub_font": "2",
-        "btn_title": "See all products",
+        "btn_title": "SHOP ALL",
         "style_title": "title_1",
-        "ic_tt": "gem",
+        "ic_tt": "arrow",
         "show_clpr": false,
         "collection": "hats",
-        "limit": 8,
+        "limit": 5,
         "space": 30,
         "use_pagination": "none",
         "btn_rd": false,
         "btn_icon": false,
         "btn_style": "default",
-        "col_pr": "2",
-        "col_pr_tb": "3",
+        "col_pr": "15",
+        "col_pr_tb": "4",
         "col_pr_mb": "6",
         "pr_des": "1",
         "show_vendor": false,
@@ -168,8 +168,109 @@
         "image_size": "nt_contain",
         "image_position": "8",
         "cp_code": false,
-        "layout": "wrap",
+        "layout": "nt_full",
         "cl_bg": "",
+        "mg": "150px,,150px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    },
+    "164865439396016512": {
+      "type": "hero_video",
+      "blocks": {
+        "1648654393d1eaf576-2": {
+          "type": "2",
+          "settings": {
+            "font": "f__libre",
+            "title": "NEW SENDERO SESSION",
+            "color": "#ffffff",
+            "fw_text": 400,
+            "fs_text": 14,
+            "lh_text": 32,
+            "ls_text": 0,
+            "fs_mb_text": 14,
+            "lh_mb_text": 0,
+            "ls_mb_text": 0,
+            "hide": false
+          }
+        },
+        "1648654393d1eaf576-0": {
+          "type": "1",
+          "settings": {
+            "title": "THE DESSERT TAPES",
+            "color": "#ffffff",
+            "fw_text": 600,
+            "fs_text": 30,
+            "lh_text": 0,
+            "ls_text": 0,
+            "fs_mb_text": 15,
+            "lh_mb_text": 0,
+            "ls_mb_text": 0
+          }
+        },
+        "1648654393d1eaf576-1": {
+          "type": "6",
+          "settings": {
+            "sp": 10,
+            "sp_mb": 10
+          }
+        },
+        "addbacc1-6432-48e5-83df-3784f1f30b47": {
+          "type": "5",
+          "settings": {
+            "html": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.<\/p>"
+          }
+        },
+        "1648654393d1eaf576-4": {
+          "type": "3",
+          "settings": {
+            "title": "MORE SENDERO SESSIONS",
+            "btn_link": "\/sessions",
+            "open_link": "_self",
+            "title2": "Shop Now 2",
+            "btn_link2": "",
+            "open_link2": "_blank",
+            "btn_w": false,
+            "btn_round": false,
+            "btn_icon": true,
+            "cl_txt": "#ffffff",
+            "cl_bg": "rgba(0,0,0,0)",
+            "cl_bd": "rgba(0,0,0,0)",
+            "fs_text": 13.5,
+            "fw_text": 500,
+            "h": 40,
+            "ls_text": 0,
+            "fs_mb_text": 14,
+            "h_mb": 40,
+            "ls_mb_text": 0
+          }
+        }
+      },
+      "block_order": [
+        "1648654393d1eaf576-2",
+        "1648654393d1eaf576-0",
+        "1648654393d1eaf576-1",
+        "addbacc1-6432-48e5-83df-3784f1f30b47",
+        "1648654393d1eaf576-4"
+      ],
+      "settings": {
+        "source": "1",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=-2icZZ9tbwc&list=PLZf3m6mi50t3HFAcYQWk7EYl-2LtrNImu",
+        "file_name": "The Desert Tapes",
+        "se_height": "cus_h",
+        "use_custom_h": "1",
+        "h_des": "600px",
+        "h_tb": "500px",
+        "h_mb": "350px",
+        "caption_w": "1",
+        "cap_v_pos": 50,
+        "cap_h_pos": 16,
+        "txt_align": "tl",
+        "use_shadow": false,
+        "cl_overlay": "#181818",
+        "cl_opacity": 59,
+        "layout": "nt_full",
         "mg": "50px,,50px,",
         "pd": "",
         "mg_mb": "",
@@ -179,10 +280,10 @@
     "1648558600123b2516": {
       "type": "featured_collection_owl",
       "settings": {
-        "title": "Collection Slider",
+        "title": "BEST SELLERS",
         "sub_title": "Sub Text",
         "sub_font": "2",
-        "btn_title": "See all products",
+        "btn_title": "Shop All",
         "style_title": "title_1",
         "ic_tt": "gem",
         "show_clpr": false,
@@ -193,8 +294,8 @@
         "btn_rd": true,
         "btn_icon": false,
         "btn_style": "default",
-        "col_pr": "3",
-        "col_pr_tb": "3",
+        "col_pr": "15",
+        "col_pr_tb": "4",
         "col_pr_mb": "6",
         "pr_des": "1",
         "show_vendor": false,
@@ -212,13 +313,103 @@
         "dot_owl": "1",
         "dot_color": "1",
         "use_eq_height": false,
-        "image_ratio": "ratio_nt",
+        "image_ratio": "ratio1_1",
         "image_size": "nt_cover",
         "image_position": "8",
         "cp_code": false,
-        "layout": "wrap",
+        "layout": "nt_full",
         "cl_bg": "",
-        "mg": "50px,,50px,",
+        "mg": "150px,,150px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    },
+    "1648656519e4bb75df": {
+      "type": "instagram_feed",
+      "blocks": {
+        "16486565198c9838b8-0": {
+          "type": "1",
+          "settings": {
+            "title": "@ FOLLOW US ON INSTAGRAM",
+            "sub_title": "",
+            "sub_font": "2",
+            "style_title": "title_1",
+            "ic_tt": "gem",
+            "show_clpr": false
+          }
+        },
+        "16486565198c9838b8-1": {
+          "type": "img",
+          "settings": {
+            "url": ""
+          }
+        },
+        "16486565198c9838b8-2": {
+          "type": "img",
+          "settings": {
+            "url": ""
+          }
+        },
+        "16486565198c9838b8-3": {
+          "type": "img",
+          "settings": {
+            "url": ""
+          }
+        },
+        "16486565198c9838b8-4": {
+          "type": "img",
+          "settings": {
+            "url": ""
+          }
+        },
+        "16486565198c9838b8-5": {
+          "type": "img",
+          "settings": {
+            "url": ""
+          }
+        },
+        "16486565198c9838b8-6": {
+          "type": "img",
+          "settings": {
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "16486565198c9838b8-0",
+        "16486565198c9838b8-1",
+        "16486565198c9838b8-2",
+        "16486565198c9838b8-3",
+        "16486565198c9838b8-4",
+        "16486565198c9838b8-5",
+        "16486565198c9838b8-6"
+      ],
+      "settings": {
+        "open_link": "_self",
+        "layout_des": "1",
+        "space": "0",
+        "rounded_ins": "0",
+        "col_pr": "3",
+        "col_pr_tb": "3",
+        "col_pr_mb": "6",
+        "loop": false,
+        "au_time": 0,
+        "au_hover": true,
+        "button": false,
+        "btn_vi": "1",
+        "btn_owl": "1",
+        "btn_color": "0",
+        "dot": true,
+        "dot_owl": "1",
+        "dot_color": "1",
+        "use_eq_height": true,
+        "image_ratio": "ratio1_1",
+        "image_size": "nt_cover",
+        "image_position": "8",
+        "layout": "container",
+        "cl_bg": "#ffffff",
+        "mg": "200px,,200px,",
         "pd": "",
         "mg_mb": "",
         "pd_mb": ""
@@ -228,6 +419,8 @@
   "order": [
     "16357021760efbe511",
     "16479809910f68859a",
-    "1648558600123b2516"
+    "164865439396016512",
+    "1648558600123b2516",
+    "1648656519e4bb75df"
   ]
 }

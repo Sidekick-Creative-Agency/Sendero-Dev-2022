@@ -62,11 +62,7 @@
         "des": {
           "type": "des",
           "settings": {
-            "des": "2",
-            "text": "",
-            "length": 45,
-            "readm": true,
-            "readm_txt": "Read more"
+            "title": "Description"
           }
         },
         "social": {
@@ -86,6 +82,15 @@
         "social"
       ],
       "settings": {
+        "des_pr_design": "1",
+        "show": true,
+        "bgcl": "#ffffff",
+        "bgclmb": "#ffffff",
+        "des_w": "1",
+        "des_mb": "2",
+        "auto": false,
+        "mg": "30px,,30px,",
+        "mg_mb": "0,,0,",
         "pr_layout": "default",
         "design_products": "4",
         "size_img_pr": "2",
@@ -101,55 +106,79 @@
         "pr_size_sidebar": "2",
         "breadcrumb_pr": true,
         "back_next_pr": true,
-        "auto": false
+        "autobox": false
       }
     },
-    "product-description": {
-      "type": "pr_description",
-      "blocks": {
-        "des": {
-          "type": "des",
-          "settings": {
-            "title": "Description"
-          }
-        },
-        "add": {
-          "type": "add",
-          "settings": {
-            "title": "Additional Information"
-          }
-        }
-      },
-      "block_order": [
-        "des",
-        "add"
-      ],
+    "1648757478999cc57a": {
+      "type": "image_text_product_page",
       "settings": {
-        "des_pr_design": "1",
-        "show": true,
-        "bgcl": "#ffffff",
-        "bgclmb": "#ffffff",
-        "des_w": "1",
-        "des_mb": "2",
-        "auto": true,
-        "mg": "30px,,30px,",
-        "mg_mb": "0,,0,"
+        "image": "shopify:\/\/shop_images\/IMG_0248_1024x1024_48d1f0c4-e069-4ab7-ba9c-c2ba8a991eaf.webp",
+        "img_align": "center",
+        "img_position": "1",
+        "image_ratio": "auto",
+        "text_size2": "30,14",
+        "title": "QUALITY HATS, MADE FOR THE WILD WEST",
+        "subtitle1": "OUR QUALITY GUARANTEE",
+        "subtitle2": "SUSTAINABLY SOURCED",
+        "subtitle3": "NATURAL MATERIALS",
+        "text1": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+        "text2": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+        "text3": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+        "button_label": "Shop Now",
+        "button_link": "",
+        "open_link": "_blank",
+        "txt_align": "tl",
+        "use_shadow": false,
+        "cl_txt": "dark",
+        "layout": "nt_full",
+        "mg": "50px,,50px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
       }
     },
-    "product-recommendations": {
-      "type": "product-recommendations",
+    "164875753916b49a9b": {
+      "type": "image_text_product_page",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Big_Bend_Shirt_Lifestyle.jpg",
+        "img_align": "center",
+        "img_position": "2",
+        "image_ratio": "auto",
+        "text_size2": "30,14",
+        "title": "Image with text",
+        "subtitle1": "OUR QUALITY GUARANTEE",
+        "subtitle2": "NO FEAR BUYING",
+        "subtitle3": "NOT SURE YET",
+        "text1": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+        "text2": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+        "text3": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+        "button_label": "Shop Now",
+        "button_link": "",
+        "open_link": "_blank",
+        "txt_align": "tl",
+        "use_shadow": false,
+        "cl_txt": "dark",
+        "layout": "nt_full",
+        "mg": "50px,,50px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    },
+    "product-rec-indiv": {
+      "type": "product-recommendations-individual-product",
       "settings": {
         "show": true,
-        "title": "You may also like",
+        "title": "MORE PICKS FOR YOU",
         "sub_title": "",
-        "sub_font": "2",
+        "sub_font": "1",
         "style_title": "title_1",
         "ic_tt": "gem",
         "show_clpr": false,
         "display_type": "3",
-        "limit": 6,
+        "limit": 10,
         "space": 30,
-        "col_pr": "3",
+        "col_pr": "15",
         "col_pr_tb": "3",
         "col_pr_mb": "6",
         "pr_des": "1",
@@ -160,10 +189,10 @@
         "loop": true,
         "au_time": 0,
         "au_hover": true,
-        "button": false,
+        "button": true,
         "btn_vi": "1",
-        "btn_owl": "1",
-        "btn_color": "0",
+        "btn_owl": "2",
+        "btn_color": "1",
         "dot": false,
         "dot_owl": "1",
         "dot_color": "1",
@@ -173,21 +202,24 @@
         "image_position": "8"
       }
     },
-    "recently-viewed-products": {
-      "type": "recently_viewed",
+    "best-seller-slider": {
+      "type": "best-seller-slider",
       "settings": {
-        "show": true,
-        "unavailable_prs": "show",
-        "title": "Recently viewed products",
-        "sub_title": "",
+        "title": "Best Seller Slider",
+        "sub_title": "Sub Text",
         "sub_font": "2",
+        "btn_title": "See all products",
         "style_title": "title_1",
         "ic_tt": "gem",
         "show_clpr": false,
-        "limit": 6,
-        "sortby": "3",
+        "collection": "",
+        "limit": 10,
         "space": 30,
-        "col_pr": "3",
+        "use_pagination": "none",
+        "btn_rd": false,
+        "btn_icon": false,
+        "btn_style": "default",
+        "col_pr": "15",
         "col_pr_tb": "3",
         "col_pr_mb": "6",
         "pr_des": "1",
@@ -198,24 +230,32 @@
         "loop": true,
         "au_time": 0,
         "au_hover": true,
-        "button": false,
+        "button": true,
         "btn_vi": "1",
-        "btn_owl": "1",
-        "btn_color": "0",
+        "btn_owl": "2",
+        "btn_color": "1",
         "dot": false,
         "dot_owl": "1",
         "dot_color": "1",
-        "use_eq_height": false,
-        "image_ratio": "ratio_nt",
-        "image_size": "nt_cover",
-        "image_position": "8"
+        "use_eq_height": true,
+        "image_ratio": "ratio1_1",
+        "image_size": "nt_contain",
+        "image_position": "8",
+        "cp_code": false,
+        "layout": "wrap",
+        "cl_bg": "",
+        "mg": "50px,,50px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
       }
     }
   },
   "order": [
     "main",
-    "product-description",
-    "product-recommendations",
-    "recently-viewed-products"
+    "1648757478999cc57a",
+    "164875753916b49a9b",
+    "product-rec-indiv",
+    "best-seller-slider"
   ]
 }
