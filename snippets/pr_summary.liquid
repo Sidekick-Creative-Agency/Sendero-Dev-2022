@@ -285,19 +285,6 @@ assign se_stts = section.settings
 
 
 
-
-{%- comment -%}
-
-
-<li class="tab_title_block{% if ck %} active{% assign ck = false %}{% endif %}"><a class="db cg truncate pr" data-id-dest4s href="#tab_des">Description</a></li>
-<li class="tab_title_block{% if ck %} active{% assign ck = false %}{% endif %}"><a class="db cg truncate pr" data-id-dest4s href="#tab_add">Additional Information</a></li>
-{%- for i in (1..1) -%}
-{%- endfor -%}
-{%- case block.type -%}
-{%- endcase -%}
-{%- endcomment -%}
-     
-
 {%- when 'des' -%}
   <div id="wrap_des_pr"><div class="container container_des" style="padding: 0">
     <ul class="ul_none ul_tabs is-flex fl_center fs__16 des_mb_{{cl_mb}} des_style_{{cl_des}}" style="justify-content: left;">
@@ -306,32 +293,7 @@ assign se_stts = section.settings
       <li class="tab_title_block{% if ck %} active{% assign ck = false %}{% endif %}"><a class="db cg truncate pr" href="#tab_add">Additional Information</a></li>
       {%- endif -%}
 
-         {%- comment -%}
-        {%- when 'add' %}{% if product.has_only_default_variant %}{% continue %}{% endif -%}
-            <li class="tab_title_block{% if ck %} active{% assign ck = false %}{% endif %}"><a class="db cg truncate pr" >Additional Information</a></li>
-          
-          {%- when 'buy' %}{% if nav_up_size == 0 %}{% continue %}{% endif -%}
-            <li class="tab_title_block{% if ck %} active{% assign ck = false %}{% endif %}"><a class="db cg truncate pr" href="#tab_{{block.id}}">{{bk_setts.title}}</a></li>
-          
-          {%- when 'size_pr' %}{% if product.type == blank %}{% continue %}{% endif -%}
-            {%- assign size_pr = 'Size The4 ' | append:product.type | handle -%}
-            {%- assign page_sizet4 = pages[size_pr] -%}
-            {%- if page_sizet4.content == blank %}{% continue %}{% endif -%}{%- assign ck_page_sizet4 = true -%}
-            <li class="tab_title_block{% if ck %} active{% assign ck = false %}{% endif %}"><a class="db cg truncate pr" href="#tab_{{block.id}}">{{bk_setts.title}}</a></li>
-          
-          {%- when 'des' %}
-            <li class="tab_title_block{% if ck %} active{% assign ck = false %}{% endif %}"><a class="db cg truncate pr" data-id-dest4s href="#tab_{{block.id}}">Description</a></li>
-          {%- when 'rivui' %}
-            <li class="tab_title_block{% if ck %} active{% assign ck = false %}{% endif %}"><a class="db cg truncate pr" data-id-reviewt4s href="#tab_{{block.id}}">Additional Information</a></li>
-          
-          {%- when 'html' -%}{%- if bk_setts.title == blank or pages[bk_setts.page].content == blank %}{% continue %}{% endif -%}
-          <li class="tab_title_block{% if ck %} active{% assign ck = false %}{% endif %}"><a class="db cg truncate pr" href="#tab_{{block.id}}">{{bk_setts.title}}</a></li>
-          
-          {%- else -%}{%- if bk_setts.title == blank or bk_setts.text == blank %}{% continue %}{% endif -%}
-            <li class="tab_title_block{% if ck %} active{% assign ck = false %}{% endif %}"><a class="db cg truncate pr" href="#tab_{{block.id}}">{{bk_setts.title}}</a></li>
-        {%- endcomment -%}
-        
-    </ul>
+    </ul> 
     {%- if cl_des == '2' %}{% assign ck = se_stts.auto %}{% else -%}{% assign ck = true %}{% endif -%} 
     {%- for block in section.blocks %}{% assign bk_setts = block.settings -%}
       {%- case block.type -%}
@@ -347,14 +309,13 @@ assign se_stts = section.settings
         	<div class="js_ck_view"></div><div class="heading bgbl dn"><a class="tab-heading flex al_center fl_between pr cd chp fwm" href="#tab_{{block.id}}"><span class="txt_h_tab">{{bk_setts.title}}</span><span class="nav_link_icon ml__5"></span></a></div>
         	<div class="sp-tab-content rtet4">{{- product.description -}}</div>
         </div>
-
+{%- comment -%}
         {%- when 'add' %}{% if product.has_only_default_variant %}{% continue %}{% endif -%}
         <div class="panel entry-content sp-tab des_mb_{{cl_mb}} des_style_{{cl_des}}{% if ck %} active{% assign ck = false %}{% else %} dn{% endif %}" data-id-dest4s id="tab_{{block.id}}" {{ block.shopify_attributes }}>
         	<div class="js_ck_view"></div><div class="heading bgbl dn"><a class="tab-heading flex al_center fl_between pr cd chp fwm" href="#tab_{{block.id}}"><span class="txt_h_tab">Additional Information</span><span class="nav_link_icon ml__5"></span></a></div>
         	<div class="sp-tab-content rtet4">{{- product.description -}}</div>
-          <h1>HEELO</h1>
         </div>
-
+{%- endcomment -%}
         {%- when 'buy' -%}{% if nav_up_size == 0 %}{% continue %}{% endif -%} 
         <div class="panel entry-content sp-tab des_mb_{{cl_mb}} des_style_{{cl_des}}{% if ck %} active{% assign ck = false %}{% else %} dn{% endif %}" id="tab_{{block.id}}" {{ block.shopify_attributes }}>
           <div class="js_ck_view"></div><div class="heading bgbl dn"><a class="tab-heading flex al_center fl_between pr cd chp fwm" href="#tab_{{block.id}}"><span class="txt_h_tab">{{bk_setts.title}}</span><span class="nav_link_icon ml__5"></span></a></div>
@@ -506,6 +467,7 @@ assign se_stts = section.settings
 
 
     {%- comment -%}ARON PUT THIS HERE{%- endcomment -%}
+    {%- if product.options_with_values[0].values[0] != "Default Title" -%}
     <div class="panel entry-content sp-tab des_mb_{{cl_mb}} des_style_{{cl_des}}{% if ck %} active{% assign ck = false %}{% else %} dn{% endif %}" id="tab_add" {{ block.shopify_attributes }}>
       <div class="js_ck_view"></div><div class="heading bgbl dn"><a class="tab-heading flex al_center fl_between pr cd chp fwm" href="#tab_{{block.id}}"><span class="txt_h_tab">Additional Information</span><span class="nav_link_icon ml__5"></span></a></div>
       <div class="sp-tab-content">
@@ -523,6 +485,7 @@ assign se_stts = section.settings
         </table>
       </div>
     </div>
+    {%- endif -%}
 
 
 

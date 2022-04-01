@@ -7,7 +7,9 @@
 /*--------------------------------------------------------/
 / HEADER & MEGA MENU
 /--------------------------------------------------------*/
-
+.ntheader {
+    height: fit-content !important;
+}
 
 /*---------------- Logo & Icon Spacing -------------------*/
 
@@ -140,6 +142,21 @@
 .sk-collection-top {
     margin:70px 0 70px 90px;
 }
+
+.flickityt4s-slider {
+    width:108%;
+    justify-content:flex-start !important;
+}
+
+.image-title {
+    color:#fff;
+}
+
+
+/*--------------------------------------------------------/
+/ Individual Product Pagee
+/--------------------------------------------------------*/
+
 .sk-best-seller-img-slider, .indiv-product-rec-img-slider {
     width: 100% !important;
     margin: 0 !important;
@@ -149,14 +166,8 @@
     padding-right: 0;
     max-width: 100%;
 }
-
-.flickityt4s-slider {
-    width:108%;
-    justify-content:flex-start !important;
-}
-
-.image-title {
-    color:#fff;
+.img-text-indiv-product-container {
+    max-width: 1200px;
 }
 
 
