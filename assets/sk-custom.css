@@ -140,9 +140,19 @@
 .sk-collection-top {
     margin:70px 0 70px 90px;
 }
+.sk-best-seller-img-slider, .indiv-product-rec-img-slider {
+    width: 100% !important;
+    margin: 0 !important;
+}
+.best-seller-img-container, .indiv-product-rec-container {
+    margin-left: 0;
+    padding-right: 0;
+    max-width: 100%;
+}
 
 .flickityt4s-slider {
     width:108%;
+    justify-content:flex-start !important;
 }
 
 .image-title {
@@ -165,8 +175,10 @@
 
 /*---------------- Custom CSS for tablet, mobile -------------------*/
 @media (max-width: 1024px) {
-
-
+    .sk-collection-top {
+        margin:70px 0 70px 0px;
+    }
+    
 
 }
 
@@ -184,5 +196,11 @@
 .flex_wrap_reverse {
     flex-wrap: wrap-reverse;
 }
-
+.mobile-remove-left-padding, .indiv-product-rec-container, .best-seller-img-container {
+    padding-left: 0 !important;
+}
+.flickityt4s-slider {
+    width:100%;
+    justify-content:flex-start !important;
+}
 }

@@ -165,22 +165,8 @@
         "pd_mb": ""
       }
     },
-    "product-description": {
-      "type": "pr_description",
-      "settings": {
-        "des_pr_design": "1",
-        "show": true,
-        "bgcl": "#ffffff",
-        "bgclmb": "#ffffff",
-        "des_w": "1",
-        "des_mb": "2",
-        "auto": true,
-        "mg": "30px,,30px,",
-        "mg_mb": "0,,0,"
-      }
-    },
-    "product-recommendations": {
-      "type": "product-recommendations",
+    "product-rec-indiv": {
+      "type": "product-recommendations-individual-product",
       "settings": {
         "show": true,
         "title": "MORE PICKS FOR YOU",
@@ -190,9 +176,9 @@
         "ic_tt": "gem",
         "show_clpr": false,
         "display_type": "3",
-        "limit": 6,
+        "limit": 10,
         "space": 30,
-        "col_pr": "3",
+        "col_pr": "15",
         "col_pr_tb": "3",
         "col_pr_mb": "6",
         "pr_des": "1",
@@ -206,7 +192,7 @@
         "button": true,
         "btn_vi": "1",
         "btn_owl": "2",
-        "btn_color": "0",
+        "btn_color": "1",
         "dot": false,
         "dot_owl": "1",
         "dot_color": "1",
@@ -216,21 +202,24 @@
         "image_position": "8"
       }
     },
-    "recently-viewed-products": {
-      "type": "recently_viewed",
+    "best-seller-slider": {
+      "type": "best-seller-slider",
       "settings": {
-        "show": true,
-        "unavailable_prs": "show",
-        "title": "BEST SELLERS",
-        "sub_title": "",
+        "title": "Best Seller Slider",
+        "sub_title": "Sub Text",
         "sub_font": "2",
+        "btn_title": "See all products",
         "style_title": "title_1",
         "ic_tt": "gem",
         "show_clpr": false,
-        "limit": 6,
-        "sortby": "3",
+        "collection": "",
+        "limit": 10,
         "space": 30,
-        "col_pr": "3",
+        "use_pagination": "none",
+        "btn_rd": false,
+        "btn_icon": false,
+        "btn_style": "default",
+        "col_pr": "15",
         "col_pr_tb": "3",
         "col_pr_mb": "6",
         "pr_des": "1",
@@ -244,14 +233,21 @@
         "button": true,
         "btn_vi": "1",
         "btn_owl": "2",
-        "btn_color": "0",
+        "btn_color": "1",
         "dot": false,
         "dot_owl": "1",
         "dot_color": "1",
-        "use_eq_height": false,
-        "image_ratio": "ratio_nt",
-        "image_size": "nt_cover",
-        "image_position": "8"
+        "use_eq_height": true,
+        "image_ratio": "ratio1_1",
+        "image_size": "nt_contain",
+        "image_position": "8",
+        "cp_code": false,
+        "layout": "wrap",
+        "cl_bg": "",
+        "mg": "50px,,50px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
       }
     }
   },
@@ -259,8 +255,7 @@
     "main",
     "1648757478999cc57a",
     "164875753916b49a9b",
-    "product-description",
-    "product-recommendations",
-    "recently-viewed-products"
+    "product-rec-indiv",
+    "best-seller-slider"
   ]
 }
