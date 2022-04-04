@@ -41,6 +41,8 @@
     </div>
   
   {%- endif -%}
+{% if collection != blank %}
+  
 
     <div class="sk-collection-top">
       <div class="row equal_nt auto al_center"></div>
@@ -65,7 +67,7 @@
         </div>
       </div>
     <a name="content"></a>
-  
+    {% endif %}
 {%- schema -%}
   {
     "name": "Best Seller Slider",
