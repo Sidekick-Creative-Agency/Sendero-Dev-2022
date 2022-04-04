@@ -296,6 +296,34 @@
     padding: 0;
 }
 
+
+/*---------------- SHOPPING CART SIDEBAR ----------------*/
+.mini_cart_actions .quantity {
+    border: none;
+}
+.min_cqty_0 .mini_cart_item .qty_1 svg {
+    display: none;
+}
+.minus {
+    padding: 0;
+}
+.mini-cart-edit-delete-container {
+    width: 84%;
+    display: flex;
+    justify-content: center;
+}
+.btns_cart_1 .mini_cart_tool>div {
+    box-shadow: none;
+    /* border: 1px solid #222; */
+    border-radius: 0;
+}
+.btns_cart_1 .mini_cart_tool>div:hover {
+    box-shadow: none;
+}
+
+
+
+
 /*---------------- Quick View and Add to Cart on Hover -------------------*/
 
 .hover_button, .product-attr {
