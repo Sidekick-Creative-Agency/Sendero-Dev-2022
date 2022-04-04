@@ -125,6 +125,7 @@
     border: 1px solid rgba(33,43,54,.9);
     max-width: 160px !important;
     margin-top: 20px;
+    text-transform: uppercase !important;
 }
 .single_add_to_cart_button:hover {
     background-color: #222;
@@ -246,10 +247,9 @@
     text-transform: uppercase;
     font-weight: 400
 }
-.out_stock.button, .add_to_cart_button {
+.add_to_cart_button {
     border: 1px solid #222 !important;
     display: flex;
-    
 }
 #out_stock_ppr {
     align-items: center;
