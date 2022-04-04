@@ -3618,6 +3618,7 @@ html.wf-fontawesome5free-n4-loading .fas:before {opacity: 0}
   .swatch_pr_item {
       display: inline-block;
       margin: 3px;
+      margin-left: 0;
       cursor: pointer;
   }
    .swatch__value_pr {

@@ -123,6 +123,8 @@
 .single_add_to_cart_button {
     background-color: #222;
     border: 1px solid rgba(33,43,54,.9);
+    max-width: 160px !important;
+    margin-top: 20px;
 }
 .single_add_to_cart_button:hover {
     background-color: #222;
@@ -213,6 +215,27 @@
 .variations.style__rectangle .swatch:not(.is-color) li:hover{
     background-color: #222 !important;
     border-color: #222;
+}
+.quantity input.input-text[type=number] {
+    border: 1px solid #222;
+    width: 40px;
+    margin: 0 15px;
+}
+.variations_form .quantity {
+    border: none;
+    width:fit-content;
+}
+.quantity .tc button .facl-plus, .quantity .tc button .facl-minus{
+    background-color:#f6f6f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px !important;
+    /* top: 5px; */
+}
+.facl-plus, .facl-minus {
+    font-size: 10px;
 }
 
 /*---------------- Quick View and Add to Cart on Hover -------------------*/
@@ -309,5 +332,11 @@ a.prev.page-numbers {
     }
     .mobile-remove-left-padding, .indiv-product-rec-container, .best-seller-img-container {
         padding-left: 0 !important;
+    }
+
+    /* INDIVIDUAL PRODUCT PAGE IMAGE */
+    .indiv-product-img{
+        width: 100%;
+        height: auto;
     }
 }
