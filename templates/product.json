@@ -62,7 +62,6 @@
         "des": {
           "type": "des",
           "settings": {
-            "title": "Description"
           }
         },
         "social": {
@@ -82,15 +81,6 @@
         "social"
       ],
       "settings": {
-        "des_pr_design": "1",
-        "show": true,
-        "bgcl": "#ffffff",
-        "bgclmb": "#ffffff",
-        "des_w": "1",
-        "des_mb": "2",
-        "auto": false,
-        "mg": "30px,,30px,",
-        "mg_mb": "0,,0,",
         "pr_layout": "default",
         "design_products": "4",
         "size_img_pr": "2",
@@ -106,7 +96,7 @@
         "pr_size_sidebar": "2",
         "breadcrumb_pr": true,
         "back_next_pr": true,
-        "autobox": false
+        "auto": false
       }
     },
     "1648757478999cc57a": {
