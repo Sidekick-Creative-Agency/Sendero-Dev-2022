@@ -538,7 +538,7 @@
             "type": "mmtitle",
             "settings": {
               "mmtitle": "T-Shirts",
-              "url": "shopify:\/\/collections\/shirts",
+              "url": "shopify:\/\/collections\/t-shirts",
               "open_link": "_self",
               "col": "2"
             }
