@@ -295,7 +295,15 @@
     border: 1px solid #222;
     padding: 0;
 }
+.tab-heading {
+    border: none;
+    font-size: 14px;
+    font-family: 'Oswald';
+    font-weight: 400;
+    letter-spacing: .1em;
+    text-transform: uppercase;
 
+}
 
 /*---------------- SHOPPING CART SIDEBAR ----------------*/
 .mini_cart_actions .quantity {
