@@ -1,9 +1,9 @@
 {
   "sections": {
     "16479809910f68859a": {
-      "type": "category-page-top",
+      "type": "collection-page-top",
       "settings": {
-        "title": "Category Page Top",
+        "title": "Collection Page Top",
         "sub_title": "Sub Text",
         "sub_font": "2",
         "btn_title": "See all products",
@@ -51,15 +51,6 @@
     "16488315326088f3a4": {
       "type": "collection-list_packery",
       "blocks": {
-        "1648831532aa982f8e-0": {
-          "type": "collection",
-          "settings": {
-            "collection": "hats",
-            "img_align": "center",
-            "title": "",
-            "url": ""
-          }
-        },
         "1648831532aa982f8e-1": {
           "type": "collection",
           "settings": {
@@ -72,7 +63,7 @@
         "1648831532aa982f8e-2": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "outerwear",
             "img_align": "center",
             "title": "",
             "url": ""
@@ -81,7 +72,16 @@
         "1648831532aa982f8e-3": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "kids-gear",
+            "img_align": "center",
+            "title": "",
+            "url": ""
+          }
+        },
+        "1648831532aa982f8e-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "hats",
             "img_align": "center",
             "title": "",
             "url": ""
@@ -89,10 +89,10 @@
         }
       },
       "block_order": [
-        "1648831532aa982f8e-0",
         "1648831532aa982f8e-1",
         "1648831532aa982f8e-2",
-        "1648831532aa982f8e-3"
+        "1648831532aa982f8e-3",
+        "1648831532aa982f8e-0"
       ],
       "settings": {
         "title": "Shop This Collection",
