@@ -813,59 +813,14 @@
       "mb_nav": {
         "type": "mb_nav",
         "blocks": {
-          "mb_nav-1": {
-            "type": "menu",
-            "settings": {
-              "title": "Shop",
-              "url": "shopify:\/\/collections\/trending",
-              "open_link": "_self",
-              "menu": "",
-              "icon": "",
-              "lb": "",
-              "lb_cl": ""
-            }
-          },
-          "mb_nav-2": {
-            "type": "menu",
-            "settings": {
-              "title": "Product",
-              "url": "shopify:\/\/products\/skin-sweatpans",
-              "open_link": "_self",
-              "menu": "",
-              "icon": "",
-              "lb": "",
-              "lb_cl": ""
-            }
-          },
-          "1585642902196": {
-            "type": "menu",
-            "settings": {
-              "title": "Sale",
-              "url": "",
-              "open_link": "_self",
-              "menu": "",
-              "icon": "",
-              "lb": "",
-              "lb_cl": ""
-            }
-          },
           "mb_nav-5": {
             "type": "sea",
-            "settings": {
-            }
-          },
-          "mb_nav-6": {
-            "type": "acc",
             "settings": {
             }
           }
         },
         "block_order": [
-          "mb_nav-1",
-          "mb_nav-2",
-          "1585642902196",
-          "mb_nav-5",
-          "mb_nav-6"
+          "mb_nav-5"
         ],
         "settings": {
         }
@@ -873,26 +828,13 @@
       "mb_cat": {
         "type": "mb_cat",
         "blocks": {
-          "1585642277236": {
-            "type": "cat",
-            "settings": {
-              "cat": "acessories",
-              "title": "ACCESSORIES",
-              "url": "",
-              "menu": "accessories",
-              "lb": "",
-              "lb_cl": "#e91e63",
-              "icons_op": "0",
-              "icon": "glasses"
-            }
-          },
           "1585642450066": {
             "type": "cat",
             "settings": {
               "cat": "electric",
               "title": "HATS",
               "url": "",
-              "menu": "hats-first-column",
+              "menu": "hats-full",
               "lb": "",
               "lb_cl": "#e91e63",
               "icons_op": "0",
@@ -905,32 +847,44 @@
               "cat": "footwear",
               "title": "T-SHIRT",
               "url": "",
-              "menu": "",
+              "menu": "shirts-full",
               "lb": "",
               "lb_cl": "#e91e63",
               "icons_op": "0",
               "icon": "tshirt"
             }
           },
-          "1585642780875": {
+          "a3e62895-2a82-4b35-bf04-e64fd5372cd3": {
             "type": "cat",
             "settings": {
-              "cat": "decor",
-              "title": "KIDS",
+              "cat": "",
+              "title": "BRAND",
               "url": "",
-              "menu": "",
+              "menu": "main-menu",
               "lb": "",
               "lb_cl": "#e91e63",
               "icons_op": "0",
-              "icon": "child"
+              "icon": "chair"
+            }
+          },
+          "5103b317-b3b2-4221-8e97-184f6196a3f6": {
+            "type": "menu",
+            "settings": {
+              "title": "SALE",
+              "url": "",
+              "open_link": "_self",
+              "menu": "",
+              "icon": "",
+              "lb": "",
+              "lb_cl": ""
             }
           }
         },
         "block_order": [
-          "1585642277236",
           "1585642450066",
           "1585642644518",
-          "1585642780875"
+          "a3e62895-2a82-4b35-bf04-e64fd5372cd3",
+          "5103b317-b3b2-4221-8e97-184f6196a3f6"
         ],
         "settings": {
         }
