@@ -24,7 +24,7 @@
           <div class="pa l__0 t__0 r__0 b__0 img_vid_js bg_rp_norepeat bg_sz_cover pe_none" data-bgset="{{ image | img_url: '1x1' }}" data-ratio="{{image.aspect_ratio}}" data-sizes="auto" style="background-image: url({{ image | img_url: '1x1' }})"></div>
           {%- endif -%}
         </div>
-        <div class="txt_content pa t__0 l__0 b__0 r__0 caption-w-{{se_stts.caption_w}} flex column shadow_wrap {{se_stts.txt_align}} pe_none z__100">
+        <div class="sendero-session_txt txt_content pa t__0 l__0 b__0 r__0 caption-w-{{se_stts.caption_w}} flex column shadow_wrap {{se_stts.txt_align}} pe_none z__100">
           <div class="pa pa_txts mb_h_pos{{se_stts.cap_h_pos}} mb_v_pos{{se_stts.cap_v_pos}} h_pos{{se_stts.cap_h_pos}} v_pos{{se_stts.cap_v_pos}}">
             {%- for block in section.blocks -%}{% assign bk_stts = block.settings -%}
               {%- case block.type -%}
