@@ -119,6 +119,13 @@
     opacity: 0.5;
 }
 
+
+/*--------------------------------------------------------/
+/ HOME PAGE
+/--------------------------------------------------------*/
+/* .sendero-session_txt */
+
+
 /*---------------- ADD TO CART BUTTON -------------------*/
 .single_add_to_cart_button {
     background-color: #222;
@@ -126,6 +133,8 @@
     max-width: 160px !important;
     margin-top: 20px;
     text-transform: uppercase !important;
+    font-family: 'Oswald';
+    font-weight: 400;
 }
 .single_add_to_cart_button:hover {
     background-color: #222;
@@ -204,10 +213,15 @@
     border: none;
     border-bottom: 2px solid #222;
     /* padding: 0; */
+    
 }
 .ul_tabs li.tab_title_block a{
     border: none;
+    font-size: 14px;
     margin-right: 25px;
+    font-family: 'Oswald';
+    font-weight: 400;
+    letter-spacing: .1em;
 }
 .variations.style__rectangle .swatch:not(.is-color) li.is-selected{
     background-color: #222 !important;
@@ -220,11 +234,15 @@
 .variations.style__rectangle .swatch:not(.is-color) li {
     background-color: transparent;
     border: 1px solid #222;
+    font-family: 'Oswald';
+    font-weight: 400;
 }
 .quantity input.input-text[type=number] {
     border: 1px solid #222;
     width: 40px;
     margin: 0 15px;
+    font-family: 'Oswald';
+    font-size: 12px;
 }
 .variations_form .quantity {
     border: none;
@@ -245,15 +263,37 @@
 .swatch__title {
     font-size: 10px;
     text-transform: uppercase;
-    font-weight: 400
+    font-weight: 400;
+    letter-spacing: .1em;
+}
+.swatch__value_pr {
+    font-size: 14px;
+}
+.style_color .is-color .swatch_pr_item.is-selected {
+    border: 1px solid #222 !important;
+    background-color: transparent;
+}
+.style_color .is-color .swatch_pr_item {
+    padding: 0;
+    margin: 3px 0;
 }
 .add_to_cart_button {
     border: 1px solid #222 !important;
     display: flex;
+    
 }
 #out_stock_ppr {
     align-items: center;
     justify-content: center;
+}
+.swatch_style_rounded .swatch__list .swatch__value {
+    border-radius: 0;
+    padding: 0;
+}
+.swatch_style_rounded .swatch__list .swatch__list--item {
+    border-radius: 0;
+    border: 1px solid #222;
+    padding: 0;
 }
 
 /*---------------- Quick View and Add to Cart on Hover -------------------*/
