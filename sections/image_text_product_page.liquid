@@ -15,7 +15,23 @@
   assign cl_txt = 'cw,cw,button-o-w' 
  endif 
  assign cl_arr = cl_txt | split:","
- assign fs_arr = se_stts.text_size2 | split:"," -%}
+ assign fs_arr = se_stts.text_size2 | split:"," 
+ for i in (0..product.images.size)
+  if product.images[i].alt == "main"
+    assign image1 = product.images[i]
+    break
+  else
+    assign image1 = product.images[0]
+  endif 
+  if product.images[i].alt == "hover"
+    assign image2 = product.images[i]
+    break
+  else 
+    assign image2 = product.images.last
+  endif
+endfor
+ -%}
+
 
 
  {%- capture layout1 -%}
@@ -25,7 +41,7 @@
       <div class="nt_img_txt oh pr middle center indiv-product-img">
         {%- comment -%}<a href="{{ url | default:'#' }}" class="db">{%- endcomment -%}
         {%- if image != blank -%}
-          <div class="nt_bg_lz lazyloadt4s item__position {{se_stts.img_align}}" data-bgset="{{ image | img_url: '1x1' }}" data-sizes="auto" data-ratio="{{image.aspect_ratio}}" data-parent-fit="cover" style="padding-top:{{ 1 | divided_by: image.aspect_ratio | times: 100}}%;"></div>
+          <div class="nt_bg_lz lazyloadt4s item__position {{se_stts.img_align}}" data-bgset="{{ image1 | img_url: '1x1' }}" data-sizes="auto" data-ratio="{{image1.aspect_ratio}}" data-parent-fit="cover" style="padding-top:{{ 1 | divided_by: image.aspect_ratio | times: 100}}%;"></div>
         {%- else -%}
           <div class="nt_bg_lz lazyloadt4s item__position {{se_stts.img_align}}" data-bg="{{ 'placeholder.jpg' | asset_url }}" style="padding-top: 111.1111111111111%;"></div>
         {%- endif -%}
@@ -83,7 +99,7 @@
       <div class="nt_img_txt oh pr middle center indiv-product-img">
         {%- comment -%}<a href="{{ url | default:'#' }}" class="db">{%- endcomment -%}
           {%- if image != blank -%}
-            <div class="nt_bg_lz lazyloadt4s item__position {{se_stts.img_align}}" data-bgset="{{ image | img_url: '1x1' }}" data-sizes="auto" data-ratio="{{image.aspect_ratio}}" data-parent-fit="cover" style="padding-top:{{ 1 | divided_by: image.aspect_ratio | times: 100}}%;"></div>
+            <div class="nt_bg_lz lazyloadt4s item__position {{se_stts.img_align}}" data-bgset="{{ image2 | img_url: '1x1' }}" data-sizes="auto" data-ratio="{{image2.aspect_ratio}}" data-parent-fit="cover" style="padding-top:{{ 1 | divided_by: image.aspect_ratio | times: 100}}%;"></div>
           {%- else -%}
             <div class="nt_bg_lz lazyloadt4s item__position {{se_stts.img_align}}" data-bg="{{ 'placeholder.jpg' | asset_url }}" style="padding-top: 111.1111111111111%;"></div>
           {%- endif -%}

@@ -3601,7 +3601,7 @@ html.wf-fontawesome5free-n4-loading .fas:before {opacity: 0}
     display: inline;
    }
   .swatch {
-      margin-bottom: 10px
+      margin-bottom: 20px
   }
 
   .swatch__title {
@@ -3612,7 +3612,7 @@ html.wf-fontawesome5free-n4-loading .fas:before {opacity: 0}
 
   .swatch__list_pr {
       list-style: none;
-      margin: 10px -5px;
+      margin: 10px 0;
       padding: 0
   }
   .swatch_pr_item {
