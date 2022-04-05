@@ -1289,10 +1289,16 @@ transition: all .2s;
     margin: 5px;
 }
 .label_style_rounded .nt_label {
-    height: 60px;
-    width: 60px;
-    font-size: 14px;
+    height: 52px;
+    width: 52px;
+    font-family:Oswald;
+    text-transform:uppercase;
+    font-size:12px;
+    font-weight:400;
+    letter-spacing:0.05em;
+    font-size: 13px;
     border-radius: 50%;
+    line-height: 1.1em;
 }
 /* .label_style_rounded .nt_label {
     height: 30px;

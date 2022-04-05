@@ -93,12 +93,13 @@
     "cl_hd": "#000000",
     "cl_se_tt": "#000000",
     "cl_se_subtt": "#000000",
-    "cl_sale": "#ff4e00",
-    "cl_new": "#109533",
-    "cl_sold_out": "#999",
+    "ld_bar": "#04a4a2",
+    "cl_sale": "#04a4a2",
+    "cl_new": "#9bcb98",
+    "cl_sold_out": "rgba(0,0,0,0)",
     "clpr_tt": "#000000",
     "clpr_price": "#696969",
-    "clpr_price_sale": "#ec0101",
+    "clpr_price_sale": "#04a4a2",
     "clpr_price_goc": "#878787",
     "atw_btn": "#fff",
     "bgqv_btn": "#fff",
@@ -171,7 +172,8 @@
     "sort_enable": true,
     "cat_sticky": false,
     "shop_filters": true,
-    "pop_style": "pop_default",
+    "pop_style": "nt_pop_sidebar",
+    "type_filters": "2",
     "style_color_filter": "color, colour, Color",
     "main_click": "zoom",
     "zoom_tp": "2",
@@ -1725,6 +1727,11 @@
           "article-sidebar-3",
           "article-sidebar-4"
         ],
+        "settings": {
+        }
+      },
+      "sidebar_shop": {
+        "type": "sidebar_shop",
         "settings": {
         }
       }

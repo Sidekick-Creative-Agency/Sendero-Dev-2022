@@ -160,15 +160,28 @@
 
 /*---------------- Filter Widget -------------------*/
 
-.filter_area .section_nt_filter div, .filter_area .section_nt_filter .price_label {
+.mfp-content .section_nt_filter div, .mfp-content .section_nt_filter .price_label {
     font-size:12px;
 }
 
-.filter_area .section_nt_filter .blockid_price .price_slider_amount .button {
+.mfp-content .section_nt_filter .blockid_price .price_slider_amount .button {
     padding: 8px 14px;
     min-height: 0px;
     min-width: 0px;
 }
+
+/*---------------- Product Badges & Sale Price -------------------*/
+
+.label_style_rounded .nt_label.out-of-stock {
+    width: 52px;
+    height:20px;
+}
+
+.nt_label.out-of-stock {
+    color: #04A4A2;
+    font-size: 12px;
+}
+
 
 
 /*--------------------------------------------------------/
