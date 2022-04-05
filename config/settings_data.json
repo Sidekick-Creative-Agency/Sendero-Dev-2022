@@ -605,7 +605,7 @@
               "mmtitle": "T-Shirts",
               "url": "shopify:\/\/collections\/t-shirts",
               "open_link": "_self",
-              "col": "2"
+              "col": "3"
             }
           },
           "33a8f26b-80ee-4107-8d43-d3d39fab6036": {
@@ -614,7 +614,7 @@
               "tt_hd": "",
               "url": "",
               "open_link": "_self",
-              "menu": "hats-first-column",
+              "menu": "t-shirts",
               "col": "2"
             }
           },
@@ -624,7 +624,7 @@
               "tt_hd": "",
               "url": "",
               "open_link": "_self",
-              "menu": "hats-column-two",
+              "menu": "",
               "col": "2"
             }
           },
