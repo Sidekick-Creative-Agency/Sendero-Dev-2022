@@ -452,14 +452,14 @@
           "9f7a4a88-7cbc-4c06-baae-ee3009a12771": {
             "type": "mega",
             "settings": {
-              "title": "Spring 2022",
+              "title": "New",
               "url": "",
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
               "cl": "rgba(0,0,0,0)",
-              "lb": "New",
-              "lb_cl": "#df740d",
+              "lb": "",
+              "lb_cl": "rgba(0,0,0,0)",
               "lazy_mn": true,
               "pos": "default",
               "wid": "cus",
@@ -469,7 +469,7 @@
           "f612db4f-0e53-4806-bb56-7271c5193f57": {
             "type": "mmtitle",
             "settings": {
-              "mmtitle": "Spring 2022",
+              "mmtitle": "New Things",
               "url": "",
               "open_link": "_self",
               "col": "3"
