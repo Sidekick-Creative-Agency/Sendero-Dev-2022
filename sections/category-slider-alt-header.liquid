@@ -7,12 +7,13 @@
   assign col_tb = se_stts.col_pr_tb
   assign col_mb = ' pr_animated done' | prepend:se_stts.col_pr_mb
   assign inc_pr = se_stts.pr_des
-  assign page_handle = collection.handle
-  assign collection_handle = collection.handle | prepend: 'best-seller-'
+  
+  assign collection_handle = "best-sellers"
+  assign page_handle = collections[collection_handle].url
   assign use_cdt = se_stts.use_cdt
   assign txt_cd = 'products.grid_items.offer_end_in' | t
   assign sid = section.id
-  assign image = collection.image
+  assign image = collection[collection_handle].image
   render 'section_css'  
   assign inc_price = settings.price_format 
   assign use_rating = settings.use_pr_rating 
@@ -22,7 +23,7 @@
   assign show_size = settings.show_pr_size 
   assign use_pagination = se_stts.use_pagination 
   assign current_page = '1' 
--%} 
+-%}
 <script>document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
       e.preventDefault();
@@ -41,36 +42,17 @@
   
   {%- endif -%}
 
-    <div class="sk-breadcrumbs">
-      <nav class="sp-breadcrumb mt__10" aria-label="Breadcrumbs"><a href="{{ routes.root_url }}" class="dib">{{ 'general.breadcrumbs.home' | t }}</a><i class="facl facl-angle-right"></i>{{collection.title}}
-      {%- assign get_url = '' | link_to_remove_tag: '' | split:'href="' | last | split:'"' | first | remove:'?customer_posted=true' -%}
-      {%- assign sy = collection.sort_by -%}
-      {%- if collection.current_type or sy != blank or collection.current_vendor or get_url contains '?' %}{% assign get_url = get_url | append:'&' %}{% else %}{% assign get_url = get_url | append:'/?' %}{% endif -%}
-      {%- assign sort_by = sy | default: collection.default_sort_by -%}
-    </div>
+  
 
     <div class="sk-collection-top">
-      <div class="row equal_nt auto al_center">
-        <div class="cat-top-img col-12 col-md-6">
-          <div class="nt_img_txt oh pr middle center">
-            <a href="#content">
-            <div class="nt_bg_lz lazyloadt4s item__position center" data-bgset="{{ image | img_url: '1x1' }}" style="padding-top: 70%;">
-              <div class="txt_content pa t__0 l__0 b__0 r__0 caption-w-2 flex column shadow_wrap tc_md tc pe_none z__100">
-                <div class="pa pa_txts mb_h_pos50 mb_v_pos50 h_pos50 v_pos50">
-                  <h1 class="image-title">{{page_handle}}</h1><h6 class="shop-all pt__10">Shop All<i class="las la-arrow-right"></i></h6>
-                </div>
-              </div>
-            </div>
-          </a>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 txt_col_img">
-          <a href="{{ collection.url | remove:'/collections/' | prepend: 'best-seller-' }}"><div class="flex pt__20 shadow_wrap tl" style="align-items:center;">
-            <span><h2>Best Sellers</h2></span><span><h6 class="shop-all-blk">Shop All<i class="las la-arrow-right"></i></h6></span>
+      <div class="row equal_nt auto al_center"></div>
+        <div class="mobile-remove-left-padding col-md-6 txt_col_img" style="padding-left: 40px; max-width: 100%; padding-right: 0">
+          <a href="{{ collections[page_handle].url | remove:'/collections/' }}"><div class="flex pl__20 pr__20 pt__20 shadow_wrap tl" style="align-items:center;">
+            <span><h2>Best Seller</h2></span><span><h6 class="shop-all-blk">Shop All<i class="las la-arrow-right"></i></h6></span>
           </div></a>
-          <div class="container">
-            <div class="products nt_products_holder row row_pr_{{inc_pr}} cdt_des_{{se_stts.cdt_des}} round_cd_{{se_stts.round_cd}} js_carousel nt_slider {{se_stts.image_size}} {{se_stts.image_ratio}} position_{{se_stts.image_position}} space_{{se_stts.space}} prev_next_{{se_stts.btn_color}} btn_owl_{{se_stts.btn_owl}} dot_owl_{{se_stts.dot_owl}} dot_color_{{se_stts.dot_color}} btn_vi_{{se_stts.btn_vi}}{% if sett_equal %} equal_nt{% endif %}" data-flickityt4s-js='{"imagesLoaded": 0,"adaptiveHeight": 0, "contain": 1, "groupCells": "100%", "dragThreshold" : 5, "cellAlign": "left","wrapAround": {{se_stts.loop}},"prevNextButtons": {{se_stts.button}},"percentPosition": 1,"pageDots": {{se_stts.dot}}, "autoPlay" : {{ se_stts.au_time | times: 1000 }}, "pauseAutoPlayOnHover" : {{se_stts.au_hover}}, "rightToLeft": {{settings.use_rtl}} }'>
-              {%- if collection != blank -%}
+          <div class="container best-seller-img-container">
+            <div class="sk-best-seller-img-slider products nt_products_holder row row_pr_{{inc_pr}} cdt_des_{{se_stts.cdt_des}} round_cd_{{se_stts.round_cd}} js_carousel nt_slider {{se_stts.image_size}} {{se_stts.image_ratio}} position_{{se_stts.image_position}} space_{{se_stts.space}} prev_next_{{se_stts.btn_color}} btn_owl_{{se_stts.btn_owl}} dot_owl_{{se_stts.dot_owl}} dot_color_{{se_stts.dot_color}} btn_vi_{{se_stts.btn_vi}}{% if sett_equal %} equal_nt{% endif %}" data-flickityt4s-js='{"imagesLoaded": 0,"adaptiveHeight": 0, "contain": 1, "groupCells": "100%", "dragThreshold" : 5, "cellAlign": "left","wrapAround": {{se_stts.loop}},"prevNextButtons": {{se_stts.button}},"percentPosition": 1,"pageDots": {{se_stts.dot}}, "autoPlay" : {{ se_stts.au_time | times: 1000 }}, "pauseAutoPlayOnHover" : {{se_stts.au_hover}}, "rightToLeft": {{settings.use_rtl}} }'>
+              {%- if collections[collection_handle] != blank -%}
                   {%- for product in collections[collection_handle].products -%}{%- render 'pr_loop_grid_1',collection:collection,product:product,use_cdt:use_cdt,txt_cd:txt_cd, col:col, col_tb:col_tb, col_mb:col_mb,sett_equal:sett_equal,show_vendor:show_vendor,inc_price:inc_price,use_rating:use_rating,inc_rating:inc_rating,show_color:show_color,show_cl_type:show_cl_type,show_size:show_size -%}{%- endfor -%}            
               {%- else -%}
                 {%- for i in (1..8) -%}
@@ -84,14 +66,11 @@
           </div>
         </div>
       </div>
-    </div>
-
     <a name="content"></a>
   
-
 {%- schema -%}
   {
-    "name": "Category Page Top",
+    "name": "Category slider alt head",
     "class": "nt_section type_carousel type_featured_collection_owl tp_se_cdt",
     "settings": [
       {
