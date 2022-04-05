@@ -188,9 +188,42 @@
 /*--------------------------------------------------------/
 / HOME PAGE
 /--------------------------------------------------------*/
-/* .sendero-session_txt */
-
-
+.sendero-session-txt-container {
+    /* display: flex;
+    flex: 0 0 50%; */
+    max-width: 100%;
+    margin: 0 10%;
+}
+.hero-video-txt {
+    /* display: flex; */
+   margin-left: 60%;
+   color: white;
+}
+.sendero-session-more-button {
+    padding: 0 !important;
+    border: none !important;
+}
+.sendero-session-more-button:hover {
+    background-color: transparent !important;
+    border: none !important;
+}
+.play-icon, .play-icon button {
+    z-index: 9999;
+    margin: auto;
+    transition: .5s;
+    opacity: 1 !important;
+    pointer-events: all;
+    background-color: transparent;
+    border: none;
+}
+.play-icon button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    pointer-events: all;
+}
+.nt_se_template--15855375155457__164865439396016512.se_height_cus_h .nt_bg_lz {
+    padding-top: 500px !important;
+}
 /*---------------- ADD TO CART BUTTON -------------------*/
 .single_add_to_cart_button {
     background-color: #222;
@@ -477,11 +510,14 @@ a.prev.page-numbers {
     .container_cat {
         padding:40px;
     }
+    .sendero-session-txt-container {
+        margin: 0 !important;
+    }
 }
 
 /*---------------- Custom CSS for only tablet -------------------*/
 @media (min-width: 768px) and (max-width: 1024px) {
-
+    
 
 
 }
@@ -518,5 +554,12 @@ a.prev.page-numbers {
     .indiv-product-img{
         width: 100%;
         height: auto;
+    }
+
+    /*---------------- Special Custom CSS for Sendero Sessions 'More' Button -------------------*/
+    @media (max-width: 568px){
+        .sendero-session-more-button {
+            padding: 0 25px 0 0 !important;
+        }
     }
 }

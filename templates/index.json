@@ -198,7 +198,7 @@
         "1648654393d1eaf576-0": {
           "type": "1",
           "settings": {
-            "title": "THE DESSERT TAPES",
+            "title": "THE DESERT TAPES",
             "color": "#ffffff",
             "fw_text": 600,
             "fs_text": 30,
@@ -265,11 +265,11 @@
         "h_mb": "350px",
         "caption_w": "1",
         "cap_v_pos": 50,
-        "cap_h_pos": 16,
+        "cap_h_pos": 0,
         "txt_align": "tl",
         "use_shadow": false,
         "cl_overlay": "#181818",
-        "cl_opacity": 59,
+        "cl_opacity": 60,
         "layout": "nt_full",
         "mg": "50px,,50px,",
         "pd": "",
