@@ -4358,15 +4358,6 @@ button.mfp-close:hover {
    margin-top: 0;
    font-size: 18px;
 }
-.widget h5.widget-title:after {
-   content: "";
-   width: 60px;
-   height: 2px;
-   background: #222;
-   left: 0;
-   bottom: 15px;
-   position: absolute;
-}
 .sidebar .widget:not(:first-child) {
     margin-top: 50px;
 }
@@ -5401,7 +5392,7 @@ font-size: 16px;
 }
 @media (min-width: 1025px) {
   .mfp-content.popup_filter, .mfp-inline-holder .mfp-content.popup_filter {
-    width: 340px;
+    width: 280px;
   }
   .cart_des_4.nt_action>.icon_cart>a {
     display: -ms-inline-flexbox;

@@ -158,6 +158,18 @@
     padding-right:80px;
 }
 
+/*---------------- Filter Widget -------------------*/
+
+.filter_area .section_nt_filter div, .filter_area .section_nt_filter .price_label {
+    font-size:12px;
+}
+
+.filter_area .section_nt_filter .blockid_price .price_slider_amount .button {
+    padding: 8px 14px;
+    min-height: 0px;
+    min-width: 0px;
+}
+
 
 /*--------------------------------------------------------/
 / Individual Product Page
