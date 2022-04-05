@@ -171,7 +171,7 @@
     "sort_enable": true,
     "cat_sticky": false,
     "shop_filters": true,
-    "pop_style": "pop_default",
+    "pop_style": "nt_pop_sidebar",
     "style_color_filter": "color, colour, Color",
     "main_click": "zoom",
     "zoom_tp": "2",
@@ -810,21 +810,6 @@
           "show_gift_wrap": true
         }
       },
-      "mb_nav": {
-        "type": "mb_nav",
-        "blocks": {
-          "mb_nav-5": {
-            "type": "sea",
-            "settings": {
-            }
-          }
-        },
-        "block_order": [
-          "mb_nav-5"
-        ],
-        "settings": {
-        }
-      },
       "mb_cat": {
         "type": "mb_cat",
         "blocks": {
@@ -854,37 +839,29 @@
               "icon": "tshirt"
             }
           },
-          "a3e62895-2a82-4b35-bf04-e64fd5372cd3": {
-            "type": "cat",
-            "settings": {
-              "cat": "",
-              "title": "BRAND",
-              "url": "",
-              "menu": "main-menu",
-              "lb": "",
-              "lb_cl": "#e91e63",
-              "icons_op": "0",
-              "icon": "chair"
-            }
-          },
-          "5103b317-b3b2-4221-8e97-184f6196a3f6": {
+          "12b29945-f995-4a71-9b37-ef6a07909adb": {
             "type": "menu",
             "settings": {
-              "title": "SALE",
+              "title": "brand",
               "url": "",
               "open_link": "_self",
-              "menu": "",
+              "menu": "main-menu",
               "icon": "",
               "lb": "",
               "lb_cl": ""
+            }
+          },
+          "b985b8aa-eafc-4590-8e25-60f1f8c51d77": {
+            "type": "sea",
+            "settings": {
             }
           }
         },
         "block_order": [
           "1585642450066",
           "1585642644518",
-          "a3e62895-2a82-4b35-bf04-e64fd5372cd3",
-          "5103b317-b3b2-4221-8e97-184f6196a3f6"
+          "12b29945-f995-4a71-9b37-ef6a07909adb",
+          "b985b8aa-eafc-4590-8e25-60f1f8c51d77"
         ],
         "settings": {
         }

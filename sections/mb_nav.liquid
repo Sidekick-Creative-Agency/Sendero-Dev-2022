@@ -258,7 +258,7 @@
          {%- endcase -%}
       {%- endfor -%}
    {%- else -%}
-      <li><a href="/admin/themes/">Create your mobile menu sidebar and config from Section > Mobile Menu</a></li>
+     {%- comment -%} <li><a href="/admin/themes/">Create your mobile menu sidebar and config from Section > Mobile Menu</a></li>{%- endcomment -%}
    {%- endif -%}
 </ul>
 {%- comment -%}
@@ -426,19 +426,11 @@
         ]
       }
     ],
-    "default": {
-      "blocks": [
-        { "type": "menu" },
-        { "type": "menu" },
-        { "type": "menu" },
-        { "type": "menu" },
-        { "type": "wis" },
-        { "type": "sea" },
-        { "type": "acc" },
-        { "type": "help" },
-        { "type": "lang" },
-        { "type": "cur" }
-      ]
+    "presets": [
+    {
+      "name": "Test"
+     
     }
+  ]
   }
 {% endschema %}

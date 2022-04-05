@@ -120,6 +120,38 @@
 }
 
 
+/* --------- MOBILE MENU --------------- */
+.mobile-menu-header-title {
+    font-family: 'Oswald';
+    font-weight: 400;
+    margin-right: 15px;
+    margin-left: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    align-self: center;
+    justify-self: center;
+}
+.mb_nav_tab ul li {
+    font-family: 'Oswald';
+    font-weight: 400;
+    margin-right: 15px;
+    margin-left: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    align-self: center;
+    justify-self: center;
+}
+.mb_nav_tabs {
+    margin: 0 auto;
+}
+.mb_nav_title {
+    margin: 0;
+    max-width: 100% !important;
+    flex: 1 !important;
+}
+
+
+
 /*--------------------------------------------------------/
 / HOME PAGE
 /--------------------------------------------------------*/

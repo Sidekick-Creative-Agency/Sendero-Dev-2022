@@ -2,7 +2,8 @@
  assign limit = 5
  assign show_pr = false
  assign img_size = '40x' 
- assign only_icon = 'only_icon_' | append:settings.only_icon -%}
+ assign only_icon = 'only_icon_' | append:settings.only_icon
+ assign routes_search_url = routes.search_url -%}
 
 <ul id="menu_mb_cat" class="nt_mb_menu">
    {%- if section.blocks.size > 0 -%}
@@ -13,6 +14,7 @@
          {%- assign url_current = block_stts.url | default:collection.url -%}
             {%- case block.type -%}
             
+            {%- when 'sea' -%}<li id="item_mb_sea" class="menu-item item-level-0 menu-item-btns menu-item-sea push_side" data-id="#nt_search_canvas"><a href="{{ routes_search_url }}"><span class="iconbtns">{{ 'general.mobile_menu.search' | t }}</span></a></li>
             {%- when 'menu' -%}
 
                {%- if linklists[block_stts.menu].links.size > 0 -%}
@@ -225,6 +227,11 @@
     /*"class": "mb_nav_tab",*/
     "max_blocks": 30,
     "blocks": [
+    {
+      "type": "sea",
+      "name": "Search",
+      "limit": 1
+    },
     {
       "type": "menu",
       "name": "Menu item",
@@ -452,5 +459,6 @@
         ]
       }
     ]
+    
   }
 {% endschema %}
