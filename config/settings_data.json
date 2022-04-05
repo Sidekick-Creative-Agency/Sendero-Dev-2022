@@ -449,6 +449,52 @@
       "header_main": {
         "type": "header_main",
         "blocks": {
+          "9f7a4a88-7cbc-4c06-baae-ee3009a12771": {
+            "type": "mega",
+            "settings": {
+              "title": "Spring 2022",
+              "url": "",
+              "open_link": "_self",
+              "icon": "",
+              "cus_cl": false,
+              "cl": "#ec0101",
+              "lb": "",
+              "lb_cl": "",
+              "lazy_mn": true,
+              "pos": "default",
+              "wid": "cus",
+              "cus_wid": 1200
+            }
+          },
+          "f612db4f-0e53-4806-bb56-7271c5193f57": {
+            "type": "mmtitle",
+            "settings": {
+              "mmtitle": "Spring 2022",
+              "url": "",
+              "open_link": "_self",
+              "col": "4"
+            }
+          },
+          "ab4741c4-618e-404a-9493-ad1ffc365118": {
+            "type": "link",
+            "settings": {
+              "tt_hd": "",
+              "url": "",
+              "open_link": "_self",
+              "menu": "hats-first-column",
+              "col": "2"
+            }
+          },
+          "2b198535-7f3c-4d8a-bed2-a42938d26fbd": {
+            "type": "link",
+            "settings": {
+              "tt_hd": "",
+              "url": "",
+              "open_link": "_self",
+              "menu": "hats-column-two",
+              "col": "2"
+            }
+          },
           "1585641227863": {
             "type": "mega",
             "settings": {
@@ -668,6 +714,10 @@
           }
         },
         "block_order": [
+          "9f7a4a88-7cbc-4c06-baae-ee3009a12771",
+          "f612db4f-0e53-4806-bb56-7271c5193f57",
+          "ab4741c4-618e-404a-9493-ad1ffc365118",
+          "2b198535-7f3c-4d8a-bed2-a42938d26fbd",
           "1585641227863",
           "bc349ccd-7167-466b-aab8-2c2534a91320",
           "3237df59-19be-4aea-b04a-b0f1e8c10f56",
