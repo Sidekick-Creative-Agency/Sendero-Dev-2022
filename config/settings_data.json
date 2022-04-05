@@ -472,7 +472,7 @@
               "mmtitle": "Spring 2022",
               "url": "",
               "open_link": "_self",
-              "col": "4"
+              "col": "2"
             }
           },
           "ab4741c4-618e-404a-9493-ad1ffc365118": {
@@ -493,6 +493,26 @@
               "open_link": "_self",
               "menu": "hats-column-two",
               "col": "2"
+            }
+          },
+          "98c2edaa-9215-40b6-9b62-8a1b9ec5a47c": {
+            "type": "cat",
+            "settings": {
+              "cat_design": "1",
+              "hoverz": true,
+              "collection": "best-seller-spring-2022",
+              "title": "",
+              "col": "3"
+            }
+          },
+          "9716ea14-8083-4c08-a9b0-435a453af89a": {
+            "type": "cat",
+            "settings": {
+              "cat_design": "1",
+              "hoverz": true,
+              "collection": "best-seller-spring-2022",
+              "title": "",
+              "col": "3"
             }
           },
           "1585641227863": {
@@ -705,7 +725,7 @@
               "menu": "main-menu",
               "icon": "",
               "cus_cl": false,
-              "cl": "#ec0101",
+              "cl": "#000000",
               "lb": "",
               "lb_cl": "",
               "lazy_mn": true,
@@ -718,6 +738,8 @@
           "f612db4f-0e53-4806-bb56-7271c5193f57",
           "ab4741c4-618e-404a-9493-ad1ffc365118",
           "2b198535-7f3c-4d8a-bed2-a42938d26fbd",
+          "98c2edaa-9215-40b6-9b62-8a1b9ec5a47c",
+          "9716ea14-8083-4c08-a9b0-435a453af89a",
           "1585641227863",
           "bc349ccd-7167-466b-aab8-2c2534a91320",
           "3237df59-19be-4aea-b04a-b0f1e8c10f56",
