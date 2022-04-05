@@ -120,10 +120,75 @@
 }
 
 
+/* --------- MOBILE MENU --------------- */
+.nt_fk_canvas {
+    background-color: #000;
+    color: white;
+}
+
+.mobile-menu-header-title {
+    font-family: 'Oswald';
+    font-weight: 400;
+    margin-right: 15px;
+    margin-left: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    align-self: center;
+    justify-self: center;
+    color: white !important;
+    border-bottom: 1px solid white !important;
+    background-color: transparent !important;
+    font-size: 14px;
+}
+.mobile-menu-header-title:after {
+    background-color: transparent;
+}
+.mb_nav_tab ul li a{
+    font-family: 'Oswald';
+    font-weight: 400;
+    margin-right: 15px;
+    margin-left: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    align-self: center;
+    justify-self: center;
+    color: white !important;
+    border-bottom: 1px solid white !important;
+}
+.nt_mb_menu .menu-item .sub-menu .menu-item a {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.mb_nav_tabs {
+    margin: 0 auto;
+}
+.mb_nav_title {
+    margin: 0;
+    max-width: 100% !important;
+    flex: 1 !important;
+}
+.close_pp {
+    background-color: black;
+    color: white;
+}
+.frm_search_cat select{
+    font-family: 'Oswald';
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #222 !important;
+}
+.frm_search_cat select option{
+    font-family: 'Oswald';
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
 /*--------------------------------------------------------/
 / HOME PAGE
 /--------------------------------------------------------*/
-
+/* .sendero-session_txt */
 
 
 /*---------------- ADD TO CART BUTTON -------------------*/
@@ -133,6 +198,18 @@
     max-width: 160px !important;
     margin-top: 20px;
     text-transform: uppercase !important;
+    font-family: 'Oswald';
+    font-weight: 400;
+}
+/* The below button is the "Email me when available" button */
+.add_to_cart_button {
+    align-items: center;
+    justify-content: center;
+    font-family: 'Oswald';
+    font-weight: 400 !important;
+    font-size: 14px;
+    text-transform: uppercase;
+    border: 1px solid rgba(33,43,54,.9) !important;
 }
 .single_add_to_cart_button:hover {
     background-color: #222;
@@ -211,10 +288,15 @@
     border: none;
     border-bottom: 2px solid #222;
     /* padding: 0; */
+    
 }
 .ul_tabs li.tab_title_block a{
     border: none;
+    font-size: 14px;
     margin-right: 25px;
+    font-family: 'Oswald';
+    font-weight: 400;
+    letter-spacing: .1em;
 }
 .variations.style__rectangle .swatch:not(.is-color) li.is-selected{
     background-color: #222 !important;
@@ -227,11 +309,15 @@
 .variations.style__rectangle .swatch:not(.is-color) li {
     background-color: transparent;
     border: 1px solid #222;
+    font-family: 'Oswald';
+    font-weight: 400;
 }
 .quantity input.input-text[type=number] {
     border: 1px solid #222;
     width: 40px;
     margin: 0 15px;
+    font-family: 'Oswald';
+    font-size: 12px;
 }
 .variations_form .quantity {
     border: none;
@@ -252,16 +338,85 @@
 .swatch__title {
     font-size: 10px;
     text-transform: uppercase;
-    font-weight: 400
+    font-weight: 400;
+    letter-spacing: .1em;
 }
-.add_to_cart_button {
+.swatch__value_pr {
+    font-size: 14px;
+}
+.style_color .is-color .swatch_pr_item.is-selected {
     border: 1px solid #222 !important;
-    display: flex;
+    background-color: transparent;
+}
+.style_color .is-color .swatch_pr_item {
+    padding: 0;
+    margin: 3px 0;
 }
 #out_stock_ppr {
     align-items: center;
     justify-content: center;
+    font-family: 'Oswald';
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
 }
+.swatch_style_rounded .swatch__list .swatch__value {
+    border-radius: 0;
+    padding: 0;
+}
+.swatch_style_rounded .swatch__list .swatch__list--item {
+    border-radius: 0;
+    border: 1px solid #222;
+    padding: 0;
+}
+.tab-heading {
+    border: none;
+    font-size: 14px;
+    font-family: 'Oswald';
+    font-weight: 400;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+
+}
+
+/*---------------- SHOPPING CART SIDEBAR ----------------*/
+.mini_cart_wrap, .mini_cart_header {
+    background-color: white;
+}
+.mini_cart_header i, .mini_cart_header h3{
+    background-color: white !important;
+    color: #222 !important;
+}
+.mini_cart_actions .quantity {
+    border: none;
+   
+}
+.min_cqty_0 .mini_cart_item .qty_1 svg {
+    display: none;
+}
+.minus {
+    padding: 0;
+}
+.mini-cart-edit-delete-container {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.btns_cart_1 .mini_cart_tool>div {
+    box-shadow: none;
+    /* border: 1px solid #222; */
+    border-radius: 0;
+    
+}
+.btns_cart_1 .mini_cart_tool>div:hover {
+    box-shadow: none;
+    
+}
+
+
+
 
 /*---------------- Quick View and Add to Cart on Hover -------------------*/
 

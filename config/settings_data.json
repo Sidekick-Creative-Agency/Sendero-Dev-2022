@@ -16,7 +16,7 @@
     "prevent_copying": false,
     "falling_snow": false,
     "catalog_mode": false,
-    "enable_toolbar": true,
+    "enable_toolbar": false,
     "enable_new_pp": false,
     "enable_pro_pr_pp": true,
     "enable_ck_pp": false,
@@ -171,7 +171,7 @@
     "sort_enable": true,
     "cat_sticky": false,
     "shop_filters": true,
-    "pop_style": "pop_default",
+    "pop_style": "nt_pop_sidebar",
     "style_color_filter": "color, colour, Color",
     "main_click": "zoom",
     "zoom_tp": "2",
@@ -180,7 +180,7 @@
     "pr_curent": "3",
     "show_first_img": false,
     "use_vimg": true,
-    "sticky_atc": true,
+    "sticky_atc": false,
     "social_pr": true,
     "enable_vlooping": true,
     "use_fimg": false,
@@ -810,283 +810,58 @@
           "show_gift_wrap": true
         }
       },
-      "mb_nav": {
-        "type": "mb_nav",
-        "blocks": {
-          "mb_nav-0": {
-            "type": "menu",
-            "settings": {
-              "title": "Demo",
-              "url": "https:\/\/kalles-demo.myshopify.com\/?preview_theme_id=",
-              "open_link": "_self",
-              "menu": "",
-              "icon": "",
-              "lb": "",
-              "lb_cl": ""
-            }
-          },
-          "mb_nav-1": {
-            "type": "menu",
-            "settings": {
-              "title": "Shop",
-              "url": "shopify:\/\/collections\/trending",
-              "open_link": "_self",
-              "menu": "",
-              "icon": "",
-              "lb": "",
-              "lb_cl": ""
-            }
-          },
-          "mb_nav-2": {
-            "type": "menu",
-            "settings": {
-              "title": "Product",
-              "url": "shopify:\/\/products\/skin-sweatpans",
-              "open_link": "_self",
-              "menu": "",
-              "icon": "",
-              "lb": "",
-              "lb_cl": ""
-            }
-          },
-          "1585642902196": {
-            "type": "menu",
-            "settings": {
-              "title": "Sale",
-              "url": "",
-              "open_link": "_self",
-              "menu": "",
-              "icon": "",
-              "lb": "",
-              "lb_cl": ""
-            }
-          },
-          "1585642908420": {
-            "type": "menu",
-            "settings": {
-              "title": "Portfolio",
-              "url": "shopify:\/\/blogs\/portfolio",
-              "open_link": "_self",
-              "menu": "",
-              "icon": "",
-              "lb": "",
-              "lb_cl": ""
-            }
-          },
-          "mb_nav-3": {
-            "type": "menu",
-            "settings": {
-              "title": "Lookbook",
-              "url": "shopify:\/\/products\/analogue-resin-strap",
-              "open_link": "_self",
-              "menu": "",
-              "icon": "",
-              "lb": "",
-              "lb_cl": ""
-            }
-          },
-          "1585642887352": {
-            "type": "menu",
-            "settings": {
-              "title": "Blog",
-              "url": "",
-              "open_link": "_self",
-              "menu": "",
-              "icon": "",
-              "lb": "",
-              "lb_cl": ""
-            }
-          },
-          "mb_nav-4": {
-            "type": "wis",
-            "settings": {
-            }
-          },
-          "mb_nav-5": {
-            "type": "sea",
-            "settings": {
-            }
-          },
-          "mb_nav-6": {
-            "type": "acc",
-            "settings": {
-            }
-          },
-          "mb_nav-7": {
-            "type": "help",
-            "settings": {
-              "title": "Need help?",
-              "text": "<i class=\"pegk pe-7s-call fwb mr__10\"><\/i>+01 23456789<br><i class=\"pegk pe-7s-mail fwb mr__10\"><\/i><a class=\"cg\" href=\"mailto:claue@domain.com\">claue@domain.com<\/a>"
-            }
-          },
-          "mb_nav-8": {
-            "type": "cur",
-            "settings": {
-            }
-          }
-        },
-        "block_order": [
-          "mb_nav-0",
-          "mb_nav-1",
-          "mb_nav-2",
-          "1585642902196",
-          "1585642908420",
-          "mb_nav-3",
-          "1585642887352",
-          "mb_nav-4",
-          "mb_nav-5",
-          "mb_nav-6",
-          "mb_nav-7",
-          "mb_nav-8"
-        ],
-        "settings": {
-        }
-      },
       "mb_cat": {
         "type": "mb_cat",
         "blocks": {
-          "1585641915360": {
-            "type": "cat",
-            "settings": {
-              "cat": "women",
-              "title": "Women’s Clothing",
-              "url": "",
-              "menu": "",
-              "lb": "",
-              "lb_cl": "#e91e63",
-              "icons_op": "2",
-              "icon": "female"
-            }
-          },
-          "1585642130935": {
-            "type": "cat",
-            "settings": {
-              "cat": "men",
-              "title": "Men’s Clothing",
-              "url": "",
-              "menu": "",
-              "lb": "",
-              "lb_cl": "#e91e63",
-              "icons_op": "2",
-              "icon": "male"
-            }
-          },
-          "1585642167981": {
-            "type": "cat",
-            "settings": {
-              "cat": "watches",
-              "title": "Watches",
-              "url": "",
-              "menu": "",
-              "lb": "",
-              "lb_cl": "#e91e63",
-              "icons_op": "2",
-              "icon": "clock"
-            }
-          },
-          "1585642277236": {
-            "type": "cat",
-            "settings": {
-              "cat": "acessories",
-              "title": "Acessories",
-              "url": "",
-              "menu": "",
-              "lb": "",
-              "lb_cl": "#e91e63",
-              "icons_op": "2",
-              "icon": "glasses"
-            }
-          },
           "1585642450066": {
             "type": "cat",
             "settings": {
               "cat": "electric",
-              "title": "",
+              "title": "HATS",
               "url": "",
-              "menu": "",
+              "menu": "hats-full",
               "lb": "",
               "lb_cl": "#e91e63",
-              "icons_op": "2",
+              "icons_op": "0",
               "icon": "camera-retro"
-            }
-          },
-          "1585642600575": {
-            "type": "cat",
-            "settings": {
-              "cat": "shoes",
-              "title": "Shoes",
-              "url": "",
-              "menu": "",
-              "lb": "",
-              "lb_cl": "#e91e63",
-              "icons_op": "2",
-              "icon": "shoe-prints"
-            }
-          },
-          "1585642629333": {
-            "type": "cat",
-            "settings": {
-              "cat": "jewellry",
-              "title": "Jewellery",
-              "url": "",
-              "menu": "",
-              "lb": "",
-              "lb_cl": "#e91e63",
-              "icons_op": "2",
-              "icon": "gem"
             }
           },
           "1585642644518": {
             "type": "cat",
             "settings": {
               "cat": "footwear",
-              "title": "T-Shirt",
+              "title": "T-SHIRT",
               "url": "",
-              "menu": "",
+              "menu": "shirts-full",
               "lb": "",
               "lb_cl": "#e91e63",
-              "icons_op": "2",
+              "icons_op": "0",
               "icon": "tshirt"
             }
           },
-          "1585642780875": {
-            "type": "cat",
+          "12b29945-f995-4a71-9b37-ef6a07909adb": {
+            "type": "menu",
             "settings": {
-              "cat": "decor",
-              "title": "Toys, Kids & Baby",
+              "title": "brand",
               "url": "",
-              "menu": "",
+              "open_link": "_self",
+              "menu": "main-menu",
+              "icon": "",
               "lb": "",
-              "lb_cl": "#e91e63",
-              "icons_op": "2",
-              "icon": "child"
+              "lb_cl": ""
             }
           },
-          "1585642798957": {
-            "type": "cat",
+          "b985b8aa-eafc-4590-8e25-60f1f8c51d77": {
+            "type": "sea",
             "settings": {
-              "cat": "decor",
-              "title": "Decor",
-              "url": "",
-              "menu": "",
-              "lb": "",
-              "lb_cl": "#e91e63",
-              "icons_op": "2",
-              "icon": "chair"
             }
           }
         },
         "block_order": [
-          "1585641915360",
-          "1585642130935",
-          "1585642167981",
-          "1585642277236",
           "1585642450066",
-          "1585642600575",
-          "1585642629333",
           "1585642644518",
-          "1585642780875",
-          "1585642798957"
+          "12b29945-f995-4a71-9b37-ef6a07909adb",
+          "b985b8aa-eafc-4590-8e25-60f1f8c51d77"
         ],
         "settings": {
         }
@@ -1218,7 +993,7 @@
       "sticky_atc": {
         "type": "sticky_atc",
         "settings": {
-          "mb": true,
+          "mb": false,
           "ani": "none",
           "time": 6
         }
