@@ -136,6 +136,16 @@
     font-family: 'Oswald';
     font-weight: 400;
 }
+/* The below button is the "Email me when available" button */
+.add_to_cart_button {
+    align-items: center;
+    justify-content: center;
+    font-family: 'Oswald';
+    font-weight: 400 !important;
+    font-size: 14px;
+    text-transform: uppercase;
+    border: 1px solid rgba(33,43,54,.9) !important;
+}
 .single_add_to_cart_button:hover {
     background-color: #222;
     border: 1px solid rgba(33,43,54,.9) !important;
@@ -277,14 +287,13 @@
     padding: 0;
     margin: 3px 0;
 }
-.add_to_cart_button {
-    border: 1px solid #222 !important;
-    display: flex;
-    
-}
 #out_stock_ppr {
     align-items: center;
     justify-content: center;
+    font-family: 'Oswald';
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
 }
 .swatch_style_rounded .swatch__list .swatch__value {
     border-radius: 0;
