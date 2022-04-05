@@ -599,6 +599,32 @@
               "lazy_mn": true,
               "pos": "right"
             }
+          },
+          "bf2d3716-63bd-4f64-99f9-2d384f8c8dd5": {
+            "type": "mega",
+            "settings": {
+              "title": "Accessories",
+              "url": "shopify:\/\/collections\/accessories",
+              "open_link": "_self",
+              "icon": "",
+              "cus_cl": false,
+              "cl": "#ec0101",
+              "lb": "",
+              "lb_cl": "",
+              "lazy_mn": true,
+              "pos": "default",
+              "wid": "cus",
+              "cus_wid": 1200
+            }
+          },
+          "673c217c-c470-4dc4-84c1-cce173cdfe41": {
+            "type": "mmtitle",
+            "settings": {
+              "mmtitle": "Accessories",
+              "url": "shopify:\/\/collections\/accessories",
+              "open_link": "_self",
+              "col": "4"
+            }
           }
         },
         "block_order": [
@@ -614,7 +640,9 @@
           "61fda3d2-5725-4d65-8f36-62eee9e6b1cc",
           "9334ad88-4bc9-428e-af30-263554dfa4d9",
           "2fcd5a05-92d0-4592-9d18-1e578f0c8323",
-          "bf06875c-82c0-441e-8fc7-a6bffd852daf"
+          "bf06875c-82c0-441e-8fc7-a6bffd852daf",
+          "bf2d3716-63bd-4f64-99f9-2d384f8c8dd5",
+          "673c217c-c470-4dc4-84c1-cce173cdfe41"
         ],
         "settings": {
           "height": 60,

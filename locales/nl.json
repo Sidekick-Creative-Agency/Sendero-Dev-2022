@@ -3,9 +3,11 @@
     "404": {
       "title": "404",
       "subtext": "Sorry! Page you are looking can’t be found.",
-      "link_html": "Go back to the <a href=\"{{link}}\" rel=\"home\">homepage</a>"
+      "link_html": "Go back to the <a href=\"{{link}}\" rel=\"home\">homepage<\/a>"
     },
-    "accessibility": { "skip_to_content": "Skip to content" },
+    "accessibility": {
+      "skip_to_content": "Skip to content"
+    },
     "check_map": "Check this on google map",
     "meta": {
       "tags": "Tagged \"{{ tags }}\"",
@@ -19,7 +21,7 @@
       "wishlist": "Wishlist",
       "compare": "compare",
       "search": "Search",
-      "login_register": "Login / Register",
+      "login_register": "Login \/ Register",
       "my_account": "My account"
     },
     "password_page": {
@@ -29,7 +31,7 @@
       "login_form_password_placeholder": "Your password",
       "login_form_submit": "Enter",
       "signup_form_success": "We will send you an email right before we open!",
-      "admin_link_html": "Are you the store owner? <a href=\"/admin\" class=\"text-link\">Log in here</a>",
+      "admin_link_html": "Are you the store owner? <a href=\"\/admin\" class=\"text-link\">Log in here<\/a>",
       "password_link": "Enter using password"
     },
     "account_text": {
@@ -54,7 +56,9 @@
     "swatch_limit_less": "Show Less Colors",
     "bannerCountdown": "days",
     "prItemCountdown": "Days",
-    "breadcrumbs": { "home": "Home" },
+    "breadcrumbs": {
+      "home": "Home"
+    },
     "nt_tooltip": {
       "login_to_wishlist": "Login to use Wishlist",
       "add_to_wishlist": "Add to Wishlist",
@@ -101,11 +105,14 @@
     },
     "agree_mail": {
       "conditions": "You must agree with the terms and conditions to sign up.",
-      "link_conditions_html": "I agree with the <a href=\"{{link}}\" class=\"text-link\">terms and conditions</a>.",
+      "link_conditions_html": "I agree with the <a href=\"{{link}}\" class=\"text-link\">terms and conditions<\/a>.",
       "link_conditions_emty": " I agree with the terms and conditions."
     },
     "search": {
-      "heading": { "one": "Search result", "other": "Search results" },
+      "heading": {
+        "one": "Search result",
+        "other": "Search results"
+      },
       "no_prs_results": "No products were found matching your selection.",
       "no_results": "No results matched",
       "results_html": {
@@ -139,12 +146,12 @@
     "wishlist": {
       "title": "WISHLIST",
       "empty": "Wishlist is empty.",
-      "empty_html": "You don't have any products in the wishlist yet.<br /> You will find a lot of interesting products on our \"Shop\" page."
+      "empty_html": "You don't have any products in the wishlist yet.<br \/> You will find a lot of interesting products on our \"Shop\" page."
     },
     "compare": {
       "title": "COMPARE",
       "empty": "COMPARE LIST IS EMPTY.",
-      "empty_html": "No products added in the compare list. You must add some products to compare them.<br /> You will find a lot of interesting products on our \"Shop\" page.",
+      "empty_html": "No products added in the compare list. You must add some products to compare them.<br \/> You will find a lot of interesting products on our \"Shop\" page.",
       "remove": "Remove",
       "in_stock": "In Stock",
       "outofstock": "Out of stock"
@@ -159,11 +166,11 @@
       "filter": "Filter",
       "clear_filter": "Clear All Filter",
       "no_matches": "No products were found matching your selection.",
-      "bar_with_count_html": "You've viewed <span class=\"js_current_bar\">{{current_count}}</span> of {{total_count}} products",
+      "bar_with_count_html": "You've viewed <span class=\"js_current_bar\">{{current_count}}<\/span> of {{total_count}} products",
       "results_with_count_html": {
-        "zero": "<span class=\"cp\">0</span> Product Found",
-        "one": "<span class=\"cp\">1</span> Product Found",
-        "other": "<span class=\"cp\">{{count}}</span> Products Found"
+        "zero": "<span class=\"cp\">0<\/span> Product Found",
+        "one": "<span class=\"cp\">1<\/span> Product Found",
+        "other": "<span class=\"cp\">{{count}}<\/span> Products Found"
       }
     },
     "filter_variant": {
@@ -174,7 +181,10 @@
       "hide_outofstock": "In stock",
       "product_title_contains": "Product title contains"
     },
-    "sorting": { "title": "Sort by", "close": "Close" }
+    "sorting": {
+      "title": "Sort by",
+      "close": "Close"
+    }
   },
   "products": {
     "popup": {
@@ -214,7 +224,7 @@
     },
     "product": {
       "include_taxes": "Tax included.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Shipping</a> calculated at checkout.",
+      "shipping_policy_html": "<a href=\"{{ link }}\">Shipping<\/a> calculated at checkout.",
       "subtotal": "Subtotal:",
       "Please_choose_pr_options": "Please select some product options before adding this product to your cart.",
       "choose_an_option": "Choose an option",
@@ -233,7 +243,7 @@
       "pre_orders": "Pre-order",
       "product_vendor": "Vendor:",
       "product_sku": "SKU:",
-      "na": "N/A",
+      "na": "N\/A",
       "available": "Availability :",
       "product_category": "Categories:",
       "product_tag": "Tags:",
@@ -246,14 +256,14 @@
       "view_in_space_label": "View in your space, loads item in augmented reality window",
       "view_360": "360 product view",
       "click_zoom": "Click to enlarge",
-      "instagram_intro_html": "Tag your photos with <span>{{has_tag}}</span> on Instagram.",
+      "instagram_intro_html": "Tag your photos with <span>{{has_tag}}<\/span> on Instagram.",
       "order_dayNames": "Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday",
       "order_monthNames": "January,February,March,April,May,June,July,August,September,October,November,December",
       "notice_only_stock": "Not enough items available. Only {{max}} left.",
-      "will_not_ship_until_html": "Will not ship until <span class=\"jsnt\">{{date}}</span>",
-      "will_be_in_stock_after_html": "Will be in stock after <span class=\"jsnt\">{{date}}</span>",
-      "only_left_html": " Hurry, there are only <span class=\"jsnt\">{{count}}</span> item(s) left!",
-      "low_stock_message_html": "Hurry, there are only <span class=\"jsnt\">{{quantity}}</span> item(s) left!",
+      "will_not_ship_until_html": "Will not ship until <span class=\"jsnt\">{{date}}<\/span>",
+      "will_be_in_stock_after_html": "Will be in stock after <span class=\"jsnt\">{{date}}<\/span>",
+      "only_left_html": " Hurry, there are only <span class=\"jsnt\">{{count}}<\/span> item(s) left!",
+      "low_stock_message_html": "Hurry, there are only <span class=\"jsnt\">{{quantity}}<\/span> item(s) left!",
       "title_notify_me": "Notify me when this product is available:",
       "email_address": "Email address",
       "please_notify_me": "Please notify me when {{title}}{{variant}} becomes available - {{shop_url}}{{url}}",
@@ -273,14 +283,14 @@
       "calculate_ship": "Calculate Shipping",
       "subtotal": "Subtotal:",
       "taxes_and_shipping_at_checkout": "Taxes and shipping calculated at checkout",
-      "taxes_and_shipping_policy_at_checkout_html": "Taxes and <a href=\"{{ link }}\" target=\"_blank\">shipping</a> calculated at checkout",
+      "taxes_and_shipping_policy_at_checkout_html": "Taxes and <a href=\"{{ link }}\" target=\"_blank\">shipping<\/a> calculated at checkout",
       "taxes_included_but_shipping_at_checkout": "Tax included and shipping calculated at checkout",
-      "taxes_included_and_shipping_policy_html": "Tax included. <a href=\"{{ link }}\" target=\"_blank\">Shipping</a> calculated at checkout.",
+      "taxes_included_and_shipping_policy_html": "Tax included. <a href=\"{{ link }}\" target=\"_blank\">Shipping<\/a> calculated at checkout.",
       "taxes_discounts_and_shipping_at_checkout": "Taxes, shipping and discounts codes calculated at checkout",
-      "taxes_discounts_and_shipping_policy_at_checkout_html": "Taxes, <a href=\"{{ link }}\" target=\"_blank\">shipping</a> and discounts codes calculated at checkout",
+      "taxes_discounts_and_shipping_policy_at_checkout_html": "Taxes, <a href=\"{{ link }}\" target=\"_blank\">shipping<\/a> and discounts codes calculated at checkout",
       "taxes_included_discounts_but_shipping_at_checkout": "Tax included. Shipping and discounts codes calculated at checkout",
-      "taxes_included_discounts_and_shipping_policy_html": "Tax included. <a href=\"{{ link }}\" target=\"_blank\">Shipping</a> and discounts codes calculated at checkout.",
-      "terms_and_conditions_html": "I agree with the <a href=\"{{link}}\" target=\"_blank\">terms and conditions</a>.",
+      "taxes_included_discounts_and_shipping_policy_html": "Tax included. <a href=\"{{ link }}\" target=\"_blank\">Shipping<\/a> and discounts codes calculated at checkout.",
+      "terms_and_conditions_html": "I agree with the <a href=\"{{link}}\" target=\"_blank\">terms and conditions<\/a>.",
       "terms_and_conditions": "I agree with the terms and conditions.",
       "update": "Update Cart",
       "checkout": "Check Out",
@@ -303,17 +313,17 @@
       "add_coupon": "Add A Coupon",
       "info_coupon": "Coupon code will work on checkout page",
       "placeholder_coupon": "Coupon code",
-      "gift_wrap_html": "<span class=\"cd\">Do you want a gift wrap?</span> Only {{ money }}",
+      "gift_wrap_html": "<span class=\"cd\">Do you want a gift wrap?<\/span> Only {{ money }}",
       "add_gift_wrap": "Add A Gift Wrap",
       "countdown_text": "Due To HIGH Demand, Cart Expires In:"
     },
     "cart_page": {
       "empty": "Your cart is empty.",
-      "empty_html": "Before proceed to checkout you must add some products to your shopping cart.<br /> You will find a lot of interesting products on our \"Shop\" page."
+      "empty_html": "Before proceed to checkout you must add some products to your shopping cart.<br \/> You will find a lot of interesting products on our \"Shop\" page."
     },
     "shipping_threshold": {
-      "text_1_html": "Free Shipping for all orders over <span class=\"cr fwm mn_thres_js\">{{ money }}</span>",
-      "text_2_html": "Almost there, add <span class=\"cr fwm mn_thres_js\">{{ money }}</span> more to get <span class=\"cr fwm\">FREE SHIPPING!</span>",
+      "text_1_html": "Free Shipping for all orders over <span class=\"cr fwm mn_thres_js\">{{ money }}<\/span>",
+      "text_2_html": "Almost there, add <span class=\"cr fwm mn_thres_js\">{{ money }}<\/span> more to get <span class=\"cr fwm\">FREE SHIPPING!<\/span>",
       "text_3": "[Congratulations!] You've got free shipping!"
     },
     "label": {
@@ -328,7 +338,7 @@
       "view_all": "View All",
       "load_more": "Load More Posts",
       "read_more": "READ MORE",
-      "bar_with_count_html": "You've viewed <span class=\"js_current_bar\">{{current_count}}</span> of {{total_count}} posts"
+      "bar_with_count_html": "You've viewed <span class=\"js_current_bar\">{{current_count}}<\/span> of {{total_count}} posts"
     },
     "blog": {
       "blog_title_html": "Archive by Category \"{{ blog_title }}\"",
@@ -351,7 +361,7 @@
     },
     "comments": {
       "title": "Leave a comment",
-      "comments_note_html": "Your email address will not be published. Required fields are marked <span class=\"required\">*</span>",
+      "comments_note_html": "Your email address will not be published. Required fields are marked <span class=\"required\">*<\/span>",
       "name": "Name",
       "email": "Email",
       "message": "Comment",
@@ -371,9 +381,9 @@
         "other": "{{ count }} comments"
       },
       "comments_title_html": {
-        "zero": "0 thought on “<span>{{title}}</span>”",
-        "one": "1 thought on “<span>{{title}}</span>”",
-        "other": "{{ count }} thoughts on “<span>{{title}}</span>”"
+        "zero": "0 thought on “<span>{{title}}<\/span>”",
+        "one": "1 thought on “<span>{{title}}<\/span>”",
+        "other": "{{ count }} thoughts on “<span>{{title}}<\/span>”"
       }
     }
   },
@@ -394,7 +404,7 @@
     "login_here": "Already have an account? Login here",
     "make_order": "Make your first order",
     "account": {
-      "hello_html": "Hello <strong>{{name}}</strong> (not <strong>{{name}}</strong>? <a href=\"{{link}}\">Log out</a>)",
+      "hello_html": "Hello <strong>{{name}}<\/strong> (not <strong>{{name}}<\/strong>? <a href=\"{{link}}\">Log out<\/a>)",
       "title": "My Account",
       "manage_subs": "Manage Subscriptions",
       "dashboard": "Dashboard",
@@ -431,7 +441,7 @@
       "city": "City",
       "country": "Country",
       "province": "Province",
-      "zip": "Postal/Zip Code",
+      "zip": "Postal\/Zip Code",
       "phone": "Phone",
       "set_default": "Set as default address",
       "add": "Add Address",
@@ -508,7 +518,7 @@
       "password": "Password",
       "submit": "Register",
       "privacy_policy": "Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our privacy policy.",
-      "privacy_policy_html": "Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our <a href=\"{{link}}\" class=\"privacy-policy-link fwm\" target=\"_blank\">privacy policy</a>."
+      "privacy_policy_html": "Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our <a href=\"{{link}}\" class=\"privacy-policy-link fwm\" target=\"_blank\">privacy policy<\/a>."
     }
   },
   "homepage": {
@@ -525,8 +535,8 @@
       "check_other_stores": "Check availability at other stores",
       "pick_up_available": "Pickup available",
       "pick_up_currently_unavailable": "Pickup currently unavailable",
-      "pick_up_available_at_html": "Pickup available at <strong>{{ location_name }}</strong>",
-      "pick_up_unavailable_at_html": "Pickup currently unavailable at <strong>{{ location_name }}</strong>",
+      "pick_up_available_at_html": "Pickup available at <strong>{{ location_name }}<\/strong>",
+      "pick_up_unavailable_at_html": "Pickup currently unavailable at <strong>{{ location_name }}<\/strong>",
       "confirm_address": "Contact store to confirm address"
     }
   },
@@ -548,15 +558,15 @@
   },
   "date_formats": {
     "1": "%B %d, %Y",
-    "2": "%d/%m/%y",
-    "3": "%d/%m/%Y",
-    "4": "%e/%m/%Y",
+    "2": "%d\/%m\/%y",
+    "3": "%d\/%m\/%Y",
+    "4": "%e\/%m\/%Y",
     "5": "%b %y",
-    "6": "%m/%d/%Y",
-    "7": "%A %d/%m/%Y",
-    "8": "%a %d/%m/%Y",
+    "6": "%m\/%d\/%Y",
+    "7": "%A %d\/%m\/%Y",
+    "8": "%a %d\/%m\/%Y",
     "9": "%b %d",
     "month_day_year": "%B %d, %Y",
-    "full_day": "%A %d/%m/%Y"
+    "full_day": "%A %d\/%m\/%Y"
   }
 }
