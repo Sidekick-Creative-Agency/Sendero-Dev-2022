@@ -613,7 +613,7 @@
           "4e5ad45b-8c9b-48d6-8ccb-93307deb91fa": {
             "type": "link",
             "settings": {
-              "tt_hd": "Heading",
+              "tt_hd": "",
               "url": "",
               "open_link": "_self",
               "menu": "hats-first-column",
@@ -623,11 +623,11 @@
           "d964bd86-2c5e-4cb7-8b1f-0027152aafea": {
             "type": "link",
             "settings": {
-              "tt_hd": "Heading",
+              "tt_hd": "",
               "url": "",
               "open_link": "_self",
-              "menu": "",
-              "col": "4"
+              "menu": "hats-column-two",
+              "col": "2"
             }
           },
           "01c7c08b-1e91-40f4-8734-b22e759c1062": {
@@ -637,7 +637,7 @@
               "hoverz": true,
               "collection": "bandanas",
               "title": "",
-              "col": "4"
+              "col": "3"
             }
           },
           "415d5e20-e622-4728-a7f8-f0fd5b5a8424": {
@@ -647,7 +647,7 @@
               "hoverz": true,
               "collection": "patches",
               "title": "",
-              "col": "4"
+              "col": "3"
             }
           },
           "bf06875c-82c0-441e-8fc7-a6bffd852daf": {
