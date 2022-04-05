@@ -50,6 +50,8 @@
       {%- assign sort_by = sy | default: collection.default_sort_by -%}
     </div>
 
+<div>{{ collections[collection_handle].products.size }}</div>
+    {% if collections[collection_handle].products.size > 0 %}
     <div class="sk-collection-top">
       <div class="row equal_nt auto al_center">
         <div class="cat-top-img col-12 col-md-6">
@@ -86,6 +88,7 @@
         </div>
       </div>
     </div>
+    {% endif %}
 
     <a name="content"></a>
   
