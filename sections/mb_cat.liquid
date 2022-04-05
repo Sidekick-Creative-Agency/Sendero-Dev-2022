@@ -2,7 +2,8 @@
  assign limit = 5
  assign show_pr = false
  assign img_size = '40x' 
- assign only_icon = 'only_icon_' | append:settings.only_icon -%}
+ assign only_icon = 'only_icon_' | append:settings.only_icon
+ assign routes_search_url = routes.search_url -%}
 
 <ul id="menu_mb_cat" class="nt_mb_menu">
    {%- if section.blocks.size > 0 -%}
@@ -12,6 +13,54 @@
          {%- assign tt_current = block_stts.title | default:collection.title -%}
          {%- assign url_current = block_stts.url | default:collection.url -%}
             {%- case block.type -%}
+            
+            {%- when 'sea' -%}<li id="item_mb_sea" class="menu-item item-level-0 menu-item-btns menu-item-sea push_side" data-id="#nt_search_canvas"><a href="{{ routes_search_url }}"><span class="iconbtns">{{ 'general.mobile_menu.search' | t }}</span></a></li>
+            {%- when 'menu' -%}
+
+               {%- if linklists[block_stts.menu].links.size > 0 -%}
+                   <li id="item_{{block.id}}" class="menu-item item-level-0 menu-item-has-children {{only_icon}}" {{ block.shopify_attributes }}>
+                     <a href="{{block_stts.url}}" target="{{block_stts.open_link}}"><span class="nav_link_txt flex al_center">{% if block_stts.icon != blank %}<i class="las la-{{block_stts.icon | strip }} mr__10 fs__20"></i>{% endif %}{{block_stts.title}}{% if block_stts.lb != blank %}<span class="lbc_nav_mb ml__5" style="background-color: {{block_stts.lb_cl | default:'#01bad4'}}">{{block_stts.lb}}</span>{% endif %}</span><span class="nav_link_icon ml__5"></span></a>
+                     <ul class="sub-menu">
+                        {%- for link in linklists[block_stts.menu].links -%}
+
+                           {%- assign arrlt = link.title | split: '[' -%}
+                           {%- if link.links != blank -%}
+                              <li class="menu-item item-level-1 menu-item-has-children {{only_icon}}{% if link.active %} current_item{% endif %}">
+                                 <a href="{{link.url}}"><span class="nav_link_txt flex al_center">{%- render 'lb_inc_mb',arrlt:arrlt -%}</span><span class="nav_link_icon ml__5"></span></a>
+                                 <ul class="sub-sub-menu">
+                                    {%- for child_link in link.links -%}
+
+                                       {%- assign arrlt = child_link.title | split: '[' -%}
+                                       {%- if child_link.links != blank -%}
+                                          <li id="item_{{block.id}}" class="menu-item item-level-2 menu-item-has-children {{only_icon}}{% if child_link.active %} current_item{% endif %}">
+                                             <a href="{{child_link.url}}"><span class="nav_link_txt flex al_center">{%- render 'lb_inc_mb',arrlt:arrlt -%}</span><span class="nav_link_icon ml__5"></span></a>
+                                             <ul class="sub-sub-sub-menu">
+
+                                                {%- for grandchild_link in child_link.links -%}
+                                                {%- assign arrlt = grandchild_link.title | split: '[' -%}
+                                                <li class="menu-item item-level-3{% if grandchild_link.active %} current_item{% endif %}"><a href="{{grandchild_link.url}}">{%- render 'lb_inc_mb',arrlt:arrlt -%}</a></li>
+                                                {%- endfor -%}
+
+                                             </ul>
+                                          </li>
+                                       {%- else -%}
+                                           <li class="menu-item item-level-2{% if child_link.active %} current_item{% endif %}"><a href="{{child_link.url}}">{%- render 'lb_inc_mb',arrlt:arrlt -%}</a></li>
+                                       {%- endif -%}
+
+                                    {%- endfor -%}
+                                 </ul>
+                              </li>
+                           {%- else -%}
+                              <li class="menu-item item-level-1{% if link.active %} current_item{% endif %}"><a href="{{link.url}}">{%- render 'lb_inc_mb',arrlt:arrlt -%}</a></li>
+                           {%- endif -%}
+
+                        {%- endfor -%}
+                     </ul>
+                  </li>
+               {%- else -%}
+                   <li id="item_{{block.id}}" class="menu-item item-level-0"><a href="{% if block_stts.url contains '#homet4' %}{{ root_url }}{% else %}{{block_stts.url}}{% endif %}" target="{{block_stts.open_link}}">{% if block_stts.icon != blank %}<i class="las la-{{block_stts.icon | strip }} mr__10 fs__20"></i>{% endif %}{{block_stts.title }}{% if block_stts.lb != blank %}<span class="lbc_nav_mb ml__5" style="background-color: {{block_stts.lb_cl | default:'#01bad4'}}">{{block_stts.lb}}</span>{% endif %}</a></li>
+               {%- endif -%}
+
               {%- when 'cat' -%}
                   {%- if linklists[block_stts.menu].links.size > 0 -%}
                       <li id="item_{{block.id}}" class="menu-item item-level-0 menu-item-has-children {{only_icon}}" {{ block.shopify_attributes }}>
@@ -178,6 +227,64 @@
     /*"class": "mb_nav_tab",*/
     "max_blocks": 30,
     "blocks": [
+    {
+      "type": "sea",
+      "name": "Search",
+      "limit": 1
+    },
+    {
+      "type": "menu",
+      "name": "Menu item",
+      "settings": [
+                {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "Heading"
+        },
+        {
+           "type": "url",
+           "id": "url",
+           "label": "Link"
+        },
+        {
+          "type": "select",
+          "id": "open_link",
+          "options": [
+            {
+              "value": "_self",
+              "label": "Current window (_self)"
+            },
+           {
+              "value": "_blank",
+              "label": "New window (_blank)"
+            }
+          ],
+          "label": "Open link in"
+        },
+        {
+          "type": "link_list",
+          "id": "menu",
+          "label": "Add menu"
+        },
+        {
+          "id": "icon",
+          "type": "text",
+          "label": "Icon",
+          "info":"Ex:user [Line awesome icons](https://icons8.com/line-awesome)"
+        },
+        {
+          "type":"text",
+          "id":"lb",
+          "label":"Label text"
+        },
+        {
+          "type":"color",
+          "id":"lb_cl",
+          "label":"Label color"
+        }
+      ]
+    },
       {
         "type": "cat",
         "name": "Collection Link List",
@@ -352,5 +459,6 @@
         ]
       }
     ]
+    
   }
 {% endschema %}

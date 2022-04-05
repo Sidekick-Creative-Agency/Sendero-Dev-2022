@@ -24,8 +24,18 @@
           <div class="pa l__0 t__0 r__0 b__0 img_vid_js bg_rp_norepeat bg_sz_cover pe_none" data-bgset="{{ image | img_url: '1x1' }}" data-ratio="{{image.aspect_ratio}}" data-sizes="auto" style="background-image: url({{ image | img_url: '1x1' }})"></div>
           {%- endif -%}
         </div>
-        <div class="txt_content pa t__0 l__0 b__0 r__0 caption-w-{{se_stts.caption_w}} flex column shadow_wrap {{se_stts.txt_align}} pe_none z__100">
-          <div class="pa pa_txts mb_h_pos{{se_stts.cap_h_pos}} mb_v_pos{{se_stts.cap_v_pos}} h_pos{{se_stts.cap_h_pos}} v_pos{{se_stts.cap_v_pos}}">
+        
+        
+        <div class="sendero-session-txt-container txt_content pa t__0 l__0 b__0 r__0 caption-w-{{se_stts.caption_w}} flex column shadow_wrap {{se_stts.txt_align}} pe_none z__100">
+          <div  class="play-icon">
+            <button href="/sessions">
+              <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70">
+                <path id="Subtraction_2" data-name="Subtraction 2" d="M35,70A35.009,35.009,0,0,1,21.376,2.75a35.009,35.009,0,0,1,27.247,64.5A34.781,34.781,0,0,1,35,70ZM25,20.533v29.4l19.6-14.7Z" fill="#e3e3e3"/>
+              </svg>
+            </button>
+            
+        </div>
+          <div class="hero-video-txt pa pa_txts mb_h_pos{{se_stts.cap_h_pos}} mb_v_pos{{se_stts.cap_v_pos}} h_pos{{se_stts.cap_h_pos}} v_pos{{se_stts.cap_v_pos}}">
             {%- for block in section.blocks -%}{% assign bk_stts = block.settings -%}
               {%- case block.type -%}
                  {%- when '1' -%}<h3 id="b_{{block.id}}" class="mt__0 mg__0 lh__1">{{bk_stts.title}}</h3>
@@ -37,13 +47,13 @@
                  {%- when '8' -%}{% assign image = bk_stts.image %}{% if image == blank %}{% continue %}{% endif %}{% assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}<div id="b_{{block.id}}" class="slt4_img"><img src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20{{image.width}}%20{{image.height}}%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="{{ img_url }}" data-widths="[45, 90, 180, 360, 540, 720, 900, 1080]" data-sizes="auto" class="lazyloadt4s lz_op_ef w__100" alt="{{image.alt}}"></div>
                  {%- else -%}
                   {%- assign url = bk_stts.btn_link | default:bk_stts.btn_link2 -%}
-                  {%- if bk_stts.btn_link != blank and bk_stts.title -%}<a class="imtt4_btn button pe_auto round_{{bk_stts.btn_round}} btn_icon_{{bk_stts.btn_icon}} btn_w_{{bk_stts.btn_w}}" href="{{bk_stts.btn_link}}" target="{{bk_stts.open_link}}">{{bk_stts.title}}</a>{%- endif -%}
-                  {%- if bk_stts.btn_link2 != blank and bk_stts.title2 -%}<a class="imtt4_btn button pe_auto round_{{bk_stts.btn_round}} btn_icon_{{bk_stts.btn_icon}} btn_w_{{bk_stts.btn_w}}" href="{{bk_stts.btn_link2}}" target="{{bk_stts.open_link2}}">{{bk_stts.title2}}</a>{%- endif -%}
+                  {%- if bk_stts.btn_link != blank and bk_stts.title -%}<a class="sendero-session-more-button imtt4_btn button pe_auto round_{{bk_stts.btn_round}} btn_icon_{{bk_stts.btn_icon}} btn_w_{{bk_stts.btn_w}}" href="{{bk_stts.btn_link}}" target="{{bk_stts.open_link}}">{{bk_stts.title}}</a>{%- endif -%}
+                  {%- if bk_stts.btn_link2 != blank and bk_stts.title2 -%}<a class="sendero-session-more-button imtt4_btn button pe_auto round_{{bk_stts.btn_round}} btn_icon_{{bk_stts.btn_icon}} btn_w_{{bk_stts.btn_w}}" href="{{bk_stts.btn_link2}}" target="{{bk_stts.open_link2}}">{{bk_stts.title2}}</a>{%- endif -%}
               {%- endcase -%}
             {%- endfor -%}
           </div>
         </div>
-        <a href="{{url}}" class="pa t__0 l__0 b__0 r__0{% if url == blank %} pe_none{% endif %}"{% if url == blank %} rel="nofollow"{% endif %}></a>
+        <a href="{{url}}" class="pa t__0 l__0 b__0 r__0{% if url == blank %} pe_none{% endif %}"{% if url == blank %} rel="nofollow"{% endif %} style="cursor:default !important; pointer-events: none !important;"></a>
         {%- if source == '1' %}
         <div class="pa t__0 l__0 b__0 r__0 flex column tc fl_center pe_none">
           <button type="button" class="flex fl_center al_center video-control__play"><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-play" viewBox="0 0 20 40"><path fill-rule="evenodd" clip-rule="evenodd" d="M23.6 16.8L7 1.5C5.6.3 4 .2 2.9.7 1.6 1.4.8 2.7.7 3.8v31.7c0 1.8 1.1 3.3 3.1 3.3 1.5 0 2.5-.5 3.4-1.4l16.4-15.7c1.5-1.4 1.5-3.6 0-4.9z"></path></svg></button>

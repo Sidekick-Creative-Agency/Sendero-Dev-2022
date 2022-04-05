@@ -1717,6 +1717,7 @@ border-bottom: 1px solid #e5e5e5;
 .mb_nav_tabs {
     background-color: rgba(0,0,0,.04);
     border-bottom: 1px solid rgba(129,129,129,.2);
+    justify-content: center;
 }
 .close_mn_t4 {
     position: fixed;
