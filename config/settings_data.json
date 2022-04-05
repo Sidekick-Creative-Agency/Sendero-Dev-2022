@@ -575,10 +575,9 @@
           "72527a58-acee-461c-8425-85bbf19000e1": {
             "type": "cat",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Spring_2022_Hat.webp",
               "cat_design": "1",
               "hoverz": true,
-              "collection": "hats",
+              "collection": "signature",
               "title": "Signature",
               "col": "3"
             }
