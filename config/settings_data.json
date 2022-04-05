@@ -616,8 +616,8 @@
               "tt_hd": "Heading",
               "url": "",
               "open_link": "_self",
-              "menu": "",
-              "col": "4"
+              "menu": "hats-first-column",
+              "col": "2"
             }
           },
           "d964bd86-2c5e-4cb7-8b1f-0027152aafea": {
@@ -645,7 +645,7 @@
             "settings": {
               "cat_design": "1",
               "hoverz": true,
-              "collection": "",
+              "collection": "patches",
               "title": "",
               "col": "4"
             }
