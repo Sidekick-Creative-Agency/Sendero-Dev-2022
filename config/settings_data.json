@@ -549,7 +549,7 @@
               "tt_hd": "",
               "url": "",
               "open_link": "_self",
-              "menu": "hats-column-two",
+              "menu": "hats-first-column",
               "col": "2"
             }
           },
@@ -584,22 +584,6 @@
               "col": "3"
             }
           },
-          "bf06875c-82c0-441e-8fc7-a6bffd852daf": {
-            "type": "dropdown",
-            "settings": {
-              "title": "Brand",
-              "url": "",
-              "open_link": "_self",
-              "menu": "main-menu",
-              "icon": "",
-              "cus_cl": false,
-              "cl": "#ec0101",
-              "lb": "",
-              "lb_cl": "",
-              "lazy_mn": true,
-              "pos": "right"
-            }
-          },
           "bf2d3716-63bd-4f64-99f9-2d384f8c8dd5": {
             "type": "mega",
             "settings": {
@@ -623,7 +607,63 @@
               "mmtitle": "Accessories",
               "url": "shopify:\/\/collections\/accessories",
               "open_link": "_self",
+              "col": "2"
+            }
+          },
+          "4e5ad45b-8c9b-48d6-8ccb-93307deb91fa": {
+            "type": "link",
+            "settings": {
+              "tt_hd": "Heading",
+              "url": "",
+              "open_link": "_self",
+              "menu": "",
               "col": "4"
+            }
+          },
+          "d964bd86-2c5e-4cb7-8b1f-0027152aafea": {
+            "type": "link",
+            "settings": {
+              "tt_hd": "Heading",
+              "url": "",
+              "open_link": "_self",
+              "menu": "",
+              "col": "4"
+            }
+          },
+          "01c7c08b-1e91-40f4-8734-b22e759c1062": {
+            "type": "cat",
+            "settings": {
+              "cat_design": "1",
+              "hoverz": true,
+              "collection": "bandanas",
+              "title": "",
+              "col": "4"
+            }
+          },
+          "415d5e20-e622-4728-a7f8-f0fd5b5a8424": {
+            "type": "cat",
+            "settings": {
+              "cat_design": "1",
+              "hoverz": true,
+              "collection": "",
+              "title": "",
+              "col": "4"
+            }
+          },
+          "bf06875c-82c0-441e-8fc7-a6bffd852daf": {
+            "type": "dropdown",
+            "settings": {
+              "title": "Brand",
+              "url": "",
+              "open_link": "_self",
+              "menu": "main-menu",
+              "icon": "",
+              "cus_cl": false,
+              "cl": "#ec0101",
+              "lb": "",
+              "lb_cl": "",
+              "lazy_mn": true,
+              "pos": "right"
             }
           }
         },
@@ -640,9 +680,13 @@
           "61fda3d2-5725-4d65-8f36-62eee9e6b1cc",
           "9334ad88-4bc9-428e-af30-263554dfa4d9",
           "2fcd5a05-92d0-4592-9d18-1e578f0c8323",
-          "bf06875c-82c0-441e-8fc7-a6bffd852daf",
           "bf2d3716-63bd-4f64-99f9-2d384f8c8dd5",
-          "673c217c-c470-4dc4-84c1-cce173cdfe41"
+          "673c217c-c470-4dc4-84c1-cce173cdfe41",
+          "4e5ad45b-8c9b-48d6-8ccb-93307deb91fa",
+          "d964bd86-2c5e-4cb7-8b1f-0027152aafea",
+          "01c7c08b-1e91-40f4-8734-b22e759c1062",
+          "415d5e20-e622-4728-a7f8-f0fd5b5a8424",
+          "bf06875c-82c0-441e-8fc7-a6bffd852daf"
         ],
         "settings": {
           "height": 60,
