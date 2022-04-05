@@ -673,7 +673,7 @@
               "mmtitle": "Accessories",
               "url": "shopify:\/\/collections\/accessories",
               "open_link": "_self",
-              "col": "2"
+              "col": "3"
             }
           },
           "4e5ad45b-8c9b-48d6-8ccb-93307deb91fa": {
@@ -682,7 +682,7 @@
               "tt_hd": "",
               "url": "",
               "open_link": "_self",
-              "menu": "hats-first-column",
+              "menu": "",
               "col": "2"
             }
           },
@@ -692,7 +692,7 @@
               "tt_hd": "",
               "url": "",
               "open_link": "_self",
-              "menu": "hats-column-two",
+              "menu": "accessories",
               "col": "2"
             }
           },
