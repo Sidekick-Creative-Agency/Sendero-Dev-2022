@@ -1289,10 +1289,16 @@ transition: all .2s;
     margin: 5px;
 }
 .label_style_rounded .nt_label {
-    height: 60px;
-    width: 60px;
-    font-size: 14px;
+    height: 52px;
+    width: 52px;
+    font-family:Oswald;
+    text-transform:uppercase;
+    font-size:12px;
+    font-weight:400;
+    letter-spacing:0.05em;
+    font-size: 13px;
     border-radius: 50%;
+    line-height: 1.1em;
 }
 /* .label_style_rounded .nt_label {
     height: 30px;
@@ -4359,15 +4365,6 @@ button.mfp-close:hover {
    margin-top: 0;
    font-size: 18px;
 }
-.widget h5.widget-title:after {
-   content: "";
-   width: 60px;
-   height: 2px;
-   background: #222;
-   left: 0;
-   bottom: 15px;
-   position: absolute;
-}
 .sidebar .widget:not(:first-child) {
     margin-top: 50px;
 }
@@ -5402,7 +5399,7 @@ font-size: 16px;
 }
 @media (min-width: 1025px) {
   .mfp-content.popup_filter, .mfp-inline-holder .mfp-content.popup_filter {
-    width: 340px;
+    width: 280px;
   }
   .cart_des_4.nt_action>.icon_cart>a {
     display: -ms-inline-flexbox;

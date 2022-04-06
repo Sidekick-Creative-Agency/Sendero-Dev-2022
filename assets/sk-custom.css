@@ -186,6 +186,60 @@
 }
 
 /*--------------------------------------------------------/
+/ FOOTERS
+/--------------------------------------------------------*/
+
+.footer__top_wrap .container, .footer__middle_wrap .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 1430px) {
+    .footer__top_wrap .container, .footer__middle_wrap .container {
+        max-width: 1400px;
+    }
+}
+@media (min-width: 1400px) {
+    .footer__top_wrap .container, .footer__middle_wrap .container {
+        max-width: 1370px;
+    }
+}
+
+.button, button {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid rgba(33,43,54,.9);
+    max-width: 160px !important;
+    text-transform: uppercase !important;
+    font-family: 'Oswald';
+    font-weight: 400;
+}
+
+.button:hover, button:hover {
+    background-color: #666;
+    color: #fff;
+    border: 1px solid rgba(33,43,54,.9);
+    max-width: 160px !important;
+    text-transform: uppercase !important;
+    font-family: 'Oswald';
+    font-weight: 400;
+}
+
+.ftr-icn-wrap {
+    display: flex;
+    padding-bottom:20px;
+}
+.ftr-icn {
+    padding-right:10px;
+}
+.ftr-icn-txt {
+    line-height: 1.3em;
+}
+
+/*--------------------------------------------------------/
 / HOME PAGE
 /--------------------------------------------------------*/
 .sendero-session-txt-container {
@@ -392,6 +446,31 @@
 .cat-top-img {
     padding-right:80px;
 }
+
+/*---------------- Filter Widget -------------------*/
+
+.mfp-content .section_nt_filter div, .mfp-content .section_nt_filter .price_label {
+    font-size:12px;
+}
+
+.mfp-content .section_nt_filter .blockid_price .price_slider_amount .button {
+    padding: 8px 14px;
+    min-height: 0px;
+    min-width: 0px;
+}
+
+/*---------------- Product Badges & Sale Price -------------------*/
+
+.label_style_rounded .nt_label.out-of-stock {
+    width: 52px;
+    height:20px;
+}
+
+.nt_label.out-of-stock {
+    color: #04A4A2;
+    font-size: 12px;
+}
+
 
 
 /*--------------------------------------------------------/

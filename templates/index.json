@@ -3,12 +3,43 @@
     "16357021760efbe511": {
       "type": "slideshow",
       "blocks": {
-        "16357021760efbe511-0": {
+        "a39e865f-ca51-4fd4-8289-622c1591a0b5": {
           "type": "img",
           "settings": {
-            "image": "shopify:\/\/shop_images\/homepage_hero_image_2.webp",
+            "image": "shopify:\/\/shop_images\/homepage_hero_image_1.jpg",
             "pos_img": "center center",
-            "cl_img": "rgba(0,0,0,0)",
+            "cl_img": "",
+            "link_img1": "",
+            "open_link": "_blank",
+            "caption_w": "2",
+            "cap_v_pos": 50,
+            "cap_h_pos": 39,
+            "txt_align": "tl_md",
+            "cap_v_pos_mb": 50,
+            "cap_h_pos_mb": 39,
+            "txt_align_mb": "tl",
+            "cl_overlay": "#000000",
+            "cl_opacity": 0,
+            "ani_img": "none",
+            "ani_txt": "none",
+            "bg_content_bl": false,
+            "bg_content_cl": "#ffffff",
+            "bg_content_op": 50,
+            "content_pd": "40px 80px",
+            "content_pd_mb": "10px 20px",
+            "border_bl": false,
+            "br_color": "#222222",
+            "br_style": "solid",
+            "br_pd": 20,
+            "br_pd_mb": 10
+          }
+        },
+        "16357021760efbe511-6": {
+          "type": "img",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/homepage_hero_image_4.webp",
+            "pos_img": "center center",
+            "cl_img": "",
             "link_img1": "",
             "open_link": "_blank",
             "caption_w": "1",
@@ -18,8 +49,8 @@
             "cap_v_pos_mb": 50,
             "cap_h_pos_mb": 39,
             "txt_align_mb": "tl",
-            "cl_overlay": "#2b2b2b",
-            "cl_opacity": 60,
+            "cl_overlay": "#000000",
+            "cl_opacity": 43,
             "ani_img": "none",
             "ani_txt": "none",
             "bg_content_bl": false,
@@ -65,12 +96,12 @@
             "br_pd_mb": 10
           }
         },
-        "16357021760efbe511-6": {
+        "16357021760efbe511-0": {
           "type": "img",
           "settings": {
-            "image": "shopify:\/\/shop_images\/homepage_hero_image_4.webp",
+            "image": "shopify:\/\/shop_images\/homepage_hero_image_2.webp",
             "pos_img": "center center",
-            "cl_img": "",
+            "cl_img": "rgba(0,0,0,0)",
             "link_img1": "",
             "open_link": "_blank",
             "caption_w": "1",
@@ -80,8 +111,8 @@
             "cap_v_pos_mb": 50,
             "cap_h_pos_mb": 39,
             "txt_align_mb": "tl",
-            "cl_overlay": "#000000",
-            "cl_opacity": 43,
+            "cl_overlay": "#2b2b2b",
+            "cl_opacity": 60,
             "ani_img": "none",
             "ani_txt": "none",
             "bg_content_bl": false,
@@ -129,10 +160,12 @@
         }
       },
       "block_order": [
-        "16357021760efbe511-0",
+        "a39e865f-ca51-4fd4-8289-622c1591a0b5",
+        "16357021760efbe511-6",
         "16357021760efbe511-3",
         "16357021760efbe511-6",
-        "a39e865f-ca51-4fd4-8289-622c1591a0b5"
+        "a39e865f-ca51-4fd4-8289-622c1591a0b5",
+        "16357021760efbe511-0"
       ],
       "settings": {
         "se_height": "cus_h",
@@ -415,7 +448,7 @@
       }
     },
     "164926013874fd6afd": {
-      "type": "blog-home-page",
+      "type": "Blog-home-page",
       "settings": {
         "blog": "adventure-on",
         "limit": 4,

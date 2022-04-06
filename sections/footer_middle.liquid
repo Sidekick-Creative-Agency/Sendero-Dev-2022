@@ -2,16 +2,16 @@
   assign se_stts = section.settings
   assign image = se_stts.image -%}
 
-<div class="footer__top_wrap footer_sticky_{{se_stts.sticky2}} footer_collapse_{{se_stts.accordions2}} nt_bg_overlay pr oh pb__30 pt__40{% if image %} lazyloadt4s{% endif %}" {% if image %} data-bgset="{{ image | img_url: '1x1' }}" data-ratio="{{image.aspect_ratio}}" data-sizes="auto"{% endif %}>
+<div class="footer__middle_wrap footer_sticky_{{se_stts.sticky}} footer_collapse_{{se_stts.accordions}} nt_bg_overlay pr oh pb__30 pt__80{% if image %} lazyloadt4s{% endif %}" {% if image %} data-bgset="{{ image | img_url: '1x1' }}" data-ratio="{{image.aspect_ratio}}" data-sizes="auto"{% endif %}>
    <div class="container pr z_100">
       <div class="row">
       	{%- for block in section.blocks %}{% assign bk_stts = block.settings -%}
-      	<div class="col-lg-{{bk_stts.cl}} col-md-{{bk_stts.cl_tb}} col-{{bk_stts.cl_mb}} mb__10 order-lg-{{forloop.index}} order-{{bk_stts.order}}" {{ block.shopify_attributes }} style="padding:40px;">
+      	<div class="col-lg-{{bk_stts.cl}} col-md-{{bk_stts.cl_tb}} col-{{bk_stts.cl_mb}} mb__20 order-lg-{{forloop.index}} order-{{bk_stts.order}}" {{ block.shopify_attributes }} style="padding:50px;">
       		{%- case block.type -%}
       		   {%- when 'logo' -%}
                 {%- assign image = bk_stts.image -%}
 		            <aside id="block_{{block.id}}" class="widget widget_text widget_logo">
-                   {%- if bk_stts.title != blank -%}<h3 class="widget-title fwsb flex al_center fl_between fs__20 mg__0 mb__20{% if image != blank %} dn_md{% endif %}"><span class="txt_title">{{bk_stts.title}}</span><span class="nav_link_icon ml__5"></span></h3>{%- endif -%}
+                   {%- if bk_stts.title != blank -%}<h3 class="widget-title fwsb flex al_center fl_between fs__16 mg__0 mb__30{% if image != blank %} dn_md{% endif %}"><span class="txt_title">{{bk_stts.title}}</span><span class="nav_link_icon ml__5"></span></h3>{%- endif -%}
 		               <div class="textwidget widget_footer {{bk_stts.align}} {{bk_stts.align_mb}}">
 		                  <div class="footer-contact">
 		                     {%- if image != blank -%}<p><a class="db" href="/">{%- assign lg_w = bk_stts.logo_width -%}
@@ -32,7 +32,7 @@
 		            </aside>
       		   {%- when 'mail' -%}
 		            <aside id="block_{{block.id}}" class="widget widget_text">
-		               {%- if bk_stts.title != blank -%}<h3 class="widget-title fwsb flex al_center fl_between fs__20 mg__0 mb__20"><span class="txt_title">{{bk_stts.title}}</span><span class="nav_link_icon ml__5"></span></h3>{%- endif -%}
+		               {%- if bk_stts.title != blank -%}<h3 class="widget-title fwsb flex al_center fl_between fs__16 mg__0 mb__30"><span class="txt_title">{{bk_stts.title}}</span><span class="nav_link_icon ml__5"></span></h3>{%- endif -%}
 		               <div class="textwidget widget_footer newl_des_{{bk_stts.newl_des}}">
 		                  <p>{{bk_stts.sub_title}}</p>
 		                  {%- render 'newsletter',newl_des:bk_stts.newl_des,btn_icon:bk_stts.btn_icon -%}
@@ -62,7 +62,7 @@
                  assign on_sale_txt = 'products.product.on_sale' | t
                  assign save_js = 'products.product.save_js' | t: saved_amount:'saved_amount' -%}
                 <aside id="block_{{block.id}}" class="widget widget_product_list">
-                  {%- if bk_stts.title != blank -%}<h3 class="widget-title fwsb flex al_center fl_between fs__20 mg__0 mb__20"><span class="txt_title">{{bk_stts.title}}</span><span class="nav_link_icon ml__5"></span></h3>{%- endif -%}
+                  {%- if bk_stts.title != blank -%}<h3 class="widget-title fwsb flex al_center fl_between fs__16 mg__0 mb__30"><span class="txt_title">{{bk_stts.title}}</span><span class="nav_link_icon ml__5"></span></h3>{%- endif -%}
                    {%- if bk_stts.collection == blank -%}
                       <p class="mg__0 mb__30">{{ 'homepage.onboarding.no_content' | t }}</p>
                    {%- else -%}
@@ -75,7 +75,7 @@
                 </aside>
             {%- when 'post' -%}{%- assign date = bk_stts.date -%}
                 <aside id="block_{{block.id}}" class="widget widget_post_list">
-                  {%- if bk_stts.title != blank -%}<h3 class="widget-title fwsb flex al_center fl_between fs__20 mg__0 mb__20"><span class="txt_title">{{bk_stts.title}}</span><span class="nav_link_icon ml__5"></span></h3>{%- endif -%}
+                  {%- if bk_stts.title != blank -%}<h3 class="widget-title fwsb flex al_center fl_between fs__16 mg__0 mb__30"><span class="txt_title">{{bk_stts.title}}</span><span class="nav_link_icon ml__5"></span></h3>{%- endif -%}
                    {%- if bk_stts.blog == blank -%}
                       <p class="mg__0 mb__30">{{ 'homepage.onboarding.no_content' | t }}</p>
                    {%- else -%}
@@ -88,31 +88,31 @@
                 </aside>
             {%- when 'instagram' -%}{%- assign col = bk_stts.col_pr -%}{%- assign col_tb = bk_stts.col_pr_tb -%}{%- assign col_mb = bk_stts.col_pr_mb -%}
                 <aside id="block_{{block.id}}" class="widget widget_instagram">
-                  {%- if bk_stts.title != blank -%}<h3 class="widget-title fwsb flex al_center fl_between fs__20 mg__0 mb__20"><span class="txt_title">{{bk_stts.title}}</span><span class="nav_link_icon ml__5"></span></h3>{%- endif -%}
+                  {%- if bk_stts.title != blank -%}<h3 class="widget-title fwsb flex al_center fl_between fs__16 mg__0 mb__30"><span class="txt_title">{{bk_stts.title}}</span><span class="nav_link_icon ml__5"></span></h3>{%- endif -%}
                    <div class="widget_footer"><div class="nt_instagram_wrap row equal_nt ins_spaces_{{bk_stts.space}} ins_rounded_{{bk_stts.rounded_ins}} nt_cover ratio1_1 position_8 js_nt_ist" data-id='{{col}}{{col_tb}}{{col_mb}}{{bk_stts.limit}}{{bk_stts.open_link}}' data-cl='{{col}}' data-cltb='{{col_tb}}' data-clmb='{{col_mb}}' data-acc='{{bk_stts.acc2 | default:settings.global_acc}}' data-limit='{{bk_stts.limit }}' data-target='{{bk_stts.open_link}}'><div class="lds_bginfinity pr"></div></div></div>
                 </aside>
 
             {%- when 'instagram2' -%}{%- assign col = bk_stts.col_pr -%}{%- assign col_tb = bk_stts.col_pr_tb -%}{%- assign col_mb = bk_stts.col_pr_mb -%}
                 <aside id="block_{{block.id}}" class="widget widget_instagram">
-                  {%- if bk_stts.title != blank -%}<h3 class="widget-title fwsb flex al_center fl_between fs__20 mg__0 mb__20"><span class="txt_title">{{bk_stts.title}}</span><span class="nav_link_icon ml__5"></span></h3>{%- endif -%}
+                  {%- if bk_stts.title != blank -%}<h3 class="widget-title fwsb flex al_center fl_between fs__16 mg__0 mb__30"><span class="txt_title">{{bk_stts.title}}</span><span class="nav_link_icon ml__5"></span></h3>{%- endif -%}
                    <div class="widget_footer"><div class="nt_instagram_wrap row equal_nt ins_spaces_{{bk_stts.space}} ins_rounded_{{bk_stts.rounded_ins}} nt_cover ratio1_1 position_8 js_nt_ist" data-id='{{col}}{{col_tb}}{{col_mb}}{{bk_stts.limit}}{{bk_stts.open_link}}' data-cl='{{col}}' data-cltb='{{col_tb}}' data-clmb='{{col_mb}}' data-acc='ins_19041994' data-limit='{{bk_stts.limit }}' data-target='{{bk_stts.open_link}}'><div class="lds_bginfinity pr"></div></div></div>
                 </aside>
 
       		   {%- when 'text' -%}
 		            <aside id="block_{{block.id}}" class="widget widget_text">
-		               {%- if bk_stts.title != blank -%}<h3 class="widget-title fwsb flex al_center fl_between fs__20 mg__0 mb__20"><span class="txt_title">{{bk_stts.title}}</span><span class="nav_link_icon ml__5"></span></h3>{%- endif -%}
+		               {%- if bk_stts.title != blank -%}<h3 class="widget-title fwsb flex al_center fl_between fs__16 mg__0 mb__30"><span class="txt_title">{{bk_stts.title}}</span><span class="nav_link_icon ml__5"></span></h3>{%- endif -%}
 		               <div class="textwidget widget_footer">{{bk_stts.content}}</div>
 		            </aside>
 
       		   {%- when 'html' -%}
-		            <aside id="block_{{block.id}}" class="widget widget_text" style="border-right:1px solid #dfdfdf;padding-right:80px;">
-		               {%- if bk_stts.title != blank -%}<h3 class="widget-title fwsb flex al_center fl_between fs__20 mg__0 mb__20"><span class="txt_title">{{bk_stts.title}}</span><span class="nav_link_icon ml__5"></span></h3>{%- endif -%}
+		            <aside id="block_{{block.id}}" class="widget widget_text">
+		               {%- if bk_stts.title != blank -%}<h3 class="widget-title fwsb flex al_center fl_between fs__16 mg__0 mb__30"><span class="txt_title">{{bk_stts.title}}</span><span class="nav_link_icon ml__5"></span></h3>{%- endif -%}
 		               <div class="textwidget widget_footer">{{bk_stts.content}}</div>
 		            </aside>
 
       		  {%- else -%}
 		            <aside id="block_{{block.id}}" class="widget widget_nav_menu">
-		               {%- if bk_stts.title != blank -%}<h3 class="widget-title fwsb flex al_center fl_between fs__20 mg__0 mb__20"><span class="txt_title">{{bk_stts.title}}</span><span class="nav_link_icon ml__5"></span></h3>{%- endif -%}
+		               {%- if bk_stts.title != blank -%}<h3 class="widget-title fwsb flex al_center fl_between fs__16 mg__0 mb__30"><span class="txt_title">{{bk_stts.title}}</span><span class="nav_link_icon ml__5"></span></h3>{%- endif -%}
 		               <div class="menu_footer widget_footer">
 		               	{%- assign menu = bk_stts.menu -%}
 		               	{%- if menu != blank -%}
@@ -133,8 +133,8 @@
    </div>
 </div>
 
-{%- style -%}{% if se_stts.border2 %}.footer__top_wrap{border-style: solid;border-width: 1px 0;border-color: {{se_stts.bd_cl2}}}{% endif -%}
-.footer__top a:hover{color: {{se_stts.cl_hover2}}}.footer__top .signup-newsletter-form,.footer__top .signup-newsletter-form input.input-text {background-color: transparent;}.footer__top .signup-newsletter-form input.input-text {color: {{se_stts.cl_ip2}} }.footer__top .signup-newsletter-form .submit-btn {color:{{section.settings.cl_txt2}};background-color: {{se_stts.cl_btn2}} }.footer__top .widget-title { color: {{se_stts.cl_h2}} }.footer__top a:not(:hover) { color: {{se_stts.cl_a2}} }.footer__top .signup-newsletter-form,.footer__top .signup-newsletter-form input.input-text{ border-color: {{se_stts.bd_ip2}} }.footer__top .nt_bg_overlay:after{ background-color: {{se_stts.cl_overlay2}};opacity: {{se_stts.cl_opacity2 | divided_by: 100.00}} }.footer__top_wrap {background-color: {{se_stts.bg2}};background-repeat: {{se_stts.bg_repeat2}};background-size: {{se_stts.bg_size2}};background-attachment: {{se_stts.bg_att2}};background-position: {{se_stts.bg_pos2}};color:{{se_stts.cl2}} }
+{%- style -%}{% if se_stts.border %}.footer__middle_wrap{border-style: solid;border-width: 1px 0;border-color: {{se_stts.bd_cl}}}{% endif -%}
+.footer__middle a:hover{color: {{se_stts.cl_hover}}}.footer__middle .signup-newsletter-form,.footer__middle .signup-newsletter-form input.input-text {background-color: transparent;}.footer__middle .signup-newsletter-form input.input-text {color: {{se_stts.cl_ip}} }.footer__middle .signup-newsletter-form .submit-btn {color:{{section.settings.cl_txt}};background-color: {{se_stts.cl_btn}} }.footer__middle .widget-title { color: {{se_stts.cl_h}} }.footer__middle a:not(:hover) { color: {{se_stts.cl_a}} }.footer__middle .signup-newsletter-form,.footer__middle .signup-newsletter-form input.input-text{ border-color: {{se_stts.bd_ip}} }.footer__middle .nt_bg_overlay:after{ background-color: {{se_stts.cl_overlay}};opacity: {{se_stts.cl_opacity | divided_by: 100.00}} }.footer__middle_wrap {background-color: {{se_stts.bg}};background-repeat: {{se_stts.bg_repeat}};background-size: {{se_stts.bg_size}};background-attachment: {{se_stts.bg_att}};background-position: {{se_stts.bg_pos}};color:{{se_stts.cl}} }
 {%- if se_stts.sticky -%}
 @media (min-width:1025px){.wrapper_boxed #nt_footer {max-width: 1200px;margin-left: auto;margin-right: auto;}#nt_content{z-index:2}#nt_content,.kalles_prefooter{position:relative;background-color:#fff}#nt_footer{position:fixed;right:0;bottom:0;left:0;width:auto;transition:all .25s ease;-webkit-backface-visibility:hidden;backface-visibility:hidden;-webkit-perspective:800px;perspective:800px}.browser-Safari #nt_footer{opacity:0}.browser-Safari #nt_footer.visible_footer{opacity:1}}
 {%- endif -%}
@@ -142,8 +142,8 @@
 
 {%- schema -%}
   {
-    "name": "Footer Top",
-    "class": "footer__top type_instagram",
+    "name": "Footer Middle",
+    "class": "footer__middle type_instagram",
     "max_blocks": 6,
     "settings": [
       {
@@ -152,21 +152,21 @@
       },
       {
         "type": "checkbox",
-        "id": "sticky2",
+        "id": "sticky",
         "info": "Enable\/disable sticky footer option",
         "label": "Sticky footer",
         "default": false
       },
       {
         "type": "checkbox",
-        "id": "accordions2",
+        "id": "accordions",
         "info": "Enable\/disable accordions mobile footer option",
         "label": "Accordions mobile",
         "default": false
       },
       {
         "type": "checkbox",
-        "id": "border2",
+        "id": "border",
         "info": "Enable\/disable border top\/bottom?",
         "label": "Border footer",
         "default": false
@@ -177,55 +177,55 @@
       },
       {
         "type": "color",
-        "id": "bd_cl2",
+        "id": "bd_cl",
         "label": "Border color Footer Top",
         "default": "#ededed"
       },
       {
         "type": "color",
-        "id": "cl_h2",
+        "id": "cl_h",
         "label": "Color Heading",
         "default": "#222"
       },
       {
         "type": "color",
-        "id": "cl2",
+        "id": "cl",
         "label": "Color Text",
         "default": "#878787"
       },
       {
         "type": "color",
-        "id": "cl_a2",
+        "id": "cl_a",
         "label": "Color Link",
         "default": "#878787"
       },
       {
         "type": "color",
-        "id": "cl_hover2",
+        "id": "cl_hover",
         "label": "Color Hover Link",
         "default": "#56cfe1"
       },
       {
         "type": "color",
-        "id": "cl_ip2",
+        "id": "cl_ip",
         "label": "Color input newsletter",
         "default": "#878787"
       },
       {
         "type": "color",
-        "id": "bd_ip2",
+        "id": "bd_ip",
         "label": "Border color input newsletter",
         "default": "#878787"
       },
       {
         "type": "color",
-        "id": "cl_btn2",
+        "id": "cl_btn",
         "label": "Background Color button newsletter",
         "default": "#333"
       },
       {
         "type": "color",
-        "id": "cl_txt2",
+        "id": "cl_txt",
         "label": "Color Text button newsletter",
         "default": "#fff"
       },
@@ -235,13 +235,13 @@
       },
       {
         "type": "color", 
-        "id": "bg2",
+        "id": "bg",
         "label": "Select Color",
         "default": "#f6f6f8"
       },
       {
         "type": "select",
-        "id": "bg_repeat2",
+        "id": "bg_repeat",
         "options": [
           {
             "value": "no-repeat",
@@ -270,7 +270,7 @@
       },
       {
         "type": "select",
-        "id": "bg_size2",
+        "id": "bg_size",
         "options": [
           {
             "value": "auto",
@@ -295,7 +295,7 @@
       },
       {
         "type": "select",
-        "id": "bg_att2",
+        "id": "bg_att",
         "options": [
           {
             "value": "fixed",
@@ -316,7 +316,7 @@
       },
       {
         "type": "select",
-        "id": "bg_pos2",
+        "id": "bg_pos",
         "label": "Image position",
         "default": "center center",
         "options": [
@@ -365,13 +365,13 @@
       },
       {
         "type": "color",
-        "id": "cl_overlay2",
+        "id": "cl_overlay",
         "label": "Overlay",
         "default": "#000"
       },
       {
         "type": "range",
-        "id": "cl_opacity2",
+        "id": "cl_opacity",
         "label": "Overlay opacity",
         "default": 0,
         "min": 0,
@@ -440,11 +440,11 @@
           "type": "range",
           "id": "logo_width",
           "label": "== Custom logo width",
-          "min": 50,
-          "max": 350,
-          "step": 5,
+          "min": 200,
+          "max": 500,
+          "step": 10,
           "unit": "px",
-          "default": 100
+          "default": 400
         },
          {
             "type": "text",

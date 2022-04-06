@@ -432,7 +432,7 @@ a.button{
   padding: 5px 25px;
   background: #fff;
   color: #222;
-  border-radius: 40px;
+  border-radius: 0px;
   font-size: 14px;
   font-weight: 600;
   min-height: 40px
@@ -451,7 +451,7 @@ a.button.button_dark {
     color: #fff;
 }
 a.external_btn.truncate.button {
-    border-radius: 40px;
+    border-radius: 0px;
 }
 input[type="submit"]:hover,
 button:hover,
@@ -5512,7 +5512,7 @@ i.dn.title_6,i.dnt4.title_6 {
       height: 80px;
   }
   .signup-newsletter-form {
-      border-radius: 50px;
+      border-radius: 0px;
       border: 1px solid #878787;
       padding: 2px;
   }
@@ -5522,7 +5522,7 @@ i.dn.title_6,i.dnt4.title_6 {
 
   .signup-newsletter-form .submit-btn {
       text-transform: none;
-      border-radius: 50px;
+      border-radius: 0px;
       font-size: 14px;
       padding: 0 20px;
       margin: 0;
@@ -5641,6 +5641,10 @@ i.dn.title_6,i.dnt4.title_6 {
     margin-bottom: 5px;
   }
   .footer__top_wrap {
+    background: #f6f6f8;
+    color: #878787;
+  }
+  .footer__middle_wrap {
     background: #f6f6f8;
     color: #878787;
   }
@@ -7466,7 +7470,7 @@ font-weight: 400;
   .newsletter_se.newl_des_3 .signup-newsletter-form .col_email{margin: 0 10px}
   .newl_des_1 .signup-newsletter-form {padding: 2px;}
   .newl_des_1 .signup-newsletter-form .submit-btn {
-    border-radius: 50px;
+    border-radius: 0px;
   }
   .newl_des_6 .section-title {
       font-size: 35px;

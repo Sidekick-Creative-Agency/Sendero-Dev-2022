@@ -8,8 +8,8 @@
     "body_bg_size": "default",
     "body_bg_attachment": "default",
     "body_bg_position": "default",
-    "home_keywords": "Kalles shopify, Fastest, Ajax Shop, Minimal, Lazyload",
-    "shop_author": "The4",
+    "home_keywords": "Sendero, outdoors,",
+    "shop_author": "Sidekick Creative Agency",
     "use_rtl": true,
     "list_rtl": "ar",
     "backtop": "3",
@@ -93,12 +93,13 @@
     "cl_hd": "#000000",
     "cl_se_tt": "#000000",
     "cl_se_subtt": "#000000",
-    "cl_sale": "#ff4e00",
-    "cl_new": "#109533",
-    "cl_sold_out": "#999",
+    "ld_bar": "#04a4a2",
+    "cl_sale": "#04a4a2",
+    "cl_new": "#9bcb98",
+    "cl_sold_out": "rgba(0,0,0,0)",
     "clpr_tt": "#000000",
     "clpr_price": "#696969",
-    "clpr_price_sale": "#ec0101",
+    "clpr_price_sale": "#04a4a2",
     "clpr_price_goc": "#878787",
     "atw_btn": "#fff",
     "bgqv_btn": "#fff",
@@ -172,6 +173,7 @@
     "cat_sticky": false,
     "shop_filters": true,
     "pop_style": "nt_pop_sidebar",
+    "type_filters": "2",
     "style_color_filter": "color, colour, Color",
     "main_click": "zoom",
     "zoom_tp": "2",
@@ -252,25 +254,25 @@
     "custom_css": true,
     "global_css": "",
     "custom_js": false,
-    "share_image": "",
+    "share_image": "shopify:\/\/shop_images\/sendero-socialshare.jpg",
     "share_facebook": true,
     "share_twitter": true,
     "share_pinterest": true,
     "share_tumblr": true,
     "share_email": true,
     "share_telegram": true,
-    "social_facebook_link": "#",
+    "social_facebook_link": "https:\/\/www.facebook.com\/senderopc\/",
     "social_twitter_link": "#",
-    "social_instagram_link": "#",
+    "social_instagram_link": "https:\/\/www.instagram.com\/senderopc",
     "social_dribbble_link": "",
     "social_linkedin_link": "#",
-    "social_pinterest_link": "#",
+    "social_pinterest_link": "https:\/\/www.pinterest.com\/senderopc\/_shop\/",
     "social_tumblr_link": "",
     "social_youtube_link": "",
     "social_behance_link": "",
     "social_soundcloud_link": "",
-    "favicon": "shopify:\/\/shop_images\/k_favi.png",
-    "favicon_apple": "shopify:\/\/shop_images\/k_favi_2x_5b779e5a-7ac4-4e6f-8840-83008c4d62f3.png",
+    "favicon": "shopify:\/\/shop_images\/sendero-favicon.jpg",
+    "favicon_apple": "shopify:\/\/shop_images\/sendero-favicon-2x.jpg",
     "checkout_header_image": "",
     "checkout_logo_image": "shopify:\/\/shop_images\/kalles_2x_d285afa0-dcc0-4663-80cc-93478c8881de.png",
     "checkout_logo_position": "left",
@@ -462,7 +464,7 @@
               "lb_cl": "rgba(0,0,0,0)",
               "lazy_mn": true,
               "pos": "default",
-              "wid": "cus",
+              "wid": "full",
               "cus_wid": 1200
             }
           },
@@ -631,11 +633,10 @@
           "9334ad88-4bc9-428e-af30-263554dfa4d9": {
             "type": "cat",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Big_Bend_Shirt_Lifestyle.jpg",
               "cat_design": "1",
               "hoverz": true,
-              "collection": "shirts",
-              "title": "",
+              "collection": "best-seller-t-shirts",
+              "title": "Best Sellers",
               "col": "3"
             }
           },
@@ -644,7 +645,7 @@
             "settings": {
               "cat_design": "1",
               "hoverz": true,
-              "collection": "hey-slick",
+              "collection": "signature",
               "title": "",
               "col": "3"
             }
@@ -662,7 +663,7 @@
               "lb_cl": "",
               "lazy_mn": true,
               "pos": "default",
-              "wid": "cus",
+              "wid": "full",
               "cus_wid": 1200
             }
           },
@@ -715,20 +716,72 @@
               "col": "3"
             }
           },
-          "bf06875c-82c0-441e-8fc7-a6bffd852daf": {
-            "type": "dropdown",
+          "932e6253-0155-4ab3-b3c0-635dd62ee01b": {
+            "type": "mega",
             "settings": {
               "title": "Brand",
               "url": "",
               "open_link": "_self",
-              "menu": "main-menu",
               "icon": "",
               "cus_cl": false,
-              "cl": "#000000",
+              "cl": "#ec0101",
               "lb": "",
               "lb_cl": "",
               "lazy_mn": true,
-              "pos": "right"
+              "pos": "center",
+              "wid": "full",
+              "cus_wid": 1200
+            }
+          },
+          "a7b29865-5b6c-426e-828c-b7e5c9ed5b8f": {
+            "type": "mmtitle",
+            "settings": {
+              "mmtitle": "Brand",
+              "url": "",
+              "open_link": "_self",
+              "col": "2"
+            }
+          },
+          "66c4d1d7-1132-47d1-859b-78afb3bebe36": {
+            "type": "link",
+            "settings": {
+              "tt_hd": "",
+              "url": "",
+              "open_link": "_self",
+              "menu": "main-menu",
+              "col": "2"
+            }
+          },
+          "8d6c5968-eefa-4016-9930-f8fad1a58a4b": {
+            "type": "link",
+            "settings": {
+              "tt_hd": "",
+              "url": "",
+              "open_link": "_self",
+              "menu": "brand-2nd-column",
+              "col": "2"
+            }
+          },
+          "283bb7a8-d7fa-4caa-95e4-8959282e1256": {
+            "type": "cat",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/74162361_102268317897142_7558348142593179648_n.jpg",
+              "cat_design": "1",
+              "hoverz": true,
+              "collection": "",
+              "title": "Sendero Sessions",
+              "col": "3"
+            }
+          },
+          "c965e28c-e3b9-4da8-b4aa-3bace9552fbb": {
+            "type": "cat",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Photo_Mosaics-03_1024x1024_4d304521-ae34-41c5-b698-e99c088a0013.png",
+              "cat_design": "1",
+              "hoverz": true,
+              "collection": "",
+              "title": "Blog",
+              "col": "3"
             }
           }
         },
@@ -757,7 +810,12 @@
           "d964bd86-2c5e-4cb7-8b1f-0027152aafea",
           "01c7c08b-1e91-40f4-8734-b22e759c1062",
           "415d5e20-e622-4728-a7f8-f0fd5b5a8424",
-          "bf06875c-82c0-441e-8fc7-a6bffd852daf"
+          "932e6253-0155-4ab3-b3c0-635dd62ee01b",
+          "a7b29865-5b6c-426e-828c-b7e5c9ed5b8f",
+          "66c4d1d7-1132-47d1-859b-78afb3bebe36",
+          "8d6c5968-eefa-4016-9930-f8fad1a58a4b",
+          "283bb7a8-d7fa-4caa-95e4-8959282e1256",
+          "c965e28c-e3b9-4da8-b4aa-3bace9552fbb"
         ],
         "settings": {
           "height": 60,
@@ -769,96 +827,150 @@
       "footer_top": {
         "type": "footer_top",
         "blocks": {
-          "1581507819652": {
-            "type": "logo",
+          "e397beeb-6328-4a88-b922-52d9b4407a5a": {
+            "type": "html",
             "settings": {
-              "align": "tl_md",
-              "align_mb": "tl",
-              "logo_width": 95,
-              "title": "Get in touch",
-              "content": "<p><i class=\"pegk pe-7s-map-marker\"> <\/i><span>184 Main Rd E, St Albans <br> <span class=\"pl__30\">VIC 3021, Australia<\/span><\/span><\/p><p><i class=\"pegk pe-7s-mail\"><\/i><span> <a href=\"mailto:contact@company.com\">contact@company.com<\/a><\/span><\/p><p><i class=\"pegk pe-7s-call\"><\/i> <span>+001 2233 456 <\/span><\/p>",
-              "social_mode": "3",
+              "title": "Live Chat",
+              "content": "<div class=\"ftr-icn-wrap\">\n<div class=\"ftr-icn\"><i class=\"pegk pe-7s-chat\"> <\/i><\/div>\n<div class=\"ftr-icn-txt\">Chat now with one of our sales representatives or email us at <a href=\"mailto:contact@senderopc.com\">contact@senderopc.com<\/a>\n<\/div>\n<\/div><div><button type=\"submit\" class=\"submit-btn\"><span>Live Chat<\/span><\/button><\/div>",
               "order": "1",
-              "cl": "3",
+              "cl": "4",
               "cl_tb": "6",
               "cl_mb": "12"
             }
           },
-          "1581507824602": {
-            "type": "menu",
+          "dedf2f2c-de36-485a-99cb-83211a553fc6": {
+            "type": "html",
             "settings": {
-              "title": "Categories",
-              "menu": "",
+              "title": "Order Status",
+              "content": "<div class=\"ftr-icn-wrap\">\n<div class=\"ftr-icn\"><i class=\"pegk pe-7s-check\"> <\/i><\/div>\n<div class=\"ftr-icn-txt\">Chat now with one of our sales representatives or email us at <a href=\"mailto:contact@senderopc.com\">contact@senderopc.com<\/a>\n<\/div>\n<\/div><div><button type=\"submit\" class=\"submit-btn\"><span>My Orders<\/span><\/button><\/div>",
               "order": "1",
-              "cl": "2",
+              "cl": "4",
               "cl_tb": "6",
               "cl_mb": "12"
             }
           },
-          "1581507828337": {
-            "type": "menu",
-            "settings": {
-              "title": "Infomation",
-              "menu": "",
-              "order": "1",
-              "cl": "2",
-              "cl_tb": "6",
-              "cl_mb": "12"
-            }
-          },
-          "1581507840818": {
-            "type": "menu",
-            "settings": {
-              "title": "Useful links",
-              "menu": "",
-              "order": "1",
-              "cl": "2",
-              "cl_tb": "6",
-              "cl_mb": "12"
-            }
-          },
-          "1581507835369": {
+          "ca7c3c3d-9f84-41a3-8d9a-a982510d03ae": {
             "type": "mail",
             "settings": {
               "newl_des": "1",
               "btn_icon": false,
-              "title": "Newsletter Signup",
-              "sub_title": "Subscribe to our newsletter and get 10% off your first purchase",
+              "title": "Subscribe For 15% Off",
+              "sub_title": "",
               "source": "1",
               "svg": "amazon_payments,american_express,apple_pay,bitcoin,dankort,diners_club,discover,dogecoin,dwolla,forbrugsforeningen,interac,google_pay,jcb,klarna,klarna-pay-later,litecoin,maestro,master,paypal,shopify_pay,sofort,visa",
               "height": 30,
               "order": "1",
-              "cl": "3",
+              "cl": "4",
               "cl_tb": "6",
               "cl_mb": "12"
             }
           }
         },
         "block_order": [
-          "1581507819652",
-          "1581507824602",
-          "1581507828337",
-          "1581507840818",
-          "1581507835369"
+          "e397beeb-6328-4a88-b922-52d9b4407a5a",
+          "dedf2f2c-de36-485a-99cb-83211a553fc6",
+          "ca7c3c3d-9f84-41a3-8d9a-a982510d03ae"
+        ],
+        "settings": {
+          "sticky2": false,
+          "accordions2": true,
+          "border2": true,
+          "bd_cl2": "#f1f1f1",
+          "cl_h2": "#000000",
+          "cl2": "#000000",
+          "cl_a2": "#696969",
+          "cl_hover2": "#04a4a2",
+          "cl_ip2": "#000000",
+          "bd_ip2": "#000000",
+          "cl_btn2": "#000000",
+          "cl_txt2": "#ffffff",
+          "bg2": "#f9f9f9",
+          "bg_repeat2": "no-repeat",
+          "bg_size2": "cover",
+          "bg_att2": "scroll",
+          "bg_pos2": "center center",
+          "cl_overlay2": "#ffffff",
+          "cl_opacity2": 0
+        }
+      },
+      "footer_middle": {
+        "type": "footer_middle",
+        "blocks": {
+          "1581503840818": {
+            "type": "menu",
+            "settings": {
+              "title": "Quick Links",
+              "menu": "quick-links-footer",
+              "order": "1",
+              "cl": "2",
+              "cl_tb": "6",
+              "cl_mb": "12"
+            }
+          },
+          "1581503828337": {
+            "type": "menu",
+            "settings": {
+              "title": "Support",
+              "menu": "support-footer",
+              "order": "1",
+              "cl": "2",
+              "cl_tb": "6",
+              "cl_mb": "12"
+            }
+          },
+          "2e57de10-ea06-40b1-819a-04625e73e1c0": {
+            "type": "html",
+            "settings": {
+              "title": "Contact",
+              "content": "<span><a href=\"mailto:contact@senderopc.com\">contact@senderopc.com<\/a><\/span><br><span>Mon-Fri | 8am-5pm<\/span>",
+              "order": "1",
+              "cl": "2",
+              "cl_tb": "6",
+              "cl_mb": "12"
+            }
+          },
+          "1581503819652": {
+            "type": "logo",
+            "settings": {
+              "align": "tc_md",
+              "align_mb": "tc",
+              "image": "shopify:\/\/shop_images\/header-logo-pad_8fd942d3-0949-4316-9104-4f8519a3bab8.png",
+              "logo_width": 400,
+              "title": "",
+              "content": "",
+              "social_mode": "1",
+              "order": "1",
+              "cl": "6",
+              "cl_tb": "6",
+              "cl_mb": "12"
+            }
+          }
+        },
+        "block_order": [
+          "1581503840818",
+          "1581503828337",
+          "2e57de10-ea06-40b1-819a-04625e73e1c0",
+          "1581503819652"
         ],
         "settings": {
           "sticky": false,
           "accordions": true,
           "border": false,
-          "bd_cl": "#ededed",
-          "cl_h": "#222222",
-          "cl": "#878787",
-          "cl_a": "#878787",
-          "cl_hover": "#56cfe1",
-          "cl_ip": "#878787",
-          "bd_ip": "#878787",
-          "cl_btn": "#222222",
-          "cl_txt": "#ffffff",
-          "bg": "#f6f6f8",
+          "bd_cl": "#000000",
+          "cl_h": "#999999",
+          "cl": "#999999",
+          "cl_a": "#999999",
+          "cl_hover": "#04a4a2",
+          "cl_ip": "#999999",
+          "bd_ip": "#999999",
+          "cl_btn": "#696969",
+          "cl_txt": "#dcdcdc",
+          "bg": "#000000",
           "bg_repeat": "no-repeat",
           "bg_size": "cover",
           "bg_att": "scroll",
           "bg_pos": "center center",
+          "image": "shopify:\/\/shop_images\/FooterBG.jpg",
           "cl_overlay": "#000000",
           "cl_opacity": 0
         }
@@ -866,10 +978,16 @@
       "footer_bot": {
         "type": "footer_bot",
         "blocks": {
+          "85f065ad-877f-419e-928f-1e0c7968ffa5": {
+            "type": "copy",
+            "settings": {
+              "text": "<!-- EMPTY PLACEHOLDER for left side -->"
+            }
+          },
           "1581507860120": {
             "type": "copy",
             "settings": {
-              "text": "Copyright © [year] <span class=\"cp\">Sendero Provisions Co.<\/span> all rights reserved."
+              "text": "Copyright © [year] Sendero Provisions Co. all rights reserved."
             }
           },
           "1581507855652": {
@@ -880,14 +998,15 @@
           }
         },
         "block_order": [
+          "85f065ad-877f-419e-928f-1e0c7968ffa5",
           "1581507860120",
           "1581507855652"
         ],
         "settings": {
           "layout": "6",
-          "bg": "#ffffff",
-          "cl": "#878787",
-          "cl_a": "#878787",
+          "bg": "#000000",
+          "cl": "#999999",
+          "cl_a": "#dcdcdc",
           "cl_hover": "#56cfe1"
         }
       },
@@ -1643,6 +1762,11 @@
           "article-sidebar-3",
           "article-sidebar-4"
         ],
+        "settings": {
+        }
+      },
+      "sidebar_shop": {
+        "type": "sidebar_shop",
         "settings": {
         }
       }

@@ -1,9 +1,9 @@
 {
   "sections": {
     "16479809910f68859a": {
-      "type": "category-page-top",
+      "type": "collection-page-top",
       "settings": {
-        "title": "Category Page Top",
+        "title": "Collection Page Top",
         "sub_title": "Sub Text",
         "sub_font": "2",
         "btn_title": "See all products",
@@ -48,6 +48,75 @@
         "pd_mb": ""
       }
     },
+    "16488315326088f3a4": {
+      "type": "collection-list_packery",
+      "blocks": {
+        "1648831532aa982f8e-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "t-shirts",
+            "img_align": "center",
+            "title": "",
+            "url": ""
+          }
+        },
+        "1648831532aa982f8e-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "outerwear",
+            "img_align": "center",
+            "title": "",
+            "url": ""
+          }
+        },
+        "1648831532aa982f8e-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "kids-gear",
+            "img_align": "center",
+            "title": "",
+            "url": ""
+          }
+        },
+        "1648831532aa982f8e-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "hats",
+            "img_align": "center",
+            "title": "",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "1648831532aa982f8e-1",
+        "1648831532aa982f8e-2",
+        "1648831532aa982f8e-3",
+        "1648831532aa982f8e-0"
+      ],
+      "settings": {
+        "title": "Shop This Collection",
+        "sub_title": "",
+        "sub_font": "2",
+        "style_title": "title_1",
+        "ic_tt": "gem",
+        "show_clpr": false,
+        "hoverz": true,
+        "cat_design": "1",
+        "cat_space": "30",
+        "pr_txt": "products",
+        "cat_lay4": 1,
+        "cat_lay5": 1,
+        "cp_code": false,
+        "layout": "wrap",
+        "cl_bg": "",
+        "hide_bgimg": false,
+        "mg": "50px,,50px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    },
     "main": {
       "type": "category_page",
       "settings": {
@@ -73,7 +142,7 @@
       }
     },
     "164882807276a2e749": {
-      "type": "collection-list",
+      "type": "shop-other-categories",
       "blocks": {
         "16488280725e7f0d65-0": {
           "type": "collection",
@@ -139,7 +208,7 @@
         "7d2d449a-83f0-459e-a956-21e212b81841"
       ],
       "settings": {
-        "title": "Collection list",
+        "title": "Shop Other Categories",
         "sub_title": "Sub Text",
         "sub_font": "2",
         "style_title": "title_1",
@@ -179,6 +248,7 @@
   },
   "order": [
     "16479809910f68859a",
+    "16488315326088f3a4",
     "main",
     "164882807276a2e749"
   ]

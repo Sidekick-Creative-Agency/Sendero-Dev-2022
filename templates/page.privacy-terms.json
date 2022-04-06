@@ -1,0 +1,76 @@
+{
+  "sections": {
+    "heading": {
+      "type": "pages_heading",
+      "blocks": {
+        "89b1a94e-2cf5-4075-a6af-0969fbaeae2c": {
+          "type": "1",
+          "settings": {
+            "color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "89b1a94e-2cf5-4075-a6af-0969fbaeae2c"
+      ],
+      "settings": {
+        "parallax": false,
+        "color": "#000000",
+        "overlay": 54,
+        "padding": 100,
+        "paddingmb": 50,
+        "bg_pos": "center center",
+        "bg_repeat": "no-repeat",
+        "bg_size": "cover",
+        "bg_att": "scroll"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+      }
+    },
+    "1649258909d1979385": {
+      "type": "rich_text",
+      "settings": {
+        "title": "PRIVACY POLICY",
+        "sub_title": "",
+        "sub_font": "2",
+        "style_title": "title_1",
+        "ic_tt": "gem",
+        "show_clpr": false,
+        "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus sit amet nisl sit amet tempus. Aliquam consequat neque nec ante condimentum, et aliquam ipsum fermentum. Suspendisse posuere enim non sem sollicitudin volutpat. In pellentesque nunc lacus, quis vehicula felis faucibus vitae. Mauris eget justo sit amet dolor tincidunt rutrum ut id mi. Fusce facilisis ligula vel scelerisque posuere. Curabitur massa ante, pretium ut dignissim vitae, placerat eget turpis. Praesent laoreet velit nec condimentum vulputate. In feugiat tortor a felis pretium, ac euismod dolor tincidunt. Etiam tristique dictum aliquam. In imperdiet dolor nulla, eu euismod metus tristique in. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras non felis at ex elementum vestibulum vitae sed est. Suspendisse sit amet velit fringilla, feugiat elit eget, hendrerit nulla.<\/p><p>Etiam et nisl tempor, hendrerit velit dignissim, semper leo. Ut lectus felis, hendrerit sit amet convallis commodo, sodales nec urna. Mauris convallis leo id augue vehicula dapibus. Proin fermentum id massa non aliquam. Vivamus varius gravida nunc in congue. Praesent condimentum erat mattis, eleifend tellus vitae, tristique urna. Morbi sit amet nulla condimentum lacus faucibus placerat. Integer eget fringilla nisl. Donec nec elit scelerisque, scelerisque nisi sed, vulputate arcu.<\/p><p>Maecenas in urna sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc ut massa ullamcorper, faucibus nisl in, euismod dolor. Proin pharetra scelerisque ligula vel auctor. Nulla lacinia pellentesque orci, quis euismod lectus congue a. Etiam ac laoreet eros, eget eleifend tortor. Etiam in gravida lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam id dolor et nibh elementum ultricies a quis lectus. Curabitur a tempor risus, semper accumsan diam. Nullam pharetra erat egestas arcu vehicula, eu ultricies tortor tempor. Proin in augue a nulla fringilla suscipit sed in tortor. Donec laoreet magna purus, at commodo diam accumsan eu. Morbi magna neque, venenatis at nunc quis, luctus placerat massa.<\/p><p>Cras dapibus lacinia eros eu commodo. Donec et eros erat. Integer a orci finibus odio accumsan fringilla. Vivamus tempor a diam ut lobortis. Cras lacinia mollis velit. Vestibulum sed risus diam. Suspendisse potenti. Aliquam vestibulum in mi ac rhoncus. Nulla mauris elit, euismod ac scelerisque nec, dapibus id leo. In volutpat, massa eu lacinia tristique, mi felis interdum massa, a aliquet tortor mauris eget ex. Integer tristique ipsum vitae augue consectetur, in congue massa ornare. Aliquam congue eget quam non posuere.<\/p><p>Etiam in sollicitudin ante, nec mattis lacus. Fusce a vestibulum tellus. Morbi ullamcorper dignissim accumsan. Donec quis cursus mauris, sed ultrices turpis. Maecenas ac urna velit. Donec mattis id dolor eget congue. Nulla dictum erat augue. In maximus massa eget mi maximus tincidunt. Cras ullamcorper justo nisi, id tempus leo feugiat sit amet. Praesent id erat eros. Morbi dui urna, congue eget volutpat eu, malesuada et nulla. Quisque fringilla maximus nisi sollicitudin vehicula. Sed nec turpis euismod, hendrerit nibh ac, finibus erat. Morbi luctus mi magna, id aliquet nisi posuere in. Donec accumsan volutpat arcu, at luctus tortor ornare et.<\/p>",
+        "align": "tl",
+        "layout": "container",
+        "mg": "50px,,50px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    },
+    "1649258937aed0cc41": {
+      "type": "rich_text",
+      "settings": {
+        "title": "TERMS OF SERVICE",
+        "sub_title": "",
+        "sub_font": "2",
+        "style_title": "title_1",
+        "ic_tt": "gem",
+        "show_clpr": false,
+        "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus sit amet nisl sit amet tempus. Aliquam consequat neque nec ante condimentum, et aliquam ipsum fermentum. Suspendisse posuere enim non sem sollicitudin volutpat. In pellentesque nunc lacus, quis vehicula felis faucibus vitae. Mauris eget justo sit amet dolor tincidunt rutrum ut id mi. Fusce facilisis ligula vel scelerisque posuere. Curabitur massa ante, pretium ut dignissim vitae, placerat eget turpis. Praesent laoreet velit nec condimentum vulputate. In feugiat tortor a felis pretium, ac euismod dolor tincidunt. Etiam tristique dictum aliquam. In imperdiet dolor nulla, eu euismod metus tristique in. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras non felis at ex elementum vestibulum vitae sed est. Suspendisse sit amet velit fringilla, feugiat elit eget, hendrerit nulla.<\/p><p>Etiam et nisl tempor, hendrerit velit dignissim, semper leo. Ut lectus felis, hendrerit sit amet convallis commodo, sodales nec urna. Mauris convallis leo id augue vehicula dapibus. Proin fermentum id massa non aliquam. Vivamus varius gravida nunc in congue. Praesent condimentum erat mattis, eleifend tellus vitae, tristique urna. Morbi sit amet nulla condimentum lacus faucibus placerat. Integer eget fringilla nisl. Donec nec elit scelerisque, scelerisque nisi sed, vulputate arcu.<\/p><p>Maecenas in urna sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc ut massa ullamcorper, faucibus nisl in, euismod dolor. Proin pharetra scelerisque ligula vel auctor. Nulla lacinia pellentesque orci, quis euismod lectus congue a. Etiam ac laoreet eros, eget eleifend tortor. Etiam in gravida lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam id dolor et nibh elementum ultricies a quis lectus. Curabitur a tempor risus, semper accumsan diam. Nullam pharetra erat egestas arcu vehicula, eu ultricies tortor tempor. Proin in augue a nulla fringilla suscipit sed in tortor. Donec laoreet magna purus, at commodo diam accumsan eu. Morbi magna neque, venenatis at nunc quis, luctus placerat massa.<\/p><p>Cras dapibus lacinia eros eu commodo. Donec et eros erat. Integer a orci finibus odio accumsan fringilla. Vivamus tempor a diam ut lobortis. Cras lacinia mollis velit. Vestibulum sed risus diam. Suspendisse potenti. Aliquam vestibulum in mi ac rhoncus. Nulla mauris elit, euismod ac scelerisque nec, dapibus id leo. In volutpat, massa eu lacinia tristique, mi felis interdum massa, a aliquet tortor mauris eget ex. Integer tristique ipsum vitae augue consectetur, in congue massa ornare. Aliquam congue eget quam non posuere.<\/p><p>Etiam in sollicitudin ante, nec mattis lacus. Fusce a vestibulum tellus. Morbi ullamcorper dignissim accumsan. Donec quis cursus mauris, sed ultrices turpis. Maecenas ac urna velit. Donec mattis id dolor eget congue. Nulla dictum erat augue. In maximus massa eget mi maximus tincidunt. Cras ullamcorper justo nisi, id tempus leo feugiat sit amet. Praesent id erat eros. Morbi dui urna, congue eget volutpat eu, malesuada et nulla. Quisque fringilla maximus nisi sollicitudin vehicula. Sed nec turpis euismod, hendrerit nibh ac, finibus erat. Morbi luctus mi magna, id aliquet nisi posuere in. Donec accumsan volutpat arcu, at luctus tortor ornare et.<\/p>",
+        "align": "tl",
+        "layout": "container",
+        "mg": "50px,,50px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    }
+  },
+  "order": [
+    "heading",
+    "main",
+    "1649258909d1979385",
+    "1649258937aed0cc41"
+  ]
+}

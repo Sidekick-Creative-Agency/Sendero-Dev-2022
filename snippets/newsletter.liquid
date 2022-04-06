@@ -19,6 +19,10 @@
                   <div class="{{class_email}} col_email"><input type="email" name="email" placeholder="{{ 'general.newsletter_form.email_placeholder' | t }}"  value="{% if customer %}{{ customer.email }}{% endif %}" class="{{class_ip}} input-text" required="required"></div>
                   <div class="{{class_btn}}"><button type="submit" class="css_add_ld btn_new_icon_{{btn_icon}} w__100 submit-btn truncate klaviyo_btn{% if checkbox_mail %} mail_agree pr{% endif %}"><span>{{ 'general.newsletter_form.submit' | t }}</span></button></div>
                </div>
+               <div class="signup-newsletter-form row no-gutters pr oh {{class}}">
+                  <div class="{{class_email}} col_email"><input type="email" name="email" placeholder="{{ 'general.newsletter_form.email_placeholder' | t }}"  value="{% if customer %}{{ customer.email }}{% endif %}" class="{{class_ip}} input-text" required="required"></div>
+                  <div class="{{class_btn}}"><button type="submit" class="css_add_ld btn_new_icon_{{btn_icon}} w__100 submit-btn truncate klaviyo_btn{% if checkbox_mail %} mail_agree pr{% endif %}"><span>{{ 'general.newsletter_form.submit' | t }}</span></button></div>
+               </div>
                {%- if checkbox_mail -%}{%- render 'conditions_mail',html:'p',margin:'mt__15',stt_link:settings.link_mail,sid:sid -%}{%- endif -%}
             </div>
            <div class="mc4wp-response klaviyo_messages">
@@ -43,11 +47,13 @@
      {%- form 'customer', class:'js_mail_agree mc4wp-form pr z_100' -%}
         <input type="hidden" name="contact[tags]" value="newsletter">
         <div class="mc4wp-form-fields">
-           <div class="signup-newsletter-form row no-gutters pr oh {{class}}">
-              <div class="{{class_email}} col_email"><input type="email" name="contact[email]" placeholder="{{ 'general.newsletter_form.email_placeholder' | t }}"  value="{% if customer %}{{ customer.email }}{% endif %}" class="{{class_ip}} input-text" required="required"></div>
-              <div class="{{class_btn}}"><button type="submit" class="btn_new_icon_{{btn_icon}} w__100 submit-btn truncate{% if checkbox_mail %} mail_agree pr{% endif %}"><span>{{ 'general.newsletter_form.submit' | t }}</span></button></div>
-           </div>
-          {%- if checkbox_mail -%}{%- render 'conditions_mail',html:'p',margin:'mt__15',stt_link:settings.link_mail,sid:sid -%}{%- endif -%}
+         <div class="signup-newsletter-form row no-gutters pr oh {{class}}">
+            <div class="{{class_email}} col_email"><input type="email" name="contact[email]" placeholder="{{ 'general.newsletter_form.email_placeholder' | t }}"  value="{% if customer %}{{ customer.email }}{% endif %}" class="{{class_ip}} input-text" required="required"></div>
+         </div>
+         <div class="row no-gutters pr oh {{class}}">
+            <div class="{{class_btn}} pt__20"><button type="submit" class="btn_new_icon_{{btn_icon}} w__100 submit-btn truncate{% if checkbox_mail %} mail_agree pr{% endif %}"><span>{{ 'general.newsletter_form.submit' | t }}</span></button></div>
+         </div>
+      {%- if checkbox_mail -%}{%- render 'conditions_mail',html:'p',margin:'mt__15',stt_link:settings.link_mail,sid:sid -%}{%- endif -%}
         </div>
          <div class="mc4wp-response">
             {%- if form.posted_successfully? -%}<div class="shopify-message"><i class="las la-check"></i>{{ 'general.newsletter_form.confirmation' | t }}</div>{%- elsif form.errors -%}<div class="shopify-error"><i class="las la-exclamation-triangle"></i>{{ form.errors | default_errors }}</div>{%- endif -%}
