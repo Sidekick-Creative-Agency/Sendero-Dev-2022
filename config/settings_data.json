@@ -798,7 +798,6 @@
             "settings": {
               "align": "tl_md",
               "align_mb": "tl",
-              "image": "shopify:\/\/shop_images\/header-logo-pad_8fd942d3-0949-4316-9104-4f8519a3bab8.png",
               "logo_width": 95,
               "title": "Contact",
               "content": "<p><i class=\"pegk pe-7s-mail\"><\/i><span> <a href=\"mailto:contact@senderopc.com\">contact@senderopc.com<\/a><\/span><\/p><p><i class=\"pegk pe-7s-clock\"><\/i> <span>Mon-Fri | 8am-5pm | Central<\/span><\/p>",
@@ -868,22 +867,6 @@
             "settings": {
               "align": "tl_md",
               "align_mb": "tl",
-              "image": "shopify:\/\/shop_images\/header-logo-pad_8fd942d3-0949-4316-9104-4f8519a3bab8.png",
-              "logo_width": 350,
-              "title": "Contact",
-              "content": "<p><i class=\"pegk pe-7s-mail\"><\/i><span> <a href=\"mailto:contact@senderopc.com\">contact@senderopc.com<\/a><\/span><\/p><p><i class=\"pegk pe-7s-clock\"><\/i> <span>Mon-Fri | 8am-5pm | Central<\/span><\/p>",
-              "social_mode": "3",
-              "order": "1",
-              "cl": "3",
-              "cl_tb": "6",
-              "cl_mb": "12"
-            }
-          },
-          "1581504819652": {
-            "type": "logo",
-            "settings": {
-              "align": "tl_md",
-              "align_mb": "tl",
               "logo_width": 95,
               "title": "Contact",
               "content": "<p><i class=\"pegk pe-7s-mail\"><\/i><span> <a href=\"mailto:contact@senderopc.com\">contact@senderopc.com<\/a><\/span><\/p><p><i class=\"pegk pe-7s-clock\"><\/i> <span>Mon-Fri | 8am-5pm | Central<\/span><\/p>",
@@ -898,7 +881,6 @@
         "block_order": [
           "1581503840818",
           "1581503828337",
-          "1581504819652",
           "1581503819652"
         ],
         "settings": {
@@ -946,7 +928,7 @@
         ],
         "settings": {
           "layout": "6",
-          "bg": "#000000",
+          "bg": "#000",
           "cl": "#999999",
           "cl_a": "#dcdcdc",
           "cl_hover": "#56cfe1"
