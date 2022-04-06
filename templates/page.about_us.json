@@ -215,15 +215,15 @@
         "16492576096b122d98-2": {
           "type": "2",
           "settings": {
-            "font": "f__libre",
-            "title": "Kalles v1",
+            "font": "f_body",
+            "title": "“Sendero” is the Spanish word for “trail” or “path.” Although the origin of the name is uncertain, around these parts if you’re going out to walk a “sendero,” there’s a good chance folks know exactly what you mean. We like to think we’re building our own “sendero” here by following the trails blazed by our role models and industry leaders. We stand wholeheartedly with outdoor inclusion, cultural preservation, public land protection, and conservation through wildlife management. We’re more or less simple folks, and we hold our values high: an honest handshake, a hard day’s work, free-flowing rivers, native fish, public land, quality gear, live music, art for art’s sake, craft beverages, and fine Texas BBQ.",
             "color": "#fff",
             "fw_text": 400,
-            "fs_text": 14,
-            "lh_text": 0,
+            "fs_text": 12,
+            "lh_text": 16,
             "ls_text": 0,
-            "fs_mb_text": 14,
-            "lh_mb_text": 0,
+            "fs_mb_text": 12.5,
+            "lh_mb_text": 14,
             "ls_mb_text": 0,
             "hide": false
           }
