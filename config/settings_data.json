@@ -771,48 +771,49 @@
       "footer_top": {
         "type": "footer_top",
         "blocks": {
-          "1581507840818": {
-            "type": "menu",
+          "e397beeb-6328-4a88-b922-52d9b4407a5a": {
+            "type": "html",
             "settings": {
-              "title": "Quick Links",
-              "menu": "",
+              "title": "Live Chat",
+              "content": "<p>Chat now with one of our sales representatives or email us at <a href=\"mailto:contact@senderopc.com\">contact@senderopc.com<\/a><\/p>",
               "order": "1",
-              "cl": "2",
+              "cl": "4",
               "cl_tb": "6",
               "cl_mb": "12"
             }
           },
-          "1581507828337": {
-            "type": "menu",
+          "dedf2f2c-de36-485a-99cb-83211a553fc6": {
+            "type": "html",
             "settings": {
-              "title": "Support",
-              "menu": "",
+              "title": "Order Status",
+              "content": "<p>Chat now with one of our sales representatives or email us at <a href=\"mailto:contact@senderopc.com\">contact@senderopc.com<\/a><\/p>",
               "order": "1",
-              "cl": "2",
+              "cl": "4",
               "cl_tb": "6",
               "cl_mb": "12"
             }
           },
-          "1581507819652": {
-            "type": "logo",
+          "ca7c3c3d-9f84-41a3-8d9a-a982510d03ae": {
+            "type": "mail",
             "settings": {
-              "align": "tl_md",
-              "align_mb": "tl",
-              "logo_width": 95,
-              "title": "Contact",
-              "content": "<p><i class=\"pegk pe-7s-mail\"><\/i><span> <a href=\"mailto:contact@senderopc.com\">contact@senderopc.com<\/a><\/span><\/p><p><i class=\"pegk pe-7s-clock\"><\/i> <span>Mon-Fri | 8am-5pm | Central<\/span><\/p>",
-              "social_mode": "3",
+              "newl_des": "1",
+              "btn_icon": false,
+              "title": "Newsletter Signup",
+              "sub_title": "Subscribe to our newsletter and get 10% off your first purchase",
+              "source": "1",
+              "svg": "amazon_payments,american_express,apple_pay,bitcoin,dankort,diners_club,discover,dogecoin,dwolla,forbrugsforeningen,interac,google_pay,jcb,klarna,klarna-pay-later,litecoin,maestro,master,paypal,shopify_pay,sofort,visa",
+              "height": 30,
               "order": "1",
-              "cl": "3",
+              "cl": "4",
               "cl_tb": "6",
               "cl_mb": "12"
             }
           }
         },
         "block_order": [
-          "1581507840818",
-          "1581507828337",
-          "1581507819652"
+          "e397beeb-6328-4a88-b922-52d9b4407a5a",
+          "dedf2f2c-de36-485a-99cb-83211a553fc6",
+          "ca7c3c3d-9f84-41a3-8d9a-a982510d03ae"
         ],
         "settings": {
           "sticky": false,
