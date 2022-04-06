@@ -828,13 +828,12 @@
           "bd_ip": "#999999",
           "cl_btn": "#696969",
           "cl_txt": "#dcdcdc",
-          "bg": "#000000",
+          "bg": "#ffffff",
           "bg_repeat": "no-repeat",
           "bg_size": "cover",
           "bg_att": "scroll",
           "bg_pos": "center center",
-          "image": "shopify:\/\/shop_images\/FooterBG.jpg",
-          "cl_overlay": "#000000",
+          "cl_overlay": "#ffffff",
           "cl_opacity": 0
         }
       },
