@@ -872,7 +872,7 @@
           "1581507860120": {
             "type": "copy",
             "settings": {
-              "text": "Copyright © [year] <span class=\"cp\">Sendero Provisions Co.<\/span> all rights reserved."
+              "text": "Copyright © [year] Sendero Provisions Co. all rights reserved."
             }
           },
           "1581507855652": {
@@ -888,9 +888,9 @@
         ],
         "settings": {
           "layout": "6",
-          "bg": "#ffffff",
-          "cl": "#878787",
-          "cl_a": "#878787",
+          "bg": "#000",
+          "cl": "#999999",
+          "cl_a": "#dcdcdc",
           "cl_hover": "#56cfe1"
         }
       },
