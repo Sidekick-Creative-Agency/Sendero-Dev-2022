@@ -95,17 +95,49 @@
             "br_pd": 20,
             "br_pd_mb": 10
           }
+        },
+        "a39e865f-ca51-4fd4-8289-622c1591a0b5": {
+          "type": "img",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/homepage_hero_image_1.jpg",
+            "pos_img": "center center",
+            "cl_img": "",
+            "link_img1": "",
+            "open_link": "_blank",
+            "caption_w": "2",
+            "cap_v_pos": 50,
+            "cap_h_pos": 39,
+            "txt_align": "tl_md",
+            "cap_v_pos_mb": 50,
+            "cap_h_pos_mb": 39,
+            "txt_align_mb": "tl",
+            "cl_overlay": "#000000",
+            "cl_opacity": 0,
+            "ani_img": "none",
+            "ani_txt": "none",
+            "bg_content_bl": false,
+            "bg_content_cl": "#ffffff",
+            "bg_content_op": 50,
+            "content_pd": "40px 80px",
+            "content_pd_mb": "10px 20px",
+            "border_bl": false,
+            "br_color": "#222222",
+            "br_style": "solid",
+            "br_pd": 20,
+            "br_pd_mb": 10
+          }
         }
       },
       "block_order": [
         "16357021760efbe511-0",
         "16357021760efbe511-3",
-        "16357021760efbe511-6"
+        "16357021760efbe511-6",
+        "a39e865f-ca51-4fd4-8289-622c1591a0b5"
       ],
       "settings": {
-        "se_height": "adapt",
+        "se_height": "cus_h",
         "use_custom_h": "1",
-        "h_des": "600px",
+        "h_des": "800px",
         "h_tb": "500px",
         "h_mb": "250px",
         "effect": "0",
@@ -117,9 +149,9 @@
         "btn_vi": "1",
         "btn_owl": "2",
         "btn_color": "3",
-        "dot": false,
+        "dot": true,
         "dot_owl": "2",
-        "dot_color": "1",
+        "dot_color": "2",
         "layout": "nt_full",
         "cl_bg": "",
         "mg": ",,50px,",
@@ -285,7 +317,7 @@
             "title": "MORE SENDERO SESSIONS",
             "btn_link": "\/sessions",
             "open_link": "_self",
-            "title2": "Shop Now 2",
+            "title2": "",
             "btn_link2": "",
             "open_link2": "_blank",
             "btn_w": false,
@@ -328,120 +360,6 @@
         "cl_overlay": "#181818",
         "cl_opacity": 60,
         "layout": "nt_full",
-        "mg": "50px,,50px,",
-        "pd": "",
-        "mg_mb": "",
-        "pd_mb": ""
-      }
-    },
-    "category-slider-alt-header": {
-      "type": "Category-slider-alt-header",
-      "settings": {
-        "title": "Best Seller Slider",
-        "sub_title": "Sub Text",
-        "sub_font": "2",
-        "btn_title": "See all products",
-        "style_title": "title_1",
-        "ic_tt": "gem",
-        "show_clpr": false,
-        "collection": "",
-        "limit": 10,
-        "space": 30,
-        "use_pagination": "none",
-        "btn_rd": false,
-        "btn_icon": false,
-        "btn_style": "default",
-        "col_pr": "15",
-        "col_pr_tb": "3",
-        "col_pr_mb": "6",
-        "pr_des": "1",
-        "show_vendor": false,
-        "use_cdt": false,
-        "round_cd": false,
-        "cdt_des": "1",
-        "loop": true,
-        "au_time": 0,
-        "au_hover": true,
-        "button": true,
-        "btn_vi": "1",
-        "btn_owl": "2",
-        "btn_color": "1",
-        "dot": false,
-        "dot_owl": "1",
-        "dot_color": "1",
-        "use_eq_height": true,
-        "image_ratio": "ratio1_1",
-        "image_size": "nt_contain",
-        "image_position": "8",
-        "cp_code": false,
-        "layout": "wrap",
-        "cl_bg": "",
-        "mg": "50px,,50px,",
-        "pd": "",
-        "mg_mb": "",
-        "pd_mb": ""
-      }
-    },
-    "1649205928cbce2929": {
-      "type": "testimonials",
-      "blocks": {
-        "16492059288cd20427-0": {
-          "type": "quote",
-          "settings": {
-            "content": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
-            "title": "Author's name",
-            "pos": "",
-            "rating": 5
-          }
-        },
-        "16492059288cd20427-1": {
-          "type": "quote",
-          "settings": {
-            "content": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
-            "title": "Author's name",
-            "pos": "",
-            "rating": 5
-          }
-        },
-        "16492059288cd20427-2": {
-          "type": "quote",
-          "settings": {
-            "content": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
-            "title": "Author's name",
-            "pos": "",
-            "rating": 5
-          }
-        }
-      },
-      "block_order": [
-        "16492059288cd20427-0",
-        "16492059288cd20427-1",
-        "16492059288cd20427-2"
-      ],
-      "settings": {
-        "title": "Don't Just Take Our Word For It",
-        "sub_title": "",
-        "sub_font": "2",
-        "style_title": "title_1",
-        "ic_tt": "gem",
-        "show_clpr": false,
-        "layout_des": "2",
-        "ter_des": "5",
-        "col_pr": "4",
-        "col_pr_tb": "6",
-        "loop": true,
-        "au_time": 0,
-        "au_hover": true,
-        "button": true,
-        "btn_vi": "1",
-        "btn_owl": "2",
-        "btn_color": "1",
-        "dot": false,
-        "dot_owl": "2",
-        "dot_color": "1",
-        "use_pr": false,
-        "layout": "wrap",
-        "cl_bg": "",
         "mg": "50px,,50px,",
         "pd": "",
         "mg_mb": "",
@@ -511,11 +429,11 @@
       "settings": {
         "open_link": "_self",
         "layout_des": "1",
-        "space": "2",
+        "space": "0",
         "rounded_ins": "0",
-        "col_pr": "4",
-        "col_pr_tb": "4",
-        "col_pr_mb": "4",
+        "col_pr": "3",
+        "col_pr_tb": "3",
+        "col_pr_mb": "6",
         "loop": false,
         "au_time": 0,
         "au_hover": true,
@@ -538,27 +456,124 @@
         "pd_mb": ""
       }
     },
-    "1649208945a7cd4208": {
-      "type": "blog-home-section",
+    "category-slider-alt-header": {
+      "type": "Category-slider-alt-header",
       "settings": {
-        "img_align": "center",
-        "img_position": "2",
-        "image_ratio": "auto",
-        "text_size2": "30,14",
-        "title": "TITLE OF ENTRY",
-        "subtitle1": "",
-        "subtitle2": "",
-        "subtitle3": "",
-        "text1": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-        "text2": "",
-        "text3": "",
-        "button_label": "READ MORE",
-        "button_link": "shopify:\/\/blogs\/adventure-on",
-        "open_link": "_blank",
-        "txt_align": "tl",
-        "use_shadow": false,
-        "cl_txt": "dark",
-        "layout": "container",
+        "title": "Best Seller Slider",
+        "sub_title": "Sub Text",
+        "sub_font": "2",
+        "btn_title": "See all products",
+        "style_title": "title_1",
+        "ic_tt": "gem",
+        "show_clpr": false,
+        "collection": "",
+        "limit": 10,
+        "space": 30,
+        "use_pagination": "none",
+        "btn_rd": false,
+        "btn_icon": false,
+        "btn_style": "default",
+        "col_pr": "15",
+        "col_pr_tb": "3",
+        "col_pr_mb": "6",
+        "pr_des": "1",
+        "show_vendor": false,
+        "use_cdt": false,
+        "round_cd": false,
+        "cdt_des": "1",
+        "loop": true,
+        "au_time": 0,
+        "au_hover": true,
+        "button": true,
+        "btn_vi": "1",
+        "btn_owl": "2",
+        "btn_color": "1",
+        "dot": false,
+        "dot_owl": "1",
+        "dot_color": "1",
+        "use_eq_height": true,
+        "image_ratio": "ratio1_1",
+        "image_size": "nt_contain",
+        "image_position": "8",
+        "cp_code": false,
+        "layout": "wrap",
+        "cl_bg": "",
+        "mg": "50px,,50px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    },
+    "1649254728acb29f6b": {
+      "type": "testimonials",
+      "blocks": {
+        "16492547288c7ba69e-0": {
+          "type": "quote",
+          "settings": {
+            "content": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "title": "Author's name",
+            "pos": "",
+            "rating": 5
+          }
+        },
+        "16492547288c7ba69e-1": {
+          "type": "quote",
+          "settings": {
+            "content": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "title": "Author's name",
+            "pos": "",
+            "rating": 5
+          }
+        },
+        "16492547288c7ba69e-2": {
+          "type": "quote",
+          "settings": {
+            "content": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "title": "Author's name",
+            "pos": "",
+            "rating": 5
+          }
+        },
+        "435bcdce-546c-4827-add9-dd12a7c1c30c": {
+          "type": "quote",
+          "settings": {
+            "content": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "title": "Author's name",
+            "pos": "",
+            "rating": 5
+          }
+        }
+      },
+      "block_order": [
+        "16492547288c7ba69e-0",
+        "16492547288c7ba69e-1",
+        "16492547288c7ba69e-2",
+        "435bcdce-546c-4827-add9-dd12a7c1c30c"
+      ],
+      "settings": {
+        "title": "DON'T JUST TAKE OUR WORD FOR IT",
+        "sub_title": "",
+        "sub_font": "2",
+        "style_title": "title_1",
+        "ic_tt": "gem",
+        "show_clpr": false,
+        "layout_des": "2",
+        "ter_des": "5",
+        "col_pr": "4",
+        "col_pr_tb": "6",
+        "loop": true,
+        "au_time": 0,
+        "au_hover": true,
+        "button": true,
+        "btn_vi": "1",
+        "btn_owl": "2",
+        "btn_color": "1",
+        "dot": false,
+        "dot_owl": "2",
+        "dot_color": "1",
+        "use_pr": false,
+        "layout": "wrap",
+        "cl_bg": "",
         "mg": "50px,,50px,",
         "pd": "",
         "mg_mb": "",
@@ -570,9 +585,8 @@
     "16357021760efbe511",
     "164882807276a2e749",
     "164865439396016512",
-    "category-slider-alt-header",
-    "1649205928cbce2929",
     "1648656519e4bb75df",
-    "1649208945a7cd4208"
+    "category-slider-alt-header",
+    "1649254728acb29f6b"
   ]
 }

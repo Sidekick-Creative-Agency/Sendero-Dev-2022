@@ -779,7 +779,7 @@
                 }
                 btn.addClass('pp_t4_opended');
                   var el = $('.nt_carousel_qs'),option = el.attr("data-flickityt4s-js") || '{}';
-                  //console.log(option)
+                  // console.log(option)
                   el.flickityt4s(JSON.parse(option));
                 body.addClass('open_ntqs');
                 
