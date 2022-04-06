@@ -798,6 +798,7 @@
             "settings": {
               "align": "tl_md",
               "align_mb": "tl",
+              "image": "shopify:\/\/shop_images\/header-logo-pad_8fd942d3-0949-4316-9104-4f8519a3bab8.png",
               "logo_width": 95,
               "title": "Contact",
               "content": "<p><i class=\"pegk pe-7s-mail\"><\/i><span> <a href=\"mailto:contact@senderopc.com\">contact@senderopc.com<\/a><\/span><\/p><p><i class=\"pegk pe-7s-clock\"><\/i> <span>Mon-Fri | 8am-5pm | Central<\/span><\/p>",
@@ -867,7 +868,8 @@
             "settings": {
               "align": "tl_md",
               "align_mb": "tl",
-              "logo_width": 95,
+              "image": "shopify:\/\/shop_images\/header-logo-pad_8fd942d3-0949-4316-9104-4f8519a3bab8.png",
+              "logo_width": 350,
               "title": "Contact",
               "content": "<p><i class=\"pegk pe-7s-mail\"><\/i><span> <a href=\"mailto:contact@senderopc.com\">contact@senderopc.com<\/a><\/span><\/p><p><i class=\"pegk pe-7s-clock\"><\/i> <span>Mon-Fri | 8am-5pm | Central<\/span><\/p>",
               "social_mode": "3",
@@ -944,7 +946,7 @@
         ],
         "settings": {
           "layout": "6",
-          "bg": "#000",
+          "bg": "#000000",
           "cl": "#999999",
           "cl_a": "#dcdcdc",
           "cl_hover": "#56cfe1"
