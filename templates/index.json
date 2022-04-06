@@ -447,8 +447,8 @@
         "pd_mb": ""
       }
     },
-    "164926013874fd6afd": {
-      "type": "Blog-home-page",
+    "blog-home-page": {
+      "type": "blog-home-page",
       "settings": {
         "blog": "adventure-on",
         "limit": 4,
@@ -672,7 +672,7 @@
     "164882807276a2e749",
     "164865439396016512",
     "category-slider-alt-header",
-    "164926013874fd6afd",
+    "blog-home-page",
     "1649254728acb29f6b",
     "1648656519e4bb75df"
   ]
