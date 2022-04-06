@@ -2,11 +2,11 @@
   assign se_stts = section.settings
   assign image = se_stts.image -%}
 
-<div class="footer__top_wrap footer_sticky_{{se_stts.sticky}} footer_collapse_{{se_stts.accordions}} nt_bg_overlay pr oh pb__30 pt__80{% if image %} lazyloadt4s{% endif %}" {% if image %} data-bgset="{{ image | img_url: '1x1' }}" data-ratio="{{image.aspect_ratio}}" data-sizes="auto"{% endif %}>
+<div class="footer__top_wrap footer_sticky_{{se_stts.sticky2}} footer_collapse_{{se_stts.accordions2}} nt_bg_overlay pr oh pb__30 pt__80{% if image %} lazyloadt4s{% endif %}" {% if image %} data-bgset="{{ image | img_url: '1x1' }}" data-ratio="{{image.aspect_ratio}}" data-sizes="auto"{% endif %}>
    <div class="container pr z_100">
       <div class="row">
       	{%- for block in section.blocks %}{% assign bk_stts = block.settings -%}
-      	<div class="col-lg-{{bk_stts.cl}} col-md-{{bk_stts.cl_tb}} col-{{bk_stts.cl_mb}} mb__50 order-lg-{{forloop.index}} order-{{bk_stts.order}}" {{ block.shopify_attributes }}>
+      	<div class="col-lg-{{bk_stts.cl2}} col-md-{{bk_stts.cl_tb2}} col-{{bk_stts.cl_mb2}} mb__50 order-lg-{{forloop.index}} order-{{bk_stts.order}}" {{ block.shopify_attributes }}>
       		{%- case block.type -%}
       		   {%- when 'logo' -%}
                 {%- assign image = bk_stts.image -%}
@@ -133,8 +133,8 @@
    </div>
 </div>
 
-{%- style -%}{% if se_stts.border %}.footer__top_wrap{border-style: solid;border-width: 1px 0;border-color: {{se_stts.bd_cl}}}{% endif -%}
-.footer__top a:hover{color: {{se_stts.cl_hover}}}.footer__top .signup-newsletter-form,.footer__top .signup-newsletter-form input.input-text {background-color: transparent;}.footer__top .signup-newsletter-form input.input-text {color: {{se_stts.cl_ip}} }.footer__top .signup-newsletter-form .submit-btn {color:{{section.settings.cl_txt}};background-color: {{se_stts.cl_btn}} }.footer__top .widget-title { color: {{se_stts.cl_h}} }.footer__top a:not(:hover) { color: {{se_stts.cl_a}} }.footer__top .signup-newsletter-form,.footer__top .signup-newsletter-form input.input-text{ border-color: {{se_stts.bd_ip}} }.footer__top .nt_bg_overlay:after{ background-color: {{se_stts.cl_overlay}};opacity: {{se_stts.cl_opacity | divided_by: 100.00}} }.footer__top_wrap {background-color: {{se_stts.bg}};background-repeat: {{se_stts.bg_repeat}};background-size: {{se_stts.bg_size}};background-attachment: {{se_stts.bg_att}};background-position: {{se_stts.bg_pos}};color:{{se_stts.cl}} }
+{%- style -%}{% if se_stts.border %}.footer__top_wrap{border-style: solid;border-width: 1px 0;border-color: {{se_stts.bd_cl2}}}{% endif -%}
+.footer__top a:hover{color: {{se_stts.cl_hover2}}}.footer__top .signup-newsletter-form,.footer__top .signup-newsletter-form input.input-text {background-color: transparent;}.footer__top .signup-newsletter-form input.input-text {color: {{se_stts.cl_ip2}} }.footer__top .signup-newsletter-form .submit-btn {color:{{section.settings.cl_txt2}};background-color: {{se_stts.cl_btn2}} }.footer__top .widget-title { color: {{se_stts.cl_h2}} }.footer__top a:not(:hover) { color: {{se_stts.cl_a2}} }.footer__top .signup-newsletter-form,.footer__top .signup-newsletter-form input.input-text{ border-color: {{se_stts.bd_ip2}} }.footer__top .nt_bg_overlay:after{ background-color: {{se_stts.cl_overlay2}};opacity: {{se_stts.cl_opacity2 | divided_by: 100.00}} }.footer__top_wrap {background-color: {{se_stts.bg2}};background-repeat: {{se_stts.bg_repeat2}};background-size: {{se_stts.bg_size2}};background-attachment: {{se_stts.bg_att2}};background-position: {{se_stts.bg_pos2}};color:{{se_stts.cl2}} }
 {%- if se_stts.sticky -%}
 @media (min-width:1025px){.wrapper_boxed #nt_footer {max-width: 1200px;margin-left: auto;margin-right: auto;}#nt_content{z-index:2}#nt_content,.kalles_prefooter{position:relative;background-color:#fff}#nt_footer{position:fixed;right:0;bottom:0;left:0;width:auto;transition:all .25s ease;-webkit-backface-visibility:hidden;backface-visibility:hidden;-webkit-perspective:800px;perspective:800px}.browser-Safari #nt_footer{opacity:0}.browser-Safari #nt_footer.visible_footer{opacity:1}}
 {%- endif -%}
@@ -152,21 +152,21 @@
       },
       {
         "type": "checkbox",
-        "id": "sticky",
+        "id": "sticky2",
         "info": "Enable\/disable sticky footer option",
         "label": "Sticky footer",
         "default": false
       },
       {
         "type": "checkbox",
-        "id": "accordions",
+        "id": "accordions2",
         "info": "Enable\/disable accordions mobile footer option",
         "label": "Accordions mobile",
         "default": false
       },
       {
         "type": "checkbox",
-        "id": "border",
+        "id": "border2",
         "info": "Enable\/disable border top\/bottom?",
         "label": "Border footer",
         "default": false
@@ -177,55 +177,55 @@
       },
       {
         "type": "color",
-        "id": "bd_cl",
+        "id": "bd_cl2",
         "label": "Border color Footer Top",
         "default": "#ededed"
       },
       {
         "type": "color",
-        "id": "cl_h",
+        "id": "cl_h2",
         "label": "Color Heading",
         "default": "#222"
       },
       {
         "type": "color",
-        "id": "cl",
+        "id": "cl2",
         "label": "Color Text",
         "default": "#878787"
       },
       {
         "type": "color",
-        "id": "cl_a",
+        "id": "cl_a2",
         "label": "Color Link",
         "default": "#878787"
       },
       {
         "type": "color",
-        "id": "cl_hover",
+        "id": "cl_hover2",
         "label": "Color Hover Link",
         "default": "#56cfe1"
       },
       {
         "type": "color",
-        "id": "cl_ip",
+        "id": "cl_ip2",
         "label": "Color input newsletter",
         "default": "#878787"
       },
       {
         "type": "color",
-        "id": "bd_ip",
+        "id": "bd_ip2",
         "label": "Border color input newsletter",
         "default": "#878787"
       },
       {
         "type": "color",
-        "id": "cl_btn",
+        "id": "cl_btn2",
         "label": "Background Color button newsletter",
         "default": "#333"
       },
       {
         "type": "color",
-        "id": "cl_txt",
+        "id": "cl_txt2",
         "label": "Color Text button newsletter",
         "default": "#fff"
       },
@@ -235,13 +235,13 @@
       },
       {
         "type": "color", 
-        "id": "bg",
+        "id": "bg2",
         "label": "Select Color",
         "default": "#f6f6f8"
       },
       {
         "type": "select",
-        "id": "bg_repeat",
+        "id": "bg_repeat2",
         "options": [
           {
             "value": "no-repeat",
@@ -270,7 +270,7 @@
       },
       {
         "type": "select",
-        "id": "bg_size",
+        "id": "bg_size2",
         "options": [
           {
             "value": "auto",
@@ -295,7 +295,7 @@
       },
       {
         "type": "select",
-        "id": "bg_att",
+        "id": "bg_att2",
         "options": [
           {
             "value": "fixed",
@@ -316,7 +316,7 @@
       },
       {
         "type": "select",
-        "id": "bg_pos",
+        "id": "bg_pos2",
         "label": "Image position",
         "default": "center center",
         "options": [
@@ -365,13 +365,13 @@
       },
       {
         "type": "color",
-        "id": "cl_overlay",
+        "id": "cl_overlay2",
         "label": "Overlay",
         "default": "#000"
       },
       {
         "type": "range",
-        "id": "cl_opacity",
+        "id": "cl_opacity2",
         "label": "Overlay opacity",
         "default": 0,
         "min": 0,
