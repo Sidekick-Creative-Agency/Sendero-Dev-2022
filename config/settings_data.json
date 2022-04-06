@@ -856,11 +856,12 @@
           "bd_ip": "#878787",
           "cl_btn": "#222222",
           "cl_txt": "#ffffff",
-          "bg": "#f6f6f8",
+          "bg": "#000000",
           "bg_repeat": "no-repeat",
           "bg_size": "cover",
           "bg_att": "scroll",
           "bg_pos": "center center",
+          "image": "shopify:\/\/shop_images\/FooterBG.jpg",
           "cl_overlay": "#000000",
           "cl_opacity": 0
         }
