@@ -187,6 +187,114 @@
         "mg_mb": "",
         "pd_mb": ""
       }
+    },
+    "1649257609430b6426": {
+      "type": "image_text_overlay",
+      "blocks": {
+        "16492576096b122d98-0": {
+          "type": "1",
+          "settings": {
+            "title": "SPIRIT OF THE WEST",
+            "color": "#fff",
+            "fw_text": 600,
+            "fs_text": 27.5,
+            "lh_text": 0,
+            "ls_text": 0,
+            "fs_mb_text": 14,
+            "lh_mb_text": 0,
+            "ls_mb_text": 0
+          }
+        },
+        "16492576096b122d98-1": {
+          "type": "6",
+          "settings": {
+            "sp": 10,
+            "sp_mb": 10
+          }
+        },
+        "16492576096b122d98-2": {
+          "type": "2",
+          "settings": {
+            "font": "f__libre",
+            "title": "Kalles v1",
+            "color": "#fff",
+            "fw_text": 400,
+            "fs_text": 14,
+            "lh_text": 0,
+            "ls_text": 0,
+            "fs_mb_text": 14,
+            "lh_mb_text": 0,
+            "ls_mb_text": 0,
+            "hide": false
+          }
+        },
+        "16492576096b122d98-3": {
+          "type": "6",
+          "settings": {
+            "sp": 10,
+            "sp_mb": 10
+          }
+        },
+        "16492576096b122d98-4": {
+          "type": "3",
+          "settings": {
+            "title": "Shop Now",
+            "btn_link": "",
+            "open_link": "_blank",
+            "title2": "Shop Now 2",
+            "btn_link2": "",
+            "open_link2": "_blank",
+            "btn_w": false,
+            "btn_icon": false,
+            "cl_txt": "#fff",
+            "cl_bg": "#222",
+            "cl_bd": "#222",
+            "fs_text": 14,
+            "fw_text": 600,
+            "h": 40,
+            "ls_text": 0,
+            "bdr": 0,
+            "pd": 15,
+            "fs_mb_text": 14,
+            "h_mb": 40,
+            "ls_mb_text": 0,
+            "bdr_mb": 0,
+            "pd_mb": 15
+          }
+        }
+      },
+      "block_order": [
+        "16492576096b122d98-0",
+        "16492576096b122d98-1",
+        "16492576096b122d98-2",
+        "16492576096b122d98-3",
+        "16492576096b122d98-4"
+      ],
+      "settings": {
+        "se_height": "cus_h",
+        "use_custom_h": "1",
+        "h_des": "300px",
+        "h_tb": "250px",
+        "h_mb": "150px",
+        "image": "shopify:\/\/shop_images\/gautier-salles-uffQnKuJ-hc-unsplash.jpg",
+        "use_pr": true,
+        "img_align": "bottom",
+        "caption_w": "1",
+        "cap_v_pos": 50,
+        "cap_h_pos": 50,
+        "txt_align": "tc_md",
+        "cap_v_pos_mb": 50,
+        "cap_h_pos_mb": 50,
+        "txt_align_mb": "tl",
+        "use_shadow": false,
+        "cl_overlay": "#000",
+        "cl_opacity": 0,
+        "layout": "nt_full",
+        "mg": "50px,,50px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
     }
   },
   "order": [
@@ -195,6 +303,7 @@
     "16492574913de1faed",
     "164856885666aace2e",
     "1648570607be123660",
-    "16485817723adff103"
+    "16485817723adff103",
+    "1649257609430b6426"
   ]
 }
