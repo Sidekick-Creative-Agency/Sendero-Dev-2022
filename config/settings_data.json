@@ -464,7 +464,7 @@
               "lb_cl": "rgba(0,0,0,0)",
               "lazy_mn": true,
               "pos": "default",
-              "wid": "cus",
+              "wid": "full",
               "cus_wid": 1200
             }
           },
@@ -664,7 +664,7 @@
               "lb_cl": "",
               "lazy_mn": true,
               "pos": "default",
-              "wid": "cus",
+              "wid": "full",
               "cus_wid": 1200
             }
           },
