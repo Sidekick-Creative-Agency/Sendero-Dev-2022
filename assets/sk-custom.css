@@ -233,8 +233,10 @@
     padding-bottom:20px;
 }
 .ftr-icn {
+    padding-right:10px;
 }
 .ftr-icn-txt {
+    line-height: 1.3em;
 }
 
 /*--------------------------------------------------------/
