@@ -103,9 +103,9 @@
         "16357021760efbe511-6"
       ],
       "settings": {
-        "se_height": "adapt",
+        "se_height": "cus_h",
         "use_custom_h": "1",
-        "h_des": "600px",
+        "h_des": "800px",
         "h_tb": "500px",
         "h_mb": "250px",
         "effect": "0",
@@ -197,6 +197,7 @@
       "settings": {
         "title": "Collection list",
         "sub_title": "Sub Text",
+        "heading": "SHOP BY CATEGORY",
         "sub_font": "2",
         "style_title": "title_1",
         "ic_tt": "gem",
