@@ -2,11 +2,11 @@
   assign se_stts = section.settings
   assign image = se_stts.image -%}
 
-<div class="footer__top_wrap footer_sticky_{{se_stts.sticky2}} footer_collapse_{{se_stts.accordions2}} nt_bg_overlay pr oh pb__30 pt__80{% if image %} lazyloadt4s{% endif %}" {% if image %} data-bgset="{{ image | img_url: '1x1' }}" data-ratio="{{image.aspect_ratio}}" data-sizes="auto"{% endif %}>
+<div class="footer__top_wrap footer_sticky_{{se_stts.sticky2}} footer_collapse_{{se_stts.accordions2}} nt_bg_overlay pr oh pb__30 pt__40{% if image %} lazyloadt4s{% endif %}" {% if image %} data-bgset="{{ image | img_url: '1x1' }}" data-ratio="{{image.aspect_ratio}}" data-sizes="auto"{% endif %}>
    <div class="container pr z_100">
       <div class="row">
       	{%- for block in section.blocks %}{% assign bk_stts = block.settings -%}
-      	<div class="col-lg-{{bk_stts.cl}} col-md-{{bk_stts.cl_tb}} col-{{bk_stts.cl_mb}} mb__50 order-lg-{{forloop.index}} order-{{bk_stts.order}}" {{ block.shopify_attributes }} style="padding:40px;">
+      	<div class="col-lg-{{bk_stts.cl}} col-md-{{bk_stts.cl_tb}} col-{{bk_stts.cl_mb}} mb__10 order-lg-{{forloop.index}} order-{{bk_stts.order}}" {{ block.shopify_attributes }} style="padding:40px;">
       		{%- case block.type -%}
       		   {%- when 'logo' -%}
                 {%- assign image = bk_stts.image -%}

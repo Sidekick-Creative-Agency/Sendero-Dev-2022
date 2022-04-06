@@ -6,7 +6,7 @@
    <div class="container pr z_100">
       <div class="row">
       	{%- for block in section.blocks %}{% assign bk_stts = block.settings -%}
-      	<div class="col-lg-{{bk_stts.cl}} col-md-{{bk_stts.cl_tb}} col-{{bk_stts.cl_mb}} mb__50 order-lg-{{forloop.index}} order-{{bk_stts.order}}" {{ block.shopify_attributes }} style="padding:50px;">
+      	<div class="col-lg-{{bk_stts.cl}} col-md-{{bk_stts.cl_tb}} col-{{bk_stts.cl_mb}} mb__20 order-lg-{{forloop.index}} order-{{bk_stts.order}}" {{ block.shopify_attributes }} style="padding:50px;">
       		{%- case block.type -%}
       		   {%- when 'logo' -%}
                 {%- assign image = bk_stts.image -%}
