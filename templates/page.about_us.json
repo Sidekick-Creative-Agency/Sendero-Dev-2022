@@ -163,31 +163,6 @@
         "pd_mb": ""
       }
     },
-    "16485817723adff103": {
-      "type": "image_text_sig",
-      "settings": {
-        "sig_title": "Some Name",
-        "sig_sub_title": "Owner",
-        "sub_font": "2",
-        "img_align": "center",
-        "img_position": "1",
-        "image_ratio": "auto",
-        "text_size2": "30,14",
-        "title": "Image with text",
-        "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-        "button_label": "Shop Now",
-        "button_link": "",
-        "open_link": "_blank",
-        "txt_align": "tc",
-        "use_shadow": false,
-        "cl_txt": "dark",
-        "layout": "container",
-        "mg": "",
-        "pd": "",
-        "mg_mb": "",
-        "pd_mb": ""
-      }
-    },
     "1649257609430b6426": {
       "type": "image_text_overlay",
       "blocks": {
@@ -283,7 +258,6 @@
     "16492574913de1faed",
     "164856885666aace2e",
     "1648570607be123660",
-    "16485817723adff103",
     "1649257609430b6426"
   ]
 }
