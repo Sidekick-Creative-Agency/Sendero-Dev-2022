@@ -837,6 +837,75 @@
           "cl_opacity": 0
         }
       },
+      "footer_middle": {
+        "type": "footer_middle",
+        "blocks": {
+          "1581507840818": {
+            "type": "menu",
+            "settings": {
+              "title": "Quick Links",
+              "menu": "",
+              "order": "1",
+              "cl": "2",
+              "cl_tb": "6",
+              "cl_mb": "12"
+            }
+          },
+          "1581507828337": {
+            "type": "menu",
+            "settings": {
+              "title": "Support",
+              "menu": "",
+              "order": "1",
+              "cl": "2",
+              "cl_tb": "6",
+              "cl_mb": "12"
+            }
+          },
+          "1581507819652": {
+            "type": "logo",
+            "settings": {
+              "align": "tl_md",
+              "align_mb": "tl",
+              "logo_width": 95,
+              "title": "Contact",
+              "content": "<p><i class=\"pegk pe-7s-mail\"><\/i><span> <a href=\"mailto:contact@senderopc.com\">contact@senderopc.com<\/a><\/span><\/p><p><i class=\"pegk pe-7s-clock\"><\/i> <span>Mon-Fri | 8am-5pm | Central<\/span><\/p>",
+              "social_mode": "3",
+              "order": "1",
+              "cl": "3",
+              "cl_tb": "6",
+              "cl_mb": "12"
+            }
+          }
+        },
+        "block_order": [
+          "1581507840818",
+          "1581507828337",
+          "1581507819652"
+        ],
+        "settings": {
+          "sticky": false,
+          "accordions": true,
+          "border": false,
+          "bd_cl": "#000000",
+          "cl_h": "#999999",
+          "cl": "#999999",
+          "cl_a": "#999999",
+          "cl_hover": "#04a4a2",
+          "cl_ip": "#999999",
+          "bd_ip": "#999999",
+          "cl_btn": "#696969",
+          "cl_txt": "#dcdcdc",
+          "bg": "#000000",
+          "bg_repeat": "no-repeat",
+          "bg_size": "cover",
+          "bg_att": "scroll",
+          "bg_pos": "center center",
+          "image": "shopify:\/\/shop_images\/FooterBG.jpg",
+          "cl_overlay": "#000000",
+          "cl_opacity": 0
+        }
+      },
       "footer_bot": {
         "type": "footer_bot",
         "blocks": {
