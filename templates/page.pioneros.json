@@ -6,7 +6,7 @@
         "89b1a94e-2cf5-4075-a6af-0969fbaeae2c": {
           "type": "1",
           "settings": {
-            "color": "#fff"
+            "color": "#ffffff"
           }
         }
       },
@@ -15,7 +15,7 @@
       ],
       "settings": {
         "parallax": false,
-        "color": "#000",
+        "color": "#000000",
         "overlay": 54,
         "padding": 100,
         "paddingmb": 50,
@@ -29,10 +29,94 @@
       "type": "main-page",
       "settings": {
       }
+    },
+    "1649253785b4e78813": {
+      "type": "feature_columns",
+      "blocks": {
+        "164925378551f6e47c-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "title": "Add a title or tagline",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "open_link": "_blank",
+            "btn_style": "1"
+          }
+        },
+        "164925378551f6e47c-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "title": "Add a title or tagline",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "open_link": "_blank",
+            "btn_style": "1"
+          }
+        },
+        "164925378551f6e47c-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "title": "Add a title or tagline",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "open_link": "_blank",
+            "btn_style": "1"
+          }
+        }
+      },
+      "block_order": [
+        "164925378551f6e47c-0",
+        "164925378551f6e47c-1",
+        "164925378551f6e47c-2"
+      ],
+      "settings": {
+        "title": "",
+        "sub_title": "",
+        "sub_font": "2",
+        "style_title": "title_1",
+        "ic_tt": "gem",
+        "show_clpr": false,
+        "round": 0,
+        "section_layout": "1",
+        "cat_space": "30",
+        "col": "4",
+        "col_md": "4",
+        "col_mb": "12",
+        "pos_text": "default",
+        "space": 20,
+        "align_text": "tl",
+        "fs_hd": 22,
+        "fs_txt": 14,
+        "w_img": 0,
+        "loop": true,
+        "autoplay": false,
+        "au_time": 6,
+        "au_hover": true,
+        "button": false,
+        "btn_vi": "1",
+        "btn_owl": "1",
+        "btn_color": "0",
+        "dot": true,
+        "dot_owl": "1",
+        "dot_color": "1",
+        "layout": "container",
+        "cl_bg": "",
+        "mg": "50px,,50px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
     }
   },
   "order": [
     "heading",
-    "main"
+    "main",
+    "1649253785b4e78813"
   ]
 }
