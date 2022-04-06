@@ -237,7 +237,7 @@
     "des_shipbar": "0",
     "gift_wrap_pr": "gift-wrap",
     "link_ship": "",
-    "link_conditions": "",
+    "link_conditions": "privacy-policy-terms-of-service",
     "ship_calc_df_country": "United States",
     "show_multiple_currencies": true,
     "auto_currency": false,
