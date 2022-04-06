@@ -8,7 +8,7 @@
     "body_bg_size": "default",
     "body_bg_attachment": "default",
     "body_bg_position": "default",
-    "home_keywords": "Sendero, outdoors,",
+    "home_keywords": "Sendero, outdoors, fly fishing, hat, apparel, national parks,",
     "shop_author": "Sidekick Creative Agency",
     "use_rtl": true,
     "list_rtl": "ar",
@@ -237,7 +237,7 @@
     "des_shipbar": "0",
     "gift_wrap_pr": "gift-wrap",
     "link_ship": "",
-    "link_conditions": "",
+    "link_conditions": "privacy-policy-terms-of-service",
     "ship_calc_df_country": "United States",
     "show_multiple_currencies": true,
     "auto_currency": false,
@@ -739,7 +739,7 @@
               "mmtitle": "Brand",
               "url": "",
               "open_link": "_self",
-              "col": "3"
+              "col": "2"
             }
           },
           "66c4d1d7-1132-47d1-859b-78afb3bebe36": {
@@ -749,6 +749,16 @@
               "url": "",
               "open_link": "_self",
               "menu": "main-menu",
+              "col": "2"
+            }
+          },
+          "8d6c5968-eefa-4016-9930-f8fad1a58a4b": {
+            "type": "link",
+            "settings": {
+              "tt_hd": "",
+              "url": "",
+              "open_link": "_self",
+              "menu": "brand-2nd-column",
               "col": "2"
             }
           },
@@ -803,6 +813,7 @@
           "932e6253-0155-4ab3-b3c0-635dd62ee01b",
           "a7b29865-5b6c-426e-828c-b7e5c9ed5b8f",
           "66c4d1d7-1132-47d1-859b-78afb3bebe36",
+          "8d6c5968-eefa-4016-9930-f8fad1a58a4b",
           "283bb7a8-d7fa-4caa-95e4-8959282e1256",
           "c965e28c-e3b9-4da8-b4aa-3bace9552fbb"
         ],
@@ -889,7 +900,7 @@
             "type": "menu",
             "settings": {
               "title": "Quick Links",
-              "menu": "",
+              "menu": "quick-links-footer",
               "order": "1",
               "cl": "2",
               "cl_tb": "6",
@@ -900,7 +911,7 @@
             "type": "menu",
             "settings": {
               "title": "Support",
-              "menu": "",
+              "menu": "support-footer",
               "order": "1",
               "cl": "2",
               "cl_tb": "6",
@@ -959,7 +970,7 @@
           "bg_size": "cover",
           "bg_att": "scroll",
           "bg_pos": "center center",
-          "image": "shopify:\/\/shop_images\/FooterBG.jpg",
+          "image": "shopify:\/\/shop_images\/FooterBG_8c57be91-a42f-485a-8b5a-1bb9ddee4f22.jpg",
           "cl_overlay": "#000000",
           "cl_opacity": 0
         }
