@@ -900,7 +900,7 @@
             "type": "menu",
             "settings": {
               "title": "Quick Links",
-              "menu": "",
+              "menu": "quick-links-footer",
               "order": "1",
               "cl": "2",
               "cl_tb": "6",
@@ -911,7 +911,7 @@
             "type": "menu",
             "settings": {
               "title": "Support",
-              "menu": "",
+              "menu": "support-footer",
               "order": "1",
               "cl": "2",
               "cl_tb": "6",
