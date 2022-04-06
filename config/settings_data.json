@@ -820,7 +820,7 @@
             "type": "html",
             "settings": {
               "title": "Live Chat",
-              "content": "<div style=\"display:flex;\">\n<div><i class=\"pegk pe-7s-chat\"> <\/i><\/div>\n<div><p>Chat now with one of our sales representatives or email us at <a href=\"mailto:contact@senderopc.com\">contact@senderopc.com<\/a><\/p><\/div>\n<\/div><div><button type=\"submit\" class=\"submit-btn\"><span>Live Chat<\/span><\/button><\/div>",
+              "content": "<div class=\"ftr-icn-wrap\">\n<div class=\"ftr-icn\"><i class=\"pegk pe-7s-chat\"> <\/i><\/div>\n<div class=\"ftr-icn-txt\">Chat now with one of our sales representatives or email us at <a href=\"mailto:contact@senderopc.com\">contact@senderopc.com<\/a>\n<\/div>\n<\/div><div><button type=\"submit\" class=\"submit-btn\"><span>Live Chat<\/span><\/button><\/div>",
               "order": "1",
               "cl": "4",
               "cl_tb": "6",
@@ -967,6 +967,12 @@
       "footer_bot": {
         "type": "footer_bot",
         "blocks": {
+          "85f065ad-877f-419e-928f-1e0c7968ffa5": {
+            "type": "copy",
+            "settings": {
+              "text": "<!-- EMPTY PLACEHOLDER for left side -->"
+            }
+          },
           "1581507860120": {
             "type": "copy",
             "settings": {
@@ -981,6 +987,7 @@
           }
         },
         "block_order": [
+          "85f065ad-877f-419e-928f-1e0c7968ffa5",
           "1581507860120",
           "1581507855652"
         ],
