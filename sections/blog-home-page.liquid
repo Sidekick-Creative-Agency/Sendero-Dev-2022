@@ -37,7 +37,7 @@ assign sett_equal = se_stts.use_eq_height
 
 {%- capture layout -%}
 
-<div class="nt_se_{{sid}} {{se_stts.layout}} txt_shadow_{{se_stts.use_shadow}} nt_bg_lz lazyloadt4s item__position {{se_stts.img_align}}" data-bgset="{{ back_image | img_url: '1x1' }}" data-sizes="auto" data-ratio="{{back_image.aspect_ratio}}" data-parent-fit="contain">
+<div class="blog-background nt_se_{{sid}} {{se_stts.layout}} txt_shadow_{{se_stts.use_shadow}} nt_bg_lz lazyloadt4s item__position {{se_stts.img_align}}" data-bgset="{{ back_image | img_url: '1x1' }}" data-sizes="auto" data-ratio="{{back_image.aspect_ratio}}" data-parent-fit="contain">
 <div class="blog-home-outer-container">
   <div class="row no-gutters equal_nt {{img_ratio}} al_center flex_wrap_reverse" id="flex_wrap">
     <div class="col-12 col-md-6 txt_col_img txt-col-img-left">
@@ -45,7 +45,9 @@ assign sett_equal = se_stts.use_eq_height
         <h6 class="mb__20" style="font-family: 'Oswald'; letter-spacing: .1em; font-weight: 400; color: white">{{se_stts.subtitle1}}</h6>  
         <h2 class="mb__20 mt__0 {{cl_arr[0]}}" style="font-family: 'Oswald'; font-weight: 400; color: white">{{se_stts.title}}</h2>
         {{se_stts.text1}}
-          
+        <a href="/blogs"><div class="flex pt__20 shadow_wrap tl" style="align-items:center;">
+          <span class="blog-home-read-more"><h6>READ MORE<i class="las la-arrow-right"></i></h6></span>
+        </div></a>
           
           {%- if url != blank and se_stts.button_label -%}<p class="mg__0"><a class="button {{cl_arr[2]}}" href="{{url}}" target="{{se_stts.open_link}}">{{se_stts.button_label}}</a></p>{%- endif -%}
       </div>
@@ -57,7 +59,7 @@ assign sett_equal = se_stts.use_eq_height
         } 
       </style>
     </div>
-    <div class="col-12 col-md-6 ">
+    <div class="col-12 col-md-6">
       <div class="nt_img_txt oh pr middle center home-blog-img-container">
         {%- for i in (1..1) -%}{%- if blog_owl == blank %}{% break %}{% endif -%}
           <div class="home-blog-article-container nt_se_{{sid}} {{se_stts.layout}}">

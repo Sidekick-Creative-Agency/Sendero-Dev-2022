@@ -351,11 +351,7 @@ h6 {
   font-size: 1.1em;
 }
 p {
-<<<<<<< HEAD
-  margin-bottom: 1.3em;
-=======
   margin-bottom: 1.1em;
->>>>>>> main
 }
 button,
 input,
@@ -431,11 +427,7 @@ input[type="submit"] {
   padding: 5px 25px;
   background: #fff;
   color: #222;
-<<<<<<< HEAD
-  border-radius: 40px;
-=======
   border-radius: 0px;
->>>>>>> main
   font-size: 14px;
   font-weight: 600;
   min-height: 40px;
@@ -4098,11 +4090,7 @@ a.br_rd_false {
   display: inline;
 }
 .swatch {
-<<<<<<< HEAD
-  margin-bottom: 20px;
-=======
   margin-bottom: 10px;
->>>>>>> main
 }
 .swatch__title {
   font-size: 14px;
@@ -4111,20 +4099,12 @@ a.br_rd_false {
 }
 .swatch__list_pr {
   list-style: none;
-<<<<<<< HEAD
-  margin: 10px 0;
-=======
   margin: 10px -5px;
->>>>>>> main
   padding: 0;
 }
 .swatch_pr_item {
   display: inline-block;
   margin: 3px;
-<<<<<<< HEAD
-  margin-left: 0;
-=======
->>>>>>> main
   cursor: pointer;
 }
 .swatch__value_pr {
@@ -4846,11 +4826,7 @@ svg.ic_triangle_svg {
 .ul_tabs li.tab_title_block a {
   font-size: 14px;
   font-weight: 600;
-<<<<<<< HEAD
-  margin: 25px;
-=======
   margin: 10px;
->>>>>>> main
   line-height: 1.2;
   border-bottom: 2px solid transparent;
 }
@@ -6232,21 +6208,13 @@ a.button.btn_style_2:hover {
   height: 80px;
 }
 .signup-newsletter-form {
-<<<<<<< HEAD
-  border-radius: 50px;
-=======
   border-radius: 0px;
->>>>>>> main
   border: 1px solid #878787;
   padding: 2px;
 }
 .signup-newsletter-form .submit-btn {
   text-transform: none;
-<<<<<<< HEAD
-  border-radius: 50px;
-=======
   border-radius: 0px;
->>>>>>> main
   font-size: 14px;
   padding: 0 20px;
   margin: 0;
@@ -6257,11 +6225,7 @@ a.button.btn_style_2:hover {
 .signup-newsletter-form input.input-text {
   width: 100%;
   background-color: transparent;
-<<<<<<< HEAD
-  border-radius: 50px;
-=======
   border-radius: 0px;
->>>>>>> main
   padding: 0 10px;
   border: 0;
 }
@@ -6420,13 +6384,10 @@ a.button.btn_style_2:hover {
   background: #f6f6f8;
   color: #878787;
 }
-<<<<<<< HEAD
-=======
 .footer__middle_wrap {
   background: #f6f6f8;
   color: #878787;
 }
->>>>>>> main
 .footer__top i {
   font-size: 24px;
   margin-right: 5px;
@@ -6452,12 +6413,7 @@ a.button.btn_style_2:hover {
   color: #878787;
 }
 .footer__top p {
-<<<<<<< HEAD
-  margin-bottom: 1.3em;
-  line-height: 24px;
-=======
   line-height: 18px;
->>>>>>> main
 }
 .footer__bot_wrap {
   line-height: 1.5;
@@ -8768,12 +8724,7 @@ a.slt4_btn {
   }
   .cat_sortby > a {
     border: 1px solid #ddd;
-<<<<<<< HEAD
-    border-radius: 40px;
-    padding: 7px 7px 7px 15px;
-=======
     padding: 4px 4px 4px 10px;
->>>>>>> main
     min-width: 190px;
   }
   .cat_view .dev_tablet {
@@ -8833,30 +8784,18 @@ a.slt4_btn {
     display: inline-block;
   }
   .ul_tabs li.tab_title_block a {
-<<<<<<< HEAD
-    min-height: 30px;
-=======
     min-height: 40px;
->>>>>>> main
     display: -ms-inline-flexbox;
     display: inline-flex;
     -ms-flex-align: center;
     align-items: center;
     border-radius: 40px;
     border: 1px solid transparent;
-<<<<<<< HEAD
-    padding: 0;
-    margin: 0;
-  }
-  .browser-Internet.platform-Windows .ul_tabs li.tab_title_block a {
-    line-height: 30px;
-=======
     padding: 0 25px;
     margin: 0;
   }
   .browser-Internet.platform-Windows .ul_tabs li.tab_title_block a {
     line-height: 40px;
->>>>>>> main
   }
   .sp-tabs {
     padding-top: 50px;
@@ -8926,11 +8865,7 @@ a.slt4_btn {
     padding: 2px;
   }
   .newl_des_1 .signup-newsletter-form .submit-btn {
-<<<<<<< HEAD
-    border-radius: 50px;
-=======
     border-radius: 0px;
->>>>>>> main
   }
   .newl_des_6 .section-title {
     font-size: 35px;

@@ -302,6 +302,10 @@
     justify-content: center;
     align-items: center;
 }
+.section-title {
+    display: flex;
+    justify-content: center;
+}
 .test-outer-container {
     display: flex;
     align-items: center;
@@ -326,9 +330,14 @@
 }
 .test-outer-container .flickityt4s-prev-next-button.previous {
     left: 0;
+    margin-left: -5%;
+}
+.test-outer-container .flickityt4s-prev-next-button.previous:hover, .test-outer-container .flickityt4s-prev-next-button.next:hover {
+    background-color: black;
 }
 .test-outer-container .flickityt4s-prev-next-button.next {
     right: 0;
+    margin-right: -5%;
 }
 .test-inner-container {
     height: 300px;
@@ -352,14 +361,21 @@
     /* width: 50%;
     padding: 10px; */
 }
-.blog-home-link {
-    padding: 0 20px 0 0;
-    font-size: 12px;
+.blog-home-read-more h6{
+    padding: 0;
+    font-size: 13.5px;
     font-weight: 400;
-    color: #000;
-    letter-spacing: 0.15em;
+    color: white;
+    /* letter-spacing: 0.15em; */
 }
-
+.blog-home-read-more i {
+    font-size: 16px;
+    font-weight: 900;
+    transition: .5s;
+}
+.blog-home-read-more:hover i {
+    margin-left: 5px;
+}
 .home-blog-article-container .articles {
     max-width: 100%;
     display: flex;
@@ -392,6 +408,7 @@
 }
 .blog-home-outer-container p{
     color: white;
+    margin: 0;
 }
 /*---------------- ADD TO CART BUTTON -------------------*/
 .single_add_to_cart_button {
