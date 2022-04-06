@@ -6,7 +6,7 @@
         "89b1a94e-2cf5-4075-a6af-0969fbaeae2c": {
           "type": "1",
           "settings": {
-            "color": "#fff"
+            "color": "#ffffff"
           }
         }
       },
@@ -15,7 +15,7 @@
       ],
       "settings": {
         "parallax": false,
-        "color": "#000",
+        "color": "#000000",
         "overlay": 54,
         "padding": 100,
         "paddingmb": 50,
@@ -29,10 +29,532 @@
       "type": "main-page",
       "settings": {
       }
+    },
+    "1649253785b4e78813": {
+      "type": "feature_columns",
+      "blocks": {
+        "164925378551f6e47c-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-06_at_8.52.30_AM.png",
+            "title": "Cameron Cushman",
+            "text": "<p>Fly Fisher<\/p>",
+            "button_label": "",
+            "button_link": "http:\/\/instagram.com\/cameroncush",
+            "open_link": "_blank",
+            "btn_style": "1"
+          }
+        },
+        "164925378551f6e47c-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-06_at_8.52.34_AM.png",
+            "title": "Katie Cahn",
+            "text": "<p>Fly Fisher<\/p>",
+            "button_label": "",
+            "button_link": "http:\/\/instagram.com\/katiecahn",
+            "open_link": "_blank",
+            "btn_style": "1"
+          }
+        },
+        "164925378551f6e47c-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-06_at_8.52.38_AM.png",
+            "title": "Phil Helberg",
+            "text": "<p>BBQ Pitmaster<\/p>",
+            "button_label": "",
+            "button_link": "http:\/\/instagram.com\/helbergbarbecue",
+            "open_link": "_blank",
+            "btn_style": "1"
+          }
+        }
+      },
+      "block_order": [
+        "164925378551f6e47c-0",
+        "164925378551f6e47c-1",
+        "164925378551f6e47c-2"
+      ],
+      "settings": {
+        "title": "",
+        "sub_title": "",
+        "sub_font": "2",
+        "style_title": "title_1",
+        "ic_tt": "gem",
+        "show_clpr": false,
+        "round": 0,
+        "section_layout": "1",
+        "cat_space": "30",
+        "col": "4",
+        "col_md": "4",
+        "col_mb": "12",
+        "pos_text": "default",
+        "space": 20,
+        "align_text": "tc",
+        "fs_hd": 22,
+        "fs_txt": 14,
+        "w_img": 0,
+        "loop": true,
+        "autoplay": false,
+        "au_time": 6,
+        "au_hover": true,
+        "button": false,
+        "btn_vi": "1",
+        "btn_owl": "1",
+        "btn_color": "0",
+        "dot": true,
+        "dot_owl": "1",
+        "dot_color": "1",
+        "layout": "container",
+        "cl_bg": "",
+        "mg": "50px,,50px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    },
+    "16492539748f88c3a3": {
+      "type": "feature_columns",
+      "blocks": {
+        "1649253974354060e2-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-06_at_8.52.44_AM.png",
+            "title": "Jimmy Paenkhay",
+            "text": "<p>Rock Climber<\/p>",
+            "button_label": "",
+            "button_link": "http:\/\/instagram.com\/jimmypaenkhay",
+            "open_link": "_blank",
+            "btn_style": "1"
+          }
+        },
+        "1649253974354060e2-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-06_at_8.52.47_AM.png",
+            "title": "Ruth Sims",
+            "text": "<p>Fly Fisher<\/p>",
+            "button_label": "",
+            "button_link": "http:\/\/instagram.com\/navajoflyfisher",
+            "open_link": "_blank",
+            "btn_style": "1"
+          }
+        },
+        "1649253974354060e2-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-06_at_8.52.50_AM.png",
+            "title": "Emily McCartney",
+            "text": "<p>Western Lifestyle<\/p>",
+            "button_label": "",
+            "button_link": "http:\/\/instagram.com\/e_mccart",
+            "open_link": "_blank",
+            "btn_style": "1"
+          }
+        }
+      },
+      "block_order": [
+        "1649253974354060e2-0",
+        "1649253974354060e2-1",
+        "1649253974354060e2-2"
+      ],
+      "settings": {
+        "title": "",
+        "sub_title": "",
+        "sub_font": "2",
+        "style_title": "title_1",
+        "ic_tt": "gem",
+        "show_clpr": false,
+        "round": 0,
+        "section_layout": "1",
+        "cat_space": "30",
+        "col": "4",
+        "col_md": "4",
+        "col_mb": "12",
+        "pos_text": "default",
+        "space": 20,
+        "align_text": "tc",
+        "fs_hd": 22,
+        "fs_txt": 14,
+        "w_img": 0,
+        "loop": true,
+        "autoplay": false,
+        "au_time": 6,
+        "au_hover": true,
+        "button": false,
+        "btn_vi": "1",
+        "btn_owl": "1",
+        "btn_color": "0",
+        "dot": true,
+        "dot_owl": "1",
+        "dot_color": "1",
+        "layout": "container",
+        "cl_bg": "",
+        "mg": "50px,,50px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    },
+    "1649254182b8d6a590": {
+      "type": "feature_columns",
+      "blocks": {
+        "16492541823b0ef1e3-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-06_at_8.52.55_AM.png",
+            "title": "Thomas Csorba",
+            "text": "<p>Musician<\/p>",
+            "button_label": "",
+            "button_link": "http:\/\/instagram.com\/thomascsorbamusic",
+            "open_link": "_blank",
+            "btn_style": "1"
+          }
+        },
+        "16492541823b0ef1e3-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-06_at_8.52.59_AM.png",
+            "title": "Mike Tavares",
+            "text": "<p>Whitewater Paddle Boarder<\/p>",
+            "button_label": "",
+            "button_link": "http:\/\/instagram.com\/rivershred",
+            "open_link": "_blank",
+            "btn_style": "1"
+          }
+        },
+        "16492541823b0ef1e3-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-06_at_8.53.03_AM.png",
+            "title": "Ben Woodward",
+            "text": "<p>Fly Fisher<\/p>",
+            "button_label": "",
+            "button_link": "http:\/\/instagram.com\/benwoo_",
+            "open_link": "_blank",
+            "btn_style": "1"
+          }
+        }
+      },
+      "block_order": [
+        "16492541823b0ef1e3-0",
+        "16492541823b0ef1e3-1",
+        "16492541823b0ef1e3-2"
+      ],
+      "settings": {
+        "title": "",
+        "sub_title": "",
+        "sub_font": "2",
+        "style_title": "title_1",
+        "ic_tt": "gem",
+        "show_clpr": false,
+        "round": 0,
+        "section_layout": "1",
+        "cat_space": "30",
+        "col": "4",
+        "col_md": "4",
+        "col_mb": "12",
+        "pos_text": "default",
+        "space": 20,
+        "align_text": "tc",
+        "fs_hd": 22,
+        "fs_txt": 14,
+        "w_img": 0,
+        "loop": true,
+        "autoplay": false,
+        "au_time": 6,
+        "au_hover": true,
+        "button": false,
+        "btn_vi": "1",
+        "btn_owl": "1",
+        "btn_color": "0",
+        "dot": true,
+        "dot_owl": "1",
+        "dot_color": "1",
+        "layout": "container",
+        "cl_bg": "",
+        "mg": "50px,,50px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    },
+    "1649254352ab90ab1f": {
+      "type": "feature_columns",
+      "blocks": {
+        "16492543521b1461ee-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-06_at_8.53.07_AM.png",
+            "title": "Molo",
+            "text": "<p>Surfer<\/p>",
+            "button_label": "",
+            "button_link": "http:\/\/instagram.com\/molohmeier",
+            "open_link": "_blank",
+            "btn_style": "1"
+          }
+        },
+        "16492543521b1461ee-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-06_at_8.53.10_AM.png",
+            "title": "Natalie Bennion",
+            "text": "<p>Fly Fisher<\/p>",
+            "button_label": "",
+            "button_link": "http:\/\/instagram.com\/a_ladys_angle",
+            "open_link": "_blank",
+            "btn_style": "1"
+          }
+        },
+        "16492543521b1461ee-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-06_at_8.53.14_AM.png",
+            "title": "Troy Gray",
+            "text": "<p>Biker<\/p>",
+            "button_label": "",
+            "button_link": "http:\/\/instagram.com\/trah_grah",
+            "open_link": "_blank",
+            "btn_style": "1"
+          }
+        }
+      },
+      "block_order": [
+        "16492543521b1461ee-0",
+        "16492543521b1461ee-1",
+        "16492543521b1461ee-2"
+      ],
+      "settings": {
+        "title": "",
+        "sub_title": "",
+        "sub_font": "2",
+        "style_title": "title_1",
+        "ic_tt": "gem",
+        "show_clpr": false,
+        "round": 0,
+        "section_layout": "1",
+        "cat_space": "30",
+        "col": "4",
+        "col_md": "4",
+        "col_mb": "12",
+        "pos_text": "default",
+        "space": 20,
+        "align_text": "tc",
+        "fs_hd": 22,
+        "fs_txt": 14,
+        "w_img": 0,
+        "loop": true,
+        "autoplay": false,
+        "au_time": 6,
+        "au_hover": true,
+        "button": false,
+        "btn_vi": "1",
+        "btn_owl": "1",
+        "btn_color": "0",
+        "dot": true,
+        "dot_owl": "1",
+        "dot_color": "1",
+        "layout": "container",
+        "cl_bg": "",
+        "mg": "50px,,50px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    },
+    "164925453683608a29": {
+      "type": "feature_columns",
+      "blocks": {
+        "1649254536ae01e8ff-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-06_at_8.53.19_AM.png",
+            "title": "Doug Adams",
+            "text": "<p>Head Chef<\/p>",
+            "button_label": "",
+            "button_link": "http:\/\/instagram.com\/dougpiepdx",
+            "open_link": "_blank",
+            "btn_style": "1"
+          }
+        },
+        "1649254536ae01e8ff-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-06_at_8.53.21_AM.png",
+            "title": "Wade Morris",
+            "text": "<p>Mountaineer<\/p>",
+            "button_label": "",
+            "button_link": "http:\/\/instagram.com\/wademorris12",
+            "open_link": "_blank",
+            "btn_style": "1"
+          }
+        },
+        "1649254536ae01e8ff-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-06_at_8.53.25_AM.png",
+            "title": "Gabe Richarde",
+            "text": "<p>Distiller<\/p>",
+            "button_label": "",
+            "button_link": "http:\/\/instagram.com\/g.richarde",
+            "open_link": "_blank",
+            "btn_style": "1"
+          }
+        }
+      },
+      "block_order": [
+        "1649254536ae01e8ff-0",
+        "1649254536ae01e8ff-1",
+        "1649254536ae01e8ff-2"
+      ],
+      "settings": {
+        "title": "",
+        "sub_title": "",
+        "sub_font": "2",
+        "style_title": "title_1",
+        "ic_tt": "gem",
+        "show_clpr": false,
+        "round": 0,
+        "section_layout": "1",
+        "cat_space": "30",
+        "col": "4",
+        "col_md": "4",
+        "col_mb": "12",
+        "pos_text": "default",
+        "space": 20,
+        "align_text": "tc",
+        "fs_hd": 22,
+        "fs_txt": 14,
+        "w_img": 0,
+        "loop": true,
+        "autoplay": false,
+        "au_time": 6,
+        "au_hover": true,
+        "button": false,
+        "btn_vi": "1",
+        "btn_owl": "1",
+        "btn_color": "0",
+        "dot": true,
+        "dot_owl": "1",
+        "dot_color": "1",
+        "layout": "container",
+        "cl_bg": "",
+        "mg": "50px,,50px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    },
+    "1649254656a75fbd18": {
+      "type": "feature_columns",
+      "blocks": {
+        "1649254655cb9af4b2-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-06_at_8.53.30_AM.png",
+            "title": "Micah Horn",
+            "text": "<p>Western Lifestyle<\/p>",
+            "button_label": "",
+            "button_link": "http:\/\/instagram.com\/micah.horn",
+            "open_link": "_blank",
+            "btn_style": "1"
+          }
+        },
+        "1649254655cb9af4b2-1": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "enable_image": true,
+            "title": "Add a title or tagline",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "open_link": "_blank",
+            "btn_style": "1"
+          }
+        },
+        "1649254655cb9af4b2-2": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "enable_image": true,
+            "title": "Add a title or tagline",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "open_link": "_blank",
+            "btn_style": "1"
+          }
+        }
+      },
+      "block_order": [
+        "1649254655cb9af4b2-0",
+        "1649254655cb9af4b2-1",
+        "1649254655cb9af4b2-2"
+      ],
+      "settings": {
+        "title": "",
+        "sub_title": "",
+        "sub_font": "2",
+        "style_title": "title_1",
+        "ic_tt": "gem",
+        "show_clpr": false,
+        "round": 0,
+        "section_layout": "1",
+        "cat_space": "30",
+        "col": "4",
+        "col_md": "4",
+        "col_mb": "12",
+        "pos_text": "default",
+        "space": 20,
+        "align_text": "tc",
+        "fs_hd": 22,
+        "fs_txt": 14,
+        "w_img": 0,
+        "loop": true,
+        "autoplay": false,
+        "au_time": 6,
+        "au_hover": true,
+        "button": false,
+        "btn_vi": "1",
+        "btn_owl": "1",
+        "btn_color": "0",
+        "dot": true,
+        "dot_owl": "1",
+        "dot_color": "1",
+        "layout": "container",
+        "cl_bg": "",
+        "mg": "50px,,50px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
     }
   },
   "order": [
     "heading",
-    "main"
+    "main",
+    "1649253785b4e78813",
+    "16492539748f88c3a3",
+    "1649254182b8d6a590",
+    "1649254352ab90ab1f",
+    "164925453683608a29",
+    "1649254656a75fbd18"
   ]
 }
