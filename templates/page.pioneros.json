@@ -31,6 +31,24 @@
       "settings": {
       }
     },
+    "16492587304c8edf6b": {
+      "type": "rich_text",
+      "settings": {
+        "title": "LOS PIONEROS DE SENDERO",
+        "sub_title": "",
+        "sub_font": "2",
+        "style_title": "title_1",
+        "ic_tt": "gem",
+        "show_clpr": false,
+        "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus sit amet nisl sit amet tempus. Aliquam consequat neque nec ante condimentum, et aliquam ipsum fermentum. Suspendisse posuere enim non sem sollicitudin volutpat. In pellentesque nunc lacus, quis vehicula felis faucibus vitae. Mauris eget justo sit amet dolor tincidunt rutrum ut id mi. Fusce facilisis ligula vel scelerisque posuere. Curabitur massa ante, pretium ut dignissim vitae, placerat eget turpis. Praesent laoreet velit nec condimentum vulputate. In feugiat tortor a felis pretium, ac euismod dolor tincidunt. Etiam tristique dictum aliquam. In imperdiet dolor nulla, eu euismod metus tristique in. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras non felis at ex elementum vestibulum vitae sed est. Suspendisse sit amet velit fringilla, feugiat elit eget, hendrerit nulla.<\/p>",
+        "align": "tl",
+        "layout": "container",
+        "mg": "50px,,50px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    },
     "1649253785b4e78813": {
       "type": "feature_columns",
       "blocks": {
@@ -551,6 +569,7 @@
   "order": [
     "heading",
     "main",
+    "16492587304c8edf6b",
     "1649253785b4e78813",
     "16492539748f88c3a3",
     "1649254182b8d6a590",
