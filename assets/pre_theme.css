@@ -5644,6 +5644,10 @@ i.dn.title_6,i.dnt4.title_6 {
     background: #f6f6f8;
     color: #878787;
   }
+  .footer__middle_wrap {
+    background: #f6f6f8;
+    color: #878787;
+  }
   .footer__top i {
     font-size: 24px;
     margin-right: 5px;

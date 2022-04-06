@@ -2,7 +2,7 @@
   assign se_stts = section.settings
   assign image = se_stts.image -%}
 
-<div class="footer__top_wrap footer_sticky_{{se_stts.sticky}} footer_collapse_{{se_stts.accordions}} nt_bg_overlay pr oh pb__30 pt__80{% if image %} lazyloadt4s{% endif %}" {% if image %} data-bgset="{{ image | img_url: '1x1' }}" data-ratio="{{image.aspect_ratio}}" data-sizes="auto"{% endif %}>
+<div class="footer__middle_wrap footer_sticky_{{se_stts.sticky}} footer_collapse_{{se_stts.accordions}} nt_bg_overlay pr oh pb__30 pt__80{% if image %} lazyloadt4s{% endif %}" {% if image %} data-bgset="{{ image | img_url: '1x1' }}" data-ratio="{{image.aspect_ratio}}" data-sizes="auto"{% endif %}>
    <div class="container pr z_100">
       <div class="row">
       	{%- for block in section.blocks %}{% assign bk_stts = block.settings -%}
