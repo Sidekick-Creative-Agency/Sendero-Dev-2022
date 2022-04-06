@@ -26,8 +26,8 @@
             "time": 6,
             "btn_des": "3",
             "btn_txt": "2",
-            "swatch_design": "7",
-            "style_color": "1",
+            "swatch_design": "8",
+            "style_color": "2",
             "swatch_style": "1",
             "swatch_size": "medium",
             "show_qty": true,
@@ -62,6 +62,7 @@
         "des": {
           "type": "des",
           "settings": {
+            "title": "Description"
           }
         },
         "social": {
@@ -81,7 +82,15 @@
         "social"
       ],
       "settings": {
+        "des_pr_design": "1",
+        "show": true,
+        "bgcl": "#ffffff",
+        "bgclmb": "#ffffff",
+        "des_w": "1",
+        "des_mb": "2",
         "auto": false,
+        "mg": "30px,,30px,",
+        "mg_mb": "0,,0,",
         "pr_layout": "default",
         "design_products": "4",
         "size_img_pr": "2",
@@ -96,7 +105,8 @@
         "pr_sidebar": "none",
         "pr_size_sidebar": "2",
         "breadcrumb_pr": true,
-        "back_next_pr": true
+        "back_next_pr": true,
+        "autobox": false
       }
     },
     "1648757478999cc57a": {
@@ -107,7 +117,7 @@
         "img_position": "1",
         "image_ratio": "auto",
         "text_size2": "30,14",
-        "title": "QUALITY HATS, MADE FOR THE WILD WEST",
+        "title": "QUALITY GEAR, MADE FOR THE WILD WEST",
         "subtitle1": "OUR QUALITY GUARANTEE",
         "subtitle2": "SUSTAINABLY SOURCED",
         "subtitle3": "NATURAL MATERIALS",
@@ -135,7 +145,7 @@
         "img_position": "2",
         "image_ratio": "auto",
         "text_size2": "30,14",
-        "title": "Image with text",
+        "title": "About Sendero Products",
         "subtitle1": "OUR QUALITY GUARANTEE",
         "subtitle2": "NO FEAR BUYING",
         "subtitle3": "NOT SURE YET",

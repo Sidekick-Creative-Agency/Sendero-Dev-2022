@@ -288,9 +288,9 @@ assign se_stts = section.settings
 {%- when 'des' -%}
   <div id="wrap_des_pr"><div class="container container_des" style="padding: 0">
     <ul class="ul_none ul_tabs is-flex fl_center fs__16 des_mb_{{cl_mb}} des_style_{{cl_des}}" style="justify-content: left;">
-      <li class="tab_title_block{% if ck %} active{% assign ck = false %}{% endif %}"><a class="db cg truncate pr" data-id-dest4s href="#tab_des">Description</a></li>
+      <li class="tab_title_block{% if ck %} active{% assign ck = false %}{% endif %}"><a class="db cg truncate pr indiv-product-tab" data-id-dest4s href="#tab_des">DESCRIPTION</a></li>
       {%- if product.options_with_values[0].values[0] != "Default Title" -%}
-      <li class="tab_title_block{% if ck %} active{% assign ck = false %}{% endif %}"><a class="db cg truncate pr" href="#tab_add">Additional Information</a></li>
+      <li class="tab_title_block{% if ck %} active{% assign ck = false %}{% endif %}"><a class="db cg truncate pr" href="#tab_add">ADDITIONAL INFORMATION</a></li>
       {%- endif -%}
 
     </ul> 
@@ -634,25 +634,27 @@ assign se_stts = section.settings
                     {%- assign PR_buy_pr = true -%}
                     {%- endif -%}
                     <div class="variations_button in_flex column w__100 buy_qv_{{PR_buy_pr}}">
-                       <div class="flex wrap" style="flex-direction: column;">
-                          {%- if ck_external -%}<a href="{{link}}" rel="nofollow" target="_blank" class="truncate external_btn button">{{title}}</a>{%- render 'nt_add_w',class:"order-3",tooltip:"ttip_nt tooltip_top_left" -%}
-                          {%- elsif no_sold_out == false -%}
-                                <a rel="nofollow" data-no-instant href="#" class="truncate out_stock button pe_none" id="out_stock{{call_cl}}">{{'products.product.outofstock' | t}}</a>
-                                {%- render 'nt_add_w',tooltip:"ttip_nt tooltip_top_left" -%}
-                          {%- else -%}
-                             <div class="quantity pr mr__10 order-1 qty__{{bk_stts.show_qty}}" id="sp_qty{{call_cl}}"> 
-                                <input type="number" class="input-text qty text tc qty_pr_js" step="1" min="1" max="{% if ck_preoder %}999{% elsif inventory_management != null %}{{inventory_quantity}}{% else %}9999{% endif %}" name="quantity" value="1" size="4" pattern="[0-9]*" inputmode="numeric">
-                                <div class="qty tc fs__14"><button type="button" class="plus db cb pa pd__0 pr__15 tr r__0"><i class="facl facl-plus"></i></button><button type="button" class="minus db cb pa pd__0 pl__15 tl l__0"><i class="facl facl-minus"></i></button></div>
-                             </div> 
-                             <a rel="nofollow" data-no-instant href="#" class="single_stt out_stock button pe_none order-2" id="out_stock{{call_cl}}">{{'products.product.outofstock' | t}}</a>
-                             {%- comment -%}{%- render 'nt_add_w',class:"order-3",tooltip:"ttip_nt tooltip_top_left" -%}
-                            {%- endcomment -%}
-                             <button type="submit" data-time='{{bk_stts.time}}000' data-ani='{{bk_stts.ani}}' class="single_add_to_cart_button button truncate js_frm_cart w__100 mt__20 order-4{% if PR_no_pick %} disabled{% endif %}" style="margin: 10px 0"><span class="txt_add {{classdn1}}">{{'products.product.add_to_cart' | t}}</span><span class="txt_pre {{classdn2}}">{{'products.product.pre_orders' | t}}</span></button>
-                             
-                            {%- endif -%}
-                       </div>
-                       {%- if PR_buy_pr -%}{{- form | payment_button -}}{%- endif -%} 
-                    </div>
+                      <div class="flex wrap" style="flex-direction: column;">
+                         {%- if ck_external -%}<a href="{{link}}" rel="nofollow" target="_blank" class="truncate external_btn button">{{title}}</a>{%- render 'nt_add_w',class:"order-3",tooltip:"ttip_nt tooltip_top_left" -%}
+                         {%- elsif no_sold_out == false -%}
+                               <a rel="nofollow" data-no-instant href="#" class="truncate out_stock button pe_none" id="out_stock{{call_cl}}" style="text-align: center; border: 1px solid #222">{{'products.product.outofstock' | t}}</a>
+                               {%- comment -%}{%- render 'nt_add_w',tooltip:"ttip_nt tooltip_top_left" -%}{%- endcomment -%}
+                         {%- else -%}
+                         <h4 class="swatch__title pb__15"> Quantity</h4>
+                            <div class="quantity pr mr__10 order-1 qty__{{bk_stts.show_qty}}" id="sp_qty{{call_cl}}"> 
+                              
+                               <input type="number" class="input-text qty text tc qty_pr_js" step="1" min="1" max="{% if ck_preoder %}999{% elsif inventory_management != null %}{{inventory_quantity}}{% else %}9999{% endif %}" name="quantity" value="1" size="4" pattern="[0-9]*" inputmode="numeric">
+                               <div class="qty tc fs__14"><button type="button" class="plus db cb pa pd__0  tr r__0"><i class="facl facl-plus"></i></button><button type="button" class="minus db cb pa pd__0 tl l__0"><i class="facl facl-minus"></i></button></div>
+                            </div> 
+                            <a rel="nofollow" data-no-instant href="#" class="single_stt out_stock button pe_none order-2" id="out_stock{{call_cl}}" style="text-align: center; border: 1px solid #222">{{'products.product.outofstock' | t}}</a>
+                            {%- comment -%}{%- render 'nt_add_w',class:"order-3",tooltip:"ttip_nt tooltip_top_left" -%}
+                           {%- endcomment -%}
+                            <button type="submit" data-time='{{bk_stts.time}}000' data-ani='{{bk_stts.ani}}' class="single_add_to_cart_button button truncate js_frm_cart w__100 mt__20 order-4{% if PR_no_pick %} disabled{% endif %}"><span class="txt_add {{classdn1}}">{{'products.product.add_to_cart' | t}}</span><span class="txt_pre {{classdn2}}">{{'products.product.pre_orders' | t}}</span></button>
+                            
+                           {%- endif -%}
+                      </div>
+                      {%- if PR_buy_pr -%}{{- form | payment_button -}}{%- endif -%} 
+                   </div>
                  {%- endform -%}
 
                 {%- assign uavailable_v = pr_variants | where: "available", false -%}
@@ -692,7 +694,6 @@ assign se_stts = section.settings
 
               </div>
            {%- else -%}
-              {%- comment %}product group{% endcomment -%}
               {%- render 'grouped_product',block:block,nav_up:nav_up,call_cl:call_cl,pid:pid -%}
            {%- endif -%}
         </div>
@@ -702,52 +703,6 @@ assign se_stts = section.settings
           data-vid="{{current_variant.id}}" data-product-title="{{ product.title | escape }}" data-has-only-default-variant="{% if variants_size == 1 %}true{% else %}{{ default }}{% endif %}" data-base-url="{{ shop.url }}{{ routes.root_url }}"> 
         </div>
 
-      {%- when 'size' -%}
-      {%- comment -%}
-        <div class="extra-link mt__35 fwsb" {{ block.shopify_attributes }}>
-           {%- if bk_stts.size_chart != '1' and pos_sizeg == '1' -%}
-              {%- liquid
-                assign ck_s = true
-                assign sc_type = bk_stts.sc_type
-                assign page_size = pages[bk_stts.page]
-                assign image = bk_stts.image
-
-                if bk_stts.size_chart == '2'
-                   assign ck_s = false
-                   assign size_ck = bk_stts.size_ck | append:',size,sizes,Größe'
-                   assign get_size = size_ck | downcase | replace: ' ,', ',' | replace: ', ', ',' | split: ',' | uniq
-                   for option in product.options_with_values
-                     assign name = option.name | downcase
-                     if get_size contains name
-                       assign ck_s = true
-                       break
-                     endif
-                   endfor
-                endif -%}
-             
-              {%- if sc_type == '1' and page_size != blank and ck_s -%}
-                <a class="cd chp ajax_pp_js mr__20" href="#" data-no-instant rel="nofollow" data-id='ps_ajax_pp_js' data-url="{{page_size.url}}/?view=AjaxPopup">{{ 'products.product.product_size_guide' | t }}</a>
-              {%- elsif sc_type == '2' and image != blank and ck_s -%}
-                <a class="cd chp btn_size_guide mr__20" href="#" data-no-instant rel="nofollow" data-src="{{ image | img_url: 'master' }}" data-width="{{ image.width }}" data-height="{{ image.height }}">{{ 'products.product.product_size_guide' | t }}</a>
-              {%- endif -%}
-
-           {%- endif -%}
-
-           {%- assign page_delivery = pages[bk_stts.page_dr] %}{% if bk_stts.delivery and page_delivery != blank -%}
-           <a class="ajax_pp_js cd chp mr__20" href="#" data-no-instant rel="nofollow" data-id='dl_ajax_pp_js' data-url="{{page_delivery.url}}/?view=AjaxPopup">{{ 'products.product.delivery_return' | t }}</a>
-           {%- endif -%}
-           
-        
-           {%- assign page_ask = pages[bk_stts.page_ask] %}{% if bk_stts.ask and page_ask != blank -%}
-           <a class="ajax_pp_js cd chp" href="#" data-no-instant rel="nofollow" data-id='ask_ajax_pp_js' data-url="{{page_ask.url}}/?view=AjaxContact">{{ 'products.product.ask_question' | t }}</a>
-           {%- endif -%}
-           
-           {%- if bk_stts.ask -%}
-           <a class="ajax_pp_js cd chp" href="#" data-no-instant rel="nofollow" data-id='ask_ajax_pp_js' data-url="{{routes.search_url}}/?section_id=main-ajaxcontact" data-title='{{product.title | escape}}' data-handle='{{ shop.url }}{{product.url}}'>{{ 'products.product.ask_question' | t }}</a>
-           {%- endif -%}
-           
-        </div>
-{%- endcomment -%}
       {%- when 'meta' -%}
         {%- assign ck_meta = false -%}
         {%- capture meta -%}
