@@ -6,7 +6,7 @@
         "89b1a94e-2cf5-4075-a6af-0969fbaeae2c": {
           "type": "1",
           "settings": {
-            "color": "#fff"
+            "color": "#ffffff"
           }
         }
       },
@@ -14,8 +14,9 @@
         "89b1a94e-2cf5-4075-a6af-0969fbaeae2c"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/74162361_102268317897142_7558348142593179648_n.jpg",
         "parallax": false,
-        "color": "#000",
+        "color": "#000000",
         "overlay": 54,
         "padding": 100,
         "paddingmb": 50,
@@ -25,14 +26,219 @@
         "bg_att": "scroll"
       }
     },
+    "164865439396016512": {
+      "type": "Sessions-slider",
+      "blocks": {
+        "1648654393d1eaf576-2": {
+          "type": "2",
+          "settings": {
+            "font": "f__libre",
+            "title": "NEW SENDERO SESSION",
+            "color": "#ffffff",
+            "fw_text": 400,
+            "fs_text": 14,
+            "lh_text": 32,
+            "ls_text": 0,
+            "fs_mb_text": 14,
+            "lh_mb_text": 0,
+            "ls_mb_text": 0,
+            "hide": false
+          }
+        },
+        "1648654393d1eaf576-0": {
+          "type": "1",
+          "settings": {
+            "title": "THE DESERT TAPES",
+            "color": "#ffffff",
+            "fw_text": 600,
+            "fs_text": 30,
+            "lh_text": 0,
+            "ls_text": 0,
+            "fs_mb_text": 15,
+            "lh_mb_text": 0,
+            "ls_mb_text": 0
+          }
+        },
+        "1648654393d1eaf576-1": {
+          "type": "6",
+          "settings": {
+            "sp": 10,
+            "sp_mb": 10
+          }
+        },
+        "addbacc1-6432-48e5-83df-3784f1f30b47": {
+          "type": "5",
+          "settings": {
+            "html": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.<\/p>"
+          }
+        },
+        "1648654393d1eaf576-4": {
+          "type": "3",
+          "settings": {
+            "title": "MORE SENDERO SESSIONS",
+            "btn_link": "\/sessions",
+            "open_link": "_self",
+            "title2": "",
+            "btn_link2": "",
+            "open_link2": "_blank",
+            "btn_w": false,
+            "btn_round": false,
+            "btn_icon": true,
+            "cl_txt": "#ffffff",
+            "cl_bg": "rgba(0,0,0,0)",
+            "cl_bd": "rgba(0,0,0,0)",
+            "fs_text": 13.5,
+            "fw_text": 500,
+            "h": 40,
+            "ls_text": 0,
+            "fs_mb_text": 14,
+            "h_mb": 40,
+            "ls_mb_text": 0
+          }
+        }
+      },
+      "block_order": [
+        "1648654393d1eaf576-2",
+        "1648654393d1eaf576-0",
+        "1648654393d1eaf576-1",
+        "addbacc1-6432-48e5-83df-3784f1f30b47",
+        "1648654393d1eaf576-4"
+      ],
+      "settings": {
+        "source": "1",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=-2icZZ9tbwc&list=PLZf3m6mi50t3HFAcYQWk7EYl-2LtrNImu",
+        "file_name": "The Desert Tapes",
+        "se_height": "cus_h",
+        "use_custom_h": "1",
+        "h_des": "600px",
+        "h_tb": "500px",
+        "h_mb": "350px",
+        "caption_w": "1",
+        "cap_v_pos": 50,
+        "cap_h_pos": 0,
+        "txt_align": "tl",
+        "use_shadow": false,
+        "cl_overlay": "#181818",
+        "cl_opacity": 60,
+        "layout": "nt_full",
+        "mg": "50px,,50px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    },
     "main": {
       "type": "main-page",
       "settings": {
+      }
+    },
+    "16492747850b78eade": {
+      "type": "rich_text",
+      "settings": {
+        "title": "ABOUT SENDERO SESSIONS",
+        "sub_title": "",
+        "sub_font": "2",
+        "style_title": "title_1",
+        "ic_tt": "gem",
+        "show_clpr": false,
+        "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store. Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store. Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store. Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+        "align": "tl",
+        "layout": "container",
+        "mg": "50px,,50px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    },
+    "sendero-session-apply": {
+      "type": "Sendero-session-apply",
+      "settings": {
+        "btn_des": "1",
+        "title": "ABOUT SENDERO SESSIONS",
+        "sub_title": "",
+        "sub_font": "2",
+        "style_title": "title_1",
+        "ic_tt": "gem",
+        "show_clpr": false,
+        "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store. Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store. Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store. Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+        "align": "tl",
+        "layout": "container",
+        "mg": "50px,,50px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    },
+    "sendero-sessions-img-grid": {
+      "type": "sendero-sessions-img-grid",
+      "blocks": {
+        "1649278839f63a16f4-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/kristjan-kotar--h15p84GY5k-unsplash.jpg",
+            "img_align": "center",
+            "title": "",
+            "url": ""
+          }
+        },
+        "1649278839f63a16f4-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "img_align": "center",
+            "title": "",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "1649278839f63a16f4-0",
+        "1649278839f63a16f4-1"
+      ],
+      "settings": {
+        "title": "",
+        "style_title": "title_1",
+        "ic_tt": "gem",
+        "show_clpr": false,
+        "round": 0,
+        "cat_layout": "1",
+        "hoverz": true,
+        "cat_design": "1",
+        "cat_space": "30",
+        "image_ratio": "ratio_nt",
+        "col": "6",
+        "col_md": "3",
+        "col_mb": "6",
+        "pr_txt": "products",
+        "loop": true,
+        "autoplay": false,
+        "au_time": 6,
+        "au_hover": true,
+        "button": false,
+        "btn_vi": "1",
+        "btn_owl": "1",
+        "btn_color": "0",
+        "dot": false,
+        "dot_owl": "1",
+        "dot_color": "1",
+        "cp_code": false,
+        "layout": "wrap",
+        "cl_bg": "",
+        "hide_bgimg": false,
+        "mg": "50px,,50px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
       }
     }
   },
   "order": [
     "heading",
-    "main"
+    "164865439396016512",
+    "main",
+    "16492747850b78eade",
+    "sendero-session-apply",
+    "sendero-sessions-img-grid"
   ]
 }

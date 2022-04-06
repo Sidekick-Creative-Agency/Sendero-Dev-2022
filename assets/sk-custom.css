@@ -357,6 +357,23 @@
 }
 
 
+/*--------------------------------------------------------/
+/ Sendero Sessions
+/--------------------------------------------------------*/
+.page-head {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+}
+.sendero-apply-btn {
+    background-color: #666;
+    border-color: #666;
+}
+.sendero-apply-btn:hover {
+    background-color: black;
+    border-color: black;
+}
+
 
 /*--------------------------------------------------------/
 / Individual Product Page
