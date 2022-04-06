@@ -767,10 +767,11 @@
           "c965e28c-e3b9-4da8-b4aa-3bace9552fbb": {
             "type": "cat",
             "settings": {
+              "image": "shopify:\/\/shop_images\/Photo_Mosaics-03_1024x1024_4d304521-ae34-41c5-b698-e99c088a0013.png",
               "cat_design": "1",
               "hoverz": true,
               "collection": "",
-              "title": "",
+              "title": "Blog",
               "col": "3"
             }
           }
