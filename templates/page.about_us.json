@@ -50,6 +50,18 @@
         "pd_mb": ""
       }
     },
+    "1649258084ec2528d4": {
+      "type": "custom_html",
+      "settings": {
+        "code": "<br>",
+        "css": "#shopify-section-[id] {background-color:transparent}",
+        "layout": "container",
+        "mg": "50px,,50px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    },
     "164856885666aace2e": {
       "type": "image_text_sig",
       "settings": {
@@ -256,6 +268,7 @@
     "heading",
     "main",
     "16492574913de1faed",
+    "1649258084ec2528d4",
     "164856885666aace2e",
     "1648570607be123660",
     "1649257609430b6426"
