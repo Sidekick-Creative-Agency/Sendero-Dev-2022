@@ -208,6 +208,25 @@
     }
 }
 
+.button, button {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid rgba(33,43,54,.9);
+    max-width: 160px !important;
+    text-transform: uppercase !important;
+    font-family: 'Oswald';
+    font-weight: 400;
+}
+
+.button:hover, button:hover {
+    background-color: #666;
+    color: #fff;
+    border: 1px solid rgba(33,43,54,.9);
+    max-width: 160px !important;
+    text-transform: uppercase !important;
+    font-family: 'Oswald';
+    font-weight: 400;
+}
 
 /*--------------------------------------------------------/
 / HOME PAGE
