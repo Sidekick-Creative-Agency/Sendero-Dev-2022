@@ -863,8 +863,8 @@
         "settings": {
           "sticky2": false,
           "accordions2": true,
-          "border2": false,
-          "bd_cl2": "#000000",
+          "border2": true,
+          "bd_cl2": "#f1f1f1",
           "cl_h2": "#999999",
           "cl2": "#999999",
           "cl_a2": "#999999",

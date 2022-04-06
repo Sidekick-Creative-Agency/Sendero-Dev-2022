@@ -29,22 +29,37 @@
     },
     "main": {
       "type": "page_about_us",
-      "blocks": {
-        "dac4c0d6-1046-4a8d-a446-59405e5773de": {
-          "type": "1",
-          "settings": {
-            "title": "OUR ROOTS",
-            "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam.",
-            "al": "txtn",
-            "cl": "6",
-            "cl_mb": "12"
-          }
-        }
-      },
-      "block_order": [
-        "dac4c0d6-1046-4a8d-a446-59405e5773de"
-      ],
       "settings": {
+      }
+    },
+    "16492574913de1faed": {
+      "type": "rich_text",
+      "settings": {
+        "title": "What We Do",
+        "sub_title": "",
+        "sub_font": "2",
+        "style_title": "title_1",
+        "ic_tt": "gem",
+        "show_clpr": false,
+        "content": "<p>Sendero Provisions Co. makes quality outdoor provisions inspired by the landscapes and cultures of wild, wild America. We cut our teeth roaming the bare deserts of the Southwest looking for geologic wonders and glorious adventure. From our old-school days as geologists mapping in the field to new-school days spent on a cold mountain stream chasing native rainbows, our inspiration comes from our connection to the land and the cultures that represent it. This is the basic calling of Sendero. We make gear that embodies this- super slick products reminiscent of a time long past that will call you to the wild.<strong>SPIRIT of the WEST \/\/ SOUL of the WILD<\/strong><\/p>",
+        "align": "tl",
+        "layout": "container",
+        "mg": "50px,,50px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    },
+    "1649258084ec2528d4": {
+      "type": "custom_html",
+      "settings": {
+        "code": "<br>",
+        "css": "#shopify-section-[id] {background-color:transparent}",
+        "layout": "container",
+        "mg": "50px,,50px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
       }
     },
     "164856885666aace2e": {
@@ -59,31 +74,8 @@
         "img_position": "1",
         "image_ratio": "auto",
         "text_size2": "30,14",
-        "title": "HANDWRITTEN NOTE",
-        "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p><p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-        "button_label": "Shop Now",
-        "button_link": "",
-        "open_link": "_blank",
-        "txt_align": "tl",
-        "use_shadow": false,
-        "cl_txt": "dark",
-        "layout": "nt_full",
-        "mg": "50px,,50px,",
-        "pd": "",
-        "mg_mb": "",
-        "pd_mb": ""
-      }
-    },
-    "164857039020bd60ed": {
-      "type": "image_text",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Reduced-02_1024x1024_033be2a1-e638-4635-961e-4b208e6f3cb5.png",
-        "img_align": "center",
-        "img_position": "2",
-        "image_ratio": "auto",
-        "text_size2": "30,14",
-        "title": "SPIRIT OF THE WEST",
-        "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p><p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+        "title": "FROM EL HEFE",
+        "text": "<p>Sendero is a rag-tag group of industry outsiders. We're geologists, artists, adventurers, friends, and fishin' partners. For better or for worse, they don't teach inventory management, supply chain, or fabric sourcing in geology classes, but we're figuring it out. We're Central Texans and proud of it, but the deserts of the American Southwest and slopes of the mighty Rockies are also our homes. We're climbers, river junkies, fly fishers, and story tellers- although the last two might be the same thing. If you see us out and about, send us your best \"YEE\" and let us buy you a cold one.<\/p>",
         "button_label": "Shop Now",
         "button_link": "",
         "open_link": "_blank",
@@ -159,11 +151,11 @@
         "ic_tt": "gem",
         "show_clpr": false,
         "brand_layout": "1",
-        "cat_space": "30",
+        "cat_space": "6",
         "col": "4",
         "col_md": "6",
         "col_mb": "6",
-        "brand_hover": "0",
+        "brand_hover": "1",
         "loop": true,
         "autoplay": false,
         "au_time": 0,
@@ -172,7 +164,7 @@
         "btn_vi": "1",
         "btn_owl": "2",
         "btn_color": "0",
-        "dot": true,
+        "dot": false,
         "dot_owl": "1",
         "dot_color": "1",
         "layout": "wrap",
@@ -183,26 +175,89 @@
         "pd_mb": ""
       }
     },
-    "16485817723adff103": {
-      "type": "image_text_sig",
+    "1649257609430b6426": {
+      "type": "image_text_overlay",
+      "blocks": {
+        "16492576096b122d98-1": {
+          "type": "6",
+          "settings": {
+            "sp": 47,
+            "sp_mb": 10
+          }
+        },
+        "16492576096b122d98-0": {
+          "type": "1",
+          "settings": {
+            "title": "SPIRIT OF THE WEST",
+            "color": "#fff",
+            "fw_text": 600,
+            "fs_text": 27.5,
+            "lh_text": 0,
+            "ls_text": 0,
+            "fs_mb_text": 14,
+            "lh_mb_text": 0,
+            "ls_mb_text": 0
+          }
+        },
+        "dc49fceb-19e5-4c38-a4ca-9c8923e1450e": {
+          "type": "6",
+          "settings": {
+            "sp": 10,
+            "sp_mb": 10
+          }
+        },
+        "16492576096b122d98-2": {
+          "type": "2",
+          "settings": {
+            "font": "f_body",
+            "title": "“Sendero” is the Spanish word for “trail” or “path.” Although the origin of the name is uncertain, around these parts if you’re going out to walk a “sendero,” there’s a good chance folks know exactly what you mean. We like to think we’re building our own “sendero” here by following the trails blazed by our role models and industry leaders. We stand wholeheartedly with outdoor inclusion, cultural preservation, public land protection, and conservation through wildlife management. We’re more or less simple folks, and we hold our values high: an honest handshake, a hard day’s work, free-flowing rivers, native fish, public land, quality gear, live music, art for art’s sake, craft beverages, and fine Texas BBQ.",
+            "color": "#fff",
+            "fw_text": 400,
+            "fs_text": 12,
+            "lh_text": 16,
+            "ls_text": 0,
+            "fs_mb_text": 12.5,
+            "lh_mb_text": 14,
+            "ls_mb_text": 0,
+            "hide": false
+          }
+        },
+        "16492576096b122d98-3": {
+          "type": "6",
+          "settings": {
+            "sp": 41,
+            "sp_mb": 10
+          }
+        }
+      },
+      "block_order": [
+        "16492576096b122d98-1",
+        "16492576096b122d98-0",
+        "dc49fceb-19e5-4c38-a4ca-9c8923e1450e",
+        "16492576096b122d98-2",
+        "16492576096b122d98-3"
+      ],
       "settings": {
-        "sig_title": "Some Name",
-        "sig_sub_title": "Owner",
-        "sub_font": "2",
-        "img_align": "center",
-        "img_position": "1",
-        "image_ratio": "auto",
-        "text_size2": "30,14",
-        "title": "Image with text",
-        "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-        "button_label": "Shop Now",
-        "button_link": "",
-        "open_link": "_blank",
-        "txt_align": "tc",
+        "se_height": "cus_h",
+        "use_custom_h": "1",
+        "h_des": "300px",
+        "h_tb": "250px",
+        "h_mb": "150px",
+        "image": "shopify:\/\/shop_images\/gautier-salles-uffQnKuJ-hc-unsplash.jpg",
+        "use_pr": true,
+        "img_align": "bottom",
+        "caption_w": "1",
+        "cap_v_pos": 50,
+        "cap_h_pos": 24,
+        "txt_align": "tl_md",
+        "cap_v_pos_mb": 50,
+        "cap_h_pos_mb": 50,
+        "txt_align_mb": "tl",
         "use_shadow": false,
-        "cl_txt": "dark",
-        "layout": "container",
-        "mg": "",
+        "cl_overlay": "#000",
+        "cl_opacity": 18,
+        "layout": "nt_full",
+        "mg": "50px,,50px,",
         "pd": "",
         "mg_mb": "",
         "pd_mb": ""
@@ -212,9 +267,10 @@
   "order": [
     "heading",
     "main",
+    "16492574913de1faed",
+    "1649258084ec2528d4",
     "164856885666aace2e",
-    "164857039020bd60ed",
     "1648570607be123660",
-    "16485817723adff103"
+    "1649257609430b6426"
   ]
 }
