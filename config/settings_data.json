@@ -868,7 +868,7 @@
               "align": "tl_md",
               "align_mb": "tl",
               "logo_width": 95,
-              "title": "Contact",
+              "title": "",
               "content": "<p><i class=\"pegk pe-7s-mail\"><\/i><span> <a href=\"mailto:contact@senderopc.com\">contact@senderopc.com<\/a><\/span><\/p><p><i class=\"pegk pe-7s-clock\"><\/i> <span>Mon-Fri | 8am-5pm | Central<\/span><\/p>",
               "social_mode": "3",
               "order": "1",
@@ -928,7 +928,7 @@
         ],
         "settings": {
           "layout": "6",
-          "bg": "#000",
+          "bg": "#000000",
           "cl": "#999999",
           "cl_a": "#dcdcdc",
           "cl_hover": "#56cfe1"
