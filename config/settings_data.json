@@ -771,6 +771,28 @@
       "footer_top": {
         "type": "footer_top",
         "blocks": {
+          "1581507840818": {
+            "type": "menu",
+            "settings": {
+              "title": "Quick Links",
+              "menu": "",
+              "order": "1",
+              "cl": "2",
+              "cl_tb": "6",
+              "cl_mb": "12"
+            }
+          },
+          "1581507828337": {
+            "type": "menu",
+            "settings": {
+              "title": "Support",
+              "menu": "",
+              "order": "1",
+              "cl": "2",
+              "cl_tb": "6",
+              "cl_mb": "12"
+            }
+          },
           "1581507819652": {
             "type": "logo",
             "settings": {
@@ -797,28 +819,6 @@
               "cl_mb": "12"
             }
           },
-          "1581507828337": {
-            "type": "menu",
-            "settings": {
-              "title": "Infomation",
-              "menu": "",
-              "order": "1",
-              "cl": "2",
-              "cl_tb": "6",
-              "cl_mb": "12"
-            }
-          },
-          "1581507840818": {
-            "type": "menu",
-            "settings": {
-              "title": "Useful links",
-              "menu": "",
-              "order": "1",
-              "cl": "2",
-              "cl_tb": "6",
-              "cl_mb": "12"
-            }
-          },
           "1581507835369": {
             "type": "mail",
             "settings": {
@@ -837,10 +837,10 @@
           }
         },
         "block_order": [
+          "1581507840818",
+          "1581507828337",
           "1581507819652",
           "1581507824602",
-          "1581507828337",
-          "1581507840818",
           "1581507835369"
         ],
         "settings": {
