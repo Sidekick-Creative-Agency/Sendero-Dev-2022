@@ -752,6 +752,16 @@
               "col": "2"
             }
           },
+          "8d6c5968-eefa-4016-9930-f8fad1a58a4b": {
+            "type": "link",
+            "settings": {
+              "tt_hd": "",
+              "url": "",
+              "open_link": "_self",
+              "menu": "brand-2nd-column",
+              "col": "2"
+            }
+          },
           "283bb7a8-d7fa-4caa-95e4-8959282e1256": {
             "type": "cat",
             "settings": {
@@ -803,6 +813,7 @@
           "932e6253-0155-4ab3-b3c0-635dd62ee01b",
           "a7b29865-5b6c-426e-828c-b7e5c9ed5b8f",
           "66c4d1d7-1132-47d1-859b-78afb3bebe36",
+          "8d6c5968-eefa-4016-9930-f8fad1a58a4b",
           "283bb7a8-d7fa-4caa-95e4-8959282e1256",
           "c965e28c-e3b9-4da8-b4aa-3bace9552fbb"
         ],
