@@ -717,20 +717,61 @@
               "col": "3"
             }
           },
-          "bf06875c-82c0-441e-8fc7-a6bffd852daf": {
-            "type": "dropdown",
+          "932e6253-0155-4ab3-b3c0-635dd62ee01b": {
+            "type": "mega",
             "settings": {
               "title": "Brand",
               "url": "",
               "open_link": "_self",
-              "menu": "main-menu",
               "icon": "",
               "cus_cl": false,
-              "cl": "#000000",
+              "cl": "#ec0101",
               "lb": "",
               "lb_cl": "",
               "lazy_mn": true,
-              "pos": "right"
+              "pos": "center",
+              "wid": "full",
+              "cus_wid": 1200
+            }
+          },
+          "a7b29865-5b6c-426e-828c-b7e5c9ed5b8f": {
+            "type": "mmtitle",
+            "settings": {
+              "mmtitle": "Brand",
+              "url": "",
+              "open_link": "_self",
+              "col": "3"
+            }
+          },
+          "66c4d1d7-1132-47d1-859b-78afb3bebe36": {
+            "type": "link",
+            "settings": {
+              "tt_hd": "",
+              "url": "",
+              "open_link": "_self",
+              "menu": "main-menu",
+              "col": "2"
+            }
+          },
+          "283bb7a8-d7fa-4caa-95e4-8959282e1256": {
+            "type": "cat",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/74162361_102268317897142_7558348142593179648_n.jpg",
+              "cat_design": "1",
+              "hoverz": true,
+              "collection": "",
+              "title": "Sendero Sessions",
+              "col": "3"
+            }
+          },
+          "c965e28c-e3b9-4da8-b4aa-3bace9552fbb": {
+            "type": "cat",
+            "settings": {
+              "cat_design": "1",
+              "hoverz": true,
+              "collection": "",
+              "title": "",
+              "col": "3"
             }
           }
         },
@@ -759,7 +800,11 @@
           "d964bd86-2c5e-4cb7-8b1f-0027152aafea",
           "01c7c08b-1e91-40f4-8734-b22e759c1062",
           "415d5e20-e622-4728-a7f8-f0fd5b5a8424",
-          "bf06875c-82c0-441e-8fc7-a6bffd852daf"
+          "932e6253-0155-4ab3-b3c0-635dd62ee01b",
+          "a7b29865-5b6c-426e-828c-b7e5c9ed5b8f",
+          "66c4d1d7-1132-47d1-859b-78afb3bebe36",
+          "283bb7a8-d7fa-4caa-95e4-8959282e1256",
+          "c965e28c-e3b9-4da8-b4aa-3bace9552fbb"
         ],
         "settings": {
           "height": 60,
