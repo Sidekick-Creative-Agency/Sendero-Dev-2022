@@ -12,7 +12,7 @@
   assign block = section_blocks.first
   assign b_type = block.type -%}
 
-<div class="nt_se_{{sid}} {{se_stts.layout}} pr ins_loaded">
+<div class="nt_se_{{sid}} {{se_stts.layout}} pr ins_loaded instagram-outer-container">
   {%- if b_type == '1' -%}
     {%- render 'block_title',block:block,block_title:'mb__20' -%}
   {%- elsif b_type != blank and b_type != 'img' -%}
@@ -38,13 +38,13 @@
     </div>
   {%- endif -%}
 
-  <div class="ins_shop_wrap row{% if sett_equal %} equal_nt{% endif %} ins_spaces_{{se_stts.space}} ins_rounded_{{se_stts.rounded_ins}} {{se_stts.image_size}} {{se_stts.image_ratio}} position_{{se_stts.image_position}} se_instagram{% if layout_des == '2' %} js_carousel nt_slider prev_next_{{se_stts.btn_color}} btn_owl_{{se_stts.btn_owl}} dot_owl_{{se_stts.dot_owl}} dot_color_{{se_stts.dot_color}} btn_vi_{{se_stts.btn_vi}}{% endif %}"{% if layout_des == '2' %} data-flickityt4s-js='{"imagesLoaded": 0,"adaptiveHeight": 1, "contain": 1, "groupCells": "100%", "dragThreshold" : 5, "cellAlign": "left","wrapAround": {{se_stts.loop}},"prevNextButtons": {{se_stts.button}},"percentPosition": 1,"pageDots": {{se_stts.dot}}, "autoPlay" : {{ se_stts.au_time | times: 1000 }}, "pauseAutoPlayOnHover" : {{se_stts.au_hover}}, "rightToLeft": {{settings.use_rtl}} }'{% endif %}>
+  <div class="instagram-container ins_shop_wrap row{% if sett_equal %} equal_nt{% endif %} ins_spaces_{{se_stts.space}} ins_rounded_{{se_stts.rounded_ins}} {{se_stts.image_size}} {{se_stts.image_ratio}} position_{{se_stts.image_position}} se_instagram{% if layout_des == '2' %} js_carousel nt_slider prev_next_{{se_stts.btn_color}} btn_owl_{{se_stts.btn_owl}} dot_owl_{{se_stts.dot_owl}} dot_color_{{se_stts.dot_color}} btn_vi_{{se_stts.btn_vi}}{% endif %}"{% if layout_des == '2' %} data-flickityt4s-js='{"imagesLoaded": 0,"adaptiveHeight": 1, "contain": 1, "groupCells": "100%", "dragThreshold" : 5, "cellAlign": "left","wrapAround": {{se_stts.loop}},"prevNextButtons": {{se_stts.button}},"percentPosition": 1,"pageDots": {{se_stts.dot}}, "autoPlay" : {{ se_stts.au_time | times: 1000 }}, "pauseAutoPlayOnHover" : {{se_stts.au_hover}}, "rightToLeft": {{settings.use_rtl}} }'{% endif %}>
       {%- if arr_img.size > 0 -%}
         {%- for bl in arr_img -%}
         {%- assign image = bl.settings.image %}{% assign ratio = image.aspect_ratio |default:1.0 %}{% assign url = bl.settings.url -%}
-         <div id="pin_{{bl.id}}" class="pin__wr_js col_ins col-lg-{{col}} col-md-{{col_tb}} col-{{col_mb}} item pr oh" {{ bl.shopify_attributes }}>
+         <div id="pin_{{bl.id}}" class=" instagram-imgpin__wr_js col_ins col-lg-{{col}} col-md-{{col_tb}} col-{{col_mb}} item pr oh" {{ bl.shopify_attributes }}>
             {%- if url != blank -%}
-              <a data-no-instant rel="nofollow" class="wrap_ins_img db pr oh" href="{{url}}" target="{{open_link}}">
+              <a data-no-instant rel="nofollow" class="wrap_ins_img db pr oh " href="{{url}}" target="{{open_link}}">
                 <div class="lazyloadt4s nt_bg_lz pr_lazy_img" data-bgset="{% if image != blank %}{{ image | img_url: '1x1' }}{% else %}{{ 'placeholder.jpg' | asset_url }}{% endif %}" data-ratio="{{ratio}}" data-sizes="auto"></div>
                 <div class="info pa tc flex ts__03 fl_center al_center op__0 t__0 l__0 r__0 b__0 h__100 pe_none"><span class="pr cw mr__5 ml__5"><i class="facl facl-instagram"></i></span></div>
               </a>
@@ -162,7 +162,7 @@
         "id": "col_pr",
         "label": "Photos per row",
         "info": "How many photos you want to show per row",
-        "default": "2",
+        "default": "4",
         "options": [
           {
             "value": "6",
@@ -190,7 +190,7 @@
         "type": "select",
         "id": "col_pr_tb",
         "label": "Photos per row Tablet",
-        "default": "3",
+        "default": "4",
         "options": [
           {
             "value": "6",
@@ -210,7 +210,7 @@
         "type": "select",
         "id": "col_pr_mb",
         "label": "Photos per row Mobile",
-        "default": "6",
+        "default": "4",
         "options": [
           {
             "value": "12",
@@ -219,6 +219,10 @@
           {
             "value": "6",
             "label": "2"
+          },
+          {
+            "value": "4",
+            "label": "3"
           }
         ]
       },

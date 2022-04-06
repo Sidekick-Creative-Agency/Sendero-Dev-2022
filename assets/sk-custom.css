@@ -224,6 +224,68 @@
 .nt_se_template--15855375155457__164865439396016512.se_height_cus_h .nt_bg_lz {
     padding-top: 500px !important;
 }
+.instagram-img {
+    max-width: 300px;
+    max-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.instagram_container {
+    display: flex;
+    justify-content: center !important;
+    max-width: 950px;
+}
+.instagram-outer-container {
+    margin-top: 50px !important;
+    margin-bottom: 50px !important;
+}
+.quote_slide {
+    max-width: 250px;
+    height: 300px;
+    margin-right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.test-outer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 0 100px;
+    height: 300px;
+}
+.test-inner-container {
+    height: 300px;
+    width:fit-content;
+}
+.test-container {
+    padding-right: 0;
+}
+.flickityt4s-viewport {
+    display: flex;
+    justify-content: center;
+}
+.blog-home-container {
+    max-height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 50%;
+}
+.blog-home-img, .blog-home-article {
+    /* width: 100px;
+    height: 100px; */
+    width: 50%;
+    padding: 10px;
+}
+.blog-home-link {
+    padding: 0 20px 0 0;
+    font-size: 12px;
+    font-weight: 400;
+    color: #000;
+    letter-spacing: 0.15em;
+}
+
 /*---------------- ADD TO CART BUTTON -------------------*/
 .single_add_to_cart_button {
     background-color: #222;
