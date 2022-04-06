@@ -967,6 +967,12 @@
       "footer_bot": {
         "type": "footer_bot",
         "blocks": {
+          "85f065ad-877f-419e-928f-1e0c7968ffa5": {
+            "type": "copy",
+            "settings": {
+              "text": "<!-- EMPTY PLACEHOLDER for left side -->"
+            }
+          },
           "1581507860120": {
             "type": "copy",
             "settings": {
@@ -981,6 +987,7 @@
           }
         },
         "block_order": [
+          "85f065ad-877f-419e-928f-1e0c7968ffa5",
           "1581507860120",
           "1581507855652"
         ],
