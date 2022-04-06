@@ -329,6 +329,15 @@
     /* height: 75px; */
     transform: translateY(-5px);
     width: calc(100% - 10px) !important;
+    max-height: 70px;
+}
+.blog-home-outer-container {
+    background-color: rgba(0,0,0,.5);
+
+
+}
+.blog-home-outer-container p{
+    color: white;
 }
 /*---------------- ADD TO CART BUTTON -------------------*/
 .single_add_to_cart_button {

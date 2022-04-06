@@ -366,96 +366,6 @@
         "pd_mb": ""
       }
     },
-    "1648656519e4bb75df": {
-      "type": "instagram_feed",
-      "blocks": {
-        "16486565198c9838b8-0": {
-          "type": "1",
-          "settings": {
-            "title": "@ FOLLOW US ON INSTAGRAM",
-            "sub_title": "",
-            "sub_font": "2",
-            "style_title": "title_1",
-            "ic_tt": "gem",
-            "show_clpr": false
-          }
-        },
-        "16486565198c9838b8-1": {
-          "type": "img",
-          "settings": {
-            "url": ""
-          }
-        },
-        "16486565198c9838b8-2": {
-          "type": "img",
-          "settings": {
-            "url": ""
-          }
-        },
-        "16486565198c9838b8-3": {
-          "type": "img",
-          "settings": {
-            "url": ""
-          }
-        },
-        "16486565198c9838b8-4": {
-          "type": "img",
-          "settings": {
-            "url": ""
-          }
-        },
-        "16486565198c9838b8-5": {
-          "type": "img",
-          "settings": {
-            "url": ""
-          }
-        },
-        "16486565198c9838b8-6": {
-          "type": "img",
-          "settings": {
-            "url": ""
-          }
-        }
-      },
-      "block_order": [
-        "16486565198c9838b8-0",
-        "16486565198c9838b8-1",
-        "16486565198c9838b8-2",
-        "16486565198c9838b8-3",
-        "16486565198c9838b8-4",
-        "16486565198c9838b8-5",
-        "16486565198c9838b8-6"
-      ],
-      "settings": {
-        "open_link": "_self",
-        "layout_des": "1",
-        "space": "0",
-        "rounded_ins": "0",
-        "col_pr": "3",
-        "col_pr_tb": "3",
-        "col_pr_mb": "6",
-        "loop": false,
-        "au_time": 0,
-        "au_hover": true,
-        "button": false,
-        "btn_vi": "1",
-        "btn_owl": "1",
-        "btn_color": "0",
-        "dot": true,
-        "dot_owl": "1",
-        "dot_color": "1",
-        "use_eq_height": true,
-        "image_ratio": "ratio1_1",
-        "image_size": "nt_cover",
-        "image_position": "8",
-        "layout": "container",
-        "cl_bg": "#ffffff",
-        "mg": "200px,,200px,",
-        "pd": "",
-        "mg_mb": "",
-        "pd_mb": ""
-      }
-    },
     "category-slider-alt-header": {
       "type": "Category-slider-alt-header",
       "settings": {
@@ -498,6 +408,59 @@
         "cp_code": false,
         "layout": "wrap",
         "cl_bg": "",
+        "mg": "50px,,50px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    },
+    "164926013874fd6afd": {
+      "type": "blog-home-page",
+      "settings": {
+        "blog": "adventure-on",
+        "limit": 4,
+        "date": "date",
+        "col_pr": "6",
+        "col_pr_tb": "6",
+        "col_pr_mb": "6",
+        "show_au": false,
+        "show_dt": false,
+        "loop": false,
+        "au_time": 0,
+        "au_hover": true,
+        "button": false,
+        "btn_vi": "1",
+        "btn_owl": "1",
+        "btn_color": "0",
+        "dot": false,
+        "dot_owl": "1",
+        "dot_color": "1",
+        "cl": "#ffffff",
+        "cl2": "#878787",
+        "bg": "#000000",
+        "overlay": 80,
+        "use_eq_height": true,
+        "image_ratio": "ratio1_1",
+        "image_size": "nt_cover",
+        "image_position": "8",
+        "layout": "nt_full",
+        "image": "shopify:\/\/shop_images\/gautier-salles-uffQnKuJ-hc-unsplash.jpg",
+        "img_align": "center",
+        "img_position": "1",
+        "text_size2": "30,14",
+        "title": "TITLE OF ENTRY",
+        "subtitle1": "FEATURED JOURNAL ENTRY",
+        "subtitle2": "",
+        "subtitle3": "",
+        "text1": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+        "text2": "",
+        "text3": "",
+        "button_label": "Shop Now",
+        "button_link": "",
+        "open_link": "_blank",
+        "txt_align": "tl",
+        "use_shadow": false,
+        "cl_txt": "dark",
         "mg": "50px,,50px,",
         "pd": "",
         "mg_mb": "",
@@ -572,7 +535,7 @@
         "dot_owl": "2",
         "dot_color": "1",
         "use_pr": false,
-        "layout": "wrap",
+        "layout": "container",
         "cl_bg": "",
         "mg": "50px,,50px,",
         "pd": "",
@@ -580,17 +543,74 @@
         "pd_mb": ""
       }
     },
-    "164926013874fd6afd": {
-      "type": "blog-home-page",
+    "1648656519e4bb75df": {
+      "type": "instagram_feed",
+      "blocks": {
+        "16486565198c9838b8-0": {
+          "type": "1",
+          "settings": {
+            "title": "@ FOLLOW US ON INSTAGRAM",
+            "sub_title": "",
+            "sub_font": "2",
+            "style_title": "title_1",
+            "ic_tt": "gem",
+            "show_clpr": false
+          }
+        },
+        "16486565198c9838b8-1": {
+          "type": "img",
+          "settings": {
+            "url": ""
+          }
+        },
+        "16486565198c9838b8-2": {
+          "type": "img",
+          "settings": {
+            "url": ""
+          }
+        },
+        "16486565198c9838b8-3": {
+          "type": "img",
+          "settings": {
+            "url": ""
+          }
+        },
+        "16486565198c9838b8-4": {
+          "type": "img",
+          "settings": {
+            "url": ""
+          }
+        },
+        "16486565198c9838b8-5": {
+          "type": "img",
+          "settings": {
+            "url": ""
+          }
+        },
+        "16486565198c9838b8-6": {
+          "type": "img",
+          "settings": {
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "16486565198c9838b8-0",
+        "16486565198c9838b8-1",
+        "16486565198c9838b8-2",
+        "16486565198c9838b8-3",
+        "16486565198c9838b8-4",
+        "16486565198c9838b8-5",
+        "16486565198c9838b8-6"
+      ],
       "settings": {
-        "blog": "adventure-on",
-        "limit": 4,
-        "date": "date",
-        "col_pr": "6",
-        "col_pr_tb": "6",
+        "open_link": "_self",
+        "layout_des": "1",
+        "space": "2",
+        "rounded_ins": "0",
+        "col_pr": "4",
+        "col_pr_tb": "4",
         "col_pr_mb": "6",
-        "show_au": false,
-        "show_dt": false,
         "loop": false,
         "au_time": 0,
         "au_hover": true,
@@ -598,35 +618,16 @@
         "btn_vi": "1",
         "btn_owl": "1",
         "btn_color": "0",
-        "dot": false,
+        "dot": true,
         "dot_owl": "1",
         "dot_color": "1",
-        "cl": "#ffffff",
-        "cl2": "#878787",
-        "bg": "#000000",
-        "overlay": 80,
         "use_eq_height": true,
         "image_ratio": "ratio1_1",
         "image_size": "nt_cover",
         "image_position": "8",
-        "layout": "nt_full",
-        "img_align": "center",
-        "img_position": "1",
-        "text_size2": "30,14",
-        "title": "TITLE OF ENTRY",
-        "subtitle1": "FEATURED JOURNAL ENTRY",
-        "subtitle2": "",
-        "subtitle3": "",
-        "text1": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-        "text2": "",
-        "text3": "",
-        "button_label": "Shop Now",
-        "button_link": "",
-        "open_link": "_blank",
-        "txt_align": "tl",
-        "use_shadow": false,
-        "cl_txt": "dark",
-        "mg": "50px,,50px,",
+        "layout": "container",
+        "cl_bg": "#ffffff",
+        "mg": "200px,,200px,",
         "pd": "",
         "mg_mb": "",
         "pd_mb": ""
@@ -637,9 +638,9 @@
     "16357021760efbe511",
     "164882807276a2e749",
     "164865439396016512",
-    "1648656519e4bb75df",
     "category-slider-alt-header",
+    "164926013874fd6afd",
     "1649254728acb29f6b",
-    "164926013874fd6afd"
+    "1648656519e4bb75df"
   ]
 }

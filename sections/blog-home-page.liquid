@@ -37,14 +37,14 @@ assign sett_equal = se_stts.use_eq_height
 
 {%- capture layout -%}
 
-
-<div class="img-text-indiv-product-container nt_se_{{sid}} {{se_stts.layout}} txt_shadow_{{se_stts.use_shadow}}" style="margin: 0 auto !important; background-size:contain; background-repeat: no-repeat; background-image: url({{back_image | img_url: '1x1'}};">
+<div class="nt_se_{{sid}} {{se_stts.layout}} txt_shadow_{{se_stts.use_shadow}} nt_bg_lz lazyloadt4s item__position {{se_stts.img_align}}" data-bgset="{{ back_image | img_url: '1x1' }}" data-sizes="auto" data-ratio="{{back_image.aspect_ratio}}" data-parent-fit="contain">
+<div class="blog-home-outer-container">
   <div class="row no-gutters equal_nt {{img_ratio}} al_center flex_wrap_reverse" id="flex_wrap">
     <div class="col-12 col-md-6 txt_col_img txt-col-img-left">
       <div class="flex column pl__50 shadow_wrap {{se_stts.txt_align}} {{cl_arr[1]}} remove_padding_on_mobile remove_padding_on_mobile indiv-product-text-left" >
-        <h6 class="mb__20" style="font-family: 'Oswald'; letter-spacing: .1em; font-weight: 400;">{{se_stts.subtitle1}}</h6>  
-        <h2 class="mb__20 mt__0 {{cl_arr[0]}}">{{se_stts.title}}</h2>
-          {{se_stts.text1}}
+        <h6 class="mb__20" style="font-family: 'Oswald'; letter-spacing: .1em; font-weight: 400; color: white">{{se_stts.subtitle1}}</h6>  
+        <h2 class="mb__20 mt__0 {{cl_arr[0]}}" style="font-family: 'Oswald'; font-weight: 400; color: white">{{se_stts.title}}</h2>
+        {{se_stts.text1}}
           
           
           {%- if url != blank and se_stts.button_label -%}<p class="mg__0"><a class="button {{cl_arr[2]}}" href="{{url}}" target="{{se_stts.open_link}}">{{se_stts.button_label}}</a></p>{%- endif -%}
@@ -84,7 +84,7 @@ assign sett_equal = se_stts.use_eq_height
                               <a href="{{ art_url }}{{cm_link}}"> {{ 'blogs.comments.with_count' | t: count: article.comments_count }}</a>
                             {%- endif -%}
                         </div>
-                          <h2 class="post-title fs__14 ls__2 mt__10 mb__5 tu"><a class="chp" href="{{art_url}}">{{article.title}}</a></h2>
+                          <h2 class="post-title fs__10 ls__2 mt__10 mb__5 tu"><a class="chp" href="{{art_url}}">{{article.title}}</a></h2>
                         {%- if show_dt -%}<span class="post-time cg"><time class="entry-date">{{ article.published_at | time_tag: format: date }}</time></span>{%- endif -%}
                       </div>
                   </article>
@@ -96,6 +96,7 @@ assign sett_equal = se_stts.use_eq_height
     </div>
   </div>
 </div>
+</div>
 {%- endcapture -%}
 
 
@@ -104,8 +105,8 @@ assign sett_equal = se_stts.use_eq_height
 
 {%- style -%}
 .no-gutters {
-    margin-right: 0;
-    margin-left: 0;
+    margin-right: 50px !important;
+    margin-left: 50px !important;
 }
 .no-gutters .post-thumbnail {
     padding-right: 0;
