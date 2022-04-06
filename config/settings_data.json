@@ -954,7 +954,7 @@
           "bd_ip": "#999999",
           "cl_btn": "#696969",
           "cl_txt": "#dcdcdc",
-          "bg": "#f5f5f5",
+          "bg": "#000",
           "bg_repeat": "no-repeat",
           "bg_size": "cover",
           "bg_att": "scroll",
