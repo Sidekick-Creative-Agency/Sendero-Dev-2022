@@ -295,8 +295,8 @@
 .blog-home-img, .blog-home-article {
     /* width: 100px;
     height: 100px; */
-    width: 50%;
-    padding: 10px;
+    /* width: 50%;
+    padding: 10px; */
 }
 .blog-home-link {
     padding: 0 20px 0 0;
@@ -306,6 +306,30 @@
     letter-spacing: 0.15em;
 }
 
+.home-blog-article-container .articles {
+    max-width: 100%;
+    display: flex;
+    /* margin: 0; */
+    padding: 0 5px !important;
+    
+}
+
+.sk-article {
+    /* width: 100%; */
+    padding: 5px !important;
+    
+}
+.nt_se_template--15855375155457__164926013874fd6afd .post-thumbnail>div{
+    /* overflow: hidden; */
+    /* padding: 20px 0 !important; */
+    /* position: relative; */
+    /* bottom: 0 !important; */
+    /* right: 0px; */
+    /* left: 0px; */
+    /* height: 75px; */
+    transform: translateY(-5px);
+    width: calc(100% - 10px) !important;
+}
 /*---------------- ADD TO CART BUTTON -------------------*/
 .single_add_to_cart_button {
     background-color: #222;
