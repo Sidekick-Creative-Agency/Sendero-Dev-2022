@@ -862,17 +862,29 @@
               "cl_mb": "12"
             }
           },
+          "2e57de10-ea06-40b1-819a-04625e73e1c0": {
+            "type": "html",
+            "settings": {
+              "title": "Contact",
+              "content": "<p><span><a href=\"mailto:contact@senderopc.com\">contact@senderopc.com<\/a><\/span><\/p><p><span>Mon-Fri | 8am-5pm<\/span><\/p>",
+              "order": "1",
+              "cl": "2",
+              "cl_tb": "6",
+              "cl_mb": "12"
+            }
+          },
           "1581503819652": {
             "type": "logo",
             "settings": {
-              "align": "tl_md",
-              "align_mb": "tl",
-              "logo_width": 95,
+              "align": "tc_md",
+              "align_mb": "tc",
+              "image": "shopify:\/\/shop_images\/header-logo-pad_8fd942d3-0949-4316-9104-4f8519a3bab8.png",
+              "logo_width": 350,
               "title": "",
-              "content": "<p><i class=\"pegk pe-7s-mail\"><\/i><span> <a href=\"mailto:contact@senderopc.com\">contact@senderopc.com<\/a><\/span><\/p><p><i class=\"pegk pe-7s-clock\"><\/i> <span>Mon-Fri | 8am-5pm | Central<\/span><\/p>",
-              "social_mode": "3",
+              "content": "",
+              "social_mode": "1",
               "order": "1",
-              "cl": "3",
+              "cl": "6",
               "cl_tb": "6",
               "cl_mb": "12"
             }
@@ -881,6 +893,7 @@
         "block_order": [
           "1581503840818",
           "1581503828337",
+          "2e57de10-ea06-40b1-819a-04625e73e1c0",
           "1581503819652"
         ],
         "settings": {
