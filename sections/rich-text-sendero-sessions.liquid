@@ -1,34 +1,14 @@
-<div class="sendero-sessions-rich-text nt_se_{{section.id}} {{section.settings.layout}}" style="margin-bottom: 200px !important;">
+<div class="sendero-sessions-rich-text nt_se_{{section.id}} {{section.settings.layout}}">
     {%- render 'section_title',section:section,section_title:'mb__20' -%}
     <div class="rte_setting {{section.settings.align}}">{{ section.settings.content }}</div>
-    <div><button type="submit" class="sendero-apply-btn css_add_ld btn_new_icon_{{btn_icon}} w__100 submit-btn truncate{% if checkbox_mail %} mail_agree pr{% endif %}"><span>SUBMIT</span></button></div>
   </div>
   
   {%- render 'section_css' -%}
   {%- schema -%}
     {
-      "name": "Sendero-session-apply",
+      "name": "rich text sessions",
       "class": "nt_section type_rich_text",
       "settings": [
-      {
-        "type": "select",
-        "id": "btn_des",
-        "options": [
-          {
-            "value": "1",
-            "label": "Design 1"
-          },
-          {
-            "value": "2",
-            "label": "Design 2"
-          },
-          {
-            "value": "3",
-            "label": "Design 3"
-          }
-        ],
-        "label": "Button Design"
-      },
         {
           "type": "header",
           "content": "== Title Settings"
