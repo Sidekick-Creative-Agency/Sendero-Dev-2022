@@ -471,8 +471,8 @@
           "f612db4f-0e53-4806-bb56-7271c5193f57": {
             "type": "mmtitle",
             "settings": {
-              "mmtitle": "New Things",
-              "url": "",
+              "mmtitle": "New",
+              "url": "shopify:\/\/collections\/spring-2022",
               "open_link": "_self",
               "col": "3"
             }
