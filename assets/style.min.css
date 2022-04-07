@@ -6744,7 +6744,7 @@ a.button.slt4_btn:hover {
 }
 .art_des3 .post-info {
   border: 1px solid #eee;
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.6);
   color:#fff;
   padding: 15px 22px;
   -webkit-transition: 0.5s;
@@ -6752,11 +6752,12 @@ a.button.slt4_btn:hover {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-.art_des3 .post-info h4 {
+.art_des3 .post-inner:hover .post-info {
+  background-color: rgba(0, 0, 0, 0.0);
   color:#fff;
 }
-.art_des3 .post-inner:hover .post-info {
-  opacity: .5;
+.post-info a:hover {
+  color:#fff;
 }
 .dynamic-checkout__content .shopify-cleanslate ul {
   padding: 0;
