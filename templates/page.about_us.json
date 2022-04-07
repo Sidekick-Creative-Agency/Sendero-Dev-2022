@@ -41,7 +41,7 @@
         "style_title": "title_1",
         "ic_tt": "gem",
         "show_clpr": false,
-        "content": "<p>Sendero Provisions Co. makes quality outdoor provisions inspired by the landscapes and cultures of wild, wild America. We cut our teeth roaming the bare deserts of the Southwest looking for geologic wonders and glorious adventure. From our old-school days as geologists mapping in the field to new-school days spent on a cold mountain stream chasing native rainbows, our inspiration comes from our connection to the land and the cultures that represent it. This is the basic calling of Sendero. We make gear that embodies this- super slick products reminiscent of a time long past that will call you to the wild.<strong>SPIRIT of the WEST \/\/ SOUL of the WILD<\/strong><\/p>",
+        "content": "<p>Sendero Provisions Co. makes quality outdoor provisions inspired by the landscapes and cultures of wild, wild America. We cut our teeth roaming the bare deserts of the Southwest looking for geologic wonders and glorious adventure. From our old-school days as geologists mapping in the field to new-school days spent on a cold mountain stream chasing native rainbows, our inspiration comes from our connection to the land and the cultures that represent it. This is the basic calling of Sendero. We make gear that embodies this- super slick products reminiscent of a time long past that will call you to the wild. <strong>SPIRIT of the WEST \/\/ SOUL of the WILD<\/strong><\/p>",
         "align": "tl",
         "layout": "container",
         "mg": "50px,,50px,",
@@ -89,87 +89,22 @@
         "pd_mb": ""
       }
     },
-    "1648570607be123660": {
-      "type": "brand_list",
-      "blocks": {
-        "16485706070962a0a0-0": {
-          "type": "brand",
-          "settings": {
-            "url": "",
-            "open_link": "_blank"
-          }
-        },
-        "16485706070962a0a0-1": {
-          "type": "brand",
-          "settings": {
-            "url": "",
-            "open_link": "_blank"
-          }
-        },
-        "16485706070962a0a0-2": {
-          "type": "brand",
-          "settings": {
-            "url": "",
-            "open_link": "_blank"
-          }
-        },
-        "16485706070962a0a0-3": {
-          "type": "brand",
-          "settings": {
-            "url": "",
-            "open_link": "_blank"
-          }
-        },
-        "16485706070962a0a0-4": {
-          "type": "brand",
-          "settings": {
-            "url": "",
-            "open_link": "_blank"
-          }
-        },
-        "16485706070962a0a0-5": {
-          "type": "brand",
-          "settings": {
-            "url": "",
-            "open_link": "_blank"
-          }
-        }
-      },
-      "block_order": [
-        "16485706070962a0a0-0",
-        "16485706070962a0a0-1",
-        "16485706070962a0a0-2",
-        "16485706070962a0a0-3",
-        "16485706070962a0a0-4",
-        "16485706070962a0a0-5"
-      ],
+    "rich-text-columns": {
+      "type": "rich-text-columns",
       "settings": {
-        "title": "MEET OUR TEAM",
+        "main_title": "OUR QUALITY GUARANTEE",
+        "title1": "QUALITY LOREM IPSOM",
+        "title2": "",
+        "title3": "",
         "sub_title": "",
         "sub_font": "2",
         "style_title": "title_1",
         "ic_tt": "gem",
         "show_clpr": false,
-        "brand_layout": "1",
-        "cat_space": "6",
-        "col": "4",
-        "col_md": "6",
-        "col_mb": "6",
-        "brand_hover": "1",
-        "loop": true,
-        "autoplay": false,
-        "au_time": 0,
-        "au_hover": true,
-        "button": false,
-        "btn_vi": "1",
-        "btn_owl": "2",
-        "btn_color": "0",
-        "dot": false,
-        "dot_owl": "1",
-        "dot_color": "1",
-        "layout": "wrap",
-        "cl_bg": "",
-        "mg": "200px, 200px",
+        "content": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. <\/p>",
+        "align": "tl",
+        "layout": "container",
+        "mg": "50px,,50px,",
         "pd": "",
         "mg_mb": "",
         "pd_mb": ""
@@ -189,7 +124,7 @@
           "type": "1",
           "settings": {
             "title": "SPIRIT OF THE WEST",
-            "color": "#fff",
+            "color": "#ffffff",
             "fw_text": 600,
             "fs_text": 27.5,
             "lh_text": 0,
@@ -211,7 +146,7 @@
           "settings": {
             "font": "f_body",
             "title": "“Sendero” is the Spanish word for “trail” or “path.” Although the origin of the name is uncertain, around these parts if you’re going out to walk a “sendero,” there’s a good chance folks know exactly what you mean. We like to think we’re building our own “sendero” here by following the trails blazed by our role models and industry leaders. We stand wholeheartedly with outdoor inclusion, cultural preservation, public land protection, and conservation through wildlife management. We’re more or less simple folks, and we hold our values high: an honest handshake, a hard day’s work, free-flowing rivers, native fish, public land, quality gear, live music, art for art’s sake, craft beverages, and fine Texas BBQ.",
-            "color": "#fff",
+            "color": "#ffffff",
             "fw_text": 400,
             "fs_text": 12,
             "lh_text": 16,
@@ -254,7 +189,7 @@
         "cap_h_pos_mb": 50,
         "txt_align_mb": "tl",
         "use_shadow": false,
-        "cl_overlay": "#000",
+        "cl_overlay": "#000000",
         "cl_opacity": 18,
         "layout": "nt_full",
         "mg": "50px,,50px,",
@@ -270,7 +205,7 @@
     "16492574913de1faed",
     "1649258084ec2528d4",
     "164856885666aace2e",
-    "1648570607be123660",
+    "rich-text-columns",
     "1649257609430b6426"
   ]
 }

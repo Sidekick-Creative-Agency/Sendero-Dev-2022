@@ -18,7 +18,7 @@
  assign fs_arr = se_stts.text_size2 | split:"," -%}
 
 {%- capture image_layout -%}
-<div class="col-12 col-md-6">
+<div class="col-12 col-md-6 about-us-img">
   <div class="nt_img_txt oh pr middle center">
     {%- comment -%}<a href="{{ url | default:'#' }}" class="db">{%- endcomment -%}
       {%- if image != blank -%}
@@ -35,7 +35,7 @@
 <div class="nt_se_{{sid}} {{se_stts.layout}} txt_shadow_{{se_stts.use_shadow}}">
   <div class="row no-gutters equal_nt {{img_ratio}} al_center">
     {%- if se_stts.img_position == '1' -%}{{- image_layout -}}{%- endif -%}
-    <div class="col-12 col-md-6 txt_col_img">
+    <div class="about-us-img-txt col-12 col-md-6 txt_col_img">
       <div class="flex column pl__20 pr__20 pb__20 pt__20 shadow_wrap {{se_stts.txt_align}} {{cl_arr[1]}}">
           <h3 class="mb__20 mt__0 fs__{{fs_arr[0]}} {{cl_arr[0]}} lh__1b {{se.stts.mg_mb}}">{{se_stts.title}}</h3>
           {{se_stts.text}}

@@ -71,7 +71,7 @@ assign sett_equal = se_stts.use_eq_height
                         <div class="lazyloadt4s nt_bg_lz pr_lazy_img" data-bgset="{{ image | img_url: '1x1' }}" data-ratio="{{image.aspect_ratio}}" data-sizes="auto"{% if sett_equal == false %} style="padding-top:{{ 1 | divided_by: image.aspect_ratio | times: 100}}%;"{% endif %}></div>
                       </a>
                       {%- endif -%}
-                      <div class="pa tc cg w__100">
+                      <div class="pa tc cg w__100 blog-home-page-overlay">
                         <div class="post-meta fs__12">
                             {%- if show_au -%}<span class="post-author mr__5">{{ by }} <span class="cw">{{ article.author | replace_first: 'ad clnt', 'admin' }}</span></span>{%- endif -%}
                             {%- if article.tags.size > 0 -%}
@@ -86,8 +86,12 @@ assign sett_equal = se_stts.use_eq_height
                               <a href="{{ art_url }}{{cm_link}}"> {{ 'blogs.comments.with_count' | t: count: article.comments_count }}</a>
                             {%- endif -%}
                         </div>
+                        <a href="/blogs"><div class="blog-home-link flex shadow_wrap tl" style="align-items:center;">
                           <h2 class="post-title fs__10 ls__2 mt__10 mb__5 tu"><a class="chp" href="{{art_url}}">{{article.title}}</a></h2>
-                        {%- if show_dt -%}<span class="post-time cg"><time class="entry-date">{{ article.published_at | time_tag: format: date }}</time></span>{%- endif -%}
+                          
+                            <span class="blog-home-read-more"><h6>READ MORE<i class="las la-arrow-right"></i></h6></span>
+                          </div></a>
+                          {%- if show_dt -%}<span class="post-time cg"><time class="entry-date">{{ article.published_at | time_tag: format: date }}</time></span>{%- endif -%}
                       </div>
                   </article>
               {%- endfor -%}
