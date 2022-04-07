@@ -416,8 +416,8 @@
     position: relative;
 
 }
-.sendero-session-slider-vid-container iframe {
-  
+.sendero-session-link {
+    max-width: 610px;
 }
 .sendero-session-overlay {
     height:100%;
@@ -451,6 +451,15 @@
  .sendero-sessions-rich-text {
      max-width: 1100px;
  }
+ .sendero-session-flickity-slider {
+     display: flex;
+     flex-wrap: nowrap;
+ }
+
+
+
+
+
 /*--------------------------------------------------------/
 / Individual Product Page
 /--------------------------------------------------------*/

@@ -27,21 +27,21 @@
       }
     },
     "164865439396016512": {
-      "type": "Sessions-slider",
+      "type": "sessions-slider",
       "settings": {
-        "image1": "shopify:\/\/shop_images\/Backcountry-Trout-Cook-How-To_02_1024x1024_02e361da-710e-4b21-b7b5-d3c64e5f319c.jpg",
+        "page1": "the-desert-tapes",
         "source1": "1",
         "video_url1": "https:\/\/youtu.be\/-2icZZ9tbwc",
         "file_name1": "The Desert Tapes",
-        "image2": "shopify:\/\/shop_images\/gautier-salles-uffQnKuJ-hc-unsplash.jpg",
+        "page2": "the-mountain-tapes",
         "source2": "1",
         "video_url2": "https:\/\/youtu.be\/0lUElBN5N-I",
         "file_name2": "The Mountain Tapes",
-        "image3": "shopify:\/\/shop_images\/Page_Header_1024x1024_9e175322-e038-452d-9378-3cf290e25993.jpg",
+        "page3": "the-mountain-tapes",
         "source3": "1",
         "video_url3": "https:\/\/youtu.be\/wg8keG0Cra0",
         "file_name3": "The Mountain Tapes",
-        "image4": "shopify:\/\/shop_images\/Reduced-02_1024x1024_033be2a1-e638-4635-961e-4b208e6f3cb5.png",
+        "page4": "the-van-tapes",
         "source4": "1",
         "video_url4": "https:\/\/youtu.be\/g6aVTYsh1PA",
         "file_name4": "The Van Tapes",
@@ -102,7 +102,7 @@
           "type": "collection",
           "settings": {
             "collection": "",
-            "image": "shopify:\/\/shop_images\/kristjan-kotar--h15p84GY5k-unsplash.jpg",
+            "image": "shopify:\/\/shop_images\/74162361_102268317897142_7558348142593179648_n.jpg",
             "img_align": "center",
             "title": "",
             "url": ""
@@ -112,7 +112,7 @@
           "type": "collection",
           "settings": {
             "collection": "",
-            "image": "shopify:\/\/shop_images\/gautier-salles-uffQnKuJ-hc-unsplash.jpg",
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-07_at_10.05.18_AM.png",
             "img_align": "center",
             "title": "",
             "url": ""
@@ -160,7 +160,7 @@
       }
     },
     "sendero-session-apply": {
-      "type": "Sendero-session-apply",
+      "type": "sendero-session-apply",
       "settings": {
         "btn_des": "1",
         "title": "APPLY FOR SENDERO SESSIONS",
