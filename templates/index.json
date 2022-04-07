@@ -348,7 +348,7 @@
           "type": "3",
           "settings": {
             "title": "MORE SENDERO SESSIONS",
-            "btn_link": "\/sessions",
+            "btn_link": "shopify:\/\/pages\/sendero-sessions",
             "open_link": "_self",
             "title2": "",
             "btn_link2": "",
