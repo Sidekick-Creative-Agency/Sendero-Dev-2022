@@ -1,24 +1,26 @@
 {
   "sections": {
-    "heading": {
-      "type": "pages_heading",
+    "blog-heading": {
+      "type": "blog-heading",
       "blocks": {
-        "89b1a94e-2cf5-4075-a6af-0969fbaeae2c": {
+        "c32e1213-b35d-4cab-a4dc-b59deef433e3": {
           "type": "1",
           "settings": {
-            "color": "#fff"
+            "color": "#ffffff"
           }
         }
       },
       "block_order": [
-        "89b1a94e-2cf5-4075-a6af-0969fbaeae2c"
+        "c32e1213-b35d-4cab-a4dc-b59deef433e3"
       ],
       "settings": {
+        "shown": true,
+        "image": "shopify:\/\/shop_images\/ganapathy-kumar-L75D18aVal8-unsplash.jpg",
         "parallax": false,
-        "color": "#000",
-        "overlay": 54,
-        "padding": 100,
-        "paddingmb": 50,
+        "color": "#000000",
+        "overlay": 40,
+        "padding": 250,
+        "paddingmb": 200,
         "bg_pos": "center center",
         "bg_repeat": "no-repeat",
         "bg_size": "cover",
