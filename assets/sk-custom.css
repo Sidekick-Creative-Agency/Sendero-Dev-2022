@@ -256,10 +256,12 @@
 .sendero-session-more-button {
     padding: 0 !important;
     border: none !important;
+    white-space: nowrap;
 }
 .sendero-session-more-button:hover {
     background-color: transparent !important;
     border: none !important;
+    font-weight: 600;
 }
 .play-icon, .play-icon button {
     z-index: 9999;
@@ -792,6 +794,7 @@ a.prev.page-numbers {
     @media (max-width: 568px){
         .sendero-session-more-button {
             padding: 0 25px 0 0 !important;
+            white-space: nowrap;
         }
     }
 }
