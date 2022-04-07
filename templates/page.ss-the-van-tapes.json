@@ -76,6 +76,17 @@
       "settings": {
         "url": "https:\/\/www.youtube.com\/watch?v=g6aVTYsh1PA&list=PLZf3m6mi50t0_rfk_asMo60MhZvZiw3A3&index=2",
         "layout": "container",
+        "mg": "50,,50px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    },
+    "16492898006b22c773": {
+      "type": "iframe_video",
+      "settings": {
+        "url": "https:\/\/www.youtube.com\/watch?v=wvW9Gl74nuU&list=PLZf3m6mi50t0_rfk_asMo60MhZvZiw3A3&index=3",
+        "layout": "container",
         "mg": "50px,,50px,",
         "pd": "",
         "mg_mb": "",
@@ -87,6 +98,7 @@
     "heading",
     "main",
     "1649289702d074ce87",
-    "1649289736207d1ec3"
+    "1649289736207d1ec3",
+    "16492898006b22c773"
   ]
 }
