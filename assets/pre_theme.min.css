@@ -2584,6 +2584,36 @@ a:focus-visible {
 .op__0 {
   opacity: 0;
 }
+.op__1 {
+  opacity: .1;
+}
+.op__2 {
+  opacity: .2;
+}
+.op__3 {
+  opacity: .3;
+}
+.op__4 {
+  opacity: .4;
+}
+.op__5 {
+  opacity: .5;
+}
+.op__6 {
+  opacity: .6;
+}
+.op__7 {
+  opacity: .7;
+}
+.op__8 {
+  opacity: .8;
+}
+.op__9 {
+  opacity: .9;
+}
+.op__10 {
+  opacity: 1;
+}
 .ntpf,
 .pf {
   position: fixed;
@@ -2809,6 +2839,11 @@ a:focus-visible {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+.al_end{
+  -webkit-box-align: end;
+-ms-flex-align: end;
+align-items: end;
 }
 .fl_center {
   justify-content: center;

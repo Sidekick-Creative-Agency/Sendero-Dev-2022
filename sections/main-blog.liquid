@@ -156,7 +156,7 @@ endif -%}
               color: #222;border-color: #222;
             }
             .blg_count_false .blg_count{display: none}
-          .post_1>a.mb__15 {margin-bottom:25px}.post_nt_loop.post_2:hover a>.lazyloadt4sed {opacity: 1;}.nt_single_blog .post_nt_loop {margin-bottom: {{se_stts.space}}px;}
+          .post_1>a.mb__15 {margin-bottom:25px}.post_nt_loop.post_2:hover a>.lazyloadt4sed {opacity: 1;}.nt_single_blog .post_nt_loop {padding: {{se_stts.space}}px;}
           {%- if art_des == '4' -%}
             {%- assign overlay = se_stts.overlay | divided_by: 100.0 -%}
             .inside-thumb {
@@ -345,7 +345,7 @@ endif -%}
       {
         "type": "range",
         "id": "space",
-        "min": 30,"max": 100,"step": 5,
+        "min": 5,"max": 50,"step": 5,
         "unit": "px",
         "label": "Space between articles",
         "default": 40

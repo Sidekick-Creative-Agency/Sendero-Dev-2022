@@ -6335,7 +6335,6 @@ a.button.slt4_btn:focus,a.button.imtt4_btn:focus  {
     -moz-transition: all .5s ease;
     -o-transition: all .5s ease;
     transition: all .5s ease;
-    
 }
 .art_des3 .post-inner:hover .post-info {
   opacity: 1;

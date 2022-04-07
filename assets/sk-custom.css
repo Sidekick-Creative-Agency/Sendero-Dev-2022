@@ -816,7 +816,48 @@
 
 
 
+/*---------------- SHOPPING CART, LOGIN & SEARCH SIDEBAR SIZE AND PADDING ----------------*/
 
+
+@media (min-width: 768px) {
+    #nt_cart_canvas {
+        width: 740px;
+        background-color: white;
+    }
+
+    #nt_cart_canvas .nt_mini_cart {
+        padding: 80px;
+    }
+
+    #nt_login_canvas, #nt_search_canvas {
+        width: 450px;
+        background-color: white;
+    }
+
+    #nt_login_canvas .nt_mini_cart, #nt_search_canvas .nt_mini_cart {
+        padding: 40px;
+    }
+}
+
+/*---------------- SHOPPING CART, LOGIN & SEARCH SIDEBAR FORM TEXT ----------------*/
+
+.form-row label {
+    font-family: Oswald;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.mini_cart_content a {
+    color: #000;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.mini_cart_content p {
+    color: #999;
+    font-weight: 400;
+    font-size: 13px;
+}
 
 
 /*---------------- Quick View and Add to Cart on Hover -------------------*/
