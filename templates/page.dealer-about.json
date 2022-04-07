@@ -6,7 +6,7 @@
         "89b1a94e-2cf5-4075-a6af-0969fbaeae2c": {
           "type": "1",
           "settings": {
-            "color": "#fff"
+            "color": "#ffffff"
           }
         }
       },
@@ -15,7 +15,7 @@
       ],
       "settings": {
         "parallax": false,
-        "color": "#000",
+        "color": "#000000",
         "overlay": 54,
         "padding": 100,
         "paddingmb": 50,
@@ -29,10 +29,29 @@
       "type": "main-page",
       "settings": {
       }
+    },
+    "16492931386ea13aac": {
+      "type": "rich_text",
+      "settings": {
+        "title": "About Our Retail Program",
+        "sub_title": "",
+        "sub_font": "2",
+        "style_title": "title_1",
+        "ic_tt": "gem",
+        "show_clpr": false,
+        "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam consectetur, magna eu efficitur dignissim, mi nisl faucibus leo, nec sagittis elit magna ac lorem. Pellentesque ac ligula ut odio aliquam elementum a quis neque. Donec in urna ipsum. Curabitur felis libero, sodales sit amet mauris ut, auctor pulvinar nulla. Vivamus bibendum accumsan iaculis. Vivamus metus tellus, bibendum sit amet pharetra quis, venenatis eu metus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras eu bibendum turpis. Sed massa nibh, tempus sit amet cursus at, consectetur eget ex. Nunc eleifend consectetur velit, at convallis enim. In quis ligula tristique nisi volutpat sagittis.<\/p>",
+        "align": "tl",
+        "layout": "container",
+        "mg": "50px,,50px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
     }
   },
   "order": [
     "heading",
-    "main"
+    "main",
+    "16492931386ea13aac"
   ]
 }
