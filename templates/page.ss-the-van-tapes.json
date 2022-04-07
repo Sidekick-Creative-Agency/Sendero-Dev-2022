@@ -1,0 +1,112 @@
+{
+  "sections": {
+    "heading": {
+      "type": "pages_heading",
+      "blocks": {
+        "59b41d7e-9a7b-4ca7-a51e-8c7b64d4cb08": {
+          "type": "2",
+          "settings": {
+            "text": "<p>Sendero Sessions<\/p>",
+            "color": "#ededed"
+          }
+        },
+        "89b1a94e-2cf5-4075-a6af-0969fbaeae2c": {
+          "type": "1",
+          "settings": {
+            "color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "59b41d7e-9a7b-4ca7-a51e-8c7b64d4cb08",
+        "89b1a94e-2cf5-4075-a6af-0969fbaeae2c"
+      ],
+      "settings": {
+        "parallax": false,
+        "color": "#000000",
+        "overlay": 54,
+        "padding": 100,
+        "paddingmb": 50,
+        "bg_pos": "center center",
+        "bg_repeat": "no-repeat",
+        "bg_size": "cover",
+        "bg_att": "scroll"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+      }
+    },
+    "1649289964fae5e5f2": {
+      "type": "rich_text",
+      "settings": {
+        "title": "ABOUT THE VAN TAPES",
+        "sub_title": "",
+        "sub_font": "2",
+        "style_title": "title_1",
+        "ic_tt": "gem",
+        "show_clpr": false,
+        "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam consectetur, magna eu efficitur dignissim, mi nisl faucibus leo, nec sagittis elit magna ac lorem. Pellentesque ac ligula ut odio aliquam elementum a quis neque. Donec in urna ipsum. Curabitur felis libero, sodales sit amet mauris ut, auctor pulvinar nulla. Vivamus bibendum accumsan iaculis. Vivamus metus tellus, bibendum sit amet pharetra quis, venenatis eu metus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras eu bibendum turpis. Sed massa nibh, tempus sit amet cursus at, consectetur eget ex. Nunc eleifend consectetur velit, at convallis enim. In quis ligula tristique nisi volutpat sagittis.<\/p><p>Phasellus auctor hendrerit lobortis. Cras tincidunt felis eu ipsum porttitor venenatis. Phasellus quis posuere mauris, non convallis nulla. Suspendisse hendrerit scelerisque mauris, vitae maximus leo hendrerit sed. Donec mollis tempus est a egestas. Duis placerat, tortor ac malesuada tincidunt, augue est scelerisque dolor, sed rutrum turpis ex sed nibh. Suspendisse vitae tempor quam. Nam quis quam lacus. Morbi tortor nibh, consequat in lorem eget, fringilla aliquet erat. Mauris a porttitor metus. Nunc lacinia placerat mauris, vitae vehicula sapien.<\/p><p>Donec ac ligula porttitor, consequat dui sed, vestibulum turpis. Pellentesque ac mauris id nisl ultrices suscipit a non nunc. Sed hendrerit mi elit, eget molestie massa interdum vitae. Curabitur rutrum, magna ac fringilla finibus, lorem arcu suscipit elit, vitae laoreet tortor enim eu nisi. Nullam a sagittis lacus, commodo vehicula mi. Maecenas blandit nisl libero, non molestie lorem laoreet eu. Sed dignissim orci eu est tempus ornare. Donec commodo ante quis purus iaculis vestibulum. Aenean purus velit, lobortis quis molestie et, tristique vel leo. Cras scelerisque, ante vitae fermentum elementum, libero enim hendrerit nulla, molestie pharetra nunc mauris eget magna. Sed non interdum mi, eget elementum velit.<\/p><p>Sed ipsum felis, feugiat sit amet purus quis, tristique bibendum elit. Etiam dignissim urna augue, sollicitudin interdum dui bibendum vel. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas tincidunt in ligula ut tempor. Sed efficitur tortor ac rhoncus cursus. Aliquam sodales scelerisque nulla, ut sodales turpis aliquam eget. Nulla augue felis, molestie non convallis non, sodales id nibh. Nulla a orci mattis, auctor lorem vitae, finibus arcu. Cras id erat a quam tincidunt lobortis sit amet id lorem. Aenean laoreet lacus vitae magna placerat dignissim. Suspendisse rutrum eleifend molestie. Nulla sollicitudin lorem diam, ac facilisis dolor fermentum sed. Mauris sed facilisis quam, ut ornare massa.<\/p>",
+        "align": "tl",
+        "layout": "container",
+        "mg": "50px, 50px, 50px, 50px",
+        "pd": "50px, 150px, 50px, 50px",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    },
+    "1649289702d074ce87": {
+      "type": "popup_video",
+      "settings": {
+        "se_height": "cus_h",
+        "h_des": "600px",
+        "h_tb": "500px",
+        "h_mb": "350px",
+        "image": "shopify:\/\/shop_images\/74162361_102268317897142_7558348142593179648_n.jpg",
+        "img_align": "center",
+        "title": "Thomas Csorba - \"Jericho\"",
+        "text": "Sendero Sessions: The Van Tapes Vol. 1",
+        "button_label": "Watch now",
+        "url": "https:\/\/www.youtube.com\/watch?v=g6aVTYsh1PA&list=PLZf3m6mi50t0_rfk_asMo60MhZvZiw3A3&index=2",
+        "btn_style": "1",
+        "design": "1",
+        "text_size": "60,18",
+        "caption_w": "2",
+        "cap_v_pos": 50,
+        "cap_h_pos": 50,
+        "txt_align": "tc",
+        "use_shadow": false,
+        "cl_h": "#fff",
+        "cl_sub": "#fff",
+        "cl_btn": "#fff",
+        "cl_overlay": "#000",
+        "cl_opacity": 0,
+        "layout": "nt_full",
+        "use_pr": false,
+        "mg": "50px,,50px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    },
+    "16492898006b22c773": {
+      "type": "iframe_video",
+      "settings": {
+        "url": "https:\/\/www.youtube.com\/watch?v=wvW9Gl74nuU&list=PLZf3m6mi50t0_rfk_asMo60MhZvZiw3A3&index=3",
+        "layout": "container",
+        "mg": "50px,,50px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    }
+  },
+  "order": [
+    "heading",
+    "main",
+    "1649289964fae5e5f2",
+    "1649289702d074ce87",
+    "16492898006b22c773"
+  ]
+}

@@ -5,7 +5,6 @@
       "blocks": {
         "89b1a94e-2cf5-4075-a6af-0969fbaeae2c": {
           "type": "1",
-          "disabled": true,
           "settings": {
             "color": "#ffffff"
           }
@@ -31,19 +30,19 @@
       "settings": {
       }
     },
-    "1649258481e49da973": {
+    "1649292865853b6fe8": {
       "type": "rich_text",
       "settings": {
-        "title": "Returns & Exchanges",
+        "title": "Apply Now",
         "sub_title": "",
         "sub_font": "2",
         "style_title": "title_1",
         "ic_tt": "gem",
         "show_clpr": false,
-        "content": "<p>Return PolicyTo be eligible for a return, your item(s) must be unused and in original condition. Shipping & Handling fees are non-refundable, unless an item(s) is damaged or defective. Item(s) must be returned in original packaging or at least a comparable box sufficient not to damage the item(s) during return shipping.A $3.50 restocking fee will be applied to all returns, except for damaged or defective item(s). This Return & Exchange policy is good for 30 days after receiving your order.Returns and exchanges typically take 1-2 weeks once we receive the item(s)<\/p>",
+        "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam consectetur, magna eu efficitur dignissim, mi nisl faucibus leo, nec sagittis elit magna ac lorem. Pellentesque ac ligula ut odio aliquam elementum a quis neque. Donec in urna ipsum. Curabitur felis libero, sodales sit amet mauris ut, auctor pulvinar nulla. Vivamus bibendum accumsan iaculis. Vivamus metus tellus, bibendum sit amet pharetra quis, venenatis eu metus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras eu bibendum turpis. Sed massa nibh, tempus sit amet cursus at, consectetur eget ex. Nunc eleifend consectetur velit, at convallis enim. In quis ligula tristique nisi volutpat sagittis.<\/p><p><\/p><p><\/p>",
         "align": "tl",
         "layout": "container",
-        "mg": "50px,,50px,",
+        "mg": "",
         "pd": "",
         "mg_mb": "",
         "pd_mb": ""
@@ -53,6 +52,6 @@
   "order": [
     "heading",
     "main",
-    "1649258481e49da973"
+    "1649292865853b6fe8"
   ]
 }

@@ -1,0 +1,190 @@
+{
+  "sections": {
+    "heading": {
+      "type": "pages_heading",
+      "blocks": {
+        "89b1a94e-2cf5-4075-a6af-0969fbaeae2c": {
+          "type": "1",
+          "settings": {
+            "color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "89b1a94e-2cf5-4075-a6af-0969fbaeae2c"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/74162361_102268317897142_7558348142593179648_n.jpg",
+        "parallax": false,
+        "color": "#000000",
+        "overlay": 54,
+        "padding": 100,
+        "paddingmb": 50,
+        "bg_pos": "center center",
+        "bg_repeat": "no-repeat",
+        "bg_size": "cover",
+        "bg_att": "scroll"
+      }
+    },
+    "164865439396016512": {
+      "type": "sessions-slider",
+      "settings": {
+        "page1": "the-desert-tapes",
+        "source1": "1",
+        "video_url1": "https:\/\/youtu.be\/-2icZZ9tbwc",
+        "file_name1": "The Desert Tapes",
+        "page2": "the-mountain-tapes",
+        "source2": "1",
+        "video_url2": "https:\/\/youtu.be\/0lUElBN5N-I",
+        "file_name2": "The Mountain Tapes",
+        "page3": "the-mountain-tapes",
+        "source3": "1",
+        "video_url3": "https:\/\/youtu.be\/wg8keG0Cra0",
+        "file_name3": "The Mountain Tapes",
+        "page4": "the-van-tapes",
+        "source4": "1",
+        "video_url4": "https:\/\/youtu.be\/g6aVTYsh1PA",
+        "file_name4": "The Van Tapes",
+        "btn_rd": true,
+        "btn_icon": true,
+        "btn_style": "primary",
+        "button": true,
+        "use_pagination": "none",
+        "btn_vi": "1",
+        "btn_owl": "2",
+        "btn_color": "1",
+        "se_height": "cus_h",
+        "use_custom_h": "1",
+        "h_des": "600px",
+        "h_tb": "500px",
+        "h_mb": "350px",
+        "caption_w": "1",
+        "cap_v_pos": 50,
+        "cap_h_pos": 0,
+        "txt_align": "tl",
+        "use_shadow": false,
+        "cl_overlay": "#181818",
+        "cl_opacity": 39,
+        "layout": "nt_full",
+        "mg": "50px,,50px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+      }
+    },
+    "16492747850b78eade": {
+      "type": "rich-text-sendero-sessions",
+      "settings": {
+        "title": "ABOUT SENDERO SESSIONS",
+        "sub_title": "",
+        "sub_font": "2",
+        "style_title": "title_1",
+        "ic_tt": "gem",
+        "show_clpr": false,
+        "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store. Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store. Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store. Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+        "align": "tl",
+        "layout": "container",
+        "mg": "50px,,50px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    },
+    "sendero-sessions-img-grid": {
+      "type": "sendero-sessions-img-grid",
+      "blocks": {
+        "1649278839f63a16f4-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/74162361_102268317897142_7558348142593179648_n.jpg",
+            "img_align": "center",
+            "title": "",
+            "url": ""
+          }
+        },
+        "1649278839f63a16f4-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-07_at_10.05.18_AM.png",
+            "img_align": "center",
+            "title": "",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "1649278839f63a16f4-0",
+        "1649278839f63a16f4-1"
+      ],
+      "settings": {
+        "title": "",
+        "style_title": "title_1",
+        "ic_tt": "gem",
+        "show_clpr": false,
+        "round": 0,
+        "cat_layout": "1",
+        "hoverz": true,
+        "cat_design": "1",
+        "cat_space": "30",
+        "image_ratio": "ratio_nt",
+        "col": "6",
+        "col_md": "3",
+        "col_mb": "6",
+        "pr_txt": "products",
+        "loop": true,
+        "autoplay": false,
+        "au_time": 6,
+        "au_hover": true,
+        "button": false,
+        "btn_vi": "1",
+        "btn_owl": "1",
+        "btn_color": "0",
+        "dot": false,
+        "dot_owl": "1",
+        "dot_color": "1",
+        "cp_code": false,
+        "layout": "wrap",
+        "cl_bg": "",
+        "hide_bgimg": false,
+        "mg": "50px,,50px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    },
+    "sendero-session-apply": {
+      "type": "sendero-session-apply",
+      "settings": {
+        "btn_des": "1",
+        "title": "APPLY FOR SENDERO SESSIONS",
+        "sub_title": "",
+        "sub_font": "2",
+        "style_title": "title_1",
+        "ic_tt": "gem",
+        "show_clpr": false,
+        "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store. Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store. Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store. Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+        "align": "tl",
+        "layout": "container",
+        "mg": "50px,,50px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    }
+  },
+  "order": [
+    "heading",
+    "164865439396016512",
+    "main",
+    "16492747850b78eade",
+    "sendero-sessions-img-grid",
+    "sendero-session-apply"
+  ]
+}

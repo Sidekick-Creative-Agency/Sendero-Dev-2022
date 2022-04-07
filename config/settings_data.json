@@ -136,7 +136,7 @@
     "fnt_df_bd": "3",
     "size_bd_text": 14,
     "fw_bd": 400,
-    "bd_line_height": 1.7,
+    "bd_line_height": 1.3,
     "hd_letter_spacing": 0,
     "fnt_df_hd": "1",
     "fw_hd1": 39,
@@ -144,7 +144,7 @@
     "fw_hd5": 15,
     "fw_hd6": 12,
     "fw_hd": 500,
-    "hd_line_height": 1.2,
+    "hd_line_height": 1.1,
     "ls_hd": 0.1,
     "fs_nav": 14,
     "fw_nav": 500,
@@ -271,22 +271,21 @@
     "social_youtube_link": "",
     "social_behance_link": "",
     "social_soundcloud_link": "",
-    "favicon": "shopify:\/\/shop_images\/sendero-favicon.jpg",
-    "favicon_apple": "shopify:\/\/shop_images\/sendero-favicon-2x.jpg",
+    "favicon": "shopify:\/\/shop_images\/sendero-favicon-2x.png",
+    "favicon_apple": "shopify:\/\/shop_images\/sendero-favicon-2x.png",
     "checkout_header_image": "",
-    "checkout_logo_image": "shopify:\/\/shop_images\/kalles_2x_d285afa0-dcc0-4663-80cc-93478c8881de.png",
+    "checkout_logo_image": "shopify:\/\/shop_images\/logo-black.png",
     "checkout_logo_position": "left",
     "checkout_logo_size": "small",
     "checkout_body_background_image": "",
     "checkout_body_background_color": "#fff",
     "checkout_input_background_color_mode": "white",
-    "checkout_sidebar_background_image": "",
     "checkout_sidebar_background_color": "#fafafa",
     "checkout_heading_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
     "checkout_body_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
-    "checkout_accent_color": "#197bbd",
-    "checkout_button_color": "#197bbd",
-    "checkout_error_color": "#e32c2b",
+    "checkout_accent_color": "#000",
+    "checkout_button_color": "#04a4a2",
+    "checkout_error_color": "#e98e10",
     "header_design": "3",
     "return_register": "",
     "des_pr_design": "1",
@@ -471,8 +470,8 @@
           "f612db4f-0e53-4806-bb56-7271c5193f57": {
             "type": "mmtitle",
             "settings": {
-              "mmtitle": "New Things",
-              "url": "",
+              "mmtitle": "New",
+              "url": "shopify:\/\/collections\/spring-2022",
               "open_link": "_self",
               "col": "3"
             }
@@ -893,88 +892,6 @@
           "cl_opacity2": 0
         }
       },
-      "footer_middle": {
-        "type": "footer_middle",
-        "blocks": {
-          "1581503840818": {
-            "type": "menu",
-            "settings": {
-              "title": "Quick Links",
-              "menu": "quick-links-footer",
-              "order": "1",
-              "cl": "2",
-              "cl_tb": "6",
-              "cl_mb": "12"
-            }
-          },
-          "1581503828337": {
-            "type": "menu",
-            "settings": {
-              "title": "Support",
-              "menu": "support-footer",
-              "order": "1",
-              "cl": "2",
-              "cl_tb": "6",
-              "cl_mb": "12"
-            }
-          },
-          "2e57de10-ea06-40b1-819a-04625e73e1c0": {
-            "type": "html",
-            "settings": {
-              "title": "Contact",
-              "content": "<span><a href=\"mailto:contact@senderopc.com\">contact@senderopc.com<\/a><\/span><br><span>Mon-Fri | 8am-5pm<\/span>",
-              "order": "1",
-              "cl": "2",
-              "cl_tb": "6",
-              "cl_mb": "12"
-            }
-          },
-          "1581503819652": {
-            "type": "logo",
-            "settings": {
-              "align": "tr_md",
-              "align_mb": "tc",
-              "image": "shopify:\/\/shop_images\/header-logo-pad_8fd942d3-0949-4316-9104-4f8519a3bab8.png",
-              "logo_width": 400,
-              "title": "",
-              "content": "",
-              "social_mode": "1",
-              "order": "1",
-              "cl": "6",
-              "cl_tb": "6",
-              "cl_mb": "12"
-            }
-          }
-        },
-        "block_order": [
-          "1581503840818",
-          "1581503828337",
-          "2e57de10-ea06-40b1-819a-04625e73e1c0",
-          "1581503819652"
-        ],
-        "settings": {
-          "sticky": false,
-          "accordions": true,
-          "border": false,
-          "bd_cl": "#000000",
-          "cl_h": "#999999",
-          "cl": "#999999",
-          "cl_a": "#999999",
-          "cl_hover": "#04a4a2",
-          "cl_ip": "#999999",
-          "bd_ip": "#999999",
-          "cl_btn": "#696969",
-          "cl_txt": "#dcdcdc",
-          "bg": "#000000",
-          "bg_repeat": "no-repeat",
-          "bg_size": "cover",
-          "bg_att": "scroll",
-          "bg_pos": "center center",
-          "image": "shopify:\/\/shop_images\/FooterBG_8c57be91-a42f-485a-8b5a-1bb9ddee4f22.jpg",
-          "cl_overlay": "#000000",
-          "cl_opacity": 0
-        }
-      },
       "footer_bot": {
         "type": "footer_bot",
         "blocks": {
@@ -1264,7 +1181,7 @@
         "type": "sales_popup",
         "settings": {
           "collection_id": "trending",
-          "limit": 50,
+          "limit": 10,
           "index": true,
           "product": true,
           "collection": false,

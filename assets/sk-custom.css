@@ -256,10 +256,12 @@
 .sendero-session-more-button {
     padding: 0 !important;
     border: none !important;
+    white-space: nowrap;
 }
 .sendero-session-more-button:hover {
     background-color: transparent !important;
     border: none !important;
+    font-weight: 600;
 }
 .play-icon, .play-icon button {
     z-index: 9999;
@@ -277,6 +279,138 @@
 }
 .nt_se_template--15855375155457__164865439396016512.se_height_cus_h .nt_bg_lz {
     padding-top: 500px !important;
+}
+.instagram-img {
+    max-width: 300px;
+    max-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.instagram_container {
+    display: flex;
+    justify-content: center !important;
+    max-width: 950px;
+}
+.instagram-outer-container {
+    margin-top: 50px !important;
+    margin-bottom: 50px !important;
+}
+.quote_slide {
+    max-width: 300px;
+    height: 300px;
+    margin-right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-title {
+    display: flex;
+    justify-content: center;
+}
+.test-outer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto!important;
+    height: 300px;
+    max-width: 75%;
+
+}
+.test-outer-container .flickityt4s-slider {
+    width: 100%;
+    justify-content: center;
+    padding: 0 75px;
+    flex: 1 1 1 33%;
+    /* transform: translateX(-120%) !important; */
+    
+}
+.test-outer-container .flickityt4s-slider div{
+    /* padding: 0 25px; */
+    /* margin: 0 15px; */
+    /* width: 33%; */
+}
+.test-outer-container .flickityt4s-prev-next-button.previous {
+    left: 0;
+    margin-left: -5%;
+}
+.test-outer-container .flickityt4s-prev-next-button.previous:hover, .test-outer-container .flickityt4s-prev-next-button.next:hover {
+    background-color: black;
+}
+.test-outer-container .flickityt4s-prev-next-button.next {
+    right: 0;
+    margin-right: -5%;
+}
+.test-inner-container {
+    height: 300px;
+    width:fit-content;
+}
+.test-container {
+    padding-right: 0;
+    padding-left: 0;
+    margin: auto;
+}
+
+.blog-home-container {
+    max-height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 50%;
+}
+.blog-home-img, .blog-home-article {
+    /* width: 100px;
+    height: 100px; */
+    /* width: 50%;
+    padding: 10px; */
+}
+.blog-home-read-more h6{
+    padding: 0;
+    font-size: 13.5px;
+    font-weight: 400;
+    color: white;
+    /* letter-spacing: 0.15em; */
+}
+.blog-home-read-more i {
+    font-size: 16px;
+    font-weight: 900;
+    transition: .5s;
+}
+.blog-home-read-more:hover i {
+    margin-left: 5px;
+}
+.home-blog-article-container .articles {
+    max-width: 100%;
+    display: flex;
+    /* margin: 0; */
+    padding: 0 5px !important;
+    
+}
+
+.sk-article {
+    /* width: 100%; */
+    padding: 5px !important;
+    
+}
+.nt_se_template--15855375155457__164926013874fd6afd .post-thumbnail>div{
+    /* overflow: hidden; */
+    /* padding: 20px 0 !important; */
+    /* position: relative; */
+    /* bottom: 0 !important; */
+    /* right: 0px; */
+    /* left: 0px; */
+    /* height: 75px; */
+    transform: translateY(-5px);
+    width: calc(100% - 10px) !important;
+    max-height: 70px;
+}
+.blog-home-outer-container {
+    background-color: rgba(0,0,0,.5);
+
+
+}
+.blog-home-outer-container p{
+    color: white;
+    margin: 0;
 }
 /*---------------- ADD TO CART BUTTON -------------------*/
 .single_add_to_cart_button {
@@ -355,6 +489,108 @@
     color: #04A4A2;
     font-size: 12px;
 }
+
+
+/*--------------------------------------------------------/
+/ Sendero Sessions
+/--------------------------------------------------------*/
+.page-head {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+}
+.sendero-apply-btn {
+    background-color: #666;
+    border-color: #666;
+}
+.sendero-apply-btn:hover {
+    background-color: black;
+    border-color: black;
+}
+.sendero-session-img {
+    width: 50%;
+    padding: 0 5px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    object-fit: contain;
+}
+.sendero-session-img img {
+    max-height: 300px;
+    width: 100% !important;
+
+    /* width: 5000px; */
+    object-fit: cover;
+}
+.session-container {
+    display: flex;
+    justify-content: center;
+    
+}
+.sendero-session-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 300px;
+    width: 1100px;
+    margin: 50px 0;
+    object-fit: cover;
+    padding: 0 15px;
+}
+.background-video {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.sendero-session-slider-vid-container {
+    height: 300px;
+    width: 610px;
+    object-fit: contain;
+    padding-right: 10px;
+    position: relative;
+
+}
+.sendero-session-link {
+    max-width: 610px;
+}
+.sendero-session-overlay {
+    height:100%;
+    width: calc(100% - 10px);
+    position: absolute;
+    background-color: rgba(0,0,0,.6);
+    z-index: 2;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.sendero-session-title {
+   left: 0;
+   right: 0;
+   top: 55%;
+    text-align: center;
+    color: white;
+    z-index: 9999;
+    position: absolute;
+}
+.sendero-session-sub-title {
+    left: 0;
+    right: 0;
+    top: 45%;
+     text-align: center;
+     color: white;
+     z-index: 9999;
+     position: absolute;
+ }
+ .sendero-sessions-rich-text {
+     max-width: 1100px;
+ }
+ .sendero-session-flickity-slider {
+     display: flex;
+     flex-wrap: nowrap;
+ }
+
+
 
 
 
@@ -633,6 +869,27 @@ a.prev.page-numbers {
     .sendero-session-txt-container {
         margin: 0 !important;
     }
+    .test-outer-container .flickityt4s-viewport {
+        width: 100%;
+    }
+    .test-outer-container .flickityt4s-slider {
+   
+        /* width: 75%; */
+        /* justify-content: center; */
+        /* padding: 0 75px; */
+
+    }
+    .test-outer-container .flickityt4s-slider div{
+        /* width: 100%; */
+        /* padding: 0 25px; */
+        /* margin: 0 50px; */
+    }
+    .test-outer-container .flickityt4s-prev-next-button.previous {
+        left: 0;
+    }
+    .test-outer-container .flickityt4s-prev-next-button.next {
+        right: 0;
+    }
 }
 
 /*---------------- Custom CSS for only tablet -------------------*/
@@ -680,6 +937,7 @@ a.prev.page-numbers {
     @media (max-width: 568px){
         .sendero-session-more-button {
             padding: 0 25px 0 0 !important;
+            white-space: nowrap;
         }
     }
 }
