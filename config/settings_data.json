@@ -471,8 +471,8 @@
           "f612db4f-0e53-4806-bb56-7271c5193f57": {
             "type": "mmtitle",
             "settings": {
-              "mmtitle": "New Things",
-              "url": "",
+              "mmtitle": "New",
+              "url": "shopify:\/\/collections\/spring-2022",
               "open_link": "_self",
               "col": "3"
             }
@@ -999,7 +999,7 @@
               "cat": "electric",
               "title": "HATS",
               "url": "",
-              "menu": "hats-full",
+              "menu": "",
               "lb": "",
               "lb_cl": "#e91e63",
               "icons_op": "0",
@@ -1012,7 +1012,7 @@
               "cat": "footwear",
               "title": "T-SHIRT",
               "url": "",
-              "menu": "shirts-full",
+              "menu": "",
               "lb": "",
               "lb_cl": "#e91e63",
               "icons_op": "0",
@@ -1182,7 +1182,7 @@
         "type": "sales_popup",
         "settings": {
           "collection_id": "trending",
-          "limit": 50,
+          "limit": 10,
           "index": true,
           "product": true,
           "collection": false,
