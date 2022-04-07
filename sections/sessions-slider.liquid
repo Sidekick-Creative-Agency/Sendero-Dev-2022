@@ -7,10 +7,10 @@
     assign source2 = se_stts.source2
     assign source3 = se_stts.source3
     assign source4 = se_stts.source4
-    assign url1 = se_stts.video_url1 | remove: "https://youtu.be/" | prepend: "embed/" | prepend: "//www.youtube.com/" | append: "?autoplay=1&mute=1&start=5" 
-    assign url2 = se_stts.video_url2 | remove: "https://youtu.be/" | prepend: "embed/" | prepend: "//www.youtube.com/" | append: "?autoplay=1&mute=1&start=5" 
-    assign url3 = se_stts.video_url3 | remove: "https://youtu.be/" | prepend: "embed/" | prepend: "//www.youtube.com/" | append: "?autoplay=1&mute=1&start=5" 
-    assign url4 = se_stts.video_url4 | remove: "https://youtu.be/" | prepend: "embed/" | prepend: "//www.youtube.com/" | append: "?autoplay=1&mute=1&start=5" 
+    assign url1 = se_stts.video_url1 | remove: "https://youtu.be/" | prepend: "embed/" | prepend: "//www.youtube.com/" | append: "?autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1" 
+    assign url2 = se_stts.video_url2 | remove: "https://youtu.be/" | prepend: "embed/" | prepend: "//www.youtube.com/" | append: "?autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1" 
+    assign url3 = se_stts.video_url3 | remove: "https://youtu.be/" | prepend: "embed/" | prepend: "//www.youtube.com/" | append: "?autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1" 
+    assign url4 = se_stts.video_url4 | remove: "https://youtu.be/" | prepend: "embed/" | prepend: "//www.youtube.com/" | append: "?autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1" 
     assign urltest = "https://www.youtube.com/embed?v=-2icZZ9tbwc?autoplay=1"
     assign image1 = se_stts.image1
     assign image2 = se_stts.image2
@@ -21,8 +21,17 @@
     <div class="row equal_nt auto al_center"></div>
       <div class="mobile-remove-left-padding col-md-6 txt_col_img" style="max-width: 100%; padding-right: 0">
         <div class="container best-seller-img-container">
-          <div class="sk-best-seller-img-slider products nt_products_holder dot_owl_{{se_stts.dot_owl}} dot_color_{{se_stts.dot_color}} btn_vi_{{se_stts.btn_vi}} row row_pr_{{inc_pr}} cdt_des_{{se_stts.cdt_des}} round_cd_{{se_stts.round_cd}} js_carousel nt_slider {{se_stts.image_size}} {{se_stts.image_ratio}} position_{{se_stts.image_position}} space_{{se_stts.space}} prev_next_{{se_stts.btn_color}} btn_owl_{{se_stts.btn_owl}} dot_owl_{{se_stts.dot_owl}} dot_color_{{se_stts.dot_color}}{% if sett_equal %} equal_nt{% endif %}" data-flickityt4s-js='{"imagesLoaded": 0,"adaptiveHeight": 0, "contain": 1, "groupCells": "100%", "dragThreshold" : 5, "cellAlign": "left","wrapAround": {{se_stts.loop}},"prevNextButtons": {{se_stts.button}},"percentPosition": 1,"pageDots": {{se_stts.dot}}, "autoPlay" : {{ se_stts.au_time | times: 1000 }}, "pauseAutoPlayOnHover" : {{se_stts.au_hover}}, "rightToLeft": {{settings.use_rtl}} }'>
-            
+          <div class="sk-best-seller-img-slider products nt_products_holder dot_owl_{{se_stts.dot_owl}} dot_color_{{se_stts.dot_color}} btn_vi_{{se_stts.btn_vi}} row row_pr_{{inc_pr}} cdt_des_{{se_stts.cdt_des}} round_cd_{{se_stts.round_cd}} js_carousel nt_slider {{se_stts.image_size}} {{se_stts.image_ratio}} position_{{se_stts.image_position}} space_{{se_stts.space}} prev_next_{{se_stts.btn_color}} btn_owl_{{se_stts.btn_owl}} dot_owl_{{se_stts.dot_owl}} dot_color_{{se_stts.dot_color}}{% if sett_equal %} equal_nt{% endif %}  is-draggable" data-flickityt4s-js='{"imagesLoaded": 0,"adaptiveHeight": 0, "contain": 1, "groupCells": "100%", "dragThreshold" : 5, "cellAlign": "left","wrapAround": true,"prevNextButtons": {{se_stts.button}},"percentPosition": 1,"pageDots": {{se_stts.dot}}, "autoPlay" : {{ se_stts.au_time | times: 1000 }}, "pauseAutoPlayOnHover" : {{se_stts.au_hover}}, "rightToLeft": {{settings.use_rtl}} }'>
+            <button class="flickityt4s-button flickityt4s-prev-next-button previous" type="button" aria-label="Previous" style="z-index: 99999; visibility: visible;">
+                <svg class="flickityt4s-button-icon" viewBox="0 0 100 100">
+                    <path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="arrow" transform="translate(100, 100) rotate(180)"></path>
+                </svg>
+            </button>
+            <button class="flickityt4s-button flickityt4s-prev-next-button next" type="button" aria-label="Next" style="z-index: 99999;visibility: visible">
+                <svg class="flickityt4s-button-icon" viewBox="0 0 100 100">
+                    <path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="arrow"></path>
+                </svg>
+            </button>
             {% if url1 or url2 or url3 or url4 %}
 
             {%- if url1  -%}
@@ -64,7 +73,7 @@
               <div class="sendero-session-overlay"></div>
             </div>
               {%- endif -%}  
-               
+
             {%- else -%}
               {%- for i in (1..8) -%}
                 <div class="pr_animated mt__30 pr_grid_item product nt_pr desgin__1 col-6 col-lg-3 col-md-3 done">
