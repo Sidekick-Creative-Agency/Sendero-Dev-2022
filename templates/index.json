@@ -65,6 +65,69 @@
             "br_pd_mb": 10
           }
         },
+        "9b0a18eb-2681-4948-b096-8384eeee1e40": {
+          "type": "txt",
+          "settings": {
+            "font": "f_heading",
+            "title": "Example Promotion Text",
+            "color": "#fff",
+            "fw_text": 600,
+            "fs_text": 50,
+            "lh_text": 0,
+            "ls_text": 0,
+            "fs_mb_text": 14,
+            "lh_mb_text": 0,
+            "ls_mb_text": 0,
+            "hide": false,
+            "sp": 30,
+            "sp_mb": 20
+          }
+        },
+        "762d1378-8173-406f-80d3-0b676dbea9d4": {
+          "type": "txt",
+          "settings": {
+            "font": "f_body",
+            "title": "Example subheading text talking some big game about how amazing these products are.",
+            "color": "#fff",
+            "fw_text": 400,
+            "fs_text": 22,
+            "lh_text": 7,
+            "ls_text": 0,
+            "fs_mb_text": 14,
+            "lh_mb_text": 4,
+            "ls_mb_text": 0,
+            "hide": false,
+            "sp": 30,
+            "sp_mb": 20
+          }
+        },
+        "25477687-767a-41ba-adf6-170f175c9e14": {
+          "type": "btn",
+          "settings": {
+            "title": "Shop All",
+            "btn_link": "shopify:\/\/collections\/best-sellers",
+            "title2": "",
+            "btn_link2": "",
+            "btn_w": true,
+            "btn_icon": true,
+            "cl_txt": "#fff",
+            "cl_bg": "#222",
+            "cl_bd": "#222",
+            "fs_text": 14,
+            "fw_text": 600,
+            "h": 40,
+            "ls_text": 0,
+            "bdr": 0,
+            "pd": 28,
+            "fs_mb_text": 14,
+            "h_mb": 40,
+            "ls_mb_text": 0,
+            "bdr_mb": 0,
+            "pd_mb": 15,
+            "sp": 0,
+            "sp_mb": 0
+          }
+        },
         "16357021760efbe511-3": {
           "type": "img",
           "settings": {
@@ -131,6 +194,9 @@
       "block_order": [
         "a39e865f-ca51-4fd4-8289-622c1591a0b5",
         "16357021760efbe511-6",
+        "9b0a18eb-2681-4948-b096-8384eeee1e40",
+        "762d1378-8173-406f-80d3-0b676dbea9d4",
+        "25477687-767a-41ba-adf6-170f175c9e14",
         "16357021760efbe511-3",
         "16357021760efbe511-0"
       ],
