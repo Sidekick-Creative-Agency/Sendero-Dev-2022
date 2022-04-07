@@ -3,19 +3,27 @@
     "heading": {
       "type": "pages_heading",
       "blocks": {
+        "59b41d7e-9a7b-4ca7-a51e-8c7b64d4cb08": {
+          "type": "2",
+          "settings": {
+            "text": "<p>Sendero Sessions<\/p>",
+            "color": "#ededed"
+          }
+        },
         "89b1a94e-2cf5-4075-a6af-0969fbaeae2c": {
           "type": "1",
           "settings": {
-            "color": "#fff"
+            "color": "#ffffff"
           }
         }
       },
       "block_order": [
+        "59b41d7e-9a7b-4ca7-a51e-8c7b64d4cb08",
         "89b1a94e-2cf5-4075-a6af-0969fbaeae2c"
       ],
       "settings": {
         "parallax": false,
-        "color": "#000",
+        "color": "#000000",
         "overlay": 54,
         "padding": 100,
         "paddingmb": 50,
@@ -29,10 +37,56 @@
       "type": "main-page",
       "settings": {
       }
+    },
+    "1649289702d074ce87": {
+      "type": "popup_video",
+      "settings": {
+        "se_height": "cus_h",
+        "h_des": "600px",
+        "h_tb": "500px",
+        "h_mb": "350px",
+        "img_align": "center",
+        "title": "SALE OFF UP TO 70%",
+        "text": "Image with text overlay",
+        "button_label": "Watch the video",
+        "url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "btn_style": "1",
+        "design": "1",
+        "text_size": "60,18",
+        "caption_w": "2",
+        "cap_v_pos": 50,
+        "cap_h_pos": 50,
+        "txt_align": "tc",
+        "use_shadow": false,
+        "cl_h": "#fff",
+        "cl_sub": "#fff",
+        "cl_btn": "#fff",
+        "cl_overlay": "#000",
+        "cl_opacity": 0,
+        "layout": "nt_full",
+        "use_pr": false,
+        "mg": "50px,,50px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    },
+    "1649289736207d1ec3": {
+      "type": "iframe_video",
+      "settings": {
+        "url": "https:\/\/www.youtube.com\/watch?v=g6aVTYsh1PA&list=PLZf3m6mi50t0_rfk_asMo60MhZvZiw3A3&index=2",
+        "layout": "container",
+        "mg": "50px,,50px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
     }
   },
   "order": [
     "heading",
-    "main"
+    "main",
+    "1649289702d074ce87",
+    "1649289736207d1ec3"
   ]
 }
