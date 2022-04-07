@@ -34,7 +34,7 @@
     }
   },
   "order": [
-    "heading",
+    "blog-heading",
     "main"
   ]
 }
