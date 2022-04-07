@@ -3764,11 +3764,11 @@ button.mfp-close:hover {
   justify-content: space-between;
 }
 .mini_cart_footer {
-  padding: 20px;
+/*  padding: 20px; */
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
   border-top: 1px solid rgba(129, 129, 129, 0.2);
-  box-shadow: 0 0 10px 0 rgba(129, 129, 129, 0.2);
+/*  box-shadow: 0 0 10px 0 rgba(129, 129, 129, 0.2); */
 }
 .cookie-message {
   padding: 10px 20px;
@@ -6388,7 +6388,6 @@ input.button.btn_back:hover {
 }
 .mini_search_frm {
   padding: 30px 20px;
-  border-bottom: 1px solid rgba(129, 129, 129, 0.2);
 }
 input.search_header__input:not([type="submit"]):not([type="checkbox"]) {
   padding: 0 50px 0 20px;
@@ -6415,9 +6414,11 @@ input.search_header__input:not([type="submit"]):not([type="checkbox"]) {
   font-size: 15px;
 }
 .search_header__prs {
-  padding: 10px 20px;
-  border-bottom: 1px solid rgba(129, 129, 129, 0.2);
-  box-shadow: 0 3px 10px 0 rgba(129, 129, 129, 0.2);
+  font-family: Oswald;
+  text-transform: uppercase;
+  padding: 10px 0;
+  margin:20px;
+  border-bottom: 1px solid #ededed;
 }
 #nt_search_canvas .product_list_widget {
   padding: 20px;
