@@ -2810,6 +2810,11 @@ a:focus-visible {
   -ms-flex-align: center;
   align-items: center;
 }
+.al_end{
+  -webkit-box-align: end;
+-ms-flex-align: end;
+align-items: end;
+}
 .fl_center {
   justify-content: center;
   -ms-flex-pack: center;

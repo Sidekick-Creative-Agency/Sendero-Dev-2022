@@ -6744,15 +6744,19 @@ a.button.slt4_btn:hover {
 }
 .art_des3 .post-info {
   border: 1px solid #eee;
-  background-color: #fff;
+  background-color: #000;
+  color:#fff;
   padding: 15px 22px;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
+.art_des3 .post-info h4 {
+  color:#fff;
+}
 .art_des3 .post-inner:hover .post-info {
-  opacity: 1;
+  opacity: .5;
 }
 .dynamic-checkout__content .shopify-cleanslate ul {
   padding: 0;
