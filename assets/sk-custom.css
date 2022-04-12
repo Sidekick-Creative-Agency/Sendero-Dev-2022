@@ -644,6 +644,9 @@
     max-width: 987px;
     height: 475px;
 }
+.t4s-media-img {
+    cursor: pointer !important;
+}
 .indiv-product-tab {
     padding: none !important;
 }
@@ -651,7 +654,6 @@
     border: none;
     border-bottom: 2px solid #222;
     /* padding: 0; */
-    
 }
 .ul_tabs li.tab_title_block a{
     border: none;
@@ -739,7 +741,9 @@
     font-weight: 400;
     letter-spacing: .1em;
     text-transform: uppercase;
-
+}
+.pswp__button, .pswp__button:hover{
+    border: none !important;
 }
 
 /*---------------- SHOPPING CART SIDEBAR ----------------*/
@@ -985,6 +989,7 @@ a.prev.page-numbers {
         width: 100%;
         height: auto;
     }
+    
 
     /*---------------- Special Custom CSS for Sendero Sessions 'More' Button -------------------*/
     @media (max-width: 568px){
