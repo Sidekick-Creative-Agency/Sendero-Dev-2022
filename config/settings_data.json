@@ -178,7 +178,7 @@
     "main_click": "zoom",
     "zoom_tp": "2",
     "pswp_tp": "light",
-    "show_zoom_img": true,
+    "show_zoom_img": false,
     "pr_curent": "3",
     "show_first_img": false,
     "use_vimg": true,
