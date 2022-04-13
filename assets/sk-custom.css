@@ -819,12 +819,13 @@
 .rich-text-columns-text-outer-section {
     padding: 0 50px;
     text-align: left;
-
     display: flex;
     margin-bottom: 25px;
 }
-
-
+.rich-text-button button{
+    max-width: none !important;
+    white-space: nowrap;
+}
 
 /*---------------- SHOPPING CART, LOGIN & SEARCH SIDEBAR SIZE AND PADDING ----------------*/
 

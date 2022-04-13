@@ -151,6 +151,12 @@
     </div>
     {%- endif -%}  
   </div>
+  
+  {%- if section.settings.show_btn -%}
+    <div class="rich-text-button">
+      <button class="btn_icon_true">{{section.settings.btn_text}}</button>
+    </div>
+    {%- endif -%}
 </div>
   
   {%- render 'section_css' -%}
@@ -262,6 +268,18 @@
           "id": "show_ckmk",
           "label": "Show checkmark icons?",
           "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "show_btn",
+          "label": "Show button?",
+          "default": false
+        },
+        {
+          "type": "text",
+          "id": "btn_text",
+          "label": "Button Text",
+          "default": "Click Me"
         },
         {
           "type": "select",
