@@ -20,7 +20,7 @@
   
 {%- if image != blank -%}
   <div class="page-head tc pr oh page_bg_img page_head_{{se_id}}">
-     <div class="parallax-inner nt_parallax_{{parallax}} lazyloadt4s nt_bg_lz pa t__0 l__0 r__0 b__0" data-bgset="{{ image | img_url: '1000x1000' }}" data-ratio="{{image.aspect_ratio}}" data-sizes="auto" data-parent-fit="cover"></div>
+     <div class="parallax-inner nt_parallax_{{parallax}} lazyloadt4s nt_bg_lz pa t__0 l__0 r__0 b__0" data-bgset="{{ image | img_url: '1x1' }}" data-ratio="{{image.aspect_ratio}}" data-sizes="auto" data-parent-fit="cover"></div>
      {{-bk_contents-}}
   </div>
 {%- else -%}
