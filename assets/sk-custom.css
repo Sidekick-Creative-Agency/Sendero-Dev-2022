@@ -785,6 +785,11 @@
 
 /*---------------- Our Story Page -------------------*/
 
+.checkmark {
+    height: 33px;
+    width: 33px;
+    margin-right: 25px;
+}
 .about-us-img-txt {
     padding-left: 50px !important;
     padding-right: 50px !important;
@@ -800,20 +805,23 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 50px;
-    
+    /* padding-top: 50px; */
+    padding: 50px 20px 0 20px;
 }
 .rich-text-columns-inner-container {
     display: flex;
     justify-content: center;
     margin: 50px 0;
     flex-wrap: wrap;
+    width: 100%;
 }
 
-.rich-text-columns-text-section {
+.rich-text-columns-text-outer-section {
     padding: 0 50px;
     text-align: left;
-    width: 50%;
+
+    display: flex;
+    margin-bottom: 25px;
 }
 
 
@@ -959,7 +967,14 @@ a.prev.page-numbers {
 
 /*---------------- Custom CSS for only mobile -------------------*/
 @media (max-width: 767px){
-
+    .rich-text-columns-inner-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .rich-text-columns-text-outer-section {
+        width: 100%;
+    }
     .sk-breadcrumbs {
         margin:20px 25px;
     }
