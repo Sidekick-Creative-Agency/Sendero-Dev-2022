@@ -14,17 +14,27 @@
     assign source9 = se_stts.source9
     assign source10 = se_stts.source10
 
-    assign url1 = se_stts.video_url1 | remove: "https://youtu.be/" | prepend: "embed/" | prepend: "//www.youtube.com/" | append: "?autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1&rel=0&autohide=1" 
-    assign url2 = se_stts.video_url2 | remove: "https://youtu.be/" | prepend: "embed/" | prepend: "//www.youtube.com/" | append: "?autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1&rel=0&autohide=1" 
-    assign url3 = se_stts.video_url3 | remove: "https://youtu.be/" | prepend: "embed/" | prepend: "//www.youtube.com/" | append: "?autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1&rel=0&autohide=1" 
-    assign url4 = se_stts.video_url4 | remove: "https://youtu.be/" | prepend: "embed/" | prepend: "//www.youtube.com/" | append: "?autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1&rel=0&autohide=1" 
-    assign url5 = se_stts.video_url5 | remove: "https://youtu.be/" | prepend: "embed/" | prepend: "//www.youtube.com/" | append: "?autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1&rel=0&autohide=1" 
-    assign url6 = se_stts.video_url6 | remove: "https://youtu.be/" | prepend: "embed/" | prepend: "//www.youtube.com/" | append: "?autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1&rel=0&autohide=1" 
-    assign url7 = se_stts.video_url7 | remove: "https://youtu.be/" | prepend: "embed/" | prepend: "//www.youtube.com/" | append: "?autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1&rel=0&autohide=1" 
-    assign url8 = se_stts.video_url8 | remove: "https://youtu.be/" | prepend: "embed/" | prepend: "//www.youtube.com/" | append: "?autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1&rel=0&autohide=1"
-    assign url9 = se_stts.video_url9 | remove: "https://youtu.be/" | prepend: "embed/" | prepend: "//www.youtube.com/" | append: "?autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1&rel=0&autohide=1" 
-    assign url10 = se_stts.video_url10 | remove: "https://youtu.be/" | prepend: "embed/" | prepend: "//www.youtube.com/" | append: "?autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1&rel=0&autohide=1" 
-    assign url_none = "//www.youtube.com/embed/https://www.youtube.com/watch?v=_9VUPq3SxOc?autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1&rel=0&autohide=1"
+    assign video_id = se_stts.video_url1 | remove: "https://youtu.be/"
+    assign url1 = se_stts.video_url1 | remove: "https://youtu.be/" | prepend: "embed/" | prepend: "//www.youtube.com/" | append: "?autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1&rel=0&autohide=1&enablejsapi=1&playlist=" | append: video_id
+    assign video_id = se_stts.video_url2 | remove: "https://youtu.be/"
+    assign url2 = se_stts.video_url2 | remove: "https://youtu.be/" | prepend: "embed/" | prepend: "//www.youtube.com/" | append: "?autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1&rel=0&autohide=1&enablejsapi=1&playlist=" | append: video_id
+    assign video_id = se_stts.video_url3 | remove: "https://youtu.be/"
+    assign url3 = se_stts.video_url3 | remove: "https://youtu.be/" | prepend: "embed/" | prepend: "//www.youtube.com/" | append: "?autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1&rel=0&autohide=1&enablejsapi=1&playlist=" | append: video_id
+    assign video_id = se_stts.video_url4 | remove: "https://youtu.be/"
+    assign url4 = se_stts.video_url4 | remove: "https://youtu.be/" | prepend: "embed/" | prepend: "//www.youtube.com/" | append: "?autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1&rel=0&autohide=1&enablejsapi=1&playlist=" | append: video_id
+    assign video_id = se_stts.video_url5 | remove: "https://youtu.be/"
+    assign url5 = se_stts.video_url5 | remove: "https://youtu.be/" | prepend: "embed/" | prepend: "//www.youtube.com/" | append: "?autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1&rel=0&autohide=1&enablejsapi=1&playlist=" | append: video_id
+    assign video_id = se_stts.video_url6 | remove: "https://youtu.be/"
+    assign url6 = se_stts.video_url6 | remove: "https://youtu.be/" | prepend: "embed/" | prepend: "//www.youtube.com/" | append: "?autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1&rel=0&autohide=1&enablejsapi=1&playlist=" | append: video_id
+    assign video_id = se_stts.video_url7 | remove: "https://youtu.be/"
+    assign url7 = se_stts.video_url7 | remove: "https://youtu.be/" | prepend: "embed/" | prepend: "//www.youtube.com/" | append: "?autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1&rel=0&autohide=1&enablejsapi=1&playlist=" | append: video_id
+    assign video_id = se_stts.video_url8 | remove: "https://youtu.be/"
+    assign url8 = se_stts.video_url8 | remove: "https://youtu.be/" | prepend: "embed/" | prepend: "//www.youtube.com/" | append: "?autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1&rel=0&autohide=1&enablejsapi=1&playlist=" | append: video_id
+    assign video_id = se_stts.video_url9 | remove: "https://youtu.be/"
+    assign url9 = se_stts.video_url9 | remove: "https://youtu.be/" | prepend: "embed/" | prepend: "//www.youtube.com/" | append: "?autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1&rel=0&autohide=1&enablejsapi=1&playlist=" | append: video_id
+    assign video_id = se_stts.video_url10 | remove: "https://youtu.be/"
+    assign url10 = se_stts.video_url10 | remove: "https://youtu.be/" | prepend: "embed/" | prepend: "//www.youtube.com/" | append: "?autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1&rel=0&autohide=1&enablejsapi=1&playlist=" | append: video_id
+    assign url_none = "//www.youtube.com/embed/https://www.youtube.com/watch?v=_9VUPq3SxOc?autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1&rel=0&autohide=1&enablejsapi=1&playlist=https://www.youtube.com/watch?v=_9VUPq3SxOc"
 
     assign urltest = "https://www.youtube.com/embed?v=-2icZZ9tbwc?autoplay=1"
 
@@ -72,7 +82,7 @@
     assign sub_title9 = se_stts.file_sub_title9
     assign sub_title10 = se_stts.file_sub_title10
     -%}
-
+<p>{{url10}}</p>
   <div class="sk-collection-top" style="margin-bottom: 100px;">
     <div class="row equal_nt auto al_center"></div>
       <div class="mobile-remove-left-padding col-md-6 txt_col_img" style="max-width: 100%; padding-right: 0">
@@ -96,7 +106,7 @@
             {%- if url1 != url_none -%}
             <a class="sendero-session-link" href="{{link1}}">
             <div class="sendero-session-slider-vid-container">
-                <iframe width="500%" height="100%" src="{{url1}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>     
+                <iframe width="100%" height="100%" src="{{url1}}" title="YouTube video player" frameborder="0" allow="loop; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>     
                 </iframe>  
                 <h5 class="sendero-session-sub-title">{{se_stts.file_sub_title1}}</h5>
                   <h3 class="sendero-session-title">{{se_stts.file_name1}}</h3>
