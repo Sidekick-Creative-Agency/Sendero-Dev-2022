@@ -784,8 +784,10 @@
 
 
 /*---------------- Our Story Page -------------------*/
+
 .about-us-img-txt {
     padding-left: 50px !important;
+    padding-right: 50px !important;
 }
 .about-us-img {
     padding-right: 50px !important;
@@ -942,6 +944,9 @@ a.prev.page-numbers {
     }
     .test-outer-container .flickityt4s-prev-next-button.next {
         right: 0;
+    }
+    .about-us-img {
+        padding-right: 0 !important;
     }
 }
 
