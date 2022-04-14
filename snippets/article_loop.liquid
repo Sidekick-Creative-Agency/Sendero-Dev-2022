@@ -1,13 +1,22 @@
 {%- assign art_url = article.url %}{% assign IsDotShown = false -%}
-<article class="post-{{article.id}} post_nt_loop post_1 flex col-lg-12 col-md-12 col-12 mt__40 mb__40 al_center"> 
-   <div class="post-info mb__10 col-lg-6 col-md-6">
-      <a class="mb__15 db pr oh" href="{{art_url}}">
+<article class="post-{{article.id}} post_nt_loop post_1 flex col-lg-12 col-md-12 col-12 al_center" style="margin:60px 0 60px 0;padding:0px;background-color: #000;"> 
+   <div class="post-info col-lg-6 col-md-6" style="padding:0;">
+      <a class="db pr oh" href="{{art_url}}">
          {%- assign image = article.image -%}
-         {%- if image -%}<div class="lazyloadt4s nt_bg_lz pr_lazy_img" data-bgset="{{ image | img_url: '1x1' }}" data-ratio="{{image.aspect_ratio}}" data-sizes="auto"{% if sett_equal == false %} style="padding-top:{{ 1 | divided_by: image.aspect_ratio | times: 100}}%;"{% endif %}></div>{%- endif -%}
+         {%- if image -%}
+            <div class="lazyloadt4s sk-feat-post-image nt_bg_lz pr_lazy_img" data-bgset="{{ image | img_url: '1x1' }}" data-ratio="{{image.aspect_ratio}}" data-sizes="auto"{% if sett_equal == false %} style="padding-top:{{ 1 | divided_by: image.aspect_ratio | times: 100}}%;"{% endif %}>
+            </div>
+         {%- endif -%}
+         <div class="sk-feat-post-img-overlay">
+            <div class="sk-feat-post-img-info">
+               <h6 class="sk-feat-post-img-sub">FEATURED JOURNAL ENTRY</h6>
+               <h1 class="sk-feat-post-img-title">{{article.title}}</h1>
+            </div>
+         </div>
       </a>
    </div>
-   <div class="post-info mb__10 col-lg-4 col-md-4 ml__50">
-      <h4 class="mg__0 fs__30 mb__5 ls__0"><a class="cd chp open" href="{{art_url}}">{{article.title}}</a></h4>
+   <div class="post-info sk-feat-post-info col-lg-6 col-md-6">
+      <h5 class="mg__0 fs__20 mb__15 ls__0"><a class="chp open" href="{{art_url}}">{{article.title}}</a></h5>
       {%- if show_au -%}{% assign IsDotShown = true %}<span class="post-author mr__5">{{ by }} <span class="cd">{{ article.author | replace_first: 'ad clnt', 'admin' }}</span></span>{%- endif -%}
       {%- if show_dt -%}{% assign IsDotShown = true %}<span class="post-time">{{ on }} <span class="cd">{{ article.published_at | time_tag: format: date }}</span></span>{%- endif -%}
       {%- if show_cm -%}
@@ -15,6 +24,6 @@
          {%- if IsDotShown %}.{% endif %}<a href="{{ art_url }}{{cm_link}}"> {{ 'blogs.comments.with_count' | t: count: article.comments_count }}</a>
       {%- endif -%}
       {%- if show_cnt %}<div class="post-content">{%- if article.excerpt.size > 0  -%}{{ article.excerpt | strip_html }}{%- else -%}{{ article.content | strip_html | truncate: 118 }}{%- endif -%}</div>{% endif -%}
-      {%- if show_rm %}<a href="{{art_url}}" class="post-readmore dib mt__5">{{ 'blogs.section.read_more' | t }}</a>{% endif -%}
+      <a href="{{art_url}}"><h6 class="shop-all pt__20">Read More<i class="las la-arrow-right"></i></h6></a>
    </div>
 </article>
