@@ -195,6 +195,53 @@
     letter-spacing: 0.1em;
 }
 
+
+
+/* --------- DEALER APPLY PAGE --------------- */
+.dealer-apply-container input::placeholder{
+    color: #878787;
+}
+.dealer-apply-container input, select{
+    border: none !important;
+    border-bottom: 1px solid #878787 !important;
+    color: black !important;
+}
+.dealer-apply-container select:invalid, select option[value=""] {
+    color: #878787 !important;
+}
+.dealer-apply-container label {
+    font-size: 10px;
+}
+.dealer-apply-row {
+    display: flex;
+    column-gap: 25px;
+}
+.dealer-apply-row div {
+    width: 100%;
+}
+.dealer-apply-checkbox-container {
+    margin-bottom: 20px;
+}
+.dealer-apply-button {
+    background-color: #000 !important;
+    color: #fff !important;
+    border: 1px solid rgba(33,43,54,.9) !important;
+    text-transform: uppercase !important;
+    font-family: 'Oswald' !important;
+    font-weight: 400 !important;
+    max-width: none !important;
+}
+.dealer-apply-button:hover{
+    background-color: #666 !important;
+    color: #fff !important;
+    border: 1px solid rgba(33,43,54,.9) !important;
+    text-transform: uppercase !important;
+    font-family: 'Oswald' !important;
+    font-weight: 400 !important;
+    max-width: none !important;
+}
+
+
 /*--------------------------------------------------------/
 / FOOTERS
 /--------------------------------------------------------*/
@@ -790,8 +837,15 @@
 
 
 /*---------------- Our Story Page -------------------*/
+
+.checkmark {
+    height: 33px;
+    width: 33px;
+    margin-right: 25px;
+}
 .about-us-img-txt {
     padding-left: 50px !important;
+    padding-right: 50px !important;
 }
 .about-us-img {
     padding-right: 50px !important;
@@ -804,23 +858,27 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 50px;
-    
+    /* padding-top: 50px; */
+    padding: 50px 20px 0 20px;
 }
 .rich-text-columns-inner-container {
     display: flex;
     justify-content: center;
     margin: 50px 0;
     flex-wrap: wrap;
+    width: 100%;
 }
 
-.rich-text-columns-text-section {
+.rich-text-columns-text-outer-section {
     padding: 0 50px;
     text-align: left;
-    width: 50%;
+    display: flex;
+    margin-bottom: 25px;
 }
-
-
+.rich-text-button button{
+    max-width: none !important;
+    white-space: nowrap;
+}
 
 /*---------------- SHOPPING CART, LOGIN & SEARCH SIDEBAR SIZE AND PADDING ----------------*/
 
@@ -949,6 +1007,9 @@ a.prev.page-numbers {
     .test-outer-container .flickityt4s-prev-next-button.next {
         right: 0;
     }
+    .about-us-img {
+        padding-right: 0 !important;
+    }
 }
 
 /*---------------- Custom CSS for only tablet -------------------*/
@@ -960,7 +1021,14 @@ a.prev.page-numbers {
 
 /*---------------- Custom CSS for only mobile -------------------*/
 @media (max-width: 767px){
-
+    .rich-text-columns-inner-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .rich-text-columns-text-outer-section {
+        width: 100%;
+    }
     .sk-breadcrumbs {
         margin:20px 25px;
     }

@@ -14,6 +14,7 @@
         "89b1a94e-2cf5-4075-a6af-0969fbaeae2c"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/116309620_2383569085270467_5796589458683211337_n.jpg",
         "parallax": false,
         "color": "#000000",
         "overlay": 54,
@@ -33,7 +34,7 @@
     "16492931386ea13aac": {
       "type": "rich_text",
       "settings": {
-        "title": "About Our Retail Program",
+        "title": "About Our Retailer Program",
         "sub_title": "",
         "sub_font": "2",
         "style_title": "title_1",
@@ -47,11 +48,32 @@
         "mg_mb": "",
         "pd_mb": ""
       }
+    },
+    "rich-text-columns": {
+      "type": "rich-text-columns",
+      "settings": {
+        "main_title": "Retailer program benefits",
+        "title1": "QUALITY LOREM IPSOM",
+        "title2": "QUALITY LOREM IPSOM",
+        "title3": "QUALITY LOREM IPSOM",
+        "sub_font": "2",
+        "style_title": "title_1",
+        "ic_tt": "gem",
+        "show_clpr": false,
+        "content": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. <\/p>",
+        "align": "tl",
+        "layout": "container",
+        "mg": "50px,,50px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
     }
   },
   "order": [
     "heading",
     "main",
-    "16492931386ea13aac"
+    "16492931386ea13aac",
+    "rich-text-columns"
   ]
 }

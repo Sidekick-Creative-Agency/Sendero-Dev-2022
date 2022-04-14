@@ -14,7 +14,9 @@
         "89b1a94e-2cf5-4075-a6af-0969fbaeae2c"
       ],
       "settings": {
-        "parallax": false,
+        "title": "Become a retailer",
+        "image": "shopify:\/\/shop_images\/181759464_2577637972530243_4941670427257898936_n.jpg",
+        "parallax": true,
         "color": "#000000",
         "overlay": 54,
         "padding": 100,
@@ -33,9 +35,12 @@
     "1649292865853b6fe8": {
       "type": "rich_text",
       "settings": {
-        "title": "Apply Now",
+        "title": "retailer application",
         "sub_title": "",
+        "show_btn": false,
+        "btn_text": "Click Me",
         "sub_font": "2",
+        "header_align": "left",
         "style_title": "title_1",
         "ic_tt": "gem",
         "show_clpr": false,
@@ -47,11 +52,17 @@
         "mg_mb": "",
         "pd_mb": ""
       }
+    },
+    "dealer-apply": {
+      "type": "dealer-apply",
+      "settings": {
+      }
     }
   },
   "order": [
     "heading",
     "main",
-    "1649292865853b6fe8"
+    "1649292865853b6fe8",
+    "dealer-apply"
   ]
 }

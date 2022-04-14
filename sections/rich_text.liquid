@@ -1,6 +1,11 @@
 <div class="nt_se_{{section.id}} {{section.settings.layout}}">
   {%- render 'section_title',section:section,section_title:'mb__20' -%}
   <div class="rte_setting {{section.settings.align}}">{{ section.settings.content }}</div>
+  {%- if section.settings.show_btn -%}
+    <div class="rich-text-button">
+      <button class="btn_icon_true">{{section.settings.btn_text}}</button>
+    </div>
+    {%- endif -%}
 </div>
 
 {%- render 'section_css' -%}
@@ -25,6 +30,18 @@
         "label": "Sub Text"
       },
       {
+        "type": "checkbox",
+        "id": "show_btn",
+        "label": "Show button?",
+        "default": false
+      },
+      {
+        "type": "text",
+        "id": "btn_text",
+        "label": "Button Text",
+        "default": "Click Me"
+      },
+      {
         "type": "select",
         "id": "sub_font",
         "default": "2",
@@ -39,6 +56,26 @@
           }
         ],
         "label": "Sub Text use font:"
+      },
+      {
+        "type": "select",
+        "id": "header_align",
+        "label": "Align header",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },    
+          {
+            "value": "center",
+            "label": "Center"
+          },   
+          {
+            "value": "right",
+            "label": "Right"
+          }       
+        ],
+        "default": "center"
       },
       {
         "type": "select",
