@@ -782,6 +782,11 @@
 }
 
 
+/*---------------- Blog Pages -------------------*/
+
+.nt_single_blog .post_nt_loop {
+    padding: 5px;
+}
 
 /*---------------- Our Story Page -------------------*/
 .about-us-img-txt {
