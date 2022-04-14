@@ -96,7 +96,7 @@
         "col_pr_tb": "6",
         "col_pr_mb": "12",
         "show_au": false,
-        "show_dt": true,
+        "show_dt": false,
         "show_cm": false,
         "show_tg": false,
         "cl": "#ffffff",
