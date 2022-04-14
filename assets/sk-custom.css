@@ -185,6 +185,53 @@
     letter-spacing: 0.1em;
 }
 
+
+
+/* --------- DEALER APPLY PAGE --------------- */
+.dealer-apply-container input::placeholder{
+    color: #878787;
+}
+.dealer-apply-container input, select{
+    border: none !important;
+    border-bottom: 1px solid #878787 !important;
+    color: black !important;
+}
+.dealer-apply-container select:invalid, select option[value=""] {
+    color: #878787 !important;
+}
+.dealer-apply-container label {
+    font-size: 10px;
+}
+.dealer-apply-row {
+    display: flex;
+    column-gap: 25px;
+}
+.dealer-apply-row div {
+    width: 100%;
+}
+.dealer-apply-checkbox-container {
+    margin-bottom: 20px;
+}
+.dealer-apply-button {
+    background-color: #000 !important;
+    color: #fff !important;
+    border: 1px solid rgba(33,43,54,.9) !important;
+    text-transform: uppercase !important;
+    font-family: 'Oswald' !important;
+    font-weight: 400 !important;
+    max-width: none !important;
+}
+.dealer-apply-button:hover{
+    background-color: #666 !important;
+    color: #fff !important;
+    border: 1px solid rgba(33,43,54,.9) !important;
+    text-transform: uppercase !important;
+    font-family: 'Oswald' !important;
+    font-weight: 400 !important;
+    max-width: none !important;
+}
+
+
 /*--------------------------------------------------------/
 / FOOTERS
 /--------------------------------------------------------*/
