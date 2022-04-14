@@ -615,32 +615,43 @@
     object-fit: cover;
     padding: 0 15px;
 }
-.background-video {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-}
 .sendero-session-slider-vid-container {
     height: 300px;
-    width: 610px;
+    width: 600px;
     object-fit: contain;
-    padding-right: 10px;
+    margin-right: 10px;
     position: relative;
-
+    overflow: hidden;
+}
+.sendero-session-slider-vid-container iframe {
+    /* width: 300%; 
+    height: 300%; */
+    /* ...and bring it back again */
+    /* margin-left: -100%; */
+    position: absolute;
+    height:100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 350%;
+    left: -125%;
+    max-width: none;
+    pointer-events: none;
 }
 .sendero-session-link {
     max-width: 610px;
 }
 .sendero-session-overlay {
     height:100%;
-    width: calc(100% - 10px);
+    width: 100%;
     position: absolute;
-    background-color: rgba(0,0,0,.6);
+    background-color: rgba(0,0,0,.3);
     z-index: 2;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
+    overflow: hidden;
 }
 .sendero-session-title {
    left: 0;
