@@ -191,12 +191,13 @@
 .dealer-apply-container input::placeholder{
     color: #878787;
 }
-.dealer-apply-container input, select{
+.dealer-apply-container input, select {
     border: none !important;
     border-bottom: 1px solid #878787 !important;
     color: black !important;
+    max-width: 250px;
 }
-.dealer-apply-container select:invalid, select option[value=""] {
+.dealer-apply-container select:invalid, select option[value=""], .state-dropdown select:invalid, .state-dropdown select option[value=""] {
     color: #878787 !important;
 }
 .dealer-apply-container label {
@@ -230,6 +231,15 @@
     font-weight: 400 !important;
     max-width: none !important;
 }
+
+
+/* --------- LOCATIONS PAGE --------------- */
+.state-dropdown {
+    padding-left: 70px;
+}
+
+
+
 
 
 /*--------------------------------------------------------/
