@@ -196,14 +196,14 @@
         "dot": false,
         "dot_owl": "1",
         "dot_color": "1",
-        "use_eq_height": false,
-        "image_ratio": "ratio_nt",
-        "image_size": "nt_cover",
+        "use_eq_height": true,
+        "image_ratio": "ratio1_1",
+        "image_size": "nt_contain",
         "image_position": "8"
       }
     },
-    "best-seller-slider": {
-      "type": "best-seller-slider",
+    "category-slider-alt-header": {
+      "type": "Category-slider-alt-header",
       "settings": {
         "title": "Best Seller Slider",
         "sub_title": "Sub Text",
@@ -256,6 +256,6 @@
     "1648757478999cc57a",
     "164875753916b49a9b",
     "product-rec-indiv",
-    "best-seller-slider"
+    "category-slider-alt-header"
   ]
 }
