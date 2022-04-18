@@ -8,21 +8,17 @@
           "settings": {
             "color": "#ffffff"
           }
-        },
-        "e8d6c4cd-d55a-4ca5-9afe-629c7d6803ad": {
-          "type": "2",
-          "settings": {
-            "text": "<p><\/p><p>Where to Buy Sendero<\/p>",
-            "color": "#ededed"
-          }
         }
       },
       "block_order": [
-        "89b1a94e-2cf5-4075-a6af-0969fbaeae2c",
-        "e8d6c4cd-d55a-4ca5-9afe-629c7d6803ad"
+        "89b1a94e-2cf5-4075-a6af-0969fbaeae2c"
       ],
       "settings": {
-        "title": "Page Name",
+        "title": "where to buy sendero",
+        "button": true,
+        "btn_text": "become a retailer",
+        "button_align": "center",
+        "btn_background": "transparent",
         "image": "shopify:\/\/shop_images\/161218716_2545082962452411_5753525780345998495_n.jpg",
         "parallax": false,
         "color": "#000000",
@@ -40,21 +36,17 @@
       "settings": {
       }
     },
-    "sk-locations-dropdown": {
-      "type": "sk-locations-dropdown",
-      "settings": {}
-    },
-    "rich-text-columns-locations": {
+    "1650299295b191423d": {
       "type": "rich-text-columns-locations",
       "settings": {
         "main_title": "state name",
         "header_align": "left",
-        "title1": "Store Title",
-        "title2": "Store Title",
-        "title3": "Store Title",
-        "title4": "Store Title",
-        "title5": "Store Title",
-        "title6": "Store Title",
+        "title1": "Store TItle",
+        "title2": "Store TItle",
+        "title3": "Store TItle",
+        "title4": "Store TItle",
+        "title5": "Store TItle",
+        "title6": "Store TItle",
         "sub_text1": "Address Line 1 <br>\nAddress Line 2",
         "sub_text2": "Address Line 1 <br>\nAddress Line 2",
         "sub_text3": "Address Line 1 <br>\nAddress Line 2",
@@ -70,8 +62,8 @@
         "style_title": "title_1",
         "ic_tt": "gem",
         "show_clpr": false,
-        "content": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. <\/p>",
-        "align": "tl",
+        "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+        "align": "tc",
         "layout": "container",
         "mg": "50px,,50px,",
         "pd": "",
@@ -83,7 +75,6 @@
   "order": [
     "heading",
     "main",
-    "sk-locations-dropdown",
-    "rich-text-columns-locations"
+    "1650299295b191423d"
   ]
 }
