@@ -37,91 +37,57 @@
    -%}
 
 <div class="col-12 col-md-6 sk-session-group-outer-container">
-        <div class="sk-session-group-inner-container nt_se_{{sid}} {{se_stts.layout}}">
-            {% for i in (1..8) %}
-                {% if i == 1 %}
-                    {% assign video_url = se_stts.video_url1 %}
-                    {% assign title = se_stts.artist_name1 %}
-                    {% assign song = se_stts.song_name1 %}
-                {% elsif i == 2 %}
-                    {% assign video_url = se_stts.video_url2 %}
-                    {% assign title = se_stts.artist_name2 %}
-                    {% assign song = se_stts.song_name2 %}
-                {% elsif i == 3 %}
-                    {% assign video_url = se_stts.video_url3 %}
-                    {% assign title = se_stts.artist_name3 %}
-                    {% assign song = se_stts.song_name3 %}
-                {% elsif i == 4 %}
-                    {% assign video_url = se_stts.video_url4 %}
-                    {% assign title = se_stts.artist_name4 %}
-                    {% assign song = se_stts.song_name4 %}
-                {% elsif i == 5 %}
-                    {% assign video_url = se_stts.video_url5 %}
-                    {% assign title = se_stts.artist_name5 %}
-                    {% assign song = se_stts.song_name5 %}
-                {% elsif i == 6 %}
-                    {% assign video_url = se_stts.video_url6 %}
-                    {% assign title = se_stts.artist_name6 %}
-                    {% assign song = se_stts.song_name6 %}
-                {% elsif i == 7 %}
-                    {% assign video_url = se_stts.video_url7 %}
-                    {% assign title = se_stts.artist_name7 %}
-                    {% assign song = se_stts.song_name7 %}
-                {% elsif i == 8 %}
-                    {% assign video_url = se_stts.video_url8 %}
-                    {% assign title = se_stts.artist_name8 %}
-                    {% assign song = se_stts.song_name8 %}
-                {% endif %}
-
-                    <div class="sk-session-grid-video post_2 post-thumbnail pr oh col-lg-{{col}} col-md-{{col_tb}} col-{{col_mb}}">
-                        {%- if video_url  != video_none -%}
-                        
-                            {% assign video_id = video_url | remove: "https://youtu.be/" %}
-                            {% assign url = video_url | remove: "https://youtu.be/" | prepend: "embed/" | prepend: "//www.youtube.com/" | append: "?autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1&rel=0&autohide=1&enablejsapi=1&playlist=" | append: video_id %}
-                            <a class="sendero-session-link" href="{{link}}">
-                                <div class="sk-session-grid-indiv-container">
-                                <iframe width="100%" height="100%" src="{{url}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>     
-                                </iframe>  
-                                <h3 class="sendero-session-title">{{title}}</h3>
-                                <h5 class="sk-session-group-sub-title">"{{song}}"</h5>
-                                <div class="sendero-session-overlay"></div>
-                                 {%- comment -%}    
-                                 
-                                {%- endcomment -%}
-                                </div>
-                            </a>
-                        {%- endif -%}
-                    </div>
-
-            {% endfor %}
-                    {%- comment -%}
-                    {%- if image -%}
-                    <a class="db oh bgd" href="{{art_url}}">
-                      <div class="lazyloadt4s nt_bg_lz pr_lazy_img" data-bgset="{{ image | img_url: '1x1' }}" data-ratio="{{image.aspect_ratio}}" data-sizes="auto"{% if sett_equal == false %} style="padding-top:{{ 1 | divided_by: image.aspect_ratio | times: 100}}%;"{% endif %}></div>
+    <div class="sk-session-group-inner-container nt_se_{{sid}} {{se_stts.layout}}">
+        {% for i in (1..8) %}
+            {% if i == 1 %}
+                {% assign video_url = se_stts.video_url1 %}
+                {% assign title = se_stts.artist_name1 %}
+                {% assign song = se_stts.song_name1 %}
+            {% elsif i == 2 %}
+                {% assign video_url = se_stts.video_url2 %}
+                {% assign title = se_stts.artist_name2 %}
+                {% assign song = se_stts.song_name2 %}
+            {% elsif i == 3 %}
+                {% assign video_url = se_stts.video_url3 %}
+                {% assign title = se_stts.artist_name3 %}
+                {% assign song = se_stts.song_name3 %}
+            {% elsif i == 4 %}
+                {% assign video_url = se_stts.video_url4 %}
+                {% assign title = se_stts.artist_name4 %}
+                {% assign song = se_stts.song_name4 %}
+            {% elsif i == 5 %}
+                {% assign video_url = se_stts.video_url5 %}
+                {% assign title = se_stts.artist_name5 %}
+                {% assign song = se_stts.song_name5 %}
+            {% elsif i == 6 %}
+                {% assign video_url = se_stts.video_url6 %}
+                {% assign title = se_stts.artist_name6 %}
+                {% assign song = se_stts.song_name6 %}
+            {% elsif i == 7 %}
+                {% assign video_url = se_stts.video_url7 %}
+                {% assign title = se_stts.artist_name7 %}
+                {% assign song = se_stts.song_name7 %}
+            {% elsif i == 8 %}
+                {% assign video_url = se_stts.video_url8 %}
+                {% assign title = se_stts.artist_name8 %}
+                {% assign song = se_stts.song_name8 %}
+            {% endif %}
+            <div class="sk-session-grid-video post_2 post-thumbnail pr oh col-lg-{{col}} col-md-{{col_tb}} col-{{col_mb}}">
+                {%- if video_url  != video_none -%}
+                    {% assign video_id = video_url | remove: "https://youtu.be/" %}
+                    {% assign url = video_url | remove: "https://youtu.be/" | prepend: "embed/" | prepend: "//www.youtube.com/" | append: "?autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1&rel=0&autohide=1&enablejsapi=1&playlist=" | append: video_id %}
+                    <a class="sendero-session-link" href="{{link}}">
+                        <div class="sk-session-grid-indiv-container">
+                        <iframe width="100%" height="100%" src="{{url}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>     
+                        </iframe>  
+                        <h3 class="sendero-session-title">{{title}}</h3>
+                        <h5 class="sk-session-group-sub-title">"{{song}}"</h5>
+                        <div class="sendero-session-overlay"></div>
+                        </div>
                     </a>
-                    {%- endif -%}
-                    <div class="pa tc cg w__100 blog-home-page-overlay">
-                      <div class="post-meta fs__12">
-                          {%- if show_au -%}<span class="post-author mr__5">{{ by }} <span class="cw">{{ article.author | replace_first: 'ad clnt', 'admin' }}</span></span>{%- endif -%}
-                          {%- if article.tags.size > 0 -%}
-                          <span class="cat pr">{{ 'blogs.article.in' | t }} 
-                            {%- for tag in article.tags limit:5 -%}
-                              <a href="{{ blogs[blog_owl.handle].url }}/tagged/{{ tag | handle }}" rel="category {{ tag | handle }}">{{ tag }}</a>{% unless forloop.last %}, {% endunless %}
-                            {%- endfor -%}
-                          </span>
-                          {%- endif -%}
-                          {%- if show_cm -%}
-                            {%- if article.comments_count > 0 %}{% assign cm_link = '#comments' %}{% else %}{% assign cm_link = '#comment_form' %}{% endif -%}
-                            <a href="{{ art_url }}{{cm_link}}"> {{ 'blogs.comments.with_count' | t: count: article.comments_count }}</a>
-                          {%- endif -%}
-                      </div>
-                      <a href="/blogs"><div class="blog-home-link flex shadow_wrap tl" style="align-items:center;">
-                        <h2 class="post-title fs__12 mt__10 mb__5 tu"><a class="chp" href="{{art_url}}">{{article.title}}</a></h2>
-                          <span class="blog-home-read-more"><h6>READ MORE<i class="las la-arrow-right"></i></h6></span>
-                        </div></a>
-                        {%- if show_dt -%}<span class="post-time cg"><time class="entry-date">{{ article.published_at | time_tag: format: date }}</time></span>{%- endif -%}
-                    </div>
-                    {%- endcomment -%}
+                {%- endif -%}
+            </div>
+        {% endfor %}
     </div>
 </div>
    

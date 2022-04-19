@@ -677,7 +677,7 @@
    top: 55%;
     text-align: center;
     color: white;
-    z-index: 9999;
+    z-index: 300;
     position: absolute;
 }
 .sendero-session-sub-title {
@@ -686,7 +686,7 @@
     top: 45%;
      text-align: center;
      color: white;
-     z-index: 9999;
+     z-index: 300;
      position: absolute;
  }
  .sendero-sessions-rich-text {
@@ -1003,7 +1003,7 @@ a.prev.page-numbers {
 }
 
 
-/*---------------- Sendero Session Individual Page -------------------*/
+/*---------------- Sendero Session Individual Group Page -------------------*/
 .sk-session-img-text-container {
     margin: auto;
     align-items: flex-start;
@@ -1025,9 +1025,8 @@ a.prev.page-numbers {
     padding-left: 50px;
 }
 .sk-session-group-outer-container {
-
-    max-width: 1140px !important;
-    margin: 0 auto;
+    max-width: 1200px !important;
+    margin: 100px auto 0;
 }
 .sk-session-group-inner-container {
     display: flex;
@@ -1041,6 +1040,9 @@ a.prev.page-numbers {
     position: relative;
     overflow: hidden;
     margin-bottom: 30px;
+}
+.sk-session-grid-indiv-container a {
+    cursor: pointer;
 }
 .sk-session-grid-indiv-container iframe {
     position: absolute;
@@ -1059,9 +1061,10 @@ a.prev.page-numbers {
     top: 70%;
      text-align: center;
      color: white;
-     z-index: 9999;
+     z-index: 300;
      position: absolute;
 }
+
 
 
 

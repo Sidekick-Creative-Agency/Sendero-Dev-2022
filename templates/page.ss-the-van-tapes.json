@@ -14,11 +14,12 @@
         "89b1a94e-2cf5-4075-a6af-0969fbaeae2c"
       ],
       "settings": {
-        "title": "session title",
+        "title": "The Van Tapes",
         "button": false,
         "btn_text": "Click Me",
         "button_align": "center",
         "btn_background": "black",
+        "image": "shopify:\/\/shop_images\/74162361_102268317897142_7558348142593179648_n.jpg",
         "parallax": false,
         "color": "#000000",
         "overlay": 54,
@@ -172,7 +173,7 @@
         "txt_align": "tl",
         "use_shadow": false,
         "cl_txt": "dark",
-        "mg": "50px,,50px,",
+        "mg": "0, auto,0 auto",
         "pd": "",
         "mg_mb": "",
         "pd_mb": ""
@@ -181,7 +182,7 @@
     "1649289964fae5e5f2": {
       "type": "rich_text",
       "settings": {
-        "title": "ABOUT THE VAN TAPES",
+        "title": "",
         "sub_title": "",
         "show_btn": false,
         "btn_text": "Click Me",
@@ -190,11 +191,83 @@
         "style_title": "title_1",
         "ic_tt": "gem",
         "show_clpr": false,
-        "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam consectetur, magna eu efficitur dignissim, mi nisl faucibus leo, nec sagittis elit magna ac lorem. Pellentesque ac ligula ut odio aliquam elementum a quis neque. Donec in urna ipsum. Curabitur felis libero, sodales sit amet mauris ut, auctor pulvinar nulla. Vivamus bibendum accumsan iaculis. Vivamus metus tellus, bibendum sit amet pharetra quis, venenatis eu metus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras eu bibendum turpis. Sed massa nibh, tempus sit amet cursus at, consectetur eget ex. Nunc eleifend consectetur velit, at convallis enim. In quis ligula tristique nisi volutpat sagittis.<\/p><p>Phasellus auctor hendrerit lobortis. Cras tincidunt felis eu ipsum porttitor venenatis. Phasellus quis posuere mauris, non convallis nulla. Suspendisse hendrerit scelerisque mauris, vitae maximus leo hendrerit sed. Donec mollis tempus est a egestas. Duis placerat, tortor ac malesuada tincidunt, augue est scelerisque dolor, sed rutrum turpis ex sed nibh. Suspendisse vitae tempor quam. Nam quis quam lacus. Morbi tortor nibh, consequat in lorem eget, fringilla aliquet erat. Mauris a porttitor metus. Nunc lacinia placerat mauris, vitae vehicula sapien.<\/p><p>Donec ac ligula porttitor, consequat dui sed, vestibulum turpis. Pellentesque ac mauris id nisl ultrices suscipit a non nunc. Sed hendrerit mi elit, eget molestie massa interdum vitae. Curabitur rutrum, magna ac fringilla finibus, lorem arcu suscipit elit, vitae laoreet tortor enim eu nisi. Nullam a sagittis lacus, commodo vehicula mi. Maecenas blandit nisl libero, non molestie lorem laoreet eu. Sed dignissim orci eu est tempus ornare. Donec commodo ante quis purus iaculis vestibulum. Aenean purus velit, lobortis quis molestie et, tristique vel leo. Cras scelerisque, ante vitae fermentum elementum, libero enim hendrerit nulla, molestie pharetra nunc mauris eget magna. Sed non interdum mi, eget elementum velit.<\/p><p>Sed ipsum felis, feugiat sit amet purus quis, tristique bibendum elit. Etiam dignissim urna augue, sollicitudin interdum dui bibendum vel. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas tincidunt in ligula ut tempor. Sed efficitur tortor ac rhoncus cursus. Aliquam sodales scelerisque nulla, ut sodales turpis aliquam eget. Nulla augue felis, molestie non convallis non, sodales id nibh. Nulla a orci mattis, auctor lorem vitae, finibus arcu. Cras id erat a quam tincidunt lobortis sit amet id lorem. Aenean laoreet lacus vitae magna placerat dignissim. Suspendisse rutrum eleifend molestie. Nulla sollicitudin lorem diam, ac facilisis dolor fermentum sed. Mauris sed facilisis quam, ut ornare massa.<\/p>",
+        "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam consectetur, magna eu efficitur dignissim, mi nisl faucibus leo, nec sagittis elit magna ac lorem. Pellentesque ac ligula ut odio aliquam elementum a quis neque. Donec in urna ipsum. Curabitur felis libero, sodales sit amet mauris ut, auctor pulvinar nulla. Vivamus bibendum accumsan iaculis. Vivamus metus tellus, bibendum sit amet pharetra quis, venenatis eu metus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras eu bibendum turpis. Sed massa nibh, tempus sit amet cursus at, consectetur eget ex. Nunc eleifend consectetur velit, at convallis enim. In quis ligula tristique nisi volutpat sagittis.<\/p><p>Phasellus auctor hendrerit lobortis. Cras tincidunt felis eu ipsum porttitor venenatis. Phasellus quis posuere mauris, non convallis nulla. Suspendisse hendrerit scelerisque mauris, vitae maximus leo hendrerit sed. Donec mollis tempus est a egestas. Duis placerat, tortor ac malesuada tincidunt, augue est scelerisque dolor, sed rutrum turpis ex sed nibh. Suspendisse vitae tempor quam. Nam quis quam lacus. Morbi tortor nibh, consequat in lorem eget, fringilla aliquet erat. Mauris a porttitor metus. Nunc lacinia placerat mauris, vitae vehicula sapien.<\/p><p><\/p>",
         "align": "tl",
         "layout": "container",
-        "mg": "50px, 50px, 50px, 50px",
-        "pd": "50px, 150px, 50px, 50px",
+        "mg": "50px, auto, 50px, auto",
+        "pd": "0",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    },
+    "16504062152cf6b956": {
+      "type": "image_text_overlay",
+      "blocks": {
+        "1650406215d1157c8d-0": {
+          "type": "1",
+          "settings": {
+            "title": "“Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos.”",
+            "color": "#ffffff",
+            "fw_text": 400,
+            "fs_text": 24,
+            "lh_text": 35,
+            "ls_text": 0,
+            "fs_mb_text": 15,
+            "lh_mb_text": 0,
+            "ls_mb_text": 0
+          }
+        },
+        "1650406215d1157c8d-1": {
+          "type": "6",
+          "settings": {
+            "sp": 25,
+            "sp_mb": 20
+          }
+        },
+        "1650406215d1157c8d-2": {
+          "type": "2",
+          "settings": {
+            "font": "f__libre",
+            "title": "AUTHOR TITLE",
+            "color": "#ffffff",
+            "fw_text": 400,
+            "fs_text": 14,
+            "lh_text": 0,
+            "ls_text": 0,
+            "fs_mb_text": 14,
+            "lh_mb_text": 0,
+            "ls_mb_text": 0,
+            "hide": false
+          }
+        }
+      },
+      "block_order": [
+        "1650406215d1157c8d-0",
+        "1650406215d1157c8d-1",
+        "1650406215d1157c8d-2"
+      ],
+      "settings": {
+        "se_height": "cus_h",
+        "use_custom_h": "1",
+        "h_des": "400px",
+        "h_tb": "400px",
+        "h_mb": "350px",
+        "image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-07_at_10.05.18_AM.png",
+        "use_pr": false,
+        "img_align": "center",
+        "caption_w": "2",
+        "cap_v_pos": 50,
+        "cap_h_pos": 50,
+        "txt_align": "tc_md",
+        "cap_v_pos_mb": 50,
+        "cap_h_pos_mb": 50,
+        "txt_align_mb": "tc",
+        "use_shadow": false,
+        "cl_overlay": "#000",
+        "cl_opacity": 0,
+        "layout": "nt_full",
+        "mg": "50px,,50px,",
+        "pd": "",
         "mg_mb": "",
         "pd_mb": ""
       }
@@ -206,6 +279,7 @@
     "sk-session-group-img-text",
     "1650396460acf24e79",
     "sk-session-group-grid",
-    "1649289964fae5e5f2"
+    "1649289964fae5e5f2",
+    "16504062152cf6b956"
   ]
 }
