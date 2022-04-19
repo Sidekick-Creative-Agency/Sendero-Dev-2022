@@ -112,10 +112,10 @@
     "1648757478999cc57a": {
       "type": "image_text_product_page",
       "settings": {
-        "image": "shopify:\/\/shop_images\/IMG_0248_1024x1024_48d1f0c4-e069-4ab7-ba9c-c2ba8a991eaf.webp",
-        "img_align": "center",
+        "image": "shopify:\/\/shop_images\/homepage_hero_image_3.webp",
+        "img_align": "bottom",
         "img_position": "1",
-        "image_ratio": "auto",
+        "image_ratio": "ratio1_1",
         "text_size2": "30,14",
         "title": "QUALITY GEAR, MADE FOR THE WILD WEST",
         "subtitle1": "OUR QUALITY GUARANTEE",
@@ -140,7 +140,7 @@
     "164875753916b49a9b": {
       "type": "image_text_product_page",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Big_Bend_Shirt_Lifestyle.jpg",
+        "image": "shopify:\/\/shop_images\/116309620_2383569085270467_5796589458683211337_n.jpg",
         "img_align": "center",
         "img_position": "2",
         "image_ratio": "auto",

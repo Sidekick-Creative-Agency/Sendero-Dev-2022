@@ -107,7 +107,9 @@ endif -%}
 								   <a class="db mb__20 lazyloadt4s nt_bg_lz pr_lazy_img" href="{{art.url}}" data-bgset="{{ image | img_url: '1x1' }}" data-ratio="{{image.aspect_ratio}}" data-sizes="auto"{% if sett_equal == false %} style="padding-top:{{ 1 | divided_by: image.aspect_ratio | times: 100}}%;"{% endif %}></a>
 								   {%- endif -%}
 								   <h5 class="mg__0 fs__14"><a class="cd chp" href="{{art.url}}">{{art.title}}</a></h5>
+								   {%- comment -%}
 								   <span class="f__libre">{{ art.published_at | time_tag: format: date }}</span>
+								   {%- endcomment -%}
 								</div>
 						   	{%- if index == limit -%}{% break %}{% endif -%}
 								{%- endfor -%}

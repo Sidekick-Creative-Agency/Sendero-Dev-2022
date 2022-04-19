@@ -7,19 +7,80 @@
     assign source2 = se_stts.source2
     assign source3 = se_stts.source3
     assign source4 = se_stts.source4
-    assign url1 = se_stts.video_url1 | remove: "https://youtu.be/" | prepend: "embed/" | prepend: "//www.youtube.com/" | append: "?autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1" 
-    assign url2 = se_stts.video_url2 | remove: "https://youtu.be/" | prepend: "embed/" | prepend: "//www.youtube.com/" | append: "?autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1" 
-    assign url3 = se_stts.video_url3 | remove: "https://youtu.be/" | prepend: "embed/" | prepend: "//www.youtube.com/" | append: "?autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1" 
-    assign url4 = se_stts.video_url4 | remove: "https://youtu.be/" | prepend: "embed/" | prepend: "//www.youtube.com/" | append: "?autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1" 
+    assign source5 = se_stts.source5
+    assign source6 = se_stts.source6
+    assign source7 = se_stts.source7
+    assign source8 = se_stts.source8
+    assign source9 = se_stts.source9
+    assign source10 = se_stts.source10
+
+    assign video_id = se_stts.video_url1 | remove: "https://youtu.be/"
+    assign url1 = se_stts.video_url1 | remove: "https://youtu.be/" | prepend: "embed/" | prepend: "//www.youtube.com/" | append: "?autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1&rel=0&autohide=1&enablejsapi=1&playlist=" | append: video_id
+    assign video_id = se_stts.video_url2 | remove: "https://youtu.be/"
+    assign url2 = se_stts.video_url2 | remove: "https://youtu.be/" | prepend: "embed/" | prepend: "//www.youtube.com/" | append: "?autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1&rel=0&autohide=1&enablejsapi=1&playlist=" | append: video_id
+    assign video_id = se_stts.video_url3 | remove: "https://youtu.be/"
+    assign url3 = se_stts.video_url3 | remove: "https://youtu.be/" | prepend: "embed/" | prepend: "//www.youtube.com/" | append: "?autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1&rel=0&autohide=1&enablejsapi=1&playlist=" | append: video_id
+    assign video_id = se_stts.video_url4 | remove: "https://youtu.be/"
+    assign url4 = se_stts.video_url4 | remove: "https://youtu.be/" | prepend: "embed/" | prepend: "//www.youtube.com/" | append: "?autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1&rel=0&autohide=1&enablejsapi=1&playlist=" | append: video_id
+    assign video_id = se_stts.video_url5 | remove: "https://youtu.be/"
+    assign url5 = se_stts.video_url5 | remove: "https://youtu.be/" | prepend: "embed/" | prepend: "//www.youtube.com/" | append: "?autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1&rel=0&autohide=1&enablejsapi=1&playlist=" | append: video_id
+    assign video_id = se_stts.video_url6 | remove: "https://youtu.be/"
+    assign url6 = se_stts.video_url6 | remove: "https://youtu.be/" | prepend: "embed/" | prepend: "//www.youtube.com/" | append: "?autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1&rel=0&autohide=1&enablejsapi=1&playlist=" | append: video_id
+    assign video_id = se_stts.video_url7 | remove: "https://youtu.be/"
+    assign url7 = se_stts.video_url7 | remove: "https://youtu.be/" | prepend: "embed/" | prepend: "//www.youtube.com/" | append: "?autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1&rel=0&autohide=1&enablejsapi=1&playlist=" | append: video_id
+    assign video_id = se_stts.video_url8 | remove: "https://youtu.be/"
+    assign url8 = se_stts.video_url8 | remove: "https://youtu.be/" | prepend: "embed/" | prepend: "//www.youtube.com/" | append: "?autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1&rel=0&autohide=1&enablejsapi=1&playlist=" | append: video_id
+    assign video_id = se_stts.video_url9 | remove: "https://youtu.be/"
+    assign url9 = se_stts.video_url9 | remove: "https://youtu.be/" | prepend: "embed/" | prepend: "//www.youtube.com/" | append: "?autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1&rel=0&autohide=1&enablejsapi=1&playlist=" | append: video_id
+    assign video_id = se_stts.video_url10 | remove: "https://youtu.be/"
+    assign url10 = se_stts.video_url10 | remove: "https://youtu.be/" | prepend: "embed/" | prepend: "//www.youtube.com/" | append: "?autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1&rel=0&autohide=1&enablejsapi=1&playlist=" | append: video_id
+    assign url_none = "//www.youtube.com/embed/https://www.youtube.com/watch?v=_9VUPq3SxOc?autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1&rel=0&autohide=1&enablejsapi=1&playlist=https://www.youtube.com/watch?v=_9VUPq3SxOc"
+
     assign urltest = "https://www.youtube.com/embed?v=-2icZZ9tbwc?autoplay=1"
+
     assign image1 = se_stts.image1
     assign image2 = se_stts.image2
     assign image3 = se_stts.image3
     assign image4 = se_stts.image4
+    assign image5 = se_stts.image5
+    assign image6 = se_stts.image6
+    assign image7 = se_stts.image7
+    assign image8 = se_stts.image8
+    assign image9 = se_stts.image9
+    assign image10 = se_stts.image10
+
     assign link1 = se_stts.page1 
     assign link2 = se_stts.page2
     assign link3 = se_stts.page3
     assign link4 = se_stts.page4
+    assign link5 = se_stts.page5 
+    assign link6 = se_stts.page6
+    assign link7 = se_stts.page7
+    assign link8 = se_stts.page8
+    assign link9 = se_stts.page9 
+    assign link10 = se_stts.page10
+
+    assign title1 = se_stts.file_name1
+    assign title2 = se_stts.file_name2
+    assign title3 = se_stts.file_name3
+    assign title4 = se_stts.file_name4
+    assign title5 = se_stts.file_name5
+    assign title6 = se_stts.file_name6
+    assign title7 = se_stts.file_name7
+    assign title8 = se_stts.file_name8
+    assign title9 = se_stts.file_name9
+    assign title10 = se_stts.file_name10
+
+    assign sub_title1 = se_stts.file_sub_title1
+    assign sub_title2 = se_stts.file_sub_title2
+    assign sub_title3 = se_stts.file_sub_title3
+    assign sub_title4 = se_stts.file_sub_title4
+    assign sub_title5 = se_stts.file_sub_title5
+    assign sub_title6 = se_stts.file_sub_title6
+    assign sub_title7 = se_stts.file_sub_title7
+    assign sub_title8 = se_stts.file_sub_title8
+    assign sub_title9 = se_stts.file_sub_title9
+    assign sub_title10 = se_stts.file_sub_title10
     -%}
 
   <div class="sk-collection-top" style="margin-bottom: 100px;">
@@ -42,52 +103,124 @@
             </button>
             {% if url1 or url2 or url3 or url4 %}
 
-            {%- if url1  -%}
+            {%- if url1 != url_none -%}
             <a class="sendero-session-link" href="{{link1}}">
             <div class="sendero-session-slider-vid-container">
-                <iframe width="100%" height="100%" src="{{url1}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>     
+                <iframe width="100%" height="100%" src="{{url1}}" title="YouTube video player" frameborder="0" allow="loop; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>     
                 </iframe>  
-                  <h5 class="sendero-session-sub-title">WACO, TEXAS</h5>
+                <h5 class="sendero-session-sub-title">{{se_stts.file_sub_title1}}</h5>
                   <h3 class="sendero-session-title">{{se_stts.file_name1}}</h3>
                   <div class="sendero-session-overlay"></div>
             </div>
         </a>
               {%- endif -%}
 
-              {%- if url2  -%}
+              {%- if url2 != url_none -%}
               <a class="sendero-session-link" href="{{link2}}">
               <div class="sendero-session-slider-vid-container">
                 <iframe width="100%" height="100%" src="{{url2}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>     
                 </iframe>   
-              <h5 class="sendero-session-sub-title">WACO, TEXAS</h5>
+              <h5 class="sendero-session-sub-title">{{se_stts.file_sub_title2}}</h5>
               <h3 class="sendero-session-title">{{se_stts.file_name2}}</h3>
               <div class="sendero-session-overlay"></div>
               </div>
             </a>
               {%- endif -%}
 
-              {%- if url3  -%}
+              {%- if url3 != url_none  -%}
               <a class="sendero-session-link" href="{{link3}}">
               <div class="sendero-session-slider-vid-container">
                 <iframe width="100%" height="100%" src="{{url3}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>     
                 </iframe>   
-              <h5 class="sendero-session-sub-title">WACO, TEXAS</h5>
+                <h5 class="sendero-session-sub-title">{{se_stts.file_sub_title3}}</h5>
               <h3 class="sendero-session-title">{{se_stts.file_name3}}</h3>
               <div class="sendero-session-overlay"></div>
               </div>
             </a>
               {%- endif -%}
 
-              {%- if url4  -%}
-              <a class="sendero-session-link" href="{{link4}}">
-              <div class="sendero-session-slider-vid-container">
-                <iframe width="100%" height="100%" src="{{url4}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>     
-                </iframe>      
-              <h5 class="sendero-session-sub-title">WACO, TEXAS</h5>
-              <h3 class="sendero-session-title">{{se_stts.file_name4}}</h3>
-              <div class="sendero-session-overlay"></div>
-            </div>
-        </a>
+              {%- if url4 != url_none  -%}
+                <a class="sendero-session-link" href="{{link4}}">
+                  <div class="sendero-session-slider-vid-container">
+                    <iframe width="100%" height="100%" src="{{url4}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>     
+                    </iframe>      
+                    <h5 class="sendero-session-sub-title">{{se_stts.file_sub_title4}}</h5>
+                    <h3 class="sendero-session-title">{{se_stts.file_name4}}</h3>
+                    <div class="sendero-session-overlay"></div>
+                  </div>
+                </a>
+              {%- endif -%}  
+
+              {%- if url5 != url_none  -%}
+                <a class="sendero-session-link" href="{{link5}}">
+                  <div class="sendero-session-slider-vid-container">
+                    <iframe width="100%" height="100%" src="{{url5}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>     
+                    </iframe>      
+                    <h5 class="sendero-session-sub-title">{{se_stts.file_sub_title5}}</h5>
+                    <h3 class="sendero-session-title">{{se_stts.file_name5}}</h3>
+                    <div class="sendero-session-overlay"></div>
+                  </div>
+                </a>
+              {%- endif -%}  
+
+              {%- if url6 != url_none  -%}
+                <a class="sendero-session-link" href="{{link6}}">
+                  <div class="sendero-session-slider-vid-container">
+                    <iframe width="100%" height="100%" src="{{url6}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>     
+                    </iframe>      
+                    <h5 class="sendero-session-sub-title">{{se_stts.file_sub_title6}}</h5>
+                    <h3 class="sendero-session-title">{{se_stts.file_name6}}</h3>
+                    <div class="sendero-session-overlay"></div>
+                  </div>
+                </a>
+              {%- endif -%}  
+
+              {%- if url7 != url_none  -%}
+                <a class="sendero-session-link" href="{{link7}}">
+                  <div class="sendero-session-slider-vid-container">
+                    <iframe width="100%" height="100%" src="{{url7}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>     
+                    </iframe>      
+                    <h5 class="sendero-session-sub-title">{{se_stts.file_sub_title7}}</h5>
+                    <h3 class="sendero-session-title">{{se_stts.file_name7}}</h3>
+                    <div class="sendero-session-overlay"></div>
+                  </div>
+                </a>
+              {%- endif -%}  
+
+              {%- if url8 != url_none  -%}
+                <a class="sendero-session-link" href="{{link8}}">
+                  <div class="sendero-session-slider-vid-container">
+                    <iframe width="100%" height="100%" src="{{url8}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>     
+                    </iframe>      
+                    <h5 class="sendero-session-sub-title">{{se_stts.file_sub_title8}}</h5>
+                    <h3 class="sendero-session-title">{{se_stts.file_name8}}</h3>
+                    <div class="sendero-session-overlay"></div>
+                  </div>
+                </a>
+              {%- endif -%}  
+
+              {%- if url9 != url_none  -%}
+                <a class="sendero-session-link" href="{{link9}}">
+                  <div class="sendero-session-slider-vid-container">
+                    <iframe width="100%" height="100%" src="{{url9}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>     
+                    </iframe>      
+                    <h5 class="sendero-session-sub-title">{{se_stts.file_sub_title9}}</h5>
+                    <h3 class="sendero-session-title">{{se_stts.file_name9}}</h3>
+                    <div class="sendero-session-overlay"></div>
+                  </div>
+                </a>
+              {%- endif -%}  
+
+              {%- if url10 != url_none  -%}
+                <a class="sendero-session-link" href="{{link10}}">
+                  <div class="sendero-session-slider-vid-container">
+                    <iframe width="100%" height="100%" src="{{url10}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>     
+                    </iframe>      
+                    <h5 class="sendero-session-sub-title">{{se_stts.file_sub_title10}}</h5>
+                    <h3 class="sendero-session-title">{{se_stts.file_name10}}</h3>
+                    <div class="sendero-session-overlay"></div>
+                  </div>
+                </a>
               {%- endif -%}  
 
             {%- else -%}
@@ -196,8 +329,14 @@
         {
             "type": "text",
             "id": "file_name1",
-            "label": "2. File name",
-            "info": "FIle name from uploaded files. File size is smaller 4 mb recommended"
+            "label": "Video Title",
+            "info": "Title of video"
+          },
+          {
+            "type": "text",
+            "id": "file_sub_title1",
+            "label": "Video Location",
+            "info": "Location of video"
           },
           {
             "id": "page2",
@@ -232,8 +371,14 @@
           {
             "type": "text",
             "id": "file_name2",
-            "label": "2. File name",
-            "info": "FIle name from uploaded files. File size is smaller 4 mb recommended"
+            "label": "Video Title",
+            "info": "Title of video"
+          },
+          {
+            "type": "text",
+            "id": "file_sub_title2",
+            "label": "Video Location",
+            "info": "Location of video"
           },
           {
             "id": "page3",
@@ -268,8 +413,14 @@
           {
             "type": "text",
             "id": "file_name3",
-            "label": "2. File name",
-            "info": "FIle name from uploaded files. File size is smaller 4 mb recommended"
+            "label": "Video Title",
+            "info": "Title of video"
+          },
+          {
+            "type": "text",
+            "id": "file_sub_title3",
+            "label": "Video Location",
+            "info": "Location of video"
           },
           {
             "id": "page4",
@@ -304,8 +455,266 @@
           {
             "type": "text",
             "id": "file_name4",
-            "label": "2. File name",
-            "info": "FIle name from uploaded files. File size is smaller 4 mb recommended"
+            "label": "Video Title",
+            "info": "Title of video"
+          },
+          {
+            "type": "text",
+            "id": "file_sub_title4",
+            "label": "Video Location",
+            "info": "Location of video"
+          },
+          {
+            "id": "page5",
+            "type": "page",
+            "label": "Page link"
+          },
+          
+          {
+            "type": "select",
+            "id": "source5",
+            "label": "Source Video:",
+            "default": "1",
+            "options": [
+              {
+                "value": "1",
+                "label": "Youtube"
+              },
+              {
+                "value": "2",
+                "label": "Upload file"
+              }
+            ]
+          },
+          {
+             "id": "video_url5",
+             "type": "video_url",
+             "label": "1. Video URL",
+             "accept": ["youtube"],
+             "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+             "info": "Accepts YouTube links"
+          },
+          {
+            "type": "text",
+            "id": "file_name5",
+            "label": "Video Title",
+            "info": "Title of video"
+          },
+          {
+            "type": "text",
+            "id": "file_sub_title5",
+            "label": "Video Location",
+            "info": "Location of video"
+          },
+          {
+            "id": "page6",
+            "type": "page",
+            "label": "Page link"
+          },
+          
+          {
+            "type": "select",
+            "id": "source6",
+            "label": "Source Video:",
+            "default": "1",
+            "options": [
+              {
+                "value": "1",
+                "label": "Youtube"
+              },
+              {
+                "value": "2",
+                "label": "Upload file"
+              }
+            ]
+          },
+          {
+             "id": "video_url6",
+             "type": "video_url",
+             "label": "1. Video URL",
+             "accept": ["youtube"],
+             "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+             "info": "Accepts YouTube links"
+          },
+          {
+            "type": "text",
+            "id": "file_name6",
+            "label": "Video Title",
+            "info": "Title of video"
+          },
+          {
+            "type": "text",
+            "id": "file_sub_title6",
+            "label": "Video Location",
+            "info": "Location of video"
+          },
+          {
+            "id": "page7",
+            "type": "page",
+            "label": "Page link"
+          },
+          
+          {
+            "type": "select",
+            "id": "source7",
+            "label": "Source Video:",
+            "default": "1",
+            "options": [
+              {
+                "value": "1",
+                "label": "Youtube"
+              },
+              {
+                "value": "2",
+                "label": "Upload file"
+              }
+            ]
+          },
+          {
+             "id": "video_url7",
+             "type": "video_url",
+             "label": "1. Video URL",
+             "accept": ["youtube"],
+             "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+             "info": "Accepts YouTube links"
+          },
+          {
+            "type": "text",
+            "id": "file_name7",
+            "label": "Video Title",
+            "info": "Title of video"
+          },
+          {
+            "type": "text",
+            "id": "file_sub_title7",
+            "label": "Video Location",
+            "info": "Location of video"
+          },
+          {
+            "id": "page8",
+            "type": "page",
+            "label": "Page link"
+          },
+          
+          {
+            "type": "select",
+            "id": "source8",
+            "label": "Source Video:",
+            "default": "1",
+            "options": [
+              {
+                "value": "1",
+                "label": "Youtube"
+              },
+              {
+                "value": "2",
+                "label": "Upload file"
+              }
+            ]
+          },
+          {
+             "id": "video_url8",
+             "type": "video_url",
+             "label": "1. Video URL",
+             "accept": ["youtube"],
+             "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+             "info": "Accepts YouTube links"
+          },
+          {
+            "type": "text",
+            "id": "file_name8",
+            "label": "Video Title",
+            "info": "Title of video"
+          },
+          {
+            "type": "text",
+            "id": "file_sub_title8",
+            "label": "Video Location",
+            "info": "Location of video"
+          },
+          {
+            "id": "page9",
+            "type": "page",
+            "label": "Page link"
+          },
+          
+          {
+            "type": "select",
+            "id": "source9",
+            "label": "Source Video:",
+            "default": "1",
+            "options": [
+              {
+                "value": "1",
+                "label": "Youtube"
+              },
+              {
+                "value": "2",
+                "label": "Upload file"
+              }
+            ]
+          },
+          {
+             "id": "video_url9",
+             "type": "video_url",
+             "label": "1. Video URL",
+             "accept": ["youtube"],
+             "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+             "info": "Accepts YouTube links"
+          },
+          {
+            "type": "text",
+            "id": "file_name9",
+            "label": "Video Title",
+            "info": "Title of video"
+          },
+          {
+            "type": "text",
+            "id": "file_sub_title9",
+            "label": "Video Location",
+            "info": "Location of video"
+          },
+          {
+            "id": "page10",
+            "type": "page",
+            "label": "Page link"
+          },
+          
+          {
+            "type": "select",
+            "id": "source10",
+            "label": "Source Video:",
+            "default": "1",
+            "options": [
+              {
+                "value": "1",
+                "label": "Youtube"
+              },
+              {
+                "value": "2",
+                "label": "Upload file"
+              }
+            ]
+          },
+          {
+             "id": "video_url10",
+             "type": "video_url",
+             "label": "1. Video URL",
+             "accept": ["youtube"],
+             "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+             "info": "Accepts YouTube links"
+          },
+          {
+            "type": "text",
+            "id": "file_name10",
+            "label": "Video Title",
+            "info": "Title of video"
+          },
+          {
+            "type": "text",
+            "id": "file_sub_title10",
+            "label": "Video Location",
+            "info": "Location of video"
           },
         {
           "type": "paragraph",
