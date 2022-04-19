@@ -38,6 +38,32 @@
       "settings": {
       }
     },
+    "sk-session-indiv-img-text": {
+      "type": "sk-session-indiv-img-text",
+      "settings": {
+        "image1": "shopify:\/\/shop_images\/Screen_Shot_2022-04-07_at_10.05.18_AM.png",
+        "image2": "shopify:\/\/shop_images\/161218716_2545082962452411_5753525780345998495_n.jpg",
+        "image3": "shopify:\/\/shop_images\/116309620_2383569085270467_5796589458683211337_n.jpg",
+        "img_align": "center",
+        "img_position": "1",
+        "image_ratio": "auto",
+        "text_size2": "30,14",
+        "title": "session write-up title goes here",
+        "sub_text": "Subtitle lead line goes here to draw people in, maybe a full sentence here.",
+        "text": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos.<br\/>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est<br\/>Continued Below…<\/p>",
+        "button_label": "Shop Now",
+        "button_link": "",
+        "open_link": "_blank",
+        "txt_align": "tl",
+        "use_shadow": false,
+        "cl_txt": "dark",
+        "layout": "nt_full",
+        "mg": "50px,,50px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    },
     "1649289964fae5e5f2": {
       "type": "rich_text",
       "settings": {
@@ -77,10 +103,10 @@
         "cap_h_pos": 50,
         "txt_align": "tc",
         "use_shadow": false,
-        "cl_h": "#fff",
-        "cl_sub": "#fff",
-        "cl_btn": "#fff",
-        "cl_overlay": "#000",
+        "cl_h": "#ffffff",
+        "cl_sub": "#ffffff",
+        "cl_btn": "#ffffff",
+        "cl_overlay": "#000000",
         "cl_opacity": 0,
         "layout": "nt_full",
         "use_pr": false,
@@ -105,6 +131,7 @@
   "order": [
     "heading",
     "main",
+    "sk-session-indiv-img-text",
     "1649289964fae5e5f2",
     "1649289702d074ce87",
     "16492898006b22c773"
