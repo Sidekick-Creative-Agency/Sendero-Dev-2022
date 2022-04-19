@@ -687,6 +687,9 @@
 / Individual Product Page
 /--------------------------------------------------------*/
 
+.sk-indiv-product-featured {
+    width: 92% !important;
+}
 .sk-best-seller-img-slider, .indiv-product-rec-img-slider {
     width: 100% !important;
     margin: 0 !important;
