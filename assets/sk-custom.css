@@ -1003,6 +1003,71 @@ a.prev.page-numbers {
 }
 
 
+/*---------------- Sendero Session Individual Page -------------------*/
+.sk-session-img-text-container {
+    margin: auto;
+    align-items: flex-start;
+}
+.sk-session-group-img {
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.sk-session-group-img-single {
+    max-width: 80%;
+    aspect-ratio: 2/1;
+    object-fit: cover;
+    padding-bottom: 10px;
+    padding-left: 50px;
+}
+.sk-session-group-outer-container {
+
+    max-width: 1140px !important;
+    margin: 0 auto;
+}
+.sk-session-group-inner-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.sk-session-grid-indiv-container {
+    height: 300px;
+    width: 100%;
+    object-fit: contain;
+    margin-right: 10px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.sk-session-grid-indiv-container iframe {
+    position: absolute;
+    height:100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 450%;
+    left: -175%;
+    max-width: none;
+    pointer-events: none;
+}
+.sk-session-group-sub-title {
+    left: 0;
+    right: 0;
+    top: 70%;
+     text-align: center;
+     color: white;
+     z-index: 9999;
+     position: absolute;
+}
+
+
+
+
+
+
 /*-----------------------------------------------------------------------------/
 / Custom CSS For Screen Sizes
 /-----------------------------------------------------------------------------*/
@@ -1105,6 +1170,18 @@ a.prev.page-numbers {
         width: 100%;
         height: auto;
     }
+
+    .sk-session-group-inner-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .sk-session-grid-indiv-container {
+        margin-right: 0;
+    }
+    .sk-session-grid-video {
+        max-width: 75% !important;
+    }
+}
     
 
     /*---------------- Special Custom CSS for Sendero Sessions 'More' Button -------------------*/
@@ -1114,4 +1191,3 @@ a.prev.page-numbers {
             white-space: nowrap;
         }
     }
-}

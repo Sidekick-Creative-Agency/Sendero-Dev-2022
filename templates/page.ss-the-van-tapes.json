@@ -3,13 +3,6 @@
     "heading": {
       "type": "pages_heading",
       "blocks": {
-        "59b41d7e-9a7b-4ca7-a51e-8c7b64d4cb08": {
-          "type": "2",
-          "settings": {
-            "text": "<p>Sendero Sessions<\/p>",
-            "color": "#ededed"
-          }
-        },
         "89b1a94e-2cf5-4075-a6af-0969fbaeae2c": {
           "type": "1",
           "settings": {
@@ -18,10 +11,14 @@
         }
       },
       "block_order": [
-        "59b41d7e-9a7b-4ca7-a51e-8c7b64d4cb08",
         "89b1a94e-2cf5-4075-a6af-0969fbaeae2c"
       ],
       "settings": {
+        "title": "session title",
+        "button": false,
+        "btn_text": "Click Me",
+        "button_align": "center",
+        "btn_background": "black",
         "parallax": false,
         "color": "#000000",
         "overlay": 54,
@@ -38,8 +35,8 @@
       "settings": {
       }
     },
-    "sk-session-indiv-img-text": {
-      "type": "sk-session-indiv-img-text",
+    "sk-session-group-img-text": {
+      "type": "sk-session-group-img-text",
       "settings": {
         "image1": "shopify:\/\/shop_images\/Screen_Shot_2022-04-07_at_10.05.18_AM.png",
         "image2": "shopify:\/\/shop_images\/161218716_2545082962452411_5753525780345998495_n.jpg",
@@ -64,12 +61,132 @@
         "pd_mb": ""
       }
     },
+    "1650396460acf24e79": {
+      "type": "hero_video",
+      "settings": {
+        "source": "1",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=g6aVTYsh1PA",
+        "file_name": "",
+        "se_height": "cus_h",
+        "use_custom_h": "1",
+        "h_des": "400px",
+        "h_tb": "400px",
+        "h_mb": "350px",
+        "caption_w": "2",
+        "cap_v_pos": 50,
+        "cap_h_pos": 50,
+        "txt_align": "tc",
+        "use_shadow": false,
+        "cl_overlay": "#000000",
+        "cl_opacity": 0,
+        "layout": "nt_full",
+        "mg": "50px,,50px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    },
+    "sk-session-group-grid": {
+      "type": "sk-session-group-grid",
+      "settings": {
+        "page1": "",
+        "source1": "1",
+        "video_url1": "https:\/\/youtu.be\/g6aVTYsh1PA",
+        "artist_name1": "Thomas Csorba",
+        "song_name1": "Jericho",
+        "page2": "",
+        "source2": "1",
+        "video_url2": "https:\/\/youtu.be\/wvW9Gl74nuU",
+        "artist_name2": "Dylan Washington",
+        "song_name2": "Biscuits & Honey",
+        "page3": "",
+        "source3": "1",
+        "video_url3": "https:\/\/youtu.be\/obb0YPtSxnU",
+        "artist_name3": "John Baumann",
+        "song_name3": "Here I Come",
+        "page4": "",
+        "source4": "1",
+        "video_url4": "https:\/\/youtu.be\/46YlAu5-0So",
+        "artist_name4": "Sylvie",
+        "song_name4": "Wild World",
+        "page5": "",
+        "source5": "1",
+        "video_url5": "https:\/\/youtu.be\/R2i6HF_kp7A",
+        "artist_name5": "Brody Price & The Tasteful Nudes",
+        "song_name5": "Daddy Lessons",
+        "page6": "",
+        "source6": "1",
+        "video_url6": "https:\/\/youtu.be\/dTXJkHPr9uM",
+        "artist_name6": "River Tramps",
+        "song_name6": "Mare and the Maiden",
+        "page7": "",
+        "source7": "1",
+        "video_url7": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "artist_name7": "",
+        "song_name7": "",
+        "page8": "",
+        "source8": "1",
+        "video_url8": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "artist_name8": "",
+        "song_name8": "",
+        "limit": 4,
+        "date": "date",
+        "col_pr": "6",
+        "col_pr_tb": "6",
+        "col_pr_mb": "6",
+        "show_au": false,
+        "show_dt": false,
+        "loop": false,
+        "au_time": 0,
+        "au_hover": true,
+        "button": false,
+        "btn_vi": "1",
+        "btn_owl": "1",
+        "btn_color": "0",
+        "dot": false,
+        "dot_owl": "1",
+        "dot_color": "1",
+        "cl": "#ffffff",
+        "cl2": "#878787",
+        "bg": "#000000",
+        "overlay": 80,
+        "use_eq_height": true,
+        "image_ratio": "ratio1_1",
+        "image_size": "nt_cover",
+        "image_position": "8",
+        "layout": "nt_full",
+        "image": "shopify:\/\/shop_images\/gautier-salles-uffQnKuJ-hc-unsplash.jpg",
+        "img_align": "center",
+        "img_position": "1",
+        "text_size2": "30,14",
+        "title": "TITLE OF ENTRY",
+        "subtitle1": "FEATURED JOURNAL ENTRY",
+        "subtitle2": "",
+        "subtitle3": "",
+        "text1": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+        "text2": "",
+        "text3": "",
+        "button_label": "Shop Now",
+        "button_link": "",
+        "open_link": "_blank",
+        "txt_align": "tl",
+        "use_shadow": false,
+        "cl_txt": "dark",
+        "mg": "50px,,50px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    },
     "1649289964fae5e5f2": {
       "type": "rich_text",
       "settings": {
         "title": "ABOUT THE VAN TAPES",
         "sub_title": "",
+        "show_btn": false,
+        "btn_text": "Click Me",
         "sub_font": "2",
+        "header_align": "center",
         "style_title": "title_1",
         "ic_tt": "gem",
         "show_clpr": false,
@@ -81,59 +198,14 @@
         "mg_mb": "",
         "pd_mb": ""
       }
-    },
-    "1649289702d074ce87": {
-      "type": "popup_video",
-      "settings": {
-        "se_height": "cus_h",
-        "h_des": "600px",
-        "h_tb": "500px",
-        "h_mb": "350px",
-        "image": "shopify:\/\/shop_images\/74162361_102268317897142_7558348142593179648_n.jpg",
-        "img_align": "center",
-        "title": "Thomas Csorba - \"Jericho\"",
-        "text": "Sendero Sessions: The Van Tapes Vol. 1",
-        "button_label": "Watch now",
-        "url": "https:\/\/www.youtube.com\/watch?v=g6aVTYsh1PA&list=PLZf3m6mi50t0_rfk_asMo60MhZvZiw3A3&index=2",
-        "btn_style": "1",
-        "design": "1",
-        "text_size": "60,18",
-        "caption_w": "2",
-        "cap_v_pos": 50,
-        "cap_h_pos": 50,
-        "txt_align": "tc",
-        "use_shadow": false,
-        "cl_h": "#ffffff",
-        "cl_sub": "#ffffff",
-        "cl_btn": "#ffffff",
-        "cl_overlay": "#000000",
-        "cl_opacity": 0,
-        "layout": "nt_full",
-        "use_pr": false,
-        "mg": "50px,,50px,",
-        "pd": "",
-        "mg_mb": "",
-        "pd_mb": ""
-      }
-    },
-    "16492898006b22c773": {
-      "type": "iframe_video",
-      "settings": {
-        "url": "https:\/\/www.youtube.com\/watch?v=wvW9Gl74nuU&list=PLZf3m6mi50t0_rfk_asMo60MhZvZiw3A3&index=3",
-        "layout": "container",
-        "mg": "50px,,50px,",
-        "pd": "",
-        "mg_mb": "",
-        "pd_mb": ""
-      }
     }
   },
   "order": [
     "heading",
     "main",
-    "sk-session-indiv-img-text",
-    "1649289964fae5e5f2",
-    "1649289702d074ce87",
-    "16492898006b22c773"
+    "sk-session-group-img-text",
+    "1650396460acf24e79",
+    "sk-session-group-grid",
+    "1649289964fae5e5f2"
   ]
 }
