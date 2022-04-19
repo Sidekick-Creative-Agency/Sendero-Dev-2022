@@ -3,6 +3,13 @@
 / SIDEKICK Custom CSS
 /-----------------------------------------------------------------------------*/
 
+/*--------------------------------------------------------/
+/ PAGE HEADING
+/--------------------------------------------------------*/
+
+.page-head h1 {
+    line-height:normal;
+}
 
 /*--------------------------------------------------------/
 / HEADER & MEGA MENU
@@ -244,8 +251,19 @@
 
 
 /* --------- LOCATIONS PAGE --------------- */
-.state-dropdown {
-    padding-left: 70px;
+.state-dropdown-container {
+    width: 100%;
+    display: flex;
+    padding: 0 50px 50px;
+}
+.transparent-button:hover {
+    background-color: black;
+    border: none;
+
+}
+.transparent-button {
+    background-color: transparent;
+    border: none;
 }
 
 
@@ -887,7 +905,7 @@
     justify-content: center;
     align-items: center;
     /* padding-top: 50px; */
-    padding: 50px 20px 0 20px;
+    padding: 50px 20px;
 }
 .rich-text-columns-inner-container {
     display: flex;

@@ -35,12 +35,21 @@
     endif
 -%}
 
-{%- render "sk-locations-dropdown" -%}
-<div class="nt_se_{{section.id}} {{section.settings.layout}} rich-text-columns-outer-container">
-    {%- if mainTitle != "" -%}
-      <h2 class="flex w__100" style="justify-content: {{section.settings.header_align}}; padding: {{header_padding}}">{{mainTitle}}</h2>
-    {%- endif -%}
 
+<div class="nt_se_{{section.id}} {{section.settings.layout}} rich-text-columns-outer-container">
+  {%- render "sk-locations-dropdown" -%}
+
+    {%- if mainTitle != "" -%}
+      <h2 id="state-name-heading" class="flex w__100" style="justify-content: {{section.settings.header_align}}; padding: {{header_padding}}">{{mainTitle}}</h2>
+    {%- endif -%}
+    <script>
+      document.getElementById("state-dropdown").onchange = () => {
+        let stateName = document.getElementById("state-dropdown").value;
+        document.getElementById("state-name-heading").innerText = stateName;
+      }
+      
+    </script>
+    <h1>{{stateName}}</h1>
     <div class="rich-text-columns-inner-container">
     {%- if title1 != ""-%}
     <div class="rich-text-columns-text-outer-section" style="width: {{col_num}}">
@@ -57,7 +66,7 @@
     </div>
     {%- endif -%}
         <div class="rich-text-columns-text-inner-section">
-        <h3>{{title1}}</h3>
+        <h4>{{title1}}</h4>
         <div class="rte_setting {{section.settings.align}}">{{sub_text1 }}</div>
       </div>
     </div>
@@ -78,7 +87,7 @@
     </div>
     {%- endif -%}
           <div class="rich-text-columns-text-inner-section">
-          <h3>{{title2}}</h3>
+          <h4>{{title2}}</h4>
           <div class="rte_setting {{section.settings.align}}">{{sub_text2}}</div>
         </div>
     </div>
@@ -98,7 +107,7 @@
     </div>
     {%- endif -%}
           <div class="rich-text-columns-text-inner-section">
-          <h3>{{title3}}</h3>
+          <h4>{{title3}}</h4>
           <div class="rte_setting {{section.settings.align}}">{{sub_text3}}</div>
         </div>
     </div>
@@ -118,7 +127,7 @@
     </div>
     {%- endif -%}
           <div class="rich-text-columns-text-inner-section">
-          <h3>{{title4}}</h3>
+          <h4>{{title4}}</h4>
           <div class="rte_setting {{section.settings.align}}">{{sub_text4}}</div>
         </div>
     </div>
@@ -138,7 +147,7 @@
     </div>
     {%- endif -%}
           <div class="rich-text-columns-text-inner-section">
-          <h3>{{title5}}</h3>
+          <h4>{{title5}}</h4>
           <div class="rte_setting {{section.settings.align}}">{{sub_text5}}</div>
         </div>
     </div>
@@ -158,7 +167,7 @@
     </div>
     {%- endif -%}
         <div class="rich-text-columns-text-inner-section">
-          <h3>{{title6}}</h3>
+          <h4>{{title6}}</h4>
           <div class="rte_setting {{section.settings.align}}">{{sub_text6}}</div>
         </div>
     </div>
