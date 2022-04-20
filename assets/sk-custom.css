@@ -696,7 +696,23 @@
      display: flex;
      flex-wrap: nowrap;
  }
-
+ .sk-session-slider-container {
+     overflow: hidden;
+ }
+ .sk-session-slider {
+     transition: .5s ease;
+     overflow-y: initial !important;
+     overflow-x: initial !important;
+ }
+#next_button, #previous_button {
+    background-color: #abb1b4;
+    border: 1px solid #abb1b4;
+    color: white;
+}
+#next_button:hover, #previous_button:hover {
+    background-color: #666;
+    border: 1px solid rgba(33,43,54,.9);
+}
 
 
 

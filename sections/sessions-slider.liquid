@@ -86,8 +86,8 @@
   <div class="sk-collection-top" style="margin-bottom: 100px;">
     <div class="row equal_nt auto al_center"></div>
       <div class="mobile-remove-left-padding col-md-6 txt_col_img" style="max-width: 100%; padding-right: 0">
-        <div class="container best-seller-img-container">
-          <div class="sk-best-seller-img-slider products nt_products_holder dot_owl_{{se_stts.dot_owl}} dot_color_{{se_stts.dot_color}} btn_vi_{{se_stts.btn_vi}} row row_pr_{{inc_pr}} cdt_des_{{se_stts.cdt_des}} round_cd_{{se_stts.round_cd}} js_carousel nt_slider {{se_stts.image_size}} {{se_stts.image_ratio}} position_{{se_stts.image_position}} space_{{se_stts.space}} prev_next_{{se_stts.btn_color}} btn_owl_{{se_stts.btn_owl}} dot_owl_{{se_stts.dot_owl}} dot_color_{{se_stts.dot_color}} btn_vi_{{se_stts.btn_vi}}{% if sett_equal %} equal_nt{% endif %}" data-flickityt4s-js='{"imagesLoaded": 0,"adaptiveHeight": 0, "contain": 1, "groupCells": "100%", "dragThreshold" : 5, "cellAlign": "left","wrapAround": {{se_stts.loop}},"prevNextButtons": {{se_stts.button}},"percentPosition": 1,"pageDots": {{se_stts.dot}}, "autoPlay" : {{ se_stts.au_time | times: 1000 }}, "pauseAutoPlayOnHover" : {{se_stts.au_hover}}, "rightToLeft": {{settings.use_rtl}} }'>
+        <div class="container best-seller-img-container sk-session-slider-container">
+          <div class="sk-best-seller-img-slider sk-session-slider products nt_products_holder dot_owl_{{se_stts.dot_owl}} dot_color_{{se_stts.dot_color}} btn_vi_{{se_stts.btn_vi}} row row_pr_{{inc_pr}} cdt_des_{{se_stts.cdt_des}} round_cd_{{se_stts.round_cd}} js_carousel nt_slider {{se_stts.image_size}} {{se_stts.image_ratio}} position_{{se_stts.image_position}} space_{{se_stts.space}} prev_next_{{se_stts.btn_color}} btn_owl_{{se_stts.btn_owl}} dot_owl_{{se_stts.dot_owl}} dot_color_{{se_stts.dot_color}} btn_vi_{{se_stts.btn_vi}}{% if sett_equal %} equal_nt{% endif %}" data-flickityt4s-js='{"imagesLoaded": 0,"adaptiveHeight": 0, "contain": 1, "groupCells": "100%", "dragThreshold" : 5, "cellAlign": "left","wrapAround": {{se_stts.loop}},"prevNextButtons": {{se_stts.button}},"percentPosition": 1,"pageDots": {{se_stts.dot}}, "autoPlay" : {{ se_stts.au_time | times: 1000 }}, "pauseAutoPlayOnHover" : {{se_stts.au_hover}}, "rightToLeft": {{settings.use_rtl}} }'>
       
             {% if url1 or url2 or url3 or url4 or url5 or url6 or url7 or url8 or url9 or url10 %}
 
@@ -220,12 +220,12 @@
               
             {%- endif -%}
           </div>
-          <button class="flickityt4s-button flickityt4s-prev-next-button previous" type="button" aria-label="Previous" style="z-index: 301; opacity: 1; transform:scale(1); left: 40px; border-radius: 0">
+          <button class="flickityt4s-button flickityt4s-prev-next-button previous" id="previous_button" type="button" aria-label="Previous" style="z-index: 301; opacity: 1; transform:scale(1); left: 40px; border-radius: 0">
             <svg class="flickityt4s-button-icon" viewBox="0 0 100 100">
                 <path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="arrow" transform="translate(100, 100) rotate(180)"></path>
             </svg>
         </button>
-        <button class="flickityt4s-button flickityt4s-prev-next-button next" type="button" aria-label="Next" style="z-index: 301; opacity: 1;transform: rotate(180deg) scale(1); border-radius: 0">
+        <button class="flickityt4s-button flickityt4s-prev-next-button next" id="next_button" type="button" aria-label="Next" style="z-index: 301; opacity: 1;transform: rotate(180deg) scale(1); border-radius: 0">
             <svg class="flickityt4s-button-icon" viewBox="0 0 100 100" >
                 <path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="arrow"></path>
             </svg>
@@ -286,10 +286,67 @@
   
   {%- endstyle -%}
   
+  <script>
+    let slides_num = document.querySelector(".sk-session-slider").children.length;
+    
+    let current_slide = 1;
+    let scroll_length = 0;
+    let next_button = document.getElementById("next_button");
+    let prev_button = document.getElementById("previous_button");
+    let slider = document.getElementsByClassName("sk-session-slider")[0];
+    let slider_length = slider.scrollWidth;
+    let firstChild = slider.firstElementChild;
+    let place = 0;
+    let window_width = window.innerWidth;
+
+    window.addEventListener("resize", () => {
+      window_width = window.innerWidth;
+    });
+
+    next_button.addEventListener("click", () => {
+      if (current_slide === slides_num) {
+        slider.style.transform="translateX(0%)";
+        current_slide = 1;
+      } else {
+        scroll_length = 600 * current_slide;
+        if (scroll_length > slider_length - window_width) {
+          slider.style.transform="translateX(-" + (slider_length - window_width) + "px)";
+          current_slide = slides_num;
+        } else {
+          slider.style.transform="translateX(-" + scroll_length + "px)";
+          current_slide++;
+        }
+      }
+    });
+
+    prev_button.addEventListener("click", () => {
+      console.log(current_slide);
+      if (current_slide === 1) {
+        slider.style.transform="translateX(-" + (slider_length - window_width) + "px)";
+        current_slide = slides_num - 1;
+      } else {
+        scroll_length = 600 * (current_slide);
+        if (scroll_length === 1200) {
+          slider.style.transform="translateX(0%)";
+          current_slide = 1;
+        } else {
+          slider.style.transform="translateX(-" + (scroll_length - 600) + "px)";
+          current_slide--;
+        }
+      }
+      
+      
+      
+      if (current_slide < 0) {
+        current_slide = 0;
+      }
+    });
+
+  </script>
   {%- schema -%}
     {
       "name": "Sessions-slider",
-      "class": "nt_section type_hero_video tp_se_cdt2",
+      "class": "nt_section type_carousel type_featured_collection_owl tp_se_cdt",
       "settings": [
         {
           "type": "header",
