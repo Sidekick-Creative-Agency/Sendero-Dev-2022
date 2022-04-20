@@ -1004,9 +1004,16 @@ a.prev.page-numbers {
 
 
 /*---------------- Sendero Session Individual Group Page -------------------*/
-.sk-session-img-text-container {
+.sk-session-group-img-text-container {
     margin: auto;
-    align-items: flex-start;
+    max-width: 1200px;
+    width: 100%;
+    width: fit-content;
+    padding: 0 50px;
+    margin: 0 auto;
+}
+.sk-session-group-img-text-container .col-md-6 {
+    padding: 0 !important;
 }
 .sk-session-group-img {
     /* height: 100vh; */
@@ -1016,21 +1023,24 @@ a.prev.page-numbers {
     /* justify-content: center; */
     align-items: center;
 }
-
+.sk-session-group-text {
+    padding-right: 0;
+}
 .sk-session-group-img-single {
-    max-width: 80%;
+    max-width: 100%;
     aspect-ratio: 2/1;
     object-fit: cover;
     padding-bottom: 10px;
-    padding-left: 50px;
+    /* padding-left: 50px; */
 }
 .sk-session-group-outer-container {
     max-width: 1200px !important;
-    margin: 100px auto 0;
+    margin: 100px auto;
 }
 .sk-session-group-inner-container {
     display: flex;
     flex-wrap: wrap;
+    max-width: 1200px;
 }
 .sk-session-grid-indiv-container {
     height: 300px;
@@ -1064,7 +1074,9 @@ a.prev.page-numbers {
      z-index: 300;
      position: absolute;
 }
-
+.image-text-quote {
+    padding: 0 50px !important;
+}
 
 
 

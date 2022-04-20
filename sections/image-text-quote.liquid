@@ -6,11 +6,7 @@
    if img_ratio == 'auto' 
     assign ck = true 
    endif
-   assign image1 = se_stts.image1
-   assign image2 = se_stts.image2
-   assign image3 = se_stts.image3
-
-   assign sub_text = se_stts.sub_text
+   assign image = se_stts.image
    assign url = se_stts.button_link 
    if se_stts.cl_txt == 'dark' 
     assign cl_txt = 'cd,cg' 
@@ -21,44 +17,28 @@
    assign fs_arr = se_stts.text_size2 | split:"," -%}
   
   {%- capture image_layout -%}
-  <div class=" col-12 col-md-6" style="max-width: 987px;">
-    <div class="sk-session-group-img nt_img_txt oh pr middle center" >
-
-        {%- if image1 != blank -%}
-          {% assign image = se_stts.image1 %}
-          <img class="sk-session-group-img-single" src="{{image | img_url: '1000x1000'}}">
+  <div class="col-12 col-md-6">
+    <div class="nt_img_txt oh pr middle center" style="max-width: 987px;">
+      {%- comment -%}<a href="{{ url | default:'#' }}" class="db">{%- endcomment -%}
+        {%- if image != blank -%}
+          <div class="nt_bg_lz lazyloadt4s item__position {{se_stts.img_align}}" data-bgset="{{ image | img_url: '1x1' }}" data-sizes="auto" data-ratio="{{image.aspect_ratio}}" data-parent-fit="cover" style="padding-top:{{ 1 | divided_by: image.aspect_ratio | times: 100}}%;"></div>
         {%- else -%}
           <div class="nt_bg_lz lazyloadt4s item__position {{se_stts.img_align}}" data-bg="{{ 'placeholder.jpg' | asset_url }}" style="padding-top: 111.1111111111111%;"></div>
         {%- endif -%}
-
-      {%- if image2 != blank -%}
-        {% assign image = se_stts.image2 %}
-        <img class="sk-session-group-img-single" src="{{image | img_url: '1000x1000'}}">
-        {%- else -%}
-          <div class="nt_bg_lz lazyloadt4s item__position {{se_stts.img_align}}" data-bg="{{ 'placeholder.jpg' | asset_url }}" style="padding-top: 111.1111111111111%;"></div>
-        {%- endif -%}
-
-        {%- if image3 != blank -%}
-          {% assign image = se_stts.image3 %}
-          <img class="sk-session-group-img-single" src="{{image | img_url: '1000x1000'}}">
-        {%- else -%}
-          <div class="nt_bg_lz lazyloadt4s item__position {{se_stts.img_align}}" data-bg="{{ 'placeholder.jpg' | asset_url }}" style="padding-top: 111.1111111111111%;"></div>
-        {%- endif -%}
+      {%- comment -%}</a>{%- endcomment -%}
     </div>
   </div>
   {%- endcapture -%}
 
-  <div class="nt_se_{{sid}} {{se_stts.layout}} txt_shadow_{{se_stts.use_shadow}}" style="margin: 0 auto !important;">
-    <div class="sk-session-group-img-text-container row equal_nt {{img_ratio}} al_center">
+  <div class="image-text-quote {{se_stts.layout}} txt_shadow_{{se_stts.use_shadow}}" style="margin: 0 auto !important; max-width: 1200px">
+    <div class="row no-gutters equal_nt {{img_ratio}} al_center">
       {%- if se_stts.img_position == '1' -%}{{- image_layout -}}{%- endif -%}
       <div class="col-12 col-md-6 txt_col_img">
-        <div class="sk-session-group-text flex column pl__50 pr__50 shadow_wrap {{se_stts.txt_align}} {{cl_arr[1]}} remove_padding_on_mobile" style="max-width: 635px;">
-            <h3 class="mb__20 mt__0 fs__{{fs_arr[0]}} {{cl_arr[0]}} lh__1">{{se_stts.title}}</h3>
-            <h4 class="mb__20 mt__0 lh__1" style="color: #878787; text-transform: none; font-weight: 400">{{sub_text}}</h4>
-            <p>{{se_stts.text | truncatewords: 200, "<br><strong>Continued Below...</strong></p>"}}</p>
+        <div class="flex column pl__50 shadow_wrap {{se_stts.txt_align}} {{cl_arr[1]}} remove_padding_on_mobile" style="max-width: 635px;">
+            <h3 class="mb__20 mt__0 {{cl_arr[0]}} tl" style="text-transform: none; font-weight: 400; line-height: 35px">{{se_stts.title}}</h3>
+            <h4 class="tl" style="text-transform: none; font-weight: 400;">{{se_stts.text}}</h4>
             {%- if url != blank and se_stts.button_label -%}<p class="mg__0"><a class="button {{cl_arr[2]}}" href="{{url}}" target="{{se_stts.open_link}}">{{se_stts.button_label}}</a></p>{%- endif -%}
         </div>
-        
       </div>
       <style>.nt_se_{{sid}} .txt_col_img p {font-size: {{fs_arr[1]}}px}</style>
       {%- if se_stts.img_position == '2' -%}{{- image_layout -}}{%- endif -%}
@@ -69,7 +49,7 @@
   
   {%- schema -%}
     {
-      "name": "Image with text",
+      "name": "Image with text and quote",
       "class": "nt_section type_image_text",
       "settings": [
         {
@@ -78,17 +58,7 @@
         },
         {
            "type": "image_picker",
-           "id": "image1",
-           "label": "Image"
-         },
-         {
-           "type": "image_picker",
-           "id": "image2",
-           "label": "Image"
-         },
-         {
-           "type": "image_picker",
-           "id": "image3",
+           "id": "image",
            "label": "Image"
          },
         {
@@ -239,15 +209,9 @@
         },
         {
           "type": "text",
-          "id": "sub_text",
-          "label": "Sub Text",
-          "default": "Subtitle lead line goes here to draw people in, maybe a full sentence here."
-        },
-        {
-          "type": "textarea",
           "id": "text",
           "label": "Text",
-          "default": "Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review."
+          "default": "Author"
         },
         {
           "type": "text",
