@@ -2,8 +2,10 @@
   assign sid = section.id
   assign se_stts = section.settings
   assign se_height = se_stts.se_height
-  assign image = se_stts.image -%}
+  assign image = se_stts.image
+  assign text_padding = se_stts.pd_text -%}
 
+  <h2>{{text_padding}}</h2>
 <div class="nt_se_{{sid}} {{se_stts.layout}} txt_shadow_{{se_stts.use_shadow}} se_height_{{se_height}} nt_first">
   <div class="row equal_nt">
     <div class="col-12">
@@ -18,7 +20,7 @@
             <div class="js_full_ht4 lazyloadt4s item__position bg_rp_norepeat bg_sz_cover {{se_stts.img_align}}" data-bg="{{ 'placeholder.jpg' | asset_url }}" style="padding-top:51.282051282051285%;"></div>
           {%- endif -%}
         <div class="txt_content pa t__0 l__0 b__0 r__0 caption-w-{{se_stts.caption_w}} flex column shadow_wrap {{se_stts.txt_align}} {{se_stts.txt_align_mb}} pe_none z__100">
-          <div class="pa pa_txts mb_h_pos{{se_stts.cap_h_pos_mb}} mb_v_pos{{se_stts.cap_v_pos_mb}} h_pos{{se_stts.cap_h_pos}} v_pos{{se_stts.cap_v_pos}}" style="padding: {{pd_text}}">
+          <div class="pa pa_txts mb_h_pos{{se_stts.cap_h_pos_mb}} mb_v_pos{{se_stts.cap_v_pos_mb}} h_pos{{se_stts.cap_h_pos}} v_pos{{se_stts.cap_v_pos}}" style="padding: 0 {{text_padding}}px !important">
             {%- for block in section.blocks %}{% assign bk_stts = block.settings -%}
               {%- case block.type -%}
                  {%- when '1' -%}<h3 id="b_{{block.id}}" class="mt__0 mg__0 lh__1">{{bk_stts.title}}</h3>
@@ -30,8 +32,8 @@
                  {%- when '8' -%}{% assign image = bk_stts.image %}{% if image == blank %}{% continue %}{% endif %}{% assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}<div id="b_{{block.id}}" class="slt4_img"><img src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20{{image.width}}%20{{image.height}}%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="{{ img_url }}" data-widths="[45, 90, 180, 360, 540, 720, 900, 1080]" data-sizes="auto" class="lazyloadt4s lz_op_ef w__100" alt="{{image.alt}}"></div>
                  {%- else -%}
                   {%- assign url = bk_stts.btn_link | default:bk_stts.btn_link2 -%}
-                  {%- if bk_stts.btn_link != blank and bk_stts.title -%}<a id="b_{{block.id}}" class="imtt4_btn button pe_auto round_{{bk_stts.btn_round}} btn_icon_{{bk_stts.btn_icon}} btn_w_{{bk_stts.btn_w}}" href="{{bk_stts.btn_link}}" target="{{bk_stts.open_link}}" style="padding: {{pd_text}}">{{bk_stts.title}}</a>{%- endif -%}
-                  {%- if bk_stts.btn_link2 != blank and bk_stts.title2 -%}<a id="b_{{block.id}}2" class="imtt4_btn button pe_auto round_{{bk_stts.btn_round}} btn_icon_{{bk_stts.btn_icon}} btn_w_{{bk_stts.btn_w}}" href="{{bk_stts.btn_link2}}" target="{{bk_stts.open_link2}}" style="padding: {{pd_text}}">{{bk_stts.title2}}</a>{%- endif -%}
+                  {%- if bk_stts.btn_link != blank and bk_stts.title -%}<a id="b_{{block.id}}" class="imtt4_btn button pe_auto round_{{bk_stts.btn_round}} btn_icon_{{bk_stts.btn_icon}} btn_w_{{bk_stts.btn_w}}" href="{{bk_stts.btn_link}}" target="{{bk_stts.open_link}}" style="padding: 0 {{text_padding}}">{{bk_stts.title}}</a>{%- endif -%}
+                  {%- if bk_stts.btn_link2 != blank and bk_stts.title2 -%}<a id="b_{{block.id}}2" class="imtt4_btn button pe_auto round_{{bk_stts.btn_round}} btn_icon_{{bk_stts.btn_icon}} btn_w_{{bk_stts.btn_w}}" href="{{bk_stts.btn_link2}}" target="{{bk_stts.open_link2}}" style="padding: 0 {{text_padding}}">{{bk_stts.title2}}</a>{%- endif -%}
               {%- endcase -%}
             {%- endfor -%}
           </div>
@@ -93,7 +95,7 @@
            padding-left:{{bk_stts.pd_mb}}px;padding-right:{{bk_stts.pd_mb}}px;border-radius:{{bk_stts.bdr_mb}}px;{% if bk_stts.ls_mb_text != 0 %}letter-spacing:{{bk_stts.ls_mb_text}}px;{% endif %}min-height:{{bk_stts.h_mb}}px;font-size: {{bk_stts.fs_mb_text}}px;color: {{bk_stts.cl_txt}};background-color: {{bk_stts.cl_bg}};border-color: {{bk_stts.cl_bd}}
          }
          .nt_se_{{sid}} .imtt4_btn.btn_icon_true:after {color: {{bk_stts.cl_txt}} }
-         @media (min-width: 768px) {.nt_se_{{sid}} #b_{{block.id}},.nt_se_{{sid}} #b_{{block.id}}2 { padding-left:{{bk_stts.pd}}px;padding-right:{{bk_stts.pd}}px;border-radius:{{bk_stts.bdr}}px;{% if bk_stts.ls_text != 0 %}letter-spacing:{{bk_stts.ls_text}}px;{% endif %}font-weight: {{bk_stts.fw_text}};min-height:{{bk_stts.h}}px;font-size: {{bk_stts.fs_text}}px }}
+         @media (min-width: 768px) {.nt_se_{{sid}} #b_{{block.id}},.nt_se_{{sid}} #b_{{block.id}}2 { padding-left:{{bk_stts.pd}}px;padding-right:{{bk_stts.pd}}px;border-radius:{{bk_stts.bdr}}px;{% if bk_stts.ls_text != 0 %}letter-spacing:{{bk_stts.ls_text}}px;{% endif %}font-weight: {{bk_stts.fw_text}};min-height:{{bk_stts.h}}px;font-size: {{bk_stts.fs_text}}px}}
       {%- endcase -%}
   {%- endfor -%}
 
@@ -389,6 +391,16 @@
         "id": "pd_mb",
         "label": "Padding",
         "placeholder": "50px,,50px,"
+      },
+      {
+        "type": "range",
+        "id": "pd_text",
+        "min": 0,
+        "max": 200,
+        "step": 5,
+        "label": "Text Padding",
+        "unit": "px",
+        "default": 0
       }
     ],
     "blocks": [
@@ -408,16 +420,6 @@
             "id": "color",
             "label": "Color Text",
             "default": "#fff"
-          },
-          {
-            "type": "range",
-            "id": "pd_text",
-            "min": 0,
-            "max": 200,
-            "step": 5,
-            "label": "Text Padding",
-            "unit": "px",
-            "default": 0
           },
           {
             "type": "range",
@@ -494,6 +496,7 @@
           }
         ]
       },
+      
       {
       "type": "2",
       "name": "Sub Heading",
