@@ -1049,10 +1049,12 @@ a.prev.page-numbers {
     margin-right: 10px;
     position: relative;
     overflow: hidden;
-    margin-bottom: 30px;
 }
 .sk-session-grid-indiv-container a {
     cursor: pointer;
+}
+.sk-session-grid-video {
+    padding: 5px;
 }
 .sk-session-grid-indiv-container iframe {
     position: absolute;
