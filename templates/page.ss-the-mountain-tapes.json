@@ -14,11 +14,6 @@
         "89b1a94e-2cf5-4075-a6af-0969fbaeae2c"
       ],
       "settings": {
-        "title": "The Mountain Tapes",
-        "button": false,
-        "btn_text": "Click Me",
-        "button_align": "center",
-        "btn_background": "black",
         "image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-07_at_10.05.18_AM.png",
         "parallax": false,
         "color": "#000000",
@@ -268,15 +263,13 @@
         "mg": "-25px,,75px,",
         "pd": "",
         "mg_mb": "",
-        "pd_mb": "",
-        "pd_text": 50
+        "pd_mb": ""
       }
     },
     "1650467056c6dc0d08": {
       "type": "rich-text-sendero-sessions",
       "settings": {
         "title": "",
-        "header_align": "center",
         "sub_title": "",
         "sub_font": "2",
         "style_title": "title_1",
@@ -318,7 +311,6 @@
       "type": "rich-text-sendero-sessions",
       "settings": {
         "title": "",
-        "header_align": "center",
         "sub_title": "",
         "sub_font": "2",
         "style_title": "title_1",
