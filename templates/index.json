@@ -778,7 +778,7 @@
         "use_pr": false,
         "layout": "container",
         "cl_bg": "",
-        "mg": "50px,,50px,",
+        "mg": "100px,,50px,",
         "pd": "",
         "mg_mb": "",
         "pd_mb": ""
@@ -868,7 +868,7 @@
         "image_position": "8",
         "layout": "container",
         "cl_bg": "#ffffff",
-        "mg": "200px,,200px,",
+        "mg": "100px,,200px,",
         "pd": "",
         "mg_mb": "",
         "pd_mb": ""
