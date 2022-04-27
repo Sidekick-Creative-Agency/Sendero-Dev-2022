@@ -10,6 +10,11 @@
             "size": 30
           }
         },
+        "92cf98dc-08e0-4468-a829-04b71182ff73": {
+          "type": "shopify:\/\/apps\/product-reviews\/blocks\/reviews\/bae150af-8da8-48b2-9867-398188115e5f",
+          "settings": {
+          }
+        },
         "pricereview": {
           "type": "pricereview",
           "settings": {
@@ -74,6 +79,7 @@
       },
       "block_order": [
         "title",
+        "92cf98dc-08e0-4468-a829-04b71182ff73",
         "pricereview",
         "frm",
         "size",
