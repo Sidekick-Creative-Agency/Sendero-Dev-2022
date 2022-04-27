@@ -721,6 +721,44 @@
 / Individual Product Page
 /--------------------------------------------------------*/
 
+.shopify-app-block {
+    margin: 0 !important;
+}
+.product_title {
+    margin-bottom: 20px !important;
+}
+.spr-starrating.spr-summary-starrating {
+    justify-content: left !important;
+    /* margin-bottom: 20px !important; */
+}
+.spr-stars[data-live-text-setting="stars_text_empty"] {
+    display: none;
+}
+.spr-header-title, .spr-summary-caption, .spr-review, .spr-header .spr-summary-starrating  {
+    display: none !important;
+}
+.spr-container {
+    border: none !important;
+    display: flex;
+    flex-direction: column;
+    padding: 0 !important;
+}
+.spr-header {
+    display: flex;
+    justify-content: left;
+}
+.spr-button {
+    font-family: "Oswald";
+    font-weight: 400 !important;
+    border: 1px solid rgba(33,43,54,.9) !important;
+}
+.spr-reviews {
+    margin: 0 !important;
+}
+.spr-icon {
+    font-size: 100% !important;
+}
+
 .sk-indiv-product-featured {
     width: 92% !important;
 }
