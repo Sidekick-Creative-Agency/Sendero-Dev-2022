@@ -14,10 +14,15 @@
         "89b1a94e-2cf5-4075-a6af-0969fbaeae2c"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/kristjan-kotar--h15p84GY5k-unsplash.jpg",
+        "title": "Los Pioneros",
+        "button": false,
+        "btn_text": "Click Me",
+        "button_align": "center",
+        "btn_background": "black",
+        "image": "shopify:\/\/shop_images\/Page_Header_1024x1024_9e175322-e038-452d-9378-3cf290e25993.jpg",
         "parallax": false,
         "color": "#000000",
-        "overlay": 54,
+        "overlay": 26,
         "padding": 100,
         "paddingmb": 50,
         "bg_pos": "center center",
@@ -34,17 +39,21 @@
     "16492587304c8edf6b": {
       "type": "rich_text",
       "settings": {
-        "title": "LOS PIONEROS DE SENDERO",
+        "title": "what is a pionero",
         "sub_title": "",
+        "show_btn": true,
+        "btn_text": "apply to become a pionero",
+        "button_align": "left",
         "sub_font": "2",
+        "header_align": "left",
         "style_title": "title_1",
         "ic_tt": "gem",
         "show_clpr": false,
         "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus sit amet nisl sit amet tempus. Aliquam consequat neque nec ante condimentum, et aliquam ipsum fermentum. Suspendisse posuere enim non sem sollicitudin volutpat. In pellentesque nunc lacus, quis vehicula felis faucibus vitae. Mauris eget justo sit amet dolor tincidunt rutrum ut id mi. Fusce facilisis ligula vel scelerisque posuere. Curabitur massa ante, pretium ut dignissim vitae, placerat eget turpis. Praesent laoreet velit nec condimentum vulputate. In feugiat tortor a felis pretium, ac euismod dolor tincidunt. Etiam tristique dictum aliquam. In imperdiet dolor nulla, eu euismod metus tristique in. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras non felis at ex elementum vestibulum vitae sed est. Suspendisse sit amet velit fringilla, feugiat elit eget, hendrerit nulla.<\/p>",
         "align": "tl",
         "layout": "container",
-        "mg": "50px,,50px,",
-        "pd": "",
+        "mg": "100px,,50px,",
+        "pd": ",50px,,50px",
         "mg_mb": "",
         "pd_mb": ""
       }
@@ -129,8 +138,8 @@
         "dot_color": "1",
         "layout": "container",
         "cl_bg": "",
-        "mg": "200px,,50px,",
-        "pd": "",
+        "mg": "100px,,10px,",
+        "pd": ",50px,,50px",
         "mg_mb": "",
         "pd_mb": ""
       }
@@ -215,8 +224,8 @@
         "dot_color": "1",
         "layout": "container",
         "cl_bg": "",
-        "mg": "50px,,50px,",
-        "pd": "",
+        "mg": ",,10px,",
+        "pd": ",50px,,50px",
         "mg_mb": "",
         "pd_mb": ""
       }
@@ -301,8 +310,8 @@
         "dot_color": "1",
         "layout": "container",
         "cl_bg": "",
-        "mg": "50px,,50px,",
-        "pd": "",
+        "mg": ",,10px,",
+        "pd": ",50px,,50px",
         "mg_mb": "",
         "pd_mb": ""
       }
@@ -387,8 +396,8 @@
         "dot_color": "1",
         "layout": "container",
         "cl_bg": "",
-        "mg": "50px,,50px,",
-        "pd": "",
+        "mg": ",,10px,",
+        "pd": ",50px,,50px",
         "mg_mb": "",
         "pd_mb": ""
       }
@@ -473,8 +482,8 @@
         "dot_color": "1",
         "layout": "container",
         "cl_bg": "",
-        "mg": "50px,,50px,",
-        "pd": "",
+        "mg": ",,10px,",
+        "pd": ",50px,,50px",
         "mg_mb": "",
         "pd_mb": ""
       }
@@ -497,11 +506,10 @@
         },
         "1649254655cb9af4b2-1": {
           "type": "text_block",
-          "disabled": true,
           "settings": {
-            "enable_image": true,
-            "title": "Add a title or tagline",
-            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "enable_image": false,
+            "title": "",
+            "text": "",
             "button_label": "",
             "button_link": "",
             "open_link": "_blank",
@@ -510,11 +518,10 @@
         },
         "1649254655cb9af4b2-2": {
           "type": "text_block",
-          "disabled": true,
           "settings": {
-            "enable_image": true,
-            "title": "Add a title or tagline",
-            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "enable_image": false,
+            "title": "",
+            "text": "",
             "button_label": "",
             "button_link": "",
             "open_link": "_blank",
@@ -559,7 +566,29 @@
         "dot_color": "1",
         "layout": "container",
         "cl_bg": "",
-        "mg": "50px,,50px,",
+        "mg": ",,100px,",
+        "pd": ",50px,,50px",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    },
+    "16510961323cff5c81": {
+      "type": "rich_text",
+      "settings": {
+        "title": "",
+        "sub_title": "",
+        "show_btn": true,
+        "btn_text": "Apply to become a pionero",
+        "button_align": "center",
+        "sub_font": "2",
+        "header_align": "center",
+        "style_title": "title_1",
+        "ic_tt": "gem",
+        "show_clpr": false,
+        "content": "",
+        "align": "tc",
+        "layout": "container",
+        "mg": "-25px,,100px,",
         "pd": "",
         "mg_mb": "",
         "pd_mb": ""
@@ -575,6 +604,7 @@
     "1649254182b8d6a590",
     "1649254352ab90ab1f",
     "164925453683608a29",
-    "1649254656a75fbd18"
+    "1649254656a75fbd18",
+    "16510961323cff5c81"
   ]
 }
