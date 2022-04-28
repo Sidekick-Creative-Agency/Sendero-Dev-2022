@@ -166,7 +166,9 @@
   
   {%- if section.settings.show_btn -%}
     <div class="rich-text-button w__100 flex" style="justify-content: {{section.settings.button_align}}; padding: {{button_padding}}">
-      <button class="btn_icon_true">{{section.settings.btn_text}}</button>
+      <a href="{{section.settings.btn_link}}">
+        <button class="btn_icon_true">{{section.settings.btn_text}}</button>
+      </a>
     </div>
     {%- endif -%}
 </div>
@@ -332,6 +334,12 @@
            }
           ],
           "label": "Align Button"
+        },
+        {
+          "type": "text",
+          "id": "btn_link",
+          "label": "Button link",
+          "default": "#"
         },
         {
           "type": "select",
