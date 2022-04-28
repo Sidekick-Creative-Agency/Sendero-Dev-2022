@@ -721,6 +721,17 @@
 / Individual Product Page
 /--------------------------------------------------------*/
 
+/* .sp-tab-content {
+    height: 100px;
+    overflow: hidden;
+} */
+.read-more, .read-less {
+    cursor: pointer;
+}
+.hidden-button {
+    display: none;
+}
+
 .sk-indiv-product-featured {
     width: 92% !important;
 }
