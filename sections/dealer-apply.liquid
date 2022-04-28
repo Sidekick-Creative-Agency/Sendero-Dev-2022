@@ -358,6 +358,7 @@
                  value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
                  aria-required="true"
                  required="required"
+                 class="email"
                  {%- if form.errors contains 'email' -%}
                    class="input--error"
                    aria-invalid="true"
@@ -371,7 +372,7 @@
 
            {%- unless page_content contains 'no_phone' -%}
            <div class="mb__20">
-           <input placeholder="Phone Number" type="tel" id="{{ formId }}-phone" name="contact[phone]" pattern="[0-9\-]*" value="{% if form[phone] %}{{ form[phone] }}{% elsif customer %}{{ customer.phone }}{% endif %}">
+           <input placeholder="Phone Number (123-456-7890)" required type="tel" id="{{ formId }}-phone" name="contact[phone]" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" value="{% if form[phone] %}{{ form[phone] }}{% elsif customer %}{{ customer.phone }}{% endif %}">
            </div>
            {%- endunless -%}
 
@@ -386,3 +387,11 @@
     {%- if page_content.size > 0 %}<div class="contact-content col-12 col-md-6">{{ page_content }}</div>{% endif -%}
   </div>
 </div>
+
+<script>
+  $(".dealer-apply-button").on("click", () => {
+    if ($(".email").val().indexOf("@") < 0){
+      alert("ERROR");
+    }
+  });
+</script>
