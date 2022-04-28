@@ -422,14 +422,17 @@ assign se_stts = section.settings
         </div>
         <style>.kl_fbt_img:not(.kl_fbt_img_0):before{content:"+";font-size:20px}.kl_fbt_li select{width:auto;border-radius:5px;color:#222;height:36px;line-height:36px;margin-left:5px}.kl_fbt_tt_price{color:#ec0101;font-size:18px}.kl_fbt_price{color:#ec0101;font-size:15px;margin:0 5px}.kl_fbt_wrap del{color:#878787}.kl_fbt_wrap ins{text-decoration:none}.kl_fbt_li:not(:last-child){margin-bottom:10px}.js_fbt_ck,.kl_fbt_li .label{display:none}.kl_fbt_li label:before{position:relative;top:2px;content:'';display:inline-block;margin-right:4px;width:14px;height:14px;min-width:14px;border:1px solid #d4d6d8;background:#fff;box-shadow:none;background-size:0;background-repeat:no-repeat;background-position:50%;transition:all .2s ease-in-out;border-radius:2px;-webkit-appearance:none;transition:border-color .2s ease-in-out,box-shadow .2s ease-in-out,background .2s ease-in-out}.kl_fbt_li svg{display:block;width:10px;height:10px;fill:#fff;position:absolute;top:5px;left:2px;pointer-events:none;transform:scale(0);-webkit-transform:scale(0);-webkit-transition:all .25s ease-in-out;transition:all .25s ease-in-out}.js_fbt_ck:checked+label svg{transform:scale(1);-webkit-transform:scale(1)}.js_fbt_ck:not(:checked)~*{opacity:.2}.js_fbt_ck:not(:checked)+label{opacity:1}.kl_fbt_img img{width:100%;margin:5px 10px;max-width:115px}.kl_fbt_img_0.kl_fbt_img img{margin-left:0}@media (max-width:1024px){.kl_fbt_img img{margin:5px;max-width:70px}.des_style_1.des_mb_2.sp-tab .kl_fbt_img img,.des_style_2 .kl_fbt_img img{max-width:55px}.des_style_1.des_mb_2 .kl_fbt_img_0.kl_fbt_img img{margin-left:5px}.kl_fbt_img:not(.kl_fbt_img_0):before{font-size:16px}.kl_fbt_li label:before{width:24px;height:24px}.kl_fbt_li svg{width:16px;height:16px;top:-2px;left:3px}}</style> 
        
-        {%- when true %} {%- comment -%} this used to be 'when add' {%- endcomment -%}
-        <h1>hello</h1>
+        {%- when 'des' %} {%- comment -%} this used to be 'when add' {%- endcomment -%}
           {% comment %}{% if product.metafields.my_fields.material != null %}{% continue %}{% endif -%} {% endcomment %}
         <div class="panel entry-content sp-tab des_mb_{{cl_mb}} des_style_{{cl_des}}{% if ck %} active{% assign ck = false %}{% else %} dn{% endif %}" id="tab_add" {{ block.shopify_attributes }}>
         	<div class="js_ck_view"></div><div class="heading bgbl dn"><a class="tab-heading flex al_center fl_between pr cd chp fwm" href="#tab_{{block.id}}"><span class="txt_h_tab">{{bk_setts.title}}</span><span class="nav_link_icon ml__5"></span></a></div>
         	<div class="sp-tab-content">
-            <h1>hello</h1>
-            <div>{{product.metafields.my_fields.material}}</div>
+            <ul>
+              {% for value in product.metafields.my_fields.material %}
+                <li>{{value}}</li>
+              {% endfor %}
+            </ul>
+
         	
           {%- comment -%}
             <table class="pr_attrs">
