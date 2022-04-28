@@ -47,11 +47,16 @@
         "mg_mb": "",
         "pd_mb": ""
       }
+    },
+    "dealer-apply": {
+      "type": "dealer-apply",
+      "settings": {}
     }
   },
   "order": [
     "heading",
     "main",
-    "1649292865853b6fe8"
+    "1649292865853b6fe8",
+    "dealer-apply"
   ]
 }
