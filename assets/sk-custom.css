@@ -1099,7 +1099,10 @@ a.prev.page-numbers {
 
 
 
-
+/*---------------- Remove color swatches on grid pages -------------------*/
+.nt_swatches_on_grid {
+    display: none !important;
+}
 
 /*-----------------------------------------------------------------------------/
 / Custom CSS For Screen Sizes
