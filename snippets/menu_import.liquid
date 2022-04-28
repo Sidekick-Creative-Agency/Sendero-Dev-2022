@@ -206,10 +206,14 @@
 				  {%- assign collection = collections[bk_stts.collection] -%}
 				  {%- assign image = bk_stts.image | default:collection.image -%}
 				  {%- assign home_t = 'homepage.onboarding.collection_title' | t  | append:' #' | append:for_i -%} 
+				  {%- assign col_url = collection.url -%} 
+				  {% if bk_stts.col_link %}
+					  {%- assign col_url = col_url | append: "?filter.p.product_type=" | append: bk_stts.col_link %}
+				  {% endif %}
             <div id="bk_{{block.id}}" class="type_mn_pr menu-item sub-column-item col-{{bk_stts.col}} equal_nt hoverz_{{bk_stts.hoverz}} cat_design_{{bk_stts.cat_design}}">
 					<div class="cat_grid_item cat_space_item">
 					  <div class="cat_grid_item__content pr oh">
-					    <a href="{{ collection.url | default:'/' }}" class="db cat_grid_item__link">
+					    <a href="{{ col_url| default:'/' }}" class="db cat_grid_item__link">
 					      {%- if image != blank -%}
 					        <div class="cat_grid_item__overlay item__position nt_bg_lz lazyloadt4s" data-bgset="{{ image | img_url: '1x1' }}" data-ratio="{{image.aspect_ratio}}" data-sizes="auto" data-parent-fit="width" style="padding-top:80%;"></div>
 					      {%- else -%}

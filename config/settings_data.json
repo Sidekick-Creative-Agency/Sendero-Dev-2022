@@ -502,6 +502,7 @@
               "cat_design": "1",
               "hoverz": true,
               "collection": "desert-runner",
+              "col_link": "#",
               "title": "",
               "col": "3"
             }
@@ -512,6 +513,7 @@
               "cat_design": "1",
               "hoverz": true,
               "collection": "hey-slick",
+              "col_link": "#",
               "title": "",
               "col": "3"
             }
@@ -568,6 +570,7 @@
               "cat_design": "1",
               "hoverz": true,
               "collection": "best-seller-hats",
+              "col_link": "#",
               "title": "Best Sellers",
               "col": "3"
             }
@@ -579,6 +582,7 @@
               "cat_design": "1",
               "hoverz": true,
               "collection": "signature",
+              "col_link": "Hats",
               "title": "Signature",
               "col": "3"
             }
@@ -635,6 +639,7 @@
               "cat_design": "1",
               "hoverz": true,
               "collection": "best-seller-t-shirts",
+              "col_link": "#",
               "title": "Best Sellers",
               "col": "3"
             }
@@ -645,6 +650,7 @@
               "cat_design": "1",
               "hoverz": true,
               "collection": "signature",
+              "col_link": "T-Shirts",
               "title": "",
               "col": "3"
             }
@@ -701,6 +707,7 @@
               "cat_design": "1",
               "hoverz": true,
               "collection": "bandanas",
+              "col_link": "#",
               "title": "",
               "col": "3"
             }
@@ -711,6 +718,7 @@
               "cat_design": "1",
               "hoverz": true,
               "collection": "patches",
+              "col_link": "#",
               "title": "",
               "col": "3"
             }
@@ -768,6 +776,7 @@
               "cat_design": "1",
               "hoverz": true,
               "collection": "",
+              "col_link": "#",
               "title": "Sendero Sessions",
               "col": "3"
             }
@@ -779,6 +788,7 @@
               "cat_design": "1",
               "hoverz": true,
               "collection": "",
+              "col_link": "#",
               "title": "Blog",
               "col": "3"
             }
