@@ -327,6 +327,16 @@
 /*--------------------------------------------------------/
 / HOME PAGE
 /--------------------------------------------------------*/
+
+/* This removes the whitespace in the hero slider */
+.hero-block {
+    margin: 0;
+    padding: 0;
+    width: 110%;
+    transform: translateX(-4.25%);
+}
+
+
 .sendero-session-txt-container {
     /* display: flex;
     flex: 0 0 50%; */
