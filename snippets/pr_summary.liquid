@@ -304,18 +304,41 @@ assign se_stts = section.settings
           <div class="sp-tab-content">{{ bk_setts.custom_liquid }}</div>
         </div>
 
+        
         {%- when 'des' -%}
         <div class="panel entry-content sp-tab des_mb_{{cl_mb}} des_style_{{cl_des}}{% if ck %} active{% assign ck = false %}{% else %} dn{% endif %}" data-id-dest4s id="tab_{{block.id}}" {{ block.shopify_attributes }}>
         	<div class="js_ck_view"></div><div class="heading bgbl dn"><a class="tab-heading flex al_center fl_between pr cd chp fwm" href="#tab_{{block.id}}"><span class="txt_h_tab">{{bk_setts.title}}</span><span class="nav_link_icon ml__5"></span></a></div>
-        	<div class="sp-tab-content rtet4">{{- product.description -}}</div>
+        	<div class="sp-tab-content rtet4"><span>{{- product.description -}}</span>
+            <a class="read-more">Read More</a>
+            <a class="read-less hidden-button">Read Less</a>
+          </div>
+          
         </div>
-{%- comment -%}
-        {%- when 'add' %}{% if product.has_only_default_variant %}{% continue %}{% endif -%}
-        <div class="panel entry-content sp-tab des_mb_{{cl_mb}} des_style_{{cl_des}}{% if ck %} active{% assign ck = false %}{% else %} dn{% endif %}" data-id-dest4s id="tab_{{block.id}}" {{ block.shopify_attributes }}>
-        	<div class="js_ck_view"></div><div class="heading bgbl dn"><a class="tab-heading flex al_center fl_between pr cd chp fwm" href="#tab_{{block.id}}"><span class="txt_h_tab">Additional Information</span><span class="nav_link_icon ml__5"></span></a></div>
-        	<div class="sp-tab-content rtet4">{{- product.description -}}</div>
-        </div>
-{%- endcomment -%}
+        
+        <script>
+          var des = $(".sp-tab-content span");
+          var temp = des.text();
+          var short = des.text().substring(0, 500).trim() + "...";
+          var readMore = $(".read-more");
+          var readLess = $(".read-less");
+
+          if (des.text().length > 500) {
+            des.text(short);
+          }
+          readMore.click(() => {
+            des.text(temp);
+            readMore.addClass("hidden-button");
+            readLess.removeClass("hidden-button");
+          });
+          readLess.click(() => {
+            des.text(short);
+            readLess.addClass("hidden-button");
+            readMore.removeClass("hidden-button");
+          });
+        </script>
+        
+
+
         {%- when 'buy' -%}{% if nav_up_size == 0 %}{% continue %}{% endif -%} 
         <div class="panel entry-content sp-tab des_mb_{{cl_mb}} des_style_{{cl_des}}{% if ck %} active{% assign ck = false %}{% else %} dn{% endif %}" id="tab_{{block.id}}" {{ block.shopify_attributes }}>
           <div class="js_ck_view"></div><div class="heading bgbl dn"><a class="tab-heading flex al_center fl_between pr cd chp fwm" href="#tab_{{block.id}}"><span class="txt_h_tab">{{bk_setts.title}}</span><span class="nav_link_icon ml__5"></span></a></div>
@@ -908,4 +931,3 @@ assign se_stts = section.settings
 {%- endfor -%}
 {%- if call_cl == "_qv" -%}<a href="{{product.url | within: collection}}" class="btn fwsb detail_link">{{ 'products.product.product_view_details' | t }} <i class="facl facl-right"></i></a> {%- endif -%}
 </div>
-
