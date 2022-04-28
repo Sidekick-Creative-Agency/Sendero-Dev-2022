@@ -731,6 +731,17 @@
 / Individual Product Page
 /--------------------------------------------------------*/
 
+/* .sp-tab-content {
+    height: 100px;
+    overflow: hidden;
+} */
+.read-more, .read-less {
+    cursor: pointer;
+}
+.hidden-button {
+    display: none;
+}
+
 .sk-indiv-product-featured {
     width: 92% !important;
 }
@@ -1109,8 +1120,54 @@ a.prev.page-numbers {
 
 
 
+/*---------------- Remove color swatches on grid pages -------------------*/
+.nt_swatches_on_grid {
+    display: none !important;
+}
 
-
+/*-----------------------------------------------------------------------------/
+/ PIONEROS PAGE
+/-----------------------------------------------------------------------------*/
+.pioneros-outer-container {
+    margin: 50px 0;
+}
+.pioneros-row {
+    /* padding: 15px !important; */
+    justify-content: center;
+}
+.pioneros-item {
+    overflow: hidden;
+    margin-bottom: 0 !important;
+    max-height: 370px;
+    max-width: 370px;
+    padding: 0 5px !important;
+}
+.pioneros-img {
+    margin: 0 !important;
+    height: 100%;   
+}
+.pioneros-image-overlay {
+    position: absolute;
+    top: 0;
+    width: calc(100% - 10px);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,.4);
+    opacity: 0;
+    transition: .5s;
+}
+.pioneros-title, .pioneros-title a {
+    color: white !important;
+}
+.pioneros-text {
+    color: #D1D1D1;
+}
+.pioneros-item:hover .pioneros-image-overlay {
+    opacity: 1;
+}
 /*-----------------------------------------------------------------------------/
 / Custom CSS For Screen Sizes
 /-----------------------------------------------------------------------------*/
