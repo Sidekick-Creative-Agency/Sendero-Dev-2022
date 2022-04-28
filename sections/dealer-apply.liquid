@@ -23,7 +23,7 @@
                 <input placeholder="Address" required="required" type="text" id="{{ formId }}-address" name="contact[address]" value="{% if form[address] %}{{ form[address] }}{% endif %}">
             </div>
             <div class="mb__20">
-                <input placeholder="Apartment, Suite, etc. (optional)" required="required" type="text" id="{{ formId }}-address" name="contact[address]" value="{% if form[address] %}{{ form[address] }}{% endif %}">
+                <input placeholder="Apartment, Suite, etc. (optional)" type="text" id="{{ formId }}-address" name="contact[address]" value="{% if form[address] %}{{ form[address] }}{% endif %}">
             </div>
             <div class="mb__20">
                 <input placeholder="City" required="required" type="text" id="{{ formId }}-address" name="contact[address]" value="{% if form[address] %}{{ form[address] }}{% endif %}">
@@ -376,10 +376,9 @@
            {%- endunless -%}
 
            <div class="dealer-apply-checkbox-container">
-               
-           <input class="dealer-apply-checkbox" type="checkbox" id="alerts" name="alerts" value="true">
+            <input class="dealer-apply-checkbox" type="checkbox" id="alerts" name="alerts" value="true">
             <label for="alerts">Text me with news and offers</label><br>
-        </div>
+           </div>
            <button type="submit" class="w__100 dealer-apply-button" value="Submit">Continue Application</button>
 
          {%- endform -%}
