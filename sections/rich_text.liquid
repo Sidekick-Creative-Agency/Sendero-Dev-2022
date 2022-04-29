@@ -2,8 +2,10 @@
   {%- render 'section_title',section:section,section_title:'mb__20' -%}
   <div class="rte_setting {{section.settings.align}}">{{ section.settings.content }}</div>
   {%- if section.settings.show_btn -%}
-    <div class="rich-text-button">
-      <button class="btn_icon_true">{{section.settings.btn_text}}</button>
+    <div class="rich-text-button" style="text-align: {{section.settings.button_align}}">
+      <a href="{{section.settings.btn_link}}">
+        <button class="btn_icon_true">{{section.settings.btn_text}}</button>
+      </a>
     </div>
     {%- endif -%}
 </div>
@@ -40,6 +42,32 @@
         "id": "btn_text",
         "label": "Button Text",
         "default": "Click Me"
+      },
+      {
+        "type": "select",
+        "id": "button_align",
+        "label": "Align button",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },    
+          {
+            "value": "center",
+            "label": "Center"
+          },   
+          {
+            "value": "right",
+            "label": "Right"
+          }       
+        ],
+        "default": "left"
+      },
+      {
+        "type": "text",
+        "id": "btn_link",
+        "label": "Button link",
+        "default": "#"
       },
       {
         "type": "select",

@@ -10,19 +10,19 @@
             "size": 30
           }
         },
-        "a4e9244c-f3a9-45e8-b35f-06bcbac76c64": {
-          "type": "shopify:\/\/apps\/product-reviews\/blocks\/star_rating\/bae150af-8da8-48b2-9867-398188115e5f",
+        "8854f84b-ab16-471a-8548-98f36dea7529": {
+          "type": "shopify:\/\/apps\/ryviu-aliexpress-reviews-app\/blocks\/ryviu-total\/807ad6ed-1a6a-4559-abea-ed062858d9da",
           "settings": {
-            "stars_fill_color": "#000000",
-            "star_size": 15,
-            "text_align": "flex-start",
-            "product": "{{product}}",
-            "stars_text_empty": "(0)"
+            "show_when_no_reviews": false
           }
         },
-        "e093b9c9-70e9-4bc0-88d5-470f2c8b5620": {
-          "type": "shopify:\/\/apps\/product-reviews\/blocks\/reviews\/bae150af-8da8-48b2-9867-398188115e5f",
+        "61ee4673-5fae-426f-ba11-8cd22f0276c6": {
+          "type": "shopify:\/\/apps\/ryviu-aliexpress-reviews-app\/blocks\/ryviu-widget\/807ad6ed-1a6a-4559-abea-ed062858d9da",
           "settings": {
+            "hide_when_no_reviews": false,
+            "r_wapper_class": "",
+            "r_max_width": 1920,
+            "r_padding_block": 0
           }
         },
         "pricereview": {
@@ -30,7 +30,7 @@
           "settings": {
             "price": "0",
             "txt_sale": "0",
-            "rating": true,
+            "rating": false,
             "review_liquid": ""
           }
         },
@@ -89,8 +89,8 @@
       },
       "block_order": [
         "title",
-        "a4e9244c-f3a9-45e8-b35f-06bcbac76c64",
-        "e093b9c9-70e9-4bc0-88d5-470f2c8b5620",
+        "8854f84b-ab16-471a-8548-98f36dea7529",
+        "61ee4673-5fae-426f-ba11-8cd22f0276c6",
         "pricereview",
         "frm",
         "size",
@@ -266,6 +266,25 @@
         "mg_mb": "",
         "pd_mb": ""
       }
+    },
+    "16512489634b7ad007": {
+      "type": "apps",
+      "blocks": {
+        "ee778cfe-994f-4a0c-a8b5-e8b8db651782": {
+          "type": "shopify:\/\/apps\/ryviu-aliexpress-reviews-app\/blocks\/ryviu-widget\/807ad6ed-1a6a-4559-abea-ed062858d9da",
+          "settings": {
+            "hide_when_no_reviews": false,
+            "r_wapper_class": "",
+            "r_max_width": 1450,
+            "r_padding_block": 0
+          }
+        }
+      },
+      "block_order": [
+        "ee778cfe-994f-4a0c-a8b5-e8b8db651782"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -273,6 +292,7 @@
     "1648757478999cc57a",
     "164875753916b49a9b",
     "product-rec-indiv",
-    "best-seller-slider"
+    "best-seller-slider",
+    "16512489634b7ad007"
   ]
 }

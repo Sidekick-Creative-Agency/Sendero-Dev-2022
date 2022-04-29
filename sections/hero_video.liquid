@@ -28,7 +28,7 @@
         
         <div class="sendero-session-txt-container txt_content pa t__0 l__0 b__0 r__0 caption-w-{{se_stts.caption_w}} flex column shadow_wrap {{se_stts.txt_align}} pe_none z__100">
           <div  class="play-icon">
-            <a href="/sessions">
+            <a href="{{section.settings.btn_link}}">
             <button>
               <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70">
                 <path id="Subtraction_2" data-name="Subtraction 2" d="M35,70A35.009,35.009,0,0,1,21.376,2.75a35.009,35.009,0,0,1,27.247,64.5A34.781,34.781,0,0,1,35,70ZM25,20.533v29.4l19.6-14.7Z" fill="#e3e3e3"/>
@@ -164,6 +164,12 @@
       {
         "type": "paragraph",
         "content": "—————————————————"
+      },
+      {
+        "type": "text",
+        "id": "btn_link",
+        "label": "Play button link",
+        "default": "#"
       },
       {
         "type": "select",

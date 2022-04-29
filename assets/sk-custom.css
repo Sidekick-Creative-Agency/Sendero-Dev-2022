@@ -327,6 +327,16 @@
 /*--------------------------------------------------------/
 / HOME PAGE
 /--------------------------------------------------------*/
+
+/* This removes the whitespace in the hero slider */
+.hero-block {
+    margin: 0;
+    padding: 0;
+    width: 110%;
+    transform: translateX(-4.25%);
+}
+
+
 .sendero-session-txt-container {
     /* display: flex;
     flex: 0 0 50%; */
@@ -721,42 +731,14 @@
 / Individual Product Page
 /--------------------------------------------------------*/
 
-.shopify-app-block {
-    margin: 0 !important;
-}
 .product_title {
     margin-bottom: 20px !important;
 }
-.spr-starrating.spr-summary-starrating {
-    justify-content: left !important;
-    /* margin-bottom: 20px !important; */
+.read-more, .read-less {
+    cursor: pointer;
 }
-.spr-stars[data-live-text-setting="stars_text_empty"] {
+.hidden-button {
     display: none;
-}
-.spr-header-title, .spr-summary-caption, .spr-review, .spr-header .spr-summary-starrating  {
-    display: none !important;
-}
-.spr-container {
-    border: none !important;
-    display: flex;
-    flex-direction: column;
-    padding: 0 !important;
-}
-.spr-header {
-    display: flex;
-    justify-content: left;
-}
-.spr-button {
-    font-family: "Oswald";
-    font-weight: 400 !important;
-    border: 1px solid rgba(33,43,54,.9) !important;
-}
-.spr-reviews {
-    margin: 0 !important;
-}
-.spr-icon {
-    font-size: 100% !important;
 }
 
 .sk-indiv-product-featured {
@@ -1135,10 +1117,71 @@ a.prev.page-numbers {
 }
 
 
+/*---------------- Ryviu Review App -------------------*/
+.r--button {
+    border-radius: 0 !important;
+    text-transform: uppercase !important;
+}
+.r--stars-icon {
+    color: #222 !important;
+}
+.r--author, .r--avatar-default {
+    border-radius: 0 !important;
+}
+.r--author {
+    color: #222 !important;
+}
+.r-star:before {
+    content: \e902 !important;
+}
+/*---------------- Remove color swatches on grid pages -------------------*/
+.nt_swatches_on_grid {
+    display: none !important;
+}
 
-
-
-
+/*-----------------------------------------------------------------------------/
+/ PIONEROS PAGE
+/-----------------------------------------------------------------------------*/
+.pioneros-outer-container {
+    margin: 50px 0;
+}
+.pioneros-row {
+    /* padding: 15px !important; */
+    justify-content: center;
+}
+.pioneros-item {
+    overflow: hidden;
+    margin-bottom: 0 !important;
+    max-height: 370px;
+    max-width: 370px;
+    padding: 0 5px !important;
+}
+.pioneros-img {
+    margin: 0 !important;
+    height: 100%;   
+}
+.pioneros-image-overlay {
+    position: absolute;
+    top: 0;
+    width: calc(100% - 10px);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,.4);
+    opacity: 0;
+    transition: .5s;
+}
+.pioneros-title, .pioneros-title a {
+    color: white !important;
+}
+.pioneros-text {
+    color: #D1D1D1;
+}
+.pioneros-item:hover .pioneros-image-overlay {
+    opacity: 1;
+}
 /*-----------------------------------------------------------------------------/
 / Custom CSS For Screen Sizes
 /-----------------------------------------------------------------------------*/

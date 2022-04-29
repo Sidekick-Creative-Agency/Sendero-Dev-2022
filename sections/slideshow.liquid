@@ -27,11 +27,11 @@
          {%- if block.type == 'img' -%}{%- assign image = bk_stts.image %}{% assign url = bk_stts.link_img1 %}{% assign open_link = bk_stts.open_link %}{% assign forloop_first = forloop.first %}{% assign ani_img = bk_stts.ani_img -%}
             <div id="nt_{{block.id}}" class="col-12 slideshow__slide bg_content_{{bk_stts.bg_content_bl}} border_bl_{{bk_stts.border_bl}} br_style_{{bk_stts.br_style}}"> 
                {%- if admin_sp %}<div {{ block.shopify_attributes }}></div>{% for block2 in se_blocks offset:index2 %}{% assign index2 = index2|plus:1 %}<div {{ block2.shopify_attributes }}></div>{% endfor %}{% endif -%}
-               <div class="oh pr nt_img_txt"{% if bk_stts.cl_img != blank %} style="background-color:{{bk_stts.cl_img}}"{% endif %}>
+               <div class="hero-block oh pr nt_img_txt"{% if bk_stts.cl_img != blank %} style="background-color:{{bk_stts.cl_img}}"{% endif %}>
 
                 {%- if image != blank -%}{%- assign ratio = image.aspect_ratio -%}{%- assign image_mb = bk_stts.image_mb |default:image -%}{%- assign ratio_mb = image_mb.aspect_ratio -%}
                   <div class="js_full_ht4 img_slider_block dek_img_slide">
-                     <div class="bg_rp_norepeat bg_sz_cover lazyloadt4s item__position {{bk_stts.pos_img}} img_{{ani_img}} pa l__0 t__0 r__0 b__0" data-bgset="{{ image | img_url: '1x1' }}" data-ratio="{{ratio}}" data-sizes="auto"></div>
+                     <div class=" bg_rp_norepeat bg_sz_cover lazyloadt4s item__position {{bk_stts.pos_img}} img_{{ani_img}} pa l__0 t__0 r__0 b__0" data-bgset="{{ image | img_url: '1x1' }}" data-ratio="{{ratio}}" data-sizes="auto"></div>
                   </div>
                   <div class="js_full_ht4 img_slider_block mb_img_slide">
                      <div class="bg_rp_norepeat bg_sz_cover lazyloadt4s item__position {{bk_stts.pos_img}} img_{{ani_img}} pa l__0 t__0 r__0 b__0" data-bgset="{{ image_mb | img_url: '1x1' }}" data-ratio="{{ratio_mb}}" data-sizes="auto"></div>

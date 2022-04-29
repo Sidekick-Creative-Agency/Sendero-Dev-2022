@@ -16,7 +16,7 @@
    assign cl_arr = cl_txt | split:","
    assign fs_arr = se_stts.text_size2 | split:"," -%}
   
-  {%- capture image_layout -%}
+  {%- capture image_layout  -%}
   <div class="col-12 col-md-6">
     <div class="nt_img_txt oh pr middle center" style="max-width: 987px;">
       {%- comment -%}<a href="{{ url | default:'#' }}" class="db">{%- endcomment -%}
