@@ -12,7 +12,6 @@
  
 {% if Current_id == blank %}[t4splitlz]{% endif %}
 {%- if block.type == 'dropdown' -%}{%- assign bk_stts = block.settings -%}{%- assign llists = linklists[bk_stts.menu].links -%} 
-         
 	         {%- for link in llists -%}
 	            {%- if link.links != blank -%}
 			         <div class="menu-item has-children{% if link.active %} current{% endif %}">
@@ -39,7 +38,7 @@
 			      {%- endif -%}
 	         {%- endfor -%}
 
-{%- elsif block.type == 'list' -%}{%- assign bk_stts = block.settings -%}{%- assign llists = linklists[bk_stts.menu].links -%} 
+		{%- elsif block.type == 'list' -%}{%- assign bk_stts = block.settings -%}{%- assign llists = linklists[bk_stts.menu].links -%} 
             
             {%- assign col = bk_stts.col | default:3 -%}
             {%- assign block_id = block.id -%}
@@ -49,7 +48,6 @@
             {%- assign index_img = 1 -%}
 
 	         {%- for link in llists -%}
-               
                {%- if link.type == 'product_link' and enable_pr -%}
 				      {%- assign product = link.object -%}
 
@@ -158,9 +156,7 @@
 	               </div>
 			      {%- endif -%}
 	         {%- endfor -%}
-
-{%- else -%}
-
+		{%- else -%}
 	{%- for block in se_blocks offset:arr_id_size -%}
 
 	  {%- if arrType contains block.type %}{% break %}{% endif -%}
@@ -202,31 +198,53 @@
              {%- endstyle -%}
          
          {%- when 'cat' -%}
+			{%- assign collection = collections[bk_stts.collection] -%}
+			{%- assign page = pages[bk_stts.page_link] -%}
+			{%- assign image = bk_stts.image | default:collection.image -%}
+			{%- assign home_t = 'homepage.onboarding.collection_title' | t  | append:' #' | append:for_i -%} 
+			{%- assign page_url = page.url -%} 
+			{%- assign col_url = collection.url -%} 
 
-				  {%- assign collection = collections[bk_stts.collection] -%}
-				  {%- assign image = bk_stts.image | default:collection.image -%}
-				  {%- assign home_t = 'homepage.onboarding.collection_title' | t  | append:' #' | append:for_i -%} 
-				  {%- assign col_url = collection.url -%} 
-				  {% if bk_stts.col_link %}
-					  {%- assign col_url = col_url | append: "?filter.p.product_type=" | append: bk_stts.col_link %}
-				  {% endif %}
             <div id="bk_{{block.id}}" class="type_mn_pr menu-item sub-column-item col-{{bk_stts.col}} equal_nt hoverz_{{bk_stts.hoverz}} cat_design_{{bk_stts.cat_design}}">
-					<div class="cat_grid_item cat_space_item">
-					  <div class="cat_grid_item__content pr oh">
-					    <a href="{{ col_url| default:'/' }}" class="db cat_grid_item__link">
-					      {%- if image != blank -%}
-					        <div class="cat_grid_item__overlay item__position nt_bg_lz lazyloadt4s" data-bgset="{{ image | img_url: '1x1' }}" data-ratio="{{image.aspect_ratio}}" data-sizes="auto" data-parent-fit="width" style="padding-top:80%;"></div>
-					      {%- else -%}
-					        <div class="cat_grid_item__overlay item__position nt_bg_lz lazyloadt4s" data-bg="{{ 'placeholder.jpg' | asset_url }}" style="padding-top:127%;"></div>
-					      {%- endif -%}
-					    </a>
-					    <div class="cat_grid_item__wrapper pe_none">
-					      <div class="cat_grid_item__title h3">{{ bk_stts.title | default:collection.title | default:home_t }}<div class="shop-all">Shop All<i class="las la-arrow-right"></i></div></div>
-					      <div class="cat_grid_item__count dn">{{collection.all_products_count}} {{pr_txt}}</div>
-					    </div>
-					  </div>
+				<div class="cat_grid_item cat_space_item">
+					<div class="cat_grid_item__content pr oh">
+						{% if bk_stts.collection != null %}
+							{% if bk_stts.col_link and bk_stts.col_link != "#" %}
+								{%- assign col_url = col_url | append: "?filter.p.product_type=" | append: bk_stts.col_link %}
+							{% endif %}
+							<a href="{{ col_url| default:'/' }}" class="db cat_grid_item__link">
+								{%- if image != blank -%}
+									<div class="cat_grid_item__overlay item__position nt_bg_lz lazyloadt4s" data-bgset="{{ image | img_url: '1x1' }}" data-ratio="{{image.aspect_ratio}}" data-sizes="auto" data-parent-fit="width" style="padding-top:80%;"></div>
+								{%- else -%}
+									<div class="cat_grid_item__overlay item__position nt_bg_lz lazyloadt4s" data-bg="{{ 'placeholder.jpg' | asset_url }}" style="padding-top:127%;"></div>
+								{%- endif -%}
+							</a>
+							<div class="cat_grid_item__wrapper pe_none">
+								<div class="cat_grid_item__title h3">
+									{{ bk_stts.title | default:collection.title | default:home_t }}
+									<div class="shop-all">Shop All<i class="las la-arrow-right"></i></div>
+								</div>
+								<div class="cat_grid_item__count dn">{{collection.all_products_count}} {{pr_txt}}</div>
+							</div>
+				  		{% elsif bk_stts.page_link %} 
+						  	<a href="{{ page_url| default:'/' }}" class="db cat_grid_item__link">
+								{%- assign image = bk_stts.image | default:page.image -%}
+								{%- if image != blank -%}
+								<div class="cat_grid_item__overlay item__position nt_bg_lz lazyloadt4s" data-bgset="{{ image | img_url: '1x1' }}" data-ratio="{{image.aspect_ratio}}" data-sizes="auto" data-parent-fit="width" style="padding-top:80%;"></div>
+								{%- else -%}
+								<div class="cat_grid_item__overlay item__position nt_bg_lz lazyloadt4s" data-bg="{{ 'placeholder.jpg' | asset_url }}" style="padding-top:127%;"></div>
+								{%- endif -%}
+						  	</a>
+						 	<div class="cat_grid_item__wrapper pe_none">
+								<div class="cat_grid_item__title h3">
+									{{ bk_stts.title | default:page.title | default:home_t }}
+									<div class="shop-all">View All<i class="las la-arrow-right"></i></div>
+								</div>
+						  	</div>
+						{% endif %}
 					</div>
 				</div>
+			</div>
 
 	      {%- when 'pr' -%}
 		      {%- assign tcat = bk_stts.id_cat | default:"all" -%}{%- assign collection = collections[tcat] -%}
@@ -263,30 +281,22 @@
 					            {%- endif -%}
 			               </div>
 	         </div>
-
 	      {%- when 'link' -%}{%- assign llists = linklists[bk_stts.menu].links -%}
 	         {%- if llists.size == 0 -%}{% continue %}{%- endif -%}
-
 	         <div id="bk_{{block.id}}" class="type_mn_link menu-item sub-column-item col-{{bk_stts.col}}">
 	         	{%- if bk_stts.tt_hd != blank %}<a href="{{ bk_stts.url }}" target="{{bk_stts.open_link}}">{%- render 'tt_inc',title:bk_stts.tt_hd -%}</a>{% endif -%}
 					<ul class="sub-column{% if bk_stts.tt_hd != blank %} not_tt_mn{% endif %}">{%- for link in llists -%}
 						<li class="menu-item{% if link.active %} current{% endif %}"><a href="{{ link.url }}">{%- render 'tt_inc',title:link.title -%}</a></li>
 					 {%- endfor -%}</ul>
 	         </div>
-
 	      {%- when 'link2' -%}{%- assign llists = linklists[bk_stts.menu].links -%}
 	         {%- if llists.size == 0 -%}{% continue %}{%- endif -%}
-
 	         <div id="bk_{{block.id}}" class="type_mn_link2 menu-item sub-column-item col-{{bk_stts.col}}">
 	         	{%- for link in llists -%}<a href="{{ link.url }}">{%- render 'tt_inc',title:link.title -%}</a>{%- endfor -%}
 	         </div>
-
-	      {%- when 'mmtitle' -%}<div id="bk_{{block.id}}" class="type_mn_html menu-item sub-column-item col-{{bk_stts.col}}"><a href="{{ bk_stts.url }}" target="{{bk_stts.open_link}}"><h2>{{- bk_stts.mmtitle -}}</h2><div class="shop-all">Shop All<i class="las la-arrow-right"></i></div></a></div>
+	      {%- when 'mmtitle' -%}<div id="bk_{{block.id}}" class="type_mn_html menu-item sub-column-item col-{{bk_stts.col}}"><a href="{{ bk_stts.url }}" target="{{bk_stts.open_link}}"><h2>{{- bk_stts.mmtitle -}}</h2><div class="shop-all">{{bk_stts.mm_btn_text}}<i class="las la-arrow-right"></i></div></a></div>
 	      {%- else -%}<style>#item_{{bid}} .sub-menu {display: none !important}</style>
-
 	  {%- endcase -%}
 	{%- endfor -%}
-
 {%- endif -%}
-
 {% if Current_id == blank %}[t4splitlz]{% endif %}

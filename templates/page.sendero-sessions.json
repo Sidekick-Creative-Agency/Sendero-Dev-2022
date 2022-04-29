@@ -14,6 +14,11 @@
         "89b1a94e-2cf5-4075-a6af-0969fbaeae2c"
       ],
       "settings": {
+        "title": "Sendero Sessions",
+        "button": false,
+        "btn_text": "Click Me",
+        "button_align": "center",
+        "btn_background": "black",
         "image": "shopify:\/\/shop_images\/74162361_102268317897142_7558348142593179648_n.jpg",
         "parallax": false,
         "color": "#000000",
@@ -115,6 +120,7 @@
       "type": "rich-text-sendero-sessions",
       "settings": {
         "title": "ABOUT SENDERO SESSIONS",
+        "header_align": "center",
         "sub_title": "",
         "sub_font": "2",
         "style_title": "title_1",
@@ -198,6 +204,7 @@
       "settings": {
         "btn_des": "1",
         "title": "APPLY FOR SENDERO SESSIONS",
+        "header_align": "center",
         "sub_title": "",
         "sub_font": "2",
         "style_title": "title_1",

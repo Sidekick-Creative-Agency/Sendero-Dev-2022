@@ -471,6 +471,7 @@
             "type": "mmtitle",
             "settings": {
               "mmtitle": "New",
+              "mm_btn_text": "Shop All",
               "url": "shopify:\/\/collections\/spring-2022",
               "open_link": "_self",
               "col": "3"
@@ -502,6 +503,7 @@
               "cat_design": "1",
               "hoverz": true,
               "collection": "desert-runner",
+              "page_link": "",
               "col_link": "#",
               "title": "",
               "col": "3"
@@ -513,6 +515,7 @@
               "cat_design": "1",
               "hoverz": true,
               "collection": "hey-slick",
+              "page_link": "",
               "col_link": "#",
               "title": "",
               "col": "3"
@@ -539,6 +542,7 @@
             "type": "mmtitle",
             "settings": {
               "mmtitle": "Hats",
+              "mm_btn_text": "Shop All",
               "url": "shopify:\/\/collections\/hats",
               "open_link": "_self",
               "col": "2"
@@ -570,6 +574,7 @@
               "cat_design": "1",
               "hoverz": true,
               "collection": "best-seller-hats",
+              "page_link": "",
               "col_link": "#",
               "title": "Best Sellers",
               "col": "3"
@@ -582,6 +587,7 @@
               "cat_design": "1",
               "hoverz": true,
               "collection": "signature",
+              "page_link": "",
               "col_link": "Hats",
               "title": "Signature",
               "col": "3"
@@ -608,6 +614,7 @@
             "type": "mmtitle",
             "settings": {
               "mmtitle": "T-Shirts",
+              "mm_btn_text": "Shop All",
               "url": "shopify:\/\/collections\/t-shirts",
               "open_link": "_self",
               "col": "3"
@@ -639,6 +646,7 @@
               "cat_design": "1",
               "hoverz": true,
               "collection": "best-seller-t-shirts",
+              "page_link": "",
               "col_link": "#",
               "title": "Best Sellers",
               "col": "3"
@@ -650,6 +658,7 @@
               "cat_design": "1",
               "hoverz": true,
               "collection": "signature",
+              "page_link": "",
               "col_link": "T-Shirts",
               "title": "",
               "col": "3"
@@ -676,6 +685,7 @@
             "type": "mmtitle",
             "settings": {
               "mmtitle": "Accessories",
+              "mm_btn_text": "Shop All",
               "url": "shopify:\/\/collections\/accessories",
               "open_link": "_self",
               "col": "3"
@@ -707,6 +717,7 @@
               "cat_design": "1",
               "hoverz": true,
               "collection": "bandanas",
+              "page_link": "",
               "col_link": "#",
               "title": "",
               "col": "3"
@@ -718,6 +729,7 @@
               "cat_design": "1",
               "hoverz": true,
               "collection": "patches",
+              "page_link": "",
               "col_link": "#",
               "title": "",
               "col": "3"
@@ -744,7 +756,8 @@
             "type": "mmtitle",
             "settings": {
               "mmtitle": "Brand",
-              "url": "",
+              "mm_btn_text": "View All",
+              "url": "shopify:\/\/pages\/our-story",
               "open_link": "_self",
               "col": "2"
             }
@@ -776,7 +789,8 @@
               "cat_design": "1",
               "hoverz": true,
               "collection": "",
-              "col_link": "#",
+              "page_link": "sendero-sessions",
+              "col_link": "",
               "title": "Sendero Sessions",
               "col": "3"
             }
@@ -788,6 +802,7 @@
               "cat_design": "1",
               "hoverz": true,
               "collection": "",
+              "page_link": "adventure-on-blog",
               "col_link": "#",
               "title": "Blog",
               "col": "3"
