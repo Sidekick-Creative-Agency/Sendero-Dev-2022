@@ -741,6 +741,9 @@
     display: none;
 }
 
+.prod_tabs {
+    justify-content: left;
+}
 .sk-indiv-product-featured {
     width: 92% !important;
 }

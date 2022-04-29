@@ -588,7 +588,6 @@
         "source": "1",
         "video_url": "https:\/\/www.youtube.com\/watch?v=-2icZZ9tbwc&list=PLZf3m6mi50t3HFAcYQWk7EYl-2LtrNImu",
         "file_name": "The Desert Tapes",
-        "btn_link": "\/pages\/sendero-sessions",
         "se_height": "cus_h",
         "use_custom_h": "1",
         "h_des": "600px",
@@ -747,13 +746,23 @@
             "pos": "",
             "rating": 5
           }
+        },
+        "e280a9e2-49bc-4e86-b85e-8114d46c4f30": {
+          "type": "quote",
+          "settings": {
+            "content": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "title": "Author's name",
+            "pos": "",
+            "rating": 5
+          }
         }
       },
       "block_order": [
         "16492547288c7ba69e-0",
         "16492547288c7ba69e-1",
         "16492547288c7ba69e-2",
-        "435bcdce-546c-4827-add9-dd12a7c1c30c"
+        "435bcdce-546c-4827-add9-dd12a7c1c30c",
+        "e280a9e2-49bc-4e86-b85e-8114d46c4f30"
       ],
       "settings": {
         "title": "DON'T JUST TAKE OUR WORD FOR IT",
