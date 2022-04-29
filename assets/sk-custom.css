@@ -731,10 +731,9 @@
 / Individual Product Page
 /--------------------------------------------------------*/
 
-/* .sp-tab-content {
-    height: 100px;
-    overflow: hidden;
-} */
+.product_title {
+    margin-bottom: 20px !important;
+}
 .read-more, .read-less {
     cursor: pointer;
 }
@@ -1118,8 +1117,23 @@ a.prev.page-numbers {
 }
 
 
-
-
+/*---------------- Ryviu Review App -------------------*/
+.r--button {
+    border-radius: 0 !important;
+    text-transform: uppercase !important;
+}
+.r--stars-icon {
+    color: #222 !important;
+}
+.r--author, .r--avatar-default {
+    border-radius: 0 !important;
+}
+.r--author {
+    color: #222 !important;
+}
+.r-star:before {
+    content: \e902 !important;
+}
 /*---------------- Remove color swatches on grid pages -------------------*/
 .nt_swatches_on_grid {
     display: none !important;

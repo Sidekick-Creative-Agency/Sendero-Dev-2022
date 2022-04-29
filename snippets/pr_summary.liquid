@@ -264,6 +264,18 @@ assign se_stts = section.settings
            </a>
            {%- endif -%}
         </div>
+        <script>
+          $(document).ready(() => {
+            console.log("HELLO");
+            var stars = $(".r--stars-icon");
+          console.log(stars.length);
+          for (var star of stars) {
+            star.addClass("r-star");
+            console.log("HELLO");
+          }
+          });
+        </script>
+        
         {%- if cart.taxes_included or shop.shipping_policy.body != blank -%}
           <div class="product__policies rte cb" data-product-policies {{ block.shopify_attributes }}>
             {%- if cart.taxes_included -%}
@@ -478,6 +490,7 @@ assign se_stts = section.settings
             {%- endcase -%}
         	</div>
         </div>
+        
         
         {%- when 'html' -%}{%- if bk_setts.title == blank or pages[bk_setts.page].content == blank %}{% continue %}{% endif -%}
         <div class="panel entry-content sp-tab des_mb_{{cl_mb}} des_style_{{cl_des}}{% if ck %} active{% assign ck = false %}{% else %} dn{% endif %}" id="tab_{{block.id}}" {{ block.shopify_attributes }}>
@@ -920,6 +933,7 @@ assign se_stts = section.settings
             {%- endcase -%}
           </div>
         </div>
+        
 
       {%- when 'tab' -%}{%- assign tab_content = bk_stts.content |default:bk_stts.page.content -%}
         {%- if bk_stts.title == blank or tab_content == blank %}{% continue %}{% endif -%}
