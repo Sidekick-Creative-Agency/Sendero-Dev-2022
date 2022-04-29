@@ -756,7 +756,7 @@
             "type": "mmtitle",
             "settings": {
               "mmtitle": "Brand",
-              "mm_btn_text": "View All",
+              "mm_btn_text": "Shop All",
               "url": "shopify:\/\/pages\/our-story",
               "open_link": "_self",
               "col": "2"
