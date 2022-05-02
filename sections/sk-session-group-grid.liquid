@@ -31,9 +31,7 @@
     assign show_au = se_stts.show_au
     assign show_dt = se_stts.show_dt
     assign sid = section.id
-
     assign video_none = "https://www.youtube.com/watch?v=_9VUPq3SxOc"
-
    -%}
 
 <div class="col-12 col-md-6 sk-session-group-outer-container">
@@ -43,68 +41,83 @@
                 {% assign video_url = se_stts.video_url1 %}
                 {% assign title = se_stts.artist_name1 %}
                 {% assign song = se_stts.song_name1 %}
+                {% assign grid_link = se_stts.grid_link1 %}
             {% elsif i == 2 %}
                 {% assign video_url = se_stts.video_url2 %}
                 {% assign title = se_stts.artist_name2 %}
                 {% assign song = se_stts.song_name2 %}
+                {% assign grid_link = se_stts.grid_link2 %}
             {% elsif i == 3 %}
                 {% assign video_url = se_stts.video_url3 %}
                 {% assign title = se_stts.artist_name3 %}
                 {% assign song = se_stts.song_name3 %}
+                {% assign grid_link = se_stts.grid_link3 %}
             {% elsif i == 4 %}
                 {% assign video_url = se_stts.video_url4 %}
                 {% assign title = se_stts.artist_name4 %}
                 {% assign song = se_stts.song_name4 %}
+                {% assign grid_link = se_stts.grid_link4 %}
             {% elsif i == 5 %}
                 {% assign video_url = se_stts.video_url5 %}
                 {% assign title = se_stts.artist_name5 %}
                 {% assign song = se_stts.song_name5 %}
+                {% assign grid_link = se_stts.grid_link5 %}
             {% elsif i == 6 %}
                 {% assign video_url = se_stts.video_url6 %}
                 {% assign title = se_stts.artist_name6 %}
                 {% assign song = se_stts.song_name6 %}
+                {% assign grid_link = se_stts.grid_link6 %}
             {% elsif i == 7 %}
                 {% assign video_url = se_stts.video_url7 %}
                 {% assign title = se_stts.artist_name7 %}
                 {% assign song = se_stts.song_name7 %}
+                {% assign grid_link = se_stts.grid_link7 %}
             {% elsif i == 8 %}
                 {% assign video_url = se_stts.video_url8 %}
                 {% assign title = se_stts.artist_name8 %}
                 {% assign song = se_stts.song_name8 %}
+                {% assign grid_link = se_stts.grid_link8 %}
             {% elsif i == 9 %}
                 {% assign video_url = se_stts.video_url9 %}
                 {% assign title = se_stts.artist_name9 %}
                 {% assign song = se_stts.song_name9 %}
+                {% assign grid_link = se_stts.grid_link9 %}
             {% elsif i == 10 %}
                 {% assign video_url = se_stts.video_url10 %}
                 {% assign title = se_stts.artist_name10 %}
                 {% assign song = se_stts.song_name10 %}
+                {% assign grid_link = se_stts.grid_link10 %}
             {% elsif i == 11 %}
                 {% assign video_url = se_stts.video_url11 %}
                 {% assign title = se_stts.artist_name11 %}
                 {% assign song = se_stts.song_name11 %}
+                {% assign grid_link = se_stts.grid_link11 %}
             {% elsif i == 12 %}
                 {% assign video_url = se_stts.video_url12 %}
                 {% assign title = se_stts.artist_name12 %}
                 {% assign song = se_stts.song_name12 %}
+                {% assign grid_link = se_stts.grid_link12 %}
             {% elsif i == 13 %}
                 {% assign video_url = se_stts.video_url13 %}
                 {% assign title = se_stts.artist_name13 %}
                 {% assign song = se_stts.song_name13 %}
+                {% assign grid_link = se_stts.grid_link13 %}
             {% elsif i == 14 %}
                 {% assign video_url = se_stts.video_url14 %}
                 {% assign title = se_stts.artist_name14 %}
                 {% assign song = se_stts.song_name14 %}
+                {% assign grid_link = se_stts.grid_link14 %}
             {% elsif i == 15 %}
                 {% assign video_url = se_stts.video_url15 %}
                 {% assign title = se_stts.artist_name15 %}
                 {% assign song = se_stts.song_name15 %}
+                {% assign grid_link = se_stts.grid_link15 %}
             {% endif %}
             <div class="sk-session-grid-video post_2 post-thumbnail pr oh col-lg-{{col}} col-md-{{col_tb}} col-{{col_mb}}">
                 {%- if video_url != video_none and video_url != "" -%}
                     {% assign video_id = video_url | remove: "https://youtu.be/" %}
                     {% assign url = video_url | remove: "https://youtu.be/" | prepend: "embed/" | prepend: "//www.youtube.com/" | append: "?autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1&rel=0&autohide=1&enablejsapi=1&playlist=" | append: video_id %}
-                    <a class="sendero-session-link" href="{{link}}">
+                    <a class="sendero-session-link" href="{{grid_link}}" target="_blank">
                         <div class="sk-session-grid-indiv-container">
                         <iframe width="100%" height="100%" src="{{url}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>     
                         </iframe>  
@@ -189,6 +202,12 @@
        "info": "To remove video block, insert url: https://www.youtube.com/watch?v=_9VUPq3SxOc"
     },
     {
+      "id": "grid_link1",
+      "type": "text",
+      "label": "Link on click:",
+      "default": "#"
+    },
+    {
         "type": "text",
         "id": "artist_name1",
         "label": "Artist Name"
@@ -229,6 +248,12 @@
        "info": "To remove video block, insert url: https://www.youtube.com/watch?v=_9VUPq3SxOc"
     },
     {
+      "id": "grid_link2",
+      "type": "text",
+      "label": "Link on click:",
+      "default": "#"
+    },
+    {
         "type": "text",
         "id": "artist_name2",
         "label": "Artist Name"
@@ -266,6 +291,12 @@
        "accept": ["youtube"],
        "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
        "info": "To remove video block, insert url: https://www.youtube.com/watch?v=_9VUPq3SxOc"
+    },
+    {
+      "id": "grid_link3",
+      "type": "text",
+      "label": "Link on click:",
+      "default": "#"
     },
     {
         "type": "text",
@@ -308,6 +339,12 @@
        "info": "To remove video block, insert url: https://www.youtube.com/watch?v=_9VUPq3SxOc"
     },
     {
+      "id": "grid_link4",
+      "type": "text",
+      "label": "Link on click:",
+      "default": "#"
+    },
+    {
         "type": "text",
         "id": "artist_name4",
         "label": "Artist Name"
@@ -345,6 +382,12 @@
        "accept": ["youtube"],
        "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
        "info": "To remove video block, insert url: https://www.youtube.com/watch?v=_9VUPq3SxOc"
+    },
+    {
+      "id": "grid_link5",
+      "type": "text",
+      "label": "Link on click:",
+      "default": "#"
     },
     {
         "type": "text",
@@ -387,6 +430,12 @@
        "info": "To remove video block, insert url: https://www.youtube.com/watch?v=_9VUPq3SxOc"
     },
     {
+      "id": "grid_link6",
+      "type": "text",
+      "label": "Link on click:",
+      "default": "#"
+    },
+    {
         "type": "text",
         "id": "artist_name6",
         "label": "Artist Name"
@@ -424,6 +473,12 @@
        "accept": ["youtube"],
        "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
        "info": "To remove video block, insert url: https://www.youtube.com/watch?v=_9VUPq3SxOc"
+    },
+    {
+      "id": "grid_link7",
+      "type": "text",
+      "label": "Link on click:",
+      "default": "#"
     },
     {
         "type": "text",
@@ -465,6 +520,12 @@
        "info": "To remove video block, insert url: https://www.youtube.com/watch?v=_9VUPq3SxOc"
     },
     {
+      "id": "grid_link8",
+      "type": "text",
+      "label": "Link on click:",
+      "default": "#"
+    },
+    {
         "type": "text",
         "id": "artist_name8",
         "label": "Artist Name"
@@ -482,6 +543,12 @@
         "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "info": "To remove video block, insert url: https://www.youtube.com/watch?v=_9VUPq3SxOc"
      },
+     {
+      "id": "grid_link9",
+      "type": "text",
+      "label": "Link on click:",
+      "default": "#"
+    },
      {
          "type": "text",
          "id": "artist_name9",
@@ -501,6 +568,12 @@
         "info": "To remove video block, insert url: https://www.youtube.com/watch?v=_9VUPq3SxOc"
      },
      {
+      "id": "grid_link10",
+      "type": "text",
+      "label": "Link on click:",
+      "default": "#"
+    },
+     {
          "type": "text",
          "id": "artist_name10",
          "label": "Artist Name"
@@ -518,6 +591,12 @@
         "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "info": "To remove video block, insert url: https://www.youtube.com/watch?v=_9VUPq3SxOc"
      },
+     {
+      "id": "grid_link11",
+      "type": "text",
+      "label": "Link on click:",
+      "default": "#"
+    },
      {
          "type": "text",
          "id": "artist_name11",
@@ -537,6 +616,12 @@
         "info": "To remove video block, insert url: https://www.youtube.com/watch?v=_9VUPq3SxOc"
      },
      {
+      "id": "grid_link12",
+      "type": "text",
+      "label": "Link on click:",
+      "default": "#"
+    },
+     {
          "type": "text",
          "id": "artist_name12",
          "label": "Artist Name"
@@ -554,6 +639,12 @@
         "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "info": "To remove video block, insert url: https://www.youtube.com/watch?v=_9VUPq3SxOc"
      },
+     {
+      "id": "grid_link13",
+      "type": "text",
+      "label": "Link on click:",
+      "default": "#"
+    },
      {
          "type": "text",
          "id": "artist_name13",
@@ -573,6 +664,12 @@
         "info": "To remove video block, insert url: https://www.youtube.com/watch?v=_9VUPq3SxOc"
      },
      {
+      "id": "grid_link14",
+      "type": "text",
+      "label": "Link on click:",
+      "default": "#"
+    },
+     {
          "type": "text",
          "id": "artist_name14",
          "label": "Artist Name"
@@ -590,6 +687,12 @@
         "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "info": "To remove video block, insert url: https://www.youtube.com/watch?v=_9VUPq3SxOc"
      },
+     {
+      "id": "grid_link15",
+      "type": "text",
+      "label": "Link on click:",
+      "default": "#"
+    },
      {
          "type": "text",
          "id": "artist_name15",
