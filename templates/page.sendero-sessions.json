@@ -120,7 +120,7 @@
       "type": "rich-text-sendero-sessions",
       "settings": {
         "title": "ABOUT SENDERO SESSIONS",
-        "header_align": "center",
+        "header_align": "left",
         "sub_title": "",
         "sub_font": "2",
         "style_title": "title_1",
@@ -204,7 +204,7 @@
       "settings": {
         "btn_des": "1",
         "title": "APPLY FOR SENDERO SESSIONS",
-        "header_align": "center",
+        "header_align": "left",
         "sub_title": "",
         "sub_font": "2",
         "style_title": "title_1",
