@@ -22,7 +22,7 @@
          <div class="frm_search_cat mb__20">
              <select name="product_type">
                <option value="*">{{ 'general.search.all_cat' | t }}</option>
-               {%- for product_type in shop.types -%}{%- if product_type == "Dissolve" or product_type == blank %}{% continue-%}{% endif -%}<option value="{{product_type}}"{% if search_pr_type == product_type %} selected="selected"{% endif %}>{{product_type | capitalize }}</option>{%- endfor -%}
+               {%- for product_type in shop.types -%}{%- if product_type == "Dissolve" or product_type == "dissolve" or product_type == "DISSOLVE" or product_type == blank %}{% continue-%}{% endif -%}<option value="{{product_type}}"{% if search_pr_type == product_type %} selected="selected"{% endif %}>{{product_type | capitalize }}</option>{%- endfor -%}
              </select>
          </div>
          {%- endif -%}
