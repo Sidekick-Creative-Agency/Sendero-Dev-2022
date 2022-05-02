@@ -191,14 +191,14 @@
 .frm_search_cat select{
     font-family: 'Oswald';
     font-weight: 400;
-    text-transform: uppercase;
+    text-transform: capitalize;
     letter-spacing: 0.1em;
     color: #222 !important;
 }
 .frm_search_cat select option{
     font-family: 'Oswald';
     font-weight: 400;
-    text-transform: uppercase;
+    text-transform: capitalize;
     letter-spacing: 0.1em;
 }
 

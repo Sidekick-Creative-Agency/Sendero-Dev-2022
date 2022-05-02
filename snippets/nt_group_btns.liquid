@@ -14,6 +14,7 @@
 endcase -%}
  
 <div class="nt_action in_flex al_center cart_des_{{cart_des}}">
+ 
    {%- if settings.show_search -%}
      {%- if frm_search -%}
      <div class="frm_search_ac pr widget dn db_lg">
@@ -23,6 +24,7 @@ endcase -%}
           <input type="hidden" name="options[prefix]" value="last">
           {%- if settings.filter_type_search and shop.types.size > 0 -%}
           <div class="frm_search_cat">
+
              <select name="product_type">
                <option value="*">{{ 'general.search.all_cat' | t }}</option>
                {%- for product_type in shop.types -%}{%- if product_type == blank %}{% continue-%}{% endif -%}<option value="{{product_type}}"{% if search_pr_type == product_type %} selected="selected"{% endif %}>{{product_type}}</option>{%- endfor -%}
