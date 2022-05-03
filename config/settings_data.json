@@ -1059,6 +1059,7 @@
           },
           "cart_widget-5": {
             "type": "btnmr",
+            "disabled": true,
             "settings": {
             }
           },

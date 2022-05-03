@@ -31,7 +31,7 @@
    <form action="{{ cart_url }}" method="post" novalidate class="nt_mini_cart nt_js_cart flex column h__100 btns_cart_{{se_stts.style}}">
       <input type="hidden" data-cart-attr-rm name="attributes[cat_mb_items_per_row]" value=""><input type="hidden" data-cart-attr-rm name="attributes[cat_tb_items_per_row]" value=""><input type="hidden" data-cart-attr-rm name="attributes[cat_dk_items_per_row]" value="">
       <input type="hidden" data-cart-attr-rm name="attributes[auto_hide_ofsock]" value=""><input type="hidden" data-cart-attr-rm name="attributes[paginate_ntt4]" value=""><input type="hidden" data-cart-attr-rm name="attributes[limit_ntt4]" value=""><input type="hidden" data-cart-attr-rm name="attributes[use_bar_lmntt4]" value="">
-      <div class="mini_cart_header flex fl_between al_center"><div class="h3 widget-title tu fs__16 mg__0">{{ 'cart.general.title' | t }}</div><i class="close_pp pegk pe-7s-close ts__03 cd"></i></div>
+      <div class="mini_cart_header flex fl_between al_center"><div class="h3 widget-title tu fs__16 mg__0">{{ 'cart.general.title' | t }}</div><i class="close_pp pegk pe-7s-close ts__03 cd" ></i></div>
       {%- comment %}{%- if settings.use_cart_cd %}<div class="cart_countdown js_cart_cd dn">{{ 'cart.general.countdown_text' | t }} <span class="cart_time cr fwm" data-cart-countdown data-after-cartcd-{{settings.act_after_cart}} data-mn='{{settings.cart_time}}'></span></div>{% endif -%}{% endcomment -%}
       {%- if se_stts.calc_ship and settings.free_ship_pr != blank -%}
       <div class="cart_threshold cart_thres_js op__0">
@@ -74,9 +74,9 @@
                </div>
                {%- endif -%}
                {%- if se_style == '1' and se_pos == '1' %}<div class="mini_cart_items js_cat_items" data-rendert4s="{{cart_url}}/?view=viewjs"><div class="lds_bginfinity pr mt__10 mb__20"></div></div>{% endif -%}
-               {%- if se_stts.enable_pr %}<div data-cart-upsell-js data-baseurl="{{ routes.product_recommendations_url }}" data-limit="10" data-id="{{cart.items.first.product_id}}"></div>{% endif -%}
             </div>
          </div>
+         {%- if se_stts.enable_pr %}<div data-cart-upsell-js data-baseurl="{{ routes.product_recommendations_url }}" data-limit="10" data-id="{{cart.items.first.product_id}}"></div>{% endif -%}
          <div class="mini_cart_footer js_cart_footer{% if ccount == 0 %} dn{% endif %}">
             <div class="js_cat_dics">
             {%- if cart.cart_level_discount_applications != blank -%}
@@ -167,23 +167,23 @@
       {%- if se_stts.show_rates -%}
       <div class="mini_cart_ship pe_none">
          <div class="shipping_calculator">
-           <h3>{{ 'cart.general.estimate_ship' | t }}</h3>
-             <p class="field">
-               <label for="address_country_ship">{{ 'customer.addresses.country' | t }}</label>
+           <h3 class="mb__20">{{ 'cart.general.estimate_ship' | t }}</h3>
+             <p class="mb__20 field">
+               {%- comment -%}<label for="address_country_ship">{{ 'customer.addresses.country' | t }}</label>{%- endcomment -%}
                <select id="address_country_ship" data-rendert4s="{{cart_url}}/?view=ship" data-default="{% if shop.customer_accounts_enabled and customer %}{{ customer.default_address.country }}{% elsif settings.ship_calc_df_country != '' %}{{ settings.ship_calc_df_country }}{% endif %}"></select>
              </p>
-             <p class="field" id="address_province_container_ship" style="display:none">
-               <label for="address_province_ship" id="address_province_label">{{ 'customer.addresses.province' | t }}</label>
+             <p class="mb__20 field" id="address_province_container_ship" style="display:none">
+              {%- comment -%} <label for="address_province_ship" id="address_province_label">{{ 'customer.addresses.province' | t }}</label>{%- endcomment -%}
                <select id="address_province_ship" data-default="{% if shop.customer_accounts_enabled and customer %}{{ customer.default_address.province }}{% endif %}"></select>
              </p>  
-             <p class="field">
-               <label for="address_zip_ship">{{ 'customer.addresses.zip' | t }}</label>
-               <input type="text" id="address_zip_ship"{% if shop.customer_accounts_enabled and customer %} value="{{ customer.default_address.zip }}"{% endif %} />
+             <p class="mb__20 field">
+              {%- comment -%} <label for="address_zip_ship">{{ 'customer.addresses.zip' | t }}</label>{%- endcomment -%}
+               <input placeholder="Zip Code" type="text" id="address_zip_ship"{% if shop.customer_accounts_enabled and customer %} value="{{ customer.default_address.zip }}"{% endif %} />
              </p>
-             <p class="field">
-               <input type="button" class="get_rates button" value="{{ 'cart.general.calculate_ship' | t }}" />
+             <p class="mb__20 field">
+               <input type="button" class="mini-cart-ship-button get_rates button" value="{{ 'cart.general.calculate_ship' | t }}" />
              </p>
-             <p class="field">
+             <p class="mb__20 field">
                <input type="button" class="button btn_back js_cart_tls_back" value="{{ 'cart.general.cancel' | t }}" />
              </p>
              <div id="response_calcship"></div>
@@ -221,10 +221,35 @@
        </div>
       </div>
       {%- endif -%}
-
    </form>
 </div>
 
+<script>
+  $(document).ready(() => {
+    var note = $(".mini_cart_tool_note");
+  var ship = $(".mini_cart_tool_ship");
+  var coupon = $(".mini_cart_tool_dis");
+
+  var noteField = $(".mini_cart_note");
+  var shipField = $(".mini_cart_ship");
+  var couponField = $(".mini_cart_dis");
+
+  var backButton = $(".js_cart_tls_back");
+
+  noteField.addClass("mini-cart-hidden")
+  shipField.addClass("mini-cart-hidden")
+  couponField.addClass("mini-cart-hidden")
+  note.click(() => {
+    $(".mini_cart_note").removeClass("mini-cart-hidden");
+
+  });
+
+  backButton.click(() => {
+    $(".mini_cart_note").addClass("mini-cart-hidden");
+  })
+ 
+  });
+</script>
 {%- schema -%}
   {
     "name": "Shopping Cart Widget",
