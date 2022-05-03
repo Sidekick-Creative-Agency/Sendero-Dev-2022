@@ -56,52 +56,48 @@
           "settings": {
             "collection": "hats",
             "img_align": "center",
-            "title": "",
+            "title": "Hats",
+            "col_link": "spring-2022",
             "url": ""
           }
         },
         "1651595285690d7758-1": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "t-shirts",
             "img_align": "center",
             "title": "",
+            "col_link": "spring-2022",
             "url": ""
           }
         },
         "1651595285690d7758-2": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "accessories",
             "img_align": "center",
             "title": "",
+            "col_link": "spring-2022",
             "url": ""
           }
         },
         "1651595285690d7758-3": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "kids-gear",
             "img_align": "center",
             "title": "",
+            "col_link": "spring-2022",
             "url": ""
           }
         },
         "21e861a6-29c0-4d1a-b50e-3b67ba31fd7b": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "outerwear",
             "img_align": "center",
             "title": "",
-            "url": ""
-          }
-        },
-        "62f718c4-1af3-4b2e-b5f8-011313614b83": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "img_align": "center",
-            "title": "",
+            "col_link": "spring-2022",
             "url": ""
           }
         }
@@ -111,8 +107,7 @@
         "1651595285690d7758-1",
         "1651595285690d7758-2",
         "1651595285690d7758-3",
-        "21e861a6-29c0-4d1a-b50e-3b67ba31fd7b",
-        "62f718c4-1af3-4b2e-b5f8-011313614b83"
+        "21e861a6-29c0-4d1a-b50e-3b67ba31fd7b"
       ],
       "settings": {
         "title": "Shop Spring 2022",
@@ -185,6 +180,7 @@
             "collection": "hats",
             "img_align": "center",
             "title": "",
+            "col_link": "#",
             "url": ""
           }
         },
@@ -194,6 +190,7 @@
             "collection": "t-shirts",
             "img_align": "center",
             "title": "",
+            "col_link": "#",
             "url": ""
           }
         },
@@ -203,6 +200,7 @@
             "collection": "outerwear",
             "img_align": "center",
             "title": "",
+            "col_link": "#",
             "url": ""
           }
         },
@@ -212,6 +210,7 @@
             "collection": "stickers-1",
             "img_align": "center",
             "title": "",
+            "col_link": "#",
             "url": ""
           }
         },
@@ -221,6 +220,7 @@
             "collection": "kids-gear",
             "img_align": "center",
             "title": "",
+            "col_link": "#",
             "url": ""
           }
         },
@@ -230,6 +230,7 @@
             "collection": "spring-2022",
             "img_align": "center",
             "title": "",
+            "col_link": "#",
             "url": ""
           }
         }

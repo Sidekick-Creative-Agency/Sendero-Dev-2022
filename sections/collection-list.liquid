@@ -10,7 +10,12 @@
    assign html_layout = '<div class="container">__</div>' | split:'__'
   else
    assign html_layout = '__' | split:'__'
-  endif -%}
+  endif 
+  assign col_url = se_stts.blocks.collection.url -%}
+
+  {% if se_stts.blocks.col_link and se_stts.blocks.col_link != "#" %}
+		{%- assign col_url = col_url | append: "/" | append: bk_stts.col_link %}
+	{% endif %}
 
   {%- if se_stts.cp_code and request.design_mode %}<div class="dn tc mt__40 mb__40 cp_cd_js"><input type="text" class="dcp_cd_ip" value='<div class="inc_lz inc_cat_laz" data-rendert4s="/search/?section_id={{sid}}"><div class="lds_bginfinity pr"></div></div>'><button class="dcp_cd_btn">Copy Shortcode</button></div>{% endif -%}
   <div class="sk-collection-top">
@@ -664,6 +669,12 @@
         "id": "title",
         "label": "Title block (optional)",
         "info": "Leave empty to use 'collection title'. Enter key 'hide_title' to hide title"
+      },
+      {
+        "type": "text",
+        "id": "col_link",
+        "label": "Filter link",
+        "default": "#"
       },
       {
         "type": "url",
