@@ -48,37 +48,10 @@
         "pd_mb": ""
       }
     },
-    "16488315326088f3a4": {
-      "type": "collection-list_packery",
+    "1651595285a0e352e6": {
+      "type": "shop-other-categories",
       "blocks": {
-        "1648831532aa982f8e-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "t-shirts",
-            "img_align": "center",
-            "title": "",
-            "url": ""
-          }
-        },
-        "1648831532aa982f8e-2": {
-          "type": "collection",
-          "settings": {
-            "collection": "outerwear",
-            "img_align": "center",
-            "title": "",
-            "url": ""
-          }
-        },
-        "1648831532aa982f8e-3": {
-          "type": "collection",
-          "settings": {
-            "collection": "kids-gear",
-            "img_align": "center",
-            "title": "",
-            "url": ""
-          }
-        },
-        "1648831532aa982f8e-0": {
+        "1651595285690d7758-0": {
           "type": "collection",
           "settings": {
             "collection": "hats",
@@ -86,29 +59,91 @@
             "title": "",
             "url": ""
           }
+        },
+        "1651595285690d7758-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "img_align": "center",
+            "title": "",
+            "url": ""
+          }
+        },
+        "1651595285690d7758-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "img_align": "center",
+            "title": "",
+            "url": ""
+          }
+        },
+        "1651595285690d7758-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "img_align": "center",
+            "title": "",
+            "url": ""
+          }
+        },
+        "21e861a6-29c0-4d1a-b50e-3b67ba31fd7b": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "img_align": "center",
+            "title": "",
+            "url": ""
+          }
+        },
+        "62f718c4-1af3-4b2e-b5f8-011313614b83": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "img_align": "center",
+            "title": "",
+            "url": ""
+          }
         }
       },
       "block_order": [
-        "1648831532aa982f8e-1",
-        "1648831532aa982f8e-2",
-        "1648831532aa982f8e-3",
-        "1648831532aa982f8e-0"
+        "1651595285690d7758-0",
+        "1651595285690d7758-1",
+        "1651595285690d7758-2",
+        "1651595285690d7758-3",
+        "21e861a6-29c0-4d1a-b50e-3b67ba31fd7b",
+        "62f718c4-1af3-4b2e-b5f8-011313614b83"
       ],
       "settings": {
-        "title": "Shop This Collection",
-        "sub_title": "",
+        "title": "Shop Spring 2022",
+        "sub_title": "Sub Text",
         "sub_font": "2",
         "style_title": "title_1",
         "ic_tt": "gem",
         "show_clpr": false,
+        "round": 0,
+        "cat_layout": "2",
         "hoverz": true,
         "cat_design": "1",
         "cat_space": "30",
+        "image_ratio": "ratio1_1",
+        "col": "15",
+        "col_md": "3",
+        "col_mb": "6",
         "pr_txt": "products",
-        "cat_lay4": 1,
-        "cat_lay5": 1,
+        "loop": true,
+        "autoplay": false,
+        "au_time": 6,
+        "au_hover": true,
+        "button": true,
+        "btn_vi": "1",
+        "btn_owl": "2",
+        "btn_color": "1",
+        "dot": false,
+        "dot_owl": "1",
+        "dot_color": "1",
         "cp_code": false,
-        "layout": "wrap",
+        "layout": "nt_full",
         "cl_bg": "",
         "hide_bgimg": false,
         "mg": "50px,,50px,",
@@ -248,7 +283,7 @@
   },
   "order": [
     "16479809910f68859a",
-    "16488315326088f3a4",
+    "1651595285a0e352e6",
     "main",
     "164882807276a2e749"
   ]
