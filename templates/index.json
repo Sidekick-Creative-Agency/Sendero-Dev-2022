@@ -410,6 +410,7 @@
             "collection": "hats",
             "img_align": "center",
             "title": "",
+            "col_link": "#",
             "url": ""
           }
         },
@@ -419,6 +420,7 @@
             "collection": "t-shirts",
             "img_align": "center",
             "title": "",
+            "col_link": "#",
             "url": ""
           }
         },
@@ -428,6 +430,7 @@
             "collection": "outerwear",
             "img_align": "center",
             "title": "",
+            "col_link": "#",
             "url": ""
           }
         },
@@ -437,6 +440,7 @@
             "collection": "stickers-1",
             "img_align": "center",
             "title": "",
+            "col_link": "#",
             "url": ""
           }
         },
@@ -446,6 +450,7 @@
             "collection": "kids-gear",
             "img_align": "center",
             "title": "",
+            "col_link": "#",
             "url": ""
           }
         },
@@ -455,6 +460,7 @@
             "collection": "spring-2022",
             "img_align": "center",
             "title": "",
+            "col_link": "#",
             "url": ""
           }
         }
@@ -588,6 +594,7 @@
         "source": "1",
         "video_url": "https:\/\/www.youtube.com\/watch?v=-2icZZ9tbwc&list=PLZf3m6mi50t3HFAcYQWk7EYl-2LtrNImu",
         "file_name": "The Desert Tapes",
+        "btn_link": "#",
         "se_height": "cus_h",
         "use_custom_h": "1",
         "h_des": "600px",
@@ -788,7 +795,7 @@
         "use_pr": false,
         "layout": "container",
         "cl_bg": "",
-        "mg": "100px,,50px,",
+        "mg": "100px,,100px,",
         "pd": "",
         "mg_mb": "",
         "pd_mb": ""
@@ -856,6 +863,7 @@
       ],
       "settings": {
         "open_link": "_self",
+        "image": "shopify:\/\/shop_images\/topographic-tile-1.jpg",
         "layout_des": "1",
         "space": "2",
         "rounded_ins": "0",
@@ -878,7 +886,7 @@
         "image_position": "8",
         "layout": "container",
         "cl_bg": "#ffffff",
-        "mg": "100px,,200px,",
+        "mg": "",
         "pd": "",
         "mg_mb": "",
         "pd_mb": ""

@@ -388,8 +388,8 @@
     max-width: 950px;
 }
 .instagram-outer-container {
-    margin-top: 50px !important;
-    margin-bottom: 50px !important;
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
 }
 .quote_slide {
     max-width: 300px;
