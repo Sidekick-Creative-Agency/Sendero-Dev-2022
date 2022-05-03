@@ -10,12 +10,18 @@
             "size": 30
           }
         },
+        "8854f84b-ab16-471a-8548-98f36dea7529": {
+          "type": "shopify:\/\/apps\/ryviu-aliexpress-reviews-app\/blocks\/ryviu-total\/807ad6ed-1a6a-4559-abea-ed062858d9da",
+          "settings": {
+            "show_when_no_reviews": false
+          }
+        },
         "pricereview": {
           "type": "pricereview",
           "settings": {
             "price": "0",
             "txt_sale": "0",
-            "rating": true,
+            "rating": false,
             "review_liquid": ""
           }
         },
@@ -74,6 +80,7 @@
       },
       "block_order": [
         "title",
+        "8854f84b-ab16-471a-8548-98f36dea7529",
         "pricereview",
         "frm",
         "size",
@@ -112,10 +119,10 @@
     "1648757478999cc57a": {
       "type": "image_text_product_page",
       "settings": {
-        "image": "shopify:\/\/shop_images\/IMG_0248_1024x1024_48d1f0c4-e069-4ab7-ba9c-c2ba8a991eaf.webp",
-        "img_align": "center",
+        "image": "shopify:\/\/shop_images\/homepage_hero_image_3.webp",
+        "img_align": "bottom",
         "img_position": "1",
-        "image_ratio": "auto",
+        "image_ratio": "ratio1_1",
         "text_size2": "30,14",
         "title": "QUALITY GEAR, MADE FOR THE WILD WEST",
         "subtitle1": "OUR QUALITY GUARANTEE",
@@ -140,7 +147,7 @@
     "164875753916b49a9b": {
       "type": "image_text_product_page",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Big_Bend_Shirt_Lifestyle.jpg",
+        "image": "shopify:\/\/shop_images\/116309620_2383569085270467_5796589458683211337_n.jpg",
         "img_align": "center",
         "img_position": "2",
         "image_ratio": "auto",
@@ -249,6 +256,25 @@
         "mg_mb": "",
         "pd_mb": ""
       }
+    },
+    "16512489634b7ad007": {
+      "type": "apps",
+      "blocks": {
+        "ee778cfe-994f-4a0c-a8b5-e8b8db651782": {
+          "type": "shopify:\/\/apps\/ryviu-aliexpress-reviews-app\/blocks\/ryviu-widget\/807ad6ed-1a6a-4559-abea-ed062858d9da",
+          "settings": {
+            "hide_when_no_reviews": false,
+            "r_wapper_class": "",
+            "r_max_width": 1450,
+            "r_padding_block": 0
+          }
+        }
+      },
+      "block_order": [
+        "ee778cfe-994f-4a0c-a8b5-e8b8db651782"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -256,6 +282,7 @@
     "1648757478999cc57a",
     "164875753916b49a9b",
     "product-rec-indiv",
-    "category-slider-alt-header"
+    "category-slider-alt-header",
+    "16512489634b7ad007"
   ]
 }

@@ -3,29 +3,46 @@
   assign se_stts = section.settings
   assign se_bks = section.blocks
   assign parallax = se_stts.parallax 
-  assign image = se_stts.image -%}
+  assign image = se_stts.image
+  assign btn_hover =  "#666" 
+  if se_stts.btn_background == "transparent"
+    assign btn_hover = "black"
+  endif 
+  -%}
 
   {%- capture bk_contents -%}
     {%- if se_bks.size > 0 -%}
        <div class="container pr z_100">
           {%- for block in se_bks -%}
             {%- case block.type -%}
-               {%- when '1' -%}<h1 class="mb__5 cw" style="color:{{block.settings.color}}">{{ page.title}}</h1>
+               {%- when '1' -%}<h1 class="mb__5 cw" style="color:{{block.settings.color}}">{{se_stts.title}}</h1>
                {%- else -%}{% if block.settings.text == blank %}{% continue %}{% endif %}<p class="mg__0" style="color:{{block.settings.color}}">{{ block.settings.text }}</p>
             {%- endcase -%}
           {%- endfor -%}
+          {%- if section.settings.button -%}
+          <div class="rich-text-button w__100 flex" style="justify-content: {{section.settings.button_align}}; padding: {{button_padding}};">
+            {% if se_stts.btn_background == "transparent" %}
+              <button class="transparent-button btn_icon_true mt__25">{{section.settings.btn_text}}</button>
+            {% else %}
+              <button class="btn_icon_true mt__25">{{section.settings.btn_text}}</button>
+            {% endif %}
+          </div>
+    {%- endif -%}
        </div>
     {%- endif -%}
+    <h1>{{btn_background}}</h1>
   {%- endcapture -%}
-  
+ 
 {%- if image != blank -%}
   <div class="page-head tc pr oh page_bg_img page_head_{{se_id}}">
-     <div class="parallax-inner nt_parallax_{{parallax}} lazyloadt4s nt_bg_lz pa t__0 l__0 r__0 b__0" data-bgset="{{ image | img_url: '1000x1000' }}" data-ratio="{{image.aspect_ratio}}" data-sizes="auto" data-parent-fit="cover"></div>
+     <div class="parallax-inner nt_parallax_{{parallax}} lazyloadt4s nt_bg_lz pa t__0 l__0 r__0 b__0" data-bgset="{{ image | img_url: '1x1' }}" data-ratio="{{image.aspect_ratio}}" data-sizes="auto" data-parent-fit="cover"></div>
      {{-bk_contents-}}
   </div>
 {%- else -%}
   <div class="page-head tc pr oh page_head_{{se_id}}">{{bk_contents}}</div>
 {%- endif -%}
+
+
 
 {%- style -%}
 .page_head_{{se_id}} {padding: {{se_stts.paddingmb}}px 0}@media (min-width: 768px){.page_head_{{se_id}} {padding: {{se_stts.padding}}px 0} }
@@ -46,6 +63,60 @@
     "name": "Page heading",
     "class": "page_section_heading",
     "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading Title",
+      "default": "Page Name"
+    },
+    {
+      "type": "checkbox",
+      "id": "button",
+      "label": "Show button link?",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "btn_text",
+      "label": "Button Text",
+      "default": "Click Me"
+    },
+    {
+      "type": "select",
+      "id": "button_align",
+      "default": "center",
+      "options": [
+       {
+          "value": "left",
+          "label": "Left"
+       },
+       {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+       }
+      ],
+      "label": "Align Button"
+    },
+    {
+      "type": "select",
+      "id": "btn_background",
+      "default": "black",
+      "options": [
+       {
+          "value": "black",
+          "label": "Black"
+       },
+       {
+          "value": "transparent",
+          "label": "Transparent"
+        }
+      ],
+      "label": "Button Color"
+    },
       {
         "type": "image_picker",
         "id": "image",

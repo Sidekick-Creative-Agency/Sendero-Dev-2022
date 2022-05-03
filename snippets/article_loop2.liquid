@@ -5,7 +5,9 @@
          {%- assign image = article.image -%}
          {%- if image -%}<div class="lazyloadt4s nt_bg_lz pr_lazy_img" data-bgset="{{ image | img_url: '1x1' }}" data-ratio="{{image.aspect_ratio}}" data-sizes="auto"{% if sett_equal == false %} style="padding-top:{{ 1 | divided_by: image.aspect_ratio | times: 100}}%;"{% endif %}></div>{%- endif -%}
       </a>
+      
       <div class="post-info pa t__0 r__0 l__0 b__0 flex column fl_right">
+         {%- comment -%}
          <div class="post-info__tags op__5">
             {%- if show_au -%}{% assign IsDotShown = true %}<span class="post-author mr__5 fs__10">{{ by }} <span class="cw">{{ article.author | replace_first: 'ad clnt', 'admin' }}</span></span>{%- endif -%}
             {%- if show_dt -%}{% assign IsDotShown = true %}<span class="post-time fs__10">{{ on }} <span class="cw">{{ article.published_at | time_tag: format: date }}</span></span>{%- endif -%}
@@ -14,6 +16,7 @@
                {%- if IsDotShown %}.{% endif %}<a href="{{ art_url }}{{cm_link}}"> {{ 'blogs.comments.with_count' | t: count: article.comments_count }}</a>
             {%- endif -%}
          </div>
+         {%- endcomment -%}
          <h4 class="mg__0 fs__24 mt__5 mb__10 ls__0"><a class="cw chp open" href="{{art_url}}">{{article.title}}<div class="shop-all pt__10 op__5">Read More<i class="las la-arrow-right"></i></div></a></h4>
          {%- if show_cnt %}<div class="post-content">{%- if article.excerpt.size > 0  -%}{{ article.excerpt | strip_html }}{%- else -%}{{ article.content | strip_html | truncate: 118 }}{%- endif -%}</div>{% endif -%}
          {%- if show_rm %}<a href="{{art_url}}" class="post-readmore dib mt__5">{{ 'blogs.section.read_more' | t }}</a>{% endif -%}

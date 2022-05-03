@@ -3,6 +3,13 @@
 / SIDEKICK Custom CSS
 /-----------------------------------------------------------------------------*/
 
+/*--------------------------------------------------------/
+/ PAGE HEADING
+/--------------------------------------------------------*/
+
+.page-head h1 {
+    line-height:normal;
+}
 
 /*--------------------------------------------------------/
 / HEADER & MEGA MENU
@@ -115,8 +122,18 @@
     letter-spacing: 0.15em;
 }
 
-.cat_grid_item__link:hover {
-    opacity: 0.5;
+.cat_grid_item__link:hover:after {
+    opacity: .4;
+}
+.cat_grid_item__link:after {
+    content: '\A';
+    position: absolute;
+    width: 100%; height:100%;
+    top:0; left:0;
+    background:rgba(0,0,0,1);
+    opacity: 0;
+    transition: all .5s;
+    -webkit-transition: all .5s;
 }
 
 
@@ -174,16 +191,84 @@
 .frm_search_cat select{
     font-family: 'Oswald';
     font-weight: 400;
-    text-transform: uppercase;
+    text-transform: capitalize;
     letter-spacing: 0.1em;
     color: #222 !important;
 }
 .frm_search_cat select option{
     font-family: 'Oswald';
     font-weight: 400;
-    text-transform: uppercase;
+    text-transform: capitalize;
     letter-spacing: 0.1em;
 }
+
+
+
+/* --------- DEALER APPLY PAGE --------------- */
+.dealer-apply-container input::placeholder{
+    color: #878787;
+}
+.dealer-apply-container input, select {
+    border: none !important;
+    border-bottom: 1px solid #878787 !important;
+    color: black !important;
+    max-width: 250px;
+}
+.dealer-apply-container select:invalid, select option[value=""], .state-dropdown select:invalid, .state-dropdown select option[value=""] {
+    color: #878787 !important;
+}
+.dealer-apply-container label {
+    font-size: 10px;
+}
+.dealer-apply-row {
+    display: flex;
+    column-gap: 25px;
+}
+.dealer-apply-row div {
+    width: 100%;
+}
+.dealer-apply-checkbox-container {
+    margin-bottom: 20px;
+}
+.dealer-apply-button {
+    background-color: #000 !important;
+    color: #fff !important;
+    border: 1px solid rgba(33,43,54,.9) !important;
+    text-transform: uppercase !important;
+    font-family: 'Oswald' !important;
+    font-weight: 400 !important;
+    max-width: none !important;
+}
+.dealer-apply-button:hover{
+    background-color: #666 !important;
+    color: #fff !important;
+    border: 1px solid rgba(33,43,54,.9) !important;
+    text-transform: uppercase !important;
+    font-family: 'Oswald' !important;
+    font-weight: 400 !important;
+    max-width: none !important;
+}
+
+
+/* --------- LOCATIONS PAGE --------------- */
+.state-dropdown-container {
+    width: 100%;
+    display: flex;
+    padding: 0 50px 50px;
+}
+.transparent-button:hover {
+    background-color: black;
+    border: none;
+
+}
+.transparent-button {
+    background-color: transparent;
+    border: none;
+}
+
+
+
+
 
 /*--------------------------------------------------------/
 / FOOTERS
@@ -242,6 +327,16 @@
 /*--------------------------------------------------------/
 / HOME PAGE
 /--------------------------------------------------------*/
+
+/* This removes the whitespace in the hero slider */
+.hero-block {
+    margin: 0;
+    padding: 0;
+    width: 110%;
+    transform: translateX(-4.25%);
+}
+
+
 .sendero-session-txt-container {
     /* display: flex;
     flex: 0 0 50%; */
@@ -358,10 +453,7 @@
     flex: 0 0 50%;
 }
 .blog-home-img, .blog-home-article {
-    /* width: 100px;
-    height: 100px; */
-    /* width: 50%;
-    padding: 10px; */
+    
 }
 .blog-home-read-more h6{
     padding: 0;
@@ -383,31 +475,32 @@
     display: flex;
     /* margin: 0; */
     padding: 0 5px !important;
-    
 }
-
+.blog-home-link a {
+    letter-spacing: .1px;
+    font-size: 12px;
+}
+.blog-home-link a:hover {
+    color: white;
+}
 .sk-article {
     /* width: 100%; */
     padding: 5px !important;
-    
 }
 .blog-home-page-overlay{
-    /* overflow: hidden; */
-    /* padding: 20px 0 !important; */
-    /* position: relative; */
-    /* bottom: 0 !important; */
-    /* right: 0px; */
-    /* left: 0px; */
-    /* height: 75px; */
+
     transform: translateY(-5px);
     width: calc(100% - 10px) !important;
     text-align: left;
-    max-height: 70px;
-    background-color: rgba(0,0,0,.6) !important;
+    background-color: rgba(0,0,0,.3) !important;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
+    height: calc(100% - 10px);
+    transition: .5s;
+    
 }
+
 .blog-home-link {
     display: flex;
     flex-direction: column;
@@ -415,9 +508,7 @@
     align-items: flex-start !important;
 }
 .blog-home-outer-container {
-    background-color: rgba(0,0,0,.5);
-
-
+    background-color: rgba(0,0,0,.3);
 }
 .blog-home-outer-container p{
     color: white;
@@ -552,32 +643,43 @@
     object-fit: cover;
     padding: 0 15px;
 }
-.background-video {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-}
 .sendero-session-slider-vid-container {
     height: 300px;
-    width: 610px;
+    width: 600px;
     object-fit: contain;
-    padding-right: 10px;
+    margin-right: 10px;
     position: relative;
-
+    overflow: hidden;
+}
+.sendero-session-slider-vid-container iframe {
+    /* width: 300%; 
+    height: 300%; */
+    /* ...and bring it back again */
+    /* margin-left: -100%; */
+    position: absolute;
+    height:100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 350%;
+    left: -125%;
+    max-width: none;
+    pointer-events: none;
 }
 .sendero-session-link {
     max-width: 610px;
 }
 .sendero-session-overlay {
     height:100%;
-    width: calc(100% - 10px);
+    width: 100%;
     position: absolute;
-    background-color: rgba(0,0,0,.6);
+    background-color: rgba(0,0,0,.3);
     z-index: 2;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
+    overflow: hidden;
 }
 .sendero-session-title {
    left: 0;
@@ -585,7 +687,7 @@
    top: 55%;
     text-align: center;
     color: white;
-    z-index: 9999;
+    z-index: 300;
     position: absolute;
 }
 .sendero-session-sub-title {
@@ -594,7 +696,7 @@
     top: 45%;
      text-align: center;
      color: white;
-     z-index: 9999;
+     z-index: 300;
      position: absolute;
  }
  .sendero-sessions-rich-text {
@@ -604,7 +706,23 @@
      display: flex;
      flex-wrap: nowrap;
  }
-
+ .sk-session-slider-container {
+     overflow: hidden;
+ }
+ .sk-session-slider {
+     transition: .5s ease;
+     overflow-y: initial !important;
+     overflow-x: initial !important;
+ }
+#next_button, #previous_button {
+    background-color: #abb1b4;
+    border: 1px solid #abb1b4;
+    color: white;
+}
+#next_button:hover, #previous_button:hover {
+    background-color: #666;
+    border: 1px solid rgba(33,43,54,.9);
+}
 
 
 
@@ -613,6 +731,22 @@
 / Individual Product Page
 /--------------------------------------------------------*/
 
+.product_title {
+    margin-bottom: 20px !important;
+}
+.read-more, .read-less {
+    cursor: pointer;
+}
+.hidden-button {
+    display: none;
+}
+
+.prod_tabs {
+    justify-content: left;
+}
+.sk-indiv-product-featured {
+    width: 92% !important;
+}
 .sk-best-seller-img-slider, .indiv-product-rec-img-slider {
     width: 100% !important;
     margin: 0 !important;
@@ -644,6 +778,9 @@
     max-width: 987px;
     height: 475px;
 }
+.t4s-media-img {
+    cursor: pointer !important;
+}
 .indiv-product-tab {
     padding: none !important;
 }
@@ -651,7 +788,6 @@
     border: none;
     border-bottom: 2px solid #222;
     /* padding: 0; */
-    
 }
 .ul_tabs li.tab_title_block a{
     border: none;
@@ -739,7 +875,9 @@
     font-weight: 400;
     letter-spacing: .1em;
     text-transform: uppercase;
-
+}
+.pswp__button, .pswp__button:hover{
+    border: none !important;
 }
 
 /*---------------- SHOPPING CART SIDEBAR ----------------*/
@@ -826,8 +964,15 @@
 
 
 /*---------------- Our Story Page -------------------*/
+
+.checkmark {
+    height: 33px;
+    width: 33px;
+    margin-right: 25px;
+}
 .about-us-img-txt {
     padding-left: 50px !important;
+    padding-right: 50px !important;
 }
 .about-us-img {
     padding-right: 50px !important;
@@ -840,23 +985,27 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 50px;
-    
+    /* padding-top: 50px; */
+    padding: 50px 20px;
 }
 .rich-text-columns-inner-container {
     display: flex;
     justify-content: center;
     margin: 50px 0;
     flex-wrap: wrap;
+    width: 100%;
 }
 
-.rich-text-columns-text-section {
+.rich-text-columns-text-outer-section {
     padding: 0 50px;
     text-align: left;
-    width: 50%;
+    display: flex;
+    margin-bottom: 25px;
 }
-
-
+.rich-text-button button{
+    max-width: none !important;
+    white-space: nowrap;
+}
 
 /*---------------- SHOPPING CART, LOGIN & SEARCH SIDEBAR SIZE AND PADDING ----------------*/
 
@@ -935,6 +1084,149 @@ a.prev.page-numbers {
 }
 
 
+/*---------------- Sendero Session Individual Group Page -------------------*/
+.sk-session-group-img-text-container {
+    margin: auto;
+    max-width: 1200px;
+    width: 100%;
+    width: fit-content;
+    padding: 0 50px;
+    margin: 0 auto;
+}
+.sk-session-group-img-text-container .col-md-6 {
+    padding: 0 !important;
+}
+.sk-session-group-img {
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+    /* justify-content: center; */
+    align-items: center;
+}
+.sk-session-group-text {
+    padding-right: 0;
+}
+.sk-session-group-img-single {
+    max-width: 100%;
+    aspect-ratio: 2/1;
+    object-fit: cover;
+    padding-bottom: 10px;
+    /* padding-left: 50px; */
+}
+.sk-session-group-outer-container {
+    max-width: 1200px !important;
+    margin: 100px auto;
+}
+.sk-session-group-inner-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+}
+.sk-session-grid-indiv-container {
+    height: 300px;
+    width: 100%;
+    object-fit: contain;
+    margin-right: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.sk-session-grid-indiv-container a {
+    cursor: pointer;
+}
+.sk-session-grid-video {
+    padding: 5px;
+}
+.sk-session-grid-indiv-container iframe {
+    position: absolute;
+    height:100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 450%;
+    left: -175%;
+    max-width: none;
+    pointer-events: none;
+}
+.sk-session-group-sub-title {
+    left: 0;
+    right: 0;
+    top: 70%;
+     text-align: center;
+     color: white;
+     z-index: 300;
+     position: absolute;
+}
+.image-text-quote {
+    padding: 0 50px !important;
+}
+
+
+/*---------------- Ryviu Review App -------------------*/
+.r--button {
+    border-radius: 0 !important;
+    text-transform: uppercase !important;
+}
+.r--stars-icon {
+    color: #222 !important;
+}
+.r--author, .r--avatar-default {
+    border-radius: 0 !important;
+}
+.r--author {
+    color: #222 !important;
+}
+.r-star:before {
+    content: \e902 !important;
+}
+/*---------------- Remove color swatches on grid pages -------------------*/
+.nt_swatches_on_grid {
+    display: none !important;
+}
+
+/*-----------------------------------------------------------------------------/
+/ PIONEROS PAGE
+/-----------------------------------------------------------------------------*/
+.pioneros-outer-container {
+    margin: 50px 0;
+}
+.pioneros-row {
+    /* padding: 15px !important; */
+    justify-content: center;
+}
+.pioneros-item {
+    overflow: hidden;
+    margin-bottom: 0 !important;
+    max-height: 370px;
+    max-width: 370px;
+    padding: 0 5px !important;
+}
+.pioneros-img {
+    margin: 0 !important;
+    height: 100%;   
+}
+.pioneros-image-overlay {
+    position: absolute;
+    top: 0;
+    width: calc(100% - 10px);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,.4);
+    opacity: 0;
+    transition: .5s;
+}
+.pioneros-title, .pioneros-title a {
+    color: white !important;
+}
+.pioneros-text {
+    color: #D1D1D1;
+}
+.pioneros-item:hover .pioneros-image-overlay {
+    opacity: 1;
+}
 /*-----------------------------------------------------------------------------/
 / Custom CSS For Screen Sizes
 /-----------------------------------------------------------------------------*/
@@ -985,6 +1277,9 @@ a.prev.page-numbers {
     .test-outer-container .flickityt4s-prev-next-button.next {
         right: 0;
     }
+    .about-us-img {
+        padding-right: 0 !important;
+    }
 }
 
 /*---------------- Custom CSS for only tablet -------------------*/
@@ -996,7 +1291,14 @@ a.prev.page-numbers {
 
 /*---------------- Custom CSS for only mobile -------------------*/
 @media (max-width: 767px){
-
+    .rich-text-columns-inner-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .rich-text-columns-text-outer-section {
+        width: 100%;
+    }
     .sk-breadcrumbs {
         margin:20px 25px;
     }
@@ -1028,6 +1330,19 @@ a.prev.page-numbers {
         height: auto;
     }
 
+    .sk-session-group-inner-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .sk-session-grid-indiv-container {
+        margin-right: 0;
+    }
+    .sk-session-grid-video {
+        max-width: 75% !important;
+    }
+}
+    
+
     /*---------------- Special Custom CSS for Sendero Sessions 'More' Button -------------------*/
     @media (max-width: 568px){
         .sendero-session-more-button {
@@ -1035,4 +1350,3 @@ a.prev.page-numbers {
             white-space: nowrap;
         }
     }
-}

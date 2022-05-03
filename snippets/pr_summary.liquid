@@ -169,7 +169,6 @@ assign se_stts = section.settings
         {%- else -%}
         <h1 class="product_title entry-title" style="font-size: {{bk_stts.size}}px" {{ block.shopify_attributes }}><a href="{{product.url | within: collection}}">{{product.title}}</a></h1>
         {%- endunless -%}
-
       {%- when 'pricereview' -%}
         {%- liquid 
           if pr_tags contains 't4_hide_price'
@@ -180,6 +179,8 @@ assign se_stts = section.settings
           else 
            assign price_varies_html = '' | split:'|'
           endif
+        
+
           assign bl_saletxt = false
           assign txt_sale = bk_stts.txt_sale
           if txt_sale != '0' and on_sale 
@@ -237,33 +238,46 @@ assign se_stts = section.settings
               {{ product.price | money }}
               {%- endif -%}
 
+              {%- endif -%}
+            </p>
+
+            {%- if bk_stts.rating -%}
+            <a href="#data-id-review" data-sl='[data-id-reviewt4s]' class="rating_sp_kl dib{% if Isquickview %} pe_none{% endif %}">
+               {%- case settings.app_review -%}              
+                   {%- when '1' -%}
+                      <span class="shopify-product-reviews-badge" data-id="{{ pid }}"></span>
+                   {%- when '2' -%}
+                      {%- if Isquickview -%}
+                      <div class="ryviu-collection star-rating"><ryviu-widget-total collection=1 reviews_data="{{pr_metafields.ryviu.product_reviews_info  | escape  }}" product_id="{{product.id}}" handle="{{product.handle}}"></ryviu-widget-total></div>
+                      {%- else -%}
+                      <div class="review-widget"><ryviu-widget-total reviews_data="{{pr_metafields.ryviu.product_reviews_info  | escape  }}" product_id="{{pid}}" handle="{{product.handle}}"></ryviu-widget-total></div>
+                      {%- endif -%}
+                   {%- when '3' -%}
+                      {%- if Isquickview -%}<div product-id="{{ pid }}" class="arv-collection arv-collection--{{ pid }}"></div>{%- else -%}<div product-id="{{ pid }}" class="alr-display-review-badge"></div>{%- endif -%}
+                   {%- when '4' -%}
+                      <div class="loox-rating" data-id="{{ pid }}" data-rating="{{ pr_metafields.loox.avg_rating }}" data-raters="{{ pr_metafields.loox.num_reviews }}"></div>
+                   {%- when '5' -%}
+                      {%- capture the_snippet_review_avg %}{% render 'ssw-widget-avg-rate-profile' %}{% endcapture -%}
+                      {%- unless the_snippet_review_avg contains 'Liquid error' %}{{ the_snippet_review_avg }}{% endunless -%}
+                   {%- when '7' -%}{{ product.metafields.judgeme.badge }}
+                   {%- else -%}
+                     <div class="pr_rating review_pr_other">{{bk_stts.review_liquid}}</div>
+               {%- endcase -%}
+            </a>
             {%- endif -%}
-           </p>
-           {%- if bk_stts.rating -%}
-           <a href="#data-id-review" data-sl='[data-id-reviewt4s]' class="rating_sp_kl dib{% if Isquickview %} pe_none{% endif %}">
-              {%- case settings.app_review -%}              
-                  {%- when '1' -%}
-                     <span class="shopify-product-reviews-badge" data-id="{{ pid }}"></span>
-                  {%- when '2' -%}
-                     {%- if Isquickview -%}
-                     <div class="ryviu-collection star-rating"><ryviu-widget-total collection=1 reviews_data="{{pr_metafields.ryviu.product_reviews_info  | escape  }}" product_id="{{product.id}}" handle="{{product.handle}}"></ryviu-widget-total></div>
-                     {%- else -%}
-                     <div class="review-widget"><ryviu-widget-total reviews_data="{{pr_metafields.ryviu.product_reviews_info  | escape  }}" product_id="{{pid}}" handle="{{product.handle}}"></ryviu-widget-total></div>
-                     {%- endif -%}
-                  {%- when '3' -%}
-                     {%- if Isquickview -%}<div product-id="{{ pid }}" class="arv-collection arv-collection--{{ pid }}"></div>{%- else -%}<div product-id="{{ pid }}" class="alr-display-review-badge"></div>{%- endif -%}
-                  {%- when '4' -%}
-                     <div class="loox-rating" data-id="{{ pid }}" data-rating="{{ pr_metafields.loox.avg_rating }}" data-raters="{{ pr_metafields.loox.num_reviews }}"></div>
-                  {%- when '5' -%}
-                     {%- capture the_snippet_review_avg %}{% render 'ssw-widget-avg-rate-profile' %}{% endcapture -%}
-                     {%- unless the_snippet_review_avg contains 'Liquid error' %}{{ the_snippet_review_avg }}{% endunless -%}
-                  {%- when '7' -%}{{ product.metafields.judgeme.badge }}
-                  {%- else -%}
-                    <div class="pr_rating review_pr_other">{{bk_stts.review_liquid}}</div>
-              {%- endcase -%}
-           </a>
-           {%- endif -%}
         </div>
+        <script>
+          $(document).ready(() => {
+            console.log("HELLO");
+            var stars = $(".r--stars-icon");
+          console.log(stars.length);
+          for (var star of stars) {
+            star.addClass("r-star");
+            console.log("HELLO");
+          }
+          });
+        </script>
+        
         {%- if cart.taxes_included or shop.shipping_policy.body != blank -%}
           <div class="product__policies rte cb" data-product-policies {{ block.shopify_attributes }}>
             {%- if cart.taxes_included -%}
@@ -283,17 +297,15 @@ assign se_stts = section.settings
           } 
         </style>
 
-
-
 {%- when 'des' -%}
   <div id="wrap_des_pr"><div class="container container_des" style="padding: 0">
-    <ul class="ul_none ul_tabs is-flex fl_center fs__16 des_mb_{{cl_mb}} des_style_{{cl_des}}" style="justify-content: left;">
+    <ul class="prod_tabs ul_none ul_tabs is-flex fl_center fs__16 des_mb_{{cl_mb}} des_style_{{cl_des}}">
       <li class="tab_title_block{% if ck %} active{% assign ck = false %}{% endif %}"><a class="db cg truncate pr indiv-product-tab" data-id-dest4s href="#tab_des">DESCRIPTION</a></li>
-      {%- if product.options_with_values[0].values[0] != "Default Title" -%}
+      {%- if product.metafields.my_fields.additional_information != null -%}
       <li class="tab_title_block{% if ck %} active{% assign ck = false %}{% endif %}"><a class="db cg truncate pr" href="#tab_add">ADDITIONAL INFORMATION</a></li>
       {%- endif -%}
-
     </ul> 
+
     {%- if cl_des == '2' %}{% assign ck = se_stts.auto %}{% else -%}{% assign ck = true %}{% endif -%} 
     {%- for block in section.blocks %}{% assign bk_setts = block.settings -%}
       {%- case block.type -%}
@@ -304,18 +316,45 @@ assign se_stts = section.settings
           <div class="sp-tab-content">{{ bk_setts.custom_liquid }}</div>
         </div>
 
+        
         {%- when 'des' -%}
         <div class="panel entry-content sp-tab des_mb_{{cl_mb}} des_style_{{cl_des}}{% if ck %} active{% assign ck = false %}{% else %} dn{% endif %}" data-id-dest4s id="tab_{{block.id}}" {{ block.shopify_attributes }}>
         	<div class="js_ck_view"></div><div class="heading bgbl dn"><a class="tab-heading flex al_center fl_between pr cd chp fwm" href="#tab_{{block.id}}"><span class="txt_h_tab">{{bk_setts.title}}</span><span class="nav_link_icon ml__5"></span></a></div>
-        	<div class="sp-tab-content rtet4">{{- product.description -}}</div>
+        	<div class="sp-tab-content rtet4"><span>{{- product.description -}}</span>
+            <a class="read-more hidden-button">Read More</a>
+            <a class="read-less hidden-button">Read Less</a>
+          </div>
+          
         </div>
-{%- comment -%}
-        {%- when 'add' %}{% if product.has_only_default_variant %}{% continue %}{% endif -%}
-        <div class="panel entry-content sp-tab des_mb_{{cl_mb}} des_style_{{cl_des}}{% if ck %} active{% assign ck = false %}{% else %} dn{% endif %}" data-id-dest4s id="tab_{{block.id}}" {{ block.shopify_attributes }}>
-        	<div class="js_ck_view"></div><div class="heading bgbl dn"><a class="tab-heading flex al_center fl_between pr cd chp fwm" href="#tab_{{block.id}}"><span class="txt_h_tab">Additional Information</span><span class="nav_link_icon ml__5"></span></a></div>
-        	<div class="sp-tab-content rtet4">{{- product.description -}}</div>
-        </div>
-{%- endcomment -%}
+        
+        
+        <script>
+          var des = $(".sp-tab-content span");
+          var temp = des.text();
+          var short = des.text().substring(0, 500).trim() + "...";
+          var readMore = $(".read-more");
+          var readLess = $(".read-less");
+
+          if (des.text().length > 500) {
+            des.text(short);
+            readMore.removeClass("hidden-button");
+            
+            readMore.click(() => {
+            des.text(temp);
+            readMore.addClass("hidden-button");
+            readLess.removeClass("hidden-button");
+          });
+          readLess.click(() => {
+            des.text(short);
+            readLess.addClass("hidden-button");
+            readMore.removeClass("hidden-button");
+          });
+          }
+          
+        </script>
+        
+
+
         {%- when 'buy' -%}{% if nav_up_size == 0 %}{% continue %}{% endif -%} 
         <div class="panel entry-content sp-tab des_mb_{{cl_mb}} des_style_{{cl_des}}{% if ck %} active{% assign ck = false %}{% else %} dn{% endif %}" id="tab_{{block.id}}" {{ block.shopify_attributes }}>
           <div class="js_ck_view"></div><div class="heading bgbl dn"><a class="tab-heading flex al_center fl_between pr cd chp fwm" href="#tab_{{block.id}}"><span class="txt_h_tab">{{bk_setts.title}}</span><span class="nav_link_icon ml__5"></span></a></div>
@@ -398,12 +437,24 @@ assign se_stts = section.settings
           </div>
         </div>
         <style>.kl_fbt_img:not(.kl_fbt_img_0):before{content:"+";font-size:20px}.kl_fbt_li select{width:auto;border-radius:5px;color:#222;height:36px;line-height:36px;margin-left:5px}.kl_fbt_tt_price{color:#ec0101;font-size:18px}.kl_fbt_price{color:#ec0101;font-size:15px;margin:0 5px}.kl_fbt_wrap del{color:#878787}.kl_fbt_wrap ins{text-decoration:none}.kl_fbt_li:not(:last-child){margin-bottom:10px}.js_fbt_ck,.kl_fbt_li .label{display:none}.kl_fbt_li label:before{position:relative;top:2px;content:'';display:inline-block;margin-right:4px;width:14px;height:14px;min-width:14px;border:1px solid #d4d6d8;background:#fff;box-shadow:none;background-size:0;background-repeat:no-repeat;background-position:50%;transition:all .2s ease-in-out;border-radius:2px;-webkit-appearance:none;transition:border-color .2s ease-in-out,box-shadow .2s ease-in-out,background .2s ease-in-out}.kl_fbt_li svg{display:block;width:10px;height:10px;fill:#fff;position:absolute;top:5px;left:2px;pointer-events:none;transform:scale(0);-webkit-transform:scale(0);-webkit-transition:all .25s ease-in-out;transition:all .25s ease-in-out}.js_fbt_ck:checked+label svg{transform:scale(1);-webkit-transform:scale(1)}.js_fbt_ck:not(:checked)~*{opacity:.2}.js_fbt_ck:not(:checked)+label{opacity:1}.kl_fbt_img img{width:100%;margin:5px 10px;max-width:115px}.kl_fbt_img_0.kl_fbt_img img{margin-left:0}@media (max-width:1024px){.kl_fbt_img img{margin:5px;max-width:70px}.des_style_1.des_mb_2.sp-tab .kl_fbt_img img,.des_style_2 .kl_fbt_img img{max-width:55px}.des_style_1.des_mb_2 .kl_fbt_img_0.kl_fbt_img img{margin-left:5px}.kl_fbt_img:not(.kl_fbt_img_0):before{font-size:16px}.kl_fbt_li label:before{width:24px;height:24px}.kl_fbt_li svg{width:16px;height:16px;top:-2px;left:3px}}</style> 
-
-        {%- when 'add' %}{% if product.has_only_default_variant %}{% continue %}{% endif -%}
+       
+        {%- when 'des' %} {%- comment -%} this used to be 'when add' {%- endcomment -%}
+          {% comment %}{% if product.metafields.my_fields.material != null %}{% continue %}{% endif -%} {% endcomment %}
         <div class="panel entry-content sp-tab des_mb_{{cl_mb}} des_style_{{cl_des}}{% if ck %} active{% assign ck = false %}{% else %} dn{% endif %}" id="tab_add" {{ block.shopify_attributes }}>
         	<div class="js_ck_view"></div><div class="heading bgbl dn"><a class="tab-heading flex al_center fl_between pr cd chp fwm" href="#tab_{{block.id}}"><span class="txt_h_tab">{{bk_setts.title}}</span><span class="nav_link_icon ml__5"></span></a></div>
         	<div class="sp-tab-content">
-        		<table class="pr_attrs">
+            {% assign info_array = product.metafields.my_fields.additional_information | remove: "[" | remove: "]" | split: "," %}
+
+            <ul>
+              {% for field in info_array %}
+              {% assign firstLetter = field | slice: 0 %}
+                <li>{{field | remove: firstLetter }}</li>
+              {% endfor %}
+            </ul>
+
+        	
+          {%- comment -%}
+            <table class="pr_attrs">
         			<tbody>
                 {%- for product_option in product.options_with_values -%}
         				<tr class="attr_pa_{{product_option.name | handle }}">
@@ -415,6 +466,7 @@ assign se_stts = section.settings
                 {%- endfor -%}
         			</tbody>
         		</table>
+            {%- endcomment -%}
         	</div>
         </div>
         
@@ -424,22 +476,22 @@ assign se_stts = section.settings
         	<div class="sp-tab-content">
             {%- case settings.app_review -%}                        
                 {%- when '1' -%}
-                   <div id="shopify-product-reviews" data-id="{{pid}}">{{ product.metafields.spr.reviews }}</div>
+                <div id="shopify-product-reviews" data-id="{{pid}}">{{ product.metafields.spr.reviews }}</div>
                 {%- when '2' -%}
-                   <div class="lt-block-reviews"><ryviu-widget handle="{{product.handle}}" title_product="{{product.title}}" total_meta="{{ product.metafields.ryviu.r_count }}" image_product="{{ product.featured_image.src | img_url: '800x' }}"></ryviu-widget></div>
+                <div class="lt-block-reviews"><ryviu-widget handle="{{product.handle}}" title_product="{{product.title}}" total_meta="{{ product.metafields.ryviu.r_count }}" image_product="{{ product.featured_image.src | img_url: '800x' }}"></ryviu-widget></div>
                 {%- when '3' -%}
-                   <div id="shopify-ali-review" product-id="{{ pid }}">{{ shop.metafields.review_collector.review_code }}</div>
                 {%- when '4' -%}
-                  <div id="looxReviews" data-product-id="{{pid}}" class="loox-reviews-default">{{ product.metafields.loox.reviews }}</div>
+                <div id="looxReviews" data-product-id="{{pid}}" class="loox-reviews-default">{{ product.metafields.loox.reviews }}</div>
                 {%- when '5' -%}
                   {%- capture the_snippet_reviews %}{% render 'socialshopwave-widget-recommends' with 1 %}{% endcapture -%}
                   {%- unless the_snippet_reviews contains 'Liquid error' %}{{ the_snippet_reviews }}{% endunless -%}
                 {%- when '7' -%}{%- render 'judgeme_widgets', widget_type: 'judgeme_review_widget', concierge_install: true, product: product -%}
                 {%- else -%}
-                  <div class="star-rating review_widget_other">{{bk_setts.review_liquid}}</div>
+                <div class="star-rating review_widget_other">{{bk_setts.review_liquid}}</div>
             {%- endcase -%}
         	</div>
         </div>
+        
         
         {%- when 'html' -%}{%- if bk_setts.title == blank or pages[bk_setts.page].content == blank %}{% continue %}{% endif -%}
         <div class="panel entry-content sp-tab des_mb_{{cl_mb}} des_style_{{cl_des}}{% if ck %} active{% assign ck = false %}{% else %} dn{% endif %}" id="tab_{{block.id}}" {{ block.shopify_attributes }}>
@@ -529,31 +581,6 @@ assign se_stts = section.settings
   {%- endstyle -%}
 
 </div></div>
-
-  {%- comment -%}
-        {%- if pr_tags contains 'hidet4_des' %}{% continue %}{% endif -%}
-
- {%- if bk_stts.des == '1' and call_cl != '_qv' %}{% continue %}{% endif -%}
-        <div class="pr_short_des rtet4" {{ block.shopify_attributes }}>
-          {%- assign length = bk_stts.length | default: 31 -%}
-          {%- assign pr_des = product.description -%}
-          {%- capture readm -%}
-            {%- if bk_stts.readm and call_cl != "_qv" %}<a class="readm_sp_kl" data-sl='[data-id-dest4s]' href="#tab_pr_deskl"> {{bk_stts.readm_txt}}</a>{% endif -%}
-          {%- endcapture -%}
-
-           {%- if bk_stts.des == '1' -%}{{- pr_des -}}
-           {%- elsif bk_stts.text != blank -%}{{- bk_stts.text -}}{{readm}}
-           {%-else-%}<p class="mg__0">{{- pr_des | strip_html | truncatewords: length -}}{{readm}}</p>
-           {%-endif-%}
-        </div>
-{%- endcomment -%}
-
-
-
-
-
-
-
 
      {%- when 'frm' -%}
         <div class="btn-atc atc-slide btn_full_{{bk_stts.btn_atc_full}} PR_no_pick_{{PR_no_pick}} btn_des_{{bk_stts.btn_des}} btn_txt_{{bk_stts.btn_txt}}" {{ block.shopify_attributes }}>
@@ -860,7 +887,7 @@ assign se_stts = section.settings
           <div class="sp-tab-content rtet4">{{- product.description -}}</div>
         </div>
 
-      {%- when 'tab_rivui' -%}
+        {%- when 'tab_rivui' -%}
         <div class="sp-block-tab sp-tab des_style_2{% if ck_tab %} first_tab_sp vactive{% assign ck_tab = false %}{% else %} dn{% endif %}" data-id-reviewt4s id="tab_{{block.id}}_{{ section.id }}" {{ block.shopify_attributes }}>
           <div class="js_ck_view"></div><div class="heading bgbl dn"><a class="tab-heading flex al_center fl_between pr cd chp fwm" href="#tab_{{block.id}}_{{ section.id }}"><span class="txt_h_tab">{{bk_stts.title}}</span><span class="nav_link_icon ml__5"></span></a></div>
           <div class="sp-tab-content">
@@ -882,6 +909,7 @@ assign se_stts = section.settings
             {%- endcase -%}
           </div>
         </div>
+        
 
       {%- when 'tab' -%}{%- assign tab_content = bk_stts.content |default:bk_stts.page.content -%}
         {%- if bk_stts.title == blank or tab_content == blank %}{% continue %}{% endif -%}
@@ -908,4 +936,3 @@ assign se_stts = section.settings
 {%- endfor -%}
 {%- if call_cl == "_qv" -%}<a href="{{product.url | within: collection}}" class="btn fwsb detail_link">{{ 'products.product.product_view_details' | t }} <i class="facl facl-right"></i></a> {%- endif -%}
 </div>
-

@@ -9,6 +9,7 @@
   assign inc_pr = se_stts.pr_des
   assign page_handle = collection.handle
   assign collection_handle = collection.handle | prepend: 'best-seller-'
+  assign collection_tags = collection[collection_handle]
   assign use_cdt = se_stts.use_cdt
   assign txt_cd = 'products.grid_items.offer_end_in' | t
   assign sid = section.id
@@ -50,42 +51,64 @@
     </div>
 
     {% if image and collections[collection_handle].products.size > 3 %}
-    <div class="sk-collection-top">
-      <div class="row equal_nt auto al_center">
-        <div class="cat-top-img col-12 col-md-6">
-          <div class="nt_img_txt oh pr middle center">
-            <a href="#content">
-              <div class="nt_bg_lz lazyloadt4s item__position center" data-bgset="{{ image | img_url: '1x1' }}" style="padding-top: 70%;">
-                <div class="txt_content pa t__0 l__0 b__0 r__0 caption-w-2 flex column shadow_wrap tc_md tc pe_none z__100">
-                  <div class="pa pa_txts mb_h_pos50 mb_v_pos50 h_pos50 v_pos50">
-                    <h1 class="image-title">{{collection.title}}</h1><h6 class="shop-all pt__10">Shop All<i class="las la-arrow-right"></i></h6>
+
+    {%- comment -%} THIS REMOVES THE BEST SELLER SLIDER ON "NEW" PRODUCT CATEGORIES. "SPRING-2022" SHOULD BE CHANGED TO WHATEVER THE NEW TAG IS {%- endcomment -%}
+      {% if get_url contains "spring-2022" %}
+        <div class="sk-collection-top">
+          <div class="row equal_nt auto al_center">
+            <div class="cat-top-img col-12 col-md-12">
+              <div class="nt_img_txt oh pr middle center">
+                <a href="#content">
+                  <div class="nt_bg_lz lazyloadt4s item__position center" data-bgset="{{ image | img_url: '1x1' }}" style="padding-top: 30%;">
+                    <div class="txt_content pa t__0 l__0 b__0 r__0 caption-w-2 flex column shadow_wrap tc_md tc pe_none z__100">
+                      <div class="pa pa_txts mb_h_pos50 mb_v_pos50 h_pos50 v_pos50">
+                        <h1 class="image-title">New {{collection.title}}</h1><h6 class="shop-all pt__10">Shop All<i class="las la-arrow-right"></i></h6>
+                      </div>
+                    </div>
                   </div>
-                </div>
+                </a>
               </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 txt_col_img">
-          <a href="{{ collection.url | remove:'/collections/' | prepend: 'best-seller-' }}"><div class="flex pt__20 shadow_wrap tl" style="align-items:center;">
-            <span><h2>Best Sellers</h2></span><span><h6 class="shop-all-blk">Shop All<i class="las la-arrow-right"></i></h6></span>
-          </div></a>
-          <div class="container">
-            <div class="products nt_products_holder row row_pr_{{inc_pr}} cdt_des_{{se_stts.cdt_des}} round_cd_{{se_stts.round_cd}} js_carousel nt_slider {{se_stts.image_size}} {{se_stts.image_ratio}} position_{{se_stts.image_position}} space_{{se_stts.space}} prev_next_{{se_stts.btn_color}} btn_owl_{{se_stts.btn_owl}} dot_owl_{{se_stts.dot_owl}} dot_color_{{se_stts.dot_color}} btn_vi_{{se_stts.btn_vi}}{% if sett_equal %} equal_nt{% endif %}" data-flickityt4s-js='{"imagesLoaded": 0,"adaptiveHeight": 0, "contain": 1, "groupCells": "100%", "dragThreshold" : 5, "cellAlign": "left","wrapAround": {{se_stts.loop}},"prevNextButtons": {{se_stts.button}},"percentPosition": 1,"pageDots": {{se_stts.dot}}, "autoPlay" : {{ se_stts.au_time | times: 1000 }}, "pauseAutoPlayOnHover" : {{se_stts.au_hover}}, "rightToLeft": {{settings.use_rtl}} }'>
-              {%- if collection != blank -%}
-                  {%- for product in collections[collection_handle].products -%}{%- render 'pr_loop_grid_1',collection:collection,product:product,use_cdt:use_cdt,txt_cd:txt_cd, col:col, col_tb:col_tb, col_mb:col_mb,sett_equal:sett_equal,show_vendor:show_vendor,inc_price:inc_price,use_rating:use_rating,inc_rating:inc_rating,show_color:show_color,show_cl_type:show_cl_type,show_size:show_size -%}{%- endfor -%}            
-              {%- else -%}
-                {%- for i in (1..8) -%}
-                  <div class="pr_animated mt__30 pr_grid_item product nt_pr desgin__1 col-6 col-lg-3 col-md-3 done">
-                    <div class="product-inner pr"><div class="product-image pr oh"><a class="db" href="/admin/products">{%- capture current -%}{%- cycle 1, 2, 3, 4, 5, 6,7,8 -%}{%- endcapture -%}<div class="pr_lazy_img main-img nt_img_ratio nt_bg_lz lazyloadt4s" style="padding-top:100%" data-bg="{{ 'product-' | append:current | append:'.jpg' | asset_url }}"></div></a></div></div>
-                    <div class="product-info mt__15"><h3 class="product-title pr fs__14 mg__0 fwm"><a class="cd chp" href="/admin/products">{{ 'homepage.onboarding.product_title' | t }}</a></h3><span class="price dib mb__5"><del>$59.00</del><ins>$39.00</ins></span></div>
-                  </div>
-                {%- endfor -%}
-              {%- endif -%}
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      {% else %}
+        <div class="sk-collection-top">
+          <div class="row equal_nt auto al_center">
+            <div class="cat-top-img col-12 col-md-6">
+              <div class="nt_img_txt oh pr middle center">
+                <a href="#content">
+                  <div class="nt_bg_lz lazyloadt4s item__position center" data-bgset="{{ image | img_url: '1x1' }}" style="padding-top: 70%;">
+                    <div class="txt_content pa t__0 l__0 b__0 r__0 caption-w-2 flex column shadow_wrap tc_md tc pe_none z__100">
+                      <div class="pa pa_txts mb_h_pos50 mb_v_pos50 h_pos50 v_pos50">
+                        <h1 class="image-title">{{collection.title}}</h1><h6 class="shop-all pt__10">Shop All<i class="las la-arrow-right"></i></h6>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 txt_col_img">
+              <a href="{{ collection.url | remove:'/collections/' | prepend: 'best-seller-' }}"><div class="flex pt__20 shadow_wrap tl" style="align-items:center;">
+                <span><h2>Best Sellers</h2></span><span><h6 class="shop-all-blk">Shop All<i class="las la-arrow-right"></i></h6></span>
+              </div></a>
+              <div class="container">
+                <div class="products nt_products_holder row row_pr_{{inc_pr}} cdt_des_{{se_stts.cdt_des}} round_cd_{{se_stts.round_cd}} js_carousel nt_slider {{se_stts.image_size}} {{se_stts.image_ratio}} position_{{se_stts.image_position}} space_{{se_stts.space}} prev_next_{{se_stts.btn_color}} btn_owl_{{se_stts.btn_owl}} dot_owl_{{se_stts.dot_owl}} dot_color_{{se_stts.dot_color}} btn_vi_{{se_stts.btn_vi}}{% if sett_equal %} equal_nt{% endif %}" data-flickityt4s-js='{"imagesLoaded": 0,"adaptiveHeight": 0, "contain": 1, "groupCells": "100%", "dragThreshold" : 5, "cellAlign": "left","wrapAround": {{se_stts.loop}},"prevNextButtons": {{se_stts.button}},"percentPosition": 1,"pageDots": {{se_stts.dot}}, "autoPlay" : {{ se_stts.au_time | times: 1000 }}, "pauseAutoPlayOnHover" : {{se_stts.au_hover}}, "rightToLeft": {{settings.use_rtl}} }'>
+                  {%- if collection != blank -%}
+                      {%- for product in collections[collection_handle].products -%}{%- render 'pr_loop_grid_1',collection:collection,product:product,use_cdt:use_cdt,txt_cd:txt_cd, col:col, col_tb:col_tb, col_mb:col_mb,sett_equal:sett_equal,show_vendor:show_vendor,inc_price:inc_price,use_rating:use_rating,inc_rating:inc_rating,show_color:show_color,show_cl_type:show_cl_type,show_size:show_size -%}{%- endfor -%}            
+                  {%- else -%}
+                    {%- for i in (1..8) -%}
+                      <div class="pr_animated mt__30 pr_grid_item product nt_pr desgin__1 col-6 col-lg-3 col-md-3 done">
+                        <div class="product-inner pr"><div class="product-image pr oh"><a class="db" href="/admin/products">{%- capture current -%}{%- cycle 1, 2, 3, 4, 5, 6,7,8 -%}{%- endcapture -%}<div class="pr_lazy_img main-img nt_img_ratio nt_bg_lz lazyloadt4s" style="padding-top:100%" data-bg="{{ 'product-' | append:current | append:'.jpg' | asset_url }}"></div></a></div></div>
+                        <div class="product-info mt__15"><h3 class="product-title pr fs__14 mg__0 fwm"><a class="cd chp" href="/admin/products">{{ 'homepage.onboarding.product_title' | t }}</a></h3><span class="price dib mb__5"><del>$59.00</del><ins>$39.00</ins></span></div>
+                      </div>
+                    {%- endfor -%}
+                  {%- endif -%}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endif %}
     {%- elsif image -%}
     <div class="sk-collection-top">
       <div class="row equal_nt auto al_center">

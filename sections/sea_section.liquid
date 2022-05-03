@@ -18,6 +18,7 @@
            <div class="input-group__field input-group__field--connected search-form__input-wrapper row no-gutters tl">
                {%- if search_type and false -%}
                <div class="frm_search_cat col-auto">
+                 
                    <select name="product_type">
                      <option value="*">{{ 'general.search.all_cat' | t }}</option>
                      {%- for product_type in shop.types -%}{%- if product_type == blank %}{% continue-%}{% endif -%}<option value="{{product_type}}"{% if search_pr_type == product_type %} selected="selected"{% endif %}>{{product_type}}</option>{%- endfor -%}

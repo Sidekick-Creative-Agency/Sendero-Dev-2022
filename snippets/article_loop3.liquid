@@ -20,7 +20,7 @@
                <a href="{{ art_url }}{{cm_link}}"> {{ 'blogs.comments.with_count' | t: count: article.comments_count }}</a>
             {%- endif -%}
          </div>
-          <h2 class="post-title fs__14 ls__2 mt__10 mb__5 tu"><a class="chp" href="{{art_url}}">{{article.title}}</a></h2>
+          <h2 class="post-title fs__14mt__10 mb__5 tu"><a class="chp" href="{{art_url}}">{{article.title}}</a></h2>
          {%- if show_dt -%}<span class="post-time cg">{{ article.published_at | time_tag: format: date }}</span>{%- endif -%}
       </div>
    </div>

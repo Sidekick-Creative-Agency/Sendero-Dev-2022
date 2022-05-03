@@ -45,7 +45,7 @@
         "align": "tl",
         "layout": "container",
         "mg": "50px,,50px,",
-        "pd": "",
+        "pd": ",50px,,50px",
         "mg_mb": "",
         "pd_mb": ""
       }
@@ -83,8 +83,8 @@
         "use_shadow": false,
         "cl_txt": "dark",
         "layout": "nt_full",
-        "mg": "50px,,50px,",
-        "pd": "",
+        "mg": "50px, ,50px,",
+        "pd": ", 100px,,",
         "mg_mb": "",
         "pd_mb": ""
       }
@@ -94,9 +94,8 @@
       "settings": {
         "main_title": "OUR QUALITY GUARANTEE",
         "title1": "QUALITY LOREM IPSOM",
-        "title2": "",
-        "title3": "",
-        "sub_title": "",
+        "title2": "QUALITY LOREM IPSOM",
+        "title3": "QUALITY LOREM IPSOM",
         "sub_font": "2",
         "style_title": "title_1",
         "ic_tt": "gem",

@@ -1,0 +1,1389 @@
+{%- liquid
+    assign sid = section.id
+    assign se_stts = section.settings
+    assign img_ratio = se_stts.image_ratio 
+    assign ck = false 
+   if img_ratio == 'auto' 
+    assign ck = true 
+   endif
+   assign back_image = "/admin/co"
+   assign back_image = se_stts.image
+   assign url = se_stts.button_link 
+   if se_stts.cl_txt == 'dark' 
+    assign cl_txt = 'cd,cg' 
+   else 
+    assign cl_txt = 'cw,cw,button-o-w' 
+   endif 
+   assign cl_arr = cl_txt | split:","
+   assign fs_arr = se_stts.text_size2 | split:"," 
+   
+  
+  assign sett_equal = se_stts.use_eq_height
+    assign col = se_stts.col_pr
+    assign col_tb = se_stts.col_pr_tb 
+    assign col_mb = '' | prepend:se_stts.col_pr_mb
+    assign limit = se_stts.limit
+    assign use_pagination = se_stts.use_pagination
+    assign blog_owl = blogs[se_stts.blog]
+    assign date = se_stts.date
+    assign by = 'blogs.article.by' | t
+    assign on = 'blogs.article.on' | t 
+    assign show_au = se_stts.show_au
+    assign show_dt = se_stts.show_dt
+    assign sid = section.id
+    assign video_none = "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+   -%}
+
+<div class="col-12 col-md-6 sk-session-group-outer-container">
+    <div class="sk-session-group-inner-container nt_se_{{sid}} {{se_stts.layout}}">
+        {% for i in (1..15) %}
+            {% if i == 1 %}
+                {% assign video_url = se_stts.video_url1 %}
+                {% assign title = se_stts.artist_name1 %}
+                {% assign song = se_stts.song_name1 %}
+                {% assign grid_link = se_stts.grid_link1 %}
+            {% elsif i == 2 %}
+                {% assign video_url = se_stts.video_url2 %}
+                {% assign title = se_stts.artist_name2 %}
+                {% assign song = se_stts.song_name2 %}
+                {% assign grid_link = se_stts.grid_link2 %}
+            {% elsif i == 3 %}
+                {% assign video_url = se_stts.video_url3 %}
+                {% assign title = se_stts.artist_name3 %}
+                {% assign song = se_stts.song_name3 %}
+                {% assign grid_link = se_stts.grid_link3 %}
+            {% elsif i == 4 %}
+                {% assign video_url = se_stts.video_url4 %}
+                {% assign title = se_stts.artist_name4 %}
+                {% assign song = se_stts.song_name4 %}
+                {% assign grid_link = se_stts.grid_link4 %}
+            {% elsif i == 5 %}
+                {% assign video_url = se_stts.video_url5 %}
+                {% assign title = se_stts.artist_name5 %}
+                {% assign song = se_stts.song_name5 %}
+                {% assign grid_link = se_stts.grid_link5 %}
+            {% elsif i == 6 %}
+                {% assign video_url = se_stts.video_url6 %}
+                {% assign title = se_stts.artist_name6 %}
+                {% assign song = se_stts.song_name6 %}
+                {% assign grid_link = se_stts.grid_link6 %}
+            {% elsif i == 7 %}
+                {% assign video_url = se_stts.video_url7 %}
+                {% assign title = se_stts.artist_name7 %}
+                {% assign song = se_stts.song_name7 %}
+                {% assign grid_link = se_stts.grid_link7 %}
+            {% elsif i == 8 %}
+                {% assign video_url = se_stts.video_url8 %}
+                {% assign title = se_stts.artist_name8 %}
+                {% assign song = se_stts.song_name8 %}
+                {% assign grid_link = se_stts.grid_link8 %}
+            {% elsif i == 9 %}
+                {% assign video_url = se_stts.video_url9 %}
+                {% assign title = se_stts.artist_name9 %}
+                {% assign song = se_stts.song_name9 %}
+                {% assign grid_link = se_stts.grid_link9 %}
+            {% elsif i == 10 %}
+                {% assign video_url = se_stts.video_url10 %}
+                {% assign title = se_stts.artist_name10 %}
+                {% assign song = se_stts.song_name10 %}
+                {% assign grid_link = se_stts.grid_link10 %}
+            {% elsif i == 11 %}
+                {% assign video_url = se_stts.video_url11 %}
+                {% assign title = se_stts.artist_name11 %}
+                {% assign song = se_stts.song_name11 %}
+                {% assign grid_link = se_stts.grid_link11 %}
+            {% elsif i == 12 %}
+                {% assign video_url = se_stts.video_url12 %}
+                {% assign title = se_stts.artist_name12 %}
+                {% assign song = se_stts.song_name12 %}
+                {% assign grid_link = se_stts.grid_link12 %}
+            {% elsif i == 13 %}
+                {% assign video_url = se_stts.video_url13 %}
+                {% assign title = se_stts.artist_name13 %}
+                {% assign song = se_stts.song_name13 %}
+                {% assign grid_link = se_stts.grid_link13 %}
+            {% elsif i == 14 %}
+                {% assign video_url = se_stts.video_url14 %}
+                {% assign title = se_stts.artist_name14 %}
+                {% assign song = se_stts.song_name14 %}
+                {% assign grid_link = se_stts.grid_link14 %}
+            {% elsif i == 15 %}
+                {% assign video_url = se_stts.video_url15 %}
+                {% assign title = se_stts.artist_name15 %}
+                {% assign song = se_stts.song_name15 %}
+                {% assign grid_link = se_stts.grid_link15 %}
+            {% endif %}
+            <div class="sk-session-grid-video post_2 post-thumbnail pr oh col-lg-{{col}} col-md-{{col_tb}} col-{{col_mb}}">
+                {%- if video_url != video_none and video_url != "" -%}
+                    {% assign video_id = video_url | remove: "https://youtu.be/" %}
+                    {% assign url = video_url | remove: "https://youtu.be/" | prepend: "embed/" | prepend: "//www.youtube.com/" | append: "?autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1&rel=0&autohide=1&enablejsapi=1&playlist=" | append: video_id %}
+                    <a class="sendero-session-link" href="{{grid_link}}" target="_blank">
+                        <div class="sk-session-grid-indiv-container">
+                        <iframe width="100%" height="100%" src="{{url}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>     
+                        </iframe>  
+                        <h3 class="sendero-session-title">{{title}}</h3>
+                        <h5 class="sk-session-group-sub-title">"{{song}}"</h5>
+                        <div class="sendero-session-overlay"></div>
+                        </div>
+                    </a>
+                {%- endif -%}
+            </div>
+        {% endfor %}
+    </div>
+</div>
+   
+
+  {%- style -%}
+.no-gutters {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+.no-gutters .post-thumbnail {
+    padding-right: 0;
+    padding-left: 0;
+}
+{%- assign overlay = se_stts.overlay | divided_by: 100.0 -%}
+.nt_se_{{sid}} .post-thumbnail>div {
+    background: {{ se_stts.bg | color_modify: 'alpha', overlay }};
+    padding: 20px;
+    bottom: 0;
+}
+.nt_se_{{sid}} .post-thumbnail a:not(:hover),.nt_se_{{sid}} .post-thumbnail .post-meta .cw {
+    color: {{ se_stts.cl}};
+}
+.nt_se_{{sid}} .post-thumbnail .post-meta,
+.nt_se_{{sid}} .post-thumbnail .post-time {
+  color: {{ se_stts.cl2}};
+}
+{%- endstyle -%}
+{%- style -%}
+      .nt_se_{{sid}} .txt_col_img p {
+        font-size: {{fs_arr[1]}}px;
+{%- endstyle -%}
+
+{%- render 'section_css' -%}
+
+{%- schema -%}
+  {
+    "name": "sk-session-group-grid",
+    "class": "nt_section type_image_text",
+    "settings": [
+    {
+        "type": "header",
+        "content": "== General Settings"
+      },
+      {
+        "id": "page1",
+        "type": "page",
+        "label": "Page link"
+      },
+    {
+      "type": "select",
+      "id": "source1",
+      "label": "Source Video:",
+      "default": "1",
+      "options": [
+        {
+          "value": "1",
+          "label": "Youtube"
+        },
+        {
+          "value": "2",
+          "label": "Upload file"
+        }
+      ]
+    },
+    {
+       "id": "video_url1",
+       "type": "video_url",
+       "label": "1. Video URL",
+       "accept": ["youtube"],
+       "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+       "info": "To remove video block, insert url: https://www.youtube.com/watch?v=_9VUPq3SxOc"
+    },
+    {
+      "id": "grid_link1",
+      "type": "text",
+      "label": "Link on click:",
+      "default": "#"
+    },
+    {
+        "type": "text",
+        "id": "artist_name1",
+        "label": "Artist Name"
+      },
+      {
+        "type": "text",
+        "id": "song_name1",
+        "label": "Song Name"
+      },
+      {
+        "id": "page2",
+        "type": "page",
+        "label": "Page link"
+      },
+
+    {
+      "type": "select",
+      "id": "source2",
+      "label": "Source Video:",
+      "default": "1",
+      "options": [
+        {
+          "value": "1",
+          "label": "Youtube"
+        },
+        {
+          "value": "2",
+          "label": "Upload file"
+        }
+      ]
+    },
+    {
+       "id": "video_url2",
+       "type": "video_url",
+       "label": "1. Video URL",
+       "accept": ["youtube"],
+       "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+       "info": "To remove video block, insert url: https://www.youtube.com/watch?v=_9VUPq3SxOc"
+    },
+    {
+      "id": "grid_link2",
+      "type": "text",
+      "label": "Link on click:",
+      "default": "#"
+    },
+    {
+        "type": "text",
+        "id": "artist_name2",
+        "label": "Artist Name"
+      },
+      {
+        "type": "text",
+        "id": "song_name2",
+        "label": "Song Name"
+      },
+      {
+        "id": "page3",
+        "type": "page",
+        "label": "Page link"
+      },
+    {
+      "type": "select",
+      "id": "source3",
+      "label": "Source Video:",
+      "default": "1",
+      "options": [
+        {
+          "value": "1",
+          "label": "Youtube"
+        },
+        {
+          "value": "2",
+          "label": "Upload file"
+        }
+      ]
+    },
+    {
+       "id": "video_url3",
+       "type": "video_url",
+       "label": "1. Video URL",
+       "accept": ["youtube"],
+       "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+       "info": "To remove video block, insert url: https://www.youtube.com/watch?v=_9VUPq3SxOc"
+    },
+    {
+      "id": "grid_link3",
+      "type": "text",
+      "label": "Link on click:",
+      "default": "#"
+    },
+    {
+        "type": "text",
+        "id": "artist_name3",
+        "label": "Artist Name"
+      },
+      {
+        "type": "text",
+        "id": "song_name3",
+        "label": "Song Name"
+      },
+      {
+        "id": "page4",
+        "type": "page",
+        "label": "Page link"
+      },
+
+    {
+      "type": "select",
+      "id": "source4",
+      "label": "Source Video:",
+      "default": "1",
+      "options": [
+        {
+          "value": "1",
+          "label": "Youtube"
+        },
+        {
+          "value": "2",
+          "label": "Upload file"
+        }
+      ]
+    },
+    {
+       "id": "video_url4",
+       "type": "video_url",
+       "label": "1. Video URL",
+       "accept": ["youtube"],
+       "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+       "info": "To remove video block, insert url: https://www.youtube.com/watch?v=_9VUPq3SxOc"
+    },
+    {
+      "id": "grid_link4",
+      "type": "text",
+      "label": "Link on click:",
+      "default": "#"
+    },
+    {
+        "type": "text",
+        "id": "artist_name4",
+        "label": "Artist Name"
+      },
+      {
+        "type": "text",
+        "id": "song_name4",
+        "label": "Song Name"
+      },
+      {
+        "id": "page5",
+        "type": "page",
+        "label": "Page link"
+      },
+    {
+      "type": "select",
+      "id": "source5",
+      "label": "Source Video:",
+      "default": "1",
+      "options": [
+        {
+          "value": "1",
+          "label": "Youtube"
+        },
+        {
+          "value": "2",
+          "label": "Upload file"
+        }
+      ]
+    },
+    {
+       "id": "video_url5",
+       "type": "video_url",
+       "label": "1. Video URL",
+       "accept": ["youtube"],
+       "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+       "info": "To remove video block, insert url: https://www.youtube.com/watch?v=_9VUPq3SxOc"
+    },
+    {
+      "id": "grid_link5",
+      "type": "text",
+      "label": "Link on click:",
+      "default": "#"
+    },
+    {
+        "type": "text",
+        "id": "artist_name5",
+        "label": "Artist Name"
+      },
+      {
+        "type": "text",
+        "id": "song_name5",
+        "label": "Song Name"
+      },
+      {
+        "id": "page6",
+        "type": "page",
+        "label": "Page link"
+      },
+
+    {
+      "type": "select",
+      "id": "source6",
+      "label": "Source Video:",
+      "default": "1",
+      "options": [
+        {
+          "value": "1",
+          "label": "Youtube"
+        },
+        {
+          "value": "2",
+          "label": "Upload file"
+        }
+      ]
+    },
+    {
+       "id": "video_url6",
+       "type": "video_url",
+       "label": "1. Video URL",
+       "accept": ["youtube"],
+       "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+       "info": "To remove video block, insert url: https://www.youtube.com/watch?v=_9VUPq3SxOc"
+    },
+    {
+      "id": "grid_link6",
+      "type": "text",
+      "label": "Link on click:",
+      "default": "#"
+    },
+    {
+        "type": "text",
+        "id": "artist_name6",
+        "label": "Artist Name"
+      },
+      {
+        "type": "text",
+        "id": "song_name6",
+        "label": "Song Name"
+      },
+      {
+        "id": "page7",
+        "type": "page",
+        "label": "Page link"
+      },
+    {
+      "type": "select",
+      "id": "source7",
+      "label": "Source Video:",
+      "default": "1",
+      "options": [
+        {
+          "value": "1",
+          "label": "Youtube"
+        },
+        {
+          "value": "2",
+          "label": "Upload file"
+        }
+      ]
+    },
+    {
+       "id": "video_url7",
+       "type": "video_url",
+       "label": "1. Video URL",
+       "accept": ["youtube"],
+       "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+       "info": "To remove video block, insert url: https://www.youtube.com/watch?v=_9VUPq3SxOc"
+    },
+    {
+      "id": "grid_link7",
+      "type": "text",
+      "label": "Link on click:",
+      "default": "#"
+    },
+    {
+        "type": "text",
+        "id": "artist_name7",
+        "label": "Artist Name"
+      },
+      {
+        "type": "text",
+        "id": "song_name7",
+        "label": "Song Name"
+      },
+      {
+        "id": "page8",
+        "type": "page",
+        "label": "Page link"
+      },
+    {
+      "type": "select",
+      "id": "source8",
+      "label": "Source Video:",
+      "default": "1",
+      "options": [
+        {
+          "value": "1",
+          "label": "Youtube"
+        },
+        {
+          "value": "2",
+          "label": "Upload file"
+        }
+      ]
+    },
+    {
+       "id": "video_url8",
+       "type": "video_url",
+       "label": "1. Video URL",
+       "accept": ["youtube"],
+       "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+       "info": "To remove video block, insert url: https://www.youtube.com/watch?v=_9VUPq3SxOc"
+    },
+    {
+      "id": "grid_link8",
+      "type": "text",
+      "label": "Link on click:",
+      "default": "#"
+    },
+    {
+        "type": "text",
+        "id": "artist_name8",
+        "label": "Artist Name"
+      },
+      {
+        "type": "text",
+        "id": "song_name8",
+        "label": "Song Name"
+      },
+      {
+        "id": "video_url9",
+        "type": "video_url",
+        "label": "1. Video URL",
+        "accept": ["youtube"],
+        "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "info": "To remove video block, insert url: https://www.youtube.com/watch?v=_9VUPq3SxOc"
+     },
+     {
+      "id": "grid_link9",
+      "type": "text",
+      "label": "Link on click:",
+      "default": "#"
+    },
+     {
+         "type": "text",
+         "id": "artist_name9",
+         "label": "Artist Name"
+       },
+       {
+         "type": "text",
+         "id": "song_name9",
+         "label": "Song Name"
+       },
+       {
+        "id": "video_url10",
+        "type": "video_url",
+        "label": "1. Video URL",
+        "accept": ["youtube"],
+        "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "info": "To remove video block, insert url: https://www.youtube.com/watch?v=_9VUPq3SxOc"
+     },
+     {
+      "id": "grid_link10",
+      "type": "text",
+      "label": "Link on click:",
+      "default": "#"
+    },
+     {
+         "type": "text",
+         "id": "artist_name10",
+         "label": "Artist Name"
+       },
+       {
+         "type": "text",
+         "id": "song_name10",
+         "label": "Song Name"
+       },
+       {
+        "id": "video_url11",
+        "type": "video_url",
+        "label": "1. Video URL",
+        "accept": ["youtube"],
+        "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "info": "To remove video block, insert url: https://www.youtube.com/watch?v=_9VUPq3SxOc"
+     },
+     {
+      "id": "grid_link11",
+      "type": "text",
+      "label": "Link on click:",
+      "default": "#"
+    },
+     {
+         "type": "text",
+         "id": "artist_name11",
+         "label": "Artist Name"
+       },
+       {
+         "type": "text",
+         "id": "song_name11",
+         "label": "Song Name"
+       },
+       {
+        "id": "video_url12",
+        "type": "video_url",
+        "label": "1. Video URL",
+        "accept": ["youtube"],
+        "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "info": "To remove video block, insert url: https://www.youtube.com/watch?v=_9VUPq3SxOc"
+     },
+     {
+      "id": "grid_link12",
+      "type": "text",
+      "label": "Link on click:",
+      "default": "#"
+    },
+     {
+         "type": "text",
+         "id": "artist_name12",
+         "label": "Artist Name"
+       },
+       {
+         "type": "text",
+         "id": "song_name12",
+         "label": "Song Name"
+       },
+       {
+        "id": "video_url13",
+        "type": "video_url",
+        "label": "1. Video URL",
+        "accept": ["youtube"],
+        "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "info": "To remove video block, insert url: https://www.youtube.com/watch?v=_9VUPq3SxOc"
+     },
+     {
+      "id": "grid_link13",
+      "type": "text",
+      "label": "Link on click:",
+      "default": "#"
+    },
+     {
+         "type": "text",
+         "id": "artist_name13",
+         "label": "Artist Name"
+       },
+       {
+         "type": "text",
+         "id": "song_name13",
+         "label": "Song Name"
+       },
+       {
+        "id": "video_url14",
+        "type": "video_url",
+        "label": "1. Video URL",
+        "accept": ["youtube"],
+        "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "info": "To remove video block, insert url: https://www.youtube.com/watch?v=_9VUPq3SxOc"
+     },
+     {
+      "id": "grid_link14",
+      "type": "text",
+      "label": "Link on click:",
+      "default": "#"
+    },
+     {
+         "type": "text",
+         "id": "artist_name14",
+         "label": "Artist Name"
+       },
+       {
+         "type": "text",
+         "id": "song_name14",
+         "label": "Song Name"
+       },
+       {
+        "id": "video_url15",
+        "type": "video_url",
+        "label": "1. Video URL",
+        "accept": ["youtube"],
+        "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "info": "To remove video block, insert url: https://www.youtube.com/watch?v=_9VUPq3SxOc"
+     },
+     {
+      "id": "grid_link15",
+      "type": "text",
+      "label": "Link on click:",
+      "default": "#"
+    },
+     {
+         "type": "text",
+         "id": "artist_name15",
+         "label": "Artist Name"
+       },
+       {
+         "type": "text",
+         "id": "song_name15",
+         "label": "Song Name"
+       },
+      {
+        "type": "select",
+        "id": "date",
+        "options": [
+          {
+            "value": "abbreviated_date",
+            "label": "Apr 19, 1994"
+          },
+          {
+            "value": "basic",
+            "label": "4/19/1994"
+          },
+          {
+            "value": "date",
+            "label": "April 19, 1994"
+          }
+        ],
+        "label": "Date format",
+        "info":"different format options display for various languages.",
+        "default": "date"
+      },
+      {
+        "type": "select",
+        "id": "col_pr",
+        "label": "Articles columns (desktop)",
+        "info": "How many articles you want to show per row",
+        "default": "4",
+        "options": [
+          {
+            "value": "6",
+            "label": "2"
+          },
+          {
+            "value": "4",
+            "label": "3"
+          },
+          {
+            "value": "3",
+            "label": "4"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "col_pr_tb",
+        "label": "Articles columns (tablet)",
+        "default": "4",
+        "options": [
+          {
+            "value": "6",
+            "label": "2"
+          },
+          {
+            "value": "4",
+            "label": "3"
+          },
+          {
+            "value": "3",
+            "label": "4"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "col_pr_mb",
+        "label": "Articles columns (mobile)",
+        "default": "12",
+        "options": [
+          {
+            "value": "12",
+            "label": "1"
+          },
+          {
+            "value": "6",
+            "label": "2"
+          }
+        ]
+      },
+      {
+        "type": "checkbox",
+        "id": "show_au",
+        "label": "Show author?",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "show_dt",
+        "label": "Show date?",
+        "default": true
+      },
+      {
+        "type": "header",
+        "content": "== Slider Settings"
+      },
+      {
+        "type": "checkbox",
+        "id": "loop",
+        "label": "Use Loop?",
+        "info": "At the end of cells, wrap-around to the other end for infinite scrolling.",
+        "default": false
+      },
+      {
+        "type": "range",
+        "id": "au_time",
+        "min": 0,
+        "max": 30,
+        "step": 0.5,
+        "label": "Autoplay Speed in second.",
+        "info": "Set is '0' to disable autoplay.",
+        "unit": "sec",
+        "default": 0
+      },
+      {
+        "type": "checkbox",
+        "id": "au_hover",
+        "label": "Pause Autoplay On Hover?",
+        "info": "Auto-playing will pause when the user hovers over the carousel.",
+        "default": true
+      },
+      {
+        "type": "header",
+        "content": "== Prev Next Button, Page Dot Settings"
+      },
+      {
+        "type": "paragraph",
+        "content": "—————————————————"
+      },
+      {
+        "type": "paragraph",
+        "content": "Prev Next Button:"
+      },
+      {
+        "type": "checkbox",
+        "id": "button",
+        "label": "Enable Prev Next Button?",
+        "info": "Creates and enables previous & next buttons.",
+        "default": true
+      },
+      {
+        "type": "select",
+        "id": "btn_vi",
+        "label": "Visible:",
+        "default": "1",
+        "options": [
+          {
+            "value": "1",
+            "label": "always"
+          },
+          {
+            "value": "2",
+            "label": "Only hover"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "btn_owl",
+        "label": "Style",
+        "default": "1",
+        "options": [
+          {
+            "value": "1",
+            "label": "Style 1"
+          },
+          {
+            "value": "2",
+            "label": "Style 2"
+          },
+          {
+            "value": "3",
+            "label": "Style 3"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "btn_color",
+        "label": "Color",
+        "default": "0",
+        "options": [
+          {
+            "value": "0",
+            "label": "Transparent"
+          },
+          {
+            "value": "1",
+            "label": "Gray"
+          },
+          {
+            "value": "2",
+            "label": "White"
+          },
+          {
+            "value": "3",
+            "label": "Primary"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": "—————————————————"
+      },
+      {
+        "type": "paragraph",
+        "content": "Page Dot:"
+      },
+      {
+        "type": "checkbox",
+        "id": "dot",
+        "label": "Enable Page Dot?",
+        "info": "Creates and enables page dots.",
+        "default": false
+      },
+      {
+        "type": "select",
+        "id": "dot_owl",
+        "label": "Style",
+        "default": "1",
+        "options": [
+          {
+            "value": "1",
+            "label": "Style 1"
+          },
+          {
+            "value": "2",
+            "label": "Style 2"
+          },
+          {
+            "value": "3",
+            "label": "Style 3"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "dot_color",
+        "label": "Color",
+        "default": "1",
+        "options": [
+          {
+            "value": "1",
+            "label": "Dark"
+          },
+          {
+            "value": "2",
+            "label": "Light"
+          },
+          {
+            "value": "3",
+            "label": "Primary"
+          }
+        ]
+      },
+      {
+        "type": "header",
+        "content": "== Color Articles Design"
+      },
+      {
+        "type": "color",
+        "id": "cl",
+        "label": "Color Text",
+        "default": "#fff"
+      },
+      {
+        "type": "color",
+        "id": "cl2",
+        "label": "Color Text 2",
+        "default": "#878787"
+      },
+      {
+        "type": "color",
+        "id": "bg",
+        "label": "Background color",
+        "default": "#000"
+      },
+      {
+        "type": "range",
+        "id": "overlay",
+        "label": "Background Opacity",
+        "default": 80,
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "%"
+      },
+      {
+        "type": "header",
+        "content": "== Design Image"
+      },
+      {
+        "type": "checkbox",
+        "id": "use_eq_height",
+        "label": "Use equal height images?",
+        "default": true
+      },
+      {
+        "type": "select",
+        "id": "image_ratio",
+        "label": "Aspect Ratio",
+        "default": "ratio4_3",
+        "info": "Aspect Ratio Custom will settings in General panel.",
+        "options": [
+          {
+            "group": "Landscape",
+            "value": "ratio2_1",
+            "label": "2:1"
+          },
+          {
+            "group": "Landscape",
+            "value": "ratio16_9",
+            "label": "16:9"
+          },
+          {
+            "group": "Landscape",
+            "value": "ratio8_5",
+            "label": "8:5"
+          },
+          {
+            "group": "Landscape",
+            "value": "ratio3_2",
+            "label": "3:2"
+          },
+          {
+            "group": "Landscape",
+            "value": "ratio4_3",
+            "label": "4:3"
+          },
+          {
+            "group": "Landscape",
+            "value": "ratio_nt",
+            "label": "Ratio ASOS"
+          },
+          {
+            "group": "Squared",
+            "value": "ratio1_1",
+            "label": "1:1"
+          },
+          {
+            "group": "Portrait",
+            "value": "ratio2_3",
+            "label": "2:3"
+          },
+          {
+            "group": "Portrait",
+            "value": "ratio1_2",
+            "label": "1:2"
+          },
+          {
+            "group": "Custom",
+            "value": "ratio_cus1",
+            "label": "Ratio Custom 1"
+          },
+          {
+            "group": "Custom",
+            "value": "ratio_cus2",
+            "label": "Ratio Custom 2"
+          },
+          {
+            "group": "Custom",
+            "value": "ratio_cus3",
+            "label": "Ratio Custom 3"
+          },
+          {
+            "group": "Custom",
+            "value": "ratio_cus4",
+            "label": "Ratio Custom 4"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "image_size",
+        "label": "Image Size",
+        "default": "nt_cover",
+        "options": [
+          {
+            "value": "nt_cover",
+            "label": "Full"
+          },
+          {
+            "value": "nt_contain",
+            "label": "Auto"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "image_position",
+        "info": "The first value is the horizontal position and the second value is the vertical.",
+        "options": [
+          {
+            "value": "default",
+            "label": "Default"
+          },
+          {
+            "value": "1",
+            "label": "Left Top"
+          },
+          {
+            "value": "2",
+            "label": "Left Center"
+          },
+          {
+            "value": "3",
+            "label": "Left Bottom"
+          },
+          {
+            "value": "4",
+            "label": "Right Top"
+          },
+          {
+            "value": "5",
+            "label": "Right Center"
+          },
+          {
+            "value": "6",
+            "label": "Right Bottom"
+          },
+          {
+            "value": "7",
+            "label": "Center Top"
+          },
+          {
+            "value": "8",
+            "label": "Center Center"
+          },
+          {
+            "value": "9",
+            "label": "Center Bottom"
+          }
+        ],
+        "label": "Image Position",
+        "default": "8"
+      },
+      {
+        "type": "header",
+        "content": "== Design Options"
+      },
+      {
+        "type": "select",
+        "id": "layout",
+        "default": "nt_full",
+        "options": [
+         {
+            "value": "container",
+            "label": "Container"
+         },
+         {
+            "value": "nt_full",
+            "label": "Full Width"
+          }
+        ],
+        "label": "Layout"
+      },
+      {
+        "type": "header",
+        "content": "== image Settings"
+      },
+      {
+         "type": "image_picker",
+         "id": "image",
+         "label": "Image"
+       },
+      {
+        "type": "select",
+        "id": "img_align",
+        "default": "center",
+        "options": [
+         {
+            "value": "top",
+            "label": "Top"
+         },
+         {
+            "value": "center",
+            "label": "Middle"
+         },
+         {
+            "value": "bottom",
+            "label": "Bottom"
+         }
+        ],
+        "label": "Image alignment",
+        "info":"Not active when enable Adapt to image"
+      },
+      {
+       "type": "select",
+       "id": "img_position",
+       "options": [
+        {
+           "value": "1",
+           "label": "Left"
+         },
+         {
+           "value": "2",
+           "label": "Right"
+         }
+       ],
+       "label": "Image position",
+       "default": "1"
+      },
+      
+      {
+        "type": "header",
+        "content": "== Text Settings"
+      },
+      {
+        "type": "select",
+        "id": "text_size2",
+        "label": "Text size",
+        "default": "30,14",
+        "options": [
+          {
+            "value": "24,12",
+            "label": "Small"
+          },
+          {
+            "value": "30,14",
+            "label": "Medium"
+          },
+          {
+            "value": "40,16",
+            "label": "Large"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Image with text"
+      },
+      {
+        "type": "text",
+        "id": "subtitle1",
+        "label": "Subtitle",
+        "default": "OUR QUALITY GUARANTEE"
+      },
+      {
+        "type": "text",
+        "id": "subtitle2",
+        "label": "Subtitle",
+        "default": "SUSTAINABLY SOURCED"
+      },
+      {
+        "type": "text",
+        "id": "subtitle3",
+        "label": "Subtitle",
+        "default": "NATURAL MATERIALS"
+      },
+      {
+        "type": "richtext",
+        "id": "text1",
+        "label": "Text",
+        "default": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>"
+      },
+      {
+        "type": "richtext",
+        "id": "text2",
+        "label": "Text",
+        "default": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>"
+      },
+      {
+        "type": "richtext",
+        "id": "text3",
+        "label": "Text",
+        "default": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>"
+      },
+      {
+        "type": "text",
+        "id": "button_label",
+        "label": "Button label",
+        "default": "Shop Now"
+      },
+      {
+        "type": "url",
+        "id": "button_link",
+        "label": "Button link (Optional)"
+      },
+      {
+        "type": "select",
+        "id": "open_link",
+        "options": [
+          {
+            "value": "_self",
+            "label": "Current window (_self)"
+          },
+         {
+            "value": "_blank",
+            "label": "New window (_blank)"
+          }
+        ],
+        "label": "Open link in",
+        "default": "_blank"
+      },
+      {
+       "type": "select",
+       "id": "txt_align",
+       "options": [
+        {
+           "value": "tl",
+           "label": "Left"
+         },
+         {
+           "value": "tc",
+           "label": "Center"
+         },
+         {
+           "value": "tr",
+           "label": "Right"
+         }
+       ],
+       "label": "Text alignment",
+       "default": "tc"
+      },
+      {
+        "type": "header",
+        "content": "== Color"
+      },
+      {
+        "type": "checkbox",
+        "id": "use_shadow",
+        "label": "Use text shadow?",
+        "default": false
+      },
+      {
+        "type": "select",
+        "id": "cl_txt",
+        "options": [
+         {
+            "value": "dark",
+            "label": "Dark"
+         },
+         {
+            "value": "light",
+            "label": "Light"
+          }
+        ],
+        "label": "Text"
+      },
+      {
+        "type": "header",
+        "content": "== Design Options"
+      },
+      
+      {
+        "type": "text",
+        "id": "mg",
+        "label": "Margin",
+        "info":"Margin top, margin right, margin bottom, margin left. If you not use to blank",
+        "default": "50px,,50px,",
+        "placeholder": "50px,,50px,"
+      },
+      {
+        "type": "text",
+        "id": "pd",
+        "label": "Padding",
+        "info":"Padding top, padding right, padding bottom, padding left. If you not use to blank",
+        "placeholder": "50px,,50px,"
+      },
+     {
+        "type": "header",
+        "content": "== Design Mobile Options"
+      },
+      {
+        "type": "text",
+        "id": "mg_mb",
+        "label": "Margin",
+        "placeholder": "50px,,50px,"
+      },
+      {
+        "type": "text",
+        "id": "pd_mb",
+        "label": "Padding",
+        "placeholder": "50px,,50px,"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Image with text",
+        "category": "III. Image"
+      }
+    ]
+  }
+{% endschema %}

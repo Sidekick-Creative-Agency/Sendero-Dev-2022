@@ -7,7 +7,8 @@
    assign show_search_suggest = settings.show_search_suggest
    assign on_sale_txt = 'products.product.on_sale' | t
    assign save_js = 'products.product.save_js' | t: saved_amount:'saved_amount' -%}
-   
+
+
 <div class="nt_mini_cart flex column h__100">
 	<div class="mini_cart_header flex fl_between al_center"><h3 class="widget-title tu fs__16 mg__0">{{ 'general.search.title' | t }}</h3><i class="close_pp pegk pe-7s-close ts__03 cd"></i></div>
 	<div class="mini_cart_wrap">
@@ -17,10 +18,11 @@
 			<input type="hidden" name="options[prefix]" value="last">
          {%- if shop.types[0] == blank and shop.types.size == 1 %}{% assign check = false %}{% endif -%}
 			{%- if settings.filter_type_search and shop.types.size > 0 and check -%}
+			
          <div class="frm_search_cat mb__20">
              <select name="product_type">
                <option value="*">{{ 'general.search.all_cat' | t }}</option>
-               {%- for product_type in shop.types -%}{%- if product_type == blank %}{% continue-%}{% endif -%}<option value="{{product_type}}"{% if search_pr_type == product_type %} selected="selected"{% endif %}>{{product_type}}</option>{%- endfor -%}
+               {%- for product_type in shop.types -%}{%- if product_type == "Dissolve" or product_type == "dissolve" or product_type == "DISSOLVE" or product_type == blank %}{% continue-%}{% endif -%}<option value="{{product_type}}"{% if search_pr_type == product_type %} selected="selected"{% endif %}>{{product_type | capitalize }}</option>{%- endfor -%}
              </select>
          </div>
          {%- endif -%}

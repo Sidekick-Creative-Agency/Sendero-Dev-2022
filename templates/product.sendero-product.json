@@ -62,11 +62,6 @@
         "des": {
           "type": "des",
           "settings": {
-            "des": "2",
-            "text": "",
-            "length": 45,
-            "readm": true,
-            "readm_txt": "Read more"
           }
         },
         "social": {
@@ -86,6 +81,7 @@
         "social"
       ],
       "settings": {
+        "auto": false,
         "pr_layout": "default",
         "design_products": "4",
         "size_img_pr": "2",
@@ -100,8 +96,7 @@
         "pr_sidebar": "none",
         "pr_size_sidebar": "2",
         "breadcrumb_pr": true,
-        "back_next_pr": true,
-        "auto": false
+        "back_next_pr": true
       }
     },
     "product-description": {

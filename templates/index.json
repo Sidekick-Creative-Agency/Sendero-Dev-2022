@@ -746,13 +746,23 @@
             "pos": "",
             "rating": 5
           }
+        },
+        "e280a9e2-49bc-4e86-b85e-8114d46c4f30": {
+          "type": "quote",
+          "settings": {
+            "content": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "title": "Author's name",
+            "pos": "",
+            "rating": 5
+          }
         }
       },
       "block_order": [
         "16492547288c7ba69e-0",
         "16492547288c7ba69e-1",
         "16492547288c7ba69e-2",
-        "435bcdce-546c-4827-add9-dd12a7c1c30c"
+        "435bcdce-546c-4827-add9-dd12a7c1c30c",
+        "e280a9e2-49bc-4e86-b85e-8114d46c4f30"
       ],
       "settings": {
         "title": "DON'T JUST TAKE OUR WORD FOR IT",
@@ -778,7 +788,7 @@
         "use_pr": false,
         "layout": "container",
         "cl_bg": "",
-        "mg": "50px,,50px,",
+        "mg": "100px,,50px,",
         "pd": "",
         "mg_mb": "",
         "pd_mb": ""
@@ -868,7 +878,7 @@
         "image_position": "8",
         "layout": "container",
         "cl_bg": "#ffffff",
-        "mg": "200px,,200px,",
+        "mg": "100px,,200px,",
         "pd": "",
         "mg_mb": "",
         "pd_mb": ""

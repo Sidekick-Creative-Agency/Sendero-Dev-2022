@@ -7,97 +7,248 @@
     assign source2 = se_stts.source2
     assign source3 = se_stts.source3
     assign source4 = se_stts.source4
-    assign url1 = se_stts.video_url1 | remove: "https://youtu.be/" | prepend: "embed/" | prepend: "//www.youtube.com/" | append: "?autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1" 
-    assign url2 = se_stts.video_url2 | remove: "https://youtu.be/" | prepend: "embed/" | prepend: "//www.youtube.com/" | append: "?autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1" 
-    assign url3 = se_stts.video_url3 | remove: "https://youtu.be/" | prepend: "embed/" | prepend: "//www.youtube.com/" | append: "?autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1" 
-    assign url4 = se_stts.video_url4 | remove: "https://youtu.be/" | prepend: "embed/" | prepend: "//www.youtube.com/" | append: "?autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1" 
+    assign source5 = se_stts.source5
+    assign source6 = se_stts.source6
+    assign source7 = se_stts.source7
+    assign source8 = se_stts.source8
+    assign source9 = se_stts.source9
+    assign source10 = se_stts.source10
+
+    assign video_id = se_stts.video_url1 | remove: "https://youtu.be/"
+    assign url1 = se_stts.video_url1 | remove: "https://youtu.be/" | prepend: "embed/" | prepend: "//www.youtube.com/" | append: "?autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1&rel=0&autohide=1&enablejsapi=1&playlist=" | append: video_id
+    assign video_id = se_stts.video_url2 | remove: "https://youtu.be/"
+    assign url2 = se_stts.video_url2 | remove: "https://youtu.be/" | prepend: "embed/" | prepend: "//www.youtube.com/" | append: "?autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1&rel=0&autohide=1&enablejsapi=1&playlist=" | append: video_id
+    assign video_id = se_stts.video_url3 | remove: "https://youtu.be/"
+    assign url3 = se_stts.video_url3 | remove: "https://youtu.be/" | prepend: "embed/" | prepend: "//www.youtube.com/" | append: "?autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1&rel=0&autohide=1&enablejsapi=1&playlist=" | append: video_id
+    assign video_id = se_stts.video_url4 | remove: "https://youtu.be/"
+    assign url4 = se_stts.video_url4 | remove: "https://youtu.be/" | prepend: "embed/" | prepend: "//www.youtube.com/" | append: "?autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1&rel=0&autohide=1&enablejsapi=1&playlist=" | append: video_id
+    assign video_id = se_stts.video_url5 | remove: "https://youtu.be/"
+    assign url5 = se_stts.video_url5 | remove: "https://youtu.be/" | prepend: "embed/" | prepend: "//www.youtube.com/" | append: "?autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1&rel=0&autohide=1&enablejsapi=1&playlist=" | append: video_id
+    assign video_id = se_stts.video_url6 | remove: "https://youtu.be/"
+    assign url6 = se_stts.video_url6 | remove: "https://youtu.be/" | prepend: "embed/" | prepend: "//www.youtube.com/" | append: "?autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1&rel=0&autohide=1&enablejsapi=1&playlist=" | append: video_id
+    assign video_id = se_stts.video_url7 | remove: "https://youtu.be/"
+    assign url7 = se_stts.video_url7 | remove: "https://youtu.be/" | prepend: "embed/" | prepend: "//www.youtube.com/" | append: "?autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1&rel=0&autohide=1&enablejsapi=1&playlist=" | append: video_id
+    assign video_id = se_stts.video_url8 | remove: "https://youtu.be/"
+    assign url8 = se_stts.video_url8 | remove: "https://youtu.be/" | prepend: "embed/" | prepend: "//www.youtube.com/" | append: "?autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1&rel=0&autohide=1&enablejsapi=1&playlist=" | append: video_id
+    assign video_id = se_stts.video_url9 | remove: "https://youtu.be/"
+    assign url9 = se_stts.video_url9 | remove: "https://youtu.be/" | prepend: "embed/" | prepend: "//www.youtube.com/" | append: "?autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1&rel=0&autohide=1&enablejsapi=1&playlist=" | append: video_id
+    assign video_id = se_stts.video_url10 | remove: "https://youtu.be/"
+    assign url10 = se_stts.video_url10 | remove: "https://youtu.be/" | prepend: "embed/" | prepend: "//www.youtube.com/" | append: "?autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1&rel=0&autohide=1&enablejsapi=1&playlist=" | append: video_id
+    assign url_none = "//www.youtube.com/embed/https://www.youtube.com/watch?v=_9VUPq3SxOc?autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1&rel=0&autohide=1&enablejsapi=1&playlist=https://www.youtube.com/watch?v=_9VUPq3SxOc"
+
     assign urltest = "https://www.youtube.com/embed?v=-2icZZ9tbwc?autoplay=1"
+
     assign image1 = se_stts.image1
     assign image2 = se_stts.image2
     assign image3 = se_stts.image3
     assign image4 = se_stts.image4
+    assign image5 = se_stts.image5
+    assign image6 = se_stts.image6
+    assign image7 = se_stts.image7
+    assign image8 = se_stts.image8
+    assign image9 = se_stts.image9
+    assign image10 = se_stts.image10
+
     assign link1 = se_stts.page1 
     assign link2 = se_stts.page2
     assign link3 = se_stts.page3
     assign link4 = se_stts.page4
+    assign link5 = se_stts.page5 
+    assign link6 = se_stts.page6
+    assign link7 = se_stts.page7
+    assign link8 = se_stts.page8
+    assign link9 = se_stts.page9 
+    assign link10 = se_stts.page10
+
+    assign title1 = se_stts.file_name1
+    assign title2 = se_stts.file_name2
+    assign title3 = se_stts.file_name3
+    assign title4 = se_stts.file_name4
+    assign title5 = se_stts.file_name5
+    assign title6 = se_stts.file_name6
+    assign title7 = se_stts.file_name7
+    assign title8 = se_stts.file_name8
+    assign title9 = se_stts.file_name9
+    assign title10 = se_stts.file_name10
+
+    assign sub_title1 = se_stts.file_sub_title1
+    assign sub_title2 = se_stts.file_sub_title2
+    assign sub_title3 = se_stts.file_sub_title3
+    assign sub_title4 = se_stts.file_sub_title4
+    assign sub_title5 = se_stts.file_sub_title5
+    assign sub_title6 = se_stts.file_sub_title6
+    assign sub_title7 = se_stts.file_sub_title7
+    assign sub_title8 = se_stts.file_sub_title8
+    assign sub_title9 = se_stts.file_sub_title9
+    assign sub_title10 = se_stts.file_sub_title10
     -%}
 
   <div class="sk-collection-top" style="margin-bottom: 100px;">
     <div class="row equal_nt auto al_center"></div>
       <div class="mobile-remove-left-padding col-md-6 txt_col_img" style="max-width: 100%; padding-right: 0">
-        <div class="container best-seller-img-container">
-          <div class="sk-best-seller-img-slider products nt_products_holder dot_owl_{{se_stts.dot_owl}} dot_color_{{se_stts.dot_color}} btn_vi_{{se_stts.btn_vi}} row row_pr_{{inc_pr}} cdt_des_{{se_stts.cdt_des}} round_cd_{{se_stts.round_cd}} js_carousel nt_slider {{se_stts.image_size}} {{se_stts.image_ratio}} position_{{se_stts.image_position}} space_{{se_stts.space}} prev_next_{{se_stts.btn_color}} btn_owl_{{se_stts.btn_owl}} dot_owl_{{se_stts.dot_owl}} dot_color_{{se_stts.dot_color}}{% if sett_equal %} equal_nt{% endif %}  is-draggable" data-flickityt4s-js='{"imagesLoaded": 0,"adaptiveHeight": 0, "contain": 1, "groupCells": "100%", "dragThreshold" : 5, "cellAlign": "left","wrapAround": true,"prevNextButtons": {{se_stts.button}},"percentPosition": 1,"pageDots": {{se_stts.dot}}, "autoPlay" : {{ se_stts.au_time | times: 1000 }}, "pauseAutoPlayOnHover" : {{se_stts.au_hover}}, "rightToLeft": {{settings.use_rtl}} }'>
-            
-          
-          
-            <button class="flickityt4s-button flickityt4s-prev-next-button previous" type="button" aria-label="Previous" style="z-index: 99999; visibility: visible;">
-                <svg class="flickityt4s-button-icon" viewBox="0 0 100 100">
-                    <path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="arrow" transform="translate(100, 100) rotate(180)"></path>
-                </svg>
-            </button>
-            <button class="flickityt4s-button flickityt4s-prev-next-button next" type="button" aria-label="Next" style="z-index: 99999;visibility: visible">
-                <svg class="flickityt4s-button-icon" viewBox="0 0 100 100">
-                    <path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="arrow"></path>
-                </svg>
-            </button>
-            {% if url1 or url2 or url3 or url4 %}
+        <div class="container best-seller-img-container sk-session-slider-container">
+          <div class="sk-best-seller-img-slider sk-session-slider products nt_products_holder dot_owl_{{se_stts.dot_owl}} dot_color_{{se_stts.dot_color}} btn_vi_{{se_stts.btn_vi}} row row_pr_{{inc_pr}} cdt_des_{{se_stts.cdt_des}} round_cd_{{se_stts.round_cd}} js_carousel nt_slider {{se_stts.image_size}} {{se_stts.image_ratio}} position_{{se_stts.image_position}} space_{{se_stts.space}} prev_next_{{se_stts.btn_color}} btn_owl_{{se_stts.btn_owl}} dot_owl_{{se_stts.dot_owl}} dot_color_{{se_stts.dot_color}} btn_vi_{{se_stts.btn_vi}}{% if sett_equal %} equal_nt{% endif %}" data-flickityt4s-js='{"imagesLoaded": 0,"adaptiveHeight": 0, "contain": 1, "groupCells": "100%", "dragThreshold" : 5, "cellAlign": "left","wrapAround": {{se_stts.loop}},"prevNextButtons": {{se_stts.button}},"percentPosition": 1,"pageDots": {{se_stts.dot}}, "autoPlay" : {{ se_stts.au_time | times: 1000 }}, "pauseAutoPlayOnHover" : {{se_stts.au_hover}}, "rightToLeft": {{settings.use_rtl}} }'>
+      
+            {% if url1 or url2 or url3 or url4 or url5 or url6 or url7 or url8 or url9 or url10 %}
 
-            {%- if url1  -%}
-            <a class="sendero-session-link" href="{{link1}}">
+            {%- if url1 != url_none -%}
+            
             <div class="sendero-session-slider-vid-container">
-                <iframe width="100%" height="100%" src="{{url1}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>     
+                <iframe width="100%" height="100%" src="{{url1}}" title="YouTube video player" frameborder="0" allow="loop; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>     
                 </iframe>  
-                  <h5 class="sendero-session-sub-title">WACO, TEXAS</h5>
+                <h5 class="sendero-session-sub-title">{{se_stts.file_sub_title1}}</h5>
                   <h3 class="sendero-session-title">{{se_stts.file_name1}}</h3>
-                  <div class="sendero-session-overlay"></div>
+                  <a class="sendero-session-link" href="{{link1}}">
+                    <div class="sendero-session-overlay"></div>
+                  </a>
             </div>
-        </a>
               {%- endif -%}
 
-              {%- if url2  -%}
-              <a class="sendero-session-link" href="{{link2}}">
+              {%- if url2 != url_none -%}
+
               <div class="sendero-session-slider-vid-container">
                 <iframe width="100%" height="100%" src="{{url2}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>     
                 </iframe>   
-              <h5 class="sendero-session-sub-title">WACO, TEXAS</h5>
+              <h5 class="sendero-session-sub-title">{{se_stts.file_sub_title2}}</h5>
               <h3 class="sendero-session-title">{{se_stts.file_name2}}</h3>
-              <div class="sendero-session-overlay"></div>
+              <a class="sendero-session-link" href="{{link2}}">
+                <div class="sendero-session-overlay"></div>
+              </a>
               </div>
-            </a>
+
               {%- endif -%}
 
-              {%- if url3  -%}
-              <a class="sendero-session-link" href="{{link3}}">
+              {%- if url3 != url_none  -%}
+
               <div class="sendero-session-slider-vid-container">
                 <iframe width="100%" height="100%" src="{{url3}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>     
                 </iframe>   
-              <h5 class="sendero-session-sub-title">WACO, TEXAS</h5>
+                <h5 class="sendero-session-sub-title">{{se_stts.file_sub_title3}}</h5>
               <h3 class="sendero-session-title">{{se_stts.file_name3}}</h3>
-              <div class="sendero-session-overlay"></div>
+              <a class="sendero-session-link" href="{{link3}}">
+                <div class="sendero-session-overlay"></div>
+              </a>
               </div>
-            </a>
+
               {%- endif -%}
 
-              {%- if url4  -%}
-              <a class="sendero-session-link" href="{{link4}}">
-              <div class="sendero-session-slider-vid-container">
-                <iframe width="100%" height="100%" src="{{url4}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>     
-                </iframe>      
-              <h5 class="sendero-session-sub-title">WACO, TEXAS</h5>
-              <h3 class="sendero-session-title">{{se_stts.file_name4}}</h3>
-              <div class="sendero-session-overlay"></div>
-            </div>
-        </a>
+              {%- if url4 != url_none  -%}
+
+                  <div class="sendero-session-slider-vid-container">
+                    <iframe width="100%" height="100%" src="{{url4}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>     
+                    </iframe>      
+                    <h5 class="sendero-session-sub-title">{{se_stts.file_sub_title4}}</h5>
+                    <h3 class="sendero-session-title">{{se_stts.file_name4}}</h3>
+                    <a class="sendero-session-link" href="{{link4}}">
+                      <div class="sendero-session-overlay"></div>
+                    </a>
+                  </div>
+
               {%- endif -%}  
 
+              {%- if url5 != url_none  -%}
+
+                  <div class="sendero-session-slider-vid-container">
+                    <iframe width="100%" height="100%" src="{{url5}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>     
+                    </iframe>      
+                    <h5 class="sendero-session-sub-title">{{se_stts.file_sub_title5}}</h5>
+                    <h3 class="sendero-session-title">{{se_stts.file_name5}}</h3>
+                    <a class="sendero-session-link" href="{{link5}}">
+                      <div class="sendero-session-overlay"></div>
+                    </a>
+                  </div>
+
+              {%- endif -%}  
+
+              {%- if url6 != url_none  -%}
+
+                  <div class="sendero-session-slider-vid-container">
+                    <iframe width="100%" height="100%" src="{{url6}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>     
+                    </iframe>      
+                    <h5 class="sendero-session-sub-title">{{se_stts.file_sub_title6}}</h5>
+                    <h3 class="sendero-session-title">{{se_stts.file_name6}}</h3>
+                    <a class="sendero-session-link" href="{{link6}}">
+                      <div class="sendero-session-overlay"></div>
+                    </a>
+                  </div>
+
+              {%- endif -%}  
+
+              {%- if url7 != url_none  -%}
+
+                  <div class="sendero-session-slider-vid-container">
+                    <iframe width="100%" height="100%" src="{{url7}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>     
+                    </iframe>      
+                    <h5 class="sendero-session-sub-title">{{se_stts.file_sub_title7}}</h5>
+                    <h3 class="sendero-session-title">{{se_stts.file_name7}}</h3>
+                    <a class="sendero-session-link" href="{{link7}}">
+                      <div class="sendero-session-overlay"></div>
+                    </a>
+                  </div>
+
+              {%- endif -%}  
+
+              {%- if url8 != url_none  -%}
+
+                  <div class="sendero-session-slider-vid-container">
+                    <iframe width="100%" height="100%" src="{{url8}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>     
+                    </iframe>      
+                    <h5 class="sendero-session-sub-title">{{se_stts.file_sub_title8}}</h5>
+                    <h3 class="sendero-session-title">{{se_stts.file_name8}}</h3>
+                    <a class="sendero-session-link" href="{{link8}}">
+                      <div class="sendero-session-overlay"></div>
+                    </a>
+                  </div>
+
+              {%- endif -%}  
+
+              {%- if url9 != url_none  -%}
+
+                  <div class="sendero-session-slider-vid-container">
+                    <iframe width="100%" height="100%" src="{{url9}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>     
+                    </iframe>      
+                    <h5 class="sendero-session-sub-title">{{se_stts.file_sub_title9}}</h5>
+                    <h3 class="sendero-session-title">{{se_stts.file_name9}}</h3>
+                    <a class="sendero-session-link" href="{{link9}}">
+                      <div class="sendero-session-overlay"></div>
+                    </a>
+                  </div>
+
+              {%- endif -%}  
+
+              {%- if url10 != url_none  -%}
+
+                  <div class="sendero-session-slider-vid-container">
+                    <iframe width="100%" height="100%" src="{{url10}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>     
+                    </iframe>      
+                    <h5 class="sendero-session-sub-title">{{se_stts.file_sub_title10}}</h5>
+                    <h3 class="sendero-session-title">{{se_stts.file_name10}}</h3>
+                    <a class="sendero-session-link" href="{{link10}}">
+                      <div class="sendero-session-overlay"></div>
+                    </a>
+                  </div>
+
+              {%- endif -%}  
+              
             {%- else -%}
               {%- for i in (1..8) -%}
                 <div class="pr_animated mt__30 pr_grid_item product nt_pr desgin__1 col-6 col-lg-3 col-md-3 done">
                   <div class="product-inner pr"><div class="product-image pr oh"><a class="db" href="/admin/products">{%- capture current -%}{%- cycle 1, 2, 3, 4, 5, 6,7,8 -%}{%- endcapture -%}<div class="pr_lazy_img main-img nt_img_ratio nt_bg_lz lazyloadt4s" style="padding-top:100%" data-bg="{{  video_url }}"></div></a></div></div>
                 </div>
               {%- endfor -%}
+              
             {%- endif -%}
           </div>
+          <button class="flickityt4s-button flickityt4s-prev-next-button previous" id="previous_button" type="button" aria-label="Previous" style="z-index: 301; opacity: 1; transform:scale(1); left: 40px; border-radius: 0">
+            <svg class="flickityt4s-button-icon" viewBox="0 0 100 100">
+                <path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="arrow" transform="translate(100, 100) rotate(180)"></path>
+            </svg>
+        </button>
+        <button class="flickityt4s-button flickityt4s-prev-next-button next" id="next_button" type="button" aria-label="Next" style="z-index: 301; opacity: 1;transform: rotate(180deg) scale(1); border-radius: 0">
+            <svg class="flickityt4s-button-icon" viewBox="0 0 100 100" >
+                <path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="arrow"></path>
+            </svg>
+        </button>
         </div>
       </div>
     </div>
@@ -154,10 +305,57 @@
   
   {%- endstyle -%}
   
+  <script>
+    let slides_num = document.querySelector(".sk-session-slider").children.length;
+    let current_slide = 1;
+    let scroll_length = 0;
+    let next_button = document.getElementById("next_button");
+    let prev_button = document.getElementById("previous_button");
+    let slider = document.getElementsByClassName("sk-session-slider")[0];
+    let slider_length = slider.scrollWidth;
+    let place = 0;
+    let window_width = window.innerWidth;
+
+    window.addEventListener("resize", () => {
+      window_width = window.innerWidth;
+    });
+
+    next_button.addEventListener("click", () => {
+      if (current_slide === slides_num) {
+        slider.style.transform="translateX(0%)";
+        current_slide = 1;
+      } else {
+        scroll_length = 600 * current_slide;
+        if (scroll_length > slider_length - window_width) {
+          slider.style.transform="translateX(-" + (slider_length - window_width + 50) + "px)";
+          current_slide = slides_num;
+        } else {
+          slider.style.transform="translateX(-" + scroll_length + "px)";
+          current_slide++;
+        }
+      }
+    });
+
+    prev_button.addEventListener("click", () => {
+      console.log(current_slide);
+      if (current_slide === 1) {
+        slider.style.transform="translateX(-" + (slider_length - window_width + 50) + "px)";
+        current_slide = slides_num - 1;
+      } else if (current_slide === 2) {
+        slider.style.transform="translateX(0%)";
+        current_slide = 1;
+      } else {
+        scroll_length = 600 * (current_slide - 1);
+        slider.style.transform="translateX(-" + (scroll_length - 600) + "px)";
+        current_slide--;
+      }
+    });
+
+  </script>
   {%- schema -%}
     {
       "name": "Sessions-slider",
-      "class": "nt_section type_hero_video tp_se_cdt2",
+      "class": "nt_section type_carousel type_featured_collection_owl tp_se_cdt",
       "settings": [
         {
           "type": "header",
@@ -191,13 +389,19 @@
            "label": "1. Video URL",
            "accept": ["youtube"],
            "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-           "info": "Accepts YouTube links"
+           "info": "To remove video block, insert url: https://www.youtube.com/watch?v=_9VUPq3SxOc"
         },
         {
             "type": "text",
             "id": "file_name1",
-            "label": "2. File name",
-            "info": "FIle name from uploaded files. File size is smaller 4 mb recommended"
+            "label": "Video Title",
+            "info": "Title of video"
+          },
+          {
+            "type": "text",
+            "id": "file_sub_title1",
+            "label": "Video Location",
+            "info": "Location of video"
           },
           {
             "id": "page2",
@@ -227,13 +431,19 @@
              "label": "1. Video URL",
              "accept": ["youtube"],
              "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-             "info": "Accepts YouTube links"
+             "info": "To remove video block, insert url: https://www.youtube.com/watch?v=_9VUPq3SxOc"
           },
           {
             "type": "text",
             "id": "file_name2",
-            "label": "2. File name",
-            "info": "FIle name from uploaded files. File size is smaller 4 mb recommended"
+            "label": "Video Title",
+            "info": "Title of video"
+          },
+          {
+            "type": "text",
+            "id": "file_sub_title2",
+            "label": "Video Location",
+            "info": "Location of video"
           },
           {
             "id": "page3",
@@ -263,13 +473,19 @@
              "label": "1. Video URL",
              "accept": ["youtube"],
              "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-             "info": "Accepts YouTube links"
+             "info": "To remove video block, insert url: https://www.youtube.com/watch?v=_9VUPq3SxOc"
           },
           {
             "type": "text",
             "id": "file_name3",
-            "label": "2. File name",
-            "info": "FIle name from uploaded files. File size is smaller 4 mb recommended"
+            "label": "Video Title",
+            "info": "Title of video"
+          },
+          {
+            "type": "text",
+            "id": "file_sub_title3",
+            "label": "Video Location",
+            "info": "Location of video"
           },
           {
             "id": "page4",
@@ -299,13 +515,271 @@
              "label": "1. Video URL",
              "accept": ["youtube"],
              "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-             "info": "Accepts YouTube links"
+             "info": "To remove video block, insert url: https://www.youtube.com/watch?v=_9VUPq3SxOc"
           },
           {
             "type": "text",
             "id": "file_name4",
-            "label": "2. File name",
-            "info": "FIle name from uploaded files. File size is smaller 4 mb recommended"
+            "label": "Video Title",
+            "info": "Title of video"
+          },
+          {
+            "type": "text",
+            "id": "file_sub_title4",
+            "label": "Video Location",
+            "info": "Location of video"
+          },
+          {
+            "id": "page5",
+            "type": "page",
+            "label": "Page link"
+          },
+          
+          {
+            "type": "select",
+            "id": "source5",
+            "label": "Source Video:",
+            "default": "1",
+            "options": [
+              {
+                "value": "1",
+                "label": "Youtube"
+              },
+              {
+                "value": "2",
+                "label": "Upload file"
+              }
+            ]
+          },
+          {
+             "id": "video_url5",
+             "type": "video_url",
+             "label": "1. Video URL",
+             "accept": ["youtube"],
+             "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+             "info": "To remove video block, insert url: https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          },
+          {
+            "type": "text",
+            "id": "file_name5",
+            "label": "Video Title",
+            "info": "Title of video"
+          },
+          {
+            "type": "text",
+            "id": "file_sub_title5",
+            "label": "Video Location",
+            "info": "Location of video"
+          },
+          {
+            "id": "page6",
+            "type": "page",
+            "label": "Page link"
+          },
+          
+          {
+            "type": "select",
+            "id": "source6",
+            "label": "Source Video:",
+            "default": "1",
+            "options": [
+              {
+                "value": "1",
+                "label": "Youtube"
+              },
+              {
+                "value": "2",
+                "label": "Upload file"
+              }
+            ]
+          },
+          {
+             "id": "video_url6",
+             "type": "video_url",
+             "label": "1. Video URL",
+             "accept": ["youtube"],
+             "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+             "info": "To remove video block, insert url: https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          },
+          {
+            "type": "text",
+            "id": "file_name6",
+            "label": "Video Title",
+            "info": "Title of video"
+          },
+          {
+            "type": "text",
+            "id": "file_sub_title6",
+            "label": "Video Location",
+            "info": "Location of video"
+          },
+          {
+            "id": "page7",
+            "type": "page",
+            "label": "Page link"
+          },
+          
+          {
+            "type": "select",
+            "id": "source7",
+            "label": "Source Video:",
+            "default": "1",
+            "options": [
+              {
+                "value": "1",
+                "label": "Youtube"
+              },
+              {
+                "value": "2",
+                "label": "Upload file"
+              }
+            ]
+          },
+          {
+             "id": "video_url7",
+             "type": "video_url",
+             "label": "1. Video URL",
+             "accept": ["youtube"],
+             "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+             "info": "To remove video block, insert url: https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          },
+          {
+            "type": "text",
+            "id": "file_name7",
+            "label": "Video Title",
+            "info": "Title of video"
+          },
+          {
+            "type": "text",
+            "id": "file_sub_title7",
+            "label": "Video Location",
+            "info": "Location of video"
+          },
+          {
+            "id": "page8",
+            "type": "page",
+            "label": "Page link"
+          },
+          
+          {
+            "type": "select",
+            "id": "source8",
+            "label": "Source Video:",
+            "default": "1",
+            "options": [
+              {
+                "value": "1",
+                "label": "Youtube"
+              },
+              {
+                "value": "2",
+                "label": "Upload file"
+              }
+            ]
+          },
+          {
+             "id": "video_url8",
+             "type": "video_url",
+             "label": "1. Video URL",
+             "accept": ["youtube"],
+             "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+             "info": "To remove video block, insert url: https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          },
+          {
+            "type": "text",
+            "id": "file_name8",
+            "label": "Video Title",
+            "info": "Title of video"
+          },
+          {
+            "type": "text",
+            "id": "file_sub_title8",
+            "label": "Video Location",
+            "info": "Location of video"
+          },
+          {
+            "id": "page9",
+            "type": "page",
+            "label": "Page link"
+          },
+          
+          {
+            "type": "select",
+            "id": "source9",
+            "label": "Source Video:",
+            "default": "1",
+            "options": [
+              {
+                "value": "1",
+                "label": "Youtube"
+              },
+              {
+                "value": "2",
+                "label": "Upload file"
+              }
+            ]
+          },
+          {
+             "id": "video_url9",
+             "type": "video_url",
+             "label": "1. Video URL",
+             "accept": ["youtube"],
+             "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+             "info": "To remove video block, insert url: https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          },
+          {
+            "type": "text",
+            "id": "file_name9",
+            "label": "Video Title",
+            "info": "Title of video"
+          },
+          {
+            "type": "text",
+            "id": "file_sub_title9",
+            "label": "Video Location",
+            "info": "Location of video"
+          },
+          {
+            "id": "page10",
+            "type": "page",
+            "label": "Page link"
+          },
+          
+          {
+            "type": "select",
+            "id": "source10",
+            "label": "Source Video:",
+            "default": "1",
+            "options": [
+              {
+                "value": "1",
+                "label": "Youtube"
+              },
+              {
+                "value": "2",
+                "label": "Upload file"
+              }
+            ]
+          },
+          {
+             "id": "video_url10",
+             "type": "video_url",
+             "label": "1. Video URL",
+             "accept": ["youtube"],
+             "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+             "info": "To remove video block, insert url: https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          },
+          {
+            "type": "text",
+            "id": "file_name10",
+            "label": "Video Title",
+            "info": "Title of video"
+          },
+          {
+            "type": "text",
+            "id": "file_sub_title10",
+            "label": "Video Location",
+            "info": "Location of video"
           },
         {
           "type": "paragraph",
