@@ -9,6 +9,7 @@
   assign inc_pr = se_stts.pr_des
   assign page_handle = collection.handle
   assign collection_handle = collection.handle | prepend: 'best-seller-'
+  assign collection_tags = collection[collection_handle]
   assign use_cdt = se_stts.use_cdt
   assign txt_cd = 'products.grid_items.offer_end_in' | t
   assign sid = section.id
