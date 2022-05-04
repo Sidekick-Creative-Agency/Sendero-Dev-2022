@@ -15,13 +15,15 @@
     section 'header_top'
     assign check = false 
   endif 
-  if t_name != 'index' 
+  if t_name != 'index' and t_name != 'page'
     assign h_transparent = false 
+  else
+    assign h_transparent = true
   endif
   assign h__bgimg = settings.h__bgimg -%}
 
 <header id="ntheader" class="ntheader header_{{des_header}} h_icon_{{settings.h_icon}}{% if h__bgimg != blank and des_header == '7' %} lazyloadt4s h__lz_img" data-bgset="{{ h__bgimg | img_url: '1x1' }}" data-ratio="{{h__bgimg.aspect_ratio}}" data-sizes="auto"{% else %}"{% endif %}>
-	{%- if t_name == 'index' -%}<h1 class="h2 site-header__logo dn">{{- shop.name -}}</h1>{%- endif -%}
+  {%- if t_name == 'index' -%}<h1 class="h2 site-header__logo dn">{{- shop.name -}}</h1>{%- endif -%}
 	<div class="ntheader_wrapper pr z_200">
       {%- liquid
         if h_topbar and check
