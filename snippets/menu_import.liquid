@@ -200,10 +200,12 @@
          {%- when 'cat' -%}
 			{%- assign collection = collections[bk_stts.collection] -%}
 			{%- assign page = pages[bk_stts.page_link] -%}
+			{%- assign blog = blogs[bk_stts.blog] -%}
 			{%- assign image = bk_stts.image | default:collection.image -%}
 			{%- assign home_t = 'homepage.onboarding.collection_title' | t  | append:' #' | append:for_i -%} 
 			{%- assign page_url = page.url -%} 
 			{%- assign col_url = collection.url -%} 
+			{%- assign blog_url = blog.url -%} 
 
             <div id="bk_{{block.id}}" class="type_mn_pr menu-item sub-column-item col-{{bk_stts.col}} equal_nt hoverz_{{bk_stts.hoverz}} cat_design_{{bk_stts.cat_design}}">
 				<div class="cat_grid_item cat_space_item">
@@ -226,7 +228,8 @@
 								</div>
 								<div class="cat_grid_item__count dn">{{collection.all_products_count}} {{pr_txt}}</div>
 							</div>
-				  		{% elsif bk_stts.page_link %} 
+
+				  		{% elsif bk_stts.page_link != "" and bk_stts.page_link != "#" %} 
 						  	<a href="{{ page_url| default:'/' }}" class="db cat_grid_item__link">
 								{%- assign image = bk_stts.image | default:page.image -%}
 								{%- if image != blank -%}
@@ -238,6 +241,22 @@
 						 	<div class="cat_grid_item__wrapper pe_none">
 								<div class="cat_grid_item__title h3">
 									{{ bk_stts.title | default:page.title | default:home_t }}
+									<div class="shop-all">View All<i class="las la-arrow-right"></i></div>
+								</div>
+						  	</div>
+
+						{% elsif bk_stts.blog %} 
+						  	<a href="{{ blog_url| default:'/' }}" class="db cat_grid_item__link">
+								{%- assign image = bk_stts.image | default:page.image -%}
+								{%- if image != blank -%}
+								<div class="cat_grid_item__overlay item__position nt_bg_lz lazyloadt4s" data-bgset="{{ image | img_url: '1x1' }}" data-ratio="{{image.aspect_ratio}}" data-sizes="auto" data-parent-fit="width" style="padding-top:80%;"></div>
+								{%- else -%}
+								<div class="cat_grid_item__overlay item__position nt_bg_lz lazyloadt4s" data-bg="{{ 'placeholder.jpg' | asset_url }}" style="padding-top:127%;"></div>
+								{%- endif -%}
+						  	</a>
+						 	<div class="cat_grid_item__wrapper pe_none">
+								<div class="cat_grid_item__title h3">
+									{{ bk_stts.title | default:blog.title | default:home_t }}
 									<div class="shop-all">View All<i class="las la-arrow-right"></i></div>
 								</div>
 						  	</div>

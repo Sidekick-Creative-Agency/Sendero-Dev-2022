@@ -823,7 +823,7 @@ line-height: 1
 }
 /* #ntheader.sticky_prepared .ntheader_wrapper {
     position: absolute;
-} */ 
+} */
 #ntheader.sticky_prepared.live_stuck .ntheader_wrapper {
   visibility: visible;
     opacity: 1; 

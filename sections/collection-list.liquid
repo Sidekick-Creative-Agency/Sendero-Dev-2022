@@ -11,7 +11,8 @@
   else
    assign html_layout = '__' | split:'__'
   endif 
-  assign col_url = se_stts.blocks.collection.url -%}
+  assign col_url = se_stts.blocks.collection.url
+  assign blog_url = se_stts.blocks.blog.url -%}
 
   {% if se_stts.blocks.col_link and se_stts.blocks.col_link != "#" %}
 		{%- assign col_url = col_url | append: "/" | append: bk_stts.col_link %}
