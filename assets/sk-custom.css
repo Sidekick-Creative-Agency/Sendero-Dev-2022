@@ -315,7 +315,9 @@
     font-family: 'Oswald';
     font-weight: 400;
 }
-
+a.button:hover, a.button {
+    border: 1px solid #222 !important;
+}
 .ftr-icn-wrap {
     display: flex;
     padding-bottom:20px;
@@ -455,9 +457,6 @@
     flex-wrap: wrap;
     flex: 0 0 50%;
 }
-.blog-home-img, .blog-home-article {
-    
-}
 .blog-home-read-more h6{
     padding: 0;
     font-size: 13.5px;
@@ -491,7 +490,6 @@
     padding: 5px !important;
 }
 .blog-home-page-overlay{
-
     transform: translateY(-5px);
     width: calc(100% - 10px) !important;
     text-align: left;
@@ -501,6 +499,9 @@
     justify-content: flex-end;
     height: calc(100% - 10px);
     transition: .5s;
+}
+.blog-home-page-overlay:hover {
+    background-color: transparent !important;
 }
 
 .blog-home-link {

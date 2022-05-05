@@ -1671,7 +1671,7 @@ border-bottom: 1px solid #e5e5e5;
     content: "";
     z-index: 2;
 }
-.post_nt_loop:hover >a:before,
+/* .post_nt_loop:hover >a:before,
 .post_nt_loop:hover>.post-thumbnail:before {
     top: 0;
     left: 0;
@@ -1681,7 +1681,7 @@ border-bottom: 1px solid #e5e5e5;
     height: 100%;
     opacity: 0;
     transition: all 0.6s;
-}
+} */
 .mfp-content.menu_opened,
 .has_ntcanvas .mfp-content.menu_opened {
     background-color: #fff;
