@@ -20,11 +20,11 @@
 		{%- assign image = product.images[0] | default:placeholder_img -%}
 		{%- capture url_last -%}{{product.url | split:'/products/' | first}}/products/{{product.handle}}{%- endcapture -%}
 	   <div class="upsell_item col-12">
-	     <div class="row no-gutters al_center">
+	     <div class="row no-gutters al_center fl_center">
 	       <div class="cart-upsell-col col-auto">
 	         <div class="upsell_item_img pr">
 	         	{%- if image != blank %}{% assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-	         	<img src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20{{image.width}}%20{{image.height}}%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="{{ img_url }}" data-widths="[80, 160, 320, 640]" data-sizes="auto" class="w__100 lazyloadt4s lz_op_ef" alt="{{image.alt | escape }}">
+	         	<a class="upsell_item__title db truncate" href="{{product.url}}"><img src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20%20%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="{{ img_url }}" data-widths="[80, 160, 320, 640]" data-sizes="auto" class="w__100 lazyloadt4s lz_op_ef" alt="{{image.alt | escape }}"></a>
 	         	{%- endif -%}
 	         </div>
 	       </div>
@@ -73,7 +73,7 @@
 							{%- endif -%}
 	         </span>
 	       </div>
-	       <div class="cart-upsell-col cart-upsell-col-view col-auto"><a class="upsell_qv js_add_qv cd tc dib ttip_nt tooltip_left ts__03" href="{{url_last}}" data-id="{{product.id}}" rel="nofollow"><span class="tt_txt">{{quick_view_t}}</span><i class="iccl iccl-eye"></i></a></div>
+	      {%- comment -%} <div class="cart-upsell-col cart-upsell-col-view col-auto"><a class="upsell_qv js_add_qv cd tc dib ttip_nt tooltip_left ts__03" href="{{url_last}}" data-id="{{product.id}}" rel="nofollow"><span class="tt_txt">{{quick_view_t}}</span><i class="iccl iccl-eye"></i></a></div>{%- endcomment -%}
 	     </div>
 	   </div>
 	   {%- endfor -%}
@@ -82,6 +82,6 @@
 <style>
   .mini_cart_upsell { margin: 20px 0;border-radius: 5px;overflow: hidden;box-shadow: 0 0 3px 0 rgb(0 0 0 / 20%);
       {%- if index == 1 %}display: none !important{% endif-%}
-  }.mini_cart_upsell__title{background-color:#f5f5f5;font-size:15px;font-weight:500;padding:10px}.upsell_item__title{font-size:14px;line-height:1.35}.upsell_item_img{margin:10px}.upsell_item_img img{width:80px;max-height:110px;object-fit:contain}.upsell_item .col-auto{max-width:100px}.mini_cart_upsell_items .flickityt4s-viewport,.mini_cart_upsell_items:not(.flickityt4s-enabled) .upsell_item:not(:last-child){border-bottom:4px double #eee}.upsell_item .upsell_qv{padding:10px;line-height:1;color:#fff;border-radius:5px;box-shadow:0 0 3px 0 rgb(0 0 0 / 20%);margin:10px}.upsell_item .upsell_qv>i{font-weight:600}.upsell_item .onsale.nt_label{min-width: auto;margin: 0 5px;width:auto;height:auto;border-radius:3px;font-size:10px;color:#fff;display:inline-block;padding:4px;line-height: 1;}.mini_cart_upsell .flickityt4s-prev-next-button{position:static;width:30%;-ms-flex-order:4;order:4;color:#222;border:0;background:0 0;border-radius:0}.mini_cart_upsell .flickityt4s-prev-next-button.next{-ms-flex-order:5;order:5}.mini_cart_upsell .flickityt4s-page-dots{width:40%;-ms-flex-order:4;order:4}.mini_cart_upsell .flickityt4s-prev-next-button:before{display:inline-block;width:100%;font-size:36px;height:auto;line-height:1}.mini_cart_upsell .flickityt4s-enabled .flickityt4s-prev-next-button{-webkit-transform:scale(1);transform:scale(1);opacity:1}.mini_cart_upsell .flickityt4s-page-dots .dot{margin-top:16px}
+  }.mini_cart_upsell__title{background-color:#f5f5f5;font-size:15px;font-weight:500;padding:10px}.upsell_item__title{font-size:14px;line-height:1.35}.upsell_item_img{margin:10px}.upsell_item_img img{object-fit:contain}.upsell_item .col-auto{max-width:100px}.mini_cart_upsell_items .flickityt4s-viewport,.mini_cart_upsell_items:not(.flickityt4s-enabled) .upsell_item:not(:last-child){border-bottom:4px double #eee}.upsell_item .upsell_qv{padding:10px;line-height:1;color:#fff;border-radius:5px;box-shadow:0 0 3px 0 rgb(0 0 0 / 20%);margin:10px}.upsell_item .upsell_qv>i{font-weight:600}.upsell_item .onsale.nt_label{min-width: auto;margin: 0 5px;width:auto;height:auto;border-radius:3px;font-size:10px;color:#fff;display:inline-block;padding:4px;line-height: 1;}.mini_cart_upsell .flickityt4s-prev-next-button{position:static;width:30%;-ms-flex-order:4;order:4;color:#222;border:0;background:0 0;border-radius:0}.mini_cart_upsell .flickityt4s-prev-next-button.next{-ms-flex-order:5;order:5}.mini_cart_upsell .flickityt4s-page-dots{width:40%;-ms-flex-order:4;order:4}.mini_cart_upsell .flickityt4s-prev-next-button:before{display:inline-block;width:100%;font-size:36px;height:auto;line-height:1}.mini_cart_upsell .flickityt4s-enabled .flickityt4s-prev-next-button{-webkit-transform:scale(1);transform:scale(1);opacity:1}.mini_cart_upsell .flickityt4s-page-dots .dot{margin-top:16px}
 </style>
 {%- endif -%}
