@@ -65,8 +65,8 @@ assign badge_tags = product.tags | where: "badge_" -%}
   {%- if sold_out -%}<span class="nt_label out-of-stock">{{ 'products.product.sold_out' | t }}</span>{%- endif -%}
 </span>
 
-<span class="tc nt_labels_sig pa pe_none cw signature-product-label">
+<span class="tc nt_labels_sig pa cw signature-product-label">
   {%- if signature -%}<span class="nt_label ">
-    <img src="{{sig_icon}}" alt="Agave Icon">
+    <img src="{{sig_icon}}" alt="Agave Icon" title="Signature item">
   </span>{%- endif -%}
 </span>

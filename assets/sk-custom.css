@@ -581,6 +581,7 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     z-index: 100 !important;
     top: 10px !important;
     left: 10px !important;
+    cursor: pointer;
 }
 .sp-single .product-images .nt_labels_sig {
     left: 30px !important;
