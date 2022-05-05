@@ -32,6 +32,11 @@ unless pr_tags contains 'notsale'
   endif
 endunless
 
+assign signature = false
+if pr_tags contains 'signature'
+  assign signature = true
+  assign sig_icon = "https://cdn.shopify.com/s/files/1/0632/0737/5105/files/sendero-website-badge2.png?v=1651679721"
+endif
 assign sold_out = true 
 if product.available or settings.use_sold_out_label == false 
   assign sold_out = false 
@@ -58,4 +63,10 @@ assign badge_tags = product.tags | where: "badge_" -%}
 </span>
 <span class="tc nt_labels_so pa pe_none cw">
   {%- if sold_out -%}<span class="nt_label out-of-stock">{{ 'products.product.sold_out' | t }}</span>{%- endif -%}
+</span>
+
+<span class="tc nt_labels_sig pa pe_none cw signature-product-label">
+  {%- if signature -%}<span class="nt_label ">
+    <img src="{{sig_icon}}" alt="Agave Icon">
+  </span>{%- endif -%}
 </span>
