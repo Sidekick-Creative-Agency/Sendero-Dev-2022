@@ -12,33 +12,33 @@
  
 {% if Current_id == blank %}[t4splitlz]{% endif %}
 {%- if block.type == 'dropdown' -%}{%- assign bk_stts = block.settings -%}{%- assign llists = linklists[bk_stts.menu].links -%} 
-	         {%- for link in llists -%}
-	            {%- if link.links != blank -%}
-			         <div class="menu-item has-children{% if link.active %} current{% endif %}">
-			            <a href="{{ link.url }}">{%- render 'tt_inc',title:link.title -%}</a>
-			            <ul class="sub-menu sub-menu-2 pa op__0">
-			            	{%- for child_link in link.links -%}
-				            	{%- if child_link.links != blank -%}
-					               <li class="menu-item has-children{% if child_link.active %} current{% endif %}">
-					                  <a href="{{ child_link.url }}">{%- render 'tt_inc',title:child_link.title -%}</a>
-					                  <ul class="sub-menu sub-menu-3 pa op__0">
-					                  	{%- for grandchild_link in child_link.links -%}
-					                        <li class="menu-item{% if menu.active %} current{% endif %}"><a href="{{ grandchild_link.url }}">{%- render 'tt_inc',title:grandchild_link.title -%}</a></li>
-					                     {%- endfor -%}
-					                  </ul>
-					               </li>
-				               {%- else -%}
-				                  <li class="menu-item{% if child_link.active %} current{% endif %}"><a href="{{ child_link.url }}">{%- render 'tt_inc',title:child_link.title -%}</a></li>
-				               {%- endif -%}
-			               {%- endfor -%}
-			            </ul>
-			         </div>
-	            {%- else -%}
-			         <div class="menu-item{% if link.active %} current{% endif %}"><a href="{{ link.url }}">{%- render 'tt_inc',title:link.title -%}</a></div>
-			      {%- endif -%}
-	         {%- endfor -%}
+	{%- for link in llists -%}
+	{%- if link.links != blank -%}
+			<div class="menu-item has-children{% if link.active %} current{% endif %}">
+			<a href="{{ link.url }}">{%- render 'tt_inc',title:link.title -%}</a>
+			<ul class="sub-menu sub-menu-2 pa op__0">
+				{%- for child_link in link.links -%}
+					{%- if child_link.links != blank -%}
+						<li class="menu-item has-children{% if child_link.active %} current{% endif %}">
+							<a href="{{ child_link.url }}">{%- render 'tt_inc',title:child_link.title -%}</a>
+							<ul class="sub-menu sub-menu-3 pa op__0">
+							{%- for grandchild_link in child_link.links -%}
+								<li class="menu-item{% if menu.active %} current{% endif %}"><a href="{{ grandchild_link.url }}">{%- render 'tt_inc',title:grandchild_link.title -%}</a></li>
+								{%- endfor -%}
+							</ul>
+						</li>
+					{%- else -%}
+						<li class="menu-item{% if child_link.active %} current{% endif %}"><a href="{{ child_link.url }}">{%- render 'tt_inc',title:child_link.title -%}</a></li>
+					{%- endif -%}
+				{%- endfor -%}
+			</ul>
+			</div>
+	{%- else -%}
+			<div class="menu-item{% if link.active %} current{% endif %}"><a href="{{ link.url }}">{%- render 'tt_inc',title:link.title -%}</a></div>
+		{%- endif -%}
+	{%- endfor -%}
 
-		{%- elsif block.type == 'list' -%}{%- assign bk_stts = block.settings -%}{%- assign llists = linklists[bk_stts.menu].links -%} 
+{%- elsif block.type == 'list' -%}{%- assign bk_stts = block.settings -%}{%- assign llists = linklists[bk_stts.menu].links -%} 
             
             {%- assign col = bk_stts.col | default:3 -%}
             {%- assign block_id = block.id -%}

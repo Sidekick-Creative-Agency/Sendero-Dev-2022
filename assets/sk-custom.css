@@ -573,6 +573,20 @@
 .cat-top-img {
     padding-right:80px;
 }
+.wishlistadd {
+    display: none !important;
+}
+.signature-product-label {
+    z-index: 100 !important;
+    top: 10px !important;
+    left: 10px !important;
+}
+.sp-single .product-images .nt_labels_sig {
+    left: 30px !important;
+}
+.signature-product-label .nt_label {
+    background-color: transparent;
+}
 
 /*---------------- Filter Widget -------------------*/
 
