@@ -990,7 +990,7 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 .mini_cart_content {
     /* height: 500px; */
     max-height: 450px;
-    min-height: 182px;
+    min-height: 206px;
     border-bottom: 1px solid rgba(129, 129, 129, 0.2);
 }
 #nt_cart_canvas {
