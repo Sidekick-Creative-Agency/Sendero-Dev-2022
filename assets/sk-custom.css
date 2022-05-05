@@ -895,7 +895,9 @@
 .pswp__button, .pswp__button:hover{
     border: none !important;
 }
-
+.pswp__top-bar {
+    background-color: #000 !important;
+}
 /*---------------- SHOPPING CART SIDEBAR ----------------*/
 .mini_cart_wrap, .mini_cart_header {
     background-color: white;
