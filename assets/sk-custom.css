@@ -315,7 +315,7 @@
     font-family: 'Oswald';
     font-weight: 400;
 }
-a.button:hover, a.button {
+a.slt4_btn.button:hover, a.slt4_btn.button {
     border: 1px solid #222 !important;
 }
 .ftr-icn-wrap {
