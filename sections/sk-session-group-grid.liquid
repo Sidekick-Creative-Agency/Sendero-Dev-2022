@@ -172,11 +172,6 @@
         "type": "header",
         "content": "== General Settings"
       },
-      {
-        "id": "page1",
-        "type": "page",
-        "label": "Page link"
-      },
     {
       "type": "select",
       "id": "source1",
@@ -217,12 +212,6 @@
         "id": "song_name1",
         "label": "Song Name"
       },
-      {
-        "id": "page2",
-        "type": "page",
-        "label": "Page link"
-      },
-
     {
       "type": "select",
       "id": "source2",
@@ -262,11 +251,6 @@
         "type": "text",
         "id": "song_name2",
         "label": "Song Name"
-      },
-      {
-        "id": "page3",
-        "type": "page",
-        "label": "Page link"
       },
     {
       "type": "select",
@@ -308,12 +292,6 @@
         "id": "song_name3",
         "label": "Song Name"
       },
-      {
-        "id": "page4",
-        "type": "page",
-        "label": "Page link"
-      },
-
     {
       "type": "select",
       "id": "source4",
@@ -353,11 +331,6 @@
         "type": "text",
         "id": "song_name4",
         "label": "Song Name"
-      },
-      {
-        "id": "page5",
-        "type": "page",
-        "label": "Page link"
       },
     {
       "type": "select",
@@ -399,12 +372,6 @@
         "id": "song_name5",
         "label": "Song Name"
       },
-      {
-        "id": "page6",
-        "type": "page",
-        "label": "Page link"
-      },
-
     {
       "type": "select",
       "id": "source6",
@@ -445,11 +412,6 @@
         "id": "song_name6",
         "label": "Song Name"
       },
-      {
-        "id": "page7",
-        "type": "page",
-        "label": "Page link"
-      },
     {
       "type": "select",
       "id": "source7",
@@ -489,11 +451,6 @@
         "type": "text",
         "id": "song_name7",
         "label": "Song Name"
-      },
-      {
-        "id": "page8",
-        "type": "page",
-        "label": "Page link"
       },
     {
       "type": "select",
@@ -705,30 +662,9 @@
        },
       {
         "type": "select",
-        "id": "date",
-        "options": [
-          {
-            "value": "abbreviated_date",
-            "label": "Apr 19, 1994"
-          },
-          {
-            "value": "basic",
-            "label": "4/19/1994"
-          },
-          {
-            "value": "date",
-            "label": "April 19, 1994"
-          }
-        ],
-        "label": "Date format",
-        "info":"different format options display for various languages.",
-        "default": "date"
-      },
-      {
-        "type": "select",
         "id": "col_pr",
-        "label": "Articles columns (desktop)",
-        "info": "How many articles you want to show per row",
+        "label": "Video columns (desktop)",
+        "info": "How many Video you want to show per row",
         "default": "4",
         "options": [
           {
@@ -748,7 +684,7 @@
       {
         "type": "select",
         "id": "col_pr_tb",
-        "label": "Articles columns (tablet)",
+        "label": "Video columns (tablet)",
         "default": "4",
         "options": [
           {
@@ -768,7 +704,7 @@
       {
         "type": "select",
         "id": "col_pr_mb",
-        "label": "Articles columns (mobile)",
+        "label": "Video columns (mobile)",
         "default": "12",
         "options": [
           {
@@ -778,181 +714,6 @@
           {
             "value": "6",
             "label": "2"
-          }
-        ]
-      },
-      {
-        "type": "checkbox",
-        "id": "show_au",
-        "label": "Show author?",
-        "default": true
-      },
-      {
-        "type": "checkbox",
-        "id": "show_dt",
-        "label": "Show date?",
-        "default": true
-      },
-      {
-        "type": "header",
-        "content": "== Slider Settings"
-      },
-      {
-        "type": "checkbox",
-        "id": "loop",
-        "label": "Use Loop?",
-        "info": "At the end of cells, wrap-around to the other end for infinite scrolling.",
-        "default": false
-      },
-      {
-        "type": "range",
-        "id": "au_time",
-        "min": 0,
-        "max": 30,
-        "step": 0.5,
-        "label": "Autoplay Speed in second.",
-        "info": "Set is '0' to disable autoplay.",
-        "unit": "sec",
-        "default": 0
-      },
-      {
-        "type": "checkbox",
-        "id": "au_hover",
-        "label": "Pause Autoplay On Hover?",
-        "info": "Auto-playing will pause when the user hovers over the carousel.",
-        "default": true
-      },
-      {
-        "type": "header",
-        "content": "== Prev Next Button, Page Dot Settings"
-      },
-      {
-        "type": "paragraph",
-        "content": "—————————————————"
-      },
-      {
-        "type": "paragraph",
-        "content": "Prev Next Button:"
-      },
-      {
-        "type": "checkbox",
-        "id": "button",
-        "label": "Enable Prev Next Button?",
-        "info": "Creates and enables previous & next buttons.",
-        "default": true
-      },
-      {
-        "type": "select",
-        "id": "btn_vi",
-        "label": "Visible:",
-        "default": "1",
-        "options": [
-          {
-            "value": "1",
-            "label": "always"
-          },
-          {
-            "value": "2",
-            "label": "Only hover"
-          }
-        ]
-      },
-      {
-        "type": "select",
-        "id": "btn_owl",
-        "label": "Style",
-        "default": "1",
-        "options": [
-          {
-            "value": "1",
-            "label": "Style 1"
-          },
-          {
-            "value": "2",
-            "label": "Style 2"
-          },
-          {
-            "value": "3",
-            "label": "Style 3"
-          }
-        ]
-      },
-      {
-        "type": "select",
-        "id": "btn_color",
-        "label": "Color",
-        "default": "0",
-        "options": [
-          {
-            "value": "0",
-            "label": "Transparent"
-          },
-          {
-            "value": "1",
-            "label": "Gray"
-          },
-          {
-            "value": "2",
-            "label": "White"
-          },
-          {
-            "value": "3",
-            "label": "Primary"
-          }
-        ]
-      },
-      {
-        "type": "paragraph",
-        "content": "—————————————————"
-      },
-      {
-        "type": "paragraph",
-        "content": "Page Dot:"
-      },
-      {
-        "type": "checkbox",
-        "id": "dot",
-        "label": "Enable Page Dot?",
-        "info": "Creates and enables page dots.",
-        "default": false
-      },
-      {
-        "type": "select",
-        "id": "dot_owl",
-        "label": "Style",
-        "default": "1",
-        "options": [
-          {
-            "value": "1",
-            "label": "Style 1"
-          },
-          {
-            "value": "2",
-            "label": "Style 2"
-          },
-          {
-            "value": "3",
-            "label": "Style 3"
-          }
-        ]
-      },
-      {
-        "type": "select",
-        "id": "dot_color",
-        "label": "Color",
-        "default": "1",
-        "options": [
-          {
-            "value": "1",
-            "label": "Dark"
-          },
-          {
-            "value": "2",
-            "label": "Light"
-          },
-          {
-            "value": "3",
-            "label": "Primary"
           }
         ]
       },
@@ -1203,150 +964,10 @@
        "label": "Image position",
        "default": "1"
       },
-      
-      {
-        "type": "header",
-        "content": "== Text Settings"
-      },
-      {
-        "type": "select",
-        "id": "text_size2",
-        "label": "Text size",
-        "default": "30,14",
-        "options": [
-          {
-            "value": "24,12",
-            "label": "Small"
-          },
-          {
-            "value": "30,14",
-            "label": "Medium"
-          },
-          {
-            "value": "40,16",
-            "label": "Large"
-          }
-        ]
-      },
-      {
-        "type": "text",
-        "id": "title",
-        "label": "Heading",
-        "default": "Image with text"
-      },
-      {
-        "type": "text",
-        "id": "subtitle1",
-        "label": "Subtitle",
-        "default": "OUR QUALITY GUARANTEE"
-      },
-      {
-        "type": "text",
-        "id": "subtitle2",
-        "label": "Subtitle",
-        "default": "SUSTAINABLY SOURCED"
-      },
-      {
-        "type": "text",
-        "id": "subtitle3",
-        "label": "Subtitle",
-        "default": "NATURAL MATERIALS"
-      },
-      {
-        "type": "richtext",
-        "id": "text1",
-        "label": "Text",
-        "default": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>"
-      },
-      {
-        "type": "richtext",
-        "id": "text2",
-        "label": "Text",
-        "default": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>"
-      },
-      {
-        "type": "richtext",
-        "id": "text3",
-        "label": "Text",
-        "default": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>"
-      },
-      {
-        "type": "text",
-        "id": "button_label",
-        "label": "Button label",
-        "default": "Shop Now"
-      },
-      {
-        "type": "url",
-        "id": "button_link",
-        "label": "Button link (Optional)"
-      },
-      {
-        "type": "select",
-        "id": "open_link",
-        "options": [
-          {
-            "value": "_self",
-            "label": "Current window (_self)"
-          },
-         {
-            "value": "_blank",
-            "label": "New window (_blank)"
-          }
-        ],
-        "label": "Open link in",
-        "default": "_blank"
-      },
-      {
-       "type": "select",
-       "id": "txt_align",
-       "options": [
-        {
-           "value": "tl",
-           "label": "Left"
-         },
-         {
-           "value": "tc",
-           "label": "Center"
-         },
-         {
-           "value": "tr",
-           "label": "Right"
-         }
-       ],
-       "label": "Text alignment",
-       "default": "tc"
-      },
-      {
-        "type": "header",
-        "content": "== Color"
-      },
-      {
-        "type": "checkbox",
-        "id": "use_shadow",
-        "label": "Use text shadow?",
-        "default": false
-      },
-      {
-        "type": "select",
-        "id": "cl_txt",
-        "options": [
-         {
-            "value": "dark",
-            "label": "Dark"
-         },
-         {
-            "value": "light",
-            "label": "Light"
-          }
-        ],
-        "label": "Text"
-      },
       {
         "type": "header",
         "content": "== Design Options"
       },
-      
       {
         "type": "text",
         "id": "mg",

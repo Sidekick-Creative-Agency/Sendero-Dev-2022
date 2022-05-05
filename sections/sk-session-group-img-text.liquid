@@ -12,11 +12,8 @@
 
    assign sub_text = se_stts.sub_text
    assign url = se_stts.button_link 
-   if se_stts.cl_txt == 'dark' 
-    assign cl_txt = 'cd,cg' 
-   else 
-    assign cl_txt = 'cw,cw,button-o-w' 
-   endif 
+   assign cl_txt = 'cd,cg'
+  
    assign cl_arr = cl_txt | split:","
    assign fs_arr = se_stts.text_size2 | split:"," -%}
   
@@ -250,33 +247,6 @@
           "default": "Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review."
         },
         {
-          "type": "text",
-          "id": "button_label",
-          "label": "Button label",
-          "default": "Shop Now"
-        },
-        {
-          "type": "url",
-          "id": "button_link",
-          "label": "Button link (Optional)"
-        },
-        {
-          "type": "select",
-          "id": "open_link",
-          "options": [
-            {
-              "value": "_self",
-              "label": "Current window (_self)"
-            },
-           {
-              "value": "_blank",
-              "label": "New window (_blank)"
-            }
-          ],
-          "label": "Open link in",
-          "default": "_blank"
-        },
-        {
          "type": "select",
          "id": "txt_align",
          "options": [
@@ -295,31 +265,6 @@
          ],
          "label": "Text alignment",
          "default": "tc"
-        },
-        {
-          "type": "header",
-          "content": "== Color"
-        },
-        {
-          "type": "checkbox",
-          "id": "use_shadow",
-          "label": "Use text shadow?",
-          "default": false
-        },
-        {
-          "type": "select",
-          "id": "cl_txt",
-          "options": [
-           {
-              "value": "dark",
-              "label": "Dark"
-           },
-           {
-              "value": "light",
-              "label": "Light"
-            }
-          ],
-          "label": "Text"
         },
         {
           "type": "header",
