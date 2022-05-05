@@ -10531,6 +10531,32 @@ body.dark_mode_true {
   height: 2px;
   background: #222;
 }
+.template-page .ssw-html-widget.ssw-instagram-widget > div:first-child,
+.template-page .ssw-instagram-grid-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+}
+.template-page
+  .ssw-html-widget.ssw-instagram-widget
+  .ssw-instagram-slide-title {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #222;
+  letter-spacing: 0;
+  margin: 0 10px;
+}
+.template-page .ssw-html-widget.ssw-instagram-widget > div:first-child:after,
+.template-page .ssw-html-widget.ssw-instagram-widget > div:first-child:before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 2px;
+  background: #222;
+}
 #content_quickview .nt_add_w.ts__03.pa .ssw-faveiticon {
   width: 100%;
   height: 40px;
