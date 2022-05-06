@@ -44,53 +44,87 @@
       "settings": {
       }
     },
-    "rich-text-columns-locations": {
-      "type": "rich-text-columns-locations",
-      "settings": {
-        "main_title": "Section title",
-        "header_align": "center",
-        "title1": "QUALITY LOREM IPSOM",
-        "title2": "QUALITY LOREM IPSOM",
-        "title3": "QUALITY LOREM IPSOM",
-        "title4": "QUALITY LOREM IPSOM",
-        "title5": "QUALITY LOREM IPSOM",
-        "title6": "QUALITY LOREM IPSOM",
-        "sub_text1": "Address Line 1 <br>\nAddress Line 2",
-        "sub_text2": "Address Line 1 <br>\nAddress Line 2",
-        "sub_text3": "Address Line 1 <br>\nAddress Line 2",
-        "sub_text4": "Address Line 1 <br>\nAddress Line 2",
-        "sub_text5": "Address Line 1 <br>\nAddress Line 2",
-        "sub_text6": "Address Line 1 <br>\nAddress Line 2",
-        "col_num": "2",
-        "show_ckmk": false,
-        "show_btn": false,
-        "btn_text": "Click Me",
-        "button_align": "center",
-        "sub_font": "2",
-        "style_title": "title_1",
-        "ic_tt": "gem",
-        "show_clpr": false,
-        "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-        "align": "tl",
-        "layout": "container",
-        "mg": "50px,,50px,",
-        "pd": "",
-        "mg_mb": "",
-        "pd_mb": ""
-      }
-    },
     "locations-accordion": {
       "type": "locations-accordion",
       "blocks": {
-        "567c2979-0677-44c4-883e-1da918871fcc": {
-          "type": "des",
+        "01e76fe9-cbc5-413c-b308-602fa729fa37": {
+          "type": "state",
           "settings": {
-            "title": "Texas"
+            "state": "Texas",
+            "store_name1": "Sendero Provisions",
+            "address1_line1": "1234 Somewhere Drive",
+            "address1_line2": "Waco, TX 76704",
+            "store_name2": "Tylers",
+            "address2_line1": "4321 Otherplace Lane",
+            "address2_line2": "Tyler, TX 77777",
+            "store_name3": "",
+            "address3_line1": "",
+            "address3_line2": "",
+            "store_name4": "",
+            "address4_line1": "",
+            "addres4_line2": ""
+          }
+        },
+        "968f9bf4-bec4-47ab-a5ca-15bd252d24e1": {
+          "type": "state",
+          "settings": {
+            "state": "Texas",
+            "store_name1": "Sendero Provisions",
+            "address1_line1": "1234 Somewhere Drive",
+            "address1_line2": "Waco, TX 76704",
+            "store_name2": "",
+            "address2_line1": "",
+            "address2_line2": "",
+            "store_name3": "",
+            "address3_line1": "",
+            "address3_line2": "",
+            "store_name4": "",
+            "address4_line1": "",
+            "addres4_line2": ""
+          }
+        },
+        "3f79fd19-31ac-42d1-9398-58825294bdd6": {
+          "type": "state",
+          "settings": {
+            "state": "Texas",
+            "store_name1": "Sendero Provisions",
+            "address1_line1": "1234 Somewhere Drive",
+            "address1_line2": "Waco, TX 76704",
+            "store_name2": "",
+            "address2_line1": "",
+            "address2_line2": "",
+            "store_name3": "",
+            "address3_line1": "",
+            "address3_line2": "",
+            "store_name4": "",
+            "address4_line1": "",
+            "addres4_line2": ""
+          }
+        },
+        "e53cd483-ace0-47ce-a303-142ebca72435": {
+          "type": "state",
+          "settings": {
+            "state": "Texas",
+            "store_name1": "Sendero Provisions",
+            "address1_line1": "1234 Somewhere Drive",
+            "address1_line2": "Waco, TX 76704",
+            "store_name2": "",
+            "address2_line1": "",
+            "address2_line2": "",
+            "store_name3": "",
+            "address3_line1": "",
+            "address3_line2": "",
+            "store_name4": "",
+            "address4_line1": "",
+            "addres4_line2": ""
           }
         }
       },
       "block_order": [
-        "567c2979-0677-44c4-883e-1da918871fcc"
+        "01e76fe9-cbc5-413c-b308-602fa729fa37",
+        "968f9bf4-bec4-47ab-a5ca-15bd252d24e1",
+        "3f79fd19-31ac-42d1-9398-58825294bdd6",
+        "e53cd483-ace0-47ce-a303-142ebca72435"
       ],
       "settings": {
         "des_pr_design": "1",
@@ -100,7 +134,7 @@
         "des_w": "1",
         "des_mb": "2",
         "auto": true,
-        "mg": "30px,,30px,",
+        "mg": "50px 0 50px",
         "mg_mb": "0,,0,",
         "pr_layout": "default",
         "use_sticky_des": false,
@@ -112,7 +146,6 @@
   "order": [
     "heading",
     "main",
-    "rich-text-columns-locations",
     "locations-accordion"
   ]
 }

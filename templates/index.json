@@ -410,6 +410,7 @@
             "collection": "hats",
             "img_align": "center",
             "title": "",
+            "col_link": "#",
             "url": ""
           }
         },
@@ -419,6 +420,7 @@
             "collection": "t-shirts",
             "img_align": "center",
             "title": "",
+            "col_link": "#",
             "url": ""
           }
         },
@@ -428,6 +430,7 @@
             "collection": "outerwear",
             "img_align": "center",
             "title": "",
+            "col_link": "#",
             "url": ""
           }
         },
@@ -437,6 +440,7 @@
             "collection": "stickers-1",
             "img_align": "center",
             "title": "",
+            "col_link": "#",
             "url": ""
           }
         },
@@ -446,6 +450,7 @@
             "collection": "kids-gear",
             "img_align": "center",
             "title": "",
+            "col_link": "#",
             "url": ""
           }
         },
@@ -455,6 +460,7 @@
             "collection": "spring-2022",
             "img_align": "center",
             "title": "",
+            "col_link": "#",
             "url": ""
           }
         }
@@ -546,12 +552,6 @@
             "sp_mb": 10
           }
         },
-        "addbacc1-6432-48e5-83df-3784f1f30b47": {
-          "type": "5",
-          "settings": {
-            "html": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.<\/p>"
-          }
-        },
         "1648654393d1eaf576-4": {
           "type": "3",
           "settings": {
@@ -581,13 +581,12 @@
         "1648654393d1eaf576-2",
         "1648654393d1eaf576-0",
         "1648654393d1eaf576-1",
-        "addbacc1-6432-48e5-83df-3784f1f30b47",
         "1648654393d1eaf576-4"
       ],
       "settings": {
         "source": "1",
         "video_url": "https:\/\/www.youtube.com\/watch?v=-2icZZ9tbwc&list=PLZf3m6mi50t3HFAcYQWk7EYl-2LtrNImu",
-        "file_name": "The Desert Tapes",
+        "btn_link": "#",
         "se_height": "cus_h",
         "use_custom_h": "1",
         "h_des": "600px",
@@ -597,7 +596,6 @@
         "cap_v_pos": 50,
         "cap_h_pos": 0,
         "txt_align": "tl",
-        "use_shadow": false,
         "cl_overlay": "#181818",
         "cl_opacity": 60,
         "layout": "nt_full",
@@ -856,6 +854,7 @@
       ],
       "settings": {
         "open_link": "_self",
+        "image": "shopify:\/\/shop_images\/topographic-tile-1.jpg",
         "layout_des": "1",
         "space": "2",
         "rounded_ins": "0",

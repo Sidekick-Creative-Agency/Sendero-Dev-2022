@@ -187,7 +187,6 @@
         "cap_v_pos_mb": 50,
         "cap_h_pos_mb": 50,
         "txt_align_mb": "tl",
-        "use_shadow": false,
         "cl_overlay": "#000000",
         "cl_opacity": 18,
         "layout": "nt_full",

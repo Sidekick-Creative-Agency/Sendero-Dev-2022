@@ -234,7 +234,6 @@
         "cap_v_pos_mb": 50,
         "cap_h_pos_mb": 50,
         "txt_align_mb": "tc",
-        "use_shadow": false,
         "cl_overlay": "#000000",
         "cl_opacity": 0,
         "layout": "nt_full",
@@ -248,8 +247,6 @@
       "type": "rich-text-sendero-sessions",
       "settings": {
         "title": "",
-        "sub_title": "",
-        "sub_font": "2",
         "style_title": "title_1",
         "ic_tt": "gem",
         "show_clpr": false,
@@ -288,8 +285,6 @@
       "type": "rich-text-sendero-sessions",
       "settings": {
         "title": "",
-        "sub_title": "",
-        "sub_font": "2",
         "style_title": "title_1",
         "ic_tt": "gem",
         "show_clpr": false,
