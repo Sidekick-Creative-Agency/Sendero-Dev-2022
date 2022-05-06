@@ -4364,7 +4364,7 @@
 
     // Init product accordion
     geckoShopify.spAccordion =  function () {
-
+alert($('.sp-tabs .tab-heading').length);
       if ( $('.sp-tabs .tab-heading').length == 0 ) return;
       
       //$('.sp-tabs .tab-heading').click(function (e) {
