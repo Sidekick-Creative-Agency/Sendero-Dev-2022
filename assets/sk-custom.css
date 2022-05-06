@@ -269,13 +269,12 @@
     border: none;
 }
 .rich-text-locations .rich-text-columns-text-outer-section {
-    justify-content: center !important;
+    justify-content: space-evenly !important;
 }
 .location-accordion-outer-container {
     margin: 50px 0 100px 0;
     flex-wrap: wrap !important;
     /* overflow-y: hidden !important; */
-    min-height: 250px;
     height: fit-content !important;
 }
 .location-accordion-outer-container.des_style_1.sp-tab {
@@ -295,7 +294,7 @@
 }
 .location-accordion-outer-container .heading {
     width: 25%;
-    margin: 50px 10px;
+    margin: 25px 10px;
     z-index: 10;
     height: 44.5px;
 }
