@@ -557,7 +557,7 @@
           "settings": {
             "font": "f_body",
             "title": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
-            "color": "#fff",
+            "color": "#ffffff",
             "fw_text": 400,
             "fs_text": 14,
             "lh_text": 20,
@@ -611,7 +611,7 @@
       "settings": {
         "source": "1",
         "video_url": "https:\/\/www.youtube.com\/watch?v=-2icZZ9tbwc&list=PLZf3m6mi50t3HFAcYQWk7EYl-2LtrNImu",
-        "btn_link": "#",
+        "btn_link": "\/pages\/the-desert-tapes",
         "se_height": "cus_h",
         "use_custom_h": "1",
         "h_des": "600px",
