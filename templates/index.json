@@ -545,17 +545,34 @@
             "ls_mb_text": 0
           }
         },
+        "56e293bf-886c-4447-b406-5e486cd0a051": {
+          "type": "6",
+          "settings": {
+            "sp": 20,
+            "sp_mb": 10
+          }
+        },
+        "1b75ca6f-9c21-414d-b58a-b46990ff7e10": {
+          "type": "2",
+          "settings": {
+            "font": "f_body",
+            "title": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+            "color": "#fff",
+            "fw_text": 400,
+            "fs_text": 14,
+            "lh_text": 20,
+            "ls_text": 0,
+            "fs_mb_text": 14,
+            "lh_mb_text": 0,
+            "ls_mb_text": 0,
+            "hide": false
+          }
+        },
         "1648654393d1eaf576-1": {
           "type": "6",
           "settings": {
             "sp": 10,
             "sp_mb": 10
-          }
-        },
-        "addbacc1-6432-48e5-83df-3784f1f30b47": {
-          "type": "5",
-          "settings": {
-            "html": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.<\/p>"
           }
         },
         "1648654393d1eaf576-4": {
@@ -586,15 +603,15 @@
       "block_order": [
         "1648654393d1eaf576-2",
         "1648654393d1eaf576-0",
+        "56e293bf-886c-4447-b406-5e486cd0a051",
+        "1b75ca6f-9c21-414d-b58a-b46990ff7e10",
         "1648654393d1eaf576-1",
-        "addbacc1-6432-48e5-83df-3784f1f30b47",
         "1648654393d1eaf576-4"
       ],
       "settings": {
         "source": "1",
         "video_url": "https:\/\/www.youtube.com\/watch?v=-2icZZ9tbwc&list=PLZf3m6mi50t3HFAcYQWk7EYl-2LtrNImu",
-        "file_name": "The Desert Tapes",
-        "btn_link": "pages\/sendero-sessions",
+        "btn_link": "#",
         "se_height": "cus_h",
         "use_custom_h": "1",
         "h_des": "600px",
@@ -604,7 +621,6 @@
         "cap_v_pos": 50,
         "cap_h_pos": 0,
         "txt_align": "tl",
-        "use_shadow": false,
         "cl_overlay": "#181818",
         "cl_opacity": 60,
         "layout": "nt_full",

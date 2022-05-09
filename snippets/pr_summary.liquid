@@ -266,17 +266,6 @@ assign se_stts = section.settings
             </a>
             {%- endif -%}
         </div>
-        <script>
-          $(document).ready(() => {
-            console.log("HELLO");
-            var stars = $(".r--stars-icon");
-          console.log(stars.length);
-          for (var star of stars) {
-            star.addClass("r-star");
-            console.log("HELLO");
-          }
-          });
-        </script>
         
         {%- if cart.taxes_included or shop.shipping_policy.body != blank -%}
           <div class="product__policies rte cb" data-product-policies {{ block.shopify_attributes }}>

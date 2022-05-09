@@ -57,8 +57,6 @@
             "collection": "hats",
             "img_align": "center",
             "title": "Hats",
-            "col_link": "spring-2022",
-            "show_shop_all": false,
             "url": ""
           }
         },
@@ -68,8 +66,6 @@
             "collection": "t-shirts",
             "img_align": "center",
             "title": "",
-            "col_link": "spring-2022",
-            "show_shop_all": false,
             "url": ""
           }
         },
@@ -79,8 +75,6 @@
             "collection": "accessories",
             "img_align": "center",
             "title": "",
-            "col_link": "spring-2022",
-            "show_shop_all": false,
             "url": ""
           }
         },
@@ -90,8 +84,6 @@
             "collection": "kids-gear",
             "img_align": "center",
             "title": "",
-            "col_link": "spring-2022",
-            "show_shop_all": false,
             "url": ""
           }
         },
@@ -101,8 +93,6 @@
             "collection": "outerwear",
             "img_align": "center",
             "title": "",
-            "col_link": "spring-2022",
-            "show_shop_all": false,
             "url": ""
           }
         }
@@ -185,8 +175,6 @@
             "collection": "desert-runner",
             "img_align": "center",
             "title": "",
-            "col_link": "#",
-            "show_shop_all": true,
             "url": ""
           }
         },
@@ -196,8 +184,6 @@
             "collection": "geology",
             "img_align": "center",
             "title": "",
-            "col_link": "#",
-            "show_shop_all": true,
             "url": ""
           }
         },
@@ -207,8 +193,6 @@
             "collection": "hey-slick",
             "img_align": "center",
             "title": "",
-            "col_link": "#",
-            "show_shop_all": true,
             "url": ""
           }
         },
@@ -218,8 +202,6 @@
             "collection": "legends-tall-tales",
             "img_align": "center",
             "title": "",
-            "col_link": "#",
-            "show_shop_all": true,
             "url": ""
           }
         },
@@ -229,8 +211,6 @@
             "collection": "national-parks",
             "img_align": "center",
             "title": "",
-            "col_link": "#",
-            "show_shop_all": true,
             "url": ""
           }
         },
@@ -240,8 +220,6 @@
             "collection": "lone-star-x-sendero",
             "img_align": "center",
             "title": "",
-            "col_link": "#",
-            "show_shop_all": true,
             "url": ""
           }
         },
@@ -251,8 +229,6 @@
             "collection": "rivers-ranges",
             "img_align": "center",
             "title": "",
-            "col_link": "#",
-            "show_shop_all": true,
             "url": ""
           }
         }
