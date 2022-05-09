@@ -1,205 +1,331 @@
 {%- liquid 
-  assign mainTitle = section.settings.main_title
-  assign title1 = section.settings.title1
-  assign title2 = section.settings.title2
-  assign title3 = section.settings.title3 
-  assign title4 = section.settings.title4
-  assign title5 = section.settings.title5
-  assign title6 = section.settings.title6
-  
-  assign sub_text1 = section.settings.sub_text1
-  assign sub_text2 = section.settings.sub_text2
-  assign sub_text3 = section.settings.sub_text3
-  assign sub_text4 = section.settings.sub_text4
-  assign sub_text5 = section.settings.sub_text5
-  assign sub_text6 = section.settings.sub_text6
+    assign mainTitle = section.settings.main_title
+    assign title1 = section.settings.title1
+    assign title2 = section.settings.title2
+    assign title3 = section.settings.title3 
+    assign title4 = section.settings.title4
+    assign title5 = section.settings.title5
+    assign title6 = section.settings.title6
+    
+    assign sub_text1 = section.settings.sub_text1
+    assign sub_text2 = section.settings.sub_text2
+    assign sub_text3 = section.settings.sub_text3
+    assign sub_text4 = section.settings.sub_text4
+    assign sub_text5 = section.settings.sub_text5
+    assign sub_text6 = section.settings.sub_text6
 
-  if section.settings.col_num == "2"
-    assign col_num = "33%"
-  else 
-    assign col_num = "50%"
-  endif
+    if section.settings.col_num == "2"
+      assign col_num = "33%"
+    else 
+      assign col_num = "50%"
+    endif
 
-  assign show_ckmk = section.settings.show_ckmk
+    assign show_ckmk = section.settings.show_ckmk
 
-  if section.settings.header_align != "center"
-    assign header_padding = "0 50px"
-  else 
-    assign header_padding = "0"
-  endif
+    if section.settings.header_align != "center"
+      assign header_padding = "0 50px"
+    else 
+      assign header_padding = "0"
+    endif
 
-  if section.settings.button_align != "center"
-    assign button_padding = "0 50px"
-  else 
-    assign button_padding = "0"
-  endif
+    if section.settings.button_align != "center"
+      assign button_padding = "0 50px"
+    else 
+      assign button_padding = "0"
+    endif
 -%}
 
 
-<div class="nt_se_{{section.id}} {{section.settings.layout}} rich-text-columns-outer-container rich-text-locations">
-{%- comment -%}{%- render "sk-locations-dropdown" -%}{%- endcomment -%}
+<div class="nt_se_{{section.id}} {{section.settings.layout}} rich-text-columns-outer-container">
+  {%- render "sk-locations-dropdown" -%}
 
-  {%- if mainTitle != "" -%}
-    <h2 id="state-name-heading" class="flex w__100" style="justify-content: {{section.settings.header_align}}; padding: {{header_padding}}">{{mainTitle}}</h2>
-  {%- endif -%}
-  <script>
-    document.getElementById("state-dropdown").onchange = () => {
-      let stateName = document.getElementById("state-dropdown").value;
-      document.getElementById("state-name-heading").innerText = stateName;
-    }
-    
-  </script>
-  <h1>{{stateName}}</h1>
-  <div class="rich-text-columns-inner-container">
-  {%- if title1 != ""-%}
-  <div class="rich-text-columns-text-outer-section" style="width: {{col_num}}">
-    {%- if show_ckmk -%}
-    <div class="rich-text-columns-text-inner-section">
-    <svg xmlns="http://www.w3.org/2000/svg" class="checkmark">
-      <g id="List" transform="translate(-261 -1069)">
-        <g id="Check_Mark" data-name="Check Mark" transform="translate(261 1069)">
-          <circle id="Ellipse_24" data-name="Ellipse 24" cx="16.5" cy="16.5" r="16.5"/>
-          <path id="ic_beenhere_24px" d="M14.8,26.983,9.8,21.99l1.408-1.408L14.8,24.157l7.579-7.579L23.782,18Z" transform="translate(0.127 -5.097)" fill="#fff"/>
-        </g>
-      </g>
-    </svg>
-  </div>
-  {%- endif -%}
+    {%- if mainTitle != "" -%}
+      <h2 id="state-name-heading" class="flex w__100" style="justify-content: {{section.settings.header_align}}; padding: {{header_padding}}">{{mainTitle}}</h2>
+    {%- endif -%}
+    <script>
+      document.getElementById("state-dropdown").onchange = () => {
+        let stateName = document.getElementById("state-dropdown").value;
+        document.getElementById("state-name-heading").innerText = stateName;
+      }
+      
+    </script>
+    <h1>{{stateName}}</h1>
+    <div class="rich-text-columns-inner-container">
+    {%- if title1 != ""-%}
+    <div class="rich-text-columns-text-outer-section" style="width: {{col_num}}">
+      {%- if show_ckmk -%}
       <div class="rich-text-columns-text-inner-section">
-      <h4>{{title1}}</h4>
-      <div class="rte_setting {{section.settings.align}}">{{sub_text1 }}</div>
+      <svg xmlns="http://www.w3.org/2000/svg" class="checkmark">
+        <g id="List" transform="translate(-261 -1069)">
+          <g id="Check_Mark" data-name="Check Mark" transform="translate(261 1069)">
+            <circle id="Ellipse_24" data-name="Ellipse 24" cx="16.5" cy="16.5" r="16.5"/>
+            <path id="ic_beenhere_24px" d="M14.8,26.983,9.8,21.99l1.408-1.408L14.8,24.157l7.579-7.579L23.782,18Z" transform="translate(0.127 -5.097)" fill="#fff"/>
+          </g>
+        </g>
+      </svg>
     </div>
-  </div>
-  {%- endif -%}
+    {%- endif -%}
+        <div class="rich-text-columns-text-inner-section">
+        <h4>{{title1}}</h4>
+        <div class="rte_setting {{section.settings.align}}">{{sub_text1 }}</div>
+      </div>
+    </div>
+    {%- endif -%}
 
-  {%- if title2 != ""-%}
-  <div class="rich-text-columns-text-outer-section" style="width: {{col_num}}">
-    {%- if show_ckmk -%}
-    <div class="rich-text-columns-text-inner-section">
-    <svg xmlns="http://www.w3.org/2000/svg" class="checkmark">
-      <g id="List" transform="translate(-261 -1069)">
-        <g id="Check_Mark" data-name="Check Mark" transform="translate(261 1069)">
-          <circle id="Ellipse_24" data-name="Ellipse 24" cx="16.5" cy="16.5" r="16.5"/>
-          <path id="ic_beenhere_24px" d="M14.8,26.983,9.8,21.99l1.408-1.408L14.8,24.157l7.579-7.579L23.782,18Z" transform="translate(0.127 -5.097)" fill="#fff"/>
-        </g>
-      </g>
-    </svg>
-  </div>
-  {%- endif -%}
-        <div class="rich-text-columns-text-inner-section">
-        <h4>{{title2}}</h4>
-        <div class="rte_setting {{section.settings.align}}">{{sub_text2}}</div>
-      </div>
-  </div>
-  {%- endif -%}
-  {%- if title3 != ""-%}
-  <div class="rich-text-columns-text-outer-section" style="width: {{col_num}}">
-    {%- if show_ckmk -%}
-    <div class="rich-text-columns-text-inner-section">
-    <svg xmlns="http://www.w3.org/2000/svg" class="checkmark">
-      <g id="List" transform="translate(-261 -1069)">
-        <g id="Check_Mark" data-name="Check Mark" transform="translate(261 1069)">
-          <circle id="Ellipse_24" data-name="Ellipse 24" cx="16.5" cy="16.5" r="16.5"/>
-          <path id="ic_beenhere_24px" d="M14.8,26.983,9.8,21.99l1.408-1.408L14.8,24.157l7.579-7.579L23.782,18Z" transform="translate(0.127 -5.097)" fill="#fff"/>
-        </g>
-      </g>
-    </svg>
-  </div>
-  {%- endif -%}
-        <div class="rich-text-columns-text-inner-section">
-        <h4>{{title3}}</h4>
-        <div class="rte_setting {{section.settings.align}}">{{sub_text3}}</div>
-      </div>
-  </div>
-  {%- endif -%}
-  {%- if title4 != ""-%}
-  <div class="rich-text-columns-text-outer-section" style="width: {{col_num}}">
-    {%- if show_ckmk -%}
-    <div class="rich-text-columns-text-inner-section">
-    <svg xmlns="http://www.w3.org/2000/svg" class="checkmark">
-      <g id="List" transform="translate(-261 -1069)">
-        <g id="Check_Mark" data-name="Check Mark" transform="translate(261 1069)">
-          <circle id="Ellipse_24" data-name="Ellipse 24" cx="16.5" cy="16.5" r="16.5"/>
-          <path id="ic_beenhere_24px" d="M14.8,26.983,9.8,21.99l1.408-1.408L14.8,24.157l7.579-7.579L23.782,18Z" transform="translate(0.127 -5.097)" fill="#fff"/>
-        </g>
-      </g>
-    </svg>
-  </div>
-  {%- endif -%}
-        <div class="rich-text-columns-text-inner-section">
-        <h4>{{title4}}</h4>
-        <div class="rte_setting {{section.settings.align}}">{{sub_text4}}</div>
-      </div>
-  </div>
-  {%- endif -%}
-  {%- if title5 != ""-%}
-  <div class="rich-text-columns-text-outer-section" style="width: {{col_num}}">
-    {%- if show_ckmk -%}
-    <div class="rich-text-columns-text-inner-section">
-    <svg xmlns="http://www.w3.org/2000/svg" class="checkmark">
-      <g id="List" transform="translate(-261 -1069)">
-        <g id="Check_Mark" data-name="Check Mark" transform="translate(261 1069)">
-          <circle id="Ellipse_24" data-name="Ellipse 24" cx="16.5" cy="16.5" r="16.5"/>
-          <path id="ic_beenhere_24px" d="M14.8,26.983,9.8,21.99l1.408-1.408L14.8,24.157l7.579-7.579L23.782,18Z" transform="translate(0.127 -5.097)" fill="#fff"/>
-        </g>
-      </g>
-    </svg>
-  </div>
-  {%- endif -%}
-        <div class="rich-text-columns-text-inner-section">
-        <h4>{{title5}}</h4>
-        <div class="rte_setting {{section.settings.align}}">{{sub_text5}}</div>
-      </div>
-  </div>
-  {%- endif -%}
-  {%- if title6 != ""-%}
-  <div class="rich-text-columns-text-outer-section" style="width: {{col_num}}">
-    {%- if show_ckmk -%}
-    <div class="rich-text-columns-text-inner-section">
-    <svg xmlns="http://www.w3.org/2000/svg" class="checkmark">
-      <g id="List" transform="translate(-261 -1069)">
-        <g id="Check_Mark" data-name="Check Mark" transform="translate(261 1069)">
-          <circle id="Ellipse_24" data-name="Ellipse 24" cx="16.5" cy="16.5" r="16.5"/>
-          <path id="ic_beenhere_24px" d="M14.8,26.983,9.8,21.99l1.408-1.408L14.8,24.157l7.579-7.579L23.782,18Z" transform="translate(0.127 -5.097)" fill="#fff"/>
-        </g>
-      </g>
-    </svg>
-  </div>
-  {%- endif -%}
+    {%- if title2 != ""-%}
+    <div class="rich-text-columns-text-outer-section" style="width: {{col_num}}">
+      {%- if show_ckmk -%}
       <div class="rich-text-columns-text-inner-section">
-        <h4>{{title6}}</h4>
-        <div class="rte_setting {{section.settings.align}}">{{sub_text6}}</div>
-      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" class="checkmark">
+        <g id="List" transform="translate(-261 -1069)">
+          <g id="Check_Mark" data-name="Check Mark" transform="translate(261 1069)">
+            <circle id="Ellipse_24" data-name="Ellipse 24" cx="16.5" cy="16.5" r="16.5"/>
+            <path id="ic_beenhere_24px" d="M14.8,26.983,9.8,21.99l1.408-1.408L14.8,24.157l7.579-7.579L23.782,18Z" transform="translate(0.127 -5.097)" fill="#fff"/>
+          </g>
+        </g>
+      </svg>
+    </div>
+    {%- endif -%}
+          <div class="rich-text-columns-text-inner-section">
+          <h4>{{title2}}</h4>
+          <div class="rte_setting {{section.settings.align}}">{{sub_text2}}</div>
+        </div>
+    </div>
+    {%- endif -%}
+    {%- if title3 != ""-%}
+    <div class="rich-text-columns-text-outer-section" style="width: {{col_num}}">
+      {%- if show_ckmk -%}
+      <div class="rich-text-columns-text-inner-section">
+      <svg xmlns="http://www.w3.org/2000/svg" class="checkmark">
+        <g id="List" transform="translate(-261 -1069)">
+          <g id="Check_Mark" data-name="Check Mark" transform="translate(261 1069)">
+            <circle id="Ellipse_24" data-name="Ellipse 24" cx="16.5" cy="16.5" r="16.5"/>
+            <path id="ic_beenhere_24px" d="M14.8,26.983,9.8,21.99l1.408-1.408L14.8,24.157l7.579-7.579L23.782,18Z" transform="translate(0.127 -5.097)" fill="#fff"/>
+          </g>
+        </g>
+      </svg>
+    </div>
+    {%- endif -%}
+          <div class="rich-text-columns-text-inner-section">
+          <h4>{{title3}}</h4>
+          <div class="rte_setting {{section.settings.align}}">{{sub_text3}}</div>
+        </div>
+    </div>
+    {%- endif -%}
+    {%- if title4 != ""-%}
+    <div class="rich-text-columns-text-outer-section" style="width: {{col_num}}">
+      {%- if show_ckmk -%}
+      <div class="rich-text-columns-text-inner-section">
+      <svg xmlns="http://www.w3.org/2000/svg" class="checkmark">
+        <g id="List" transform="translate(-261 -1069)">
+          <g id="Check_Mark" data-name="Check Mark" transform="translate(261 1069)">
+            <circle id="Ellipse_24" data-name="Ellipse 24" cx="16.5" cy="16.5" r="16.5"/>
+            <path id="ic_beenhere_24px" d="M14.8,26.983,9.8,21.99l1.408-1.408L14.8,24.157l7.579-7.579L23.782,18Z" transform="translate(0.127 -5.097)" fill="#fff"/>
+          </g>
+        </g>
+      </svg>
+    </div>
+    {%- endif -%}
+          <div class="rich-text-columns-text-inner-section">
+          <h4>{{title4}}</h4>
+          <div class="rte_setting {{section.settings.align}}">{{sub_text4}}</div>
+        </div>
+    </div>
+    {%- endif -%}
+    {%- if title5 != ""-%}
+    <div class="rich-text-columns-text-outer-section" style="width: {{col_num}}">
+      {%- if show_ckmk -%}
+      <div class="rich-text-columns-text-inner-section">
+      <svg xmlns="http://www.w3.org/2000/svg" class="checkmark">
+        <g id="List" transform="translate(-261 -1069)">
+          <g id="Check_Mark" data-name="Check Mark" transform="translate(261 1069)">
+            <circle id="Ellipse_24" data-name="Ellipse 24" cx="16.5" cy="16.5" r="16.5"/>
+            <path id="ic_beenhere_24px" d="M14.8,26.983,9.8,21.99l1.408-1.408L14.8,24.157l7.579-7.579L23.782,18Z" transform="translate(0.127 -5.097)" fill="#fff"/>
+          </g>
+        </g>
+      </svg>
+    </div>
+    {%- endif -%}
+          <div class="rich-text-columns-text-inner-section">
+          <h4>{{title5}}</h4>
+          <div class="rte_setting {{section.settings.align}}">{{sub_text5}}</div>
+        </div>
+    </div>
+    {%- endif -%}
+    {%- if title6 != ""-%}
+    <div class="rich-text-columns-text-outer-section" style="width: {{col_num}}">
+      {%- if show_ckmk -%}
+      <div class="rich-text-columns-text-inner-section">
+      <svg xmlns="http://www.w3.org/2000/svg" class="checkmark">
+        <g id="List" transform="translate(-261 -1069)">
+          <g id="Check_Mark" data-name="Check Mark" transform="translate(261 1069)">
+            <circle id="Ellipse_24" data-name="Ellipse 24" cx="16.5" cy="16.5" r="16.5"/>
+            <path id="ic_beenhere_24px" d="M14.8,26.983,9.8,21.99l1.408-1.408L14.8,24.157l7.579-7.579L23.782,18Z" transform="translate(0.127 -5.097)" fill="#fff"/>
+          </g>
+        </g>
+      </svg>
+    </div>
+    {%- endif -%}
+        <div class="rich-text-columns-text-inner-section">
+          <h4>{{title6}}</h4>
+          <div class="rte_setting {{section.settings.align}}">{{sub_text6}}</div>
+        </div>
+    </div>
+    {%- endif -%}  
   </div>
-  {%- endif -%}  
+  
+  {%- if section.settings.show_btn -%}
+    <div class="rich-text-button w__100 flex" style="justify-content: {{section.settings.button_align}}; padding: {{button_padding}}">
+      <button class="btn_icon_true">{{section.settings.btn_text}}</button>
+    </div>
+    {%- endif -%}
 </div>
-
-{%- if section.settings.show_btn -%}
-  <div class="rich-text-button w__100 flex" style="justify-content: {{section.settings.button_align}}; padding: {{button_padding}}">
-    <button class="btn_icon_true">{{section.settings.btn_text}}</button>
-  </div>
-  {%- endif -%}
-</div>
-
-{%- render 'section_css' -%}
-{%- schema -%}
-  {
-    "name": "rich text columns",
-    "class": "nt_section type_rich_text",
-    "settings": [
-      {
-        "type": "header",
-        "content": "== Title Settings"
-      },
-      {
+  
+  {%- render 'section_css' -%}
+  {%- schema -%}
+    {
+      "name": "rich text columns",
+      "class": "nt_section type_rich_text",
+      "settings": [
+        {
+          "type": "header",
+          "content": "== Title Settings"
+        },
+        {
+            "type": "text",
+            "id": "main_title",
+            "label": "Heading",
+            "default": "Select a state"
+          },
+          {
+            "type": "select",
+            "id": "header_align",
+            "default": "center",
+            "options": [
+             {
+                "value": "left",
+                "label": "Left"
+             },
+             {
+                "value": "center",
+                "label": "Center"
+              },
+              {
+                "value": "right",
+                "label": "Right"
+             }
+            ],
+            "label": "Align Title"
+          },
+        {
           "type": "text",
-          "id": "main_title",
+          "id": "title1",
           "label": "Heading",
-          "default": "Section title"
+          "default": "QUALITY LOREM IPSOM"
+        },
+        {
+        "type": "text",
+        "id": "title2",
+        "label": "Heading",
+        "default": "QUALITY LOREM IPSOM"
+        },
+        {
+        "type": "text",
+        "id": "title3",
+        "label": "Heading",
+        "default": "QUALITY LOREM IPSOM"
+        },
+        {
+        "type": "text",
+        "id": "title4",
+        "label": "Heading",
+        "default": "QUALITY LOREM IPSOM"
+        },
+        {
+        "type": "text",
+        "id": "title5",
+        "label": "Heading",
+        "default": "QUALITY LOREM IPSOM"
+        },
+        {
+        "type": "text",
+        "id": "title6",
+        "label": "Heading",
+        "default": "QUALITY LOREM IPSOM"
+        },
+        {
+          "type": "textarea",
+          "id": "sub_text1",
+          "label": "Sub Text",
+          "default": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum."
+        },
+        {
+          "type": "textarea",
+          "id": "sub_text2",
+          "label": "Sub Text",
+          "default": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum."
+        },
+        {
+          "type": "textarea",
+          "id": "sub_text3",
+          "label": "Sub Text",
+          "default": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum."
+        },
+        {
+          "type": "textarea",
+          "id": "sub_text4",
+          "label": "Sub Text",
+          "default": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum."
+        },
+        {
+          "type": "textarea",
+          "id": "sub_text5",
+          "label": "Sub Text",
+          "default": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum."
+        },
+        {
+          "type": "textarea",
+          "id": "sub_text6",
+          "label": "Sub Text",
+          "default": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum."
         },
         {
           "type": "select",
-          "id": "header_align",
+          "id": "col_num",
+          "default": "1",
+          "options": [
+           {
+              "value": "1",
+              "label": "2"
+           },
+           {
+              "value": "2",
+              "label": "3"
+            }
+          ],
+          "label": "How many columns do you want?"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_ckmk",
+          "label": "Show checkmark icons?",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "show_btn",
+          "label": "Show button?",
+          "default": false
+        },
+        {
+          "type": "text",
+          "id": "btn_text",
+          "label": "Button Text",
+          "default": "Click Me"
+        },
+        {
+          "type": "select",
+          "id": "button_align",
           "default": "center",
           "options": [
            {
@@ -215,311 +341,186 @@
               "label": "Right"
            }
           ],
-          "label": "Align Title"
+          "label": "Align Button"
         },
-      {
-        "type": "text",
-        "id": "title1",
-        "label": "Heading",
-        "default": "QUALITY LOREM IPSOM"
-      },
-      {
-      "type": "text",
-      "id": "title2",
-      "label": "Heading",
-      "default": "QUALITY LOREM IPSOM"
-      },
-      {
-      "type": "text",
-      "id": "title3",
-      "label": "Heading",
-      "default": "QUALITY LOREM IPSOM"
-      },
-      {
-      "type": "text",
-      "id": "title4",
-      "label": "Heading",
-      "default": "QUALITY LOREM IPSOM"
-      },
-      {
-      "type": "text",
-      "id": "title5",
-      "label": "Heading",
-      "default": "QUALITY LOREM IPSOM"
-      },
-      {
-      "type": "text",
-      "id": "title6",
-      "label": "Heading",
-      "default": "QUALITY LOREM IPSOM"
-      },
-      {
-        "type": "textarea",
-        "id": "sub_text1",
-        "label": "Sub Text",
-        "default": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum."
-      },
-      {
-        "type": "textarea",
-        "id": "sub_text2",
-        "label": "Sub Text",
-        "default": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum."
-      },
-      {
-        "type": "textarea",
-        "id": "sub_text3",
-        "label": "Sub Text",
-        "default": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum."
-      },
-      {
-        "type": "textarea",
-        "id": "sub_text4",
-        "label": "Sub Text",
-        "default": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum."
-      },
-      {
-        "type": "textarea",
-        "id": "sub_text5",
-        "label": "Sub Text",
-        "default": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum."
-      },
-      {
-        "type": "textarea",
-        "id": "sub_text6",
-        "label": "Sub Text",
-        "default": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum."
-      },
-      {
-        "type": "select",
-        "id": "col_num",
-        "default": "1",
-        "options": [
-         {
-            "value": "1",
-            "label": "2"
-         },
-         {
-            "value": "2",
-            "label": "3"
-          }
-        ],
-        "label": "How many columns do you want?"
-      },
-      {
-        "type": "checkbox",
-        "id": "show_ckmk",
-        "label": "Show checkmark icons?",
-        "default": true
-      },
-      {
-        "type": "checkbox",
-        "id": "show_btn",
-        "label": "Show button?",
-        "default": false
-      },
-      {
-        "type": "text",
-        "id": "btn_text",
-        "label": "Button Text",
-        "default": "Click Me"
-      },
-      {
-        "type": "select",
-        "id": "button_align",
-        "default": "center",
-        "options": [
-         {
-            "value": "left",
-            "label": "Left"
-         },
-         {
-            "value": "center",
-            "label": "Center"
-          },
-          {
-            "value": "right",
-            "label": "Right"
-         }
-        ],
-        "label": "Align Button"
-      },
-      {
-        "type": "select",
-        "id": "sub_font",
-        "default": "2",
-        "options": [
-         {
-            "value": "1",
-            "label": "Body font"
-         },
-         {
-            "value": "2",
-            "label": "Sub title font"
-          }
-        ],
-        "label": "Sub Text use font:"
-      },
-      {
-        "type": "select",
-        "id": "style_title",
-        "options": [
-         {
-            "value": "title_1",
-            "label": "Design 1"
-         },
-         {
-            "value": "title_2",
-            "label": "Design 2"
-          },
-         {
-            "value": "title_3",
-            "label": "Design 3"
-          },
-         {
-            "value": "title_4",
-            "label": "Design 4"
-          },
-         {
-            "value": "title_5 lazyloadt4s",
-            "label": "Design 5"
-          },
-         {
-            "value": "title_6",
-            "label": "Design 6"
-          },
-         {
-            "value": "title_7 +la",
-            "label": "Design 7 (with line-awesome)"
-          },
-         {
-            "value": "title_8",
-            "label": "Design 8"
-          },
-         {
-            "value": "title_9",
-            "label": "Design 9"
-          },
-         {
-            "value": "title_11",
-            "label": "Design 11"
-          },
-         {
-            "value": "title_12",
-            "label": "Design 12"
-          },
-         {
-            "value": "title_13",
-            "label": "Design 13"
-          }
-        ],
-        "label": "Design Title:"
-      },
-      {
-        "type": "text",
-        "id": "ic_tt",
-        "label": "Style 7 icon line-awesome",
-        "default": "gem"
-      },
-      {
-        "type": "checkbox",
-        "id": "show_clpr",
-        "label": "Use icon color primary?",
-        "default": false
-      },
-      {
-        "type": "paragraph",
-        "content": "[Get icons Line awesome](https://icons8.com/line-awesome)"
-      },
-      {
-        "type": "header",
-        "content": "== General Settings"
-      },
-      {
-        "type": "richtext",
-        "id": "content",
-        "label": "Content",
-        "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
-      },
-      {
-        "type": "select",
-        "id": "align",
-        "default": "tc",
-        "options": [
-         {
-            "value": "tl",
-            "label": "Left"
-         },
-         {
-            "value": "tc",
-            "label": "Center"
-          },
-         {
-            "value": "tr",
-            "label": "Right"
-          }
-        ],
-        "label": "Text Align"
-      },
-      {
-        "type": "header",
-        "content": "== Design Options"
-      },
-      {
-        "type": "select",
-        "id": "layout",
-        "options": [
-         {
-            "value": "container",
-            "label": "Container"
-         },
-         {
-            "value": "nt_co_wide",
-            "label": "Wide"
-          },
-         {
-            "value": "nt_full",
-            "label": "Full Width"
-          }
-        ],
-        "label": "Layout"
-      },
-      {
-        "type": "text",
-        "id": "mg",
-        "label": "Margin",
-        "info":"Margin top, margin right, margin bottom, margin left. If you not use to blank",
-        "default": "50px,,50px,",
-        "placeholder": "50px,,50px,"
-      },
-      {
-        "type": "text",
-        "id": "pd",
-        "label": "Padding",
-        "info":"Padding top, padding right, padding bottom, padding left. If you not use to blank",
-        "placeholder": "50px,,50px,"
-      },
-     {
-        "type": "header",
-        "content": "== Design Mobile Options"
-      },
-      {
-        "type": "text",
-        "id": "mg_mb",
-        "label": "Margin",
-        "placeholder": "50px,,50px,"
-      },
-      {
-        "type": "text",
-        "id": "pd_mb",
-        "label": "Padding",
-        "placeholder": "50px,,50px,"
-      }
-    ],
-    "presets": [
-      {
-        "name": "Rich text",
-        "category": "V. Text"
-      }
-    ]
-  }
-{% endschema %}
+        {
+          "type": "select",
+          "id": "sub_font",
+          "default": "2",
+          "options": [
+           {
+              "value": "1",
+              "label": "Body font"
+           },
+           {
+              "value": "2",
+              "label": "Sub title font"
+            }
+          ],
+          "label": "Sub Text use font:"
+        },
+        {
+          "type": "select",
+          "id": "style_title",
+          "options": [
+           {
+              "value": "title_1",
+              "label": "Design 1"
+           },
+           {
+              "value": "title_2",
+              "label": "Design 2"
+            },
+           {
+              "value": "title_3",
+              "label": "Design 3"
+            },
+           {
+              "value": "title_4",
+              "label": "Design 4"
+            },
+           {
+              "value": "title_5 lazyloadt4s",
+              "label": "Design 5"
+            },
+           {
+              "value": "title_6",
+              "label": "Design 6"
+            },
+           {
+              "value": "title_7 +la",
+              "label": "Design 7 (with line-awesome)"
+            },
+           {
+              "value": "title_8",
+              "label": "Design 8"
+            },
+           {
+              "value": "title_9",
+              "label": "Design 9"
+            },
+           {
+              "value": "title_11",
+              "label": "Design 11"
+            },
+           {
+              "value": "title_12",
+              "label": "Design 12"
+            },
+           {
+              "value": "title_13",
+              "label": "Design 13"
+            }
+          ],
+          "label": "Design Title:"
+        },
+        {
+          "type": "text",
+          "id": "ic_tt",
+          "label": "Style 7 icon line-awesome",
+          "default": "gem"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_clpr",
+          "label": "Use icon color primary?",
+          "default": false
+        },
+        {
+          "type": "paragraph",
+          "content": "[Get icons Line awesome](https://icons8.com/line-awesome)"
+        },
+        {
+          "type": "header",
+          "content": "== General Settings"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Content",
+          "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+        },
+        {
+          "type": "select",
+          "id": "align",
+          "default": "tc",
+          "options": [
+           {
+              "value": "tl",
+              "label": "Left"
+           },
+           {
+              "value": "tc",
+              "label": "Center"
+            },
+           {
+              "value": "tr",
+              "label": "Right"
+            }
+          ],
+          "label": "Text Align"
+        },
+        {
+          "type": "header",
+          "content": "== Design Options"
+        },
+        {
+          "type": "select",
+          "id": "layout",
+          "options": [
+           {
+              "value": "container",
+              "label": "Container"
+           },
+           {
+              "value": "nt_co_wide",
+              "label": "Wide"
+            },
+           {
+              "value": "nt_full",
+              "label": "Full Width"
+            }
+          ],
+          "label": "Layout"
+        },
+        {
+          "type": "text",
+          "id": "mg",
+          "label": "Margin",
+          "info":"Margin top, margin right, margin bottom, margin left. If you not use to blank",
+          "default": "50px,,50px,",
+          "placeholder": "50px,,50px,"
+        },
+        {
+          "type": "text",
+          "id": "pd",
+          "label": "Padding",
+          "info":"Padding top, padding right, padding bottom, padding left. If you not use to blank",
+          "placeholder": "50px,,50px,"
+        },
+       {
+          "type": "header",
+          "content": "== Design Mobile Options"
+        },
+        {
+          "type": "text",
+          "id": "mg_mb",
+          "label": "Margin",
+          "placeholder": "50px,,50px,"
+        },
+        {
+          "type": "text",
+          "id": "pd_mb",
+          "label": "Padding",
+          "placeholder": "50px,,50px,"
+        }
+      ],
+      "presets": [
+        {
+          "name": "Rich text",
+          "category": "V. Text"
+        }
+      ]
+    }
+  {% endschema %}
+  

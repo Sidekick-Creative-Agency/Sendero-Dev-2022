@@ -247,6 +247,7 @@
       "type": "rich-text-sendero-sessions",
       "settings": {
         "title": "",
+        "header_align": "center",
         "style_title": "title_1",
         "ic_tt": "gem",
         "show_clpr": false,
@@ -285,6 +286,7 @@
       "type": "rich-text-sendero-sessions",
       "settings": {
         "title": "",
+        "header_align": "center",
         "style_title": "title_1",
         "ic_tt": "gem",
         "show_clpr": false,

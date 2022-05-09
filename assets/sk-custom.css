@@ -10,6 +10,9 @@
 .page-head h1 {
     line-height:normal;
 }
+.page-head a:hover {
+    color: #fff !important;
+}
 
 /*--------------------------------------------------------/
 / HEADER & MEGA MENU
@@ -1032,12 +1035,8 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     border: none !important;
     margin-bottom: auto;
 }
-/* .mini_cart_upsell_items .cart-upsell-col {
-    width: 50%;
-} */
 .upsell_item_img, .upsell_item_img img {
     width: 150px !important;
-
 }
 .upsell_item {
     width: 100% !important;
@@ -1050,6 +1049,7 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     justify-content: center;
     align-items: center;
     font-size: 16px !important;
+    margin: 0 10px;
 }
 .cart-upsell-col-view {
     text-align: center;
@@ -1110,6 +1110,24 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     margin-top: 0 !important;
     display: none;
 }
+.mini_cart_upsell .flickityt4s-prev-next-button {
+    position: absolute !important;
+    width: 38px !important;
+    height: 36px !important;
+    background-color: #abb1b4 !important;
+    color: #fff !important;
+    border: 1.5px solid #abb1b4 !important;
+    margin: 0 15px !important;
+}
+/* .mini_cart_upsell .flickityt4s-prev-next-button::before {
+    width: 36px !important;
+    height: 36px !important;
+} */
+.mini_cart_upsell .flickityt4s-prev-next-button:hover {
+    background-color: #666 !important;
+    border: 1.5px solid rgba(33,43,54,.9) !important;
+
+}
 .mini_cart_upsell_items .flickityt4s-button:before {
     content: "\e686" !important;
 }
@@ -1118,6 +1136,10 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 }
 .mini_cart_upsell .flickityt4s-prev-next-button:before {
     display: block !important;
+}
+.mini_cart_upsell .upsell-item__title {
+    max-width: 200px;
+    white-space: normal;
 }
 
 /*---------------- Blog Pages -------------------*/
@@ -1206,6 +1228,18 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     max-width: none !important;
     white-space: nowrap;
 }
+
+
+/*---------------- CHAT APP -------------------*/
+/* #shopify-chat-dummy {
+    height: 50px !important;
+    width: 50px !important;
+}
+#dummy-chat-button {
+    height: 40px !important;
+    width: 40px !important;
+} */
+
 
 /*---------------- SHOPPING CART, LOGIN & SEARCH SIDEBAR SIZE AND PADDING ----------------*/
 
