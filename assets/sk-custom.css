@@ -10,6 +10,9 @@
 .page-head h1 {
     line-height:normal;
 }
+.page-head a:hover {
+    color: #fff !important;
+}
 
 /*--------------------------------------------------------/
 / HEADER & MEGA MENU
