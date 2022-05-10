@@ -453,8 +453,8 @@
           "9f7a4a88-7cbc-4c06-baae-ee3009a12771": {
             "type": "mega",
             "settings": {
-              "title": "New",
-              "url": "",
+              "title": "Spring 2022",
+              "url": "shopify:\/\/collections\/spring-2022",
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
@@ -470,7 +470,7 @@
           "f612db4f-0e53-4806-bb56-7271c5193f57": {
             "type": "mmtitle",
             "settings": {
-              "mmtitle": "New",
+              "mmtitle": "Spring 2022",
               "mm_btn_text": "Shop All",
               "url": "shopify:\/\/collections\/spring-2022",
               "open_link": "_self",
@@ -483,7 +483,7 @@
               "tt_hd": "",
               "url": "",
               "open_link": "_self",
-              "menu": "new",
+              "menu": "spring-2022",
               "col": "3"
             }
           },
@@ -502,25 +502,12 @@
             "settings": {
               "cat_design": "1",
               "hoverz": true,
-              "collection": "desert-runner",
+              "collection": "spring-2022",
               "blog": "",
               "page_link": "",
               "col_link": "#",
               "title": "",
-              "col": "3"
-            }
-          },
-          "9716ea14-8083-4c08-a9b0-435a453af89a": {
-            "type": "cat",
-            "settings": {
-              "cat_design": "1",
-              "hoverz": true,
-              "collection": "hey-slick",
-              "blog": "",
-              "page_link": "",
-              "col_link": "#",
-              "title": "",
-              "col": "3"
+              "col": "6"
             }
           },
           "1585641227863": {
@@ -825,7 +812,6 @@
           "ab4741c4-618e-404a-9493-ad1ffc365118",
           "2b198535-7f3c-4d8a-bed2-a42938d26fbd",
           "98c2edaa-9215-40b6-9b62-8a1b9ec5a47c",
-          "9716ea14-8083-4c08-a9b0-435a453af89a",
           "1585641227863",
           "bc349ccd-7167-466b-aab8-2c2534a91320",
           "3237df59-19be-4aea-b04a-b0f1e8c10f56",
@@ -865,7 +851,7 @@
             "type": "html",
             "settings": {
               "title": "Live Chat",
-              "content": "<div class=\"ftr-icn-wrap\">\n<div class=\"ftr-icn\"><i class=\"pegk pe-7s-chat\"> <\/i><\/div>\n<div class=\"ftr-icn-txt\">Chat now with one of our sales representatives or email us at <a href=\"mailto:contact@senderopc.com\">contact@senderopc.com<\/a>\n<\/div>\n<\/div><div><button type=\"submit\" class=\"submit-btn\"><span>Live Chat<\/span><\/button><\/div>",
+              "content": "<div class=\"ftr-icn-wrap\">\n<div class=\"ftr-icn\"><i class=\"pegk pe-7s-chat\"> <\/i><\/div>\n<div class=\"ftr-icn-txt\">Chat now with one of our sales representatives or email us at <a href=\"mailto:contact@senderopc.com\">contact@senderopc.com<\/a>\n<\/div>\n<\/div><div><button type=\"submit\" class=\"submit-btn chat-toggle\"><span>Live Chat<\/span><\/button><\/div>",
               "order": "1",
               "cl": "4",
               "cl_tb": "6",

@@ -214,7 +214,7 @@
 							{% if bk_stts.col_link and bk_stts.col_link != "#" %}
 								{%- assign col_url = col_url | append: "/" | append: bk_stts.col_link %}
 							{% endif %}
-							<a href="{{ col_url| default:'/' }}" class="db cat_grid_item__link">
+							<a href="{{ col_url| default:'/' }}" class="db cat_grid_item__link" style="max-height: 216px !important">
 								{%- if image != blank -%}
 									<div class="cat_grid_item__overlay item__position nt_bg_lz lazyloadt4s" data-bgset="{{ image | img_url: '1x1' }}" data-ratio="{{image.aspect_ratio}}" data-sizes="auto" data-parent-fit="width" style="padding-top:80%;"></div>
 								{%- else -%}

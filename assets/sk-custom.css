@@ -398,6 +398,9 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 .ftr-icn-txt {
     line-height: 1.3em;
 }
+.widget_nav_menu .widget-title, div aside.widget_text .widget-title {
+    margin-bottom: 15px !important;
+}
 
 /*--------------------------------------------------------/
 / HOME PAGE

@@ -22,15 +22,6 @@
         "e8d6c4cd-d55a-4ca5-9afe-629c7d6803ad"
       ],
       "settings": {
-<<<<<<< HEAD
-        "title": "locations",
-=======
-        "title": "Page Name",
->>>>>>> main
-        "button": false,
-        "btn_text": "Click Me",
-        "button_align": "center",
-        "btn_background": "black",
         "image": "shopify:\/\/shop_images\/161218716_2545082962452411_5753525780345998495_n.jpg",
         "parallax": false,
         "color": "#000000",
@@ -48,28 +39,29 @@
       "settings": {
       }
     },
-    "rich-text-columns-locations": {
-      "type": "rich-text-columns-locations",
+    "16493445351de7236a": {
+      "type": "rich_text",
       "settings": {
-        "main_title": "Select a State",
-        "header_align": "left",
-        "title1": "Store Name",
-        "title2": "Store Name",
-        "title3": "Store Name",
-        "title4": "Store Name",
-        "title5": "Store Name",
-        "title6": "Store Name",
-        "sub_text1": "Address Line 1 <br>\nAddress Line 2",
-        "sub_text2": "Address Line 1 <br>\nAddress Line 2",
-        "sub_text3": "Address Line 1 <br>\nAddress Line 2",
-        "sub_text4": "Address Line 1 <br>\nAddress Line 2",
-        "sub_text5": "Address Line 1 <br>\nAddress Line 2",
-        "sub_text6": "Address Line 1 <br>\nAddress Line 2",
-        "col_num": "2",
-        "show_ckmk": false,
-        "show_btn": false,
-        "btn_text": "Click Me",
-        "button_align": "center",
+        "title": "TEXAS",
+        "sub_title": "",
+        "sub_font": "2",
+        "style_title": "title_1",
+        "ic_tt": "gem",
+        "show_clpr": false,
+        "content": "<p>Store Title<\/p><p>1234 Street Name<\/p><p><\/p>",
+        "align": "tl",
+        "layout": "container",
+        "mg": "50px,,50px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    },
+    "16493446299a1ff55e": {
+      "type": "rich_text",
+      "settings": {
+        "title": "Talk about your brand",
+        "sub_title": "",
         "sub_font": "2",
         "style_title": "title_1",
         "ic_tt": "gem",
@@ -87,6 +79,7 @@
   "order": [
     "heading",
     "main",
-    "rich-text-columns-locations"
+    "16493445351de7236a",
+    "16493446299a1ff55e"
   ]
 }

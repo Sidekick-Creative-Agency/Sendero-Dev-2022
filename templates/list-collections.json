@@ -6,8 +6,8 @@
         "shown": true,
         "image": "shopify:\/\/shop_images\/homepage_hero_image_3.webp",
         "parallax": false,
-        "color": "#000",
-        "color_txt": "#fff",
+        "color": "#000000",
+        "color_txt": "#ffffff",
         "overlay": 54,
         "padding": 100,
         "paddingmb": 80,
@@ -20,29 +20,64 @@
     "main": {
       "type": "list-collections-template",
       "blocks": {
+        "c4147d35-86b4-415d-a4e5-dc38c2a798cf": {
+          "type": "collection",
+          "settings": {
+            "collection": "spring-2022"
+          }
+        },
+        "61268911-abee-4e20-9a27-8fc7ffa7f758": {
+          "type": "collection",
+          "settings": {
+            "collection": "hats"
+          }
+        },
+        "70185357-0f75-4930-bf4a-6bd62182a3b0": {
+          "type": "collection",
+          "settings": {
+            "collection": "t-shirts"
+          }
+        },
         "429e055c-a8dd-417c-9099-1be534a9fa3a": {
           "type": "collection",
           "settings": {
-            "collection": ""
+            "collection": "accessories"
+          }
+        },
+        "771b8e36-f9d2-43e3-88bd-6852a15b34e2": {
+          "type": "collection",
+          "settings": {
+            "collection": "outerwear"
+          }
+        },
+        "14ee0af3-77a6-4cde-8e00-f2b061a9bf06": {
+          "type": "collection",
+          "settings": {
+            "collection": "kids-gear"
           }
         }
       },
       "block_order": [
-        "429e055c-a8dd-417c-9099-1be534a9fa3a"
+        "c4147d35-86b4-415d-a4e5-dc38c2a798cf",
+        "61268911-abee-4e20-9a27-8fc7ffa7f758",
+        "70185357-0f75-4930-bf4a-6bd62182a3b0",
+        "429e055c-a8dd-417c-9099-1be534a9fa3a",
+        "771b8e36-f9d2-43e3-88bd-6852a15b34e2",
+        "14ee0af3-77a6-4cde-8e00-f2b061a9bf06"
       ],
       "settings": {
         "layout": "default",
         "hoverz": true,
         "cat_design": "1",
         "cat_space": "30",
-        "display_type": "all",
-        "sort": "date_reversed",
+        "display_type": "selected",
+        "sort": "alphabetical",
         "col": "4",
         "col_md": "6",
         "col_mb": "12",
         "pr_txt": "products",
         "use_eq_height": true,
-        "image_ratio": "ratio2_3"
+        "image_ratio": "ratio1_1"
       }
     }
   },
