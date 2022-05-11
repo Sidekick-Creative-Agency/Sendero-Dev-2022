@@ -55,15 +55,18 @@
   <input type="hidden" data-cart-attr-rm name="attributes[cat_mb_items_per_row]" value=""><input type="hidden" data-cart-attr-rm name="attributes[cat_tb_items_per_row]" value=""><input type="hidden" data-cart-attr-rm name="attributes[cat_dk_items_per_row]" value="">
   <input type="hidden" data-cart-attr-rm name="attributes[auto_hide_ofsock]" value=""><input type="hidden" data-cart-attr-rm name="attributes[paginate_ntt4]" value=""><input type="hidden" data-cart-attr-rm name="attributes[limit_ntt4]" value=""><input type="hidden" data-cart-attr-rm name="attributes[use_bar_lmntt4]" value="">
   <div class="cart_header">
-		<div class="row al_center">
+		<div class="row al_left">
+      <h3>Your Cart</h3>
+      {%- comment -%}
 			<div class="col-5">{{ 'cart.label.product' | t }}</div>
 			<div class="col-3 tc">{{ 'cart.label.price' | t }}</div>
 			<div class="col-2 tc">{{ 'cart.label.quantity' | t }}</div>
 			<div class="col-2 tc tr_md">{{ 'cart.label.total' | t }}</div>
+      {%- endcomment -%}
 		</div>
 	</div>
-	<div class="cart_items js_cat_items">{% render 'cart_items_page' %}</div>
-	<div class="cart__footer mt__60 mb__80">
+	<div class="cart_items js_cat_items">{% render 'cart_items_page' %}
+	<div class="cart__footer mb__80">
      <div class="row">
        {%- if se_stts.show_note or se_stts.show_discount or se_stts.show_gift_wrap and gift_pr != blank -%}{%- assign ck_col = true -%}
          <div class="col-12 col-md-6 cart_actions tl_md tc order-md-2 order-2 mb__50">
@@ -188,6 +191,12 @@
       </div>
      </div>
    </div>
+
+
+  </div>
+
+
+
 </form>
 {%- if se_stts.show_rates -%}
  <div class="shipping_calculator shipping_calc_page loading{% if ccount == 0 %} dn{% endif %}">

@@ -20,7 +20,7 @@
         "button_align": "center",
         "btn_background": "black",
         "image": "shopify:\/\/shop_images\/74162361_102268317897142_7558348142593179648_n.jpg",
-        "parallax": false,
+        "parallax": true,
         "color": "#000000",
         "overlay": 54,
         "padding": 100,

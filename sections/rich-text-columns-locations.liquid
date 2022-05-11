@@ -36,8 +36,8 @@
 -%}
 
 
-<div class="nt_se_{{section.id}} {{section.settings.layout}} rich-text-columns-outer-container">
-  {%- render "sk-locations-dropdown" -%}
+<div class="nt_se_{{section.id}} {{section.settings.layout}} rich-text-columns-outer-container rich-text-locations">
+ {%- comment -%}{%- render "sk-locations-dropdown" -%}{%- endcomment -%} 
 
     {%- if mainTitle != "" -%}
       <h2 id="state-name-heading" class="flex w__100" style="justify-content: {{section.settings.header_align}}; padding: {{header_padding}}">{{mainTitle}}</h2>
@@ -55,19 +55,14 @@
     <div class="rich-text-columns-text-outer-section" style="width: {{col_num}}">
       {%- if show_ckmk -%}
       <div class="rich-text-columns-text-inner-section">
-      <svg xmlns="http://www.w3.org/2000/svg" class="checkmark">
-        <g id="List" transform="translate(-261 -1069)">
-          <g id="Check_Mark" data-name="Check Mark" transform="translate(261 1069)">
-            <circle id="Ellipse_24" data-name="Ellipse 24" cx="16.5" cy="16.5" r="16.5"/>
-            <path id="ic_beenhere_24px" d="M14.8,26.983,9.8,21.99l1.408-1.408L14.8,24.157l7.579-7.579L23.782,18Z" transform="translate(0.127 -5.097)" fill="#fff"/>
-          </g>
-        </g>
-      </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="checkmark circle">
+          <path id="ic_beenhere_24px" d="M14.8,26.983,9.8,21.99l1.408-1.408L14.8,24.157l7.579-7.579L23.782,18Z" transform="translate(-4 -9)" fill="#fff"/>
+    </svg>
     </div>
     {%- endif -%}
         <div class="rich-text-columns-text-inner-section">
-        <h4>{{title1}}</h4>
-        <div class="rte_setting {{section.settings.align}}">{{sub_text1 }}</div>
+        <h3>{{title1}}</h3>
+        <div class="rte_setting {{section.settings.align}}"><p>{{sub_text1}}</p></div>
       </div>
     </div>
     {%- endif -%}
@@ -76,19 +71,14 @@
     <div class="rich-text-columns-text-outer-section" style="width: {{col_num}}">
       {%- if show_ckmk -%}
       <div class="rich-text-columns-text-inner-section">
-      <svg xmlns="http://www.w3.org/2000/svg" class="checkmark">
-        <g id="List" transform="translate(-261 -1069)">
-          <g id="Check_Mark" data-name="Check Mark" transform="translate(261 1069)">
-            <circle id="Ellipse_24" data-name="Ellipse 24" cx="16.5" cy="16.5" r="16.5"/>
-            <path id="ic_beenhere_24px" d="M14.8,26.983,9.8,21.99l1.408-1.408L14.8,24.157l7.579-7.579L23.782,18Z" transform="translate(0.127 -5.097)" fill="#fff"/>
-          </g>
-        </g>
-      </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="checkmark circle">
+          <path id="ic_beenhere_24px" d="M14.8,26.983,9.8,21.99l1.408-1.408L14.8,24.157l7.579-7.579L23.782,18Z" transform="translate(-4 -9)" fill="#fff"/>
+    </svg>
     </div>
     {%- endif -%}
           <div class="rich-text-columns-text-inner-section">
-          <h4>{{title2}}</h4>
-          <div class="rte_setting {{section.settings.align}}">{{sub_text2}}</div>
+          <h3>{{title2}}</h3>
+          <div class="rte_setting {{section.settings.align}}"><p>{{sub_text2}}</p></div>
         </div>
     </div>
     {%- endif -%}
@@ -96,19 +86,14 @@
     <div class="rich-text-columns-text-outer-section" style="width: {{col_num}}">
       {%- if show_ckmk -%}
       <div class="rich-text-columns-text-inner-section">
-      <svg xmlns="http://www.w3.org/2000/svg" class="checkmark">
-        <g id="List" transform="translate(-261 -1069)">
-          <g id="Check_Mark" data-name="Check Mark" transform="translate(261 1069)">
-            <circle id="Ellipse_24" data-name="Ellipse 24" cx="16.5" cy="16.5" r="16.5"/>
-            <path id="ic_beenhere_24px" d="M14.8,26.983,9.8,21.99l1.408-1.408L14.8,24.157l7.579-7.579L23.782,18Z" transform="translate(0.127 -5.097)" fill="#fff"/>
-          </g>
-        </g>
-      </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="checkmark circle">
+          <path id="ic_beenhere_24px" d="M14.8,26.983,9.8,21.99l1.408-1.408L14.8,24.157l7.579-7.579L23.782,18Z" transform="translate(-4 -9)" fill="#fff"/>
+    </svg>
     </div>
     {%- endif -%}
           <div class="rich-text-columns-text-inner-section">
-          <h4>{{title3}}</h4>
-          <div class="rte_setting {{section.settings.align}}">{{sub_text3}}</div>
+          <h3>{{title3}}</h3>
+          <div class="rte_setting {{section.settings.align}}"><p>{{sub_text3}}</p></div>
         </div>
     </div>
     {%- endif -%}
@@ -116,19 +101,14 @@
     <div class="rich-text-columns-text-outer-section" style="width: {{col_num}}">
       {%- if show_ckmk -%}
       <div class="rich-text-columns-text-inner-section">
-      <svg xmlns="http://www.w3.org/2000/svg" class="checkmark">
-        <g id="List" transform="translate(-261 -1069)">
-          <g id="Check_Mark" data-name="Check Mark" transform="translate(261 1069)">
-            <circle id="Ellipse_24" data-name="Ellipse 24" cx="16.5" cy="16.5" r="16.5"/>
-            <path id="ic_beenhere_24px" d="M14.8,26.983,9.8,21.99l1.408-1.408L14.8,24.157l7.579-7.579L23.782,18Z" transform="translate(0.127 -5.097)" fill="#fff"/>
-          </g>
-        </g>
-      </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="checkmark circle">
+          <path id="ic_beenhere_24px" d="M14.8,26.983,9.8,21.99l1.408-1.408L14.8,24.157l7.579-7.579L23.782,18Z" transform="translate(-4 -9)" fill="#fff"/>
+    </svg>
     </div>
     {%- endif -%}
           <div class="rich-text-columns-text-inner-section">
-          <h4>{{title4}}</h4>
-          <div class="rte_setting {{section.settings.align}}">{{sub_text4}}</div>
+          <h3>{{title4}}</h3>
+          <div class="rte_setting {{section.settings.align}}"><p>{{sub_text4}}</p></div>
         </div>
     </div>
     {%- endif -%}
@@ -136,19 +116,14 @@
     <div class="rich-text-columns-text-outer-section" style="width: {{col_num}}">
       {%- if show_ckmk -%}
       <div class="rich-text-columns-text-inner-section">
-      <svg xmlns="http://www.w3.org/2000/svg" class="checkmark">
-        <g id="List" transform="translate(-261 -1069)">
-          <g id="Check_Mark" data-name="Check Mark" transform="translate(261 1069)">
-            <circle id="Ellipse_24" data-name="Ellipse 24" cx="16.5" cy="16.5" r="16.5"/>
-            <path id="ic_beenhere_24px" d="M14.8,26.983,9.8,21.99l1.408-1.408L14.8,24.157l7.579-7.579L23.782,18Z" transform="translate(0.127 -5.097)" fill="#fff"/>
-          </g>
-        </g>
-      </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="checkmark circle">
+          <path id="ic_beenhere_24px" d="M14.8,26.983,9.8,21.99l1.408-1.408L14.8,24.157l7.579-7.579L23.782,18Z" transform="translate(-4 -9)" fill="#fff"/>
+    </svg>
     </div>
     {%- endif -%}
           <div class="rich-text-columns-text-inner-section">
-          <h4>{{title5}}</h4>
-          <div class="rte_setting {{section.settings.align}}">{{sub_text5}}</div>
+          <h3>{{title5}}</h3>
+          <div class="rte_setting {{section.settings.align}}"><p>{{sub_text5}}</p></div>
         </div>
     </div>
     {%- endif -%}
@@ -156,19 +131,14 @@
     <div class="rich-text-columns-text-outer-section" style="width: {{col_num}}">
       {%- if show_ckmk -%}
       <div class="rich-text-columns-text-inner-section">
-      <svg xmlns="http://www.w3.org/2000/svg" class="checkmark">
-        <g id="List" transform="translate(-261 -1069)">
-          <g id="Check_Mark" data-name="Check Mark" transform="translate(261 1069)">
-            <circle id="Ellipse_24" data-name="Ellipse 24" cx="16.5" cy="16.5" r="16.5"/>
-            <path id="ic_beenhere_24px" d="M14.8,26.983,9.8,21.99l1.408-1.408L14.8,24.157l7.579-7.579L23.782,18Z" transform="translate(0.127 -5.097)" fill="#fff"/>
-          </g>
-        </g>
-      </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="checkmark circle">
+          <path id="ic_beenhere_24px" d="M14.8,26.983,9.8,21.99l1.408-1.408L14.8,24.157l7.579-7.579L23.782,18Z" transform="translate(-4 -9)" fill="#fff"/>
+    </svg>
     </div>
     {%- endif -%}
         <div class="rich-text-columns-text-inner-section">
-          <h4>{{title6}}</h4>
-          <div class="rte_setting {{section.settings.align}}">{{sub_text6}}</div>
+          <h3>{{title6}}</h3>
+          <div class="rte_setting {{section.settings.align}}"><p>{{sub_text6}}</p></div>
         </div>
     </div>
     {%- endif -%}  

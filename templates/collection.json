@@ -81,6 +81,7 @@
             "collection": "hats",
             "img_align": "center",
             "title": "",
+            "col_link": "#",
             "url": ""
           }
         },
@@ -90,6 +91,7 @@
             "collection": "t-shirts",
             "img_align": "center",
             "title": "",
+            "col_link": "#",
             "url": ""
           }
         },
@@ -99,6 +101,7 @@
             "collection": "outerwear",
             "img_align": "center",
             "title": "",
+            "col_link": "#",
             "url": ""
           }
         },
@@ -108,6 +111,7 @@
             "collection": "stickers-1",
             "img_align": "center",
             "title": "",
+            "col_link": "#",
             "url": ""
           }
         },
@@ -117,6 +121,7 @@
             "collection": "kids-gear",
             "img_align": "center",
             "title": "",
+            "col_link": "#",
             "url": ""
           }
         },
@@ -126,6 +131,7 @@
             "collection": "spring-2022",
             "img_align": "center",
             "title": "",
+            "col_link": "#",
             "url": ""
           }
         }
@@ -141,6 +147,7 @@
       "settings": {
         "title": "Collection list",
         "sub_title": "Sub Text",
+        "heading": "SHOP BY CATEGORY",
         "sub_font": "2",
         "style_title": "title_1",
         "ic_tt": "gem",

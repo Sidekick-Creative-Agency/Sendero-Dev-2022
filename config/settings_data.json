@@ -500,6 +500,7 @@
           "98c2edaa-9215-40b6-9b62-8a1b9ec5a47c": {
             "type": "cat",
             "settings": {
+              "image": "shopify:\/\/shop_images\/116309620_2383569085270467_5796589458683211337_n.jpg",
               "cat_design": "1",
               "hoverz": true,
               "collection": "spring-2022",

@@ -59,7 +59,7 @@ assign gift_pr_id = gift_pr.id -%}
 		            {%- endif -%}
                     {%- if recurringchecked %}<span class="product-details__item-recurring cb">{{ 'cart.general.recurring_mess' | t:frequency:frequency,frequency_unit:frequency_unit }}</span>{% endif -%}
 		         </div>
-		         <div class="mini_cart_tool mt__10">
+		         <div class="mini-cart-icons mini_cart_tool mt__10">
                 {%- comment %}property_size == 0 and item.product.has_only_default_variant{% endcomment -%}
 		            {%- unless item.product.has_only_default_variant -%}
 		            <a href="{{item_url}}" rel="nofollow" data-no-instant class="cart_ac_edit js__qs ttip_nt tooltip_top_right" data-id="{{qv_key}}"><span class="tt_txt">{{ 'cart.general.edit_item' | t }}</span><svg viewBox="0 0 24 24"><use xlink:href="#scl_edit"/></svg></a>
@@ -69,6 +69,7 @@ assign gift_pr_id = gift_pr.id -%}
 	         </div>
 	      </div>
 	   </div>
+      {%- comment -%}
 	   <div class="col-12 col-md-4 col-lg-3 tc__ tc_lg">
          <div class="cart_meta_prices price">
              <div class="cart_price">          
@@ -100,11 +101,13 @@ assign gift_pr_id = gift_pr.id -%}
              {%- endif -%}
          </div>
 	   </div>
+      {%- endcomment -%}
 	   <div class="col-12 col-md-4 col-lg-2 tc mini_cart_actions">
          <div class="quantity pr mr__10 qty__true">
             <input type="number" id="miniupdates_{{item_key}}" data-id="{{item_key}}" data-price='{{final_price}}' class="input-text qty text tc qty_cart_js" step="1" min="{{min_qty}}" max="{% if item.variant.inventory_management == blank or item.variant.inventory_policy == 'continue' %}9999{% else %}{{ item.variant.inventory_quantity }}{% endif %}" name="updates[]" value="{{ item.quantity }}" size="4" pattern="[0-9]*" inputmode="numeric">
             <div class="qty tc fs__14">
-              <button type="button" class="plus db cb pa pd__0 pr__15 tr r__0"><i class="facl facl-plus"></i></button><button type="button" class="minus db cb pa pd__0 pl__15 tl l__0 qty_{{ item.quantity }}"><svg class='dn' viewBox="0 0 24 24"><use xlink:href="#scl_remove"/></svg><i class="facl facl-minus"></i></button>
+              <button type="button" class="plus db cb pa pd__0 pr__15 tr r__0"><i class="facl facl-plus"></i></button><button type="button" class="minus db cb pa pd__0 pl__15 tl l__0 qty_{{ item.quantity }}"><i class="facl facl-minus"></i></button>
+               {%- comment -%}<svg class='dn' viewBox="0 0 24 24"><use xlink:href="#scl_remove"/></svg>{%- endcomment -%}
             </div>
          </div>
 	   </div>

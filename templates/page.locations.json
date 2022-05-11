@@ -22,8 +22,13 @@
         "e8d6c4cd-d55a-4ca5-9afe-629c7d6803ad"
       ],
       "settings": {
+        "title": "Locations",
+        "button": false,
+        "btn_text": "Click Me",
+        "button_align": "center",
+        "btn_background": "black",
         "image": "shopify:\/\/shop_images\/161218716_2545082962452411_5753525780345998495_n.jpg",
-        "parallax": false,
+        "parallax": true,
         "color": "#000000",
         "overlay": 36,
         "padding": 100,
@@ -39,35 +44,34 @@
       "settings": {
       }
     },
-    "16493445351de7236a": {
-      "type": "rich_text",
+    "rich-text-columns-locations": {
+      "type": "rich-text-columns-locations",
       "settings": {
-        "title": "TEXAS",
-        "sub_title": "",
-        "sub_font": "2",
-        "style_title": "title_1",
-        "ic_tt": "gem",
-        "show_clpr": false,
-        "content": "<p>Store Title<\/p><p>1234 Street Name<\/p><p><\/p>",
-        "align": "tl",
-        "layout": "container",
-        "mg": "50px,,50px,",
-        "pd": "",
-        "mg_mb": "",
-        "pd_mb": ""
-      }
-    },
-    "16493446299a1ff55e": {
-      "type": "rich_text",
-      "settings": {
-        "title": "Talk about your brand",
-        "sub_title": "",
+        "main_title": "Locations",
+        "header_align": "center",
+        "title1": "Store Location",
+        "title2": "Store Location",
+        "title3": "Store Location",
+        "title4": "Store Location",
+        "title5": "Store Location",
+        "title6": "Store Location",
+        "sub_text1": "Address Line 1 <br>\nAddress Line 2",
+        "sub_text2": "Address Line 1 <br>\nAddress Line 2",
+        "sub_text3": "Address Line 1 <br>\nAddress Line 2",
+        "sub_text4": "Address Line 1 <br>\nAddress Line 2",
+        "sub_text5": "Address Line 1 <br>\nAddress Line 2",
+        "sub_text6": "Address Line 1 <br>\nAddress Line 2",
+        "col_num": "2",
+        "show_ckmk": false,
+        "show_btn": false,
+        "btn_text": "Click Me",
+        "button_align": "center",
         "sub_font": "2",
         "style_title": "title_1",
         "ic_tt": "gem",
         "show_clpr": false,
         "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-        "align": "tc",
+        "align": "tl",
         "layout": "container",
         "mg": "50px,,50px,",
         "pd": "",
@@ -79,7 +83,6 @@
   "order": [
     "heading",
     "main",
-    "16493445351de7236a",
-    "16493446299a1ff55e"
+    "rich-text-columns-locations"
   ]
 }

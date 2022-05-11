@@ -280,9 +280,9 @@ p {
     background-color: transparent;
     border: none;
 }
-.rich-text-locations .rich-text-columns-text-outer-section {
+/* .rich-text-locations .rich-text-columns-text-outer-section {
     justify-content: space-evenly !important;
-}
+} */
 .location-accordion-outer-container {
     margin: 50px 0 100px 0;
     flex-wrap: wrap !important;
@@ -351,7 +351,9 @@ p {
 .location-accordion-outer-container .tab-heading {
     z-index: 10;
 }
-
+.rich-text-locations .rich-text-columns-text-outer-section {
+    justify-content: center;
+}
 /*--------------------------------------------------------/
 / FOOTERS
 /--------------------------------------------------------*/
@@ -780,17 +782,21 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     bottom: 0;
     left: 0;
     overflow: hidden;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
 }
 .sendero-session-title {
    left: 0;
    right: 0;
-   top: 55%;
+   top: 40%;
     text-align: center;
     color: white;
     z-index: 300;
     position: absolute;
 }
-.sendero-session-sub-title {
+/* .sk-session-group-sub-title {
     left: 0;
     right: 0;
     top: 45%;
@@ -798,6 +804,15 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
      color: white;
      z-index: 300;
      position: absolute;
+ } */
+.sendero-session-sub-title {
+    left: 0;
+    right: 0;
+    top: 45%;
+     text-align: center;
+     color: white;
+     z-index: 300;
+     /* position: absolute; */
  }
  .sendero-sessions-rich-text {
      max-width: 1100px;
@@ -1033,7 +1048,7 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 .mini_cart_upsell__title {
     background-color: #FFF !important;
     text-align: left;
-    font-size: 14px;
+    font-size: 15px;
     font-family: 'Oswald';
     font-weight: 600 !important;
     text-transform: uppercase;
@@ -1051,11 +1066,31 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     width: 150px !important;
 }
 .upsell_item {
-    width: 100% !important;
+    width: 50% !important;
+    /* position: relative !important; */
+    margin-right: 0px;
+    padding: 0;
+    max-width: 200px;
+}
+.upsell_item .row {
+    flex-direction: column;
+}
+.upsell_item__title {
+    text-align: center;
+    margin-top: -25px;
+    font-size: 13px !important;
+    line-height: 1em !important;
+}
+.upsell_item .price {
+    text-align: center;
+    width: 100%;
+    font-size: 15px !important;
+    line-height: 1em !important;
 }
 .cart-upsell-col {
     /* width: 33%; */
     min-width: fit-content;
+    min-height: 20px;
     /* display: none; */
     flex-grow: unset;
     justify-content: center;
@@ -1153,7 +1188,21 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     max-width: 200px;
     white-space: normal;
 }
-
+.mini-cart-button-container {
+    display: flex;
+    justify-content: center;
+    column-gap: 5px;
+}
+.mini-cart-button-container button, .mini-cart-button-container a {
+    width: 100% !important;
+    text-align: center;
+    max-width: none !important;
+}
+.mini-cart-button-container button:hover, .mini-cart-button-container a:hover {
+    width: 100% !important;
+    text-align: center;
+    max-width: none !important;
+}
 /*---------------- Blog Pages -------------------*/
 
 .sk-feat-post-img-overlay {
@@ -1272,6 +1321,34 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 
 /*---------------- SHOPPING CART, LOGIN & SEARCH SIDEBAR SIZE AND PADDING ----------------*/
 
+.mini_cart_actions .quantity {
+    border: none !important;
+}
+.mini-cart-icons {
+    text-align: center;
+}
+.frm_cart_ajax_true .btn_checkout, .additional_checkout_buttons {
+    min-width: 0 !important;
+    width: 160px!important;
+    max-width: 160px !important;
+    height: 40px !important;
+    transition: .3s !important;
+    border-radius: 0 !important;
+}
+.cart_header, .cart_item, .cart__footer {
+    width: 50%;
+}
+.cart_header div {
+    margin-left: 0 !important;
+}
+.cart_items {
+    display: flex;
+}
+
+.cart_item .row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+}
 
 @media (min-width: 768px) {
     #nt_cart_canvas {
@@ -1414,7 +1491,7 @@ a.prev.page-numbers {
 .sk-session-group-sub-title {
     left: 0;
     right: 0;
-    top: 70%;
+    top: 55%;
      text-align: center;
      color: white;
      z-index: 300;

@@ -8,7 +8,7 @@
           "type": "1",
           "settings": {
             "title": "Shopping cart",
-            "color": "#fff"
+            "color": "#ffffff"
           }
         }
       },
@@ -16,9 +16,10 @@
         "cart_heading1"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/homepage_hero_image_2.webp",
         "parallax": false,
         "color": "#000000",
-        "overlay": 54,
+        "overlay": 35,
         "padding": 10,
         "paddingmb": 0,
         "bg_pos": "center center",
@@ -82,30 +83,26 @@
       "settings": {
         "ajax_enable": true,
         "calc_ship": true,
-        "show_note": true,
-        "show_rates": true,
-        "show_discount": true,
-        "show_gift_wrap": true
+        "show_note": false,
+        "show_rates": false,
+        "show_discount": false,
+        "show_gift_wrap": false
       }
     },
-    "complete_cart": {
-      "type": "featured_collection_owl",
+    "product-rec-indiv": {
+      "type": "product-recommendations-individual-product",
       "settings": {
-        "title": "Complete your cart",
+        "show": true,
+        "title": "MORE PICKS FOR YOU",
         "sub_title": "",
-        "sub_font": "2",
-        "btn_title": "See all products",
+        "sub_font": "1",
         "style_title": "title_1",
         "ic_tt": "gem",
         "show_clpr": false,
-        "collection": "all",
-        "limit": 8,
+        "display_type": "3",
+        "limit": 10,
         "space": 30,
-        "use_pagination": "none",
-        "btn_rd": true,
-        "btn_icon": false,
-        "btn_style": "default",
-        "col_pr": "3",
+        "col_pr": "15",
         "col_pr_tb": "3",
         "col_pr_mb": "6",
         "pr_des": "1",
@@ -118,59 +115,14 @@
         "au_hover": true,
         "button": true,
         "btn_vi": "1",
-        "btn_owl": "1",
-        "btn_color": "0",
+        "btn_owl": "2",
+        "btn_color": "1",
         "dot": false,
         "dot_owl": "1",
         "dot_color": "1",
-        "use_eq_height": false,
-        "image_ratio": "ratio_nt",
-        "image_size": "nt_cover",
-        "image_position": "8",
-        "cp_code": false,
-        "layout": "wrap",
-        "cl_bg": "",
-        "mg": "80px,,50px,",
-        "pd": "",
-        "mg_mb": "",
-        "pd_mb": ""
-      }
-    },
-    "recently-viewed-products": {
-      "type": "recently_viewed",
-      "settings": {
-        "show": true,
-        "unavailable_prs": "show",
-        "title": "Recently viewed products",
-        "sub_title": "",
-        "sub_font": "2",
-        "style_title": "title_1",
-        "ic_tt": "gem",
-        "show_clpr": false,
-        "limit": 6,
-        "sortby": "3",
-        "space": 30,
-        "col_pr": "3",
-        "col_pr_tb": "3",
-        "col_pr_mb": "6",
-        "pr_des": "1",
-        "show_vendor": false,
-        "use_cdt": false,
-        "round_cd": false,
-        "cdt_des": "1",
-        "loop": true,
-        "au_time": 0,
-        "au_hover": true,
-        "button": false,
-        "btn_vi": "1",
-        "btn_owl": "1",
-        "btn_color": "0",
-        "dot": false,
-        "dot_owl": "1",
-        "dot_color": "1",
-        "use_eq_height": false,
-        "image_ratio": "ratio_nt",
-        "image_size": "nt_cover",
+        "use_eq_height": true,
+        "image_ratio": "ratio1_1",
+        "image_size": "nt_contain",
         "image_position": "8"
       }
     }
@@ -178,7 +130,6 @@
   "order": [
     "cart_heading",
     "main",
-    "complete_cart",
-    "recently-viewed-products"
+    "product-rec-indiv"
   ]
 }
