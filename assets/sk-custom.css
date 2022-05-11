@@ -3,6 +3,10 @@
 / SIDEKICK Custom CSS
 /-----------------------------------------------------------------------------*/
 
+p {
+ font-size: 13px !important;
+ line-height: 1.4em !important;
+}
 /*--------------------------------------------------------/
 / PAGE HEADING
 /--------------------------------------------------------*/
@@ -12,6 +16,11 @@
 }
 .page-head a:hover {
     color: #fff !important;
+}
+.page-head {
+    height: 60vh !important;
+    display: flex;
+    align-items: center;
 }
 
 /*--------------------------------------------------------/
@@ -468,6 +477,10 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 .instagram-outer-container {
     padding-top: 50px !important;
     padding-bottom: 50px !important;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    object-fit: cover;
+    
 }
 .quote_slide {
     max-width: 300px;
@@ -691,11 +704,7 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 /*--------------------------------------------------------/
 / Sendero Sessions
 /--------------------------------------------------------*/
-.page-head {
-    height: 50vh;
-    display: flex;
-    align-items: center;
-}
+
 .sendero-apply-btn {
     background-color: #666;
     border-color: #666;
@@ -1183,7 +1192,8 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 
 .sk-feat-post-info .post-content {
     color: #fff;
-    font-size: 12px;
+    font-size: 13px;
+    line-height: 1.4em;
 }
 
 
@@ -1191,9 +1201,22 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 /*---------------- Our Story Page -------------------*/
 
 .checkmark {
-    height: 33px;
-    width: 33px;
+    height: 25px;
+    width: 25px;
     margin-right: 25px;
+    border-radius: 50%;
+    background-color: #000;
+}
+/* .circle {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #000;
+} */
+
+#Check_Mark {
+    height: 20px;
+    width: 20px;
 }
 .about-us-img-txt {
     padding-left: 50px !important;
@@ -1231,7 +1254,10 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     max-width: none !important;
     white-space: nowrap;
 }
-
+.rich-text-columns-text-inner-section h3 {
+    font-size: 18px;
+    line-height: 1.75em;
+}
 
 /*---------------- CHAT APP -------------------*/
 /* #shopify-chat-dummy {
