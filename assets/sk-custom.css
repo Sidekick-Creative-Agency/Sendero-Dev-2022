@@ -1324,6 +1324,9 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     height: 40px !important;
     width: 40px !important;
 } */
+.chat-toggle {
+    transform: scale(.75);
+}
 
 
 /*---------------- SHOPPING CART, LOGIN & SEARCH SIDEBAR SIZE AND PADDING ----------------*/
