@@ -1480,7 +1480,7 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 .cart-contact h5 {
     margin-bottom: 15px;
 }
-.cart-footer-container .chat-toggle {
+.cart-footer-container .chat-toggle-cart {
     color: #222;
     cursor: pointer;
 }
