@@ -1346,6 +1346,13 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     transition: .3s !important;
     border-radius: 0 !important;
 }
+.cart-header {
+    border-bottom: 1px solid #DDD;
+    padding-bottom: 6px;
+}
+.cart-order {
+    padding-bottom: 6px;
+}
 .cart_header, .cart_item {
     width: 100%;
 }
@@ -1356,6 +1363,9 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     display: grid;
     grid-template-columns: 2fr 1fr;
 }
+.cart_header {
+    padding-bottom: 0 !important;
+}
 .cart-order {
     margin-left: 40px !important;
 }
@@ -1363,7 +1373,12 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     display: grid;
     grid-template-columns: 2fr 1fr;
 }
-
+.cart_item {
+    min-height: 211px;
+}
+.cart_item:first-child {
+    border: none !important;
+}
 .cart_item .row {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
@@ -1372,7 +1387,15 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 .cart-product-container {
     display: flex;
     flex-direction: column;
+    max-height: 475px; 
+    overflow-y: scroll;
 }
+/* .cart-product-container .cart_item {
+    transition: 1s ease;
+}
+.cart-product-container .cart_item:hover {
+    background-color: #f4f4f4;
+} */
 .page_cart_info {
     min-width: 350px;
     justify-content: start;
@@ -1396,7 +1419,7 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     margin-left: 50px;
 }
 .cart__footer {
-    background-color: #f4f4f4;
+    background-color: #f6f6f8;
     padding: 25px;
     margin-bottom: 25px;
     align-items: stretch;
@@ -1452,6 +1475,7 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
+    font-size: 13px;
 }
 .cart-contact h5 {
     margin-bottom: 15px;
@@ -1495,6 +1519,15 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     color: #999;
     font-weight: 400;
     font-size: 13px;
+}
+.mini_cart_content .mini_cart_item:hover {
+    background-color: #f6f6f8 !important;
+}
+.mini_cart_content .mini_cart_item:hover i {
+    background-color: #e6e6e8!important;
+}
+.mini_cart_content .mini_cart_item i {
+    transition: .3s;
 }
 
 

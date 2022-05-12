@@ -5,10 +5,11 @@ assign min_qty = settings.min_qty | plus:0
 assign compare_tt_price = 0
 assign gift_pr = all_products[settings.gift_wrap_pr]
 assign gift_pr_id = gift_pr.id 
-assign firstTime = 1 -%}
+ -%}
 
 
    {%- for item in cart.items -%}{%- assign item_id = item.id -%}{%- assign item_key = item.key -%}{%- assign item_url = item.url -%}
+   {% assign firstTime = 1 %}
    <div class="cart_item js_cart_item cart_item_{{item_id}}{% if gift_pr_id == item.product_id %} gift_item_true{% endif %}">
       <div class="ld_cart_bar"></div>
       <div class="row al_center">
@@ -121,3 +122,10 @@ assign firstTime = 1 -%}
    </div>
 
 {%- endfor -%}
+
+
+<script>
+   $(".button.minus").click(() => {
+      
+   });
+</script>

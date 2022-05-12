@@ -42,7 +42,8 @@
       </div>
       {%- endif -%}
       <div class="mini_cart_wrap">
-         <div class="mini_cart_content fixcl-scroll" {% if ccount > 1 %} style="height: 450px" {% endif %}>
+        
+         <div class="mini_cart_content fixcl-scroll" {% if cart.items.size > 1 %} style="height: 450px" {% endif %}>
             <div class="fixcl-scroll-content">
                <div class="empty tc mt__40{% if ccount > 0 %} dn{% endif %}"><i class="las la-shopping-bag pr mb__10"></i><p>{{ 'cart.general.empty' | t }}</p>
                   {%- assign btn_blocks = section_blocks | where: "type", 'btn' -%}
@@ -53,6 +54,12 @@
                   {%- endif -%}
                </div>
                <div class="cookie-message dn">{{ 'cart.general.cookies_required' | t }}</div>
+
+           
+
+
+
+
                {%- if se_style == '2' or se_style == '1' and se_pos == '2' %}{% assign tooltip = 'tooltip_top' %}<div class="mini_cart_items js_cat_items" data-rendert4s="{{cart_url}}/?view=viewjs"><div class="lds_bginfinity pr mt__10 mb__20"></div></div>{% endif -%}
 {%- comment -%}
                {%- if se_style == '1' -%}
