@@ -220,7 +220,7 @@
         <svg xmlns="http://www.w3.org/2000/svg" width="17.545" height="17.545" viewBox="0 0 17.545 17.545" class="mr__15">
           <path id="Chat" d="M17.791,2H3.755A1.752,1.752,0,0,0,2.009,3.755L2,19.545l3.509-3.509H17.791a1.76,1.76,0,0,0,1.755-1.755V3.755A1.76,1.76,0,0,0,17.791,2Z" transform="translate(-2 -2)"/>
         </svg>
-        <a href="">Live Chat</a></div>
+        <div class="chat-toggle">Live Chat</div></div>
       <div class="cart-contact-link">
         <svg xmlns="http://www.w3.org/2000/svg" width="17.545" height="17.545" viewBox="0 0 17.545 17.545" class="mr__15">
           <path id="Chat" d="M17.791,2H3.755A1.752,1.752,0,0,0,2.009,3.755L2,19.545l3.509-3.509H17.791a1.76,1.76,0,0,0,1.755-1.755V3.755A1.76,1.76,0,0,0,17.791,2Z" transform="translate(-2 -2)"/>
@@ -231,7 +231,22 @@
   </div>
   </div>
 
-  
+  <script>
+    (function() {
+      function onTidioChatApiReady() {
+        window.tidioChatApi.hide();
+      }
+    
+      if (window.tidioChatApi) {
+        window.tidioChatApi.on("ready", onTidioChatApiReady);
+      }
+    
+      document.querySelector(".chat-toggle").addEventListener("click", function() {
+        window.tidioChatApi.show();
+        window.tidioChatApi.open();
+      });
+    })();
+    </script>
   
 
 </form>

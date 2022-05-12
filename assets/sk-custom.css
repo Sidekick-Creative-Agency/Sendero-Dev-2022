@@ -368,7 +368,6 @@ p {
     margin-right: auto;
     margin-left: auto;
 }
-
 @media (min-width: 1430px) {
     .footer__top_wrap .container, .footer__middle_wrap .container {
         max-width: 1400px;
@@ -1324,9 +1323,7 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     height: 40px !important;
     width: 40px !important;
 } */
-.chat-toggle {
-    transform: scale(.75);
-}
+
 
 
 /*---------------- SHOPPING CART, LOGIN & SEARCH SIDEBAR SIZE AND PADDING ----------------*/
@@ -1482,6 +1479,10 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 }
 .cart-contact h5 {
     margin-bottom: 15px;
+}
+.cart-footer-container .chat-toggle {
+    color: #222;
+    cursor: pointer;
 }
 
 @media (min-width: 768px) {
