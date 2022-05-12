@@ -17,7 +17,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/homepage_hero_image_2.webp",
-        "parallax": false,
+        "parallax": true,
         "color": "#000000",
         "overlay": 35,
         "padding": 10,
