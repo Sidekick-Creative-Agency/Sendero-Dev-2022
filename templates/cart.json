@@ -51,17 +51,6 @@
           "settings": {
           }
         },
-        "btnmr": {
-          "type": "btnmr",
-          "settings": {
-          }
-        },
-        "img": {
-          "type": "img",
-          "settings": {
-            "wimg": 50
-          }
-        },
         "btn": {
           "type": "btn",
           "settings": {
@@ -76,8 +65,6 @@
         "tax",
         "agree",
         "btnck",
-        "btnmr",
-        "img",
         "btn"
       ],
       "settings": {
@@ -86,22 +73,28 @@
         "show_note": false,
         "show_rates": false,
         "show_discount": false,
-        "show_gift_wrap": false
+        "show_gift_wrap": false,
+        "image1": "shopify:\/\/shop_images\/shop_pay.png",
+        "image2": "shopify:\/\/shop_images\/google_pay_b4665a68-f495-4e1e-b169-63b7d85b9950.png"
       }
     },
-    "product-rec-indiv": {
-      "type": "product-recommendations-individual-product",
+    "category-slider-alt-header": {
+      "type": "Category-slider-alt-header",
       "settings": {
-        "show": true,
-        "title": "MORE PICKS FOR YOU",
-        "sub_title": "",
-        "sub_font": "1",
+        "title": "Best Seller Slider",
+        "sub_title": "Sub Text",
+        "sub_font": "2",
+        "btn_title": "See all products",
         "style_title": "title_1",
         "ic_tt": "gem",
         "show_clpr": false,
-        "display_type": "3",
+        "collection": "",
         "limit": 10,
         "space": 30,
+        "use_pagination": "none",
+        "btn_rd": false,
+        "btn_icon": false,
+        "btn_style": "default",
         "col_pr": "15",
         "col_pr_tb": "3",
         "col_pr_mb": "6",
@@ -123,13 +116,20 @@
         "use_eq_height": true,
         "image_ratio": "ratio1_1",
         "image_size": "nt_contain",
-        "image_position": "8"
+        "image_position": "8",
+        "cp_code": false,
+        "layout": "wrap",
+        "cl_bg": "",
+        "mg": "50px,,50px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
       }
     }
   },
   "order": [
     "cart_heading",
     "main",
-    "product-rec-indiv"
+    "category-slider-alt-header"
   ]
 }

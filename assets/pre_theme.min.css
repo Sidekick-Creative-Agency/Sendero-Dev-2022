@@ -3192,6 +3192,15 @@ button.search__submit i {
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 }
+.h_transparent_true.template-cart #ntheader .ntheader_wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 390;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
 .h_transparent_true.template-page #ntheader .ntheader_wrapper {
   position: absolute;
   top: 0;
@@ -9047,6 +9056,23 @@ a.slt4_btn {
         padding-left: 30px;
     }
   }
+  @media (min-width: 1025px) {
+    .h_chan_space_true.header_full_false.h_transparent_true.template-cart  .ntheader:not(.live_stuck) .ntheader_wrapper {
+        max-width: 1170px;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: none !important;
+    }
+    .h_chan_space_true.header_full_false.h_transparent_true.template-cart  .ntheader:not(.live_stuck) .ntheader_wrapper:before {
+        content: "";
+        display: block;
+        height: 30px;
+    }
+    .h_chan_space_true.header_full_false.h_transparent_true.template-cart .ntheader:not(.live_stuck) .sp_header_mid .header__mid>.container {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+  }
   .calc_footer_sticky:not(.template-index) #nt_content {
     padding-bottom: 10px;
   }
@@ -9114,7 +9140,7 @@ a.slt4_btn {
     margin: 0 auto;
   }
   .wrapper_boxed #ntheader .ntheader_wrapper,
-  .wrapper_boxed.h_transparent_true.template-index #ntheader .ntheader_wrapper, .wrapper_boxed.h_transparent_true.template-page #ntheader .ntheader_wrapper  {
+  .wrapper_boxed.h_transparent_true.template-index #ntheader .ntheader_wrapper, .wrapper_boxed.h_transparent_true.template-page #ntheader .ntheader_wrapper, .wrapper_boxed.h_transparent_true.template-cart #ntheader .ntheader_wrapper  {
     left: auto;
     right: auto;
     width: 100vw;
@@ -10525,6 +10551,32 @@ body.dark_mode_true {
 }
 .template-index .ssw-html-widget.ssw-instagram-widget > div:first-child:after,
 .template-index .ssw-html-widget.ssw-instagram-widget > div:first-child:before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 2px;
+  background: #222;
+}
+.template-cart .ssw-html-widget.ssw-instagram-widget > div:first-child,
+.template-cart .ssw-instagram-grid-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+}
+.template-cart
+  .ssw-html-widget.ssw-instagram-widget
+  .ssw-instagram-slide-title {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #222;
+  letter-spacing: 0;
+  margin: 0 10px;
+}
+.template-cart .ssw-html-widget.ssw-instagram-widget > div:first-child:after,
+.template-cart .ssw-html-widget.ssw-instagram-widget > div:first-child:before {
   content: "";
   display: inline-block;
   width: 30px;
