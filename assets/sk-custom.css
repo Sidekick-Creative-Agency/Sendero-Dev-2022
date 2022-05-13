@@ -1074,6 +1074,7 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 }
 .upsell_item_img, .upsell_item_img img {
     width: 150px !important;
+    height: 150px !important;
 }
 .upsell_item {
     width: 50% !important;
@@ -1081,15 +1082,18 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     margin-right: 0px;
     padding: 0;
     max-width: 200px;
+    
 }
 .upsell_item .row {
     flex-direction: column;
+    min-height: 180px;
 }
 .upsell_item__title {
     text-align: center;
     margin-top: -10px;
     font-size: 13px !important;
     line-height: 1em !important;
+    white-space: normal !important;
 }
 .upsell_item .price {
     text-align: center;
