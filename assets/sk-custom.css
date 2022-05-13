@@ -1048,7 +1048,8 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     /* box-shadow: none !important; */
     /* box-shadow: 0 0 3px 0 rgb(0, 0, 0, .15) !important; */
     box-shadow: none !important;
-    border: 1px solid rgba(129, 129, 129, 0.2);
+    /* border: 1px solid rgba(129, 129, 129, 0.2); */
+    margin-right: -80px !important;
 }
 .mini_cart_upsell__title {
     background-color: #FFF !important;
@@ -1068,8 +1069,12 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     margin-bottom: auto;
     height:200px !important;
 }
+.mini_cart_upsell_items .flickityt4s-slider {
+    width: 117%;
+}
 .upsell_item_img, .upsell_item_img img {
     width: 150px !important;
+    height: 150px !important;
 }
 .upsell_item {
     width: 50% !important;
@@ -1077,15 +1082,18 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     margin-right: 0px;
     padding: 0;
     max-width: 200px;
+    
 }
 .upsell_item .row {
     flex-direction: column;
+    min-height: 180px;
 }
 .upsell_item__title {
     text-align: center;
     margin-top: -10px;
     font-size: 13px !important;
     line-height: 1em !important;
+    white-space: normal !important;
 }
 .upsell_item .price {
     text-align: center;
@@ -1208,6 +1216,9 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     width: 100% !important;
     text-align: center;
     max-width: none !important;
+}
+.close_pp, .close_pp:hover {
+    border: none !important;
 }
 /*---------------- Blog Pages -------------------*/
 
@@ -1480,7 +1491,7 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 .cart-contact h5 {
     margin-bottom: 15px;
 }
-.cart-footer-container .chat-toggle {
+.cart-footer-container .chat-toggle-cart {
     color: #222;
     cursor: pointer;
 }
@@ -1505,6 +1516,11 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     }
 }
 
+
+
+.main .field__input {
+    border: 5px black solid !important;
+}
 /*---------------- SHOPPING CART, LOGIN & SEARCH SIDEBAR FORM TEXT ----------------*/
 
 .form-row label {

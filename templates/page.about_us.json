@@ -49,7 +49,7 @@
         "content": "<p>Sendero Provisions Co. makes quality outdoor provisions inspired by the landscapes and cultures of wild, wild America. We cut our teeth roaming the bare deserts of the Southwest looking for geologic wonders and glorious adventure. From our old-school days as geologists mapping in the field to new-school days spent on a cold mountain stream chasing native rainbows, our inspiration comes from our connection to the land and the cultures that represent it. This is the basic calling of Sendero. We make gear that embodies this- super slick products reminiscent of a time long past that will call you to the wild. <strong>SPIRIT of the WEST \/\/ SOUL of the WILD<\/strong><\/p>",
         "align": "tl",
         "layout": "container",
-        "mg": "50px,,50px,",
+        "mg": "50px,,-50px,",
         "pd": ",50px,,50px",
         "mg_mb": "",
         "pd_mb": ""
@@ -88,7 +88,7 @@
         "use_shadow": false,
         "cl_txt": "dark",
         "layout": "nt_full",
-        "mg": "50px, ,50px,",
+        "mg": ", ,50px,",
         "pd": ", 100px,,",
         "mg_mb": "",
         "pd_mb": ""
@@ -124,7 +124,7 @@
         "content": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. <\/p>",
         "align": "tl",
         "layout": "container",
-        "mg": "50px,,50px,",
+        "mg": "",
         "pd": "",
         "mg_mb": "",
         "pd_mb": ""
@@ -211,7 +211,7 @@
         "cl_overlay": "#000000",
         "cl_opacity": 18,
         "layout": "nt_full",
-        "mg": "50px,,50px,",
+        "mg": ",,50px,",
         "pd": "",
         "mg_mb": "",
         "pd_mb": "",
