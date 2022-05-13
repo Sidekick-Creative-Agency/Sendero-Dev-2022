@@ -12,6 +12,196 @@
 
     {{ checkout_stylesheets }}
     {{ checkout_scripts }}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+      p, a, span, li, input, label, th {
+      	font-family: "kameron";
+      }
+      h2 {
+      	font-family: "oswald";
+        font-size: 18px !important;
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+      
+      
+      
+      
+      .breadcrumb__item, .breadcrumb__link {
+       	color: #737373; 
+      }
+      
+	  .breadcrumb__item svg, .breadcrumb__link svg {
+     	display: none; 
+      }
+      
+      .breadcrumb__item span:after, .breadcrumb__link:after {
+       	content: "/"; 
+        padding: 0 5px;
+      }
+      
+      .breadcrumb__item:last-child span:after {
+      	content: none;
+      }
+      
+      .shopify-cleanslate .kEwctmM5pguv6XkPR8mx6:only-child {
+       	margin: 0 !important; 
+      }
+        
+      .dynamic-checkout__title:before, .dynamic-checkout__title:after {
+        content: none;
+      
+      }
+      
+      .dynamic-checkout__title {
+        justify-content: left;
+        font-size: 14px !important;
+      }
+      
+      .dynamic-checkout__content {
+        border: none;
+      }
+      
+      .alternative-payment-separator {
+        display: none;
+      }
+      
+      .section__header .layout-flex {
+        flex-direction: column;
+      }
+      
+      .section__content input, .section__content select {
+     	border: none;
+     	border-bottom: 1px solid #e6e6e6;
+        border-radius: 0;
+      	padding-left: 0;
+	  }
+      
+      .section__content input:focus, .section__content select:focus {
+        border: none; 
+        box-shadow: 0 1px #000;
+      }
+     
+      .input-checkbox {
+      	border: 1px solid #d4d6d8 !important;
+        box-shadow: none !important;
+        width: 16px;
+        height: 16px;
+        border-radius: 2px !important;
+      }
+      
+      .input-checkbox:focus {
+      	background-color: #000;
+        border: 1px solid #000;
+        box-shadow: none;
+      }
+      
+      .input-checkbox:focus:after {
+/*       	content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: scale(0.2);
+        transition: all .2s ease-in-out;
+        opacity: 0;
+        width: 10px;
+        height: 8px;
+        margin-left: -5px;
+        margin-top: -4px;
+        background-image: url(//cdn.shopify.com/shopifycloud/shopify/asset…3ef4c61a701d2d10afaa73ba8846a509fbe58a82f3f36.svg), none; */
+      }
+      
+      .floating-labels .field--show-floating-label .field__input {
+     	padding-top: 2em;
+      }
+      
+      .field__label {
+       padding-left: 0 !important; 
+      }
+      
+      .field--error .field__input {
+       	border: none;
+        box-shadow: 0 1px #00a499;
+      }
+      
+      .field__message--error {
+       color: #00a499; 
+      }
+      
+      .field__caret {
+       border: none !important;
+      }
+      
+      .field__input--zip {
+     	padding-top: 20.25px;
+      }
+      
+      .step__footer__continue-btn {
+       	background-color: #000;
+        border-radius: 0;
+        height: 40px;
+      }
+     
+      .step__footer__continue-btn:hover {
+       	background-color: #666;
+        border: 1px solid rgba(33,43,54,.9); 
+      }
+      
+      .step__footer__previous-link {
+       	border: 1px solid #000; 
+        height: 40px;
+        margin: 0 !important;
+      }
+     
+      .step__footer__previous-link svg {
+       	display: none; 
+      }
+    
+      .field__caret:after {
+       	content: "\2193"; 
+      }
+     
+      .field__caret {
+       transition: .3s; 
+      }
+    
+      .field__input--select:hover + .field__caret {
+       padding-top: 10px; 
+      }
+    
+      .step__footer__continue-btn, .step__footer__previous-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+      }
+   
+      .step__footer {
+        column-gap: 5px; 
+      }
+      
+      .product-thumbnail__quantity {
+      	border-radius: 0;
+      }
+      .product-thumbnail {
+      	background: #fafafa;
+      }
+      .product-thumbnail::after {
+      	border: none;
+        border-radius: 0;
+        background-color: transparent;
+      }
+        .product-thumbnail__wrapper {
+        	border-radius: 0;
+          background-color: transparent;
+        }
+      .product-thumbnail, .product-thumbnail__wrapper, .product-thumbnail__image {
+      	width: 100px;
+        height: 100px;
+      }
+    </style>
+    
   </head>
   <body>
     {{ skip_to_content_link }}
@@ -50,5 +240,6 @@
     </div>
 
     {{ tracking_code }}
+
   </body>
 </html>

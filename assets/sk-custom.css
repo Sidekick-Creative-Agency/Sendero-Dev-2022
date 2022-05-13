@@ -1520,10 +1520,14 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 }
 
 
+/*---------------- CHECKOUT PAGE ----------------*/
 
-.main .field__input {
+.main__content .field__input {
     border: 5px black solid !important;
 }
+
+
+
 /*---------------- SHOPPING CART, LOGIN & SEARCH SIDEBAR FORM TEXT ----------------*/
 
 .form-row label {
