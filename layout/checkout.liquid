@@ -78,7 +78,19 @@
       }
       
       .input-checkbox:focus:after {
-/*       	content: "\2713" */
+      	content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: scale(0.2);
+        transition: all .2s ease-in-out;
+        opacity: 0;
+        width: 10px;
+        height: 8px;
+        margin-left: -5px;
+        margin-top: -4px;
+        background-image: url(https://cdn.shopify.com/shopifycloud/shopify/asset…3ef4c61a701d2d10afaa73ba8846a509fbe58a82f3f36.svg), none;
       }
       
       .floating-labels .field--show-floating-label .field__input {
