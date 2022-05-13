@@ -27,6 +27,10 @@
         padding: 0 5px;
       }
       
+      .breadcrumb:last-child span:after {
+      	content: none;
+      }
+      
       .shopify-cleanslate .kEwctmM5pguv6XkPR8mx6:only-child {
        	margin: 0 !important; 
       }
@@ -202,12 +206,6 @@
     </div>
 
     {{ tracking_code }}
-    
-
-    <script>
-      $(".field__caret svg").text(" / ");
-      $(".field__caret svg")[$(".field__caret svg").length - 1].text("");
-    </script>
 
   </body>
 </html>
