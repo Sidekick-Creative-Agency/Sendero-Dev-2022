@@ -14,12 +14,12 @@
     {{ checkout_scripts }}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <style>
-	.breadcrumb__item svg {
+	.breadcrumb__item svg, .breadcrumb__link svg {
      	display: none; 
     }
-      .breadcrumb__item span:after {
+      .breadcrumb__item span:after, .breadcrumb__link a:after {
        content: "/"; 
-        padding-right: 5px;
+        padding: 0 5px;
       }
       .dynamic-checkout__title:before, .dynamic-checkout__title:after {
         content: none;
