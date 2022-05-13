@@ -65,7 +65,10 @@
         margin: 0 !important;
       }
       .step__footer__previous-link svg {
-/*        	display: none;  */
+       	display: none; 
+      }
+      .step__footer__previous-link::after {
+       	content: "&#8595"; 
       }
       .step__footer__continue-btn, .step__footer__previous-link {
         display: flex;
