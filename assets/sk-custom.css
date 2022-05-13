@@ -1220,6 +1220,9 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 .close_pp, .close_pp:hover {
     border: none !important;
 }
+.nt_cart_form .user_choose_js {
+    /* display: none; */
+}
 /*---------------- Blog Pages -------------------*/
 
 .sk-feat-post-img-overlay {
