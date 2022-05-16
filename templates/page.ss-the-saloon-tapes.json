@@ -20,7 +20,7 @@
         "button_align": "center",
         "btn_background": "black",
         "image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-21_at_9.02.08_AM.png",
-        "parallax": false,
+        "parallax": true,
         "color": "#000000",
         "overlay": 0,
         "padding": 100,
@@ -226,7 +226,7 @@
         "h_tb": "400px",
         "h_mb": "350px",
         "image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-21_at_9.02.08_AM.png",
-        "use_pr": false,
+        "use_pr": true,
         "img_align": "center",
         "caption_w": "2",
         "cap_v_pos": 50,
@@ -242,7 +242,7 @@
         "pd": "",
         "mg_mb": "",
         "pd_mb": "",
-        "pd_text": 0
+        "pd_text": 100
       }
     },
     "1650467056c6dc0d08": {

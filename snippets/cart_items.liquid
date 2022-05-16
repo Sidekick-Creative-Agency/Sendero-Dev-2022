@@ -4,11 +4,12 @@ assign img_size = '120x'
 assign min_qty = settings.min_qty | plus:0
 assign compare_tt_price = 0
 assign gift_pr = all_products[settings.gift_wrap_pr]
-assign gift_pr_id = gift_pr.id -%}
+assign gift_pr_id = gift_pr.id  -%}
 
 {%- for item in cart.items -%}{%- assign item_id = item.id -%}{%- assign item_key = item.key -%}{%- assign item_url = item.url -%}
    <div class="mini_cart_item js_cart_item cart_item_{{item_id}} flex al_center pr oh{% if gift_pr_id == item.product_id %} gift_item_true{% endif %}">
-      <div class="ld_cart_bar"></div>
+   
+    <div class="ld_cart_bar"></div>
       <a href="{{item_url}}" class="mini_cart_img">
         {%- if item.image != blank -%}
         {%- assign img_url = item | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}

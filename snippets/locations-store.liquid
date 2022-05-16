@@ -1,0 +1,35 @@
+
+
+
+<div class="store-location">
+    <h5>{{store_name}}</h5>
+    <p>{{address_line1}}
+    <br>
+    <br>{{address_line2}}
+    </p>
+</div>   
+
+<script>
+
+    var loc_container = $(".location-accordion-outer-container .tab-heading");
+    var content = $(".sp-tab-loc-content");
+    var vertical = $(".location-accordion-outer-container .tab-heading .nav_link_loc_icon .vertical");
+    var horizontal = $(".location-accordion-outer-container .tab-heading .nav_link_loc_icon .horizontal");
+    var counter = 1;
+  
+    loc_container.click(() => {
+        if (content.css("opacity") === "0") {
+            vertical.css({"transform": "rotate(" + (-90 * counter) + "deg)", "opacity": "0"});
+            horizontal.css({"transform": "rotate(" + (-180 * counter) + "deg)"});
+            content.css({"transform": "translateY(0)", "opacity": "1"});
+            counter++;
+        } else {
+            vertical.css({"transform": "rotate(" + -90 * (counter) + "deg)", "opacity": "1"});
+            horizontal.css({"transform": "rotate(" + (-180 * counter) + "deg)"});
+            content.slideUp().css({"transform": "translateY(-50px)", "opacity": "0"});
+            counter++;
+        }
+    });
+  
+    
+  </script>

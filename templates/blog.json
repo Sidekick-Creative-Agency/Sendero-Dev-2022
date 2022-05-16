@@ -16,7 +16,7 @@
       "settings": {
         "shown": true,
         "image": "shopify:\/\/shop_images\/ganapathy-kumar-L75D18aVal8-unsplash.jpg",
-        "parallax": false,
+        "parallax": true,
         "color": "#000000",
         "overlay": 40,
         "padding": 250,
