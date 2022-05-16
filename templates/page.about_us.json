@@ -52,7 +52,7 @@
         "mg": "50px,,50px,",
         "pd": ",50px,,50px",
         "mg_mb": "",
-        "pd_mb": ""
+        "pd_mb": ",25px,,25px"
       }
     },
     "164856885666aace2e": {
@@ -79,7 +79,7 @@
         "mg": ", ,50px,",
         "pd": ", 50px,,",
         "mg_mb": "",
-        "pd_mb": ""
+        "pd_mb": ",25px,,25px"
       }
     },
     "rich-text-columns": {
@@ -184,8 +184,8 @@
         "se_height": "cus_h",
         "use_custom_h": "1",
         "h_des": "300px",
-        "h_tb": "250px",
-        "h_mb": "150px",
+        "h_tb": "300px",
+        "h_mb": "300px",
         "image": "shopify:\/\/shop_images\/gautier-salles-uffQnKuJ-hc-unsplash.jpg",
         "use_pr": true,
         "img_align": "bottom",

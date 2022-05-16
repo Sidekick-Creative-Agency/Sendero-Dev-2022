@@ -1451,7 +1451,7 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     justify-content: center;
     align-items: center;
     /* padding-top: 50px; */
-    padding: 50px 20px;
+    padding: 50px 25px;
 }
 .rich-text-columns-inner-container {
     display: flex;
@@ -1488,9 +1488,6 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 
 /* ----- Tablet ------ */
 @media screen and (max-width: 1023px) {
-    .about-us-img-txt {
-        /* padding-right: 25px !important; */
-    }
     .type_image_text_sig .about-us-img-txt div {
         padding-top: 0;
     }
@@ -1498,7 +1495,31 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 
 /* ----- Mobile ----- */
 @media screen and (max-width: 767px) {
-    
+    .about-us-img-txt {
+        padding: 0 25px !important;
+    }
+    .about-us-img-txt div {
+        padding: 0;
+    }
+    .rich-text-columns-outer-container {
+        padding: 50px 10;
+    }
+    .rich-text-columns-outer-container h2 {
+        justify-content: left !important;
+    }
+    .rich-text-columns-text-outer-section {
+        /* flex-direction: row !important; */
+        width: 100% !important;
+    }
+    .rich-text-columns-inner-container .rich-text-columns-text-outer-section {
+        padding: 0 15px;
+    }
+    .rich-text-columns-text-inner-section svg {
+        margin-right: 15px;
+    }
+    .type_image_text_overlay .txt_content .pa_txts {
+        padding: 0 50px !important;
+    }
 }
 
 /*---------------- SHOPPING CART, LOGIN & SEARCH SIDEBAR SIZE AND PADDING ----------------*/
