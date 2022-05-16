@@ -1986,7 +1986,10 @@ a.prev.page-numbers {
 .pioneros-item:hover .pioneros-image-overlay {
     opacity: 1;
 }
-
+.pioneros-row .nt_banner_holder {
+    row-gap: 10px;
+    justify-content: left;
+}
 /* ----- Tablet ------ */
 @media screen and (max-width: 1023px) {
     
@@ -1994,7 +1997,9 @@ a.prev.page-numbers {
 
 /* ----- Mobile ----- */
 @media screen and (max-width: 767px) {
-    
+    .pioneros-item {
+        width: 50%;
+    }
 }
 
 
