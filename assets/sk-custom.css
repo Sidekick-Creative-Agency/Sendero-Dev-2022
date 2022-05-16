@@ -7,6 +7,13 @@ p {
  font-size: 13px !important;
  line-height: 1.4em !important;
 }
+
+@media  screen and (max-width: 767px) {
+    h6 {
+        font-size: 12px !important;
+    }
+    
+}
 /*--------------------------------------------------------/
 / PAGE HEADING
 /--------------------------------------------------------*/
@@ -220,7 +227,15 @@ p {
     letter-spacing: 0.1em;
 }
 
+/* ----- Tablet ------ */
+@media screen and (max-width: 1023px) {
+    
+}
 
+/* ----- Mobile ----- */
+@media screen and (max-width: 767px) {
+
+}
 
 /* --------- DEALER APPLY PAGE --------------- */
 .dealer-apply-container input::placeholder{
@@ -267,6 +282,15 @@ p {
     max-width: none !important;
 }
 
+/* ----- Tablet ------ */
+@media screen and (max-width: 1023px) {
+    
+}
+
+/* ----- Mobile ----- */
+@media screen and (max-width: 767px) {
+    
+}
 
 /* --------- LOCATIONS PAGE --------------- */
 .state-dropdown-container {
@@ -357,6 +381,17 @@ p {
 .rich-text-locations .rich-text-columns-text-outer-section {
     justify-content: center;
 }
+
+/* ----- Tablet ------ */
+@media screen and (max-width: 1023px) {
+    
+}
+
+/* ----- Mobile ----- */
+@media screen and (max-width: 767px) {
+    
+}
+
 /*--------------------------------------------------------/
 / FOOTERS
 /--------------------------------------------------------*/
@@ -439,6 +474,15 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
    margin-left: 60%;
    color: white;
 }
+.hero_video_se iframe {
+    position: absolute;
+    width: 350%;
+    left: -125%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    max-width: none;
+}
 .sendero-session-more-button {
     padding: 0 !important;
     border: none !important;
@@ -511,15 +555,9 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     width: 100%;
     justify-content: center;
     padding: 0 75px;
-    flex: 1 1 1 33%;
-    /* transform: translateX(-120%) !important; */
-    
+    flex: 1 1 1 33%;    
 }
-.test-outer-container .flickityt4s-slider div{
-    /* padding: 0 25px; */
-    /* margin: 0 15px; */
-    /* width: 33%; */
-}
+
 .test-outer-container .flickityt4s-prev-next-button.previous {
     left: 0;
     margin-left: -5%;
@@ -637,6 +675,51 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 }
 
 
+/* ----- Tablet ------ */
+@media screen and (max-width: 1023px) {
+    
+}
+
+/* ----- Mobile ----- */
+@media screen and (max-width: 767px) {
+    .hero-block {
+        transform: translateX(0);
+        width: 100%;
+    }
+    .caption-wrap .caption {
+        padding: 0 100px;
+    }
+    .caption-wrap .slt4_btn {
+        font-weight: 600;
+    }
+
+    .hero-video-txt {
+        margin: auto;
+        top: 75% !important;
+        padding: 15px 20px !important;
+    }
+    .hero-video-txt .sendero-session-more-button {
+        /* padding-left: 20px !important; */
+        max-width: none !important;
+    }
+
+    .home-blog-article-container .row {
+        margin: 0;
+    }
+    .blog-home-outer-container .txt_col_img {
+        margin-top: 50px;
+    }
+    .blog-home-outer-container .indiv-product-text-left {
+        padding-left: 20px !important;
+    }
+    .home-blog-article-container .articles {
+        padding: 0 15px !important;
+    }
+    .blog-home-link a {
+        font-size: 14px;
+    }
+}
+
 /*--------------------------------------------------------/
 / Category & Collection Pages
 /--------------------------------------------------------*/
@@ -649,9 +732,6 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 .sk-collection-top {
     margin:70px 0 70px 90px;
 }
-/* .container_cat {
-    margin:70px 90px;
-} */
 .flickityt4s-slider {
     width:108%;
     justify-content:flex-start !important;
@@ -704,6 +784,16 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     font-size: 12px;
 }
 
+
+/* ----- Tablet ------ */
+@media screen and (max-width: 1023px) {
+    
+}
+
+/* ----- Mobile ----- */
+@media screen and (max-width: 767px) {
+    
+}
 
 /*--------------------------------------------------------/
 / Sendero Sessions
@@ -842,6 +932,15 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 }
 
 
+/* ----- Tablet ------ */
+@media screen and (max-width: 1023px) {
+    
+}
+
+/* ----- Mobile ----- */
+@media screen and (max-width: 767px) {
+    
+}
 
 
 /*--------------------------------------------------------/
@@ -999,6 +1098,21 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 .pswp__top-bar {
     background-color: #000 !important;
 }
+
+
+/* ----- Tablet ------ */
+@media screen and (max-width: 1023px) {
+    
+}
+
+/* ----- Mobile ----- */
+@media screen and (max-width: 767px) {
+    
+}
+
+
+
+
 /*---------------- SHOPPING CART SIDEBAR ----------------*/
 .mini_cart_wrap, .mini_cart_header {
     background-color: white;
@@ -1223,6 +1337,20 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 .nt_cart_form .user_choose_js {
     /* display: none; */
 }
+
+
+/* ----- Tablet ------ */
+@media screen and (max-width: 1023px) {
+    
+}
+
+/* ----- Mobile ----- */
+@media screen and (max-width: 767px) {
+    
+}
+
+
+
 /*---------------- Blog Pages -------------------*/
 
 .sk-feat-post-img-overlay {
@@ -1265,6 +1393,15 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     line-height: 1.4em;
 }
 
+/* ----- Tablet ------ */
+@media screen and (max-width: 1023px) {
+    
+}
+
+/* ----- Mobile ----- */
+@media screen and (max-width: 767px) {
+    
+}
 
 
 /*---------------- Our Story Page -------------------*/
@@ -1338,7 +1475,15 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     width: 40px !important;
 } */
 
+/* ----- Tablet ------ */
+@media screen and (max-width: 1023px) {
+    
+}
 
+/* ----- Mobile ----- */
+@media screen and (max-width: 767px) {
+    
+}
 
 /*---------------- SHOPPING CART, LOGIN & SEARCH SIDEBAR SIZE AND PADDING ----------------*/
 
@@ -1499,7 +1644,13 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     cursor: pointer;
 }
 
-@media (min-width: 768px) {
+/* ----- Tablet ----- */
+@media screen and (max-width: 1023px) {
+    
+}
+
+/* ----- Mobile ----- */
+@media (min-width: 767px) {
     #nt_cart_canvas {
         width: 740px;
         background-color: white;
@@ -1526,7 +1677,15 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     border: 5px black solid !important;
 }
 
+/* ----- Tablet ------ */
+@media screen and (max-width: 1023px) {
+    
+}
 
+/* ----- Mobile ----- */
+@media screen and (max-width: 767px) {
+    
+}
 
 /*---------------- SHOPPING CART, LOGIN & SEARCH SIDEBAR FORM TEXT ----------------*/
 
@@ -1557,6 +1716,15 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     transition: .3s;
 }
 
+/* ----- Tablet ------ */
+@media screen and (max-width: 1023px) {
+    
+}
+
+/* ----- Mobile ----- */
+@media screen and (max-width: 767px) {
+    
+}
 
 /*---------------- Quick View and Add to Cart on Hover -------------------*/
 
@@ -1564,7 +1732,15 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     display:none;
 }
 
+/* ----- Tablet ------ */
+@media screen and (max-width: 1023px) {
+    
+}
 
+/* ----- Mobile ----- */
+@media screen and (max-width: 767px) {
+    
+}
 /*---------------- Pagination -------------------*/
 
 .pagination-page {
@@ -1590,6 +1766,15 @@ a.prev.page-numbers {
     margin-right:60px;
 }
 
+/* ----- Tablet ------ */
+@media screen and (max-width: 1023px) {
+    
+}
+
+/* ----- Mobile ----- */
+@media screen and (max-width: 767px) {
+    
+}
 
 /*---------------- Sendero Session Individual Group Page -------------------*/
 .sk-session-group-img-text-container {
@@ -1668,6 +1853,15 @@ a.prev.page-numbers {
     padding: 0 50px !important;
 }
 
+/* ----- Tablet ------ */
+@media screen and (max-width: 1023px) {
+    
+}
+
+/* ----- Mobile ----- */
+@media screen and (max-width: 767px) {
+    
+}
 
 /*---------------- Ryviu Review App -------------------*/
 .r--button {
@@ -1686,9 +1880,30 @@ a.prev.page-numbers {
 .r--stars-icon:before {
     content: "\e902" !important;
 }
+
+/* ----- Tablet ------ */
+@media screen and (max-width: 1023px) {
+    
+}
+
+/* ----- Mobile ----- */
+@media screen and (max-width: 767px) {
+    
+}
+
 /*---------------- Remove color swatches on grid pages -------------------*/
 .nt_swatches_on_grid {
     display: none !important;
+}
+
+/* ----- Tablet ------ */
+@media screen and (max-width: 1023px) {
+    
+}
+
+/* ----- Mobile ----- */
+@media screen and (max-width: 767px) {
+    
 }
 
 /*-----------------------------------------------------------------------------/
@@ -1734,6 +1949,18 @@ a.prev.page-numbers {
 .pioneros-item:hover .pioneros-image-overlay {
     opacity: 1;
 }
+
+/* ----- Tablet ------ */
+@media screen and (max-width: 1023px) {
+    
+}
+
+/* ----- Mobile ----- */
+@media screen and (max-width: 767px) {
+    
+}
+
+
 /*-----------------------------------------------------------------------------/
 / Custom CSS For Screen Sizes
 /-----------------------------------------------------------------------------*/
