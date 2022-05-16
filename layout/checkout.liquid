@@ -14,6 +14,8 @@
     {{ checkout_scripts }}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <style>
+
+      /* ------------------ GLOBAL ------------------ */
       p, a, span, li, input, label, th {
       	font-family: "kameron";
       }
@@ -23,7 +25,11 @@
         font-weight: 500;
         text-transform: uppercase;
       }
-   
+      form {
+        border-radius: 0;
+        border: none;
+        border-bottom: 1px solid #e6e6e6;
+      }
       .breadcrumb__item, .breadcrumb__link {
        	color: #737373; 
       }
@@ -41,6 +47,16 @@
       	content: none;
       }
       
+      /* ------------ INFORMATION SECTION ------------ */
+      .order-summary__sections::before {
+        content: "ORDER SUMMARY";
+        font-family: 'Oswald';
+        font-size: 18px;
+        color: #000;
+      }
+      .order-summary__section__content {
+        padding-top: 50px;
+      }
       .shopify-cleanslate .kEwctmM5pguv6XkPR8mx6:only-child {
        	margin: 0 !important; 
       }
@@ -83,7 +99,7 @@
         box-shadow: 0 1px #000;
       }
      
-      .input-checkbox {
+      .input-checkbox, .input-radio {
       	border: 1px solid #d4d6d8 !important;
         box-shadow: none !important;
         width: 16px;
@@ -161,7 +177,7 @@
       	display: none;
       }
     
-      .step__footer__continue-btn, .step__footer__previous-link {
+      .step__footer__continue-btn, .step__footer__previous-link, .step__footer .shown-if-js {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -201,6 +217,32 @@
         font-size: 18px;
         font-weight: 600;
       }
+
+      .payment-due__price {
+        letter-spacing: 0;
+      }
+      /* --------------- SHIPPING SECTION --------------- */
+      .content-box {
+        border-radius: 0;
+      }
+
+.input-radio:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: all 0.2s ease-in-out;
+  width: 10px;
+  height: 8px;
+  margin-left: -5px;
+  margin-top: -4px;
+  background-image: url("//cdn.shopify.com/shopifycloud/shopify/assets/checkout_2021-01-25/checkbox-tick-66a9a39f70a44a226223ef4c61a701d2d10afaa73ba8846a509fbe58a82f3f36.svg");
+}
+
+/* .input-radio:first-child {
+  background-color: #000;
+} */
     </style>
     
   </head>
@@ -257,6 +299,37 @@
         } else {
           $("#checkout_remember_me").css("background-color", "rgb(255, 255, 255)");
         }
+      });
+
+      $(".input-radio:first, .radio__label:first").click(() => {
+        if ($(".input-radio:first").css("background-color") === 'rgb(255, 255, 255)') {
+          $(".input-radio:first").css("background-color", "rgb(0, 0, 0)");
+          $(".input-radio:eq(1)").css("background-color", "rgb(255, 255, 255)");
+        } 
+      });
+
+      $(".input-radio:eq(1), .radio__label:eq(1)").click(() => {
+        if ($(".input-radio:eq(1)").css("background-color") === 'rgb(255, 255, 255)') {
+          $(".input-radio:eq(1)").css("background-color", "rgb(0, 0, 0)");
+          $(".input-radio:first").css("background-color", "rgb(255, 255, 255)");
+        }
+      });
+
+      $(".input-radio:eq(2), .radio__label:eq(2)").click(() => {
+        if ($(".input-radio:eq(2)").css("background-color") === 'rgb(255, 255, 255)') {
+          $(".input-radio:eq(2)").css("background-color", "rgb(0, 0, 0)");
+          $(".input-radio:last").css("background-color", "rgb(255, 255, 255)");
+        }
+      });
+
+      $(".input-radio:last, .radio__label:last").click(() => {
+        if ($(".input-radio:last").css("background-color") === 'rgb(255, 255, 255)') {
+          $(".input-radio:last").css("background-color", "rgb(0, 0, 0)");
+          $(".input-radio:eq(2)").css("background-color", "rgb(255, 255, 255)");
+        }
+      });
+      $(".input-radio:nth-child(2)").click(() => {
+        alert("HELLO");
       });
     </script>
   </body>
