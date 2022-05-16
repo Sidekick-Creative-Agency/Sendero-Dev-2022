@@ -169,12 +169,20 @@
       .field__input--select:hover + .field__caret {
        padding-top: 10px; 
       }
+      .field__caret svg {
+      	display: none;
+      }
     
       .step__footer__continue-btn, .step__footer__previous-link {
         display: flex;
         align-items: center;
         justify-content: center;
         width: 100%;
+        
+      }
+      .step__footer__continue-btn span, .step__footer__previous-link span {
+      	font-family: "oswald";
+        text-transform: uppercase;
       }
    
       .step__footer {
