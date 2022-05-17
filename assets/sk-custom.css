@@ -1454,7 +1454,7 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     .post-info, .post-info a {
         height: 100%;
     }
-    
+}
 
 /* ----- Mobile ----- */
 @media screen and (max-width: 767px) {
@@ -1744,7 +1744,7 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     cursor: pointer;
 }
 #nt_cart_canvas {
-    width: 740px !important;
+    width: 740px;
     background-color: white;
 }
 
@@ -1819,12 +1819,46 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 
 /* ----- Tablet ------ */
 @media screen and (max-width: 1023px) {
-    
+    #nt_cart_canvas {
+        width: 700px;
+    }
+    .mini-cart-edit-delete-container {
+        width: 36.5%;
+    }
 }
 
 /* ----- Mobile ----- */
 @media screen and (max-width: 767px) {
-    
+    #nt_cart_canvas {
+        width: 100%;
+    }
+    #nt_cart_canvas .nt_mini_cart {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .mini_cart_content {
+        margin-left: 50px;
+    }
+    .mini_cart_footer {
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+    .mini_cart_upsell .flickityt4s-prev-next-button.next {
+        right: 90px;
+    }
+    .mini-cart-button-container {
+        flex-direction: column;
+    }
+    .mini-cart-edit-delete-container {
+        width: 130px;
+    }
+    .mini_cart_upsell .flickityt4s-viewport {
+        transform: translateX(-30%);
+        overflow: visible;
+    }
+    .mini_cart_content .mini_cart_item {
+        /* border-left: 1px solid rgba(129, 129, 129, 0.2);  */
+    }
 }
 
 /*---------------- Quick View and Add to Cart on Hover -------------------*/
@@ -1840,9 +1874,7 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 
 /* ----- Mobile ----- */
 @media screen and (max-width: 767px) {
-    #nt_cart_canvas {
-        width: 90%;
-    }
+    
 }
 /*---------------- Pagination -------------------*/
 
