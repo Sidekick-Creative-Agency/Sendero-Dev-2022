@@ -52,7 +52,7 @@
         "txt_align": "tl",
         "layout": "nt_full",
         "mg": "50px,,50px,",
-        "pd": "50px, , 50px,",
+        "pd": "50px,,,",
         "mg_mb": "",
         "pd_mb": ""
       }
@@ -76,7 +76,7 @@
         "cl_opacity": 0,
         "layout": "nt_full",
         "mg": "50px,,50px,",
-        "pd": "",
+        "pd": "50px,,,",
         "mg_mb": "",
         "pd_mb": ""
       }
@@ -167,10 +167,10 @@
         "image": "shopify:\/\/shop_images\/gautier-salles-uffQnKuJ-hc-unsplash.jpg",
         "img_align": "center",
         "img_position": "1",
-        "mg": "0, auto,0 auto",
-        "pd": "",
-        "mg_mb": "",
-        "pd_mb": ""
+        "mg": "50px, auto,50px, auto",
+        "pd": "50px,,,",
+        "mg_mb": ",,,,",
+        "pd_mb": ",,,,"
       }
     },
     "16504062152cf6b956": {
@@ -238,10 +238,10 @@
         "cl_overlay": "#000000",
         "cl_opacity": 0,
         "layout": "nt_full",
-        "mg": "-25px,,75px,",
-        "pd": "",
+        "mg": "50px,,50px,",
+        "pd": "50px,,,",
         "mg_mb": "",
-        "pd_mb": "",
+        "pd_mb": ",,,,",
         "pd_text": 100
       }
     },
@@ -257,7 +257,7 @@
         "align": "tl",
         "layout": "container",
         "mg": "50px,,50px,",
-        "pd": "0",
+        "pd": "50px,,50px,",
         "mg_mb": "",
         "pd_mb": ""
       }
@@ -279,7 +279,7 @@
         "cl_txt": "dark",
         "layout": "container",
         "mg": "50px, , 50px,",
-        "pd": ", 55px, , 65px",
+        "pd": "50px, 25px, , 25px",
         "mg_mb": "",
         "pd_mb": ""
       }
@@ -295,8 +295,8 @@
         "content": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos.<br\/><\/p><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos.<br\/><\/p>",
         "align": "tl",
         "layout": "container",
-        "mg": "50px,,150px,",
-        "pd": "0",
+        "mg": "50px,,100px,",
+        "pd": "50px,,,",
         "mg_mb": "",
         "pd_mb": ""
       }

@@ -478,9 +478,9 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 }
 .hero_video_se iframe {
     position: absolute;
-    width: 350%;
+    /* width: 350%;
     left: -125%;
-    top: 0;
+    top: 0; */
     right: 0;
     bottom: 0;
     max-width: none;
@@ -679,7 +679,9 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 
 /* ----- Tablet ------ */
 @media screen and (max-width: 1023px) {
-    
+    .hero_video_se iframe {
+        height: 125%;
+    }
 }
 
 /* ----- Mobile ----- */
@@ -913,6 +915,8 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
  }
  .sendero-sessions-rich-text {
      max-width: 1100px;
+     
+     /* padding: 0 25px !important; */
      /* margin-bottom: 50px; */
  }
  .sendero-session-flickity-slider {
@@ -1133,7 +1137,12 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 
 /* ----- Mobile ----- */
 @media screen and (max-width: 767px) {
-    
+    .sk-session-group-img-text-container {
+        padding: 0 25px !important;
+    }
+    .sk-session-group-text {
+        padding: 0 !important;
+    }
 }
 
 
@@ -1875,7 +1884,7 @@ a.prev.page-numbers {
 }
 .sk-session-group-outer-container {
     max-width: 1200px !important;
-    margin: 100px auto;
+    margin: 50px auto;
 }
 .sk-session-group-inner-container {
     display: flex;
@@ -1917,17 +1926,50 @@ a.prev.page-numbers {
      position: absolute;
 }
 .image-text-quote {
-    padding: 0 50px !important;
+    /* padding: 0 50px !important; */
+    max-width: 1100px !important;
+}
+.image-text-quote.container {
+    padding: 0;
+    /* transform: translateX(15px); */
 }
 
+#shopify-section-template--16002783641857__1650466987b717892b, #shopify-section-template--16002783641857__1650467056c6dc0d08, .type_rich_text {
+    margin: 0 25px;
+}
 /* ----- Tablet ------ */
 @media screen and (max-width: 1023px) {
-    
+    .image-text-quote {
+        padding: 0 25px 0 0 !important;
+    }
+    .image-text-quote .container {
+        padding: 0;
+    }
 }
 
 /* ----- Mobile ----- */
 @media screen and (max-width: 767px) {
-    
+    .sk-session-group-outer-container {
+        padding: 0 25px;
+    }
+   .image-text-quote {
+       padding: 0 !important;
+   }
+   .image-text-quote .column {
+    padding: 0 25px;
+   }
+   .sendero-sessions-rich-text.container {
+       padding: 0 !important;
+   }
+   .sk-session-group-text p {
+       margin: 0;
+   }
+   .txt_col_img {
+       margin-top: 50px;
+   }
+   .image-text-quote h3{
+       line-height: 30px !important;
+   }
 }
 
 /*---------------- Ryviu Review App -------------------*/
@@ -2145,7 +2187,7 @@ a.prev.page-numbers {
         margin-right: 0;
     }
     .sk-session-grid-video {
-        max-width: 75% !important;
+        max-width: 100% !important;
     }
 }
     

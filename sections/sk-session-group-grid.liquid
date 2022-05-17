@@ -113,8 +113,9 @@
                 {% assign song = se_stts.song_name15 %}
                 {% assign grid_link = se_stts.grid_link15 %}
             {% endif %}
+            {%- if video_url != video_none and video_url != "" -%}
             <div class="sk-session-grid-video post_2 post-thumbnail pr oh col-lg-{{col}} col-md-{{col_tb}} col-{{col_mb}}">
-                {%- if video_url != video_none and video_url != "" -%}
+                
                     {% assign video_id = video_url | remove: "https://youtu.be/" %}
                     {% assign url = video_url | remove: "https://youtu.be/" | prepend: "embed/" | prepend: "//www.youtube.com/" | append: "?autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1&rel=0&autohide=1&enablejsapi=1&playlist=" | append: video_id %}
                     <a class="sendero-session-link" href="{{grid_link}}" target="_blank">
@@ -126,8 +127,9 @@
                         <div class="sendero-session-overlay"></div>
                         </div>
                     </a>
-                {%- endif -%}
+                
             </div>
+            {%- endif -%}
         {% endfor %}
     </div>
 </div>
