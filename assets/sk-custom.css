@@ -137,6 +137,7 @@ p {
     font-size:11px;
     color:#fff;
     letter-spacing: 0.15em;
+        opacity: 1;
 }
 
 .shop-all-blk {
@@ -1428,6 +1429,7 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     line-height: 1.4em;
 }
 
+
 /* ----- Tablet ------ */
 @media screen and (max-width: 1023px) {
     .type_featured_blog .container {
@@ -1442,11 +1444,29 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
         margin-bottom: 0;
         padding-bottom: 0;
     }
-}
+    .sk-feat-post-info {
+        padding: 50px;
+    }
+    .post-info, .post-info a {
+        height: 100%;
+    }
+    
 
 /* ----- Mobile ----- */
 @media screen and (max-width: 767px) {
-    
+    .sk-featured-article {
+        flex-direction: column;
+    }
+    .post-info {
+        height: 100%;
+    }
+    .sk-feat-post-image{
+        height: 100%;
+        background-size: cover !important;
+    }
+    .art_des3 .post-info {
+        background-color: rgba(0,0,0,.35);
+    }
 }
 
 

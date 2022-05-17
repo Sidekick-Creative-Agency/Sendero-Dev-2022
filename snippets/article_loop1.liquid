@@ -1,5 +1,5 @@
 {%- assign art_url = article.url %}{% assign IsDotShown = false -%}
-<article class="post-{{article.id}} post_nt_loop post_1 col-lg-{{col}} col-md-{{col_tb}} col-{{col_mb}} mb__40">
+<article class="post-{{article.id}} sk-featured-article post_nt_loop post_1 col-lg-{{col}} col-md-{{col_tb}} col-{{col_mb}} mb__40">
    <a class="mb__20 db pr oh" href="{{art_url}}">
       {%- assign image = article.image -%}
       {%- if image -%}<div class="lazyloadt4s nt_bg_lz pr_lazy_img" data-bgset="{{ image | img_url: '1x1' }}" data-ratio="{{image.aspect_ratio}}" data-sizes="auto"{% if sett_equal == false %} style="padding-top:{{ 1 | divided_by: image.aspect_ratio | times: 100}}%;"{% endif %}></div>{%- endif -%}
