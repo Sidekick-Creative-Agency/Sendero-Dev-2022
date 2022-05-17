@@ -289,7 +289,9 @@ p {
 
 /* ----- Mobile ----- */
 @media screen and (max-width: 767px) {
-    
+    .nt_se_template--15923373048065__rich-text-columns .rich-text-button {
+        /* justify-content: left !important; */
+    }
 }
 
 /* --------- LOCATIONS PAGE --------------- */
@@ -717,6 +719,9 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     }
     .blog-home-link a {
         font-size: 14px;
+    }
+    .section-title {
+        font-weight: 500;
     }
 }
 
@@ -1474,6 +1479,9 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     /* padding-top: 50px; */
     padding: 50px 25px;
 }
+.rich-text-columns-outer-container h2 {
+    font-size: 28px;
+}
 .rich-text-columns-inner-container {
     display: flex;
     justify-content: center;
@@ -1527,6 +1535,7 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     }
     .rich-text-columns-outer-container h2 {
         justify-content: left !important;
+        font-size: 24px;
     }
     .rich-text-columns-text-outer-section {
         /* flex-direction: row !important; */
@@ -2092,6 +2101,7 @@ a.prev.page-numbers {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-bottom: 25px !important;
     }
     .rich-text-columns-text-outer-section {
         width: 100%;

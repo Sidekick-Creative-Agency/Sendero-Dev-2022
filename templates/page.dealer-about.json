@@ -43,6 +43,8 @@
         "sub_title": "",
         "show_btn": true,
         "btn_text": "apply to become a retailer",
+        "button_align": "left",
+        "btn_link": "#",
         "sub_font": "2",
         "header_align": "left",
         "style_title": "title_1",
@@ -51,10 +53,10 @@
         "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam consectetur, magna eu efficitur dignissim, mi nisl faucibus leo, nec sagittis elit magna ac lorem. Pellentesque ac ligula ut odio aliquam elementum a quis neque. Donec in urna ipsum. Curabitur felis libero, sodales sit amet mauris ut, auctor pulvinar nulla. Vivamus bibendum accumsan iaculis. Vivamus metus tellus, bibendum sit amet pharetra quis, venenatis eu metus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras eu bibendum turpis. Sed massa nibh, tempus sit amet cursus at, consectetur eget ex. Nunc eleifend consectetur velit, at convallis enim. In quis ligula tristique nisi volutpat sagittis.<\/p>",
         "align": "tl",
         "layout": "container",
-        "mg": "50px,,50px,",
-        "pd": "",
+        "mg": "50px,,100px,",
+        "pd": ",25px,,25px",
         "mg_mb": "",
-        "pd_mb": ""
+        "pd_mb": ",25px,,25px"
       }
     },
     "rich-text-columns": {
@@ -79,6 +81,7 @@
         "show_btn": true,
         "btn_text": "apply to become a retailer",
         "button_align": "center",
+        "btn_link": "#",
         "sub_font": "2",
         "style_title": "title_1",
         "ic_tt": "gem",
@@ -87,9 +90,9 @@
         "align": "tl",
         "layout": "container",
         "mg": "50px,,50px,",
-        "pd": "",
-        "mg_mb": "",
-        "pd_mb": ""
+        "pd": ",25px,,25px",
+        "mg_mb": ",,100px,",
+        "pd_mb": ",25px,,25px"
       }
     }
   },
