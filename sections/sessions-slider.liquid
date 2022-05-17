@@ -315,6 +315,12 @@
     let slider_length = slider.scrollWidth;
     let place = 0;
     let window_width = window.innerWidth;
+    let offset = 50;
+    let slide_length = 600;
+    if (window_width < 768) {
+      offset = 25;
+      slide_length = 400;
+    }
 
     window.addEventListener("resize", () => {
       window_width = window.innerWidth;
@@ -325,9 +331,9 @@
         slider.style.transform="translateX(0%)";
         current_slide = 1;
       } else {
-        scroll_length = 600 * current_slide;
+        scroll_length = slide_length * current_slide;
         if (scroll_length > slider_length - window_width) {
-          slider.style.transform="translateX(-" + (slider_length - window_width + 50) + "px)";
+          slider.style.transform="translateX(-" + (slider_length - window_width + offset) + "px)";
           current_slide = slides_num;
         } else {
           slider.style.transform="translateX(-" + scroll_length + "px)";
@@ -339,14 +345,14 @@
     prev_button.addEventListener("click", () => {
       console.log(current_slide);
       if (current_slide === 1) {
-        slider.style.transform="translateX(-" + (slider_length - window_width + 50) + "px)";
+        slider.style.transform="translateX(-" + (slider_length - window_width + offset) + "px)";
         current_slide = slides_num - 1;
       } else if (current_slide === 2) {
         slider.style.transform="translateX(0%)";
         current_slide = 1;
       } else {
-        scroll_length = 600 * (current_slide - 1);
-        slider.style.transform="translateX(-" + (scroll_length - 600) + "px)";
+        scroll_length = slide_length * (current_slide - 1);
+        slider.style.transform="translateX(-" + (scroll_length) + "px)";
         current_slide--;
       }
     });

@@ -105,9 +105,9 @@
         "align": "tl",
         "layout": "container",
         "mg": "50px,,50px,",
-        "pd": "",
-        "mg_mb": "",
-        "pd_mb": ""
+        "pd": ",25px,,25px",
+        "mg_mb": ",,-25px,",
+        "pd_mb": ",25px,,25px"
       }
     },
     "sendero-sessions-img-grid": {
@@ -151,7 +151,7 @@
         "hide_bgimg": false,
         "mg": "50px,,50px,",
         "pd": "",
-        "mg_mb": "",
+        "mg_mb": "-25px,,-25px,",
         "pd_mb": ""
       }
     },
@@ -168,9 +168,9 @@
         "align": "tl",
         "layout": "container",
         "mg": "50px,,50px,",
-        "pd": "",
-        "mg_mb": "",
-        "pd_mb": ""
+        "pd": ",25px,,25px",
+        "mg_mb": "25px,,50px,",
+        "pd_mb": ",25px,,25px"
       }
     }
   },

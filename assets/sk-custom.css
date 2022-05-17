@@ -908,6 +908,7 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
  }
  .sendero-sessions-rich-text {
      max-width: 1100px;
+     /* margin-bottom: 50px; */
  }
  .sendero-session-flickity-slider {
      display: flex;
@@ -939,7 +940,27 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 
 /* ----- Mobile ----- */
 @media screen and (max-width: 767px) {
-    
+    #shopify-section-template--15923373244673__164865439396016512 .sk-collection-top {
+        margin: 25px 0 25px 25px;
+        margin-bottom: 0 !important;
+    }
+
+    .sendero-session-slider-vid-container {
+        height: 200px;
+        width: 400px;
+    }
+    .sk-session-slider-container #previous_button {
+        left: 10px !important;
+    }
+    .sendero-session-img-container {
+        padding: 0;
+        flex-wrap: nowrap;
+        column-gap: 10px;
+    }
+    .sendero-session-img {
+        padding: 0;
+        width: 50%;
+    }
 }
 
 
