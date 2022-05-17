@@ -1098,39 +1098,73 @@
       "mb_cat": {
         "type": "mb_cat",
         "blocks": {
-          "1585642450066": {
-            "type": "cat",
+          "cb5a5090-372e-42f1-a589-01d7feebd664": {
+            "type": "menu",
             "settings": {
-              "cat": "electric",
-              "title": "HATS",
+              "title": "Spring 2022",
               "url": "",
-              "menu": "",
+              "open_link": "_self",
+              "menu": "spring-2022",
+              "icon": "",
               "lb": "",
-              "lb_cl": "#e91e63",
-              "icons_op": "0",
-              "icon": "camera-retro"
+              "lb_cl": ""
             }
           },
-          "1585642644518": {
-            "type": "cat",
+          "183b51d8-d85a-45ae-962f-40e0486c2448": {
+            "type": "menu",
             "settings": {
-              "cat": "footwear",
-              "title": "T-SHIRT",
+              "title": "Hats",
               "url": "",
-              "menu": "",
+              "open_link": "_self",
+              "menu": "hats-full",
+              "icon": "",
               "lb": "",
-              "lb_cl": "#e91e63",
-              "icons_op": "0",
-              "icon": "tshirt"
+              "lb_cl": ""
+            }
+          },
+          "ad4b26fd-d9f8-4717-aa94-f3dcac4ea69d": {
+            "type": "menu",
+            "settings": {
+              "title": "T-Shirts",
+              "url": "",
+              "open_link": "_self",
+              "menu": "t-shirts-full",
+              "icon": "",
+              "lb": "",
+              "lb_cl": ""
+            }
+          },
+          "d47ecba8-4c3e-4cb3-b20f-6b2dc52343c7": {
+            "type": "menu",
+            "settings": {
+              "title": "Accessories",
+              "url": "",
+              "open_link": "_self",
+              "menu": "accessories",
+              "icon": "",
+              "lb": "",
+              "lb_cl": ""
             }
           },
           "12b29945-f995-4a71-9b37-ef6a07909adb": {
             "type": "menu",
             "settings": {
-              "title": "brand",
+              "title": "Brand",
               "url": "",
               "open_link": "_self",
               "menu": "main-menu",
+              "icon": "",
+              "lb": "",
+              "lb_cl": ""
+            }
+          },
+          "37f77a41-511b-46b4-b7d4-0608238ab54c": {
+            "type": "menu",
+            "settings": {
+              "title": "Brand",
+              "url": "",
+              "open_link": "_self",
+              "menu": "brand-full",
               "icon": "",
               "lb": "",
               "lb_cl": ""
@@ -1143,9 +1177,12 @@
           }
         },
         "block_order": [
-          "1585642450066",
-          "1585642644518",
+          "cb5a5090-372e-42f1-a589-01d7feebd664",
+          "183b51d8-d85a-45ae-962f-40e0486c2448",
+          "ad4b26fd-d9f8-4717-aa94-f3dcac4ea69d",
+          "d47ecba8-4c3e-4cb3-b20f-6b2dc52343c7",
           "12b29945-f995-4a71-9b37-ef6a07909adb",
+          "37f77a41-511b-46b4-b7d4-0608238ab54c",
           "b985b8aa-eafc-4590-8e25-60f1f8c51d77"
         ],
         "settings": {

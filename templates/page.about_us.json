@@ -52,7 +52,7 @@
         "mg": "50px,,50px,",
         "pd": ",50px,,50px",
         "mg_mb": "",
-        "pd_mb": ",25px,,25px"
+        "pd_mb": ",,,,"
       }
     },
     "164856885666aace2e": {
@@ -112,10 +112,10 @@
         "content": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. <\/p>",
         "align": "tl",
         "layout": "container",
-        "mg": "-50px,,-50px,",
+        "mg": ",,,",
         "pd": "",
         "mg_mb": "",
-        "pd_mb": ""
+        "pd_mb": ",,,"
       }
     },
     "1649257609430b6426": {
