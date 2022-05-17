@@ -1787,7 +1787,7 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     
 }
 
-/*---------------- SHOPPING CART, LOGIN & SEARCH SIDEBAR FORM TEXT ----------------*/
+/*---------------- MINI CART, LOGIN & SEARCH SIDEBAR FORM TEXT ----------------*/
 
 .form-row label {
     font-family: Oswald;
@@ -1839,7 +1839,9 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 
 /* ----- Mobile ----- */
 @media screen and (max-width: 767px) {
-    
+    #nt_cart_canvas {
+        width: 90%;
+    }
 }
 /*---------------- Pagination -------------------*/
 
