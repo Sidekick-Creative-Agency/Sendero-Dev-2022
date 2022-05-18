@@ -263,10 +263,10 @@
         "ee778cfe-994f-4a0c-a8b5-e8b8db651782": {
           "type": "shopify:\/\/apps\/ryviu-aliexpress-reviews-app\/blocks\/ryviu-widget\/807ad6ed-1a6a-4559-abea-ed062858d9da",
           "settings": {
-            "hide_when_no_reviews": false,
+            "hide_when_no_reviews": true,
             "r_wapper_class": "",
             "r_max_width": 1450,
-            "r_padding_block": 0
+            "r_padding_block": 50
           }
         }
       },

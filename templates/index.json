@@ -60,7 +60,7 @@
             "color": "#ffffff",
             "fw_text": 300,
             "fs_text": 22,
-            "lh_text": 7,
+            "lh_text": 30,
             "ls_text": 0,
             "fs_mb_text": 14,
             "lh_mb_text": 20,
@@ -185,7 +185,7 @@
             "color": "#ffffff",
             "fw_text": 300,
             "fs_text": 22,
-            "lh_text": 7,
+            "lh_text": 30,
             "ls_text": 0,
             "fs_mb_text": 14,
             "lh_mb_text": 0,
@@ -279,7 +279,7 @@
             "color": "#ffffff",
             "fw_text": 400,
             "fs_text": 22,
-            "lh_text": 7,
+            "lh_text": 30,
             "ls_text": 0,
             "fs_mb_text": 14,
             "lh_mb_text": 0,
@@ -731,96 +731,32 @@
         "pd_mb": ""
       }
     },
-    "1649254728acb29f6b": {
-      "type": "testimonials",
+    "16528897230a5c23d9": {
+      "type": "apps",
       "blocks": {
-        "16492547288c7ba69e-0": {
-          "type": "quote",
+        "d94b4113-de23-4508-9bae-54056314ceb8": {
+          "type": "shopify:\/\/apps\/ryviu-aliexpress-reviews-app\/blocks\/ryviu-featured-widget\/807ad6ed-1a6a-4559-abea-ed062858d9da",
           "settings": {
-            "content": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
-            "title": "Author's name",
-            "pos": "",
-            "rating": 5
-          }
-        },
-        "16492547288c7ba69e-1": {
-          "type": "quote",
-          "settings": {
-            "content": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
-            "title": "Author's name",
-            "pos": "",
-            "rating": 5
-          }
-        },
-        "16492547288c7ba69e-2": {
-          "type": "quote",
-          "settings": {
-            "content": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
-            "title": "Author's name",
-            "pos": "",
-            "rating": 5
-          }
-        },
-        "435bcdce-546c-4827-add9-dd12a7c1c30c": {
-          "type": "quote",
-          "settings": {
-            "content": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
-            "title": "Author's name",
-            "pos": "",
-            "rating": 5
-          }
-        },
-        "e280a9e2-49bc-4e86-b85e-8114d46c4f30": {
-          "type": "quote",
-          "settings": {
-            "content": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
-            "title": "Author's name",
-            "pos": "",
-            "rating": 5
+            "r_wapper_featured": "",
+            "r_max_width_featured": 1300,
+            "padding_block": 50,
+            "title_heading": "Don't Just Take Our Word For It",
+            "title_align": "r_center",
+            "title_status": true,
+            "type_ryviu": "carousel"
           }
         }
       },
       "block_order": [
-        "16492547288c7ba69e-0",
-        "16492547288c7ba69e-1",
-        "16492547288c7ba69e-2",
-        "435bcdce-546c-4827-add9-dd12a7c1c30c",
-        "e280a9e2-49bc-4e86-b85e-8114d46c4f30"
+        "d94b4113-de23-4508-9bae-54056314ceb8"
       ],
       "settings": {
-        "title": "DON'T JUST TAKE OUR WORD FOR IT",
-        "sub_title": "",
-        "sub_font": "2",
-        "style_title": "title_1",
-        "ic_tt": "gem",
-        "show_clpr": false,
-        "layout_des": "2",
-        "ter_des": "5",
-        "col_pr": "4",
-        "col_pr_tb": "6",
-        "loop": true,
-        "au_time": 0,
-        "au_hover": true,
-        "button": true,
-        "btn_vi": "1",
-        "btn_owl": "2",
-        "btn_color": "1",
-        "dot": false,
-        "dot_owl": "2",
-        "dot_color": "1",
-        "use_pr": false,
-        "layout": "container",
-        "cl_bg": "",
-        "mg": "100px,,100px,",
-        "pd": "",
-        "mg_mb": "",
-        "pd_mb": ""
       }
     },
-    "1648656519e4bb75df": {
-      "type": "instagram_feed",
+    "16528932861d0f8a07": {
+      "type": "instagram_feed2",
       "blocks": {
-        "16486565198c9838b8-0": {
+        "16528932863acfb535-0": {
           "type": "1",
           "settings": {
             "title": "@ FOLLOW US ON INSTAGRAM",
@@ -830,79 +766,37 @@
             "ic_tt": "gem",
             "show_clpr": false
           }
-        },
-        "16486565198c9838b8-1": {
-          "type": "img",
-          "settings": {
-            "url": ""
-          }
-        },
-        "16486565198c9838b8-2": {
-          "type": "img",
-          "settings": {
-            "url": ""
-          }
-        },
-        "16486565198c9838b8-3": {
-          "type": "img",
-          "settings": {
-            "url": ""
-          }
-        },
-        "16486565198c9838b8-4": {
-          "type": "img",
-          "settings": {
-            "url": ""
-          }
-        },
-        "16486565198c9838b8-5": {
-          "type": "img",
-          "settings": {
-            "url": ""
-          }
-        },
-        "16486565198c9838b8-6": {
-          "type": "img",
-          "settings": {
-            "url": ""
-          }
         }
       },
       "block_order": [
-        "16486565198c9838b8-0",
-        "16486565198c9838b8-1",
-        "16486565198c9838b8-2",
-        "16486565198c9838b8-3",
-        "16486565198c9838b8-4",
-        "16486565198c9838b8-5",
-        "16486565198c9838b8-6"
+        "16528932863acfb535-0"
       ],
       "settings": {
-        "open_link": "_self",
-        "image": "shopify:\/\/shop_images\/topo_map_gray.png",
-        "layout_des": "1",
-        "space": "2",
+        "acc2": "",
+        "limit": 12,
+        "open_link": "_blank",
+        "layout_des": "2",
+        "space": "0",
         "rounded_ins": "0",
-        "col_pr": "4",
-        "col_pr_tb": "4",
+        "col_pr": "2",
+        "col_pr_tb": "3",
         "col_pr_mb": "6",
-        "loop": false,
+        "loop": true,
         "au_time": 0,
         "au_hover": true,
-        "button": false,
+        "button": true,
         "btn_vi": "1",
         "btn_owl": "1",
         "btn_color": "0",
-        "dot": true,
+        "dot": false,
         "dot_owl": "1",
         "dot_color": "1",
-        "use_eq_height": true,
         "image_ratio": "ratio1_1",
         "image_size": "nt_cover",
         "image_position": "8",
-        "layout": "container",
+        "layout": "nt_full",
         "cl_bg": "#ffffff",
-        "mg": "",
+        "mg": "50px,,50px,",
         "pd": "",
         "mg_mb": "",
         "pd_mb": ""
@@ -915,7 +809,7 @@
     "164865439396016512",
     "category-slider-alt-header",
     "blog-home-page",
-    "1649254728acb29f6b",
-    "1648656519e4bb75df"
+    "16528897230a5c23d9",
+    "16528932861d0f8a07"
   ]
 }

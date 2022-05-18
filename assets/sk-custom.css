@@ -179,7 +179,7 @@ p {
     align-self: center;
     justify-self: center;
     color: white !important;
-    border-bottom: 1px solid white !important;
+    border-bottom: 1px solid rgba(255,255,255,.45) !important;
     background-color: transparent !important;
     font-size: 14px;
 }
@@ -196,7 +196,7 @@ p {
     align-self: center;
     justify-self: center;
     color: white !important;
-    border-bottom: 1px solid white !important;
+    border-bottom: 1px solid rgba(255,255,255,.45) !important;
 }
 .nt_mb_menu .menu-item .sub-menu .menu-item a {
     margin-left: 40px;
@@ -401,6 +401,127 @@ p {
     
 }
 
+
+/*--------------------------------------------------------/
+/ REVIEW APP
+/--------------------------------------------------------*/
+.r--featured-wapper {
+    float: inherit !important;
+}
+.r--button {
+    border-radius: 0 !important;
+    text-transform: uppercase !important;
+}
+.r--stars-icon {
+    color: #222 !important;
+}
+.r--author, .r--avatar-default {
+    border-radius: 0 !important;
+}
+.r--author {
+    color: #222 !important;
+}
+.r--stars-icon:before {
+    content: "\e902" !important;
+}
+.r--featured-wapper {
+    background-color: white !important;
+    padding: 50px 0;
+}
+.r--carousel-item {
+    border-radius: 0px !important;
+    box-shadow: none !important;
+}
+.r--item-head, .r--left, .r--right {
+    border-radius: 0 !important;
+}
+.r--horizontal {
+    background-color: #fff !important;
+}
+.r--item-head {
+    background-color: #fff !important;
+}
+.r--item-head img {
+    min-height: 100% !important;
+    object-fit: cover;
+}
+.glider-next {
+    position: absolute !important;
+    right: 25px !important;
+    top: 50% !important;
+}
+.r--author {
+    margin-top: 0 !important;
+}
+.glider-prev {
+    position: absolute !important;
+    left: 25px !important;
+    top: 50% !important;
+}
+.r--icon-slider {
+    border-radius: 0 !important;
+    width: 36px !important;
+    height: 36px !important;
+    background-color: #abb1b4 !important;
+    border: 1px solid #abb1b4 !important;
+    transition: .3s;
+}
+.r--icon-slider:hover {
+    background-color: #666 !important;
+    border: 1px solid rgba(33,43,54,.9) !important;
+}
+.r--icon-slider img {
+    display: none;
+}
+.r--icon-slider::before {
+    content: "\e684";
+    font-size: 36px;
+    font-family: Pe-icon-7-stroke;
+    line-height: 36px;
+    font-weight: 500;
+    font-size: 36px;
+    color: white;
+}
+.r--previous {
+    transform: rotate(180deg);
+}
+.v--modal-box {
+    border-radius: 0 !important;
+}
+.r--filter-link {
+    box-shadow: none !important;
+    border-bottom: 1px solid #222;
+    border-radius: 0 !important;
+}
+.r--filter-popover {
+    border-radius: 0 !important
+}
+.r--icon-down {
+    display: none !important;
+}
+.r--select::after {
+    content: "\2193";
+    margin-left: 5px;
+    transition: .3s;
+    margin-bottom: -10px;
+}
+.r--default-item {
+    border-bottom: 1px solid #f2f2f2;
+    padding-bottom: 10px;
+}
+.r--star-grade.my .r--stars-icon {
+    color: #222 !important;
+}
+/* ----- Tablet ------ */
+@media screen and (max-width: 1023px) {
+    
+}
+
+/* ----- Mobile ----- */
+@media screen and (max-width: 767px) {
+    
+}
+
 /*--------------------------------------------------------/
 / FOOTERS
 /--------------------------------------------------------*/
@@ -471,7 +592,9 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     transform: translateX(-4.25%);
 }
 
-
+.caption-wrap .slt4_txt {
+    padding: 0 125px;
+}
 .sendero-session-txt-container {
     /* display: flex;
     flex: 0 0 50%; */
@@ -2174,23 +2297,7 @@ a.prev.page-numbers {
    }
 }
 
-/*---------------- Ryviu Review App -------------------*/
-.r--button {
-    border-radius: 0 !important;
-    text-transform: uppercase !important;
-}
-.r--stars-icon {
-    color: #222 !important;
-}
-.r--author, .r--avatar-default {
-    border-radius: 0 !important;
-}
-.r--author {
-    color: #222 !important;
-}
-.r--stars-icon:before {
-    content: "\e902" !important;
-}
+
 
 /* ----- Tablet ------ */
 @media screen and (max-width: 1023px) {
