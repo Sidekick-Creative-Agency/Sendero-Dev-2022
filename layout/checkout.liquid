@@ -12,15 +12,16 @@
 
     {{ checkout_stylesheets }}
     {{ checkout_scripts }}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <style>
 
       /* ------------------ GLOBAL ------------------ */
       p, a, span, li, input, label, th {
-      	font-family: "kameron";
+      	font-family: "Kameron";
       }
       h2 {
-      	font-family: "oswald";
+      	font-family: "Oswald";
         font-size: 18px !important;
         font-weight: 500;
         text-transform: uppercase;
@@ -95,8 +96,8 @@
 	  }
       
       .section__content input:focus, .section__content select:focus {
-        border: none; 
-        box-shadow: 0 1px #000;
+        border-width: 1.5px; 
+        box-shadow: none;
       }
      
       .input-checkbox, .input-radio {
@@ -221,9 +222,16 @@
       .payment-due__price {
         letter-spacing: 0;
       }
+      .step__footer__continue-btn span, .step__footer__previous-link span {
+        font-weight: 500;
+      }
+
+      .order-summary__scroll-indicator {
+        border-radius: 0;
+      }
       /* --------------- SHIPPING SECTION --------------- */
       .content-box {
-        border-radius: 0;
+        /* border-radius: 0; */
       }
 
 .input-radio:after {
@@ -243,6 +251,30 @@
 /* .input-radio:first-child {
   background-color: #000;
 } */
+
+
+
+@media screen and (max-width: 1023px) {
+  
+}
+
+@media screen and (max-width: 767px) {
+  .step__footer__continue-btn, .step__footer__previous-link, .step__footer .shown-if-js {
+    max-height: 40px;
+  }
+  .step__footer__continue-btn {
+    padding-top: 1.5em !important;
+    padding-bottom: 1.5em !important;
+  }
+  .step__footer__previous-link {
+    padding-top: 0 !important;
+    margin-top: 25px !important;
+    width: revert !important;
+  }
+  .step__footer {
+    margin-top: 25px;
+  }
+}
     </style>
     
   </head>
