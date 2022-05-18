@@ -237,6 +237,12 @@ p {
 @media screen and (max-width: 767px) {
 
 }
+@media screen and (max-width: 500px) {
+    #nt_search_canvas {
+        width: 100% !important;
+    }
+   }
+
 
 /* --------- DEALER APPLY PAGE --------------- */
 .dealer-apply-container input::placeholder{
@@ -1138,11 +1144,20 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 
 /* ----- Mobile ----- */
 @media screen and (max-width: 767px) {
-    .sk-session-group-img-text-container {
-        padding: 0 25px !important;
+    .sk-indiv-product-featured {
+        width: 100% !important;
     }
-    .sk-session-group-text {
-        padding: 0 !important;
+    .related .sk-collection-top, .type_featured_collection_owl .sk-collection-top {
+        /* margin: 0; */
+    }
+    .indiv-product-img {
+        height: 40vh;
+    }
+    .cat_grid_item, .cat_grid_item__link {
+        aspect-ratio: 1/1;
+    }
+    .flickityt4s-slider {
+        min-height: 150px;
     }
 }
 
@@ -1948,7 +1963,7 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 /* ----- Mobile ----- */
 @media screen and (max-width: 767px) {
     #nt_cart_canvas {
-        width: 100%;
+        width: 450px;
     }
     #nt_cart_canvas .nt_mini_cart {
         padding-right: 0px;
@@ -1978,7 +1993,11 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
         /* border-left: 1px solid rgba(129, 129, 129, 0.2);  */
     }
 }
-
+@media screen and (max-width: 500px) {
+    #nt_cart_canvas {
+        width: 100%;
+    }
+}
 /*---------------- Quick View and Add to Cart on Hover -------------------*/
 
 .hover_button, .product-attr {
@@ -2126,6 +2145,12 @@ a.prev.page-numbers {
 
 /* ----- Mobile ----- */
 @media screen and (max-width: 767px) {
+    .sk-session-group-img-text-container {
+        padding: 0 25px !important;
+    }
+    .sk-session-group-text {
+        padding: 0 !important;
+    }
     .sk-session-group-outer-container {
         padding: 0 25px;
     }
@@ -2356,7 +2381,6 @@ a.prev.page-numbers {
     /* INDIVIDUAL PRODUCT PAGE IMAGE */
     .indiv-product-img{
         width: 100%;
-        height: auto;
     }
 
     .sk-session-group-inner-container {

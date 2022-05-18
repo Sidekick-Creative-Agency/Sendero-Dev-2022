@@ -290,10 +290,10 @@ assign se_stts = section.settings
   <div id="wrap_des_pr"><div class="container container_des" style="padding: 0">
     <ul class="prod_tabs ul_none ul_tabs is-flex fl_center fs__16 des_mb_{{cl_mb}} des_style_{{cl_des}}">
       {%- if product.metafields.my_fields.story_description != null -%}
-      <li class="tab_title_block{% if ck %} active{% assign ck = false %}{% endif %}"><a class="db cg truncate pr" href="#tab_add">DESCRIPTION</a></li>
+      <li class="tab_title_block{% if ck %} active{% assign ck = false %}{% endif %}"><a class="db cg truncate pr" href="#">DESCRIPTION</a></li>
       {%- endif -%}
       {% if product.description %}
-      <li class="tab_title_block{% if ck %} active{% assign ck = false %}{% endif %}"><a class="db cg truncate pr indiv-product-tab" data-id-dest4s href="#tab_des">ADDITIONAL INFORMATION</a></li>
+      <li class="tab_title_block{% if ck %} active{% assign ck = false %}{% endif %}"><a class="db cg truncate pr indiv-product-tab" data-id-dest4s href="#">ADDITIONAL INFORMATION</a></li>
       {% endif %}
      
       
@@ -312,7 +312,7 @@ assign se_stts = section.settings
         
         {%- when 'des' -%}
         <div class="panel entry-content sp-tab des_mb_{{cl_mb}} des_style_{{cl_des}}{% if ck %} active{% assign ck = false %}{% else %} dn{% endif %}" data-id-dest4s id="tab_add" {{ block.shopify_attributes }}>
-        	<div class="js_ck_view"></div><div class="heading bgbl dn"><a class="tab-heading flex al_center fl_between pr cd chp fwm" href="#tab_{{block.id}}"><span class="txt_h_tab">{{bk_setts.title}}</span><span class="nav_link_icon ml__5"></span></a></div>
+        	<div class="js_ck_view"></div><div class="heading bgbl dn"><a class="tab-heading flex al_center fl_between pr cd chp fwm" href="#"><span class="txt_h_tab">{{bk_setts.title}}</span><span class="nav_link_icon ml__5"></span></a></div>
         	<div class="sp-tab-content rtet4"><span>{{- product.metafields.my_fields.story_description -}}</span>
             <a class="read-more hidden-button">Read More</a>
             <a class="read-less hidden-button">Read Less</a>
@@ -432,8 +432,8 @@ assign se_stts = section.settings
        
         {%- when 'des' %} {%- comment -%} this used to be 'when add' {%- endcomment -%}
           {% comment %}{% if product.metafields.my_fields.material != null %}{% continue %}{% endif -%} {% endcomment %}
-        <div class="panel entry-content sp-tab des_mb_{{cl_mb}} des_style_{{cl_des}}{% if ck %} active{% assign ck = false %}{% else %} dn{% endif %}" id="tab_des" {{ block.shopify_attributes }}>
-        	<div class="js_ck_view"></div><div class="heading bgbl dn"><a class="tab-heading flex al_center fl_between pr cd chp fwm" href="#tab_{{block.id}}"><span class="txt_h_tab">{{bk_setts.title}}</span><span class="nav_link_icon ml__5"></span></a></div>
+        <div class="panel entry-content sp-tab des_mb_{{cl_mb}} des_style_{{cl_des}}{% if ck %} active{% assign ck = false %}{% else %} dn{% endif %}" id="" {{ block.shopify_attributes }}>
+        	<div class="js_ck_view"></div><div class="heading bgbl dn"><a class="tab-heading flex al_center fl_between pr cd chp fwm" href="#"><span class="txt_h_tab">Additional Information</span><span class="nav_link_icon ml__5"></span></a></div>
         	<div class="sp-tab-content">
             {{product.description}}
         	</div>
@@ -852,13 +852,13 @@ assign se_stts = section.settings
 
       {%- when 'tab_des' -%}
         <div class="sp-block-tab sp-tab des_style_2{% if ck_tab %} first_tab_sp active{% assign ck_tab = false %}{% else %} dn{% endif %}" data-id-dest4s id="tab_{{block.id}}_{{ section.id }}" {{ block.shopify_attributes }}>
-          <div class="js_ck_view"></div><div class="heading bgbl dn"><a class="tab-heading flex al_center fl_between pr cd chp fwm" href="#tab_{{block.id}}_{{ section.id }}"><span class="txt_h_tab">{{bk_stts.title}}</span><span class="nav_link_icon ml__5"></span></a></div>
+          <div class="js_ck_view"></div><div class="heading bgbl dn"><a class="tab-heading flex al_center fl_between pr cd chp fwm" href="#"><span class="txt_h_tab">{{bk_stts.title}}</span><span class="nav_link_icon ml__5"></span></a></div>
           <div class="sp-tab-content rtet4">{{- product.description-}}</div>
         </div>
 
         {%- when 'tab_rivui' -%}
         <div class="sp-block-tab sp-tab des_style_2{% if ck_tab %} first_tab_sp vactive{% assign ck_tab = false %}{% else %} dn{% endif %}" data-id-reviewt4s id="tab_{{block.id}}_{{ section.id }}" {{ block.shopify_attributes }}>
-          <div class="js_ck_view"></div><div class="heading bgbl dn"><a class="tab-heading flex al_center fl_between pr cd chp fwm" href="#tab_{{block.id}}_{{ section.id }}"><span class="txt_h_tab">{{bk_stts.title}}</span><span class="nav_link_icon ml__5"></span></a></div>
+          <div class="js_ck_view"></div><div class="heading bgbl dn"><a class="tab-heading flex al_center fl_between pr cd chp fwm" href="#"><span class="txt_h_tab">{{bk_stts.title}}</span><span class="nav_link_icon ml__5"></span></a></div>
           <div class="sp-tab-content">
             {%- case settings.app_review -%}                        
                 {%- when '1' -%}
@@ -883,7 +883,7 @@ assign se_stts = section.settings
       {%- when 'tab' -%}{%- assign tab_content = bk_stts.content |default:bk_stts.page.content -%}
         {%- if bk_stts.title == blank or tab_content == blank %}{% continue %}{% endif -%}
         <div class="sp-block-tab sp-tab des_style_2{% if ck_tab %} first_tab_sp active{% assign ck_tab = false %}{% else %} dn{% endif %}" id="tab_{{block.id}}_{{ section.id }}" {{ block.shopify_attributes }}>
-          <div class="js_ck_view"></div><div class="heading bgbl dn"><a class="tab-heading flex al_center fl_between pr cd chp fwm" href="#tab_{{block.id}}_{{ section.id }}"><span class="txt_h_tab">{{bk_stts.title}}</span><span class="nav_link_icon ml__5"></span></a></div>
+          <div class="js_ck_view"></div><div class="heading bgbl dn"><a class="tab-heading flex al_center fl_between pr cd chp fwm" href="#"><span class="txt_h_tab">{{bk_stts.title}}</span><span class="nav_link_icon ml__5"></span></a></div>
           <div class="sp-tab-content">
             {{ bk_stts.content }}
             {{ bk_stts.page.content }}

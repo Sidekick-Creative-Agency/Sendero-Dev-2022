@@ -1104,7 +1104,7 @@
               "title": "Spring 2022",
               "url": "",
               "open_link": "_self",
-              "menu": "spring-2022",
+              "menu": "spring-2022-mobile",
               "icon": "",
               "lb": "",
               "lb_cl": ""
@@ -1146,18 +1146,6 @@
               "lb_cl": ""
             }
           },
-          "12b29945-f995-4a71-9b37-ef6a07909adb": {
-            "type": "menu",
-            "settings": {
-              "title": "Brand",
-              "url": "",
-              "open_link": "_self",
-              "menu": "main-menu",
-              "icon": "",
-              "lb": "",
-              "lb_cl": ""
-            }
-          },
           "37f77a41-511b-46b4-b7d4-0608238ab54c": {
             "type": "menu",
             "settings": {
@@ -1181,7 +1169,6 @@
           "183b51d8-d85a-45ae-962f-40e0486c2448",
           "ad4b26fd-d9f8-4717-aa94-f3dcac4ea69d",
           "d47ecba8-4c3e-4cb3-b20f-6b2dc52343c7",
-          "12b29945-f995-4a71-9b37-ef6a07909adb",
           "37f77a41-511b-46b4-b7d4-0608238ab54c",
           "b985b8aa-eafc-4590-8e25-60f1f8c51d77"
         ],
