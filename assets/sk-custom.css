@@ -1572,6 +1572,26 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 .type_featured_blog .container {
     padding: 0 !important;
 }
+.studioengine .is-container.is-content-right {
+    margin-right: 0 !important;
+    opacity: 1 !important;
+}
+.studioengine h1 {
+    color: white !important;
+    font-weight: 500 !important;
+    text-align: center !important;
+}
+.studioengine h2 {
+    font-size: 24px !important;
+    font-weight: 500 !important;
+}
+.studioengine h3 {
+    font-size: 20px !important;
+    font-weight: 500 !important;
+}
+.studioengine p {
+    font-size: 13px !important;
+}
 /* ----- Tablet ------ */
 @media screen and (max-width: 1023px) {
     .type_featured_blog .container {
