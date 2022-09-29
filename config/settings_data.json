@@ -691,7 +691,7 @@
               "tt_hd": "",
               "url": "",
               "open_link": "_self",
-              "menu": "",
+              "menu": "accessories-new-site-left-column",
               "col": "2"
             }
           },
@@ -701,7 +701,7 @@
               "tt_hd": "",
               "url": "",
               "open_link": "_self",
-              "menu": "accessories",
+              "menu": "accessories-new-site-right-column",
               "col": "2"
             }
           },
@@ -710,24 +710,11 @@
             "settings": {
               "cat_design": "1",
               "hoverz": true,
-              "collection": "bandanas",
+              "collection": "accessories",
               "blog": "",
               "page_link": "",
-              "col_link": "#",
-              "title": "",
-              "col": "3"
-            }
-          },
-          "415d5e20-e622-4728-a7f8-f0fd5b5a8424": {
-            "type": "cat",
-            "settings": {
-              "cat_design": "1",
-              "hoverz": true,
-              "collection": "patches",
-              "blog": "",
-              "page_link": "",
-              "col_link": "#",
-              "title": "",
+              "col_link": "best-seller",
+              "title": "Best Sellers",
               "col": "3"
             }
           },
@@ -828,7 +815,6 @@
           "4e5ad45b-8c9b-48d6-8ccb-93307deb91fa",
           "d964bd86-2c5e-4cb7-8b1f-0027152aafea",
           "01c7c08b-1e91-40f4-8734-b22e759c1062",
-          "415d5e20-e622-4728-a7f8-f0fd5b5a8424",
           "932e6253-0155-4ab3-b3c0-635dd62ee01b",
           "a7b29865-5b6c-426e-828c-b7e5c9ed5b8f",
           "66c4d1d7-1132-47d1-859b-78afb3bebe36",
