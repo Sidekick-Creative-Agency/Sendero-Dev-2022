@@ -454,8 +454,8 @@
           "9f7a4a88-7cbc-4c06-baae-ee3009a12771": {
             "type": "mega",
             "settings": {
-              "title": "Spring 2022",
-              "url": "shopify:\/\/collections\/spring-2022",
+              "title": "Fall 2022",
+              "url": "shopify:\/\/collections\/fall-2022",
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
@@ -471,9 +471,9 @@
           "f612db4f-0e53-4806-bb56-7271c5193f57": {
             "type": "mmtitle",
             "settings": {
-              "mmtitle": "Spring 2022",
+              "mmtitle": "Fall 2022",
               "mm_btn_text": "Shop All",
-              "url": "shopify:\/\/collections\/spring-2022",
+              "url": "shopify:\/\/collections\/fall-2022",
               "open_link": "_self",
               "col": "3"
             }
@@ -484,7 +484,7 @@
               "tt_hd": "",
               "url": "",
               "open_link": "_self",
-              "menu": "spring-2022",
+              "menu": "fall-2022-new-site",
               "col": "3"
             }
           },
@@ -494,17 +494,16 @@
               "tt_hd": "",
               "url": "",
               "open_link": "_self",
-              "menu": "",
-              "col": "2"
+              "menu": "fall-2022-new-site-right-column",
+              "col": "3"
             }
           },
           "98c2edaa-9215-40b6-9b62-8a1b9ec5a47c": {
             "type": "cat",
             "settings": {
-              "image": "shopify:\/\/shop_images\/116309620_2383569085270467_5796589458683211337_n.jpg",
               "cat_design": "1",
               "hoverz": true,
-              "collection": "spring-2022",
+              "collection": "fall-2022",
               "blog": "",
               "page_link": "",
               "col_link": "#",
@@ -545,7 +544,7 @@
               "tt_hd": "",
               "url": "",
               "open_link": "_self",
-              "menu": "hats-first-column",
+              "menu": "",
               "col": "2"
             }
           },
@@ -555,7 +554,7 @@
               "tt_hd": "",
               "url": "",
               "open_link": "_self",
-              "menu": "hats-column-two",
+              "menu": "",
               "col": "2"
             }
           },
@@ -575,7 +574,6 @@
           "72527a58-acee-461c-8425-85bbf19000e1": {
             "type": "cat",
             "settings": {
-              "image": "shopify:\/\/shop_images\/SS22HatFits-15_1024x1024_133c9a37-5018-4454-a144-46de6fb2d41a.jpg",
               "cat_design": "1",
               "hoverz": true,
               "collection": "signature",
@@ -775,14 +773,13 @@
               "tt_hd": "",
               "url": "",
               "open_link": "_self",
-              "menu": "brand-2nd-column",
+              "menu": "",
               "col": "2"
             }
           },
           "283bb7a8-d7fa-4caa-95e4-8959282e1256": {
             "type": "cat",
             "settings": {
-              "image": "shopify:\/\/shop_images\/74162361_102268317897142_7558348142593179648_n.jpg",
               "cat_design": "1",
               "hoverz": true,
               "collection": "",
@@ -796,7 +793,6 @@
           "c965e28c-e3b9-4da8-b4aa-3bace9552fbb": {
             "type": "cat",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Photo_Mosaics-03_1024x1024_4d304521-ae34-41c5-b698-e99c088a0013.png",
               "cat_design": "1",
               "hoverz": true,
               "collection": "",
@@ -922,7 +918,7 @@
             "type": "menu",
             "settings": {
               "title": "Quick Links",
-              "menu": "quick-links-footer",
+              "menu": "",
               "order": "1",
               "cl": "2",
               "cl_tb": "6",
@@ -933,7 +929,7 @@
             "type": "menu",
             "settings": {
               "title": "Support",
-              "menu": "support-footer",
+              "menu": "",
               "order": "1",
               "cl": "2",
               "cl_tb": "6",
@@ -956,7 +952,6 @@
             "settings": {
               "align": "tr_md",
               "align_mb": "tc",
-              "image": "shopify:\/\/shop_images\/header-logo-pad_8fd942d3-0949-4316-9104-4f8519a3bab8.png",
               "logo_width": 400,
               "title": "",
               "content": "",
@@ -992,7 +987,6 @@
           "bg_size": "cover",
           "bg_att": "scroll",
           "bg_pos": "center center",
-          "image": "shopify:\/\/shop_images\/FooterBG_8c57be91-a42f-485a-8b5a-1bb9ddee4f22.jpg",
           "cl_overlay": "#000000",
           "cl_opacity": 0
         }
@@ -1104,7 +1098,7 @@
               "title": "Spring 2022",
               "url": "",
               "open_link": "_self",
-              "menu": "spring-2022-mobile",
+              "menu": "",
               "icon": "",
               "lb": "",
               "lb_cl": ""
@@ -1116,7 +1110,7 @@
               "title": "Hats",
               "url": "",
               "open_link": "_self",
-              "menu": "hats-mobile",
+              "menu": "",
               "icon": "",
               "lb": "",
               "lb_cl": ""
@@ -1128,7 +1122,7 @@
               "title": "T-Shirts",
               "url": "",
               "open_link": "_self",
-              "menu": "t-shirts-mobile",
+              "menu": "",
               "icon": "",
               "lb": "",
               "lb_cl": ""
@@ -1140,7 +1134,7 @@
               "title": "Accessories",
               "url": "",
               "open_link": "_self",
-              "menu": "accessories-mobile",
+              "menu": "",
               "icon": "",
               "lb": "",
               "lb_cl": ""
@@ -1152,7 +1146,7 @@
               "title": "Brand",
               "url": "",
               "open_link": "_self",
-              "menu": "brand-full",
+              "menu": "",
               "icon": "",
               "lb": "",
               "lb_cl": ""
@@ -1820,14 +1814,6 @@
     },
     "content_for_index": [
 
-    ],
-    "blocks": {
-      "6143736321357441667": {
-        "type": "shopify:\/\/apps\/tidio-live-chat\/blocks\/app-embed\/1002274d-fb18-4939-98f6-5f05a8deeadc",
-        "disabled": false,
-        "settings": {
-        }
-      }
-    }
+    ]
   }
 }
