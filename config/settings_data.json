@@ -757,6 +757,7 @@
           "283bb7a8-d7fa-4caa-95e4-8959282e1256": {
             "type": "cat",
             "settings": {
+              "image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-21_at_8.40.59_AM.png",
               "cat_design": "1",
               "hoverz": true,
               "collection": "",
@@ -770,6 +771,7 @@
           "c965e28c-e3b9-4da8-b4aa-3bace9552fbb": {
             "type": "cat",
             "settings": {
+              "image": "shopify:\/\/shop_images\/Backcountry-Trout-Cook-How-To_07_1024x1024_ec49145e-158d-46c1-896d-0ba3195fde02.jpg",
               "cat_design": "1",
               "hoverz": true,
               "collection": "",
