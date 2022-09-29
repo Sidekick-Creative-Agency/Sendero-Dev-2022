@@ -6,6 +6,7 @@
         "16357021760efbe511-6": {
           "type": "img",
           "settings": {
+            "image": "shopify:\/\/shop_images\/homepage_hero_image_4.webp",
             "pos_img": "center center",
             "cl_img": "",
             "link_img1": "",
@@ -99,6 +100,7 @@
         "a39e865f-ca51-4fd4-8289-622c1591a0b5": {
           "type": "img",
           "settings": {
+            "image": "shopify:\/\/shop_images\/homepage_hero_image_3.webp",
             "pos_img": "center center",
             "cl_img": "",
             "link_img1": "",
@@ -129,6 +131,7 @@
         "16357021760efbe511-3": {
           "type": "img",
           "settings": {
+            "image": "shopify:\/\/shop_images\/homepage_hero_image_2.webp",
             "pos_img": "center center",
             "cl_img": "",
             "link_img1": "",
@@ -222,6 +225,7 @@
         "16357021760efbe511-0": {
           "type": "img",
           "settings": {
+            "image": "shopify:\/\/shop_images\/homepage_hero_image_5.webp",
             "pos_img": "center center",
             "cl_img": "rgba(0,0,0,0)",
             "link_img1": "",
@@ -315,6 +319,7 @@
         "c52d99ea-aa0e-45f1-92ce-4db11c4cab4c": {
           "type": "img",
           "settings": {
+            "image": "shopify:\/\/shop_images\/116309620_2383569085270467_5796589458683211337_n.jpg",
             "pos_img": "center center",
             "cl_img": "",
             "link_img1": "",
@@ -341,15 +346,6 @@
             "br_pd": 20,
             "br_pd_mb": 10
           }
-        },
-        "829ce9f4-e6e1-4291-ae79-068d3e0f070e": {
-          "type": "8",
-          "settings": {
-            "width": 0,
-            "width_mb": 0,
-            "sp": 0,
-            "sp_mb": 0
-          }
         }
       },
       "block_order": [
@@ -366,8 +362,7 @@
         "513bd812-51f4-4476-9b5a-486b4ba585b7",
         "b36edbb8-4f00-4783-86b6-6f892b2332cb",
         "acf4c846-c895-4935-af2f-d28094f6c47b",
-        "c52d99ea-aa0e-45f1-92ce-4db11c4cab4c",
-        "829ce9f4-e6e1-4291-ae79-068d3e0f070e"
+        "c52d99ea-aa0e-45f1-92ce-4db11c4cab4c"
       ],
       "settings": {
         "se_height": "cus_h",
