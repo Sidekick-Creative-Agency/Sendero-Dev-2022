@@ -708,6 +708,7 @@
           "01c7c08b-1e91-40f4-8734-b22e759c1062": {
             "type": "cat",
             "settings": {
+              "image": "shopify:\/\/shop_images\/sendero-patch_1.webp",
               "cat_design": "1",
               "hoverz": true,
               "collection": "accessories",
