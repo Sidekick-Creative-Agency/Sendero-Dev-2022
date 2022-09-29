@@ -640,21 +640,8 @@
               "collection": "t-shirts",
               "blog": "",
               "page_link": "",
-              "col_link": "signature",
-              "title": "",
-              "col": "3"
-            }
-          },
-          "2fcd5a05-92d0-4592-9d18-1e578f0c8323": {
-            "type": "cat",
-            "settings": {
-              "cat_design": "1",
-              "hoverz": true,
-              "collection": "sendero-signature",
-              "blog": "",
-              "page_link": "",
-              "col_link": "T-Shirts",
-              "title": "Signature",
+              "col_link": "best-seller",
+              "title": "Best Sellers",
               "col": "3"
             }
           },
@@ -810,7 +797,6 @@
           "61fda3d2-5725-4d65-8f36-62eee9e6b1cc",
           "5aedc4d9-42ea-4018-be76-632a6fa1571a",
           "3378432e-ed42-4f8c-ab8d-0a6d7d38d8ce",
-          "2fcd5a05-92d0-4592-9d18-1e578f0c8323",
           "bf2d3716-63bd-4f64-99f9-2d384f8c8dd5",
           "673c217c-c470-4dc4-84c1-cce173cdfe41",
           "4e5ad45b-8c9b-48d6-8ccb-93307deb91fa",
