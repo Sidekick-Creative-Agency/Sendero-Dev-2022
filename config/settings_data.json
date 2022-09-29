@@ -544,7 +544,7 @@
               "tt_hd": "",
               "url": "",
               "open_link": "_self",
-              "menu": "",
+              "menu": "hats-new-site-left-column",
               "col": "2"
             }
           },
@@ -554,7 +554,7 @@
               "tt_hd": "",
               "url": "",
               "open_link": "_self",
-              "menu": "",
+              "menu": "hats-new-site-right-column",
               "col": "2"
             }
           },
