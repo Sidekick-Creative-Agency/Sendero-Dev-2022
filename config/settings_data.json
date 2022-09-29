@@ -561,6 +561,7 @@
           "424acdb6-f2e8-4436-9941-b00668644353": {
             "type": "cat",
             "settings": {
+              "image": "shopify:\/\/shop_images\/SS22HatFits-15_1024x1024_133c9a37-5018-4454-a144-46de6fb2d41a.jpg",
               "cat_design": "1",
               "hoverz": true,
               "collection": "best-seller-hats",
@@ -574,6 +575,7 @@
           "72527a58-acee-461c-8425-85bbf19000e1": {
             "type": "cat",
             "settings": {
+              "image": "shopify:\/\/shop_images\/FW21-90_1024x1024_60cf53a8-db8a-4866-9180-6c9ce26ee825.jpg",
               "cat_design": "1",
               "hoverz": true,
               "collection": "signature",
