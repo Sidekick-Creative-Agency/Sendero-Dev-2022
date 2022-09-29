@@ -6,7 +6,6 @@
         "16357021760efbe511-6": {
           "type": "img",
           "settings": {
-            "image": "shopify:\/\/shop_images\/homepage_hero_image_4.webp",
             "pos_img": "center center",
             "cl_img": "",
             "link_img1": "",
@@ -100,7 +99,6 @@
         "a39e865f-ca51-4fd4-8289-622c1591a0b5": {
           "type": "img",
           "settings": {
-            "image": "shopify:\/\/shop_images\/homepage_hero_image_1.jpg",
             "pos_img": "center center",
             "cl_img": "",
             "link_img1": "",
@@ -131,7 +129,6 @@
         "16357021760efbe511-3": {
           "type": "img",
           "settings": {
-            "image": "shopify:\/\/shop_images\/homepage_hero_image_3.webp",
             "pos_img": "center center",
             "cl_img": "",
             "link_img1": "",
@@ -225,7 +222,6 @@
         "16357021760efbe511-0": {
           "type": "img",
           "settings": {
-            "image": "shopify:\/\/shop_images\/homepage_hero_image_2.webp",
             "pos_img": "center center",
             "cl_img": "rgba(0,0,0,0)",
             "link_img1": "",
@@ -319,7 +315,6 @@
         "c52d99ea-aa0e-45f1-92ce-4db11c4cab4c": {
           "type": "img",
           "settings": {
-            "image": "shopify:\/\/shop_images\/116309620_2383569085270467_5796589458683211337_n.jpg",
             "pos_img": "center center",
             "cl_img": "",
             "link_img1": "",
@@ -350,7 +345,6 @@
         "829ce9f4-e6e1-4291-ae79-068d3e0f070e": {
           "type": "8",
           "settings": {
-            "image": "shopify:\/\/shop_images\/header-logo-pad_8fd942d3-0949-4316-9104-4f8519a3bab8.png",
             "width": 0,
             "width_mb": 0,
             "sp": 0,
@@ -428,6 +422,7 @@
           "type": "collection",
           "settings": {
             "collection": "outerwear",
+            "image": "shopify:\/\/shop_images\/Backcountry-Trout-Cook-How-To_07_1024x1024_ec49145e-158d-46c1-896d-0ba3195fde02.jpg",
             "img_align": "center",
             "title": "",
             "col_link": "#",
@@ -437,7 +432,8 @@
         "16488280725e7f0d65-3": {
           "type": "collection",
           "settings": {
-            "collection": "stickers-1",
+            "collection": "accessories",
+            "image": "shopify:\/\/shop_images\/sendero-patch_1.webp",
             "img_align": "center",
             "title": "",
             "col_link": "#",
@@ -457,7 +453,7 @@
         "7d2d449a-83f0-459e-a956-21e212b81841": {
           "type": "collection",
           "settings": {
-            "collection": "spring-2022",
+            "collection": "fall-2022",
             "img_align": "center",
             "title": "",
             "col_link": "#",
@@ -708,7 +704,6 @@
         "image_size": "nt_cover",
         "image_position": "8",
         "layout": "nt_full",
-        "image": "shopify:\/\/shop_images\/gautier-salles-uffQnKuJ-hc-unsplash.jpg",
         "img_align": "center",
         "img_position": "1",
         "text_size2": "30,14",
@@ -733,23 +728,6 @@
     },
     "16528897230a5c23d9": {
       "type": "apps",
-      "blocks": {
-        "d94b4113-de23-4508-9bae-54056314ceb8": {
-          "type": "shopify:\/\/apps\/ryviu-aliexpress-reviews-app\/blocks\/ryviu-featured-widget\/807ad6ed-1a6a-4559-abea-ed062858d9da",
-          "settings": {
-            "r_wapper_featured": "",
-            "r_max_width_featured": 1300,
-            "padding_block": 50,
-            "title_heading": "Don't Just Take Our Word For It",
-            "title_align": "r_center",
-            "title_status": true,
-            "type_ryviu": "carousel"
-          }
-        }
-      },
-      "block_order": [
-        "d94b4113-de23-4508-9bae-54056314ceb8"
-      ],
       "settings": {
       }
     },
