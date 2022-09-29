@@ -500,6 +500,7 @@
           },
           "98c2edaa-9215-40b6-9b62-8a1b9ec5a47c": {
             "type": "cat",
+            "disabled": true,
             "settings": {
               "cat_design": "1",
               "hoverz": true,
