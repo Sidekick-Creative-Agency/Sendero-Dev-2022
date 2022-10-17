@@ -511,6 +511,20 @@
               "col": "3"
             }
           },
+          "3815f8bf-fa55-4112-b49b-ca8734b62726": {
+            "type": "cat",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/SenderoRioGrande2017_0601_180845.jpg",
+              "cat_design": "1",
+              "hoverz": true,
+              "collection": "spring-2022",
+              "blog": "",
+              "page_link": "",
+              "col_link": "",
+              "title": "",
+              "col": "4"
+            }
+          },
           "1585641227863": {
             "type": "mega",
             "settings": {
@@ -789,6 +803,7 @@
           "ab4741c4-618e-404a-9493-ad1ffc365118",
           "2b198535-7f3c-4d8a-bed2-a42938d26fbd",
           "98c2edaa-9215-40b6-9b62-8a1b9ec5a47c",
+          "3815f8bf-fa55-4112-b49b-ca8734b62726",
           "1585641227863",
           "bc349ccd-7167-466b-aab8-2c2534a91320",
           "3237df59-19be-4aea-b04a-b0f1e8c10f56",
