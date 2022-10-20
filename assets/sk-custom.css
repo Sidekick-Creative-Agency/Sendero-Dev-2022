@@ -161,7 +161,23 @@ p {
     transition: all .5s;
     -webkit-transition: all .5s;
 }
+.sub-menu .row {
+    /* display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-wrap: nowrap; 
+}
+.nt_menu .sub-menu .sub-column-item {
+    position: static !important;
+     top: unset !important;
+     transform: unset;
+     -webkit-transform: unset;
+    flex: 1;
 
+}
+.nt_menu .sub-menu .cat_design_1 {
+    flex: 2;
+}
 
 /* --------- MOBILE MENU --------------- */
 .nt_fk_canvas {

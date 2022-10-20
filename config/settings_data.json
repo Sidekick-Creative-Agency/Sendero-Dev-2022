@@ -583,7 +583,7 @@
               "page_link": "",
               "col_link": "#",
               "title": "Best Sellers",
-              "col": "3"
+              "col": "4"
             }
           },
           "72527a58-acee-461c-8425-85bbf19000e1": {
@@ -597,7 +597,7 @@
               "page_link": "",
               "col_link": "Hats",
               "title": "Signature",
-              "col": "3"
+              "col": "4"
             }
           },
           "922ef6d3-2b8a-4f62-84ae-f7944a9ba720": {
@@ -640,7 +640,7 @@
           "5aedc4d9-42ea-4018-be76-632a6fa1571a": {
             "type": "link",
             "settings": {
-              "tt_hd": "Heading",
+              "tt_hd": "",
               "url": "",
               "open_link": "_self",
               "menu": "t-shirts-new-site-right-column",
@@ -657,7 +657,21 @@
               "page_link": "",
               "col_link": "best-seller",
               "title": "Best Sellers",
-              "col": "3"
+              "col": "4"
+            }
+          },
+          "000b989a-b482-4282-b84a-e7d4823b75b7": {
+            "type": "cat",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/homepage_hero_image_3.webp",
+              "cat_design": "1",
+              "hoverz": true,
+              "collection": "t-shirts",
+              "blog": "",
+              "page_link": "",
+              "col_link": "signature",
+              "title": "Signature",
+              "col": "4"
             }
           },
           "bf2d3716-63bd-4f64-99f9-2d384f8c8dd5": {
@@ -815,6 +829,7 @@
           "61fda3d2-5725-4d65-8f36-62eee9e6b1cc",
           "5aedc4d9-42ea-4018-be76-632a6fa1571a",
           "3378432e-ed42-4f8c-ab8d-0a6d7d38d8ce",
+          "000b989a-b482-4282-b84a-e7d4823b75b7",
           "bf2d3716-63bd-4f64-99f9-2d384f8c8dd5",
           "673c217c-c470-4dc4-84c1-cce173cdfe41",
           "4e5ad45b-8c9b-48d6-8ccb-93307deb91fa",
