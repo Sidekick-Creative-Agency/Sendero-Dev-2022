@@ -475,7 +475,7 @@
               "mm_btn_text": "Shop All",
               "url": "shopify:\/\/collections\/fall-2022",
               "open_link": "_self",
-              "col": "2"
+              "col": "3"
             }
           },
           "ab4741c4-618e-404a-9493-ad1ffc365118": {
@@ -485,7 +485,7 @@
               "url": "",
               "open_link": "_self",
               "menu": "fall-2022-new-site",
-              "col": "2"
+              "col": "3"
             }
           },
           "2b198535-7f3c-4d8a-bed2-a42938d26fbd": {
@@ -495,7 +495,7 @@
               "url": "",
               "open_link": "_self",
               "menu": "fall-2022-new-site-right-column",
-              "col": "2"
+              "col": "3"
             }
           },
           "98c2edaa-9215-40b6-9b62-8a1b9ec5a47c": {
@@ -522,7 +522,7 @@
               "page_link": "",
               "col_link": "best-seller",
               "title": "Best Sellers",
-              "col": "3"
+              "col": "4"
             }
           },
           "1585641227863": {
@@ -644,7 +644,7 @@
               "url": "",
               "open_link": "_self",
               "menu": "t-shirts-new-site-right-column",
-              "col": "2"
+              "col": "4"
             }
           },
           "3378432e-ed42-4f8c-ab8d-0a6d7d38d8ce": {
@@ -657,7 +657,7 @@
               "page_link": "",
               "col_link": "best-seller",
               "title": "Best Sellers",
-              "col": "4"
+              "col": "3"
             }
           },
           "bf2d3716-63bd-4f64-99f9-2d384f8c8dd5": {
@@ -718,7 +718,7 @@
               "page_link": "",
               "col_link": "best-seller",
               "title": "Best Sellers",
-              "col": "4"
+              "col": "3"
             }
           },
           "932e6253-0155-4ab3-b3c0-635dd62ee01b": {
@@ -765,7 +765,7 @@
               "url": "",
               "open_link": "_self",
               "menu": "brand-new-site-right-column",
-              "col": "2"
+              "col": "4"
             }
           },
           "283bb7a8-d7fa-4caa-95e4-8959282e1256": {
