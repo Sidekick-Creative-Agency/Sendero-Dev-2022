@@ -102,7 +102,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/2022-8-30---FW22----Banner-Images-5130.jpg",
             "pos_img": "center center",
-            "cl_img": "",
+            "cl_img": "#ffffff",
             "link_img1": "",
             "open_link": "_blank",
             "caption_w": "2",
@@ -113,9 +113,9 @@
             "cap_h_pos_mb": 39,
             "txt_align_mb": "tl",
             "cl_overlay": "#000000",
-            "cl_opacity": 0,
+            "cl_opacity": 45,
             "ani_img": "none",
-            "ani_txt": "none",
+            "ani_txt": "bottom_top",
             "bg_content_bl": false,
             "bg_content_cl": "#ffffff",
             "bg_content_op": 50,
@@ -363,7 +363,7 @@
         "1648654393d1eaf576-0": {
           "type": "1",
           "settings": {
-            "title": "THE DESERT TAPES",
+            "title": "Road To the Rodeo Sessions",
             "color": "#ffffff",
             "fw_text": 600,
             "fs_text": 30,
@@ -385,7 +385,7 @@
           "type": "2",
           "settings": {
             "font": "f_body",
-            "title": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+            "title": "The Road To The Rodeo, presented by Lone Star Beer and Sendero Provisions Co, is Sendero Session series featuring rising country music stars - Shane Smith And The Saints. The series follows Shane and the fellas on tour across America, and the Road To The Rodeo will feature some new songs and old favorites. Rumor has it there's going to be a \"Cosmic\" live-and-in-person show back home in Texas. Stay tuned.",
             "color": "#ffffff",
             "fw_text": 400,
             "fs_text": 14,
@@ -439,8 +439,8 @@
       ],
       "settings": {
         "source": "1",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=-2icZZ9tbwc&list=PLZf3m6mi50t3HFAcYQWk7EYl-2LtrNImu",
-        "btn_link": "\/pages\/the-desert-tapes",
+        "video_url": "https:\/\/youtu.be\/E4e9TPE2a2E?t=20",
+        "btn_link": "\/pages\/road-to-the-rodeo-sessions",
         "se_height": "cus_h",
         "use_custom_h": "1",
         "h_des": "600px",
@@ -534,7 +534,7 @@
         "overlay": 80,
         "use_eq_height": true,
         "image_ratio": "ratio1_1",
-        "image_size": "nt_cover",
+        "image_size": "nt_contain",
         "image_position": "8",
         "layout": "nt_full",
         "image": "shopify:\/\/shop_images\/gautier-salles-uffQnKuJ-hc-unsplash.jpg",
@@ -554,7 +554,7 @@
         "txt_align": "tl",
         "use_shadow": false,
         "cl_txt": "dark",
-        "mg": "50px,,50px,",
+        "mg": "50px,,50px,auto",
         "pd": "",
         "mg_mb": "",
         "pd_mb": ""

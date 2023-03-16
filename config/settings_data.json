@@ -475,7 +475,7 @@
               "mm_btn_text": "Shop All",
               "url": "shopify:\/\/collections\/fall-2022",
               "open_link": "_self",
-              "col": "3"
+              "col": "2"
             }
           },
           "ab4741c4-618e-404a-9493-ad1ffc365118": {
@@ -485,7 +485,7 @@
               "url": "",
               "open_link": "_self",
               "menu": "fall-2022-new-site",
-              "col": "3"
+              "col": "2"
             }
           },
           "2b198535-7f3c-4d8a-bed2-a42938d26fbd": {
@@ -495,7 +495,7 @@
               "url": "",
               "open_link": "_self",
               "menu": "fall-2022-new-site-right-column",
-              "col": "3"
+              "col": "2"
             }
           },
           "98c2edaa-9215-40b6-9b62-8a1b9ec5a47c": {
@@ -522,7 +522,7 @@
               "page_link": "",
               "col_link": "best-seller",
               "title": "Best Sellers",
-              "col": "4"
+              "col": "3"
             }
           },
           "1585641227863": {
@@ -644,7 +644,7 @@
               "url": "",
               "open_link": "_self",
               "menu": "t-shirts-new-site-right-column",
-              "col": "4"
+              "col": "2"
             }
           },
           "3378432e-ed42-4f8c-ab8d-0a6d7d38d8ce": {
@@ -657,7 +657,7 @@
               "page_link": "",
               "col_link": "best-seller",
               "title": "Best Sellers",
-              "col": "3"
+              "col": "4"
             }
           },
           "bf2d3716-63bd-4f64-99f9-2d384f8c8dd5": {
@@ -718,7 +718,7 @@
               "page_link": "",
               "col_link": "best-seller",
               "title": "Best Sellers",
-              "col": "3"
+              "col": "4"
             }
           },
           "932e6253-0155-4ab3-b3c0-635dd62ee01b": {
@@ -748,23 +748,23 @@
               "col": "2"
             }
           },
-          "66c4d1d7-1132-47d1-859b-78afb3bebe36": {
-            "type": "link",
-            "settings": {
-              "tt_hd": "",
-              "url": "",
-              "open_link": "_self",
-              "menu": "main-menu",
-              "col": "2"
-            }
-          },
           "8d6c5968-eefa-4016-9930-f8fad1a58a4b": {
             "type": "link",
             "settings": {
               "tt_hd": "",
               "url": "",
               "open_link": "_self",
-              "menu": "",
+              "menu": "fall-2022-new-site-brand-nav-left",
+              "col": "2"
+            }
+          },
+          "da309ac2-f754-42cf-9270-bb39883afdf5": {
+            "type": "link",
+            "settings": {
+              "tt_hd": "",
+              "url": "",
+              "open_link": "_self",
+              "menu": "brand-new-site-right-column",
               "col": "2"
             }
           },
@@ -822,8 +822,8 @@
           "01c7c08b-1e91-40f4-8734-b22e759c1062",
           "932e6253-0155-4ab3-b3c0-635dd62ee01b",
           "a7b29865-5b6c-426e-828c-b7e5c9ed5b8f",
-          "66c4d1d7-1132-47d1-859b-78afb3bebe36",
           "8d6c5968-eefa-4016-9930-f8fad1a58a4b",
+          "da309ac2-f754-42cf-9270-bb39883afdf5",
           "283bb7a8-d7fa-4caa-95e4-8959282e1256",
           "c965e28c-e3b9-4da8-b4aa-3bace9552fbb"
         ],

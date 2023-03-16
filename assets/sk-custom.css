@@ -161,12 +161,12 @@ p {
     transition: all .5s;
     -webkit-transition: all .5s;
 }
-.lazy_menu_mega {
+.sub-menu-row {
     display: grid;
     align-content: center;
     grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
 }
-.lazy_menu_mega .menu-item {
+.sub-menu .menu-item {
     position: static !important;
     max-width: unset !important;
     transform: unset !important;
