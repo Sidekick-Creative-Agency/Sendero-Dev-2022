@@ -74,7 +74,7 @@
           "type": "btn",
           "settings": {
             "title": "Shop All",
-            "btn_link": "shopify:\/\/collections\/best-sellers",
+            "btn_link": "shopify:\/\/collections\/spring-2023",
             "title2": "",
             "btn_link2": "",
             "btn_w": true,
@@ -168,7 +168,7 @@
           "type": "btn",
           "settings": {
             "title": "Shop Sale",
-            "btn_link": "shopify:\/\/collections\/desert-runner",
+            "btn_link": "shopify:\/\/collections\/mens-shirts",
             "title2": "",
             "btn_link2": "",
             "btn_w": true,
@@ -459,8 +459,8 @@
         "pd_mb": ""
       }
     },
-    "category-slider-alt-header": {
-      "type": "Category-slider-alt-header",
+    "best-seller-slider": {
+      "type": "best-seller-slider",
       "settings": {
         "title": "Best Seller Slider",
         "sub_title": "Sub Text",
@@ -469,7 +469,7 @@
         "style_title": "title_1",
         "ic_tt": "gem",
         "show_clpr": false,
-        "collection": "",
+        "collection": "best-seller-items",
         "limit": 10,
         "space": 30,
         "use_pagination": "none",
@@ -509,6 +509,9 @@
     },
     "blog-home-page": {
       "type": "blog-home-page",
+      "custom_css": [
+
+      ],
       "settings": {
         "blog": "adventure-on",
         "limit": 4,
@@ -533,7 +536,7 @@
         "bg": "#000000",
         "overlay": 80,
         "use_eq_height": true,
-        "image_ratio": "ratio1_1",
+        "image_ratio": "ratio3_2",
         "image_size": "nt_contain",
         "image_position": "8",
         "layout": "nt_full",
@@ -541,7 +544,7 @@
         "img_align": "center",
         "img_position": "1",
         "text_size2": "30,14",
-        "title": "TITLE OF ENTRY",
+        "title": "Adventure On",
         "subtitle1": "FEATURED JOURNAL ENTRY",
         "subtitle2": "",
         "subtitle3": "",
@@ -619,7 +622,7 @@
     "16357021760efbe511",
     "164882807276a2e749",
     "164865439396016512",
-    "category-slider-alt-header",
+    "best-seller-slider",
     "blog-home-page",
     "16528897230a5c23d9",
     "16528932861d0f8a07"

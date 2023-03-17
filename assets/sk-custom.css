@@ -781,10 +781,18 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 }
 .blog-home-outer-container {
     background-color: rgba(0,0,0,.3);
+    margin: auto;
+}
+.blog-home-outer-container .row {
+    /* justify-content: center; */
 }
 .blog-home-outer-container p{
     color: white;
     margin: 0;
+}
+.blog-home-outer-container .txt-col-img-left {
+    max-width: 600px;
+    /* margin-left: auto; */
 }
 /*---------------- ADD TO CART BUTTON -------------------*/
 .single_add_to_cart_button {
@@ -2412,6 +2420,18 @@ a.prev.page-numbers {
     }
 }
 
+
+/*-----------------------------------------------------------------------------/
+/ Chat bot App & Scroll Top button
+/-----------------------------------------------------------------------------*/
+#ShopifyChat, #dummy-chat-button-iframe {
+    right: unset !important;
+    left: 24px;
+    /* bottom: 55px !important; */
+}
+#nt_backtop {
+    bottom: 24px;
+}
 
 /*-----------------------------------------------------------------------------/
 / Custom CSS For Screen Sizes

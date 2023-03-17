@@ -454,8 +454,8 @@
           "9f7a4a88-7cbc-4c06-baae-ee3009a12771": {
             "type": "mega",
             "settings": {
-              "title": "Fall 2022",
-              "url": "shopify:\/\/collections\/fall-2022",
+              "title": "Spring 2023",
+              "url": "shopify:\/\/collections\/spring-2023",
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
@@ -471,11 +471,11 @@
           "f612db4f-0e53-4806-bb56-7271c5193f57": {
             "type": "mmtitle",
             "settings": {
-              "mmtitle": "Fall 2022",
+              "mmtitle": "Spring 2023",
               "mm_btn_text": "Shop All",
-              "url": "shopify:\/\/collections\/fall-2022",
+              "url": "shopify:\/\/collections\/spring-2023",
               "open_link": "_self",
-              "col": "3"
+              "col": "2"
             }
           },
           "ab4741c4-618e-404a-9493-ad1ffc365118": {
@@ -485,7 +485,7 @@
               "url": "",
               "open_link": "_self",
               "menu": "fall-2022-new-site",
-              "col": "3"
+              "col": "2"
             }
           },
           "2b198535-7f3c-4d8a-bed2-a42938d26fbd": {
@@ -495,7 +495,7 @@
               "url": "",
               "open_link": "_self",
               "menu": "fall-2022-new-site-right-column",
-              "col": "3"
+              "col": "2"
             }
           },
           "98c2edaa-9215-40b6-9b62-8a1b9ec5a47c": {
@@ -522,7 +522,7 @@
               "page_link": "",
               "col_link": "best-seller",
               "title": "Best Sellers",
-              "col": "4"
+              "col": "3"
             }
           },
           "1585641227863": {
@@ -644,7 +644,7 @@
               "url": "",
               "open_link": "_self",
               "menu": "t-shirts-new-site-right-column",
-              "col": "4"
+              "col": "2"
             }
           },
           "3378432e-ed42-4f8c-ab8d-0a6d7d38d8ce": {
@@ -657,7 +657,7 @@
               "page_link": "",
               "col_link": "best-seller",
               "title": "Best Sellers",
-              "col": "3"
+              "col": "4"
             }
           },
           "bf2d3716-63bd-4f64-99f9-2d384f8c8dd5": {
@@ -718,7 +718,7 @@
               "page_link": "",
               "col_link": "best-seller",
               "title": "Best Sellers",
-              "col": "3"
+              "col": "4"
             }
           },
           "932e6253-0155-4ab3-b3c0-635dd62ee01b": {
@@ -765,7 +765,7 @@
               "url": "",
               "open_link": "_self",
               "menu": "brand-new-site-right-column",
-              "col": "4"
+              "col": "2"
             }
           },
           "283bb7a8-d7fa-4caa-95e4-8959282e1256": {
@@ -841,7 +841,7 @@
             "type": "html",
             "settings": {
               "title": "Live Chat",
-              "content": "<div class=\"ftr-icn-wrap\">\n<div class=\"ftr-icn\"><i class=\"pegk pe-7s-chat\"> <\/i><\/div>\n<div class=\"ftr-icn-txt\">Chat now with one of our sales representatives or email us at <a href=\"mailto:contact@senderopc.com\">contact@senderopc.com<\/a>\n<\/div>\n<\/div><div><button type=\"submit\" class=\"submit-btn chat-toggle\"><span>Live Chat<\/span><\/button><\/div>\n\n<script>\n(function() {\n  function onTidioChatApiReady() {\n    window.tidioChatApi.hide();\n  }\n\n  if (window.tidioChatApi) {\n    window.tidioChatApi.on(\"ready\", onTidioChatApiReady);\n  }\n\n  document.querySelector(\".chat-toggle\").addEventListener(\"click\", function() {\n    window.tidioChatApi.show();\n    window.tidioChatApi.open();\n  });\n})();\n<\/script>",
+              "content": "<div class=\"ftr-icn-wrap\">\n<div class=\"ftr-icn\"><i class=\"pegk pe-7s-chat\"> <\/i><\/div>\n<div class=\"ftr-icn-txt\">Chat now with one of our sales representatives or email us at <a href=\"mailto:contact@senderopc.com\">contact@senderopc.com<\/a>\n<\/div>\n<\/div><div><button type=\"submit\" class=\"submit-btn chat-toggle\"><span>Live Chat<\/span><\/button><\/div>\n\n<script>\ndocument.addEventListener('DOMContentLoaded', function() {\n  function onTidioChatApiReady() {\n    window.tidioChatApi.hide();\n  }\n\n  if (window.tidioChatApi) {\n    window.tidioChatApi.on(\"ready\", onTidioChatApiReady);\n  }\n\n  document.querySelector(\".chat-toggle\").addEventListener(\"click\", function() {\n    \n    window.tidioChatApi.open();\n  });\n})\n  \n<\/script>",
               "order": "1",
               "cl": "4",
               "cl_tb": "6",

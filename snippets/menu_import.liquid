@@ -216,7 +216,7 @@
 							{% endif %}
 							{%- comment -%} SPRING 2022 HARDCODED {%- endcomment -%}
 							{% if bk_stts.collection.title == "Spring 2022" %}
-							<a href="{{ col_url| default:'/' }}" class="db cat_grid_item__link" style="max-height: 177px !important">
+							<a href="{{ col_url| default:'/' }}" class="db cat_grid_item__link" style="max-height: 210px !important">
 								{%- if image != blank -%}
 									<div class="cat_grid_item__overlay item__position nt_bg_lz lazyloadt4s" data-bgset="{{ image | img_url: '1x1' }}" data-ratio="{{image.aspect_ratio}}" data-sizes="auto" data-parent-fit="width" style="padding-top:40%;"></div>
 								{%- else -%}
@@ -224,7 +224,7 @@
 								{%- endif -%}
 							</a>
 							{% else %}
-							<a href="{{ col_url| default:'/' }}" class="db cat_grid_item__link" style="max-height: 177px !important">
+							<a href="{{ col_url| default:'/' }}" class="db cat_grid_item__link" style="max-height: 210px !important">
 								{%- if image != blank -%}
 									<div class="cat_grid_item__overlay item__position nt_bg_lz lazyloadt4s" data-bgset="{{ image | img_url: '1x1' }}" data-ratio="{{image.aspect_ratio}}" data-sizes="auto" data-parent-fit="width" style="padding-top:80%;"></div>
 								{%- else -%}
@@ -243,7 +243,7 @@
 							
 
 				  		{% elsif bk_stts.page_link != "" and bk_stts.page_link != "#" %} 
-						  	<a href="{{ page_url| default:'/' }}" class="db cat_grid_item__link">
+						  	<a href="{{ page_url| default:'/' }}" class="db cat_grid_item__link" style="max-height: 210px !important">
 								{%- assign image = bk_stts.image | default:page.image -%}
 								{%- if image != blank -%}
 								<div class="cat_grid_item__overlay item__position nt_bg_lz lazyloadt4s" data-bgset="{{ image | img_url: '1x1' }}" data-ratio="{{image.aspect_ratio}}" data-sizes="auto" data-parent-fit="width" style="padding-top:80%;"></div>
@@ -259,7 +259,7 @@
 						  	</div>
 
 						{% elsif bk_stts.blog %} 
-						  	<a href="{{ blog_url| default:'/' }}" class="db cat_grid_item__link">
+						  	<a href="{{ blog_url| default:'/' }}" class="db cat_grid_item__link" style="max-height: 210px !important">
 								{%- assign image = bk_stts.image | default:page.image -%}
 								{%- if image != blank -%}
 								<div class="cat_grid_item__overlay item__position nt_bg_lz lazyloadt4s" data-bgset="{{ image | img_url: '1x1' }}" data-ratio="{{image.aspect_ratio}}" data-sizes="auto" data-parent-fit="width" style="padding-top:80%;"></div>
