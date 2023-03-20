@@ -3217,10 +3217,10 @@ button.mfp-close:hover {
     cursor: pointer;
 }
 .nt_mini_cart .close_pp:hover {
-    -webkit-transform: rotate(180deg);
+    /* -webkit-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     -o-transform: rotate(180deg);
-    transform: rotate(180deg);
+    transform: rotate(180deg); */
 }
 .nt_mini_cart .empty>i{font-size: 55px}
 .nt_mini_cart .empty>i:after,

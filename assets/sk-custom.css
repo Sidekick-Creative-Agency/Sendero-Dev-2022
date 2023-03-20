@@ -1137,6 +1137,9 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 .prod_tabs {
     justify-content: left;
 }
+#wrap_des_pr .sp-tab {
+    scroll-margin-top: 150px;
+}
 .sk-indiv-product-featured {
     width: 92% !important;
 }
@@ -1175,7 +1178,8 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     cursor: pointer !important;
 }
 .indiv-product-tab {
-    padding: none !important;
+    padding: 0 !important;
+    scroll-margin-top: 150px;
 }
 .ul_tabs li.tab_title_block.active a{
     border: none;
