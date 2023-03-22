@@ -36,6 +36,10 @@ p {
 .ntheader {
     height: fit-content !important;
 }
+.ntheader ul.nt_menu {
+    flex-wrap: nowrap;
+    gap: 16px;
+}
 
 /*---------------- Logo & Icon Spacing -------------------*/
 
@@ -50,10 +54,10 @@ p {
 }
 
 .nt_menu >li>a {
-    margin-right: 15px;
-    margin-left: 15px;
+    /* margin-right: 15px;
+    margin-left: 15px; */
     text-transform: uppercase;
-    letter-spacing: 0.1em;
+    /* letter-spacing: 0.1em; */
 }
 
 /*---------------- Menu Nav Color & Hover -------------------*/
