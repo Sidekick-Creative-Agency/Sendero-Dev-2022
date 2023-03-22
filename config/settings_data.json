@@ -762,6 +762,44 @@
               "menu": "company-new-site",
               "col": "3"
             }
+          },
+          "0f6aa0d1-fe20-4646-8b54-8ca3ca341bfa": {
+            "type": "cat",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/homepage_hero_image_5.webp",
+              "cat_design": "1",
+              "hoverz": true,
+              "collection": "",
+              "blog": "",
+              "page_link": "about-us",
+              "col_link": "",
+              "title": "",
+              "col": "4"
+            }
+          },
+          "b1c7e75a-cf79-42ab-9240-c2a9e3c59a4e": {
+            "type": "cat",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-21_at_8.40.59_AM.png",
+              "cat_design": "1",
+              "hoverz": true,
+              "collection": "",
+              "blog": "",
+              "page_link": "sendero-sessions",
+              "col_link": "",
+              "title": "",
+              "col": "4"
+            }
+          },
+          "ac3b4824-0abf-44d1-9b03-4c4255931750": {
+            "type": "mmtitle",
+            "settings": {
+              "mmtitle": "Company",
+              "mm_btn_text": "Learn More",
+              "url": "",
+              "open_link": "_self",
+              "col": "4"
+            }
           }
         },
         "block_order": [
@@ -789,7 +827,10 @@
           "8d6c5968-eefa-4016-9930-f8fad1a58a4b",
           "da309ac2-f754-42cf-9270-bb39883afdf5",
           "61dbe468-61f3-4d0d-ba62-6c962bb8d444",
-          "66d0465a-828c-4e53-834b-3d3364298ba3"
+          "66d0465a-828c-4e53-834b-3d3364298ba3",
+          "0f6aa0d1-fe20-4646-8b54-8ca3ca341bfa",
+          "b1c7e75a-cf79-42ab-9240-c2a9e3c59a4e",
+          "ac3b4824-0abf-44d1-9b03-4c4255931750"
         ],
         "settings": {
           "height": 60,
