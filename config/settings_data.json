@@ -475,54 +475,35 @@
               "mm_btn_text": "Shop All",
               "url": "shopify:\/\/collections\/spring-2023",
               "open_link": "_self",
-              "col": "2"
-            }
-          },
-          "ab4741c4-618e-404a-9493-ad1ffc365118": {
-            "type": "link",
-            "settings": {
-              "tt_hd": "",
-              "url": "",
-              "open_link": "_self",
-              "menu": "fall-2022-new-site",
-              "col": "2"
-            }
-          },
-          "2b198535-7f3c-4d8a-bed2-a42938d26fbd": {
-            "type": "link",
-            "settings": {
-              "tt_hd": "",
-              "url": "",
-              "open_link": "_self",
-              "menu": "fall-2022-new-site-right-column",
-              "col": "2"
+              "col": "4"
             }
           },
           "98c2edaa-9215-40b6-9b62-8a1b9ec5a47c": {
             "type": "cat",
             "settings": {
+              "image": "shopify:\/\/shop_images\/2022-8-30_-_FW22_-_Banner_Images-4946_2048x2048_b54ac4e0-a7f6-4fc0-affe-815f0aa23b85.webp",
               "cat_design": "1",
               "hoverz": true,
-              "collection": "fall-2022",
+              "collection": "spring-2023",
               "blog": "",
               "page_link": "",
-              "col_link": "#",
-              "title": "",
-              "col": "3"
+              "col_link": "#mens",
+              "title": "Men's",
+              "col": "4"
             }
           },
           "3815f8bf-fa55-4112-b49b-ca8734b62726": {
             "type": "cat",
             "settings": {
-              "image": "shopify:\/\/shop_images\/SenderoRioGrande2017_0601_180845.jpg",
+              "image": "shopify:\/\/shop_images\/ss23WomensCropTeeBanner_2048x2048_9a62a007-f446-4766-b003-9d4a15b69b2e.webp",
               "cat_design": "1",
               "hoverz": true,
-              "collection": "spring-2022",
+              "collection": "spring-2023",
               "blog": "",
               "page_link": "",
-              "col_link": "best-seller",
-              "title": "Best Sellers",
-              "col": "3"
+              "col_link": "womens",
+              "title": "Women's",
+              "col": "4"
             }
           },
           "1585641227863": {
@@ -800,8 +781,6 @@
         "block_order": [
           "9f7a4a88-7cbc-4c06-baae-ee3009a12771",
           "f612db4f-0e53-4806-bb56-7271c5193f57",
-          "ab4741c4-618e-404a-9493-ad1ffc365118",
-          "2b198535-7f3c-4d8a-bed2-a42938d26fbd",
           "98c2edaa-9215-40b6-9b62-8a1b9ec5a47c",
           "3815f8bf-fa55-4112-b49b-ca8734b62726",
           "1585641227863",
