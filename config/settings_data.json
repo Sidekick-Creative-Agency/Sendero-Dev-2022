@@ -584,8 +584,8 @@
           "922ef6d3-2b8a-4f62-84ae-f7944a9ba720": {
             "type": "mega",
             "settings": {
-              "title": "T-Shirts",
-              "url": "shopify:\/\/collections\/t-shirts",
+              "title": "Women's",
+              "url": "shopify:\/\/collections\/womens",
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
@@ -601,9 +601,9 @@
           "7b5386c0-ea4e-468a-9810-a4ee8ae8f6e3": {
             "type": "mmtitle",
             "settings": {
-              "mmtitle": "T-Shirts",
+              "mmtitle": "Women's",
               "mm_btn_text": "Shop All",
-              "url": "shopify:\/\/collections\/t-shirts",
+              "url": "shopify:\/\/collections\/womens",
               "open_link": "_self",
               "col": "3"
             }
@@ -614,7 +614,7 @@
               "tt_hd": "",
               "url": "",
               "open_link": "_self",
-              "menu": "t-shirts-new-site-left-column",
+              "menu": "womens-new-site-left-column",
               "col": "2"
             }
           },
