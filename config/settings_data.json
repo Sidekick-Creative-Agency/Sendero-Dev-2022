@@ -530,7 +530,7 @@
               "mm_btn_text": "Shop All",
               "url": "shopify:\/\/collections\/mens",
               "open_link": "_self",
-              "col": "2"
+              "col": "3"
             }
           },
           "3237df59-19be-4aea-b04a-b0f1e8c10f56": {
@@ -564,7 +564,7 @@
               "page_link": "",
               "col_link": "#mens",
               "title": "Best Sellers",
-              "col": "6"
+              "col": "4"
             }
           },
           "922ef6d3-2b8a-4f62-84ae-f7944a9ba720": {
@@ -591,7 +591,7 @@
               "mm_btn_text": "Shop All",
               "url": "shopify:\/\/collections\/womens",
               "open_link": "_self",
-              "col": "2"
+              "col": "3"
             }
           },
           "61fda3d2-5725-4d65-8f36-62eee9e6b1cc": {
@@ -625,7 +625,7 @@
               "page_link": "",
               "col_link": "womens",
               "title": "Best Sellers",
-              "col": "6"
+              "col": "4"
             }
           },
           "bf2d3716-63bd-4f64-99f9-2d384f8c8dd5": {
@@ -692,8 +692,8 @@
           "932e6253-0155-4ab3-b3c0-635dd62ee01b": {
             "type": "mega",
             "settings": {
-              "title": "Brand",
-              "url": "",
+              "title": "Collections",
+              "url": "shopify:\/\/collections",
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
