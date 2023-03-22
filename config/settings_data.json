@@ -539,7 +539,7 @@
               "tt_hd": "",
               "url": "",
               "open_link": "_self",
-              "menu": "hats-new-site-left-column",
+              "menu": "mens-new-site-left-column",
               "col": "2"
             }
           },
@@ -549,7 +549,7 @@
               "tt_hd": "",
               "url": "",
               "open_link": "_self",
-              "menu": "hats-new-site-right-column",
+              "menu": "mens-new-site-right-column",
               "col": "2"
             }
           },
@@ -559,10 +559,10 @@
               "image": "shopify:\/\/shop_images\/SS22HatFits-15_1024x1024_133c9a37-5018-4454-a144-46de6fb2d41a.jpg",
               "cat_design": "1",
               "hoverz": true,
-              "collection": "best-seller-hats",
+              "collection": "best-seller-items",
               "blog": "",
               "page_link": "",
-              "col_link": "#",
+              "col_link": "#mens",
               "title": "Best Sellers",
               "col": "3"
             }
