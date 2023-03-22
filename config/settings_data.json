@@ -556,7 +556,7 @@
           "424acdb6-f2e8-4436-9941-b00668644353": {
             "type": "cat",
             "settings": {
-              "image": "shopify:\/\/shop_images\/SS22HatFits-15_1024x1024_133c9a37-5018-4454-a144-46de6fb2d41a.jpg",
+              "image": "shopify:\/\/shop_images\/2022-8-30_-_FW22_-_Banner_Images-5130.jpg",
               "cat_design": "1",
               "hoverz": true,
               "collection": "best-seller-items",
@@ -564,21 +564,7 @@
               "page_link": "",
               "col_link": "#mens",
               "title": "Best Sellers",
-              "col": "3"
-            }
-          },
-          "72527a58-acee-461c-8425-85bbf19000e1": {
-            "type": "cat",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/FW21-90_1024x1024_60cf53a8-db8a-4866-9180-6c9ce26ee825.jpg",
-              "cat_design": "1",
-              "hoverz": true,
-              "collection": "signature",
-              "blog": "",
-              "page_link": "",
-              "col_link": "Hats",
-              "title": "Signature",
-              "col": "3"
+              "col": "6"
             }
           },
           "922ef6d3-2b8a-4f62-84ae-f7944a9ba720": {
@@ -605,7 +591,7 @@
               "mm_btn_text": "Shop All",
               "url": "shopify:\/\/collections\/womens",
               "open_link": "_self",
-              "col": "3"
+              "col": "2"
             }
           },
           "61fda3d2-5725-4d65-8f36-62eee9e6b1cc": {
@@ -624,21 +610,22 @@
               "tt_hd": "",
               "url": "",
               "open_link": "_self",
-              "menu": "t-shirts-new-site-right-column",
+              "menu": "womens-new-site-right-column",
               "col": "2"
             }
           },
           "3378432e-ed42-4f8c-ab8d-0a6d7d38d8ce": {
             "type": "cat",
             "settings": {
+              "image": "shopify:\/\/shop_images\/2023-3-3-SS23-FitShots-0477_540x_71805e84-f584-4995-bc12-031b6e59641e.webp",
               "cat_design": "1",
               "hoverz": true,
-              "collection": "t-shirts",
+              "collection": "best-seller-items",
               "blog": "",
               "page_link": "",
-              "col_link": "best-seller",
+              "col_link": "womens",
               "title": "Best Sellers",
-              "col": "4"
+              "col": "6"
             }
           },
           "bf2d3716-63bd-4f64-99f9-2d384f8c8dd5": {
@@ -788,7 +775,6 @@
           "3237df59-19be-4aea-b04a-b0f1e8c10f56",
           "321dc9c2-00b3-46de-b52d-9b60ac580c7a",
           "424acdb6-f2e8-4436-9941-b00668644353",
-          "72527a58-acee-461c-8425-85bbf19000e1",
           "922ef6d3-2b8a-4f62-84ae-f7944a9ba720",
           "7b5386c0-ea4e-468a-9810-a4ee8ae8f6e3",
           "61fda3d2-5725-4d65-8f36-62eee9e6b1cc",
