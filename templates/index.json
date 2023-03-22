@@ -587,14 +587,14 @@
         "16528932863acfb535-0"
       ],
       "settings": {
-        "acc2": "",
+        "acc2": "IGQVJXNGN6WGFIZAGpWZAUpsQTVXN1d2eGlZAcGFteHRQb2p3TzE1a1piX3g3NG84bzNyUHY4Y2JxZA0xzWGZAoNkVYNkNpaXBzSVpYcm1XbjAtVGZAMbHllQW5HRk5hMWZANaW05WG1ZAS0dCRnlWN3o4aUF4TwZDZD",
         "limit": 12,
         "open_link": "_blank",
-        "layout_des": "2",
-        "space": "0",
+        "layout_des": "1",
+        "space": "6",
         "rounded_ins": "0",
-        "col_pr": "2",
-        "col_pr_tb": "3",
+        "col_pr": "4",
+        "col_pr_tb": "4",
         "col_pr_mb": "6",
         "loop": true,
         "au_time": 0,
@@ -616,6 +616,54 @@
         "mg_mb": "",
         "pd_mb": ""
       }
+    },
+    "32e99ee3-89e3-4d48-acf1-df71e30f9bd7": {
+      "type": "featured_collection_owl",
+      "settings": {
+        "title": "Best Sellers",
+        "sub_title": "",
+        "sub_font": "2",
+        "btn_title": "See all products",
+        "style_title": "title_1",
+        "ic_tt": "gem",
+        "show_clpr": false,
+        "collection": "best-seller-items",
+        "limit": 8,
+        "space": 30,
+        "use_pagination": "view-all",
+        "btn_rd": false,
+        "btn_icon": true,
+        "btn_style": "default",
+        "col_pr": "3",
+        "col_pr_tb": "3",
+        "col_pr_mb": "6",
+        "pr_des": "1",
+        "show_vendor": false,
+        "use_cdt": false,
+        "round_cd": false,
+        "cdt_des": "1",
+        "loop": true,
+        "au_time": 0,
+        "au_hover": true,
+        "button": true,
+        "btn_vi": "2",
+        "btn_owl": "2",
+        "btn_color": "1",
+        "dot": false,
+        "dot_owl": "1",
+        "dot_color": "1",
+        "use_eq_height": false,
+        "image_ratio": "ratio_nt",
+        "image_size": "nt_cover",
+        "image_position": "8",
+        "cp_code": false,
+        "layout": "wrap",
+        "cl_bg": "",
+        "mg": "50px,,50px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
     }
   },
   "order": [
@@ -625,6 +673,7 @@
     "best-seller-slider",
     "blog-home-page",
     "16528897230a5c23d9",
-    "16528932861d0f8a07"
+    "16528932861d0f8a07",
+    "32e99ee3-89e3-4d48-acf1-df71e30f9bd7"
   ]
 }
