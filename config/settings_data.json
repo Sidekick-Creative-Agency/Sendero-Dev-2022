@@ -1093,7 +1093,7 @@
           "cb5a5090-372e-42f1-a589-01d7feebd664": {
             "type": "menu",
             "settings": {
-              "title": "Spring 2022",
+              "title": "Spring 2023",
               "url": "",
               "open_link": "_self",
               "menu": "",
@@ -1105,10 +1105,10 @@
           "183b51d8-d85a-45ae-962f-40e0486c2448": {
             "type": "menu",
             "settings": {
-              "title": "Hats",
+              "title": "Men's",
               "url": "",
               "open_link": "_self",
-              "menu": "",
+              "menu": "mens-new-site-left-column",
               "icon": "",
               "lb": "",
               "lb_cl": ""
@@ -1117,10 +1117,10 @@
           "ad4b26fd-d9f8-4717-aa94-f3dcac4ea69d": {
             "type": "menu",
             "settings": {
-              "title": "T-Shirts",
+              "title": "Women's",
               "url": "",
               "open_link": "_self",
-              "menu": "",
+              "menu": "womens-new-site-left-column",
               "icon": "",
               "lb": "",
               "lb_cl": ""
@@ -1132,7 +1132,7 @@
               "title": "Accessories",
               "url": "",
               "open_link": "_self",
-              "menu": "",
+              "menu": "accessories",
               "icon": "",
               "lb": "",
               "lb_cl": ""
@@ -1141,10 +1141,22 @@
           "37f77a41-511b-46b4-b7d4-0608238ab54c": {
             "type": "menu",
             "settings": {
-              "title": "Brand",
+              "title": "Collections",
               "url": "",
               "open_link": "_self",
-              "menu": "",
+              "menu": "collections-new-site-left-column",
+              "icon": "",
+              "lb": "",
+              "lb_cl": ""
+            }
+          },
+          "ce924d23-336b-4c09-896c-ff0408e657cd": {
+            "type": "menu",
+            "settings": {
+              "title": "Company",
+              "url": "",
+              "open_link": "_self",
+              "menu": "company-new-site",
               "icon": "",
               "lb": "",
               "lb_cl": ""
@@ -1162,6 +1174,7 @@
           "ad4b26fd-d9f8-4717-aa94-f3dcac4ea69d",
           "d47ecba8-4c3e-4cb3-b20f-6b2dc52343c7",
           "37f77a41-511b-46b4-b7d4-0608238ab54c",
+          "ce924d23-336b-4c09-896c-ff0408e657cd",
           "b985b8aa-eafc-4590-8e25-60f1f8c51d77"
         ],
         "settings": {
