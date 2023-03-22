@@ -841,7 +841,7 @@
             "type": "html",
             "settings": {
               "title": "Live Chat",
-              "content": "<div class=\"ftr-icn-wrap\">\n<div class=\"ftr-icn\"><i class=\"pegk pe-7s-chat\"> <\/i><\/div>\n<div class=\"ftr-icn-txt\">Chat now with one of our sales representatives or email us at <a href=\"mailto:contact@senderopc.com\">contact@senderopc.com<\/a>\n<\/div>\n<\/div><div><button type=\"submit\" class=\"submit-btn chat-toggle\"><span>Live Chat<\/span><\/button><\/div>\n\n<script>\ndocument.addEventListener('DOMContentLoaded', function() {\n  function onTidioChatApiReady() {\n    window.tidioChatApi.hide();\n  }\n\n  if (window.tidioChatApi) {\n    window.tidioChatApi.on(\"ready\", onTidioChatApiReady);\n  }\n\n  document.querySelector(\".chat-toggle\").addEventListener(\"click\", function() {\n    \n    window.tidioChatApi.open();\n  });\n})\n  \n<\/script>",
+              "content": "<div class=\"ftr-icn-wrap\">\n<div class=\"ftr-icn\"><i class=\"pegk pe-7s-chat\"> <\/i><\/div>\n<div class=\"ftr-icn-txt\">Chat now with one of our sales representatives or email us at <a href=\"mailto:contact@senderopc.com\">contact@senderopc.com<\/a>\n<\/div>\n<\/div>\n\n<div><button type=\"submit\" class=\"submit-btn chat-toggle\" onclick=\"document.getElementById('dummy-chat-button-iframe').contentDocument.querySelector('.chat-toggle').click()\"><span>Live Chat<\/span><\/button><\/div>",
               "order": "1",
               "cl": "4",
               "cl_tb": "6",
@@ -910,10 +910,10 @@
             "type": "menu",
             "settings": {
               "title": "Quick Links",
-              "menu": "",
-              "order": "1",
-              "cl": "2",
-              "cl_tb": "6",
+              "menu": "store",
+              "order": "3",
+              "cl": "15",
+              "cl_tb": "4",
               "cl_mb": "12"
             }
           },
@@ -921,10 +921,10 @@
             "type": "menu",
             "settings": {
               "title": "Support",
-              "menu": "",
-              "order": "1",
-              "cl": "2",
-              "cl_tb": "6",
+              "menu": "footer3",
+              "order": "4",
+              "cl": "15",
+              "cl_tb": "4",
               "cl_mb": "12"
             }
           },
@@ -933,24 +933,25 @@
             "settings": {
               "title": "Contact",
               "content": "<span><a href=\"mailto:contact@senderopc.com\">contact@senderopc.com<\/a><\/span><br><span>Mon-Fri | 8am-5pm<\/span>",
-              "order": "1",
-              "cl": "2",
-              "cl_tb": "6",
+              "order": "5",
+              "cl": "15",
+              "cl_tb": "4",
               "cl_mb": "12"
             }
           },
           "1581503819652": {
             "type": "logo",
             "settings": {
-              "align": "tr_md",
+              "align": "tc_md",
               "align_mb": "tc",
-              "logo_width": 400,
+              "image": "shopify:\/\/shop_images\/header-logo.png",
+              "logo_width": 360,
               "title": "",
               "content": "",
               "social_mode": "1",
               "order": "1",
-              "cl": "6",
-              "cl_tb": "6",
+              "cl": "4",
+              "cl_tb": "12",
               "cl_mb": "12"
             }
           }

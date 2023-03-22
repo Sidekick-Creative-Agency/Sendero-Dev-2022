@@ -542,6 +542,7 @@ p {
     margin-right: auto;
     margin-left: auto;
 }
+
 @media (min-width: 1430px) {
     .footer__top_wrap .container, .footer__middle_wrap .container {
         max-width: 1400px;
@@ -550,6 +551,12 @@ p {
 @media (min-width: 1400px) {
     .footer__top_wrap .container, .footer__middle_wrap .container {
         max-width: 1370px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .footer__top_wrap aside {
+        padding-right: 80px;
+        border-right: 1px solid #dfdfdf;
     }
 }
 
@@ -601,9 +608,6 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     transform: translateX(-4.25%);
 }
 
-.caption-wrap .slt4_txt {
-    padding: 0 125px;
-}
 .sendero-session-txt-container {
     /* display: flex;
     flex: 0 0 50%; */
@@ -794,6 +798,29 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     max-width: 600px;
     /* margin-left: auto; */
 }
+
+.button.view_more {
+    padding: 0;
+    border: none;
+}
+.button.view_more:hover {
+    background: transparent;
+    color: #222222;
+    font-weight: 600;
+}
+.button.view_more::after {
+    display: inline;
+    transition: .3s ease;
+}
+.button.view_more:hover::after {
+    margin-left: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .caption-wrap .slt4_txt {
+        padding: 0 125px;
+    }
+}
 /*---------------- ADD TO CART BUTTON -------------------*/
 .single_add_to_cart_button {
     background-color: #222;
@@ -885,6 +912,8 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 
 .sk-collection-top {
     margin:70px 0 70px 90px;
+    max-width: unset;
+    width: auto;
 }
 .flickityt4s-slider {
     width:108%;
@@ -1541,7 +1570,12 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 
 /* ----- Mobile ----- */
 @media screen and (max-width: 767px) {
-    
+    .sk-collection-top .flickityt4s-button.next {
+        right: 0;
+    }
+    .sk-collection-top .flickityt4s-button.previous {
+        left: 0;
+    }
 }
 
 
@@ -2519,7 +2553,7 @@ a.prev.page-numbers {
     }
 
     .sk-collection-top .row .nt_bg_lz {
-        padding-top: 50% !important;
+        /* padding-top: 50% !important; */
     }
     .cat-top-img {
         padding:6px;
