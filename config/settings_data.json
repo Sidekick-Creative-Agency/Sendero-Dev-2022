@@ -752,6 +752,16 @@
               "wid": "cus",
               "cus_wid": 1200
             }
+          },
+          "66d0465a-828c-4e53-834b-3d3364298ba3": {
+            "type": "link",
+            "settings": {
+              "tt_hd": "",
+              "url": "",
+              "open_link": "_self",
+              "menu": "company-new-site",
+              "col": "3"
+            }
           }
         },
         "block_order": [
@@ -778,7 +788,8 @@
           "a7b29865-5b6c-426e-828c-b7e5c9ed5b8f",
           "8d6c5968-eefa-4016-9930-f8fad1a58a4b",
           "da309ac2-f754-42cf-9270-bb39883afdf5",
-          "61dbe468-61f3-4d0d-ba62-6c962bb8d444"
+          "61dbe468-61f3-4d0d-ba62-6c962bb8d444",
+          "66d0465a-828c-4e53-834b-3d3364298ba3"
         ],
         "settings": {
           "height": 60,
