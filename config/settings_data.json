@@ -475,61 +475,42 @@
               "mm_btn_text": "Shop All",
               "url": "shopify:\/\/collections\/spring-2023",
               "open_link": "_self",
-              "col": "2"
-            }
-          },
-          "ab4741c4-618e-404a-9493-ad1ffc365118": {
-            "type": "link",
-            "settings": {
-              "tt_hd": "",
-              "url": "",
-              "open_link": "_self",
-              "menu": "fall-2022-new-site",
-              "col": "2"
-            }
-          },
-          "2b198535-7f3c-4d8a-bed2-a42938d26fbd": {
-            "type": "link",
-            "settings": {
-              "tt_hd": "",
-              "url": "",
-              "open_link": "_self",
-              "menu": "fall-2022-new-site-right-column",
-              "col": "2"
+              "col": "4"
             }
           },
           "98c2edaa-9215-40b6-9b62-8a1b9ec5a47c": {
             "type": "cat",
             "settings": {
+              "image": "shopify:\/\/shop_images\/2022-8-30_-_FW22_-_Banner_Images-4946_2048x2048_b54ac4e0-a7f6-4fc0-affe-815f0aa23b85.webp",
               "cat_design": "1",
               "hoverz": true,
-              "collection": "fall-2022",
+              "collection": "spring-2023",
               "blog": "",
               "page_link": "",
-              "col_link": "#",
-              "title": "",
-              "col": "3"
+              "col_link": "#mens",
+              "title": "Men's",
+              "col": "4"
             }
           },
           "3815f8bf-fa55-4112-b49b-ca8734b62726": {
             "type": "cat",
             "settings": {
-              "image": "shopify:\/\/shop_images\/SenderoRioGrande2017_0601_180845.jpg",
+              "image": "shopify:\/\/shop_images\/ss23WomensCropTeeBanner_2048x2048_9a62a007-f446-4766-b003-9d4a15b69b2e.webp",
               "cat_design": "1",
               "hoverz": true,
-              "collection": "spring-2022",
+              "collection": "spring-2023",
               "blog": "",
               "page_link": "",
-              "col_link": "best-seller",
-              "title": "Best Sellers",
-              "col": "3"
+              "col_link": "womens",
+              "title": "Women's",
+              "col": "4"
             }
           },
           "1585641227863": {
             "type": "mega",
             "settings": {
-              "title": "Hats",
-              "url": "shopify:\/\/collections\/hats",
+              "title": "Men's",
+              "url": "shopify:\/\/collections\/mens",
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
@@ -545,11 +526,11 @@
           "bc349ccd-7167-466b-aab8-2c2534a91320": {
             "type": "mmtitle",
             "settings": {
-              "mmtitle": "Hats",
+              "mmtitle": "Men's",
               "mm_btn_text": "Shop All",
-              "url": "shopify:\/\/collections\/hats",
+              "url": "shopify:\/\/collections\/mens",
               "open_link": "_self",
-              "col": "2"
+              "col": "3"
             }
           },
           "3237df59-19be-4aea-b04a-b0f1e8c10f56": {
@@ -558,7 +539,7 @@
               "tt_hd": "",
               "url": "",
               "open_link": "_self",
-              "menu": "hats-new-site-left-column",
+              "menu": "mens-new-site-left-column",
               "col": "2"
             }
           },
@@ -568,43 +549,29 @@
               "tt_hd": "",
               "url": "",
               "open_link": "_self",
-              "menu": "hats-new-site-right-column",
+              "menu": "mens-new-site-right-column",
               "col": "2"
             }
           },
           "424acdb6-f2e8-4436-9941-b00668644353": {
             "type": "cat",
             "settings": {
-              "image": "shopify:\/\/shop_images\/SS22HatFits-15_1024x1024_133c9a37-5018-4454-a144-46de6fb2d41a.jpg",
+              "image": "shopify:\/\/shop_images\/2022-8-30_-_FW22_-_Banner_Images-5130.jpg",
               "cat_design": "1",
               "hoverz": true,
-              "collection": "best-seller-hats",
+              "collection": "best-seller-items",
               "blog": "",
               "page_link": "",
-              "col_link": "#",
+              "col_link": "#mens",
               "title": "Best Sellers",
-              "col": "3"
-            }
-          },
-          "72527a58-acee-461c-8425-85bbf19000e1": {
-            "type": "cat",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/FW21-90_1024x1024_60cf53a8-db8a-4866-9180-6c9ce26ee825.jpg",
-              "cat_design": "1",
-              "hoverz": true,
-              "collection": "signature",
-              "blog": "",
-              "page_link": "",
-              "col_link": "Hats",
-              "title": "Signature",
-              "col": "3"
+              "col": "4"
             }
           },
           "922ef6d3-2b8a-4f62-84ae-f7944a9ba720": {
             "type": "mega",
             "settings": {
-              "title": "T-Shirts",
-              "url": "shopify:\/\/collections\/t-shirts",
+              "title": "Women's",
+              "url": "shopify:\/\/collections\/womens",
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
@@ -620,9 +587,9 @@
           "7b5386c0-ea4e-468a-9810-a4ee8ae8f6e3": {
             "type": "mmtitle",
             "settings": {
-              "mmtitle": "T-Shirts",
+              "mmtitle": "Women's",
               "mm_btn_text": "Shop All",
-              "url": "shopify:\/\/collections\/t-shirts",
+              "url": "shopify:\/\/collections\/womens",
               "open_link": "_self",
               "col": "3"
             }
@@ -633,7 +600,7 @@
               "tt_hd": "",
               "url": "",
               "open_link": "_self",
-              "menu": "t-shirts-new-site-left-column",
+              "menu": "womens-new-site-left-column",
               "col": "2"
             }
           },
@@ -643,19 +610,20 @@
               "tt_hd": "",
               "url": "",
               "open_link": "_self",
-              "menu": "t-shirts-new-site-right-column",
+              "menu": "womens-new-site-right-column",
               "col": "2"
             }
           },
           "3378432e-ed42-4f8c-ab8d-0a6d7d38d8ce": {
             "type": "cat",
             "settings": {
+              "image": "shopify:\/\/shop_images\/2023-3-3-SS23-FitShots-0477_540x_71805e84-f584-4995-bc12-031b6e59641e.webp",
               "cat_design": "1",
               "hoverz": true,
-              "collection": "t-shirts",
+              "collection": "best-seller-items",
               "blog": "",
               "page_link": "",
-              "col_link": "best-seller",
+              "col_link": "womens",
               "title": "Best Sellers",
               "col": "4"
             }
@@ -693,7 +661,7 @@
               "tt_hd": "",
               "url": "",
               "open_link": "_self",
-              "menu": "accessories-new-site-left-column",
+              "menu": "accessories-new-site-left-column-1",
               "col": "2"
             }
           },
@@ -724,8 +692,8 @@
           "932e6253-0155-4ab3-b3c0-635dd62ee01b": {
             "type": "mega",
             "settings": {
-              "title": "Brand",
-              "url": "",
+              "title": "Collections",
+              "url": "shopify:\/\/collections",
               "open_link": "_self",
               "icon": "",
               "cus_cl": false,
@@ -741,11 +709,11 @@
           "a7b29865-5b6c-426e-828c-b7e5c9ed5b8f": {
             "type": "mmtitle",
             "settings": {
-              "mmtitle": "Brand",
+              "mmtitle": "Collections",
               "mm_btn_text": "Shop All",
-              "url": "shopify:\/\/pages\/our-story",
+              "url": "shopify:\/\/collections",
               "open_link": "_self",
-              "col": "2"
+              "col": "3"
             }
           },
           "8d6c5968-eefa-4016-9930-f8fad1a58a4b": {
@@ -754,7 +722,7 @@
               "tt_hd": "",
               "url": "",
               "open_link": "_self",
-              "menu": "fall-2022-new-site-brand-nav-left",
+              "menu": "collections-new-site-left-column",
               "col": "2"
             }
           },
@@ -764,11 +732,62 @@
               "tt_hd": "",
               "url": "",
               "open_link": "_self",
-              "menu": "brand-new-site-right-column",
+              "menu": "collections-new-site-right-column",
               "col": "2"
             }
           },
-          "283bb7a8-d7fa-4caa-95e4-8959282e1256": {
+          "61dbe468-61f3-4d0d-ba62-6c962bb8d444": {
+            "type": "mega",
+            "settings": {
+              "title": "Company",
+              "url": "shopify:\/\/pages\/about-us",
+              "open_link": "_self",
+              "icon": "",
+              "cus_cl": false,
+              "cl": "#ec0101",
+              "lb": "",
+              "lb_cl": "",
+              "lazy_mn": true,
+              "pos": "default",
+              "wid": "cus",
+              "cus_wid": 1200
+            }
+          },
+          "ac3b4824-0abf-44d1-9b03-4c4255931750": {
+            "type": "mmtitle",
+            "settings": {
+              "mmtitle": "Company",
+              "mm_btn_text": "Learn More",
+              "url": "",
+              "open_link": "_self",
+              "col": "2"
+            }
+          },
+          "66d0465a-828c-4e53-834b-3d3364298ba3": {
+            "type": "link",
+            "settings": {
+              "tt_hd": "",
+              "url": "",
+              "open_link": "_self",
+              "menu": "company-new-site",
+              "col": "2"
+            }
+          },
+          "0f6aa0d1-fe20-4646-8b54-8ca3ca341bfa": {
+            "type": "cat",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/homepage_hero_image_5.webp",
+              "cat_design": "1",
+              "hoverz": true,
+              "collection": "",
+              "blog": "",
+              "page_link": "about-us",
+              "col_link": "",
+              "title": "",
+              "col": "4"
+            }
+          },
+          "b1c7e75a-cf79-42ab-9240-c2a9e3c59a4e": {
             "type": "cat",
             "settings": {
               "image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-21_at_8.40.59_AM.png",
@@ -778,30 +797,14 @@
               "blog": "",
               "page_link": "sendero-sessions",
               "col_link": "",
-              "title": "Sendero Sessions",
-              "col": "3"
-            }
-          },
-          "c965e28c-e3b9-4da8-b4aa-3bace9552fbb": {
-            "type": "cat",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Backcountry-Trout-Cook-How-To_07_1024x1024_ec49145e-158d-46c1-896d-0ba3195fde02.jpg",
-              "cat_design": "1",
-              "hoverz": true,
-              "collection": "",
-              "blog": "adventure-on",
-              "page_link": "",
-              "col_link": "#",
-              "title": "Blog",
-              "col": "3"
+              "title": "",
+              "col": "4"
             }
           }
         },
         "block_order": [
           "9f7a4a88-7cbc-4c06-baae-ee3009a12771",
           "f612db4f-0e53-4806-bb56-7271c5193f57",
-          "ab4741c4-618e-404a-9493-ad1ffc365118",
-          "2b198535-7f3c-4d8a-bed2-a42938d26fbd",
           "98c2edaa-9215-40b6-9b62-8a1b9ec5a47c",
           "3815f8bf-fa55-4112-b49b-ca8734b62726",
           "1585641227863",
@@ -809,7 +812,6 @@
           "3237df59-19be-4aea-b04a-b0f1e8c10f56",
           "321dc9c2-00b3-46de-b52d-9b60ac580c7a",
           "424acdb6-f2e8-4436-9941-b00668644353",
-          "72527a58-acee-461c-8425-85bbf19000e1",
           "922ef6d3-2b8a-4f62-84ae-f7944a9ba720",
           "7b5386c0-ea4e-468a-9810-a4ee8ae8f6e3",
           "61fda3d2-5725-4d65-8f36-62eee9e6b1cc",
@@ -824,8 +826,11 @@
           "a7b29865-5b6c-426e-828c-b7e5c9ed5b8f",
           "8d6c5968-eefa-4016-9930-f8fad1a58a4b",
           "da309ac2-f754-42cf-9270-bb39883afdf5",
-          "283bb7a8-d7fa-4caa-95e4-8959282e1256",
-          "c965e28c-e3b9-4da8-b4aa-3bace9552fbb"
+          "61dbe468-61f3-4d0d-ba62-6c962bb8d444",
+          "ac3b4824-0abf-44d1-9b03-4c4255931750",
+          "66d0465a-828c-4e53-834b-3d3364298ba3",
+          "0f6aa0d1-fe20-4646-8b54-8ca3ca341bfa",
+          "b1c7e75a-cf79-42ab-9240-c2a9e3c59a4e"
         ],
         "settings": {
           "height": 60,
