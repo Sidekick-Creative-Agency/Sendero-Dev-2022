@@ -709,11 +709,11 @@
           "a7b29865-5b6c-426e-828c-b7e5c9ed5b8f": {
             "type": "mmtitle",
             "settings": {
-              "mmtitle": "Brand",
+              "mmtitle": "Collections",
               "mm_btn_text": "Shop All",
-              "url": "shopify:\/\/pages\/our-story",
+              "url": "shopify:\/\/collections",
               "open_link": "_self",
-              "col": "2"
+              "col": "3"
             }
           },
           "8d6c5968-eefa-4016-9930-f8fad1a58a4b": {
@@ -722,7 +722,7 @@
               "tt_hd": "",
               "url": "",
               "open_link": "_self",
-              "menu": "fall-2022-new-site-brand-nav-left",
+              "menu": "collections-new-site-left-column",
               "col": "2"
             }
           },
@@ -732,36 +732,25 @@
               "tt_hd": "",
               "url": "",
               "open_link": "_self",
-              "menu": "brand-new-site-right-column",
+              "menu": "collections-new-site-right-column",
               "col": "2"
             }
           },
-          "283bb7a8-d7fa-4caa-95e4-8959282e1256": {
-            "type": "cat",
+          "61dbe468-61f3-4d0d-ba62-6c962bb8d444": {
+            "type": "mega",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-21_at_8.40.59_AM.png",
-              "cat_design": "1",
-              "hoverz": true,
-              "collection": "",
-              "blog": "",
-              "page_link": "sendero-sessions",
-              "col_link": "",
-              "title": "Sendero Sessions",
-              "col": "3"
-            }
-          },
-          "c965e28c-e3b9-4da8-b4aa-3bace9552fbb": {
-            "type": "cat",
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Backcountry-Trout-Cook-How-To_07_1024x1024_ec49145e-158d-46c1-896d-0ba3195fde02.jpg",
-              "cat_design": "1",
-              "hoverz": true,
-              "collection": "",
-              "blog": "adventure-on",
-              "page_link": "",
-              "col_link": "#",
-              "title": "Blog",
-              "col": "3"
+              "title": "Company",
+              "url": "shopify:\/\/pages\/about-us",
+              "open_link": "_self",
+              "icon": "",
+              "cus_cl": false,
+              "cl": "#ec0101",
+              "lb": "",
+              "lb_cl": "",
+              "lazy_mn": true,
+              "pos": "default",
+              "wid": "cus",
+              "cus_wid": 1200
             }
           }
         },
@@ -789,8 +778,7 @@
           "a7b29865-5b6c-426e-828c-b7e5c9ed5b8f",
           "8d6c5968-eefa-4016-9930-f8fad1a58a4b",
           "da309ac2-f754-42cf-9270-bb39883afdf5",
-          "283bb7a8-d7fa-4caa-95e4-8959282e1256",
-          "c965e28c-e3b9-4da8-b4aa-3bace9552fbb"
+          "61dbe468-61f3-4d0d-ba62-6c962bb8d444"
         ],
         "settings": {
           "height": 60,
