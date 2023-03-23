@@ -235,6 +235,16 @@
     "164882807276a2e749": {
       "type": "collection-list",
       "blocks": {
+        "cbef2b0c-b5a4-4a97-a230-4ade91689880": {
+          "type": "collection",
+          "settings": {
+            "collection": "spring-2023",
+            "img_align": "center",
+            "title": "",
+            "col_link": "#",
+            "url": ""
+          }
+        },
         "16488280725e7f0d65-0": {
           "type": "collection",
           "settings": {
@@ -287,10 +297,10 @@
             "url": ""
           }
         },
-        "cbef2b0c-b5a4-4a97-a230-4ade91689880": {
+        "7cbee7b2-bbb0-445e-b9e3-9c9535fbac44": {
           "type": "collection",
           "settings": {
-            "collection": "spring-2023",
+            "collection": "crop-tee",
             "img_align": "center",
             "title": "",
             "col_link": "#",
@@ -299,12 +309,13 @@
         }
       },
       "block_order": [
+        "cbef2b0c-b5a4-4a97-a230-4ade91689880",
         "16488280725e7f0d65-0",
         "16488280725e7f0d65-1",
         "16488280725e7f0d65-2",
         "16488280725e7f0d65-3",
         "6236469b-85c9-4415-9ee4-368d4cfef55b",
-        "cbef2b0c-b5a4-4a97-a230-4ade91689880"
+        "7cbee7b2-bbb0-445e-b9e3-9c9535fbac44"
       ],
       "settings": {
         "title": "Collection list",
