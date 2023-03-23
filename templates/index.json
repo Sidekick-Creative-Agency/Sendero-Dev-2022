@@ -99,6 +99,7 @@
         },
         "a39e865f-ca51-4fd4-8289-622c1591a0b5": {
           "type": "img",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/2022-8-30---FW22----Banner-Images-5130.jpg",
             "pos_img": "center center",
@@ -130,6 +131,7 @@
         },
         "ffe25368-0dde-44ba-8950-b5074a95acfc": {
           "type": "txt",
+          "disabled": true,
           "settings": {
             "font": "f_heading",
             "title": "Example Promotion Text",
@@ -148,6 +150,7 @@
         },
         "b4138c19-cef5-4ee7-a023-289e8eca6338": {
           "type": "txt",
+          "disabled": true,
           "settings": {
             "font": "f_body",
             "title": "Example subheading text talking some big game about how amazing these products are.",
@@ -166,6 +169,7 @@
         },
         "61fd7fd1-8b24-4f75-960f-7d3bc0474dd8": {
           "type": "btn",
+          "disabled": true,
           "settings": {
             "title": "Shop Sale",
             "btn_link": "shopify:\/\/collections\/mens-shirts",
