@@ -125,10 +125,20 @@
             "url": ""
           }
         },
-        "7d2d449a-83f0-459e-a956-21e212b81841": {
+        "c481f40a-8b84-4daf-b50c-f97c5186825f": {
           "type": "collection",
           "settings": {
-            "collection": "spring-2022",
+            "collection": "spring-2023",
+            "img_align": "center",
+            "title": "",
+            "col_link": "#",
+            "url": ""
+          }
+        },
+        "7c78fa23-aee6-4a9b-b725-28233688b75b": {
+          "type": "collection",
+          "settings": {
+            "collection": "crop-tee",
             "img_align": "center",
             "title": "",
             "col_link": "#",
@@ -142,7 +152,8 @@
         "16488280725e7f0d65-2",
         "16488280725e7f0d65-3",
         "6236469b-85c9-4415-9ee4-368d4cfef55b",
-        "7d2d449a-83f0-459e-a956-21e212b81841"
+        "c481f40a-8b84-4daf-b50c-f97c5186825f",
+        "7c78fa23-aee6-4a9b-b725-28233688b75b"
       ],
       "settings": {
         "title": "Collection list",

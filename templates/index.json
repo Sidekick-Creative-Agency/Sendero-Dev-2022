@@ -38,7 +38,7 @@
           "type": "txt",
           "settings": {
             "font": "f_heading",
-            "title": "Example Promotion Text",
+            "title": "All New For Spring",
             "color": "#ffffff",
             "fw_text": 600,
             "fs_text": 50,
@@ -56,7 +56,7 @@
           "type": "txt",
           "settings": {
             "font": "f_body",
-            "title": "Example subheading text talking some big game about how amazing these products are.",
+            "title": "Pearl snaps, short sleeves, shorts, women's tees, and a lot more!",
             "color": "#ffffff",
             "fw_text": 300,
             "fs_text": 22,
