@@ -40,7 +40,6 @@
       "type": "sk-session-group-img-text",
       "settings": {
         "image1": "shopify:\/\/shop_images\/Screen_Shot_2022-04-21_at_8.40.59_AM.png",
-        "image2": "shopify:\/\/shop_images\/161218716_2545082962452411_5753525780345998495_n.jpg",
         "image3": "shopify:\/\/shop_images\/116309620_2383569085270467_5796589458683211337_n.jpg",
         "img_align": "center",
         "img_position": "1",
@@ -244,62 +243,6 @@
         "pd_mb": ",,,,",
         "pd_text": 100
       }
-    },
-    "1650467056c6dc0d08": {
-      "type": "rich-text-sendero-sessions",
-      "settings": {
-        "title": "",
-        "header_align": "center",
-        "style_title": "title_1",
-        "ic_tt": "gem",
-        "show_clpr": false,
-        "content": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos.<br\/><\/p><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos.<br\/><\/p>",
-        "align": "tl",
-        "layout": "container",
-        "mg": "50px,,50px,",
-        "pd": "50px,,50px,",
-        "mg_mb": "",
-        "pd_mb": ""
-      }
-    },
-    "image-text-quote": {
-      "type": "image-text-quote",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-21_at_8.40.59_AM.png",
-        "img_align": "bottom",
-        "img_position": "1",
-        "image_ratio": "auto",
-        "text_size2": "30,14",
-        "title": "“Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos.”",
-        "text": "Author",
-        "button_label": "Shop Now",
-        "button_link": "",
-        "open_link": "_blank",
-        "txt_align": "tc",
-        "cl_txt": "dark",
-        "layout": "container",
-        "mg": "50px, , 50px,",
-        "pd": "50px, 25px, , 25px",
-        "mg_mb": "",
-        "pd_mb": ""
-      }
-    },
-    "1650466987b717892b": {
-      "type": "rich-text-sendero-sessions",
-      "settings": {
-        "title": "",
-        "header_align": "center",
-        "style_title": "title_1",
-        "ic_tt": "gem",
-        "show_clpr": false,
-        "content": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos.<br\/><\/p><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos.<br\/><\/p>",
-        "align": "tl",
-        "layout": "container",
-        "mg": "50px,,100px,",
-        "pd": "50px,,,",
-        "mg_mb": "",
-        "pd_mb": ""
-      }
     }
   },
   "order": [
@@ -308,9 +251,6 @@
     "sk-session-group-img-text",
     "1650396460acf24e79",
     "sk-session-group-grid",
-    "16504062152cf6b956",
-    "1650467056c6dc0d08",
-    "image-text-quote",
-    "1650466987b717892b"
+    "16504062152cf6b956"
   ]
 }
