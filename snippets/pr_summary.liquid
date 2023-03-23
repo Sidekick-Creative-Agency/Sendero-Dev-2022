@@ -312,45 +312,42 @@ assign se_stts = section.settings
           <div class="sp-tab-content">{{ bk_setts.custom_liquid }}</div>
         </div>
 
-        
-        {%- when 'des' -%}
-        <div class="panel entry-content sp-tab des_mb_{{cl_mb}} des_style_{{cl_des}} dn" data-id-dest4s id="tab_add" {{ block.shopify_attributes }}>
-        	<div class="js_ck_view"></div><div class="heading bgbl dn"><a class="tab-heading flex al_center fl_between pr cd chp fwm" href="#"><span class="txt_h_tab">{{bk_setts.title}}</span><span class="nav_link_icon ml__5"></span></a></div>
-           <div class="sp-tab-content rtet4"><span>{{product.metafields.custom.product_details | metafield_tag}}</span>
-            <a class="read-more hidden-button">Read More</a>
-            <a class="read-less hidden-button">Read Less</a>
-          </div>
 
+        {%- when 'add' -%}
+      <div class="panel entry-content sp-tab des_mb_{{cl_mb}} des_style_{{cl_des}} dn" data-id-dest4s id="tab_add" {{ block.shopify_attributes }}>
+        <div class="js_ck_view"></div><div class="heading bgbl dn"><a class="tab-heading flex al_center fl_between pr cd chp fwm" href="#"><span class="txt_h_tab">{% if bk_setts.title %}{{bk_setts.title}}{% else %}Details{% endif %}</span><span class="nav_link_icon ml__5"></span></a></div>
+         <div class="sp-tab-content rtet4"><span>{{product.metafields.custom.product_details | metafield_tag}}</span>
+          <a class="read-more hidden-button">Read More</a>
+          <a class="read-less hidden-button">Read Less</a>
         </div>
-        
-        
-        <script>
-          var des = $(".sp-tab-content span");
-          var temp = des.text();
-          var short = des.text().substring(0, 500).trim() + "...";
-          var readMore = $(".read-more");
-          var readLess = $(".read-less");
 
-          if (des.text().length > 500) {
-            des.text(short);
-            readMore.removeClass("hidden-button");
-            
-            readMore.click(() => {
-            des.text(temp);
-            readMore.addClass("hidden-button");
-            readLess.removeClass("hidden-button");
-          });
-          readLess.click(() => {
-            des.text(short);
-            readLess.addClass("hidden-button");
-            readMore.removeClass("hidden-button");
-          });
-          }
+      </div>
+      
+      
+      <script>
+        var des = $(".sp-tab-content span");
+        var temp = des.text();
+        var short = des.text().substring(0, 500).trim() + "...";
+        var readMore = $(".read-more");
+        var readLess = $(".read-less");
+
+        if (des.text().length > 500) {
+          des.text(short);
+          readMore.removeClass("hidden-button");
           
-        </script>
+          readMore.click(() => {
+          des.text(temp);
+          readMore.addClass("hidden-button");
+          readLess.removeClass("hidden-button");
+        });
+        readLess.click(() => {
+          des.text(short);
+          readLess.addClass("hidden-button");
+          readMore.removeClass("hidden-button");
+        });
+        }
         
-
-
+      </script>
         {%- when 'buy' -%}{% if nav_up_size == 0 %}{% continue %}{% endif -%} 
         <div class="panel entry-content sp-tab des_mb_{{cl_mb}} des_style_{{cl_des}}{% if ck %} active{% assign ck = false %}{% else %} dn{% endif %}" id="tab_{{block.id}}" {{ block.shopify_attributes }}>
           <div class="js_ck_view"></div><div class="heading bgbl dn"><a class="tab-heading flex al_center fl_between pr cd chp fwm" href="#tab_{{block.id}}"><span class="txt_h_tab">{{bk_setts.title}}</span><span class="nav_link_icon ml__5"></span></a></div>
@@ -436,8 +433,9 @@ assign se_stts = section.settings
        
         {%- when 'des' %} {%- comment -%} this used to be 'when add' {%- endcomment -%}
           {% comment %}{% if product.metafields.my_fields.material != null %}{% continue %}{% endif -%} {% endcomment %}
+
         <div class="panel entry-content sp-tab des_mb_{{cl_mb}} des_style_{{cl_des}} active" id="tab_des" {{ block.shopify_attributes }}>
-        	<div class="js_ck_view"></div><div class="heading bgbl dn"><a class="tab-heading flex al_center fl_between pr cd chp fwm" href="#"><span class="txt_h_tab">Additional Information</span><span class="nav_link_icon ml__5"></span></a></div>
+        	<div class="js_ck_view"></div><div class="heading bgbl dn"><a class="tab-heading flex al_center fl_between pr cd chp fwm" href="#"><span class="txt_h_tab">Description</span><span class="nav_link_icon ml__5"></span></a></div>
         	<div class="sp-tab-content">
             {{product.description}}
         	</div>
@@ -698,6 +696,32 @@ assign se_stts = section.settings
            {%- endif -%}
         </div>
 
+      
+      <script>
+        var des = $(".sp-tab-content span");
+        var temp = des.text();
+        var short = des.text().substring(0, 500).trim() + "...";
+        var readMore = $(".read-more");
+        var readLess = $(".read-less");
+
+        if (des.text().length > 500) {
+          des.text(short);
+          readMore.removeClass("hidden-button");
+          
+          readMore.click(() => {
+          des.text(temp);
+          readMore.addClass("hidden-button");
+          readLess.removeClass("hidden-button");
+        });
+        readLess.click(() => {
+          des.text(short);
+          readLess.addClass("hidden-button");
+          readMore.removeClass("hidden-button");
+        });
+        }
+        
+      </script>
+
       {%- when 'store_avai' %}{% if no_sold_out == false %}{% continue %}{% endif -%}
         <div id="store_availability{{call_cl}}" class="product-single__store-availability-container dn" {{ block.shopify_attributes }} data-store-availability-container
           data-vid="{{current_variant.id}}" data-product-title="{{ product.title | escape }}" data-has-only-default-variant="{% if variants_size == 1 %}true{% else %}{{ default }}{% endif %}" data-base-url="{{ shop.url }}{{ routes.root_url }}"> 
@@ -756,7 +780,7 @@ assign se_stts = section.settings
               <img style="--max-w-img:{{image.width}}px;width: {% if call_cl == '_ppr' %}{{bk_stts.wimg}}{% else %}100{% endif %}%" class="lazyloadt4s lz_op_ef img_tr_s1" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20{{image.width}}%20{{image.height}}%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="{{ img_url }}" data-widths="[90, 120, 150, 180, 360, 480, 600, 750, 940, 1080, 1296]" data-sizes="auto" alt="{{image.alt}}">
           {%- else bk_stts.svg -%}
               {%- assign arr = bk_stts.svg | remove: ' ' | split:"," -%}
-            <style>.pr_trust_seal img {padding: 2.5px;height: {{bk_stts.height}}px;}</style>
+            <style>.pr_trust_seal img {padding: 2.5px;height: {{bk_stts.height}}}</style>
             {%- for img in arr -%}<img class="lazyloadt4s img_tr_svg" src="https://cdn.shopify.com/s/assets/payment_icons/generic-dfdcaf09b6731ca14dd7441354c0ad8bc934184eb15ae1fda6a6b9e307675485.svg" data-src="{{ img | payment_type_img_url }}" alt="{{img | replace:'_',' '}}" />{%- endfor -%}
           {%- endif -%}
         </div>

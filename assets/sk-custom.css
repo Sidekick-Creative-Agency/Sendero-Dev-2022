@@ -2592,7 +2592,15 @@ a.prev.page-numbers {
         max-width: 100% !important;
     }
 }
-    
+    @media screen and (max-width: 767px) {
+        .product-images .flickityt4s-button {
+            opacity: 1;
+            -webkit-transform: scale(1);
+            transform: scale(1);
+            background-color: #666;
+            color: #fff;
+        }
+    }
 
     /*---------------- Special Custom CSS for Sendero Sessions 'More' Button -------------------*/
     @media (max-width: 568px){
