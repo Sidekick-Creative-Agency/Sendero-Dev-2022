@@ -293,7 +293,7 @@ assign se_stts = section.settings
       <li class="tab_title_block{% if ck %} active{% assign ck = false %}{% endif %}"><a class="db cg truncate pr" href="#tab_add">DESCRIPTION</a></li>
       {%- endif -%} -->
       {% if product.description %}
-      <li class="tab_title_block{% if ck %} active{% assign ck = false %}{% endif %}"><a class="db cg truncate pr indiv-product-tab" data-id-dest4s href="#tab_des">DESCRIPTION</a></li>
+      <li class="tab_title_block {% if ck %} active{% assign ck = false %}{% endif %}"><a class="db cg truncate pr indiv-product-tab" data-id-dest4s href="#tab_des">DESCRIPTION</a></li>
       {% endif %}
       {% if product.metafields.custom.product_details != null %}
       <li class="tab_title_block{% if ck %} active{% assign ck = false %}{% endif %}"><a class="db cg truncate pr indiv-product-tab" data-id-dest4s href="#tab_add">DETAILS</a></li>
@@ -314,13 +314,13 @@ assign se_stts = section.settings
 
         
         {%- when 'des' -%}
-        <div class="panel entry-content sp-tab des_mb_{{cl_mb}} des_style_{{cl_des}}{% if ck %} active{% assign ck = false %}{% else %} dn{% endif %}" data-id-dest4s id="tab_add" {{ block.shopify_attributes }}>
+        <div class="panel entry-content sp-tab des_mb_{{cl_mb}} des_style_{{cl_des}} dn" data-id-dest4s id="tab_add" {{ block.shopify_attributes }}>
         	<div class="js_ck_view"></div><div class="heading bgbl dn"><a class="tab-heading flex al_center fl_between pr cd chp fwm" href="#"><span class="txt_h_tab">{{bk_setts.title}}</span><span class="nav_link_icon ml__5"></span></a></div>
-      
-           <div class="sp-tab-content rtet4"><span>{{product.metafields.custom.product_details.value}}</span>
+           <div class="sp-tab-content rtet4"><span>{{product.metafields.custom.product_details | metafield_tag}}</span>
             <a class="read-more hidden-button">Read More</a>
             <a class="read-less hidden-button">Read Less</a>
           </div>
+
         </div>
         
         
@@ -436,7 +436,7 @@ assign se_stts = section.settings
        
         {%- when 'des' %} {%- comment -%} this used to be 'when add' {%- endcomment -%}
           {% comment %}{% if product.metafields.my_fields.material != null %}{% continue %}{% endif -%} {% endcomment %}
-        <div class="panel entry-content sp-tab des_mb_{{cl_mb}} des_style_{{cl_des}}{% if ck %} active{% assign ck = false %}{% else %} dn{% endif %}" id="tab_des" {{ block.shopify_attributes }}>
+        <div class="panel entry-content sp-tab des_mb_{{cl_mb}} des_style_{{cl_des}} active" id="tab_des" {{ block.shopify_attributes }}>
         	<div class="js_ck_view"></div><div class="heading bgbl dn"><a class="tab-heading flex al_center fl_between pr cd chp fwm" href="#"><span class="txt_h_tab">Additional Information</span><span class="nav_link_icon ml__5"></span></a></div>
         	<div class="sp-tab-content">
             {{product.description}}
@@ -491,10 +491,10 @@ assign se_stts = section.settings
 
 
 
-    {%- comment -%}ARON PUT THIS HERE{%- endcomment -%}
+    {%- comment -%}ARON PUT THIS HERE
     {%- if product.options_with_values[0].values[0] != "Default Title" -%}
     <div class="panel entry-content sp-tab des_mb_{{cl_mb}} des_style_{{cl_des}}{% if ck %} active{% assign ck = false %}{% else %} dn{% endif %}" id="tab_add" {{ block.shopify_attributes }}>
-    {%- comment -%}  <div class="js_ck_view"></div><div class="heading bgbl dn"><a class="tab-heading flex al_center fl_between pr cd chp fwm" href="#tab_{{block.id}}"><span class="txt_h_tab">Additional Information</span><span class="nav_link_icon ml__5"></span></a></div>{%- endcomment -%}
+  <div class="js_ck_view"></div><div class="heading bgbl dn"><a class="tab-heading flex al_center fl_between pr cd chp fwm" href="#tab_{{block.id}}"><span class="txt_h_tab">Additional Information</span><span class="nav_link_icon ml__5"></span></a></div>
       <div class="sp-tab-content">
         <table class="pr_attrs">
           <tbody>
@@ -512,7 +512,7 @@ assign se_stts = section.settings
     </div>
     {%- endif -%}
 
-
+{%- endcomment -%}
 
   {%- style -%}
      {%- if des_pr_layout == '1' %}

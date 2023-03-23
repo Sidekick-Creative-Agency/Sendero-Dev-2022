@@ -59,7 +59,7 @@
             "show_tag_product": false
           }
         },
-        "des": {
+        "9f5cf87f-b832-49bf-9360-42f92b24aeb0": {
           "type": "des",
           "settings": {
             "title": "Description"
@@ -78,7 +78,7 @@
         "frm",
         "size",
         "meta",
-        "des",
+        "9f5cf87f-b832-49bf-9360-42f92b24aeb0",
         "social"
       ],
       "settings": {
@@ -202,22 +202,27 @@
         "image_position": "8"
       }
     },
-    "category-slider-alt-header": {
-      "type": "Category-slider-alt-header",
+    "16512489634b7ad007": {
+      "type": "apps",
       "settings": {
-        "title": "Best Seller Slider",
-        "sub_title": "Sub Text",
+      }
+    },
+    "24e6268f-8053-4bc9-adc2-d18e255753f6": {
+      "type": "featured_collection_owl",
+      "settings": {
+        "title": "Best Sellers",
+        "sub_title": "",
         "sub_font": "2",
         "btn_title": "See all products",
         "style_title": "title_1",
         "ic_tt": "gem",
         "show_clpr": false,
-        "collection": "",
+        "collection": "best-seller-items",
         "limit": 10,
         "space": 30,
-        "use_pagination": "none",
+        "use_pagination": "view-all",
         "btn_rd": false,
-        "btn_icon": false,
+        "btn_icon": true,
         "btn_style": "default",
         "col_pr": "15",
         "col_pr_tb": "3",
@@ -237,9 +242,9 @@
         "dot": false,
         "dot_owl": "1",
         "dot_color": "1",
-        "use_eq_height": true,
+        "use_eq_height": false,
         "image_ratio": "ratio1_1",
-        "image_size": "nt_contain",
+        "image_size": "nt_cover",
         "image_position": "8",
         "cp_code": false,
         "layout": "wrap",
@@ -249,11 +254,6 @@
         "mg_mb": "",
         "pd_mb": ""
       }
-    },
-    "16512489634b7ad007": {
-      "type": "apps",
-      "settings": {
-      }
     }
   },
   "order": [
@@ -261,7 +261,7 @@
     "1648757478999cc57a",
     "164875753916b49a9b",
     "product-rec-indiv",
-    "category-slider-alt-header",
-    "16512489634b7ad007"
+    "16512489634b7ad007",
+    "24e6268f-8053-4bc9-adc2-d18e255753f6"
   ]
 }
