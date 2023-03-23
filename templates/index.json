@@ -285,17 +285,6 @@
             "url": ""
           }
         },
-        "16488280725e7f0d65-2": {
-          "type": "collection",
-          "settings": {
-            "collection": "outerwear",
-            "image": "shopify:\/\/shop_images\/Backcountry-Trout-Cook-How-To_07_1024x1024_ec49145e-158d-46c1-896d-0ba3195fde02.jpg",
-            "img_align": "center",
-            "title": "",
-            "col_link": "#",
-            "url": ""
-          }
-        },
         "16488280725e7f0d65-3": {
           "type": "collection",
           "settings": {
@@ -307,10 +296,10 @@
             "url": ""
           }
         },
-        "6236469b-85c9-4415-9ee4-368d4cfef55b": {
+        "034256d3-cb44-453f-9a16-f3fb0e17f8e8": {
           "type": "collection",
           "settings": {
-            "collection": "kids-gear",
+            "collection": "shorts",
             "img_align": "center",
             "title": "",
             "col_link": "#",
@@ -324,9 +313,8 @@
         "16488280725e7f0d65-1",
         "7cbee7b2-bbb0-445e-b9e3-9c9535fbac44",
         "64e45c15-1460-4e52-b7b7-fc22c2d0bcb6",
-        "16488280725e7f0d65-2",
         "16488280725e7f0d65-3",
-        "6236469b-85c9-4415-9ee4-368d4cfef55b"
+        "034256d3-cb44-453f-9a16-f3fb0e17f8e8"
       ],
       "settings": {
         "title": "Collection list",
