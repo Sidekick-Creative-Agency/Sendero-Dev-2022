@@ -6,7 +6,7 @@
         "89b1a94e-2cf5-4075-a6af-0969fbaeae2c": {
           "type": "1",
           "settings": {
-            "title": "OUR STORY",
+            "title": "SPIRIT OF THE WEST, SOUL OF THE WILD",
             "color": "#ffffff"
           }
         }
@@ -15,7 +15,7 @@
         "89b1a94e-2cf5-4075-a6af-0969fbaeae2c"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/homepage_hero_image_2.jpg",
+        "image": "shopify:\/\/shop_images\/Copy_of_SAG_4021.jpg",
         "parallax": true,
         "color": "#000000",
         "overlay": 47,
@@ -35,7 +35,7 @@
     "16492574913de1faed": {
       "type": "rich_text",
       "settings": {
-        "title": "What We Do",
+        "title": "Our History: To the West",
         "sub_title": "",
         "show_btn": false,
         "btn_text": "Click Me",
@@ -46,7 +46,7 @@
         "style_title": "title_1",
         "ic_tt": "gem",
         "show_clpr": false,
-        "content": "<p>Sendero Provisions Co. makes quality outdoor provisions inspired by the landscapes and cultures of wild, wild America. We cut our teeth roaming the bare deserts of the Southwest looking for geologic wonders and glorious adventure. From our old-school days as geologists mapping in the field to new-school days spent on a cold mountain stream chasing native rainbows, our inspiration comes from our connection to the land and the cultures that represent it. This is the basic calling of Sendero. We make gear that embodies this- super slick products reminiscent of a time long past that will call you to the wild. <strong>SPIRIT of the WEST \/\/ SOUL of the WILD<\/strong><\/p>",
+        "content": "<p>Sendero was born out of one thing: the love for the West. The landscapes, cultures, history, geology, flora, and fauna. All of it. Our very first hat came into being because of the wild West Texas views down Big Bend country. And take it from us, there’s nothing better than putting on a hat that fits juuust right. Our founder, Hunter Harlow, has been chasing that feeling ever since, and although we make a whole lot more than hats these days… that feeling of making our first hat is what keeps us going and pushing the boundaries.<\/p>",
         "align": "tl",
         "layout": "container",
         "mg": "50px,,50px,",
@@ -58,17 +58,16 @@
     "164856885666aace2e": {
       "type": "image_text_sig",
       "settings": {
-        "image": "shopify:\/\/shop_images\/IMG_0248_1024x1024_48d1f0c4-e069-4ab7-ba9c-c2ba8a991eaf.webp",
-        "img": "shopify:\/\/shop_images\/Hunter-Signature.png",
+        "image": "shopify:\/\/shop_images\/Copy_of_SAG_3937.jpg",
         "sig_title": "HUNTER HARLOW",
         "sig_sub_title": "FOUNDER & CEO",
         "sub_font": "2",
         "img_align": "center",
         "img_position": "1",
         "image_ratio": "auto",
-        "text_size2": "30,14",
+        "text_size2": "40,16",
         "title": "FROM EL HEFE",
-        "text": "<p>Sendero is a rag-tag group of industry outsiders. We're geologists, artists, adventurers, friends, and fishin' partners. For better or for worse, they don't teach inventory management, supply chain, or fabric sourcing in geology classes, but we're figuring it out. We're Central Texans and proud of it, but the deserts of the American Southwest and slopes of the mighty Rockies are also our homes. We're climbers, river junkies, fly fishers, and story tellers- although the last two might be the same thing. If you see us out and about, send us your best \"YEE\" and let us buy you a cold one.<\/p>",
+        "text": "<p>When we started Sendero, it was all about sitting in rivers, cooking tacos over the campfire, getting “Western,” and toe tapping to a good string band. Today, that’s still exactly what it’s about. I hope with every Sendero product we make, we can bring a little piece of that to you guys. Sendero is a lifestyle, and we’ve got a lot of amigos in the family now. <\/p>",
         "button_label": "Shop Now",
         "button_link": "",
         "open_link": "_blank",
@@ -85,20 +84,20 @@
     "rich-text-columns": {
       "type": "rich-text-columns",
       "settings": {
-        "main_title": "OUR QUALITY GUARANTEE",
+        "main_title": "We take our hats seriously – it's in our roots",
         "header_align": "center",
-        "title1": "QUALITY LOREM IPSOM",
-        "title2": "QUALITY LOREM IPSOM",
-        "title3": "QUALITY LOREM IPSOM",
-        "title4": "QUALITY LOREM IPSOM",
-        "title5": "QUALITY LOREM IPSOM",
-        "title6": "QUALITY LOREM IPSOM",
-        "sub_text1": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
-        "sub_text2": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
-        "sub_text3": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
-        "sub_text4": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
-        "sub_text5": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
-        "sub_text6": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+        "title1": "A NAME YOU CAN TRUST",
+        "title2": "ONLY HIGH QUALITY MATERIALS",
+        "title3": "DESIGNS THAT INSPIRE",
+        "title4": "OUR QUALITY GUARANTEE",
+        "title5": "NO QUESTIONS",
+        "title6": "NOT SURE YET?",
+        "sub_text1": "We’ve been doing this a while now. We made our first product hat back in 2014 and we’ve been making everything better ever since. We craft each product individually and care goes into every detail.",
+        "sub_text2": "We hand select every fabric, trim, thread, and color that goes into a Sendero product. We don’t use blanks- we’ve developed our own style and unique fits that folks have come to know and expect.",
+        "sub_text3": "We’re not trying to put “Sendero” in as many different ways as we can onto our gear. We do that sometimes, but what gets us excited is funky cool art with a Western twist and maybe a silly joke or two.",
+        "sub_text4": "We make stuff we believe in, and if you have an issue with a Sendero product then our job is not done. We stand by the quality of our products and we’ll replace anything not up to par or defective.",
+        "sub_text5": "We’ve been doing this a long time. There’s hundreds of thousands of happy Sendero customers out there, so trust that we’ll take care of your order and keep you updated with all the info you need.",
+        "sub_text6": "If at any point you’re not happy with your new purchase, as long as your products aren’t damaged and in original condition, we’ll take them back no problem. Our simple return page will walk you through the entire process.",
         "col_num": "1",
         "show_ckmk": true,
         "show_btn": false,
@@ -121,69 +120,46 @@
     "1649257609430b6426": {
       "type": "image_text_overlay",
       "blocks": {
-        "16492576096b122d98-1": {
-          "type": "6",
-          "settings": {
-            "sp": 47,
-            "sp_mb": 10
-          }
-        },
         "16492576096b122d98-0": {
           "type": "1",
           "settings": {
-            "title": "SPIRIT OF THE WEST",
+            "title": "THE NAME & THE AGAVE",
             "color": "#ffffff",
             "fw_text": 600,
-            "fs_text": 27.5,
+            "fs_text": 28,
             "lh_text": 0,
             "ls_text": 0,
-            "fs_mb_text": 14,
+            "fs_mb_text": 22,
             "lh_mb_text": 0,
-            "ls_mb_text": 0
-          }
-        },
-        "dc49fceb-19e5-4c38-a4ca-9c8923e1450e": {
-          "type": "6",
-          "settings": {
-            "sp": 10,
-            "sp_mb": 10
+            "ls_mb_text": 0,
+            "mg_bot_text": 16
           }
         },
         "16492576096b122d98-2": {
           "type": "2",
           "settings": {
             "font": "f_body",
-            "title": "“Sendero” is the Spanish word for “trail” or “path.” Although the origin of the name is uncertain, around these parts if you’re going out to walk a “sendero,” there’s a good chance folks know exactly what you mean. We like to think we’re building our own “sendero” here by following the trails blazed by our role models and industry leaders. We stand wholeheartedly with outdoor inclusion, cultural preservation, public land protection, and conservation through wildlife management. We’re more or less simple folks, and we hold our values high: an honest handshake, a hard day’s work, free-flowing rivers, native fish, public land, quality gear, live music, art for art’s sake, craft beverages, and fine Texas BBQ.",
+            "title": "“Sendero” is the Spanish word for “trail” or “path.” Although the origin of the name is uncertain, around these parts if you’re going out to walk a “sendero,” there’s a good chance folks know exactly what you mean and there’s an even better chance you might run into an agave or two. We like to think we’re building our own “sendero” here by following the trails blazed by our role models and industry leaders, but we’re bringing that classic “Sendero style.”",
             "color": "#ffffff",
             "fw_text": 400,
-            "fs_text": 13,
-            "lh_text": 18,
+            "fs_text": 18,
+            "lh_text": 28,
             "ls_text": 0,
-            "fs_mb_text": 12.5,
-            "lh_mb_text": 14,
+            "fs_mb_text": 16,
+            "lh_mb_text": 22,
             "ls_mb_text": 0,
             "hide": false
-          }
-        },
-        "16492576096b122d98-3": {
-          "type": "6",
-          "settings": {
-            "sp": 41,
-            "sp_mb": 10
           }
         }
       },
       "block_order": [
-        "16492576096b122d98-1",
         "16492576096b122d98-0",
-        "dc49fceb-19e5-4c38-a4ca-9c8923e1450e",
-        "16492576096b122d98-2",
-        "16492576096b122d98-3"
+        "16492576096b122d98-2"
       ],
       "settings": {
         "se_height": "cus_h",
         "use_custom_h": "1",
-        "h_des": "300px",
+        "h_des": "500px",
         "h_tb": "300px",
         "h_mb": "300px",
         "image": "shopify:\/\/shop_images\/gautier-salles-uffQnKuJ-hc-unsplash.jpg",
