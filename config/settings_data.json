@@ -1108,7 +1108,7 @@
               "title": "Men's",
               "url": "",
               "open_link": "_self",
-              "menu": "mens-new-site-left-column",
+              "menu": "mens-new-site-mobile",
               "icon": "",
               "lb": "",
               "lb_cl": ""
@@ -1120,7 +1120,7 @@
               "title": "Women's",
               "url": "",
               "open_link": "_self",
-              "menu": "womens-new-site-left-column",
+              "menu": "womens-new-site-mobile",
               "icon": "",
               "lb": "",
               "lb_cl": ""
@@ -1132,7 +1132,7 @@
               "title": "Accessories",
               "url": "",
               "open_link": "_self",
-              "menu": "accessories",
+              "menu": "accessories-new-site-mobile",
               "icon": "",
               "lb": "",
               "lb_cl": ""
@@ -1144,7 +1144,7 @@
               "title": "Collections",
               "url": "",
               "open_link": "_self",
-              "menu": "collections-new-site-left-column",
+              "menu": "collections-new-site-mobile",
               "icon": "",
               "lb": "",
               "lb_cl": ""
@@ -1156,7 +1156,7 @@
               "title": "Company",
               "url": "",
               "open_link": "_self",
-              "menu": "company-new-site",
+              "menu": "company-new-site-mobile",
               "icon": "",
               "lb": "",
               "lb_cl": ""
