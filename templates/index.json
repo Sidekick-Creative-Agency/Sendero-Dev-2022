@@ -300,6 +300,7 @@
           "type": "collection",
           "settings": {
             "collection": "shorts",
+            "image": "shopify:\/\/shop_images\/2023-3-3_-_SS23_-_Squares-0875.jpg",
             "img_align": "center",
             "title": "",
             "col_link": "#",
