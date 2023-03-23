@@ -250,6 +250,7 @@
           "type": "collection",
           "settings": {
             "collection": "hats",
+            "image": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-2230.jpg",
             "img_align": "center",
             "title": "",
             "col_link": "#",
@@ -289,22 +290,22 @@
             "url": ""
           }
         },
-        "16488280725e7f0d65-3": {
+        "034256d3-cb44-453f-9a16-f3fb0e17f8e8": {
           "type": "collection",
           "settings": {
-            "collection": "accessories",
-            "image": "shopify:\/\/shop_images\/sendero-patch_1.webp",
+            "collection": "shorts",
+            "image": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-7795.jpg",
             "img_align": "center",
             "title": "",
             "col_link": "#",
             "url": ""
           }
         },
-        "034256d3-cb44-453f-9a16-f3fb0e17f8e8": {
+        "16488280725e7f0d65-3": {
           "type": "collection",
           "settings": {
-            "collection": "shorts",
-            "image": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-7795.jpg",
+            "collection": "accessories",
+            "image": "shopify:\/\/shop_images\/sendero-patch_1.webp",
             "img_align": "center",
             "title": "",
             "col_link": "#",
@@ -318,8 +319,8 @@
         "16488280725e7f0d65-1",
         "7cbee7b2-bbb0-445e-b9e3-9c9535fbac44",
         "64e45c15-1460-4e52-b7b7-fc22c2d0bcb6",
-        "16488280725e7f0d65-3",
-        "034256d3-cb44-453f-9a16-f3fb0e17f8e8"
+        "034256d3-cb44-453f-9a16-f3fb0e17f8e8",
+        "16488280725e7f0d65-3"
       ],
       "settings": {
         "title": "Collection list",
