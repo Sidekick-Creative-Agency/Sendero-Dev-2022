@@ -242,6 +242,17 @@
             "url": ""
           }
         },
+        "7cbee7b2-bbb0-445e-b9e3-9c9535fbac44": {
+          "type": "collection",
+          "settings": {
+            "collection": "crop-tee",
+            "image": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-2703.jpg",
+            "img_align": "center",
+            "title": "",
+            "col_link": "#",
+            "url": ""
+          }
+        },
         "16488280725e7f0d65-0": {
           "type": "collection",
           "settings": {
@@ -258,17 +269,6 @@
           "settings": {
             "collection": "t-shirts",
             "image": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-2115.jpg",
-            "img_align": "center",
-            "title": "",
-            "col_link": "#",
-            "url": ""
-          }
-        },
-        "7cbee7b2-bbb0-445e-b9e3-9c9535fbac44": {
-          "type": "collection",
-          "settings": {
-            "collection": "crop-tee",
-            "image": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-2703.jpg",
             "img_align": "center",
             "title": "",
             "col_link": "#",
@@ -311,9 +311,9 @@
       },
       "block_order": [
         "cbef2b0c-b5a4-4a97-a230-4ade91689880",
+        "7cbee7b2-bbb0-445e-b9e3-9c9535fbac44",
         "16488280725e7f0d65-0",
         "16488280725e7f0d65-1",
-        "7cbee7b2-bbb0-445e-b9e3-9c9535fbac44",
         "64e45c15-1460-4e52-b7b7-fc22c2d0bcb6",
         "16488280725e7f0d65-3",
         "034256d3-cb44-453f-9a16-f3fb0e17f8e8"
