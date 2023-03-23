@@ -246,6 +246,7 @@
           "type": "collection",
           "settings": {
             "collection": "hats",
+            "image": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-2082.jpg",
             "img_align": "center",
             "title": "",
             "col_link": "#",
