@@ -270,6 +270,7 @@
           "type": "collection",
           "settings": {
             "collection": "crop-tee",
+            "image": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-2703.jpg",
             "img_align": "center",
             "title": "",
             "col_link": "#",
