@@ -287,16 +287,6 @@
             "url": ""
           }
         },
-        "7d2d449a-83f0-459e-a956-21e212b81841": {
-          "type": "collection",
-          "settings": {
-            "collection": "fall-2022",
-            "img_align": "center",
-            "title": "",
-            "col_link": "#",
-            "url": ""
-          }
-        },
         "cbef2b0c-b5a4-4a97-a230-4ade91689880": {
           "type": "collection",
           "settings": {
@@ -314,7 +304,6 @@
         "16488280725e7f0d65-2",
         "16488280725e7f0d65-3",
         "6236469b-85c9-4415-9ee4-368d4cfef55b",
-        "7d2d449a-83f0-459e-a956-21e212b81841",
         "cbef2b0c-b5a4-4a97-a230-4ade91689880"
       ],
       "settings": {
