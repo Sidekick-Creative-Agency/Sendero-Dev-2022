@@ -1266,6 +1266,9 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     padding: 0;
     margin: 3px 0;
 }
+.swatch__list_pr {
+    margin: 10px 0;
+}
 #out_stock_ppr {
     align-items: center;
     justify-content: center;
