@@ -1374,7 +1374,7 @@
           "image_ratio": "ratio_nt",
           "image_size": "nt_cover",
           "image_position": "8",
-          "index": true,
+          "index": false,
           "product": false,
           "collection": false,
           "article": false,
