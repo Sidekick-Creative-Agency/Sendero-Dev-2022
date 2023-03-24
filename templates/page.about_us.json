@@ -55,6 +55,29 @@
         "pd_mb": ",,,,"
       }
     },
+    "c099fedd-6696-4f70-9f1f-5c7763827002": {
+      "type": "rich_text",
+      "settings": {
+        "title": "HOMEGROWN RIGHT HERE IN TEJAS",
+        "sub_title": "",
+        "show_btn": false,
+        "btn_text": "Click Me",
+        "button_align": "left",
+        "btn_link": "#",
+        "sub_font": "2",
+        "header_align": "center",
+        "style_title": "title_1",
+        "ic_tt": "gem",
+        "show_clpr": false,
+        "content": "<p>There’s a simple list of things we value that make us who we are here at Sendero: hard day’s work, free-flowing rivers, public land, quality gear, live music, art for art’s sake, craft beverages, and fine Texas BBQ. So naturally, we planted our roots right here in Waco, Tejas. We’re not all Texans here at Sendero, but “Texas” is more a state of mind than a birthright. <\/p>",
+        "align": "tl",
+        "layout": "container",
+        "mg": "50px,,50px,",
+        "pd": ",50px,,50px",
+        "mg_mb": "",
+        "pd_mb": ",,,,"
+      }
+    },
     "164856885666aace2e": {
       "type": "image_text_sig",
       "settings": {
@@ -159,9 +182,9 @@
       "settings": {
         "se_height": "cus_h",
         "use_custom_h": "1",
-        "h_des": "500px",
-        "h_tb": "300px",
-        "h_mb": "300px",
+        "h_des": "500",
+        "h_tb": "500",
+        "h_mb": "500",
         "image": "shopify:\/\/shop_images\/gautier-salles-uffQnKuJ-hc-unsplash.jpg",
         "use_pr": true,
         "img_align": "bottom",
@@ -173,13 +196,230 @@
         "cap_h_pos_mb": 50,
         "txt_align_mb": "tl",
         "cl_overlay": "#000000",
-        "cl_opacity": 18,
+        "cl_opacity": 40,
         "layout": "nt_full",
         "mg": ",,50px,",
         "pd": "",
         "mg_mb": "",
         "pd_mb": "",
-        "pd_text": 100
+        "pd_text": 25
+      }
+    },
+    "1649253785b4e78813": {
+      "type": "feature_columns_about",
+      "blocks": {
+        "164925378551f6e47c-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Hunter_Harlow.jpg",
+            "title": "Hunter Harlow",
+            "text": "<p>CEO<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "open_link": "_blank",
+            "btn_style": "1"
+          }
+        },
+        "164925378551f6e47c-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Brent_Losak.jpg",
+            "title": "Brent Losak",
+            "text": "<p>Warehouse<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "open_link": "_blank",
+            "btn_style": "1"
+          }
+        },
+        "164925378551f6e47c-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Cameron_Frymark.jpg",
+            "title": "Cameron Frymark",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "open_link": "_blank",
+            "btn_style": "1"
+          }
+        },
+        "44711518-d59a-4e5f-95f7-26e327035d12": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Devin_Jackson.jpg",
+            "title": "Devin Jackson",
+            "text": "<p>Warehouse<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "open_link": "_blank",
+            "btn_style": "1"
+          }
+        },
+        "e664680c-2fbf-4cef-9110-9faac905c98d": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Hunter_Glaske.jpg",
+            "title": "Hunter Glaske",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "open_link": "_blank",
+            "btn_style": "1"
+          }
+        },
+        "99e986bc-e538-4140-8fc3-05a7469e91ad": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Jenny_Passavant.jpg",
+            "title": "Jenny Passavant",
+            "text": "<p>Fashion Manager<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "open_link": "_blank",
+            "btn_style": "1"
+          }
+        },
+        "50ee8cd1-1749-4564-842d-b2e523c0084e": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/John_Dale.jpg",
+            "title": "John Dale",
+            "text": "<p>Art Director<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "open_link": "_blank",
+            "btn_style": "1"
+          }
+        },
+        "64a5cd04-0a91-408f-a86d-6ecbe599bb82": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Kevin_Schupp.jpg",
+            "title": "Kevin Schupp",
+            "text": "<p>Sales Director<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "open_link": "_blank",
+            "btn_style": "1"
+          }
+        },
+        "7002b360-4df7-41a9-8e7c-909434ffd075": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Mike_Cannaday.jpg",
+            "title": "Mike Cannaday",
+            "text": "<p>Brand Manager<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "open_link": "_blank",
+            "btn_style": "1"
+          }
+        },
+        "1f6da668-fc44-4caf-99be-dbe96aa90c59": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Mike_Penney.jpg",
+            "title": "Mike Penney",
+            "text": "<p>Warehouse<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "open_link": "_blank",
+            "btn_style": "1"
+          }
+        },
+        "811de73e-a1a3-4392-ade4-b75d9332a991": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Rachel_Harlow.jpg",
+            "title": "Rachel Harlow",
+            "text": "<p>Office Manager<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "open_link": "_blank",
+            "btn_style": "1"
+          }
+        },
+        "0ee31f8b-fd02-4e77-90bd-634130e0eff5": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Red_Rankin.jpg",
+            "title": "Red Rankin",
+            "text": "<p>Social Media & Customer Service<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "open_link": "_blank",
+            "btn_style": "1"
+          }
+        },
+        "be80789c-2e95-4ea8-8ddb-ba4a2dd943e4": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Will_Suarez.jpg",
+            "title": "Will Suarez",
+            "text": "<p>Art Director<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "open_link": "_blank",
+            "btn_style": "1"
+          }
+        }
+      },
+      "block_order": [
+        "164925378551f6e47c-0",
+        "164925378551f6e47c-1",
+        "164925378551f6e47c-2",
+        "44711518-d59a-4e5f-95f7-26e327035d12",
+        "e664680c-2fbf-4cef-9110-9faac905c98d",
+        "99e986bc-e538-4140-8fc3-05a7469e91ad",
+        "50ee8cd1-1749-4564-842d-b2e523c0084e",
+        "64a5cd04-0a91-408f-a86d-6ecbe599bb82",
+        "7002b360-4df7-41a9-8e7c-909434ffd075",
+        "1f6da668-fc44-4caf-99be-dbe96aa90c59",
+        "811de73e-a1a3-4392-ade4-b75d9332a991",
+        "0ee31f8b-fd02-4e77-90bd-634130e0eff5",
+        "be80789c-2e95-4ea8-8ddb-ba4a2dd943e4"
+      ],
+      "settings": {
+        "title": "Team",
+        "show_clpr": false,
+        "round": 0,
+        "section_layout": "1",
+        "pos_text": "default",
+        "align_text": "tc",
+        "fs_hd": 22,
+        "fs_txt": 16,
+        "w_img": 0,
+        "loop": false,
+        "autoplay": false,
+        "au_time": 6,
+        "au_hover": false,
+        "button": false,
+        "btn_vi": "1",
+        "btn_owl": "1",
+        "btn_color": "0",
+        "dot": true,
+        "dot_owl": "1",
+        "dot_color": "1",
+        "layout": "container",
+        "cl_bg": "",
+        "mg": "50px,,10px,",
+        "pd": ",50px,,50px",
+        "mg_mb": "",
+        "pd_mb": ""
       }
     }
   },
@@ -187,8 +427,10 @@
     "heading",
     "main",
     "16492574913de1faed",
+    "c099fedd-6696-4f70-9f1f-5c7763827002",
     "164856885666aace2e",
     "rich-text-columns",
-    "1649257609430b6426"
+    "1649257609430b6426",
+    "1649253785b4e78813"
   ]
 }
