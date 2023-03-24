@@ -46,19 +46,6 @@
             "enable_payment_btn": false
           }
         },
-        "size": {
-          "type": "size",
-          "settings": {
-            "size_chart": "3",
-            "pos_sizeg": "1",
-            "sc_type": "1",
-            "page": "",
-            "size_ck": "",
-            "delivery": false,
-            "page_dr": "",
-            "ask": false
-          }
-        },
         "aa99e24b-8dc5-4b03-8f69-cb5bc50149f6": {
           "type": "des",
           "settings": {
@@ -71,7 +58,7 @@
             "title": "Details"
           }
         },
-        "social": {
+        "8a890ce7-5baf-444e-a556-fdde17254268": {
           "type": "social",
           "settings": {
             "class": "tdf"
@@ -83,10 +70,9 @@
         "meta",
         "pricereview",
         "frm",
-        "size",
         "aa99e24b-8dc5-4b03-8f69-cb5bc50149f6",
         "7609612a-5919-46f4-bdd4-b7fa82467afd",
-        "social"
+        "8a890ce7-5baf-444e-a556-fdde17254268"
       ],
       "settings": {
         "des_pr_design": "1",
