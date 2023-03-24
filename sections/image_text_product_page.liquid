@@ -6,8 +6,21 @@
  if img_ratio == 'auto' 
   assign ck = true 
  endif
- assign image = "/admin/co"
- assign image = se_stts.image
+
+ assign image = se_stts.imageDefault
+ if product.type contains "Hats"
+ assign image = se_stts.imageHats
+ 
+else if product.type contains "Shirts"
+ assign image = se_stts.imageShirts
+  
+else if product.type contains "Accessories"
+ assign image = se_stts.imageAccessories
+    
+else if product.type contains "Outerwear"
+ assign image = se_stts.imageOuterwear
+endif
+
  assign url = se_stts.button_link 
  if se_stts.cl_txt == 'dark' 
   assign cl_txt = 'cd,cg' 
@@ -15,7 +28,6 @@
   assign cl_txt = 'cw,cw,button-o-w' 
  endif 
  assign cl_arr = cl_txt | split:","
- assign fs_arr = se_stts.text_size2 | split:"," 
  for i in (0..product.images.size)
   if product.images[i].alt == "main"
     assign image1 = product.images[i]
@@ -32,40 +44,29 @@
 endfor
  -%}
 
-
-
  {%- capture layout1 -%}
 <div class="img-text-indiv-product-container nt_se_{{sid}} {{se_stts.layout}} txt_shadow_{{se_stts.use_shadow}}" style="margin: 0 auto !important;">
   <div class="row no-gutters equal_nt {{img_ratio}} al_center">
     <div class="col-12 col-md-6 indiv-product-img-container">
-      <div class="nt_img_txt oh pr middle center indiv-product-img">
-        {%- comment -%}<a href="{{ url | default:'#' }}" class="db">{%- endcomment -%}
+      <div class="nt_img_txt oh pr middle center indiv-product-img mg__0">
         {%- if image != blank -%}
-          <div class="nt_bg_lz lazyloadt4s item__position {{se_stts.img_align}}" data-bgset="{{ image | img_url: '1x1' }}" data-sizes="auto" data-ratio="{{image.aspect_ratio}}" data-parent-fit="cover" style="padding-top:{{ 1 | divided_by: image.aspect_ratio | times: 100}}%;"></div>
+          <div class="image nt_bg_lz lazyloadt4s item__position {{se_stts.img_align}}" data-bgset="{{ image | img_url: '1x1' }}" data-sizes="auto" data-ratio="{{image.aspect_ratio}}" data-parent-fit="cover"></div>
         {%- else -%}
-          <div class="nt_bg_lz lazyloadt4s item__position {{se_stts.img_align}}" data-bg="{{ 'placeholder.jpg' | asset_url }}" style="padding-top: 111.1111111111111%;"></div>
+          <div class="image nt_bg_lz lazyloadt4s item__position {{se_stts.img_align}}" data-bg="{{ 'placeholder.jpg' | asset_url }}" style="padding-top: 111.1111111111111%;"></div>
         {%- endif -%}
-        {%- comment -%}</a>{%- endcomment -%}
       </div>
     </div>
-    <div class="col-12 col-md-6 txt_col_img">
-      <div class="flex column pr__50 shadow_wrap {{se_stts.txt_align}} {{cl_arr[1]}} remove_padding_on_mobile indiv-product-text-right">
-        <h3 class="mb__20 mt__0 {{cl_arr[0]}}">{{se_stts.title}}</h3>
-        <h6 >{{se_stts.subtitle1}}</h6>
+    <div class="col-12 col-md-6 txt_col_img mg__0">
+      <div class="flex column pr__50 shadow_wrap {{se_stts.txt_align}} {{cl_arr[1]}} indiv-product-text-right">
+        <h2 class="mb__20 mt__0 {{cl_arr[0]}}" style="font-size: {{se_stts.header_text_size}}px; line-height: {{se_stts.header_line_height}}px">{{se_stts.title}}</h2>
+        <h6 style="font-size: {{se_stts.sub_text_size}}px; line-height: {{se_stts.sub_line_height}}px">{{se_stts.subtitle1}}</h6>
         {{se_stts.text1}}
-        <h6>{{se_stts.subtitle2}}</h6>
+        <h6 style="font-size: {{se_stts.sub_text_size}}px; line-height: {{se_stts.sub_line_height}}px">{{se_stts.subtitle2}}</h6>
         {{se_stts.text2}}
-        <h6>{{se_stts.subtitle3}}</h6>
+        <h6 style="font-size: {{se_stts.sub_text_size}}px; line-height: {{se_stts.sub_line_height}}px">{{se_stts.subtitle3}}</h6>
         {{se_stts.text3}}
         {%- if url != blank and se_stts.button_label -%}<p class="mg__0"><a class="button {{cl_arr[2]}}" href="{{url}}" target="{{se_stts.open_link}}">{{se_stts.button_label}}</a></p>{%- endif -%}
       </div>
-      <style>
-        @media screen and (max-width: 767px) {
-          .remove_padding_on_mobile {
-            padding-left: 15px !important;
-          }
-        } 
-      </style>
     </div>
   </div>
 </div>
@@ -74,36 +75,27 @@ endfor
 {%- capture layout2 -%}
 <div class="img-text-indiv-product-container nt_se_{{sid}} {{se_stts.layout}} txt_shadow_{{se_stts.use_shadow}}" style="margin: 0 auto !important;">
   <div class="row no-gutters equal_nt {{img_ratio}} al_center flex_wrap_reverse" id="flex_wrap">
-    <div class="col-12 col-md-6 txt_col_img txt-col-img-left">
-      <div class="flex column pl__50 shadow_wrap {{se_stts.txt_align}} {{cl_arr[1]}} remove_padding_on_mobile remove_padding_on_mobile indiv-product-text-left" >
-          <h3 class="mb__20 mt__0 {{cl_arr[0]}}">{{se_stts.title}}</h3>
-          <h6 >{{se_stts.subtitle1}}</h6>
+    <div class="col-12 col-md-6 txt_col_img txt-col-img-left mg__0">
+      <div class="flex column pl__50 shadow_wrap {{se_stts.txt_align}} {{cl_arr[1]}} indiv-product-text-left" >
+          <h3 class="mb__20 mt__0 {{cl_arr[0]}}" style="font-size:{{se_stts.header_text_size}}px; line-height: {{se_stts.header_line_height}}px">{{se_stts.title}}</h3>
+          <h6 style="font-size: {{se_stts.sub_text_size}}px; line-height: {{se_stts.sub_line_height}}px">{{se_stts.subtitle1}}</h6>
           {{se_stts.text1}}
           
-          <h6>{{se_stts.subtitle2}}</h6>
+          <h6 style="font-size: {{se_stts.sub_text_size}}px; line-height: {{se_stts.sub_line_height}}px">{{se_stts.subtitle2}}</h6>
           {{se_stts.text2}}
           
-          <h6>{{se_stts.subtitle3}}</h6>
+          <h6 style="font-size: {{se_stts.sub_text_size}}px; line-height: {{se_stts.sub_line_height}}px">{{se_stts.subtitle3}}</h6>
           {{se_stts.text3}}
           {%- if url != blank and se_stts.button_label -%}<p class="mg__0"><a class="button {{cl_arr[2]}}" href="{{url}}" target="{{se_stts.open_link}}">{{se_stts.button_label}}</a></p>{%- endif -%}
       </div>
-      <style>
-        @media screen and (max-width: 767px) {
-          .remove_padding_on_mobile {
-            padding-left: 15px !important;
-          }
-        } 
-      </style>
     </div>
     <div class="col-12 col-md-6 ">
-      <div class="nt_img_txt oh pr middle center indiv-product-img">
-        {%- comment -%}<a href="{{ url | default:'#' }}" class="db">{%- endcomment -%}
+      <div class="nt_img_txt oh pr middle center indiv-product-img mg__0">
           {%- if image != blank -%}
-            <div class="nt_bg_lz lazyloadt4s item__position {{se_stts.img_align}}" data-bgset="{{ image | img_url: '1x1' }}" data-sizes="auto" data-ratio="{{image.aspect_ratio}}" data-parent-fit="cover" style="padding-top:{{ 1 | divided_by: image.aspect_ratio | times: 100}}%;"></div>
+            <div class="image nt_bg_lz lazyloadt4s item__position {{se_stts.img_align}}" data-bgset="{{ image | img_url: '1x1' }}" data-sizes="auto" data-ratio="{{image.aspect_ratio}}" data-parent-fit="cover" style="padding-top:{{ 1 | divided_by: image.aspect_ratio | times: 100}}%;"></div>
           {%- else -%}
-            <div class="nt_bg_lz lazyloadt4s item__position {{se_stts.img_align}}" data-bg="{{ 'placeholder.jpg' | asset_url }}" style="padding-top: 111.1111111111111%;"></div>
+            <div class="image nt_bg_lz lazyloadt4s item__position {{se_stts.img_align}}" data-bg="{{ 'placeholder.jpg' | asset_url }}" style="padding-top: 111.1111111111111%;"></div>
           {%- endif -%}
-        {%- comment -%}</a>{%- endcomment -%}
       </div>
     </div>
   </div>
@@ -119,7 +111,8 @@ endfor
  
     <style>
       .nt_se_{{sid}} .txt_col_img p {
-        font-size: {{fs_arr[1]}}px;
+        font-size: {{se_stts.para_text_size}}px;
+        line-height: {{se_stts.para_line_height}}px;
       }
       </style>
 
@@ -136,8 +129,28 @@ endfor
       },
       {
          "type": "image_picker",
-         "id": "image",
-         "label": "Image"
+         "id": "imageHats",
+         "label": "Image for Hats Products"
+       },
+       {
+         "type": "image_picker",
+         "id": "imageShirts",
+         "label": "Image for Shirts Products"
+       },
+       {
+         "type": "image_picker",
+         "id": "imageAccessories",
+         "label": "Image for Accessories Products"
+       },
+       {
+         "type": "image_picker",
+         "id": "imageOuterwear",
+         "label": "Image for Outerwear Products"
+       },
+       {
+         "type": "image_picker",
+         "id": "imageDefault",
+         "label": "Default Image"
        },
       {
         "type": "select",
@@ -260,24 +273,58 @@ endfor
         "content": "== Text Settings"
       },
       {
-        "type": "select",
-        "id": "text_size2",
-        "label": "Text size",
-        "default": "30,14",
-        "options": [
-          {
-            "value": "24,12",
-            "label": "Small"
-          },
-          {
-            "value": "30,14",
-            "label": "Medium"
-          },
-          {
-            "value": "40,16",
-            "label": "Large"
-          }
-        ]
+        "type": "range",
+        "id": "header_text_size",
+        "label": "Header Text Size",
+        "default": 28,
+        "min": 16,
+        "max": 64,
+        "step": 1
+      },
+      {
+        "type": "range",
+        "id": "header_line_height",
+        "label": "Header Line Height",
+        "default": 28,
+        "min": 0,
+        "max": 100,
+        "step": 1
+      },
+      {
+        "type": "range",
+        "id": "sub_text_size",
+        "label": "Subtitle Text Size",
+        "default": 24,
+        "min": 16,
+        "max": 64,
+        "step": 1
+      },
+      {
+        "type": "range",
+        "id": "sub_line_height",
+        "label": "Subtitle Line Height",
+        "default": 24,
+        "min": 0,
+        "max": 100,
+        "step": 1
+      },
+      {
+        "type": "range",
+        "id": "para_text_size",
+        "label": "Paragraph Text Size",
+        "default": 18,
+        "min": 16,
+        "max": 48,
+        "step": 1
+      },
+      {
+        "type": "range",
+        "id": "para_line_height",
+        "label": "Paragraph Line Height",
+        "default": 18,
+        "min": 0,
+        "max": 100,
+        "step": 1
       },
       {
         "type": "text",

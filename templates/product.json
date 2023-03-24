@@ -26,6 +26,7 @@
           "settings": {
             "price": "0",
             "txt_sale": "0",
+            "font_size": 28,
             "rating": false,
             "review_liquid": ""
           }
@@ -105,11 +106,20 @@
     "1648757478999cc57a": {
       "type": "image_text_product_page",
       "settings": {
-        "image": "shopify:\/\/shop_images\/homepage_hero_image_3.webp",
+        "imageHats": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-2082.jpg",
+        "imageShirts": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-1837.jpg",
+        "imageAccessories": "shopify:\/\/shop_images\/sendero-patch_1.webp",
+        "imageOuterwear": "shopify:\/\/shop_images\/Copy_of_2021-10-11_-_Fall_Browns_with_El_Cap-8978.jpg",
+        "imageDefault": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-0305.jpg",
         "img_align": "bottom",
         "img_position": "1",
         "image_ratio": "ratio1_1",
-        "text_size2": "30,14",
+        "header_text_size": 28,
+        "header_line_height": 32,
+        "sub_text_size": 18,
+        "sub_line_height": 38,
+        "para_text_size": 18,
+        "para_line_height": 24,
         "title": "QUALITY GEAR, MADE FOR THE WILD WEST",
         "subtitle1": "OUR QUALITY GUARANTEE",
         "subtitle2": "SUSTAINABLY SOURCED",
@@ -127,17 +137,26 @@
         "mg": "50px,,50px,",
         "pd": "",
         "mg_mb": "",
-        "pd_mb": ",,50px,"
+        "pd_mb": ",,,,"
       }
     },
     "164875753916b49a9b": {
       "type": "image_text_product_page",
       "settings": {
-        "image": "shopify:\/\/shop_images\/116309620_2383569085270467_5796589458683211337_n.jpg",
+        "imageHats": "shopify:\/\/shop_images\/2022-8-30---FW22----Banner-Images-5130_2e2fbff7-ba9a-4d1b-b201-28b915aa1865.jpg",
+        "imageShirts": "shopify:\/\/shop_images\/2021-7-23_-_FW_2021_-_Low_Res-3069.jpg",
+        "imageAccessories": "shopify:\/\/shop_images\/Copy_of_2019-9-19_-_Zion_Narrows-8111.jpg",
+        "imageOuterwear": "shopify:\/\/shop_images\/Copy_of_2019-9-19_-_Zion_Narrows-6245.jpg",
+        "imageDefault": "shopify:\/\/shop_images\/Copy_of_Rawah_Backpacking_-_First_Pass-2441.jpg",
         "img_align": "center",
         "img_position": "2",
         "image_ratio": "auto",
-        "text_size2": "30,14",
+        "header_text_size": 28,
+        "header_line_height": 32,
+        "sub_text_size": 18,
+        "sub_line_height": 38,
+        "para_text_size": 18,
+        "para_line_height": 24,
         "title": "About Sendero Products",
         "subtitle1": "OUR QUALITY GUARANTEE",
         "subtitle2": "NO FEAR BUYING",
@@ -168,6 +187,7 @@
         "style_title": "title_1",
         "ic_tt": "gem",
         "show_clpr": false,
+        "title_text_size": 20,
         "display_type": "3",
         "limit": 10,
         "space": 30,

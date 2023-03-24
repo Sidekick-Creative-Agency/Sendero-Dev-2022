@@ -4130,8 +4130,8 @@ a.br_rd_false {
 }
 .entry-summary .price,
 .entry-summary .price_range {
-  font-size: 22px;
-  line-height: 22px;
+  /* font-size: 22px;
+  line-height: 22px; */
 }
 .nt_cart_form .price {
   margin-right: 0;
@@ -9865,9 +9865,9 @@ a.slt4_btn {
     max-width: var(--max-w-img);
     width: 100% !important;
   }
-  .txt_col_img {
+  /* .txt_col_img {
     margin-top: 30px;
-  }
+  } */
   .hide_m767_true {
     display: none;
   }

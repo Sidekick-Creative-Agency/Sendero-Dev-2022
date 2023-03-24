@@ -127,7 +127,7 @@
             <div class="row mb__50 pr_sticky_content">
               
                <div class="{{class_images}} col-12 pr product-images img_action_{{main_click}} pr_sticky_img" data-pr-single-media-group>
-                  <div class="row theiaStickySidebar">
+                  <div class="row theiaStickySidebar" style="position: sticky; top: 0">
                      {%- if image != blank and pr_media.size < 2 -%}{%- assign ratio = image.aspect_ratio -%}{%- assign iw = image.width -%}
                         <div class="col-12">
                            <div class="p-thumb sp-pr-gallery equal_nt {{img_size_main}} {{eq_imgtb}} position_{{img_pos_main}}">
@@ -892,6 +892,19 @@
       ]
     },
     {
+      "type": "quickLinks",
+      "name": "Quick Links",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "Description"
+        }
+      ]
+    },
+    {
       "type": "buy",
       "name": "Bought Together",
       "limit": 1,
@@ -1061,8 +1074,17 @@
                 "label": "Fixed amount"
               }
             ],
-            "label": "Text Save",
+            "label": "Text Sale",
             "default": "0"
+          },
+          {
+            "type": "range",
+            "id": "font_size",
+            "label": "Font Size",
+            "min": 16,
+            "max": 64,
+            "step": 1,
+            "default": 24
           },
           {
            "type": "checkbox",

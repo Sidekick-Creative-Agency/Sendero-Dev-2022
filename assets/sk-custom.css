@@ -1143,7 +1143,7 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 /--------------------------------------------------------*/
 
 .product_title {
-    margin-bottom: 20px !important;
+    margin-bottom: 5px !important;
 }
 .read-more, .read-less {
     cursor: pointer;
@@ -1151,7 +1151,12 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 .hidden-button {
     display: none;
 }
-
+.product_meta {
+    margin-bottom: 10px !important;
+}
+.product_meta .available_wrapper {
+    margin: 0 !important;
+}
 .prod_tabs {
     justify-content: left;
 }
@@ -1176,13 +1181,8 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 .product-info {
     text-align:center;
 }
-.indiv-product-text-right {
-    padding-left: 100px;
-    line-height: 1.25rem;
-}
-.indiv-product-text-left {
-    margin: 0 !important;
-    padding-right: 100px;
+.indiv-product-text-right, .indiv-product-text-left {
+    padding: 100px;
     line-height: 1.25rem;
 }
 .txt-col-img-left {
@@ -1190,7 +1190,20 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 }
 .indiv-product-img{
     max-width: 987px;
-    height: 475px;
+    height: 100%;
+    position: relative;
+}
+.indiv-product-img .image {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding-top: 100% !important;
+}
+.indiv-product-img-container {
+    height: 100%;
+    width: 100%;
 }
 .t4s-media-img {
     cursor: pointer !important;
@@ -1250,7 +1263,7 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     font-size: 10px;
 }
 .swatch__title {
-    font-size: 10px;
+    /* font-size: 10px; */
     text-transform: uppercase;
     font-weight: 400;
     letter-spacing: .1em;
@@ -1301,7 +1314,7 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     background-color: #000 !important;
 }
 
-
+.img-text-indiv-product-container .row {}
 /* ----- Tablet ------ */
 @media screen and (max-width: 1023px) {
     
@@ -1323,6 +1336,10 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     }
     .flickityt4s-slider {
         min-height: 150px;
+    }
+    .indiv-product-text-right, .indiv-product-text-left {
+        padding: 50px;
+        line-height: 1.25rem;
     }
 }
 

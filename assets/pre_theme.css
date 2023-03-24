@@ -3621,8 +3621,8 @@ html.wf-fontawesome5free-n4-loading .fas:before {opacity: 0}
       padding: 0 2.5px 0;
   }
   .entry-summary .price,.entry-summary .price_range {
-    font-size: 22px;
-    line-height: 22px;
+    /* font-size: 22px;
+    line-height: 22px; */
   }
   .nt_cart_form .price {
     margin-right: 0;
@@ -8212,9 +8212,9 @@ background-position: 50% 50%;
     padding-top: 108%;
   }
   #trust_seal_ppr img.img_tr_s1,.trust_seal_se img.img_tr_s1 {max-width: var(--max-w-img);width: 100% !important}
-  .txt_col_img {
+  /* .txt_col_img {
       margin-top: 30px;
-  }
+  } */
   .hide_m767_true { display: none }
   .products:not(.articles) .flickityt4s-prev-next-button {
     top: 30%;
