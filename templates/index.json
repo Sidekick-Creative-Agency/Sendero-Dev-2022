@@ -632,6 +632,11 @@
         "mg_mb": "",
         "pd_mb": ""
       }
+    },
+    "1679664388cf7d88de": {
+      "type": "apps",
+      "settings": {
+      }
     }
   },
   "order": [
@@ -641,6 +646,7 @@
     "best-seller-slider",
     "16528897230a5c23d9",
     "16528932861d0f8a07",
-    "32e99ee3-89e3-4d48-acf1-df71e30f9bd7"
+    "32e99ee3-89e3-4d48-acf1-df71e30f9bd7",
+    "1679664388cf7d88de"
   ]
 }
