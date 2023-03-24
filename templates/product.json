@@ -10,6 +10,17 @@
             "size": 30
           }
         },
+        "meta": {
+          "type": "meta",
+          "settings": {
+            "show_pr_vendor": false,
+            "show_sku": false,
+            "show_barcode": false,
+            "show_available": true,
+            "show_category_product": false,
+            "show_tag_product": false
+          }
+        },
         "pricereview": {
           "type": "pricereview",
           "settings": {
@@ -48,17 +59,6 @@
             "ask": false
           }
         },
-        "meta": {
-          "type": "meta",
-          "settings": {
-            "show_pr_vendor": false,
-            "show_sku": false,
-            "show_barcode": false,
-            "show_available": true,
-            "show_category_product": false,
-            "show_tag_product": false
-          }
-        },
         "aa99e24b-8dc5-4b03-8f69-cb5bc50149f6": {
           "type": "des",
           "settings": {
@@ -80,10 +80,10 @@
       },
       "block_order": [
         "title",
+        "meta",
         "pricereview",
         "frm",
         "size",
-        "meta",
         "aa99e24b-8dc5-4b03-8f69-cb5bc50149f6",
         "7609612a-5919-46f4-bdd4-b7fa82467afd",
         "social"
