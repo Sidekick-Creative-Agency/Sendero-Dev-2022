@@ -391,10 +391,6 @@
       "default": "0,,0,",
       "placeholder": "0,,0,"
     },
-  
-      
-      
-
       {
         "type": "select",
         "id": "pr_layout",
@@ -897,11 +893,139 @@
       "limit": 1,
       "settings": [
         {
+          "type": "range",
+          "id": "font_size",
+          "label": "Font Size",
+          "default": 18,
+          "min": 12,
+          "max": 48,
+          "step": 1,
+          "unit": "px"
+        },
+        {
+          "type": "range",
+          "id": "letter_spacing",
+          "label": "Letter Spacing",
+          "default": 0,
+          "min": 0,
+          "max": 10,
+          "step": 0.1,
+          "unit": "px"
+        },
+        {
           "type": "text",
-          "id": "title",
-          "label": "Heading",
-          "default": "Description"
-        }
+          "id": "first_link_title",
+          "label": "First Link Title",
+          "default": "RETURNS"
+        },
+        {
+            "type": "radio",
+            "id": "first_link_type",
+            "label": "Link Type",
+            "default": "popup",
+            "info": "Should this button link to a popup or a url?",
+            "options": [
+              {
+                "value": "popup",
+                "label": "Popup"
+              },
+              {
+                "value": "url",
+                "label": "URL"
+              }
+            ]
+        },
+       {
+        "type": "richtext",
+        "id": "first_link_popup_content",
+        "label": "First Link Popup Content",
+        "default": "<p>lorem ipsum</p>",
+        "info": "If Link Type is Popup, enter the content of the popup here"
+       },
+        {
+          "type": "text",
+          "id": "first_link_href",
+          "label": "First Link URL",
+          "default": "https://senderopc.com/",
+          "info": "If Link Type is URL, enter the URL you would like to link to",
+          "placeholder": "https://senderopc.com/example/"
+        },
+        {
+          "type": "text",
+          "id": "second_link_title",
+          "label": "Second Link Title",
+          "default": "HELP"
+        },
+        {
+          "type": "radio",
+          "id": "second_link_type",
+          "label": "Link Type",
+          "default": "popup",
+          "info": "Should this button link to a popup or a url?",
+          "options": [
+            {
+              "value": "popup",
+              "label": "Popup"
+            },
+            {
+              "value": "url",
+              "label": "URL"
+            }
+          ]
+      },
+     {
+      "type": "richtext",
+      "id": "second_link_popup_content",
+      "label": "Second Link Popup Content",
+      "default": "<p>lorem ipsum</p>",
+      "info": "If Link Type is Popup, enter the content of the popup here"
+     },
+      {
+        "type": "text",
+        "id": "second_link_href",
+        "label": "Second Link URL",
+        "default": "https://senderopc.com/",
+        "info": "If Link Type is URL, enter the URL you would like to link to",
+        "placeholder": "https://senderopc.com/example/"
+      },
+        {
+          "type": "text",
+          "id": "third_link_title",
+          "label": "Third Link Title",
+          "default": "SHIPPING"
+        },
+        {
+          "type": "radio",
+          "id": "third_link_type",
+          "label": "Link Type",
+          "default": "popup",
+          "info": "Should this button link to a popup or a url?",
+          "options": [
+            {
+              "value": "popup",
+              "label": "Popup"
+            },
+            {
+              "value": "url",
+              "label": "URL"
+            }
+          ]
+      },
+     {
+      "type": "richtext",
+      "id": "third_link_popup_content",
+      "label": "Third Link Popup Content",
+      "default": "<p>lorem ipsum</p>",
+      "info": "If Link Type is Popup, enter the content of the popup here"
+     },
+      {
+        "type": "text",
+        "id": "third_link_href",
+        "label": "Third Link URL",
+        "default": "https://senderopc.com/",
+        "info": "If Link Type is URL, enter the URL you would like to link to",
+        "placeholder": "https://senderopc.com/example/"
+      }
       ]
     },
     {
