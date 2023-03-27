@@ -1,7 +1,7 @@
 <div class="sendero-sessions-rich-text nt_se_{{section.id}} {{section.settings.layout}}">
     {%- render 'section_title',section:section,section_title:'mb__20' -%}
     <div class="rte_setting {{section.settings.align}}">{{ section.settings.content }}</div>
-    <div><button type="submit" class="sendero-apply-btn css_add_ld btn_new_icon_{{btn_icon}} w__100 submit-btn truncate{% if checkbox_mail %} mail_agree pr{% endif %}"><span>SUBMIT</span></button></div>
+    <div><a href={{section.settings.apply_link}}><button type="submit" class="sendero-apply-btn css_add_ld btn_new_icon_{{btn_icon}} w__100 submit-btn truncate mt__15"><span>{{section.settings.apply_link_text}}</span></button></a></div>
   </div>
   
   {%- render 'section_css' -%}
@@ -183,6 +183,20 @@
           ],
           "label": "Layout"
         },
+        {
+          "type": "text",
+          "id": "apply_link_text",
+          "label": "Link Text",
+          "default": "Contact to Apply"
+         },
+       {
+        "type": "text",
+        "id": "apply_link",
+        "label": "Link to Apply",
+        "default": "mailto:sessions@senderopc.com",
+        "info": "This can be an email address or a URL",
+        "placeholder": "mailto:sessions@senderopc.com"
+       },
         {
           "type": "text",
           "id": "mg",

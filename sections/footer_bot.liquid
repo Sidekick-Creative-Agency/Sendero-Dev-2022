@@ -9,7 +9,7 @@
 
   <div class="footer__bot_wrap pt__20 pb__20">
    <div class="container pr tc">
-      <div class="row">
+      <div class="row" style="display: flex; justify-content: center; align-items: center">
          {%- for block in section.blocks -%}
          <div class="col-lg{{col}} col-md-12 col-12 col_{{forloop.index}} f_bot_bt_{{block.type}}">
             {%- case block.type -%}

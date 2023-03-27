@@ -917,9 +917,9 @@
             "settings": {
               "title": "Quick Links",
               "menu": "store",
-              "order": "3",
-              "cl": "15",
-              "cl_tb": "4",
+              "order": "2",
+              "cl": "2",
+              "cl_tb": "3",
               "cl_mb": "12"
             }
           },
@@ -928,9 +928,20 @@
             "settings": {
               "title": "Support",
               "menu": "footer3",
+              "order": "3",
+              "cl": "2",
+              "cl_tb": "3",
+              "cl_mb": "12"
+            }
+          },
+          "0af55896-589f-4f57-99f0-028f16f22ee0": {
+            "type": "menu",
+            "settings": {
+              "title": "Retail",
+              "menu": "",
               "order": "4",
-              "cl": "15",
-              "cl_tb": "4",
+              "cl": "2",
+              "cl_tb": "3",
               "cl_mb": "12"
             }
           },
@@ -941,7 +952,7 @@
               "content": "<span><a href=\"mailto:contact@senderopc.com\">contact@senderopc.com<\/a><\/span><br><span>Mon-Fri | 8am-5pm<\/span>",
               "order": "5",
               "cl": "15",
-              "cl_tb": "4",
+              "cl_tb": "3",
               "cl_mb": "12"
             }
           },
@@ -951,12 +962,12 @@
               "align": "tc_md",
               "align_mb": "tc",
               "image": "shopify:\/\/shop_images\/header-logo.png",
-              "logo_width": 360,
+              "logo_width": 320,
               "title": "",
               "content": "",
               "social_mode": "1",
               "order": "1",
-              "cl": "4",
+              "cl": "3",
               "cl_tb": "12",
               "cl_mb": "12"
             }
@@ -965,6 +976,7 @@
         "block_order": [
           "1581503840818",
           "1581503828337",
+          "0af55896-589f-4f57-99f0-028f16f22ee0",
           "2e57de10-ea06-40b1-819a-04625e73e1c0",
           "1581503819652"
         ],
@@ -993,29 +1005,15 @@
       "footer_bot": {
         "type": "footer_bot",
         "blocks": {
-          "85f065ad-877f-419e-928f-1e0c7968ffa5": {
-            "type": "copy",
-            "settings": {
-              "text": "<!-- EMPTY PLACEHOLDER for left side -->"
-            }
-          },
           "1581507860120": {
             "type": "copy",
             "settings": {
               "text": "Copyright © [year] Sendero Provisions Co. all rights reserved."
             }
-          },
-          "1581507855652": {
-            "type": "menu",
-            "settings": {
-              "menu": "footer"
-            }
           }
         },
         "block_order": [
-          "85f065ad-877f-419e-928f-1e0c7968ffa5",
-          "1581507860120",
-          "1581507855652"
+          "1581507860120"
         ],
         "settings": {
           "layout": "6",

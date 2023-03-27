@@ -532,6 +532,7 @@
     margin-left: auto;
 }
 
+
 @media (min-width: 1430px) {
     .footer__top_wrap .container, .footer__middle_wrap .container {
         max-width: 1400px;

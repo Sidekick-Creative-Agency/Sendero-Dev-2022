@@ -19,10 +19,10 @@
         "btn_text": "Click Me",
         "button_align": "center",
         "btn_background": "black",
-        "image": "shopify:\/\/shop_images\/74162361_102268317897142_7558348142593179648_n.jpg",
+        "image": "shopify:\/\/shop_images\/2020-11-8_-_Not_Quite_Nashville_Tapes_-_Wild_Feathers-6129_1.jpg",
         "parallax": true,
         "color": "#000000",
-        "overlay": 0,
+        "overlay": 46,
         "padding": 100,
         "paddingmb": 50,
         "bg_pos": "center center",
@@ -117,7 +117,6 @@
           "type": "collection",
           "settings": {
             "collection": "",
-            "image": "shopify:\/\/shop_images\/74162361_102268317897142_7558348142593179648_n.jpg",
             "img_align": "center",
             "title": "",
             "url": ""
@@ -127,7 +126,6 @@
           "type": "collection",
           "settings": {
             "collection": "",
-            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-07_at_10.05.18_AM.png",
             "img_align": "center",
             "title": "",
             "url": ""
@@ -167,6 +165,8 @@
         "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store. Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store. Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store. Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
         "align": "tl",
         "layout": "container",
+        "apply_link_text": "Contact to Apply",
+        "apply_link": "mailto:sessions@senderopc.com",
         "mg": "50px,,50px,",
         "pd": ",25px,,25px",
         "mg_mb": "25px,,50px,",
