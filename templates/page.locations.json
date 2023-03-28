@@ -50,7 +50,7 @@
         "code": "<h2 style=\"text-align: center; margin-bottom: 32px\">Dealer Locator<\/h2>\n<div id=\"storepoint-container\" data-map-id=\"16421b05043768\"><\/div><script>(function(){var a=document.createElement(\"script\");a.type=\"text\/javascript\";a.async=!0;a.src=\"https:\/\/cdn.storepoint.co\/api\/v1\/js\/16421b05043768.js\";var b=document.getElementsByTagName(\"script\")[0];b.parentNode.insertBefore(a,b);}());<\/script>",
         "css": "",
         "layout": "container",
-        "mg": "50px,,50px,",
+        "mg": "50px,,,",
         "pd": "",
         "mg_mb": "",
         "pd_mb": ""
