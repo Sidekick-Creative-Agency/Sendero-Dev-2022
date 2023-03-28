@@ -56,7 +56,7 @@
     "logo_tr": "shopify:\/\/shop_images\/header-logo-pad.png",
     "logo_tr_retina": "shopify:\/\/shop_images\/header-logo-pad.png",
     "logo_tr_width": 350,
-    "h_banner": true,
+    "h_banner": false,
     "h_topbar": false,
     "full_header": true,
     "sticky_header": true,
