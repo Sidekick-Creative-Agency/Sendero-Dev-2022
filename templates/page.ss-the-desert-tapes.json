@@ -81,18 +81,34 @@
         "3611f1d0-3e6a-4752-8924-f96f07dfcb08"
       ],
       "settings": {
+<<<<<<< HEAD
         "header_text_size": 28,
         "header_line_height": 32,
         "para_text_size": 18,
         "para_line_height": 24,
         "title": "About Sendero Sessions: The Desert Tapes",
         "sessions_des": "<p>The Desert Tapes is a series of single take sessions filmed out in the shadow of the Sierra Nevada down in the Mojave Desert. We headed out into the most desolate place we could, with no electricity, no water, and no people. All to bring 5 awesome artists together to play some sweet tunes you can groove to.<\/p>",
+=======
+        "image1": "shopify:\/\/shop_images\/Screen_Shot_2022-04-21_at_8.40.59_AM.png",
+        "image3": "shopify:\/\/shop_images\/116309620_2383569085270467_5796589458683211337_n.jpg",
+        "img_align": "center",
+        "img_position": "1",
+        "image_ratio": "auto",
+        "text_size2": "30,14",
+        "title": "About Sendero Sessions: The Desert Tapes",
+        "sub_text": "",
+        "text": "The Desert Tapes is a series of single take sessions filmed out in the shadow of the Sierra Nevada down in the Mojave Desert. We headed out into the most desolate place we could, with no electricity, no water, and no people. All to bring 5 awesome artists together to play some sweet tunes you can groove to.",
+>>>>>>> main
         "txt_align": "tl",
         "use_shadow": false,
         "cl_txt": "dark",
         "layout": "container",
         "mg": "50px,,50px,",
+<<<<<<< HEAD
         "pd": "",
+=======
+        "pd": "50px,,,",
+>>>>>>> main
         "mg_mb": "",
         "pd_mb": ""
       }
@@ -186,12 +202,94 @@
         "mg_mb": "50px,,,,",
         "pd_mb": ",,,,"
       }
+<<<<<<< HEAD
+=======
+    },
+    "16504062152cf6b956": {
+      "type": "image_text_overlay",
+      "blocks": {
+        "1650406215d1157c8d-0": {
+          "type": "1",
+          "settings": {
+            "title": "“Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos.”",
+            "color": "#ffffff",
+            "fw_text": 400,
+            "fs_text": 24,
+            "lh_text": 35,
+            "ls_text": 0,
+            "fs_mb_text": 15,
+            "lh_mb_text": 0,
+            "ls_mb_text": 0,
+            "mg_bot_text": 0
+          }
+        },
+        "1650406215d1157c8d-1": {
+          "type": "6",
+          "settings": {
+            "sp": 25,
+            "sp_mb": 20
+          }
+        },
+        "1650406215d1157c8d-2": {
+          "type": "2",
+          "settings": {
+            "font": "f__libre",
+            "title": "AUTHOR TITLE",
+            "color": "#ffffff",
+            "fw_text": 400,
+            "fs_text": 14,
+            "lh_text": 0,
+            "ls_text": 0,
+            "fs_mb_text": 14,
+            "lh_mb_text": 0,
+            "ls_mb_text": 0,
+            "hide": false
+          }
+        }
+      },
+      "block_order": [
+        "1650406215d1157c8d-0",
+        "1650406215d1157c8d-1",
+        "1650406215d1157c8d-2"
+      ],
+      "settings": {
+        "se_height": "cus_h",
+        "use_custom_h": "1",
+        "h_des": "400px",
+        "h_tb": "400px",
+        "h_mb": "350px",
+        "image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-21_at_8.40.59_AM.png",
+        "use_pr": true,
+        "img_align": "bottom",
+        "caption_w": "2",
+        "cap_v_pos": 50,
+        "cap_h_pos": 50,
+        "txt_align": "tc_md",
+        "cap_v_pos_mb": 50,
+        "cap_h_pos_mb": 50,
+        "txt_align_mb": "tc",
+        "cl_overlay": "#000000",
+        "cl_opacity": 0,
+        "layout": "nt_full",
+        "mg": "50px,,50px,",
+        "pd": "50px,,,",
+        "mg_mb": "",
+        "pd_mb": ",,,,",
+        "pd_text": 100
+      }
+>>>>>>> main
     }
   },
   "order": [
     "heading",
     "main",
+<<<<<<< HEAD
     "sk-sessions-description-section",
     "sk-session-group-grid"
+=======
+    "sk-session-group-img-text",
+    "sk-session-group-grid",
+    "16504062152cf6b956"
+>>>>>>> main
   ]
 }
