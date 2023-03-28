@@ -45,34 +45,10 @@
         "img_position": "1",
         "image_ratio": "auto",
         "text_size2": "30,14",
-        "title": "session write-up title goes here",
-        "sub_text": "Subtitle lead line goes here to draw people in, maybe a full sentence here.",
-        "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos.<br>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est",
+        "title": "About Sendero Sessions: The Desert Tapes",
+        "sub_text": "",
+        "text": "The Desert Tapes is a series of single take sessions filmed out in the shadow of the Sierra Nevada down in the Mojave Desert. We headed out into the most desolate place we could, with no electricity, no water, and no people. All to bring 5 awesome artists together to play some sweet tunes you can groove to.",
         "txt_align": "tl",
-        "layout": "nt_full",
-        "mg": "50px,,50px,",
-        "pd": "50px,,,",
-        "mg_mb": "",
-        "pd_mb": ""
-      }
-    },
-    "1650396460acf24e79": {
-      "type": "hero_video",
-      "settings": {
-        "source": "1",
-        "video_url": "https:\/\/youtu.be\/-2icZZ9tbwc",
-        "btn_link": "#",
-        "se_height": "cus_h",
-        "use_custom_h": "1",
-        "h_des": "400px",
-        "h_tb": "400px",
-        "h_mb": "350px",
-        "caption_w": "2",
-        "cap_v_pos": 50,
-        "cap_h_pos": 50,
-        "txt_align": "tc",
-        "cl_overlay": "#000000",
-        "cl_opacity": 0,
         "layout": "nt_full",
         "mg": "50px,,50px,",
         "pd": "50px,,,",
@@ -186,7 +162,8 @@
             "ls_text": 0,
             "fs_mb_text": 15,
             "lh_mb_text": 0,
-            "ls_mb_text": 0
+            "ls_mb_text": 0,
+            "mg_bot_text": 0
           }
         },
         "1650406215d1157c8d-1": {
@@ -249,7 +226,6 @@
     "heading",
     "main",
     "sk-session-group-img-text",
-    "1650396460acf24e79",
     "sk-session-group-grid",
     "16504062152cf6b956"
   ]
