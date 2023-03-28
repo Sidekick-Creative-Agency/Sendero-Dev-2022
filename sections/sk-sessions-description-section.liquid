@@ -1,0 +1,220 @@
+{%- liquid
+  assign sid = section.id
+  assign se_stts = section.settings
+  assign section_blocks = section.blocks
+
+ if se_stts.cl_txt == 'dark' 
+  assign cl_txt = 'cd,cg' 
+ else 
+  assign cl_txt = 'cw,cw,button-o-w' 
+ endif 
+ assign cl_arr = cl_txt | split:","
+ 
+ -%}
+
+<div class="nt_se_{{sid}} {{se_stts.layout}} txt_shadow_{{se_stts.use_shadow}}" style="margin: {{se_stts.mg}}; padding: 0">
+  <div class="row no-gutters equal_nt al_center">
+    <div class="col-12 col-md-6 txt_col_img mg__0">
+      <div class="flex column pr__50 shadow_wrap {{se_stts.txt_align}} {{cl_arr[1]}} indiv-product-text-right">
+        <h2 class="mb__20 mt__0 {{cl_arr[0]}}" style="font-size: {{se_stts.header_text_size}}px; line-height: {{se_stts.header_line_height}}px">{{se_stts.title}}</h2>
+        {{se_stts.sessions_des}}
+      </div>
+    </div>
+    {%- if section_blocks != null -%}
+    <div class="col-12 col-md-6 sk-session-des-img-container pr">
+        <div class="nt_cats_holder row fl_center equal_nt nt_slider js_carousel prev_next_1 btn_owl_2 cat_space_0 btn_vi_1" data-flickityt4s-js='{"imagesLoaded": false, "adaptiveHeight": false, "contain": false, "groupCells": "100%", "dragThreshold" : 5, "cellAlign": "left","wrapAround": false,"prevNextButtons": true,"percentPosition": true, "autoPlay" : {{ 6 | times: 1000 }}, "pauseAutoPlayOnHover" : true, "rightToLeft": {{settings.use_rtl}} }'>
+          {%- for block in section_blocks %}
+          <div class="cat_grid_item__overlay item__position nt_bg_lz lazyloadt4s" data-bgset="{{ block.settings.sessions_indiv_image | img_url: '1x1' }}" data-ratio="{{block.settings.sessions_indiv_image.aspect_ratio}}" data-sizes="auto" data-parent-fit="width" style="padding-bottom: 100%"></div>
+        {%endfor  %}
+        </div>
+      </div>
+    </div>
+    {%- endif -%}
+  </div>
+</div>
+
+
+
+ 
+    <style>
+      .nt_se_{{sid}} .txt_col_img p {
+        font-size: {{se_stts.para_text_size}}px;
+        line-height: {{se_stts.para_line_height}}px;
+      }
+      </style>
+
+{%- render 'section_css' -%}
+
+{%- schema -%}
+  {
+    "name": "SK Sessions Description",
+    "settings": [
+      {
+        "type": "header",
+        "content": "== Text Settings"
+      },
+      {
+        "type": "range",
+        "id": "header_text_size",
+        "label": "Header Text Size",
+        "default": 28,
+        "min": 16,
+        "max": 64,
+        "step": 1
+      },
+      {
+        "type": "range",
+        "id": "header_line_height",
+        "label": "Header Line Height",
+        "default": 28,
+        "min": 0,
+        "max": 100,
+        "step": 1
+      },
+      {
+        "type": "range",
+        "id": "para_text_size",
+        "label": "Paragraph Text Size",
+        "default": 18,
+        "min": 16,
+        "max": 48,
+        "step": 1
+      },
+      {
+        "type": "range",
+        "id": "para_line_height",
+        "label": "Paragraph Line Height",
+        "default": 18,
+        "min": 0,
+        "max": 100,
+        "step": 1
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "About Sendero Sessions"
+      },
+      {
+        "type": "richtext",
+        "id": "sessions_des",
+        "label": "Text",
+        "default": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>"
+      },
+      {
+       "type": "select",
+       "id": "txt_align",
+       "options": [
+        {
+           "value": "tl",
+           "label": "Left"
+         },
+         {
+           "value": "tc",
+           "label": "Center"
+         },
+         {
+           "value": "tr",
+           "label": "Right"
+         }
+       ],
+       "label": "Text alignment",
+       "default": "tc"
+      },
+      {
+        "type": "header",
+        "content": "== Color"
+      },
+      {
+        "type": "checkbox",
+        "id": "use_shadow",
+        "label": "Use text shadow?",
+        "default": false
+      },
+      {
+        "type": "select",
+        "id": "cl_txt",
+        "options": [
+         {
+            "value": "dark",
+            "label": "Dark"
+         },
+         {
+            "value": "light",
+            "label": "Light"
+          }
+        ],
+        "label": "Text"
+      },
+      {
+        "type": "header",
+        "content": "== Design Options"
+      },
+      {
+        "type": "select",
+        "id": "layout",
+        "options": [
+         {
+            "value": "container",
+            "label": "Container"
+         },
+         {
+            "value": "nt_full",
+            "label": "Full Width"
+          }
+        ],
+        "label": "Layout"
+      },
+      {
+        "type": "text",
+        "id": "mg",
+        "label": "Margin",
+        "info":"Margin top, margin right, margin bottom, margin left. If you not use to blank",
+        "default": "50px,,50px,",
+        "placeholder": "50px,,50px,"
+      },
+      {
+        "type": "text",
+        "id": "pd",
+        "label": "Padding",
+        "info":"Padding top, padding right, padding bottom, padding left. If you not use to blank",
+        "placeholder": "50px,,50px,"
+      },
+     {
+        "type": "header",
+        "content": "== Design Mobile Options"
+      },
+      {
+        "type": "text",
+        "id": "mg_mb",
+        "label": "Margin",
+        "placeholder": "50px,,50px,"
+      },
+      {
+        "type": "text",
+        "id": "pd_mb",
+        "label": "Padding",
+        "placeholder": "50px,,50px,"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "sessions-image",
+        "name": "Sessions Image",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "sessions_indiv_image",
+            "label": "Sendero Sessions Image"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Sk Sessions Description",
+        "category": "III. Image"
+      }
+    ]
+  }
+{% endschema %}
