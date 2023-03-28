@@ -22,12 +22,12 @@
         "e8d6c4cd-d55a-4ca5-9afe-629c7d6803ad"
       ],
       "settings": {
-        "title": "Locations",
+        "title": "Retailers",
         "button": false,
         "btn_text": "Click Me",
         "button_align": "center",
         "btn_background": "black",
-        "image": "shopify:\/\/shop_images\/161218716_2545082962452411_5753525780345998495_n.jpg",
+        "image": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-5906.jpg",
         "parallax": true,
         "color": "#000000",
         "overlay": 36,
@@ -44,34 +44,11 @@
       "settings": {
       }
     },
-    "rich-text-columns-locations": {
-      "type": "rich-text-columns-locations",
+    "fa316e7a-a2b8-4398-aaf4-4a17bdf1009e": {
+      "type": "custom_html",
       "settings": {
-        "main_title": "Locations",
-        "header_align": "center",
-        "title1": "Store Location",
-        "title2": "Store Location",
-        "title3": "Store Location",
-        "title4": "Store Location",
-        "title5": "Store Location",
-        "title6": "Store Location",
-        "sub_text1": "Address Line 1 <br>\nAddress Line 2",
-        "sub_text2": "Address Line 1 <br>\nAddress Line 2",
-        "sub_text3": "Address Line 1 <br>\nAddress Line 2",
-        "sub_text4": "Address Line 1 <br>\nAddress Line 2",
-        "sub_text5": "Address Line 1 <br>\nAddress Line 2",
-        "sub_text6": "Address Line 1 <br>\nAddress Line 2",
-        "col_num": "2",
-        "show_ckmk": false,
-        "show_btn": false,
-        "btn_text": "Click Me",
-        "button_align": "center",
-        "sub_font": "2",
-        "style_title": "title_1",
-        "ic_tt": "gem",
-        "show_clpr": false,
-        "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-        "align": "tl",
+        "code": "<h2 style=\"text-align: center; margin-bottom: 32px\">Dealer Locator<\/h2>\n<div id=\"storepoint-container\" data-map-id=\"16421b05043768\"><\/div><script>(function(){var a=document.createElement(\"script\");a.type=\"text\/javascript\";a.async=!0;a.src=\"https:\/\/cdn.storepoint.co\/api\/v1\/js\/16421b05043768.js\";var b=document.getElementsByTagName(\"script\")[0];b.parentNode.insertBefore(a,b);}());<\/script>",
+        "css": "",
         "layout": "container",
         "mg": "50px,,50px,",
         "pd": "",
@@ -83,6 +60,6 @@
   "order": [
     "heading",
     "main",
-    "rich-text-columns-locations"
+    "fa316e7a-a2b8-4398-aaf4-4a17bdf1009e"
   ]
 }
