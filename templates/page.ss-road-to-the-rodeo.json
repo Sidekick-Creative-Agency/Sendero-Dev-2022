@@ -14,12 +14,12 @@
         "89b1a94e-2cf5-4075-a6af-0969fbaeae2c"
       ],
       "settings": {
-        "title": "HQ Sessions",
+        "title": "Road To The Rodeo",
         "button": false,
         "btn_text": "Click Me",
         "button_align": "center",
         "btn_background": "black",
-        "image": "shopify:\/\/shop_images\/Interview_V3.00_00_02_01.Still004.jpg",
+        "image": "shopify:\/\/shop_images\/RIP_-_6-6.00_17_22_06.Still004_1.jpg",
         "parallax": true,
         "color": "#000000",
         "overlay": 45,
@@ -42,48 +42,34 @@
         "da5df651-4851-4643-84ba-04d98784ce56": {
           "type": "sessions-image",
           "settings": {
-            "sessions_indiv_image": "shopify:\/\/shop_images\/Interview_V3.00_09_54_03.Still001.jpg"
-          }
-        },
-        "7ab5f316-c92b-4cb3-a557-9659ed7fa02e": {
-          "type": "sessions-image",
-          "settings": {
-            "sessions_indiv_image": "shopify:\/\/shop_images\/Music_Video_-_V1.00_13_20_17.Still004.jpg"
+            "sessions_indiv_image": "shopify:\/\/shop_images\/RIP_-_7-7.00_14_48_09.Still007_1.jpg"
           }
         },
         "3d7931ee-1bee-47da-8229-fe3e80249af7": {
           "type": "sessions-image",
           "settings": {
-            "sessions_indiv_image": "shopify:\/\/shop_images\/Music_Video_V1.00_12_53_16.Still005.jpg"
+            "sessions_indiv_image": "shopify:\/\/shop_images\/RIP_-_6-6.00_19_25_11.Still010_1.jpg"
           }
         },
-        "942d0c29-b340-424d-9ae9-2d7df06ba587": {
+        "7ab5f316-c92b-4cb3-a557-9659ed7fa02e": {
           "type": "sessions-image",
           "settings": {
-            "sessions_indiv_image": "shopify:\/\/shop_images\/Music_Video_V1.00_00_58_02.Still009.jpg"
-          }
-        },
-        "54caa222-06e6-470e-a711-8bd51de2b322": {
-          "type": "sessions-image",
-          "settings": {
-            "sessions_indiv_image": "shopify:\/\/shop_images\/SSVT_Brody_Price-5400.jpg"
+            "sessions_indiv_image": "shopify:\/\/shop_images\/RIP_-_7-7.00_16_05_00.Still002_1.jpg"
           }
         }
       },
       "block_order": [
         "da5df651-4851-4643-84ba-04d98784ce56",
-        "7ab5f316-c92b-4cb3-a557-9659ed7fa02e",
         "3d7931ee-1bee-47da-8229-fe3e80249af7",
-        "942d0c29-b340-424d-9ae9-2d7df06ba587",
-        "54caa222-06e6-470e-a711-8bd51de2b322"
+        "7ab5f316-c92b-4cb3-a557-9659ed7fa02e"
       ],
       "settings": {
         "header_text_size": 28,
         "header_line_height": 32,
         "para_text_size": 18,
         "para_line_height": 24,
-        "title": "About Sendero Sessions: HQ",
-        "sessions_des": "<p>Sendero Sessions is a single take jam sesh from some of our favorite artists and amigos, scrapping together a set from what we can find around our old warehouse in Waco, Texas. Whether we’re packing them in the back of our Vanagon, propped on the tailgate of our old 4Runner, or chillin’ on a couch in the rafters. The HQ sessions are just how we like a good hangout: a little messy, filled with good tunes, and with a few beers on the other side of the lens.<\/p>",
+        "title": "About Sendero Sessions: Road to the Rodeo",
+        "sessions_des": "<p>The Road To The Rodeo, presented by Lone Star Beer and Sendero Provisions Co, is Sendero Session series featuring rising country music stars - Shane Smith And The Saints. The series follows Shane and the fellas on tour across America, and the Road To The Rodeo will feature some new songs and old favorites. <\/p>",
         "txt_align": "tl",
         "use_shadow": false,
         "cl_txt": "dark",
@@ -99,34 +85,34 @@
       "settings": {
         "heading": "Session Videos",
         "source1": "1",
-        "video_url1": "https:\/\/youtu.be\/g6aVTYsh1PA",
-        "grid_link1": "https:\/\/youtube.com\/embed\/g6aVTYsh1PA",
-        "artist_name1": "Thomas Csorba",
-        "song_name1": "Jericho",
+        "video_url1": "https:\/\/youtu.be\/5HHDmQmoUOY",
+        "grid_link1": "https:\/\/youtube.com\/embed\/5HHDmQmoUOY",
+        "artist_name1": "Shane Smith & The Saints",
+        "song_name1": "All I See Is You",
         "source2": "1",
-        "video_url2": "https:\/\/youtu.be\/wvW9Gl74nuU",
-        "grid_link2": "https:\/\/youtube.com\/embed\/wvW9Gl74nuU",
-        "artist_name2": "Dylan Washington",
-        "song_name2": "Biscuits & Honey",
+        "video_url2": "https:\/\/youtu.be\/KFVLNG4Yy5Q",
+        "grid_link2": "https:\/\/youtube.com\/embed\/KFVLNG4Yy5Q",
+        "artist_name2": "Shane Smith & The Saints",
+        "song_name2": "Fire In The Ocean",
         "source3": "1",
         "video_url3": "https:\/\/youtu.be\/obb0YPtSxnU",
         "grid_link3": "https:\/\/youtube.com\/embed\/obb0YPtSxnU",
-        "artist_name3": "John Baumann",
+        "artist_name3": "Shane Smith & The Saints",
         "song_name3": "Here I Come",
         "source4": "1",
         "video_url4": "https:\/\/youtu.be\/46YlAu5-0So",
         "grid_link4": "https:\/\/youtube.com\/embed\/46YlAu5-0So",
-        "artist_name4": "Sylvie",
+        "artist_name4": "Shane Smith & The Saints",
         "song_name4": "Wild World",
         "source5": "1",
         "video_url5": "https:\/\/youtu.be\/R2i6HF_kp7A",
         "grid_link5": "https:\/\/youtube.com\/embed\/R2i6HF_kp7A",
-        "artist_name5": "Brody Price & The Tasteful Nudes",
+        "artist_name5": "Shane Smith & The Saints",
         "song_name5": "Daddy Lessons",
         "source6": "1",
         "video_url6": "https:\/\/youtu.be\/dTXJkHPr9uM",
         "grid_link6": "https:\/\/youtube.com\/embed\/dTXJkHPr9uM",
-        "artist_name6": "River Tramps",
+        "artist_name6": "Shane Smith & The Saints",
         "song_name6": "Mare and the Maiden",
         "source7": "1",
         "video_url7": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",

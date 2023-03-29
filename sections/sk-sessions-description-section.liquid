@@ -11,12 +11,12 @@
  assign cl_arr = cl_txt | split:","
  
  -%}
-
-<div class="nt_se_{{sid}} {{se_stts.layout}} txt_shadow_{{se_stts.use_shadow}}" style="margin: {{se_stts.mg}}; padding: 0">
+ {%- assign arr_mg = se_stts.mg | remove:' ' | split:',' -%}
+<div class="nt_se_{{sid}} {{se_stts.layout}} txt_shadow_{{se_stts.use_shadow}}" style="margin: {{arr_mg[0]}} {{arr_mg[1]}} {{arr_mg[2]}} {{arr_mg[3]}}">
   <div class="row no-gutters equal_nt al_center">
     <div class="col-12 col-md-6 txt_col_img mg__0">
       <div class="flex column pr__50 shadow_wrap {{se_stts.txt_align}} {{cl_arr[1]}} indiv-product-text-right">
-        <h2 class="mb__20 mt__0 {{cl_arr[0]}}" style="font-size: {{se_stts.header_text_size}}px; line-height: {{se_stts.header_line_height}}px">{{se_stts.title}}</h2>
+        <h2 class="mb__20 mt__0" style="font-size: {{se_stts.header_text_size}}px; line-height: {{se_stts.header_line_height}}px">{{se_stts.title}}</h2>
         {{se_stts.sessions_des}}
       </div>
     </div>
@@ -37,7 +37,7 @@
 
  
     <style>
-      .nt_se_{{sid}} .txt_col_img p {
+      .nt_se_{{sid}} .indiv-product-text-right p {
         font-size: {{se_stts.para_text_size}}px;
         line-height: {{se_stts.para_line_height}}px;
       }
@@ -66,7 +66,7 @@
         "type": "range",
         "id": "header_line_height",
         "label": "Header Line Height",
-        "default": 28,
+        "default": 32,
         "min": 0,
         "max": 100,
         "step": 1
@@ -84,7 +84,7 @@
         "type": "range",
         "id": "para_line_height",
         "label": "Paragraph Line Height",
-        "default": 18,
+        "default": 24,
         "min": 0,
         "max": 100,
         "step": 1
@@ -178,7 +178,7 @@
         "id": "pd",
         "label": "Padding",
         "info":"Padding top, padding right, padding bottom, padding left. If you not use to blank",
-        "placeholder": "50px,,50px,"
+        "placeholder": ",,,50px,"
       },
      {
         "type": "header",
