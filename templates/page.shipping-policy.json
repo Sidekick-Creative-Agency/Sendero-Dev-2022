@@ -1,0 +1,123 @@
+{
+  "sections": {
+    "blog-heading": {
+      "type": "blog-heading",
+      "blocks": {
+        "c32e1213-b35d-4cab-a4dc-b59deef433e3": {
+          "type": "1",
+          "settings": {
+            "color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "c32e1213-b35d-4cab-a4dc-b59deef433e3"
+      ],
+      "settings": {
+        "shown": true,
+        "page_title": "Shipping Policy",
+        "image": "shopify:\/\/shop_images\/Copy_of_2021-10-11_-_Fall_Browns_with_El_Cap-7323.jpg",
+        "parallax": true,
+        "color": "#000000",
+        "overlay": 45,
+        "padding": 250,
+        "paddingmb": 200,
+        "bg_pos": "center center",
+        "bg_repeat": "no-repeat",
+        "bg_size": "cover",
+        "bg_att": "scroll"
+      }
+    },
+    "ce1bf715-9fad-48f3-b878-b508e07c511d": {
+      "type": "rich_text",
+      "settings": {
+        "title": "Shipping",
+        "sub_title": "",
+        "show_btn": false,
+        "btn_text": "Click Me",
+        "button_align": "left",
+        "btn_link": "#",
+        "sub_font": "2",
+        "header_align": "center",
+        "style_title": "title_1",
+        "ic_tt": "gem",
+        "show_clpr": false,
+        "content": "<h4><strong>General<\/strong><\/h4><ul><li>Orders typically ship within 1-2 business days<\/li><li>To keep your shipping costs down and reduce our impact on the environment, we ship orders whole when they are ready. If you ordered multiple items, they will all ship together when the entire order is ready<\/li><li>All transit times listed are estimates and not guaranteed. If you need your order to arrive by a certain date - please reach out to our customer service team at <a href=\"mailto:contact@senderopc.com\"><span style=\"text-decoration:underline\">contact@senderopc.com<\/span><\/a> so that we can share options and help make that happen for you.<\/li><\/ul><p><\/p>",
+        "align": "tl",
+        "list_mg_left": 16,
+        "list_mg_top": 8,
+        "ul_marker": true,
+        "layout": "container",
+        "mg": "50px,,25px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    },
+    "5b1321a9-0c73-4ef3-9e31-d852c3845cc4": {
+      "type": "rich_text",
+      "settings": {
+        "title": "",
+        "sub_title": "",
+        "show_btn": false,
+        "btn_text": "Click Me",
+        "button_align": "left",
+        "btn_link": "#",
+        "sub_font": "2",
+        "header_align": "center",
+        "style_title": "title_1",
+        "ic_tt": "gem",
+        "show_clpr": false,
+        "content": "<h4><strong>Tracking<\/strong><\/h4><ul><li>You'll get an email with tracking information when your order ships, and another email when your order has been delivered<\/li><li>Orders sent via 'Pony Express' (stickers and patches only) will get emails that the order has been sent, but the USPS does not provide tracking for Letter Mail<\/li><\/ul>",
+        "align": "tl",
+        "list_mg_left": 16,
+        "list_mg_top": 8,
+        "ul_marker": true,
+        "layout": "container",
+        "mg": "0px,,25px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    },
+    "b5e0a140-10b8-4843-a2ac-c552ceb09094": {
+      "type": "rich_text",
+      "settings": {
+        "title": "",
+        "sub_title": "",
+        "show_btn": false,
+        "btn_text": "Click Me",
+        "button_align": "left",
+        "btn_link": "#",
+        "sub_font": "2",
+        "header_align": "center",
+        "style_title": "title_1",
+        "ic_tt": "gem",
+        "show_clpr": false,
+        "content": "<h4><strong>Packaging<\/strong><\/h4><ul><li>Orders with hats will ship in a plain cardboard box with a shipping label<\/li><li>Up to 5 shirts will ship in a poly mailer bag. Larger shirt orders will ship in a box.<\/li><li>Stickers and Patches can ship via Pony Express in an envelope with a stamp (no tracking), or can ship in a protective bubble mailer via USPS or UPS.<\/li><li>Pins and Bandanas will ship in a protective bubble mailer<\/li><\/ul>",
+        "align": "tl",
+        "list_mg_left": 16,
+        "list_mg_top": 8,
+        "ul_marker": true,
+        "layout": "container",
+        "mg": "0px,,50px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "blog-heading",
+    "ce1bf715-9fad-48f3-b878-b508e07c511d",
+    "5b1321a9-0c73-4ef3-9e31-d852c3845cc4",
+    "b5e0a140-10b8-4843-a2ac-c552ceb09094",
+    "main"
+  ]
+}

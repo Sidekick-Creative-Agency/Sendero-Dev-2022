@@ -29,7 +29,10 @@
     flex-wrap: nowrap;
     gap: 16px;
 }
-
+.header__mid .container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
 /*---------------- Logo & Icon Spacing -------------------*/
 
 .branding img {
@@ -531,7 +534,9 @@
     margin-right: auto;
     margin-left: auto;
 }
-
+.footer__top_wrap aside {
+    padding-right: 64px;
+}
 
 @media (min-width: 1430px) {
     .footer__top_wrap .container, .footer__middle_wrap .container {
@@ -545,7 +550,7 @@
 }
 @media screen and (max-width: 767px) {
     .footer__top_wrap aside {
-        padding-right: 80px;
+        padding-right: 32px;
         border-right: 1px solid #dfdfdf;
     }
 }
@@ -1038,7 +1043,8 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     position: absolute;
     display: flex;
     flex-direction: column;
-    place-content: center;
+    justify-content: center;
+    align-items: center;
     gap: 8px;
     background-color: rgba(0,0,0,.3);
     z-index: 2;
@@ -1046,16 +1052,12 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     left: 0;
     overflow: hidden;
 }
-.sendero-session-title {
+.sendero-session-title, .sk-session-group-sub-title {
     text-align: center;
     color: white;
-    z-index: 300;
+    z-index: 1;
+    position: relative;
 }
-.sendero-session-sub-title {
-     text-align: center;
-     color: white;
-     z-index: 300;
- }
  .sendero-sessions-rich-text {
      max-width: 1100px;
  }
@@ -1402,6 +1404,15 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     transform: none;
     visibility: visible;
     opacity: 1;
+}
+.quick-links-popup-content h1, .quick-links-popup-content h2, .quick-links-popup-content h3 {
+    margin-bottom: 32px;
+}
+.quick-links-popup-content h4, .quick-links-popup-content h5, .quick-links-popup-content h6 {
+    margin-bottom: 8px;
+}
+.quick-links-popup-content p {
+    margin-bottom: 16px;
 }
 .noscroll {
     overflow: hidden !important;
@@ -2447,15 +2458,6 @@ a.prev.page-numbers {
     left: -175%;
     max-width: none;
     pointer-events: none;
-}
-.sk-session-group-sub-title {
-    left: 0;
-    right: 0;
-    top: 55%;
-     text-align: center;
-     color: white;
-     z-index: 300;
-     position: absolute;
 }
 .image-text-quote {
     /* padding: 0 50px !important; */

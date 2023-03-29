@@ -10,6 +10,22 @@
     {%- endif -%}
 </div>
 
+<style>
+  .nt_se_{{section.id}} ul, .nt_se_{{section.id}} ol {
+    margin-left: {{section.settings.list_mg_left}}px;
+    margin-top: {{section.settings.list_mg_top}}px;
+  }
+  {% if section.settings.ul_marker %}
+  .nt_se_{{section.id}} ul {
+    list-style-type: none;
+  }
+  .nt_se_{{section.id}} ul li::before {
+    content: "–";
+    margin-right: 8px;
+  }
+  {% endif %}
+</style>
+
 {%- render 'section_css' -%}
 {%- schema -%}
   {
@@ -206,6 +222,32 @@
         ],
         "label": "Text Align"
       },
+     {
+      "type": "range",
+      "id": "list_mg_left",
+      "label": "List Indent",
+      "unit": "px",
+      "min": 0,
+      "max": 32,
+      "step": 1,
+      "default": 0
+     },
+     {
+      "type": "range",
+      "id": "list_mg_top",
+      "label": "List Margin Top",
+      "unit": "px",
+      "min": 0,
+      "max": 32,
+      "step": 1,
+      "default": 0
+     },
+    {
+      "type": "checkbox",
+      "id": "ul_marker",
+      "label": "Do you want to use a dash instead of a dot for unordered lists?",
+      "default": true
+    },
       {
         "type": "header",
         "content": "== Design Options"

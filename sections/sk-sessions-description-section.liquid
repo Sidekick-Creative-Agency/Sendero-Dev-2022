@@ -12,7 +12,7 @@
  
  -%}
  {%- assign arr_mg = se_stts.mg | remove:' ' | split:',' -%}
-<div class="nt_se_{{sid}} {{se_stts.layout}} txt_shadow_{{se_stts.use_shadow}}" style="margin: {{arr_mg[0]}} {{arr_mg[1]}} {{arr_mg[2]}} {{arr_mg[3]}}">
+<div class="{{sid}} {{se_stts.layout}} txt_shadow_{{se_stts.use_shadow}}" style="margin: 0{{arr_mg[0]}} 0{{arr_mg[1]}} 0{{arr_mg[2]}} 0{{arr_mg[3]}}">
   <div class="row no-gutters equal_nt al_center">
     <div class="col-12 col-md-6 txt_col_img mg__0">
       <div class="flex column pr__50 shadow_wrap {{se_stts.txt_align}} {{cl_arr[1]}} indiv-product-text-right">
@@ -35,14 +35,19 @@
 
 
 
- 
+{%- assign arr_mg_mb = se_stts.mg_mb | remove:' ' | split:',' -%}
     <style>
-      .nt_se_{{sid}} .indiv-product-text-right p {
+      .{{sid}} .indiv-product-text-right p {
         font-size: {{se_stts.para_text_size}}px;
         line-height: {{se_stts.para_line_height}}px;
       }
+      @media screen and (max-width: 767px) {
+        .{{sid}} {
+          margin: 0{{arr_mg_mb[0]}} 0{{arr_mg_mb[1]}} 0{{arr_mg_mb[2]}} 0{{arr_mg_mb[3]}} !important;
+        }
+      }
+      
       </style>
-
 {%- render 'section_css' -%}
 
 {%- schema -%}

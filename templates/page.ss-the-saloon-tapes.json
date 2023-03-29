@@ -33,6 +33,7 @@
     },
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
       }
     },
@@ -90,7 +91,7 @@
         "layout": "container",
         "mg": "50px,,50px,",
         "pd": "",
-        "mg_mb": "",
+        "mg_mb": ",,,,",
         "pd_mb": ""
       }
     },
@@ -98,6 +99,7 @@
       "type": "sk-session-group-grid",
       "settings": {
         "heading": "Session Videos",
+        "heading_mg_bot": 32,
         "source1": "1",
         "video_url1": "https:\/\/youtu.be\/HmNWXE_hjTI",
         "grid_link1": "https:\/\/youtube.com\/embed\/HmNWXE_hjTI",
@@ -150,9 +152,9 @@
         "image_size": "nt_cover",
         "image_position": "8",
         "layout": "nt_full",
-        "mg": "50px, auto, 50px, auto",
-        "pd": "0px,,,",
-        "mg_mb": ",,,,",
+        "mg": "100px,,50px,",
+        "pd": "",
+        "mg_mb": "100px,,50px,",
         "pd_mb": ",,,,"
       }
     }

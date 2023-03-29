@@ -14,12 +14,12 @@
         "89b1a94e-2cf5-4075-a6af-0969fbaeae2c"
       ],
       "settings": {
-        "title": "Road To The Rodeo",
+        "title": "Cosmic Rodeo",
         "button": false,
         "btn_text": "Click Me",
         "button_align": "center",
         "btn_background": "black",
-        "image": "shopify:\/\/shop_images\/RIP_-_6-6.00_17_22_06.Still004_1.jpg",
+        "image": "shopify:\/\/shop_images\/MCLQ-00032.jpg",
         "parallax": true,
         "color": "#000000",
         "overlay": 45,
@@ -33,6 +33,7 @@
     },
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
       }
     },
@@ -42,41 +43,55 @@
         "da5df651-4851-4643-84ba-04d98784ce56": {
           "type": "sessions-image",
           "settings": {
-            "sessions_indiv_image": "shopify:\/\/shop_images\/RIP_-_7-7.00_14_48_09.Still007_1.jpg"
+            "sessions_indiv_image": "shopify:\/\/shop_images\/MCLQ-00233.jpg"
           }
         },
         "3d7931ee-1bee-47da-8229-fe3e80249af7": {
           "type": "sessions-image",
           "settings": {
-            "sessions_indiv_image": "shopify:\/\/shop_images\/RIP_-_6-6.00_19_25_11.Still010_1.jpg"
+            "sessions_indiv_image": "shopify:\/\/shop_images\/MCLQ-7300522.jpg"
+          }
+        },
+        "c487e497-abf6-4b2b-ae43-e2266f297eff": {
+          "type": "sessions-image",
+          "settings": {
+            "sessions_indiv_image": "shopify:\/\/shop_images\/MCLQ-00004.jpg"
           }
         },
         "7ab5f316-c92b-4cb3-a557-9659ed7fa02e": {
           "type": "sessions-image",
           "settings": {
-            "sessions_indiv_image": "shopify:\/\/shop_images\/RIP_-_7-7.00_16_05_00.Still002_1.jpg"
+            "sessions_indiv_image": "shopify:\/\/shop_images\/MCLQ-7300525.jpg"
+          }
+        },
+        "86d9ea87-4eef-457a-a5f1-58f12d8dc389": {
+          "type": "sessions-image",
+          "settings": {
+            "sessions_indiv_image": "shopify:\/\/shop_images\/MCLQ-00208.jpg"
           }
         }
       },
       "block_order": [
         "da5df651-4851-4643-84ba-04d98784ce56",
         "3d7931ee-1bee-47da-8229-fe3e80249af7",
-        "7ab5f316-c92b-4cb3-a557-9659ed7fa02e"
+        "c487e497-abf6-4b2b-ae43-e2266f297eff",
+        "7ab5f316-c92b-4cb3-a557-9659ed7fa02e",
+        "86d9ea87-4eef-457a-a5f1-58f12d8dc389"
       ],
       "settings": {
         "header_text_size": 28,
         "header_line_height": 32,
         "para_text_size": 18,
         "para_line_height": 24,
-        "title": "About Sendero Sessions: Road to the Rodeo",
-        "sessions_des": "<p>The Road To The Rodeo, presented by Lone Star Beer and Sendero Provisions Co, is Sendero Session series featuring rising country music stars - Shane Smith And The Saints. The series follows Shane and the fellas on tour across America, and the Road To The Rodeo will feature some new songs and old favorites. <\/p>",
+        "title": "About Sendero Sessions: Cosmic Rodeo",
+        "sessions_des": "<p>The Cosmic Rodeo Sessions, presented by Lone Star Beer and Sendero Provisions Co, is a Sendero Session series featuring some of our good friends on the historic stage of good ol’ Luckenbach Texas. We thought of nothing better than callin’ up the amigos to join in a lineage of some of the most important names in Country Music to perform some tunes for us. <\/p>",
         "txt_align": "tl",
         "use_shadow": false,
         "cl_txt": "dark",
         "layout": "container",
         "mg": "50px,,50px,",
         "pd": "",
-        "mg_mb": "",
+        "mg_mb": "0,,,,",
         "pd_mb": ""
       }
     },
@@ -84,36 +99,37 @@
       "type": "sk-session-group-grid",
       "settings": {
         "heading": "Session Videos",
+        "heading_mg_bot": 32,
         "source1": "1",
-        "video_url1": "https:\/\/youtu.be\/5HHDmQmoUOY",
-        "grid_link1": "https:\/\/youtube.com\/embed\/5HHDmQmoUOY",
-        "artist_name1": "Shane Smith & The Saints",
-        "song_name1": "All I See Is You",
+        "video_url1": "https:\/\/youtu.be\/U-db2TFF2_s",
+        "grid_link1": "https:\/\/youtube.com\/embed\/U-db2TFF2_s",
+        "artist_name1": "Midnight River Choir",
+        "song_name1": "Call me a Fool",
         "source2": "1",
-        "video_url2": "https:\/\/youtu.be\/KFVLNG4Yy5Q",
-        "grid_link2": "https:\/\/youtube.com\/embed\/KFVLNG4Yy5Q",
-        "artist_name2": "Shane Smith & The Saints",
-        "song_name2": "Fire In The Ocean",
+        "video_url2": "https:\/\/youtu.be\/0cNM44l44Lw",
+        "grid_link2": "https:\/\/youtube.com\/embed\/0cNM44l44Lw",
+        "artist_name2": "Kathryn Legendre",
+        "song_name2": "One Long Sad Song",
         "source3": "1",
-        "video_url3": "https:\/\/youtu.be\/w41eH7EBN3k",
-        "grid_link3": "https:\/\/youtube.com\/embed\/w41eH7EBN3k",
-        "artist_name3": "Shane Smith & The Saints",
-        "song_name3": "Right Side of the Ground",
+        "video_url3": "https:\/\/youtu.be\/YvZpFilFxuI",
+        "grid_link3": "https:\/\/youtube.com\/embed\/YvZpFilFxuI",
+        "artist_name3": "Midnight River Choir",
+        "song_name3": "Horse Named Sorrow",
         "source4": "1",
-        "video_url4": "https:\/\/youtu.be\/E4e9TPE2a2E",
-        "grid_link4": "https:\/\/youtube.com\/embed\/E4e9TPE2a2E",
-        "artist_name4": "Shane Smith & The Saints",
-        "song_name4": "Hummingbird",
+        "video_url4": "https:\/\/youtu.be\/sv1oLEIuXyk",
+        "grid_link4": "https:\/\/youtube.com\/embed\/sv1oLEIuXyk",
+        "artist_name4": "Tanner Usrey",
+        "song_name4": "Pick Up Your Phone",
         "source5": "1",
-        "video_url5": "https:\/\/youtu.be\/2MDzAw-d8aw",
-        "grid_link5": "https:\/\/youtube.com\/embed\/2MDzAw-d8aw",
-        "artist_name5": "Shane Smith & The Saints",
-        "song_name5": "Hail Mary",
+        "video_url5": "https:\/\/youtu.be\/X5ik2IdSD6Q",
+        "grid_link5": "https:\/\/youtube.com\/embed\/X5ik2IdSD6Q",
+        "artist_name5": "Kathryn Legendre",
+        "song_name5": "Waiting in Line",
         "source6": "1",
-        "video_url6": "https:\/\/youtu.be\/-XAQIrgX5O8",
-        "grid_link6": "https:\/\/youtube.com\/embed\/-XAQIrgX5O8",
-        "artist_name6": "Shane Smith & The Saints",
-        "song_name6": "Quite Like You",
+        "video_url6": "https:\/\/youtu.be\/5TsQzIAZMkc",
+        "grid_link6": "https:\/\/youtube.com\/embed\/5TsQzIAZMkc",
+        "artist_name6": "Tanner Usrey",
+        "song_name6": "Make It Out Alive",
         "source7": "1",
         "video_url7": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
         "grid_link7": "#",
@@ -136,9 +152,9 @@
         "image_size": "nt_cover",
         "image_position": "8",
         "layout": "nt_full",
-        "mg": "50px, auto, 50px, auto",
+        "mg": "100px, , 50px,",
         "pd": "",
-        "mg_mb": "",
+        "mg_mb": "100px,,50px,",
         "pd_mb": ""
       }
     }

@@ -865,16 +865,11 @@
               "cl_mb": "12"
             }
           },
-          "ca7c3c3d-9f84-41a3-8d9a-a982510d03ae": {
-            "type": "mail",
+          "cc08289e-b83d-4137-ab75-c424bee71bb4": {
+            "type": "html",
             "settings": {
-              "newl_des": "3",
-              "btn_icon": false,
-              "title": "Subscribe For 15% Off",
-              "sub_title": "",
-              "source": "1",
-              "svg": "amazon_payments,american_express,apple_pay,bitcoin,dankort,diners_club,discover,dogecoin,dwolla,forbrugsforeningen,interac,google_pay,jcb,klarna,klarna-pay-later,litecoin,maestro,master,paypal,shopify_pay,sofort,visa",
-              "height": 30,
+              "title": "Subscribe for 15% Off",
+              "content": "<style>\n.klaviyo-form-RrDhF8 button {\nfont-weight: 500 !important;\n}\n<\/style>\n<div class=\"klaviyo-form-RrDhF8\"><\/div>",
               "order": "1",
               "cl": "4",
               "cl_tb": "6",
@@ -885,7 +880,7 @@
         "block_order": [
           "e397beeb-6328-4a88-b922-52d9b4407a5a",
           "dedf2f2c-de36-485a-99cb-83211a553fc6",
-          "ca7c3c3d-9f84-41a3-8d9a-a982510d03ae"
+          "cc08289e-b83d-4137-ab75-c424bee71bb4"
         ],
         "settings": {
           "sticky2": false,
