@@ -1036,27 +1036,22 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     height:100%;
     width: 100%;
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    gap: 8px;
     background-color: rgba(0,0,0,.3);
     z-index: 2;
     top: 0;
-    right: 0;
-    bottom: 0;
     left: 0;
     overflow: hidden;
 }
 .sendero-session-title {
-   left: 0;
-   right: 0;
-   top: 40%;
     text-align: center;
     color: white;
     z-index: 300;
-    position: absolute;
 }
 .sendero-session-sub-title {
-    left: 0;
-    right: 0;
-    top: 45%;
      text-align: center;
      color: white;
      z-index: 300;

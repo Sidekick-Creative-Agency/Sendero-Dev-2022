@@ -33,57 +33,43 @@
     },
     "164865439396016512": {
       "type": "sessions-slider",
+      "blocks": {
+        "feb9cd00-4197-4f78-bc08-b23df6b99e07": {
+          "type": "1",
+          "settings": {
+            "video_url": "https:\/\/youtu.be\/U-db2TFF2_s",
+            "page_link": "",
+            "video_title": "Cosmic Rodeo",
+            "video_location": "Luckenbach, TX"
+          }
+        },
+        "c2aec536-a2fd-4a24-97ab-503ec9f0a923": {
+          "type": "1",
+          "settings": {
+            "video_url": "https:\/\/youtu.be\/5HHDmQmoUOY",
+            "page_link": "",
+            "video_title": "Road to the Rodeo",
+            "video_location": "Round Rock, TX"
+          }
+        },
+        "1a3e2a52-e817-4744-bf28-6f3c56a41821": {
+          "type": "1",
+          "settings": {
+            "video_url": "https:\/\/youtu.be\/-2icZZ9tbwc",
+            "page_link": "",
+            "video_title": "The Desert Tapes",
+            "video_location": "Mojave Desert"
+          }
+        }
+      },
+      "block_order": [
+        "feb9cd00-4197-4f78-bc08-b23df6b99e07",
+        "c2aec536-a2fd-4a24-97ab-503ec9f0a923",
+        "1a3e2a52-e817-4744-bf28-6f3c56a41821"
+      ],
       "settings": {
-        "source1": "1",
-        "video_url1": "https:\/\/youtu.be\/-2icZZ9tbwc",
-        "page1": "the-desert-tapes",
-        "file_name1": "The Desert Tapes",
-        "file_sub_title1": "Mojave Desert, CA",
-        "source2": "1",
-        "video_url2": "https:\/\/youtu.be\/0lUElBN5N-I",
-        "page2": "the-mountain-tapes",
-        "file_name2": "The Mountain Tapes",
-        "file_sub_title2": "Buena Vista, CO",
-        "source3": "1",
-        "video_url3": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "page3": "",
-        "file_name3": "",
-        "file_sub_title3": "",
-        "source4": "1",
-        "video_url4": "https:\/\/youtu.be\/g6aVTYsh1PA",
-        "page4": "the-van-tapes",
-        "file_name4": "The Van Tapes",
-        "file_sub_title4": "waco, tx",
-        "source5": "1",
-        "video_url5": "https:\/\/youtu.be\/EadUYew2OGE",
-        "page5": "the-not-quite-nashville-tapes",
-        "file_name5": "The Not Quite Nashville Tapes",
-        "file_sub_title5": "Nashville, TN",
-        "source6": "1",
-        "video_url6": "https:\/\/youtu.be\/ONcnLW0bb1E",
-        "page6": "the-saloon-tapes",
-        "file_name6": "The Saloon Tapes",
-        "file_sub_title6": "Fredericksburg, TX",
-        "source7": "1",
-        "video_url7": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "page7": "",
-        "file_name7": "",
-        "file_sub_title7": "",
-        "source8": "1",
-        "video_url8": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "page8": "",
-        "file_name8": "",
-        "file_sub_title8": "",
-        "source9": "1",
-        "video_url9": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "page9": "",
-        "file_name9": "",
-        "file_sub_title9": "",
-        "source10": "1",
-        "video_url10": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "page10": "",
-        "file_name10": "",
-        "file_sub_title10": "",
+        "mg": "",
+        "pd": "",
         "mg_mb": "",
         "pd_mb": ""
       }
