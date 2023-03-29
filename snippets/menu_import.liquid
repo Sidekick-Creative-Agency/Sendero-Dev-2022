@@ -234,7 +234,7 @@
 							<div class="cat_grid_item__wrapper pe_none">
 								<div class="cat_grid_item__title h3">
 									{{ bk_stts.title | default:collection.title | default:home_t }}
-									<div class="shop-all">Shop All<i class="las la-arrow-right"></i></div>
+									<div class="shop-all" style="font-size: {{section.settings.shop_all_btn_size}}px">Shop All<i class="las la-arrow-right"></i></div>
 								</div>
 								<div class="cat_grid_item__count dn">{{collection.all_products_count}} {{pr_txt}}</div>
 							</div>
@@ -254,7 +254,7 @@
 						 	<div class="cat_grid_item__wrapper pe_none">
 								<div class="cat_grid_item__title h3">
 									{{ bk_stts.title | default:page.title | default:home_t }}
-									<div class="shop-all">View All<i class="las la-arrow-right"></i></div>
+									<div class="shop-all" style="font-size: {{section.settings.shop_all_btn_size}}px">View All<i class="las la-arrow-right"></i></div>
 								</div>
 						  	</div>
 
@@ -270,7 +270,7 @@
 						 	<div class="cat_grid_item__wrapper pe_none">
 								<div class="cat_grid_item__title h3">
 									{{ bk_stts.title | default:blog.title | default:home_t }}
-									<div class="shop-all">View All<i class="las la-arrow-right"></i></div>
+									<div class="shop-all" style="font-size: {{section.settings.shop_all_btn_size}}px">View All<i class="las la-arrow-right"></i></div>
 								</div>
 						  	</div>
 						{% endif %}
@@ -326,7 +326,7 @@
 	         <div id="bk_{{block.id}}" class="type_mn_link2 menu-item sub-column-item col-{{bk_stts.col}}">
 	         	{%- for link in llists -%}<a href="{{ link.url }}">{%- render 'tt_inc',title:link.title -%}</a>{%- endfor -%}
 	         </div>
-	      {%- when 'mmtitle' -%}<div id="bk_{{block.id}}" class="type_mn_html menu-item sub-column-item col-{{bk_stts.col}}"><a href="{{ bk_stts.url }}" target="{{bk_stts.open_link}}"><h2>{{- bk_stts.mmtitle -}}</h2><div class="shop-all">{{bk_stts.mm_btn_text}}<i class="las la-arrow-right"></i></div></a></div>
+	      {%- when 'mmtitle' -%}<div id="bk_{{block.id}}" class="type_mn_html menu-item sub-column-item col-{{bk_stts.col}}"><a href="{{ bk_stts.url }}" target="{{bk_stts.open_link}}"><h2>{{- bk_stts.mmtitle -}}</h2><div class="shop-all" style="font-size: {{section.settings.shop_all_btn_size}}px">{{bk_stts.mm_btn_text}}<i class="las la-arrow-right"></i></div></a></div>
 	      {%- else -%}<style>#item_{{bid}} .sub-menu {display: none !important}</style>
 	  {%- endcase -%}
 	{%- endfor -%}

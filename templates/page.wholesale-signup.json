@@ -1,0 +1,55 @@
+{
+  "sections": {
+    "blog-heading": {
+      "type": "blog-heading",
+      "blocks": {
+        "c32e1213-b35d-4cab-a4dc-b59deef433e3": {
+          "type": "1",
+          "settings": {
+            "color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "c32e1213-b35d-4cab-a4dc-b59deef433e3"
+      ],
+      "settings": {
+        "shown": true,
+        "page_title": "Wholesale Signup",
+        "image": "shopify:\/\/shop_images\/2021-7-23_-_FW_2021_-_Low_Res-3141.jpg",
+        "parallax": false,
+        "color": "#000000",
+        "overlay": 45,
+        "padding": 100,
+        "paddingmb": 50,
+        "bg_pos": "center center",
+        "bg_repeat": "no-repeat",
+        "bg_size": "cover",
+        "bg_att": "scroll"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "18cc3ae7-d86e-42d0-a533-736e8f4c680f": {
+      "type": "custom_html",
+      "settings": {
+        "code": "<div class=\"tc\" style=\"height: 300px\">\n<iframe src=\"https:\/\/5234121.extforms.netsuite.com\/app\/site\/crm\/externalleadpage.nl?compid=5234121&amp;formid=1&amp;h=AAFdikaIkVD4WjQp5ZgXxLWwD5iiEHgx5yiK4IfcmB7DaT2NlWw\" width=\"100%\" height=\"100%\"><\/iframe>\n<\/div>",
+        "css": "#shopify-section-[id] {background-color:transparent}",
+        "layout": "container",
+        "mg": "",
+        "pd": "50px,50px,50px,50px",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    }
+  },
+  "order": [
+    "blog-heading",
+    "main",
+    "18cc3ae7-d86e-42d0-a533-736e8f4c680f"
+  ]
+}

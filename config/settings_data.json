@@ -541,7 +541,7 @@
               "url": "",
               "open_link": "_self",
               "menu": "mens-new-site-left-column",
-              "col": "2"
+              "col": "1"
             }
           },
           "321dc9c2-00b3-46de-b52d-9b60ac580c7a": {
@@ -554,18 +554,32 @@
               "col": "2"
             }
           },
+          "0f6b55f0-194b-497d-8d7e-0377f59f3023": {
+            "type": "cat",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Men_-_Shirts.jpg",
+              "cat_design": "1",
+              "hoverz": true,
+              "collection": "mens",
+              "blog": "",
+              "page_link": "",
+              "col_link": "shirts",
+              "title": "Shirts",
+              "col": "3"
+            }
+          },
           "424acdb6-f2e8-4436-9941-b00668644353": {
             "type": "cat",
             "settings": {
-              "image": "shopify:\/\/shop_images\/2022-8-30_-_FW22_-_Banner_Images-5130.jpg",
+              "image": "shopify:\/\/shop_images\/Men_-_Shorts.jpg",
               "cat_design": "1",
               "hoverz": true,
-              "collection": "best-seller-items",
+              "collection": "shorts",
               "blog": "",
               "page_link": "",
-              "col_link": "#mens",
-              "title": "Best Sellers",
-              "col": "4"
+              "col_link": "",
+              "title": "Shorts",
+              "col": "3"
             }
           },
           "922ef6d3-2b8a-4f62-84ae-f7944a9ba720": {
@@ -602,7 +616,7 @@
               "url": "",
               "open_link": "_self",
               "menu": "womens-new-site-left-column",
-              "col": "2"
+              "col": "1"
             }
           },
           "5aedc4d9-42ea-4018-be76-632a6fa1571a": {
@@ -618,7 +632,7 @@
           "3378432e-ed42-4f8c-ab8d-0a6d7d38d8ce": {
             "type": "cat",
             "settings": {
-              "image": "shopify:\/\/shop_images\/2023-3-3-SS23-FitShots-0477_540x_71805e84-f584-4995-bc12-031b6e59641e.webp",
+              "image": "shopify:\/\/shop_images\/women_-_best_sellers.jpg",
               "cat_design": "1",
               "hoverz": true,
               "collection": "best-seller-items",
@@ -626,7 +640,21 @@
               "page_link": "",
               "col_link": "womens",
               "title": "Best Sellers",
-              "col": "4"
+              "col": "3"
+            }
+          },
+          "201da3f5-aa3c-4ef4-a95d-fc7d70c9a212": {
+            "type": "cat",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/womens_-_crop_tees.jpg",
+              "cat_design": "1",
+              "hoverz": true,
+              "collection": "crop-tee",
+              "blog": "",
+              "page_link": "",
+              "col_link": "",
+              "title": "",
+              "col": "3"
             }
           },
           "bf2d3716-63bd-4f64-99f9-2d384f8c8dd5": {
@@ -656,16 +684,6 @@
               "col": "3"
             }
           },
-          "4e5ad45b-8c9b-48d6-8ccb-93307deb91fa": {
-            "type": "link",
-            "settings": {
-              "tt_hd": "",
-              "url": "",
-              "open_link": "_self",
-              "menu": "accessories-new-site-left-column-1",
-              "col": "2"
-            }
-          },
           "d964bd86-2c5e-4cb7-8b1f-0027152aafea": {
             "type": "link",
             "settings": {
@@ -673,6 +691,16 @@
               "url": "",
               "open_link": "_self",
               "menu": "accessories-new-site-right-column",
+              "col": "1"
+            }
+          },
+          "4e5ad45b-8c9b-48d6-8ccb-93307deb91fa": {
+            "type": "link",
+            "settings": {
+              "tt_hd": "",
+              "url": "",
+              "open_link": "_self",
+              "menu": "accessories-new-site-left-column-1",
               "col": "2"
             }
           },
@@ -687,7 +715,21 @@
               "page_link": "",
               "col_link": "best-seller",
               "title": "Best Sellers",
-              "col": "4"
+              "col": "3"
+            }
+          },
+          "655005bb-15f0-419a-8ce4-8698991b63bd": {
+            "type": "cat",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Accessories-Bandanas.jpg",
+              "cat_design": "1",
+              "hoverz": true,
+              "collection": "bandanas",
+              "blog": "",
+              "page_link": "",
+              "col_link": "",
+              "title": "",
+              "col": "3"
             }
           },
           "932e6253-0155-4ab3-b3c0-635dd62ee01b": {
@@ -723,8 +765,8 @@
               "tt_hd": "",
               "url": "",
               "open_link": "_self",
-              "menu": "collections-new-site-left-column",
-              "col": "2"
+              "menu": "",
+              "col": "1"
             }
           },
           "da309ac2-f754-42cf-9270-bb39883afdf5": {
@@ -734,7 +776,35 @@
               "url": "",
               "open_link": "_self",
               "menu": "collections-new-site-right-column",
-              "col": "2"
+              "col": "3"
+            }
+          },
+          "f988129b-b17e-4e4a-b4fb-6a68e9940ad0": {
+            "type": "cat",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Collections_-_National_Parks.jpg",
+              "cat_design": "1",
+              "hoverz": true,
+              "collection": "national-parks",
+              "blog": "",
+              "page_link": "",
+              "col_link": "",
+              "title": "",
+              "col": "3"
+            }
+          },
+          "2eb46acf-bc66-4147-baba-e1d7c2c92f4d": {
+            "type": "cat",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Collections_-_Signature.jpg",
+              "cat_design": "1",
+              "hoverz": true,
+              "collection": "sendero-signature",
+              "blog": "",
+              "page_link": "",
+              "col_link": "",
+              "title": "Signature",
+              "col": "3"
             }
           },
           "61dbe468-61f3-4d0d-ba62-6c962bb8d444": {
@@ -761,7 +831,7 @@
               "mm_btn_text": "Learn More",
               "url": "",
               "open_link": "_self",
-              "col": "2"
+              "col": "3"
             }
           },
           "66d0465a-828c-4e53-834b-3d3364298ba3": {
@@ -771,13 +841,13 @@
               "url": "",
               "open_link": "_self",
               "menu": "company-new-site",
-              "col": "2"
+              "col": "3"
             }
           },
           "0f6aa0d1-fe20-4646-8b54-8ca3ca341bfa": {
             "type": "cat",
             "settings": {
-              "image": "shopify:\/\/shop_images\/homepage_hero_image_5.webp",
+              "image": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-5927.jpg",
               "cat_design": "1",
               "hoverz": true,
               "collection": "",
@@ -785,13 +855,13 @@
               "page_link": "about-us",
               "col_link": "",
               "title": "",
-              "col": "4"
+              "col": "3"
             }
           },
           "b1c7e75a-cf79-42ab-9240-c2a9e3c59a4e": {
             "type": "cat",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-21_at_8.40.59_AM.png",
+              "image": "shopify:\/\/shop_images\/2020-11-8_-_Not_Quite_Nashville_Tapes_-_Wild_Feathers-6129.jpg",
               "cat_design": "1",
               "hoverz": true,
               "collection": "",
@@ -799,7 +869,7 @@
               "page_link": "sendero-sessions",
               "col_link": "",
               "title": "",
-              "col": "4"
+              "col": "3"
             }
           }
         },
@@ -812,21 +882,26 @@
           "bc349ccd-7167-466b-aab8-2c2534a91320",
           "3237df59-19be-4aea-b04a-b0f1e8c10f56",
           "321dc9c2-00b3-46de-b52d-9b60ac580c7a",
+          "0f6b55f0-194b-497d-8d7e-0377f59f3023",
           "424acdb6-f2e8-4436-9941-b00668644353",
           "922ef6d3-2b8a-4f62-84ae-f7944a9ba720",
           "7b5386c0-ea4e-468a-9810-a4ee8ae8f6e3",
           "61fda3d2-5725-4d65-8f36-62eee9e6b1cc",
           "5aedc4d9-42ea-4018-be76-632a6fa1571a",
           "3378432e-ed42-4f8c-ab8d-0a6d7d38d8ce",
+          "201da3f5-aa3c-4ef4-a95d-fc7d70c9a212",
           "bf2d3716-63bd-4f64-99f9-2d384f8c8dd5",
           "673c217c-c470-4dc4-84c1-cce173cdfe41",
-          "4e5ad45b-8c9b-48d6-8ccb-93307deb91fa",
           "d964bd86-2c5e-4cb7-8b1f-0027152aafea",
+          "4e5ad45b-8c9b-48d6-8ccb-93307deb91fa",
           "01c7c08b-1e91-40f4-8734-b22e759c1062",
+          "655005bb-15f0-419a-8ce4-8698991b63bd",
           "932e6253-0155-4ab3-b3c0-635dd62ee01b",
           "a7b29865-5b6c-426e-828c-b7e5c9ed5b8f",
           "8d6c5968-eefa-4016-9930-f8fad1a58a4b",
           "da309ac2-f754-42cf-9270-bb39883afdf5",
+          "f988129b-b17e-4e4a-b4fb-6a68e9940ad0",
+          "2eb46acf-bc66-4147-baba-e1d7c2c92f4d",
           "61dbe468-61f3-4d0d-ba62-6c962bb8d444",
           "ac3b4824-0abf-44d1-9b03-4c4255931750",
           "66d0465a-828c-4e53-834b-3d3364298ba3",
@@ -836,6 +911,7 @@
         "settings": {
           "height": 60,
           "arrow": false,
+          "shop_all_btn_size": 14,
           "align": "tc",
           "hover": "hover_fade_in"
         }

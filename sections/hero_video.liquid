@@ -27,7 +27,7 @@
         
         
         <div class="sendero-session-txt-container txt_content pa t__0 l__0 b__0 r__0 caption-w-{{se_stts.caption_w}} flex column shadow_wrap {{se_stts.txt_align}} pe_none z__100">
-          <div class="play-icon">
+          <div class="play-icon pa mb_v_pos{{se_stts.play_icon_mb_pos}} v_pos{{se_stts.play_icon_pos}}">
             <a href="{{section.settings.btn_link}}" target="_blank">
             <button>
               <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70">
@@ -35,7 +35,6 @@
               </svg>
             </button>
             </a>
-            
         </div>
           <div class="hero-video-txt pa pa_txts mb_h_pos{{se_stts.cap_h_pos}} mb_v_pos{{se_stts.cap_v_pos}} h_pos{{se_stts.cap_h_pos}} v_pos{{se_stts.cap_v_pos}}">
             {%- for block in section.blocks -%}{% assign bk_stts = block.settings -%}
@@ -68,6 +67,17 @@
 
 {%- render 'section_css' -%}
 {%- style -%}
+  .play-icon {
+    top: {{section.settings.play_icon_pos}}%;
+    left: 50%;
+    -webkit-transform: translateX(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  @media screen and (max-width: 767px) {
+    .play-icon {
+      top: {{section.settings.play_icon_mb_pos}}%;
+    }
+  }
    .nt_se_{{sid}} .nt_img_txt>a:after{ background-color: {{se_stts.cl_overlay}};opacity: {{se_stts.cl_opacity | divided_by: 100.00}} }
  {%- if se_height == 'cus_h' -%}
       {%- if se_stts.use_custom_h == '2' -%}{% assign rto = ratio | default:3 %}{%- assign pd_top = 1 | divided_by: ratio | times: 100 -%}
@@ -289,6 +299,28 @@
           }
         ]
       },
+      {
+        "type": "range",
+        "id": "play_icon_pos",
+        "label": "Play Icon Vertical Position",
+        "info":" <= 50: top position , > 50 bottom position",
+        "default": 50,
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "%"
+     },
+     {
+      "type": "range",
+      "id": "play_icon_mb_pos",
+      "label": "Play Icon Vertical Position",
+      "info":" <= 50: top position , > 50 bottom position",
+      "default": 50,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%"
+   },
       {
         "type": "header",
         "content": "== Color"

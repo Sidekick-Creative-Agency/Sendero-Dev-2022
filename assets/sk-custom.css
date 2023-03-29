@@ -18,7 +18,17 @@
     display: flex;
     align-items: center;
 }
-
+.shop-all {
+    margin-top: 4px;
+}
+.shop-all .la-arrow-right {
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
+}
+.sub-column-item:hover .la-arrow-right {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
+}
 /*--------------------------------------------------------/
 / HEADER & MEGA MENU
 /--------------------------------------------------------*/
@@ -32,6 +42,11 @@
 .header__mid .container {
     padding-right: 15px;
     padding-left: 15px;
+}
+.menu-item.sub-column-item {
+    display: grid;
+    align-content: center;
+    
 }
 /*---------------- Logo & Icon Spacing -------------------*/
 
@@ -82,7 +97,7 @@
     font-family: Oswald;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    font-size:12px;
+    font-size:14px;
 }
 
 .h_transparent_true.template-index .ntheader:not(.live_stuck) .nt_menu .type_mega .sub-menu {

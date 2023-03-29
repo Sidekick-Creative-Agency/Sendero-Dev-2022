@@ -23,7 +23,9 @@
       {%- assign arr_sub = 'link,link2,banner,html,mmtitle,pr,cat' -%}
       {%- for block in se_blocks %}<div {% if arr_sub contains block.type %}{% assign id_data = block.id %} {{ block.shopify_attributes }}{% else %}{% assign id_data2 = block.id %}{% endif %}id="bkjs_{{id_data}}" data-id='{{id_data2}}'></div>{% endfor -%}
   {%- endif -%}
-  <style>.header__mid .css_h_se {min-height: {{section.settings.height}}px}.nt_menu >li>a{height:{{section.settings.height}}px}</style>
+  <style>
+  .header__mid .css_h_se {min-height: {{section.settings.height}}px}.nt_menu >li>a{height:{{section.settings.height}}px};
+  </style>
 {%- endif -%}
 
 {%- schema -%}
@@ -46,6 +48,16 @@
         "id": "arrow",
         "label": "Show dropdown arrow?",
         "default": false
+      },
+      {
+        "type": "range",
+        "id": "shop_all_btn_size",
+        "label": "Shop All Button Size",
+        "min": 8,
+        "max": 32,
+        "step": 1,
+        "unit": "px",
+        "default": 16
       },
       {
         "type": "header",

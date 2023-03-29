@@ -13,7 +13,7 @@
   
   {%- capture bk_contents -%}
     {%- if se_bks.size > 0 -%}
-       <div class="container pr z_100">
+       <div class="container pr z_100 blog-hero">
           {%- for block in se_bks -%}
             {%- case block.type -%}
              {%- when '1' -%}<h1 class="tu cw mb__10" style="color:{{block.settings.color}}">{{ section.settings.page_title }}</h1>
@@ -34,7 +34,7 @@
     {%- endif -%}
 
   {%- style -%}
-  .page_head_{{se_id}} {padding: {{se_stts.paddingmb}}px 0}@media (min-width: 768px){.page_head_{{se_id}} {padding: {{se_stts.padding}}px 0} }
+  .page_head_{{se_id}} {padding: {{se_stts.paddingmb}}px}@media (min-width: 768px){.page_head_{{se_id}} {padding: {{se_stts.padding}}px} }
   .page_head_{{se_id}}:before {
     background-color: {{se_stts.color}};opacity: {{se_stts.overlay | divided_by: 100.0}}
   }
@@ -96,9 +96,9 @@
         "type": "range",
         "id": "padding",
         "label": "Padding Space (Desktop)",
-        "default": 400,
-        "min": 100,
-        "max": 600,
+        "default": 100,
+        "min": 0,
+        "max": 200,
         "step": 10,
         "unit": "px"
       },
@@ -106,8 +106,8 @@
         "type": "range",
         "id": "paddingmb",
         "label": "Padding Space (Mobile)",
-        "default": 300,
-        "min": 100,
+        "default": 50,
+        "min": 0,
         "max": 400,
         "step": 5,
         "unit": "px"
