@@ -1,7 +1,36 @@
 {
   "sections": {
+    "blog-heading": {
+      "type": "blog-heading",
+      "blocks": {
+        "43a78680-b430-430b-9633-da80a38ff709": {
+          "type": "1",
+          "settings": {
+            "color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "43a78680-b430-430b-9633-da80a38ff709"
+      ],
+      "settings": {
+        "shown": true,
+        "page_title": "Spring 2023",
+        "image": "shopify:\/\/shop_images\/Men_-_Shirts.jpg",
+        "parallax": true,
+        "color": "#000000",
+        "overlay": 35,
+        "padding": 100,
+        "paddingmb": 50,
+        "bg_pos": "center center",
+        "bg_repeat": "no-repeat",
+        "bg_size": "cover",
+        "bg_att": "scroll"
+      }
+    },
     "16479809910f68859a": {
       "type": "collection-page-top",
+      "disabled": true,
       "settings": {
         "title": "Collection Page Top",
         "sub_title": "Sub Text",
@@ -48,102 +77,96 @@
         "pd_mb": ""
       }
     },
-    "1651595285a0e352e6": {
-      "type": "shop-other-categories",
+    "7776a30b-1adc-4b83-81ab-4623b33c198c": {
+      "type": "collection-list_packery",
       "blocks": {
-        "1651595285690d7758-0": {
+        "template--16713560588507__7776a30b-1adc-4b83-81ab-4623b33c198c-1680120527ff6e1fe9-0": {
           "type": "collection",
           "settings": {
             "collection": "hats",
+            "image": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-2230.jpg",
             "img_align": "center",
-            "title": "Hats",
-            "col_link": "#",
-            "show_shop_all": true,
-            "url": ""
+            "title": "",
+            "url": "",
+            "filter": "spring-2023"
           }
         },
-        "1651595285690d7758-1": {
+        "e24e00f9-3426-4324-83cc-cb764e065e34": {
           "type": "collection",
           "settings": {
             "collection": "t-shirts",
             "img_align": "center",
             "title": "",
-            "col_link": "#",
-            "show_shop_all": true,
-            "url": ""
+            "url": "",
+            "filter": ""
           }
         },
-        "1651595285690d7758-2": {
+        "59b990a0-cb4a-43fc-89b4-5da68f8e104c": {
+          "type": "collection",
+          "settings": {
+            "collection": "crop-tee",
+            "img_align": "center",
+            "title": "",
+            "url": "",
+            "filter": ""
+          }
+        },
+        "055ee3d5-486b-4c54-afef-b4c4164ee054": {
+          "type": "collection",
+          "settings": {
+            "collection": "shorts",
+            "image": "shopify:\/\/shop_images\/Men_-_Shorts.jpg",
+            "img_align": "center",
+            "title": "",
+            "url": "",
+            "filter": ""
+          }
+        },
+        "template--16713560588507__7776a30b-1adc-4b83-81ab-4623b33c198c-1680120527ff6e1fe9-2": {
           "type": "collection",
           "settings": {
             "collection": "accessories",
+            "image": "shopify:\/\/shop_images\/Accessories-Bandanas.jpg",
             "img_align": "center",
             "title": "",
-            "col_link": "#",
-            "show_shop_all": true,
-            "url": ""
+            "url": "",
+            "filter": "spring-2023"
           }
         },
-        "1651595285690d7758-3": {
+        "template--16713560588507__7776a30b-1adc-4b83-81ab-4623b33c198c-1680120527ff6e1fe9-3": {
           "type": "collection",
           "settings": {
-            "collection": "kids-gear",
+            "collection": "mens-shirts",
             "img_align": "center",
             "title": "",
-            "col_link": "#",
-            "show_shop_all": true,
-            "url": ""
-          }
-        },
-        "21e861a6-29c0-4d1a-b50e-3b67ba31fd7b": {
-          "type": "collection",
-          "settings": {
-            "collection": "outerwear",
-            "img_align": "center",
-            "title": "",
-            "col_link": "#",
-            "show_shop_all": true,
-            "url": ""
+            "url": "",
+            "filter": "spring-2023"
           }
         }
       },
       "block_order": [
-        "1651595285690d7758-0",
-        "1651595285690d7758-1",
-        "1651595285690d7758-2",
-        "1651595285690d7758-3",
-        "21e861a6-29c0-4d1a-b50e-3b67ba31fd7b"
+        "template--16713560588507__7776a30b-1adc-4b83-81ab-4623b33c198c-1680120527ff6e1fe9-0",
+        "e24e00f9-3426-4324-83cc-cb764e065e34",
+        "59b990a0-cb4a-43fc-89b4-5da68f8e104c",
+        "055ee3d5-486b-4c54-afef-b4c4164ee054",
+        "template--16713560588507__7776a30b-1adc-4b83-81ab-4623b33c198c-1680120527ff6e1fe9-2",
+        "template--16713560588507__7776a30b-1adc-4b83-81ab-4623b33c198c-1680120527ff6e1fe9-3"
       ],
       "settings": {
-        "title": "Shop Spring 2022",
-        "sub_title": "Sub Text",
+        "title": "",
+        "sub_title": "",
         "sub_font": "2",
         "style_title": "title_1",
         "ic_tt": "gem",
         "show_clpr": false,
-        "round": 0,
-        "cat_layout": "1",
         "hoverz": true,
         "cat_design": "1",
-        "cat_space": "10",
-        "image_ratio": "ratio1_1",
-        "col": "4",
-        "col_md": "3",
-        "col_mb": "6",
+        "cat_space": "20",
         "pr_txt": "products",
-        "loop": true,
-        "autoplay": false,
-        "au_time": 6,
-        "au_hover": true,
-        "button": true,
-        "btn_vi": "1",
-        "btn_owl": "2",
-        "btn_color": "1",
-        "dot": false,
-        "dot_owl": "1",
-        "dot_color": "1",
+        "cat_lay4": 1,
+        "cat_lay5": 2,
         "cp_code": false,
-        "layout": "nt_full",
+        "layout": "wrap",
         "cl_bg": "",
         "hide_bgimg": false,
         "mg": "50px,,50px,",
@@ -186,7 +209,7 @@
             "img_align": "center",
             "title": "",
             "col_link": "#",
-            "show_shop_all": true,
+            "show_shop_all": false,
             "url": ""
           }
         },
@@ -307,8 +330,9 @@
     }
   },
   "order": [
+    "blog-heading",
     "16479809910f68859a",
-    "1651595285a0e352e6",
+    "7776a30b-1adc-4b83-81ab-4623b33c198c",
     "main",
     "164882807276a2e749"
   ]

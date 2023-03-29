@@ -43,7 +43,7 @@
       {%- render 'section_title',url:collection.url -%}
       {%- if paginate.pages > 1 and use_pagination != 'none' -%}
       <div class="products-footer mt__10">
-          <a class="pr button view_more js_add_loading button_{{se_stts.btn_style}} flex br_rd_{{se_stts.btn_rd}} btn_icon_{{se_stts.btn_icon}}" href="{{ collection.url }}">{{ 'products.grid_items.view_more' | t }}</a>
+          <a class="pr button view_more js_add_loading button_{{se_stts.btn_style}} flex br_rd_{{se_stts.btn_rd}} btn_icon_{{se_stts.btn_icon}}" href="{{ collection.url }}">{{ 'products.grid_items.view_more' | t }}<i class="las la-arrow-right"></i></a>
       </div>
       {%- endif -%}
       <div class="products nt_products_holder row row_pr_{{inc_pr}} cdt_des_{{se_stts.cdt_des}} round_cd_{{se_stts.round_cd}} js_carousel nt_slider {{se_stts.image_size}} {{se_stts.image_ratio}} position_{{se_stts.image_position}} space_{{se_stts.space}} prev_next_{{se_stts.btn_color}} btn_owl_{{se_stts.btn_owl}} dot_owl_{{se_stts.dot_owl}} dot_color_{{se_stts.dot_color}} btn_vi_{{se_stts.btn_vi}}{% if sett_equal %} equal_nt{% endif %}" data-flickityt4s-js='{"imagesLoaded": 0,"adaptiveHeight": 0, "contain": 1, "groupCells": "100%", "dragThreshold" : 5, "cellAlign": "left","wrapAround": {{se_stts.loop}},"prevNextButtons": {{se_stts.button}},"percentPosition": 1,"pageDots": {{se_stts.dot}}, "autoPlay" : {{ se_stts.au_time | times: 1000 }}, "pauseAutoPlayOnHover" : {{se_stts.au_hover}}, "rightToLeft": {{settings.use_rtl}} }'>

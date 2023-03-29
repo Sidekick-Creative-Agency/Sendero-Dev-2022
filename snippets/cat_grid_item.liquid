@@ -8,6 +8,9 @@
   {% if block.settings.col_link and block.settings.col_link != "#" %}
 		{%- assign col_url = col_url | append: "/" | append: block.settings.col_link %}
 	{% endif %}
+  {% if block.settings.filter and block.settings.filter != "#" %}
+		{%- assign col_url = col_url | append: "/" | append: block.settings.filter %}
+	{% endif %}
 <div id="nt_{{block.id}}" class="cat_grid_item cat_space_item cat_grid_item_{{for_i}} {{ccol}}" {{ block.shopify_attributes }}>
   <div class="cat_grid_item__content pr oh">
     <a href="{{ col_url | default:collection.url }}" class="db cat_grid_item__link"{% if image != blank and Ismaxwh %} style="margin: 0 auto;max-height: {{image.height}}px;max-width: {{image.width}}px"{% endif %}>

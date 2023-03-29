@@ -134,18 +134,18 @@
                 {%- render 'cat_grid_item',block:se_blocks[2],pr_txt:pr_txt,cimg:'placeholder.jpg' | asset_url ,ccol:'col-md-6 col-12',for_i:3 -%}
               {%- endif -%} 
          {%- when 6 -%}
+         <div class="col-12">
+          <div class="row">
+             {%- render 'cat_grid_item',block:se_blocks[0],pr_txt:pr_txt,cimg:'placeholder.jpg' | asset_url ,ccol:'col-md-6 col-12',for_i:4 -%}
+             {%- render 'cat_grid_item',block:se_blocks[1],pr_txt:pr_txt,cimg:'placeholder.jpg' | asset_url ,ccol:'col-md-3 col-6',for_i:5 -%}
+             {%- render 'cat_grid_item',block:se_blocks[2],pr_txt:pr_txt,cimg:'placeholder.jpg' | asset_url ,ccol:'col-md-3 col-6',for_i:6 -%}
+          </div>
+       </div>
             <div class="col-12">
                <div class="row">
-                  {%- render 'cat_grid_item',block:se_blocks[0],pr_txt:pr_txt,cimg:'placeholder.jpg' | asset_url ,ccol:'col-md-3 col-6',for_i:1 -%}
-                  {%- render 'cat_grid_item',block:se_blocks[1],pr_txt:pr_txt,cimg:'placeholder.jpg' | asset_url ,ccol:'col-md-3 col-6',for_i:2 -%}
-                  {%- render 'cat_grid_item',block:se_blocks[2],pr_txt:pr_txt,cimg:'placeholder.jpg' | asset_url ,ccol:'col-md-6 col-12',for_i:3 -%}
-               </div>
-            </div>
-            <div class="col-12">
-               <div class="row">
-                  {%- render 'cat_grid_item',block:se_blocks[3],pr_txt:pr_txt,cimg:'placeholder.jpg' | asset_url ,ccol:'col-md-6 col-12',for_i:4 -%}
-                  {%- render 'cat_grid_item',block:se_blocks[4],pr_txt:pr_txt,cimg:'placeholder.jpg' | asset_url ,ccol:'col-md-3 col-6',for_i:5 -%}
-                  {%- render 'cat_grid_item',block:se_blocks[5],pr_txt:pr_txt,cimg:'placeholder.jpg' | asset_url ,ccol:'col-md-3 col-6',for_i:6 -%}
+                  {%- render 'cat_grid_item',block:se_blocks[3],pr_txt:pr_txt,cimg:'placeholder.jpg' | asset_url ,ccol:'col-md-3 col-6',for_i:1 -%}
+                  {%- render 'cat_grid_item',block:se_blocks[4],pr_txt:pr_txt,cimg:'placeholder.jpg' | asset_url ,ccol:'col-md-3 col-6',for_i:2 -%}
+                  {%- render 'cat_grid_item',block:se_blocks[5],pr_txt:pr_txt,cimg:'placeholder.jpg' | asset_url ,ccol:'col-md-6 col-12',for_i:3 -%}
                </div>
             </div>
          {%- when 7 -%}
@@ -510,6 +510,12 @@
         "id": "url",
         "label": "Link (optional)",
         "info": "Leave empty to use 'collection url'."
+      },
+      {
+        "type": "text",
+        "id": "filter",
+        "label": "Filter (optional)",
+        "info": "ex. input 'spring-2023' to filter to only Spring 2023 items."
       }
       ]
     }],

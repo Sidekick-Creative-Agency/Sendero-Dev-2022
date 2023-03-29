@@ -211,21 +211,14 @@
    <div class="cart-contact">
     <h5>Need Help?</h5>
     <div class="cart-contact-inner-container">
-      <div class="cart-contact-link">
-        <svg xmlns="http://www.w3.org/2000/svg" width="17.545" height="17.545" viewBox="0 0 17.545 17.545" class="mr__15">
-          <path id="Chat" d="M17.791,2H3.755A1.752,1.752,0,0,0,2.009,3.755L2,19.545l3.509-3.509H17.791a1.76,1.76,0,0,0,1.755-1.755V3.755A1.76,1.76,0,0,0,17.791,2Z" transform="translate(-2 -2)"/>
-        </svg>
-        <a href="tel:+1254-567-6789">+1 (254)-567-6789</a></div>
-      <div class="cart-contact-link">
-        <svg xmlns="http://www.w3.org/2000/svg" width="17.545" height="17.545" viewBox="0 0 17.545 17.545" class="mr__15">
-          <path id="Chat" d="M17.791,2H3.755A1.752,1.752,0,0,0,2.009,3.755L2,19.545l3.509-3.509H17.791a1.76,1.76,0,0,0,1.755-1.755V3.755A1.76,1.76,0,0,0,17.791,2Z" transform="translate(-2 -2)"/>
-        </svg>
-        <div class="chat-toggle-cart">Live Chat</div></div>
-      <div class="cart-contact-link">
-        <svg xmlns="http://www.w3.org/2000/svg" width="17.545" height="17.545" viewBox="0 0 17.545 17.545" class="mr__15">
-          <path id="Chat" d="M17.791,2H3.755A1.752,1.752,0,0,0,2.009,3.755L2,19.545l3.509-3.509H17.791a1.76,1.76,0,0,0,1.755-1.755V3.755A1.76,1.76,0,0,0,17.791,2Z" transform="translate(-2 -2)"/>
-        </svg>
-        <a href="mailto:contact@senderopc.com">Email Us</a></div>
+      <div class="cart-contact-link" onclick="document.getElementById('dummy-chat-button-iframe').contentDocument.querySelector('.chat-toggle').click()" role="button">
+        <i class="las la-comments"></i>
+        <div class="chat-toggle-cart">Live Chat</div>
+      </div>
+      <a href="mailto:contact@senderopc.com" class="cart-contact-link" role="button">
+        <i class="las la-envelope"></i>
+        <p>Email Us</p>
+      </a>
    </div>
   </div>
   </div>

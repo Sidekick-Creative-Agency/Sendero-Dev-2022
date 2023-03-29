@@ -1,0 +1,341 @@
+{
+  "sections": {
+    "blog-heading": {
+      "type": "blog-heading",
+      "blocks": {
+        "43a78680-b430-430b-9633-da80a38ff709": {
+          "type": "1",
+          "settings": {
+            "color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "43a78680-b430-430b-9633-da80a38ff709"
+      ],
+      "settings": {
+        "shown": true,
+        "page_title": "Men's",
+        "image": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-2067.jpg",
+        "parallax": true,
+        "color": "#000000",
+        "overlay": 35,
+        "padding": 100,
+        "paddingmb": 50,
+        "bg_pos": "center center",
+        "bg_repeat": "no-repeat",
+        "bg_size": "cover",
+        "bg_att": "scroll"
+      }
+    },
+    "16479809910f68859a": {
+      "type": "collection-page-top",
+      "disabled": true,
+      "settings": {
+        "title": "Collection Page Top",
+        "sub_title": "Sub Text",
+        "sub_font": "2",
+        "btn_title": "See all products",
+        "style_title": "title_1",
+        "ic_tt": "gem",
+        "show_clpr": false,
+        "collection": "",
+        "limit": 4,
+        "space": 30,
+        "use_pagination": "none",
+        "btn_rd": false,
+        "btn_icon": false,
+        "btn_style": "default",
+        "col_pr": "4",
+        "col_pr_tb": "4",
+        "col_pr_mb": "6",
+        "pr_des": "1",
+        "show_vendor": false,
+        "use_cdt": false,
+        "round_cd": false,
+        "cdt_des": "1",
+        "loop": true,
+        "au_time": 0,
+        "au_hover": true,
+        "button": true,
+        "btn_vi": "1",
+        "btn_owl": "2",
+        "btn_color": "1",
+        "dot": false,
+        "dot_owl": "1",
+        "dot_color": "1",
+        "use_eq_height": true,
+        "image_ratio": "ratio1_1",
+        "image_size": "nt_contain",
+        "image_position": "8",
+        "cp_code": false,
+        "layout": "wrap",
+        "cl_bg": "",
+        "mg": ",,50px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    },
+    "7776a30b-1adc-4b83-81ab-4623b33c198c": {
+      "type": "collection-list_packery",
+      "blocks": {
+        "template--16713560588507__7776a30b-1adc-4b83-81ab-4623b33c198c-1680120527ff6e1fe9-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "mens-shirts",
+            "image": "shopify:\/\/shop_images\/2022-8-30_-_FW22_-_Banner_Images-4946_2048x2048_b54ac4e0-a7f6-4fc0-affe-815f0aa23b85.webp",
+            "img_align": "center",
+            "title": "",
+            "url": "",
+            "filter": "mens"
+          }
+        },
+        "c350d424-5a4e-4003-b0a8-ee7f6b07ab85": {
+          "type": "collection",
+          "settings": {
+            "collection": "shorts",
+            "image": "shopify:\/\/shop_images\/Men_-_Shorts.jpg",
+            "img_align": "center",
+            "title": "",
+            "url": "",
+            "filter": ""
+          }
+        },
+        "template--16713560588507__7776a30b-1adc-4b83-81ab-4623b33c198c-1680120527ff6e1fe9-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "t-shirts",
+            "img_align": "center",
+            "title": "",
+            "url": "",
+            "filter": "mens"
+          }
+        },
+        "template--16713560588507__7776a30b-1adc-4b83-81ab-4623b33c198c-1680120527ff6e1fe9-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "performance",
+            "image": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-7779.jpg",
+            "img_align": "center",
+            "title": "",
+            "url": "",
+            "filter": ""
+          }
+        },
+        "9393d391-7487-4644-ae03-cd2178d01864": {
+          "type": "collection",
+          "settings": {
+            "collection": "fleece-wear",
+            "image": "shopify:\/\/shop_images\/2022-11-6_-_Sweatshirts_at_Pinewood-3479.jpg",
+            "img_align": "center",
+            "title": "",
+            "url": "",
+            "filter": "mens"
+          }
+        },
+        "template--16713560588507__7776a30b-1adc-4b83-81ab-4623b33c198c-1680120527ff6e1fe9-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "hats",
+            "image": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-2082.jpg",
+            "img_align": "center",
+            "title": "",
+            "url": "",
+            "filter": "mens"
+          }
+        }
+      },
+      "block_order": [
+        "template--16713560588507__7776a30b-1adc-4b83-81ab-4623b33c198c-1680120527ff6e1fe9-3",
+        "c350d424-5a4e-4003-b0a8-ee7f6b07ab85",
+        "template--16713560588507__7776a30b-1adc-4b83-81ab-4623b33c198c-1680120527ff6e1fe9-0",
+        "template--16713560588507__7776a30b-1adc-4b83-81ab-4623b33c198c-1680120527ff6e1fe9-2",
+        "9393d391-7487-4644-ae03-cd2178d01864",
+        "template--16713560588507__7776a30b-1adc-4b83-81ab-4623b33c198c-1680120527ff6e1fe9-1"
+      ],
+      "settings": {
+        "title": "",
+        "sub_title": "",
+        "sub_font": "2",
+        "style_title": "title_1",
+        "ic_tt": "gem",
+        "show_clpr": false,
+        "hoverz": true,
+        "cat_design": "1",
+        "cat_space": "20",
+        "pr_txt": "products",
+        "cat_lay4": 1,
+        "cat_lay5": 4,
+        "cp_code": false,
+        "layout": "wrap",
+        "cl_bg": "",
+        "hide_bgimg": false,
+        "mg": "50px,,50px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    },
+    "main": {
+      "type": "category_page",
+      "settings": {
+        "shop_layout": "default",
+        "shop_des": "default",
+        "limit": 12,
+        "space": 30,
+        "use_pagination": "infinite",
+        "use_bar_lm": true,
+        "col_pr": "3",
+        "col_pr_tb": "3",
+        "col_pr_mb": "6",
+        "pr_des": "1",
+        "show_vendor": false,
+        "breadcrumb_pr": true,
+        "use_cdt": false,
+        "round_cd": false,
+        "cdt_des": "1",
+        "use_eq_height": true,
+        "image_ratio": "ratio1_1",
+        "image_size": "nt_cover",
+        "image_position": "8"
+      }
+    },
+    "164882807276a2e749": {
+      "type": "shop-other-categories",
+      "blocks": {
+        "16488280725e7f0d65-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "desert-runner",
+            "img_align": "center",
+            "title": "",
+            "col_link": "#",
+            "show_shop_all": false,
+            "url": ""
+          }
+        },
+        "16488280725e7f0d65-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "geology",
+            "img_align": "center",
+            "title": "",
+            "col_link": "#",
+            "show_shop_all": true,
+            "url": ""
+          }
+        },
+        "16488280725e7f0d65-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "hey-slick",
+            "img_align": "center",
+            "title": "",
+            "col_link": "#",
+            "show_shop_all": true,
+            "url": ""
+          }
+        },
+        "16488280725e7f0d65-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "legends-tall-tales",
+            "img_align": "center",
+            "title": "",
+            "col_link": "#",
+            "show_shop_all": true,
+            "url": ""
+          }
+        },
+        "6236469b-85c9-4415-9ee4-368d4cfef55b": {
+          "type": "collection",
+          "settings": {
+            "collection": "national-parks",
+            "img_align": "center",
+            "title": "",
+            "col_link": "#",
+            "show_shop_all": true,
+            "url": ""
+          }
+        },
+        "9ef29566-685e-4ac4-8fc8-52e7b420197d": {
+          "type": "collection",
+          "settings": {
+            "collection": "lone-star-x-sendero",
+            "img_align": "center",
+            "title": "",
+            "col_link": "#",
+            "show_shop_all": true,
+            "url": ""
+          }
+        },
+        "7d2d449a-83f0-459e-a956-21e212b81841": {
+          "type": "collection",
+          "settings": {
+            "collection": "rivers-ranges",
+            "image": "shopify:\/\/shop_images\/homepage_hero_image_4.webp",
+            "img_align": "center",
+            "title": "",
+            "col_link": "#",
+            "show_shop_all": true,
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "16488280725e7f0d65-0",
+        "16488280725e7f0d65-1",
+        "16488280725e7f0d65-2",
+        "16488280725e7f0d65-3",
+        "6236469b-85c9-4415-9ee4-368d4cfef55b",
+        "9ef29566-685e-4ac4-8fc8-52e7b420197d",
+        "7d2d449a-83f0-459e-a956-21e212b81841"
+      ],
+      "settings": {
+        "title": "Shop Other Collections",
+        "sub_title": "Sub Text",
+        "sub_font": "2",
+        "style_title": "title_1",
+        "ic_tt": "gem",
+        "show_clpr": false,
+        "round": 0,
+        "cat_layout": "2",
+        "hoverz": true,
+        "cat_design": "1",
+        "cat_space": "10",
+        "image_ratio": "ratio1_1",
+        "col": "15",
+        "col_md": "3",
+        "col_mb": "6",
+        "pr_txt": "products",
+        "loop": true,
+        "autoplay": true,
+        "au_time": 6,
+        "au_hover": true,
+        "button": true,
+        "btn_vi": "2",
+        "btn_owl": "2",
+        "btn_color": "1",
+        "dot": false,
+        "dot_owl": "1",
+        "dot_color": "1",
+        "cp_code": false,
+        "layout": "nt_full",
+        "cl_bg": "",
+        "hide_bgimg": false,
+        "mg": "50px,,50px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    }
+  },
+  "order": [
+    "blog-heading",
+    "16479809910f68859a",
+    "7776a30b-1adc-4b83-81ab-4623b33c198c",
+    "main",
+    "164882807276a2e749"
+  ]
+}

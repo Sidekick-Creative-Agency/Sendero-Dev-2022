@@ -2106,15 +2106,14 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 .cart-contact-link {
     display: flex;
     align-items: center;
-    margin-bottom: 15px;
-    font-size: 13px;
+    margin-bottom: 8px;
+    font-size: 18px;
+    gap: 8px;
+    color: #111111;
+    cursor: pointer;
 }
 .cart-contact h5 {
-    margin-bottom: 15px;
-}
-.cart-footer-container .chat-toggle-cart {
-    color: #222;
-    cursor: pointer;
+    margin-bottom: 16px;
 }
 #nt_cart_canvas {
     width: 740px;
@@ -2135,6 +2134,15 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 }
 .template-cart .cart_item .mini_cart_actions {
     border: none !important;
+}
+.button .la-arrow-right {
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
+    margin-left: 4px;
+}
+.button:hover .la-arrow-right {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
 }
 /* ----- Tablet ----- */
 @media screen and (max-width: 1023px) {
