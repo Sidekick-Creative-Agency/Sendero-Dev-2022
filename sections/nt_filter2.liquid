@@ -32,7 +32,7 @@
           <div id="blockid_{{forloop.index}}"  class="col-12 col-md-{{col_class}} widget blockid_color count_vr_{{bk_stts.count}}">
               <h5 class="widget-title">{{filter.label| escape}}</h5>
               <div class="loke_scroll">
-                 <ul class="nt_filter_block nt_filter_color css_ntbar">
+                 <ul class="nt_filter_block nt_filter_color css_ntbar sk-filter-list">
 
                     {%- for value in filter.values -%}
                       {%- assign label = value.label | escape -%}
@@ -51,8 +51,7 @@
             <div id="blockid_{{forloop.index}}"  class="col-12 col-md-{{col_class}} widget blockid_vendor count_vr_{{bk_stts.count}}">
                  <h5 class="widget-title">{{filter.label| escape}}</h5>
                  <div class="loke_scroll">
-                    <ul class="nt_filter_block nt_filter_style{{bk_stts.style}} css_ntbar">
-                     
+                    <ul class="nt_filter_block nt_filter_style{{bk_stts.style}} css_ntbar sk-filter-list">
                        {%- for value in filter.values -%}
                          
                          {%- if value.active -%}

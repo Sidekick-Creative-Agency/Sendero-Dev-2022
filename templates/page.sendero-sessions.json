@@ -60,12 +60,52 @@
             "video_title": "The Desert Tapes",
             "video_location": "Mojave Desert"
           }
+        },
+        "d453198f-5d72-4e66-8681-67c8de68daab": {
+          "type": "1",
+          "settings": {
+            "video_url": "https:\/\/youtu.be\/HmNWXE_hjTI",
+            "page_link": "",
+            "video_title": "The Saloon Tapes",
+            "video_location": "Fredericksburg, TX"
+          }
+        },
+        "27ecce42-b94e-4132-9de7-c44dc01025bc": {
+          "type": "1",
+          "settings": {
+            "video_url": "https:\/\/youtu.be\/EadUYew2OGE",
+            "page_link": "",
+            "video_title": "The Not Quite Nashville Tapes",
+            "video_location": "Nashville, TN"
+          }
+        },
+        "4ebb95c8-7344-4b39-860d-bd58ea20d72f": {
+          "type": "1",
+          "settings": {
+            "video_url": "https:\/\/youtu.be\/0lUElBN5N-I",
+            "page_link": "",
+            "video_title": "The Mountain Tapes",
+            "video_location": "Buena Vista, CO"
+          }
+        },
+        "abc8a595-07ae-45ca-9783-27c47df98d2c": {
+          "type": "1",
+          "settings": {
+            "video_url": "https:\/\/youtu.be\/g6aVTYsh1PA",
+            "page_link": "",
+            "video_title": "The HQ Sessions",
+            "video_location": "Waco, TX"
+          }
         }
       },
       "block_order": [
         "feb9cd00-4197-4f78-bc08-b23df6b99e07",
         "c2aec536-a2fd-4a24-97ab-503ec9f0a923",
-        "1a3e2a52-e817-4744-bf28-6f3c56a41821"
+        "1a3e2a52-e817-4744-bf28-6f3c56a41821",
+        "d453198f-5d72-4e66-8681-67c8de68daab",
+        "27ecce42-b94e-4132-9de7-c44dc01025bc",
+        "4ebb95c8-7344-4b39-860d-bd58ea20d72f",
+        "abc8a595-07ae-45ca-9783-27c47df98d2c"
       ],
       "settings": {
         "mg": "",
