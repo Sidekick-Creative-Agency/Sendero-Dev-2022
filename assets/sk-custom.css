@@ -587,7 +587,7 @@
     background-color: #666;
     color: #fff;
     border: 1px solid rgba(33,43,54,.9);
-    max-width: 160px !important;
+    /* max-width: 160px !important; */
     text-transform: uppercase !important;
     font-family: 'Oswald';
     font-weight: 400;
@@ -921,13 +921,16 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 
 
 .sk-breadcrumbs {
-    margin:70px 90px;
+    margin:64px 96px;
 }
 
 .sk-collection-top {
-    margin:70px 0 70px 90px;
+    margin:32px 96px 64px;
     max-width: unset;
     width: auto;
+}
+.sk-collection-top .nt_bg_lz {
+    min-height: 250px;
 }
 .flickityt4s-slider {
     width:108%;
@@ -939,7 +942,7 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 }
 
 .cat-top-img {
-    padding-right:80px;
+    /* padding-right:80px; */
 }
 .wishlistadd {
     display: none !important;

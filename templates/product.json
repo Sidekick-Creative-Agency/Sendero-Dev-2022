@@ -40,8 +40,8 @@
             "btn_txt": "2",
             "swatch_design": "8",
             "style_color": "2",
-            "swatch_style": "1",
-            "swatch_size": "medium",
+            "swatch_style": "2",
+            "swatch_size": "exlarge",
             "show_qty": true,
             "btn_atc_full": false,
             "enable_payment_btn": false

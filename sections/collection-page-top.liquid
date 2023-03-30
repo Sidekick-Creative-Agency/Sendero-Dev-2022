@@ -44,12 +44,14 @@
 
     <div class="sk-breadcrumbs">
       <nav class="sp-breadcrumb mt__10" aria-label="Breadcrumbs"><a href="{{ routes.root_url }}" class="dib">{{ 'general.breadcrumbs.home' | t }}</a><i class="facl facl-angle-right"></i>{{collection.title}}
-      {%- assign get_url = '' | link_to_remove_tag: '' | split:'href="' | last | split:'"' | first | remove:'?customer_posted=true' -%}
+        <p>{{get_url}}</p>
+        {%- assign get_url = '' | link_to_remove_tag: '' | split:'href="' | last | split:'"' | first | remove:'?customer_posted=true' -%}
       {%- assign sy = collection.sort_by -%}
       {%- if collection.current_type or sy != blank or collection.current_vendor or get_url contains '?' %}{% assign get_url = get_url | append:'&' %}{% else %}{% assign get_url = get_url | append:'/?' %}{% endif -%}
       {%- assign sort_by = sy | default: collection.default_sort_by -%}
+      
     </div>
-
+<p>{{get_url}}</p>
     {% if image and collections[collection_handle].products.size > 3 %}
       <div class="sk-collection-top">
         <div class="row equal_nt auto al_center">
