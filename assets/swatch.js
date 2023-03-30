@@ -1827,43 +1827,43 @@
       
       // Start case js ajax
 
-      // var params = {
-      //   type: 'POST',
-      //   url: cartChangeUrl,
-      //   data:  'quantity='+qty+'&id='+vid,
-      //   dataType: 'json',
-      //   success: function(cart) { 
-      //     //console.log(cart)
-      //     // if (cart.item_count == 0) {
-      //     //  geckoShopify.onCartUpdate(0,1);
-      //     // } else if (qty == 0) {
-      //     //  geckoShopify.onCartUpdate(0,0);
-      //  //         _item.slideUp(250);
-      //     // }
-      //     if (qty == 0) { 
-      //       _item.slideUp("250", function() { $(this).remove(); } );
-      //     } else { 
-      //         var price = _item.find('.qty_cart_js').attr('data-price')*qty;
-      //         _item.find('.js_tt_price_it').html(geckoShopify.formatMoney(price));
-      //     }
-      //     geckoShopify.onCartUpdate(0,0);
+      var params = {
+        type: 'POST',
+        url: cartChangeUrl,
+        data:  'quantity='+qty+'&id='+vid,
+        dataType: 'json',
+        success: function(cart) { 
+          console.log(cart)
+          if (cart.item_count == 0) {
+           geckoShopify.onCartUpdate(0,1);
+          } else if (qty == 0) {
+           geckoShopify.onCartUpdate(0,0);
+               _item.slideUp(250);
+          }
+          if (qty == 0) { 
+            _item.slideUp("250", function() { $(this).remove(); } );
+          } else { 
+              var price = _item.find('.qty_cart_js').attr('data-price')*qty;
+              _item.find('.js_tt_price_it').html(geckoShopify.formatMoney(price));
+          }
+          geckoShopify.onCartUpdate(0,0);
           
-      //   },
-      //   error: function(XMLHttpRequest, textStatus) {
-      //     geckoShopify.onError(XMLHttpRequest, textStatus);
-      //   },
-      //   complete: function() {
-      //    // $ld_cart.addClass('on_end');
-      //    _item.find('.ld_cart_bar').addClass('on_end');
-      //    setTimeout(function(){ 
-      //       _item.find('.ld_cart_bar').attr('class', '').addClass('ld_cart_bar');
-      //       //  _item.find('.ld_cart_bar').attr('class', '').addClass('ld_cart_bar op__0 pe_none');
-      //       //_item.removeClass('rm_op');
-      //      nt_js_cart.removeClass('ld_nt_cl'); 
-      //    }, 280);
-      //   }
-      // };
-      // $.ajax(params);
+        },
+        error: function(XMLHttpRequest, textStatus) {
+          geckoShopify.onError(XMLHttpRequest, textStatus);
+        },
+        complete: function() {
+         $ld_cart.addClass('on_end');
+         _item.find('.ld_cart_bar').addClass('on_end');
+         setTimeout(function(){ 
+            _item.find('.ld_cart_bar').attr('class', '').addClass('ld_cart_bar');
+             _item.find('.ld_cart_bar').attr('class', '').addClass('ld_cart_bar op__0 pe_none');
+            _item.removeClass('rm_op');
+           nt_js_cart.removeClass('ld_nt_cl'); 
+         }, 280);
+        }
+      };
+      $.ajax(params);
 
       // Start case js fetch
         var request = {
@@ -1899,6 +1899,7 @@
                 var price = _item.find('.qty_cart_js').attr('data-price')*qty;
                 _item.find('.js_tt_price_it').html(geckoShopify.formatMoney(price));
              }
+             console.log("change");
              geckoShopify.onCartUpdate(0,0,cart.sections.cart_js);
              UpdateBarItem();
              body.trigger('CartUpdateSuccess CartChangeSuccess');

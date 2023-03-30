@@ -223,23 +223,6 @@
   </div>
   </div>
   </div>
-
-  <script>
-    (function() {
-      function onTidioChatApiReady() {
-        window.tidioChatApi.hide();
-      }
-    
-      if (window.tidioChatApi) {
-        window.tidioChatApi.on("ready", onTidioChatApiReady);
-      }
-    
-      document.querySelector(".chat-toggle-cart").addEventListener("click", function() {
-        window.tidioChatApi.show();
-        window.tidioChatApi.open();
-      });
-    })();
-    </script>
   
 
 </form>
