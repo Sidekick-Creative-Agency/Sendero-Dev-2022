@@ -96,115 +96,13 @@
             "sp": 0,
             "sp_mb": 0
           }
-        },
-        "a39e865f-ca51-4fd4-8289-622c1591a0b5": {
-          "type": "img",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/2022-8-30---FW22----Banner-Images-5130.jpg",
-            "pos_img": "center center",
-            "cl_img": "#ffffff",
-            "link_img1": "",
-            "open_link": "_blank",
-            "caption_w": "2",
-            "cap_v_pos": 50,
-            "cap_h_pos": 50,
-            "txt_align": "tc_md",
-            "cap_v_pos_mb": 50,
-            "cap_h_pos_mb": 50,
-            "txt_align_mb": "tc",
-            "cl_overlay": "#000000",
-            "cl_opacity": 45,
-            "ani_img": "none",
-            "ani_txt": "bottom_top",
-            "bg_content_bl": false,
-            "bg_content_cl": "#ffffff",
-            "bg_content_op": 50,
-            "content_pd": "40px 80px",
-            "content_pd_mb": "10px 20px",
-            "border_bl": false,
-            "br_color": "#222222",
-            "br_style": "solid",
-            "br_pd": 20,
-            "br_pd_mb": 10
-          }
-        },
-        "ffe25368-0dde-44ba-8950-b5074a95acfc": {
-          "type": "txt",
-          "disabled": true,
-          "settings": {
-            "font": "f_heading",
-            "title": "Example Promotion Text",
-            "color": "#ffffff",
-            "fw_text": 600,
-            "fs_text": 50,
-            "lh_text": 0,
-            "ls_text": 0,
-            "fs_mb_text": 14,
-            "lh_mb_text": 0,
-            "ls_mb_text": 0,
-            "hide": false,
-            "sp": 30,
-            "sp_mb": 20
-          }
-        },
-        "b4138c19-cef5-4ee7-a023-289e8eca6338": {
-          "type": "txt",
-          "disabled": true,
-          "settings": {
-            "font": "f_body",
-            "title": "Example subheading text talking some big game about how amazing these products are.",
-            "color": "#ffffff",
-            "fw_text": 300,
-            "fs_text": 22,
-            "lh_text": 30,
-            "ls_text": 0,
-            "fs_mb_text": 14,
-            "lh_mb_text": 0,
-            "ls_mb_text": 0,
-            "hide": false,
-            "sp": 30,
-            "sp_mb": 20
-          }
-        },
-        "61fd7fd1-8b24-4f75-960f-7d3bc0474dd8": {
-          "type": "btn",
-          "disabled": true,
-          "settings": {
-            "title": "Shop Sale",
-            "btn_link": "shopify:\/\/collections\/mens-shirts",
-            "title2": "",
-            "btn_link2": "",
-            "btn_w": true,
-            "btn_icon": true,
-            "cl_txt": "#ffffff",
-            "cl_bg": "#222222",
-            "cl_bd": "#222222",
-            "fs_text": 14,
-            "fw_text": 500,
-            "h": 40,
-            "ls_text": 0,
-            "bdr": 0,
-            "pd": 15,
-            "fs_mb_text": 12,
-            "h_mb": 40,
-            "ls_mb_text": 0,
-            "bdr_mb": 0,
-            "pd_mb": 15,
-            "sp": 0,
-            "sp_mb": 0
-          }
         }
       },
       "block_order": [
         "16357021760efbe511-6",
         "9b0a18eb-2681-4948-b096-8384eeee1e40",
         "762d1378-8173-406f-80d3-0b676dbea9d4",
-        "25477687-767a-41ba-adf6-170f175c9e14",
-        "a39e865f-ca51-4fd4-8289-622c1591a0b5",
-        "ffe25368-0dde-44ba-8950-b5074a95acfc",
-        "b4138c19-cef5-4ee7-a023-289e8eca6338",
-        "61fd7fd1-8b24-4f75-960f-7d3bc0474dd8"
+        "25477687-767a-41ba-adf6-170f175c9e14"
       ],
       "settings": {
         "se_height": "cus_h",
