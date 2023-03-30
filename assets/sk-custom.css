@@ -3,6 +3,9 @@
 / SIDEKICK Custom CSS
 /-----------------------------------------------------------------------------*/
 
+#nt_wrapper {
+    overflow: visible;
+}
 /*--------------------------------------------------------/
 / PAGE HEADING
 /--------------------------------------------------------*/
@@ -142,7 +145,7 @@
 }
 
 .shop-all {
-    font-size:11px;
+    /* font-size:11px; */
     color:#fff;
     letter-spacing: 0.15em;
         opacity: 1;
@@ -150,7 +153,7 @@
 
 .shop-all-blk {
     padding: 0 20px;
-    font-size:12px;
+    /* font-size:12px; */
     font-weight:400;
     color:#000;
     letter-spacing: 0.15em;
@@ -642,6 +645,7 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     padding: 0 !important;
     border: none !important;
     white-space: nowrap;
+    max-width: none !important;
 }
 .sendero-session-more-button:hover {
     background-color: transparent !important;
@@ -883,7 +887,7 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 
     .hero-video-txt {
         margin: auto;
-        top: 75% !important;
+        /* top: 75% !important; */
         padding: 15px 20px !important;
     }
     .hero-video-txt .sendero-session-more-button {
@@ -952,6 +956,15 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 .signature-product-label .nt_label {
     background-color: transparent;
 }
+@media screen and (min-width: 768px) {
+    .product-images.pr_sticky_img {
+        height: fit-content;
+        position: sticky;
+        top: 70px;
+        align-self: flex-start;
+    }
+}
+
 
 /*---------------- Filter Widget -------------------*/
 
@@ -964,7 +977,10 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     min-height: 0px;
     min-width: 0px;
 }
-
+.mfp-close:hover {
+    border: none;
+    top: 0;
+}
 /*---------------- Product Badges & Sale Price -------------------*/
 
 .label_style_rounded .nt_label.out-of-stock {
@@ -2147,6 +2163,9 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     -webkit-transform: translateX(5px);
     transform: translateX(5px);
 }
+.button .la-arrow-right::before {
+    display: none;
+}
 .cart-product-container .quantity {
     display: flex !important;
     justify-content: center;
@@ -2155,6 +2174,15 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 }
 .cart-product-container .cart_ac_remove {
     margin-right: 0;
+}
+.mini-cart-edit-delete-container .cart_ac_edit {
+    display: none !important;
+}
+.scl_selected {
+    top: 5px !important;
+}
+.shopify-info.sp_notice {
+    background-color: #ff0033;
 }
 /* ----- Tablet ----- */
 @media screen and (max-width: 1023px) {

@@ -14,6 +14,7 @@
         "limit": 4,
         "space": 30,
         "use_pagination": "none",
+        "shop_all_font_size": 16,
         "btn_rd": false,
         "btn_icon": false,
         "btn_style": "default",
