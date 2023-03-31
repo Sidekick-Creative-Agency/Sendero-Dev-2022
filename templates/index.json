@@ -255,7 +255,7 @@
         "layout": "nt_full",
         "cl_bg": "",
         "hide_bgimg": false,
-        "mg": "50px,,50px,",
+        "mg": "50px,,15px,",
         "pd": "",
         "mg_mb": "",
         "pd_mb": ""
