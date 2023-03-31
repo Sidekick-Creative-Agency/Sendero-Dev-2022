@@ -56,6 +56,7 @@
           "type": "collection",
           "settings": {
             "collection": "performance",
+            "image": "shopify:\/\/shop_images\/SPCS623S12B_Yucatan_Hoodie_Blue_Ls1.jpg",
             "img_align": "center",
             "title": "",
             "col_link": "#",
@@ -110,6 +111,7 @@
           "type": "collection",
           "settings": {
             "collection": "fleece-wear",
+            "image": "shopify:\/\/shop_images\/2022-11-6_-_Sweatshirts_at_Pinewood-3558.jpg",
             "img_align": "center",
             "title": "",
             "col_link": "#",
@@ -139,7 +141,7 @@
         "cat_design": "1",
         "cat_space": "10",
         "image_ratio": "ratio1_1",
-        "col": "15",
+        "col": "4",
         "col_md": "3",
         "col_mb": "6",
         "pr_txt": "products",
