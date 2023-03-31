@@ -1833,7 +1833,7 @@
         data:  'quantity='+qty+'&id='+vid,
         dataType: 'json',
         success: function(cart) { 
-          console.log(cart)
+          // console.log(cart)
           if (cart.item_count == 0) {
            geckoShopify.onCartUpdate(0,1);
           } else if (qty == 0) {
@@ -1899,7 +1899,6 @@
                 var price = _item.find('.qty_cart_js').attr('data-price')*qty;
                 _item.find('.js_tt_price_it').html(geckoShopify.formatMoney(price));
              }
-             console.log("change");
              geckoShopify.onCartUpdate(0,0,cart.sections.cart_js);
              UpdateBarItem();
              body.trigger('CartUpdateSuccess CartChangeSuccess');
