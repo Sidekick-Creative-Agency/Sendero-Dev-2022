@@ -1934,7 +1934,8 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 .about-team-item {
     width: 100%;
     height: 35vw;
-    min-height: 350px;
+    min-height: 300px;
+    max-height: 350px;
     position: relative;
     margin: 0 !important;
 }
