@@ -52,33 +52,11 @@
     "164882807276a2e749": {
       "type": "collection-list",
       "blocks": {
-        "c481f40a-8b84-4daf-b50c-f97c5186825f": {
-          "type": "collection",
-          "settings": {
-            "collection": "performance",
-            "image": "shopify:\/\/shop_images\/SPCS623S12B_Yucatan_Hoodie_Blue_Ls1.jpg",
-            "img_align": "center",
-            "title": "",
-            "col_link": "#",
-            "url": ""
-          }
-        },
         "16488280725e7f0d65-0": {
           "type": "collection",
           "settings": {
             "collection": "hats",
             "image": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-2082.jpg",
-            "img_align": "center",
-            "title": "",
-            "col_link": "#",
-            "url": ""
-          }
-        },
-        "16488280725e7f0d65-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "t-shirts",
-            "image": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-2115.jpg",
             "img_align": "center",
             "title": "",
             "col_link": "#",
@@ -107,6 +85,28 @@
             "url": ""
           }
         },
+        "16488280725e7f0d65-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "t-shirts",
+            "image": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-2115.jpg",
+            "img_align": "center",
+            "title": "",
+            "col_link": "#",
+            "url": ""
+          }
+        },
+        "c481f40a-8b84-4daf-b50c-f97c5186825f": {
+          "type": "collection",
+          "settings": {
+            "collection": "performance",
+            "image": "shopify:\/\/shop_images\/SPCS623S12B_Yucatan_Hoodie_Blue_Ls1.jpg",
+            "img_align": "center",
+            "title": "",
+            "col_link": "#",
+            "url": ""
+          }
+        },
         "3ae6ddf1-d5a3-477f-a092-356ab6b88bd8": {
           "type": "collection",
           "settings": {
@@ -120,17 +120,17 @@
         }
       },
       "block_order": [
-        "c481f40a-8b84-4daf-b50c-f97c5186825f",
         "16488280725e7f0d65-0",
-        "16488280725e7f0d65-1",
         "16488280725e7f0d65-2",
         "6236469b-85c9-4415-9ee4-368d4cfef55b",
+        "16488280725e7f0d65-1",
+        "c481f40a-8b84-4daf-b50c-f97c5186825f",
         "3ae6ddf1-d5a3-477f-a092-356ab6b88bd8"
       ],
       "settings": {
         "title": "Collection list",
         "sub_title": "Sub Text",
-        "heading": "",
+        "heading": "shop by collection",
         "sub_font": "2",
         "style_title": "title_1",
         "ic_tt": "gem",
