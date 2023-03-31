@@ -15,7 +15,7 @@
 
   
   {%- if se_stts.cp_code and request.design_mode %}<div class="dn tc mt__40 mb__40 cp_cd_js"><input type="text" class="dcp_cd_ip" value='<div class="inc_lz inc_cat_laz" data-rendert4s="/search/?section_id={{sid}}"><div class="lds_bginfinity pr"></div></div>'><button class="dcp_cd_btn">Copy Shortcode</button></div>{% endif -%}
-  <div class="sk-collection-top">
+  <div class="sk-collection-slider">
   <div class="mobile-remove-left-padding nt_se_{{sid}} {{layout}}{%- if image != blank %} hide_bgimg_{{se_stts.hide_bgimg}} lazyloadt4s se_t4_bg nt_parallax_{{se_stts.use_pr}}{%- endif -%}"{% if image != blank %} data-bgset="{{ image | img_url: '1x1' }}" data-ratio="{{image.aspect_ratio}}" data-sizes="auto" data-parent-fit="cover"{% endif %}>
     {{-html_layout[0]-}}
     <span><h2>{{se_stts.title}}</h2></span>

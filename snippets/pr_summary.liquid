@@ -176,7 +176,7 @@ assign se_stts = section.settings
           <div class="flex">
             {% if bk_stts.second_link_type == "popup" %}
             <button class="quick-links-button" aria-label="button to contact support" onclick="secondQuickLinkClick()">
-              <i class="las la-question-circle" style="font-size: {{bk_stts.font_size}}px;"></i>
+              <i class="las la-box" style="font-size: {{bk_stts.font_size}}px;"></i>
               <span style="font-size: {{bk_stts.font_size}}px; letter-spacing: {{bk_stts.letter_spacing}}px">{{bk_stts.second_link_title}}</span>
             </button>
             <div class="quick-links-popup" id="second-popup">
@@ -190,16 +190,20 @@ assign se_stts = section.settings
             {% else %}
             <a href="{{bk_stts.second_link_href}}">
               <button class="quick-links-button" aria-label="button to view returns policy information">
-                <i class="las la-question-circle" style="font-size: {{bk_stts.font_size}}px;"></i>
+                <i class="las la-box" style="font-size: {{bk_stts.font_size}}px;"></i>
                 <span style="font-size: {{bk_stts.font_size}}px; letter-spacing: {{bk_stts.letter_spacing}}px">{{bk_stts.second_link_title}}</span>
               </button>
             </a>
             {%- endif -%}
           </div>
+          {%- comment -%} ONLY SHOW ON SHIRT PAGES {%- endcomment -%}
+          {% if product.type contains "Shirt" or product.type contains "T-shirt"  %}
+            
+          
           <div class="flex">
             {% if bk_stts.third_link_type == "popup" %}
             <button class="quick-links-button" aria-label="button to contact support" onclick="thirdQuickLinkClick()">
-              <i class="las la-box" style="font-size: {{bk_stts.font_size}}px;"></i>
+              <i class="las la-tshirt" style="font-size: {{bk_stts.font_size}}px;"></i>
               <span style="font-size: {{bk_stts.font_size}}px; letter-spacing: {{bk_stts.letter_spacing}}px">{{bk_stts.third_link_title}}</span>
             </button>
             <div class="quick-links-popup" id="third-popup">
@@ -207,18 +211,23 @@ assign se_stts = section.settings
                 <div class="quick-links-popup-content">
                   <i class="las la-times quick-links-popup-close" onclick="quickLinkPopupClose()"></i>
                   {{bk_stts.third_link_popup_content}}
+                  {% if bk_stts.third_image %}
+                  {% assign tImage = bk_stts.third_image %}
+                  <img width="{{tImage.width}}" height="{{tImage.height}}" src="{{tImage | img_url}}" data-src="{{ tImage | img_url: '1x1' }}" data-widths="[60, 90, 180, 320, 640]" data-sizes="auto" class="w__100 lazyloadt4s lz_op_ef" alt={{bk_stts.third_image.alt}}>
+                  {% endif %}
                 </div>
               </div>
             </div>
             {% else %}
             <a href="{{bk_stts.third_link_href}}">
               <button class="quick-links-button" aria-label="button to view returns policy information">
-                <i class="las la-box" style="font-size: {{bk_stts.font_size}}px;"></i>
+                <i class="las la-tshirt" style="font-size: {{bk_stts.font_size}}px;"></i>
                 <span style="font-size: {{bk_stts.font_size}}px; letter-spacing: {{bk_stts.letter_spacing}}px">{{bk_stts.third_link_title}}</span>
               </button>
             </a>
             {%- endif -%}
           </div>
+          {% endif %}
         </div>
 
      <script>
