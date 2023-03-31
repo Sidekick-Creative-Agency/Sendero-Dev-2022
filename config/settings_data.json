@@ -684,16 +684,6 @@
               "col": "3"
             }
           },
-          "d964bd86-2c5e-4cb7-8b1f-0027152aafea": {
-            "type": "link",
-            "settings": {
-              "tt_hd": "",
-              "url": "",
-              "open_link": "_self",
-              "menu": "accessories-new-site-right-column",
-              "col": "1"
-            }
-          },
           "4e5ad45b-8c9b-48d6-8ccb-93307deb91fa": {
             "type": "link",
             "settings": {
@@ -702,6 +692,16 @@
               "open_link": "_self",
               "menu": "accessories-new-site-left-column-1",
               "col": "2"
+            }
+          },
+          "d964bd86-2c5e-4cb7-8b1f-0027152aafea": {
+            "type": "link",
+            "settings": {
+              "tt_hd": "",
+              "url": "",
+              "open_link": "_self",
+              "menu": "accessories-new-site-right-column",
+              "col": "1"
             }
           },
           "01c7c08b-1e91-40f4-8734-b22e759c1062": {
@@ -892,8 +892,8 @@
           "201da3f5-aa3c-4ef4-a95d-fc7d70c9a212",
           "bf2d3716-63bd-4f64-99f9-2d384f8c8dd5",
           "673c217c-c470-4dc4-84c1-cce173cdfe41",
-          "d964bd86-2c5e-4cb7-8b1f-0027152aafea",
           "4e5ad45b-8c9b-48d6-8ccb-93307deb91fa",
+          "d964bd86-2c5e-4cb7-8b1f-0027152aafea",
           "01c7c08b-1e91-40f4-8734-b22e759c1062",
           "655005bb-15f0-419a-8ce4-8698991b63bd",
           "932e6253-0155-4ab3-b3c0-635dd62ee01b",
