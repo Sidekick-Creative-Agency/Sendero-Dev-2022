@@ -6,45 +6,16 @@
     assign url_none = "//www.youtube.com/embed/https://www.youtube.com/watch?v=_9VUPq3SxOc?autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1&rel=0&autohide=1&enablejsapi=1&playlist=https://www.youtube.com/watch?v=_9VUPq3SxOc"
     assign urltest = "https://www.youtube.com/embed?v=-2icZZ9tbwc?autoplay=1"
     -%}
-{%- comment -%}
-    {%- assign arr_mg = se_stts.mg | remove:' ' | split:',' -%}
-    {%- assign arr_mg_mb = se_stts.mg_mb | remove:' ' | split:',' -%}
-    <div class="row equal_nt auto al_center session-slider-outer-container" style="margin: 0{{arr_mg[0]}} 0{{arr_mg[1]}} 0{{arr_mg[2]}} 0{{arr_mg[3]}}"></div>
-      <div class="col-md-6 txt_col_img" style="max-width: 100%; padding-right: 0">
-        <div class="container sk-session-slider-container">
-            <div class="nt_cats_holder row fl_center equal_nt nt_slider js_carousel prev_next_1 btn_owl_2 space_10 ratio16_9 btn_vi_1" data-flickityt4s-js='{"imagesLoaded": false, "adaptiveHeight": false, "contain": false, "groupCells": "100%", "dragThreshold" : 5, "cellAlign": "left","wrapAround": true,"prevNextButtons": true,"percentPosition": true, "autoPlay" : {{ 6 | times: 1000 }}, "pauseAutoPlayOnHover" : true, "rightToLeft": {{settings.use_rtl}} }'>
-            {%- for block in section.blocks -%}        
-              {%- liquid 
-                assign bk_stts = block.settings
-                assign video_id = block.settings.video_url | remove: "https://youtu.be/"
-                assign url = bk_stts.video_url | remove: "https://youtu.be/" | prepend: video_id | prepend: "https://www.youtube.com/embed/" | append: "?autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1&rel=0&autohide=1&enablejsapi=1&playlist=" | append: video_id
-                -%}
-                <div class="sendero-session-slider-vid-container">
-                  <a class="sendero-session-link" href="{{bk_stts.page_link}}"></a>
-                    <iframe width="100%" height="100%" src="{{url}}" title="YouTube video player" frameborder="0" allow="loop; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>     
-                      
-                        <div class="sendero-session-overlay">
-                          <h5 class="sendero-session-sub-title">{{bk_stts.video_location}}</h5>
-                          <h3 class="sendero-session-title">{{bk_stts.video_title}}</h3>
-                        </div>
-                      </a>
-                </div>
-              {%- endfor -%}
-            </div>
-          </div>
-        </div>
-      </div>
-{%- endcomment -%}
-
-      <div class="container">
-        <div class="{{section.settings.col_pr_mb}} products nt_products_holder row row_pr_{{inc_pr}} cdt_des_{{se_stts.cdt_des}} round_cd_{{se_stts.round_cd}} js_carousel nt_slider {{se_stts.image_size}} ratio16_9 position_{{se_stts.image_position}} space_10 prev_next_1 btn_owl_2 dot_owl_{{se_stts.dot_owl}} dot_color_2 btn_vi_1{% if sett_equal %} equal_nt{% endif %}" data-flickityt4s-js='{"imagesLoaded": 0,"adaptiveHeight": 0, "contain": 1, "groupCells": "100%", "dragThreshold" : 5, "cellAlign": "left","wrapAround": true,"prevNextButtons": true,"percentPosition": 1,"pageDots": false, "autoPlay" : {{ 6 | times: 1000 }}, "pauseAutoPlayOnHover" : true, "rightToLeft": true }'>
+    {%- assign arr_mg = section.settings.mg | remove:' ' | split:',' -%}
+      <div class="container" style="margin-top: {{arr_mg[0]}}; margin-right: {{arr_mg[1]}}; margin-bottom: {{arr_mg[2]}}; margin-left: {{arr_mg[3]}}">
+        <div class="sendero-session-slider-container products nt_products_holder row row_pr_{{inc_pr}} cdt_des_{{se_stts.cdt_des}} round_cd_{{se_stts.round_cd}} js_carousel nt_slider {{se_stts.image_size}} ratio16_9 position_{{se_stts.image_position}} cat_space_0 prev_next_1 btn_owl_2 dot_owl_{{se_stts.dot_owl}} dot_color_2 btn_vi_1{% if sett_equal %} equal_nt{% endif %}" data-flickityt4s-js='{"imagesLoaded": 0,"adaptiveHeight": 0, "contain": 1, "groupCells": "100%", "dragThreshold" : 5, "cellAlign": "left","wrapAround": true,"prevNextButtons": true,"percentPosition": 1,"pageDots": false, "autoPlay" : {{ 6 | times: 1000 }}, "pauseAutoPlayOnHover" : true, "rightToLeft": true }'>
           {%- for block in section.blocks -%}        
               {%- liquid 
                 assign bk_stts = block.settings
                 assign video_id = block.settings.video_url | remove: "https://youtu.be/"
                 assign url = bk_stts.video_url | remove: "https://youtu.be/" | prepend: video_id | prepend: "https://www.youtube.com/embed/" | append: "?autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1&rel=0&autohide=1&enablejsapi=1&playlist=" | append: video_id
                 -%}
-                <div class="sendero-session-slider-vid-container col-lg-6 col-md-6 col-12 mt__30 pr_grid_item product nt_pr desgin__2 tc">
+                <div class="sendero-session-slider-vid-container col-lg-6 col-md-6 col-12 pr_grid_item product nt_pr desgin__2 tc">
                   <a class="sendero-session-link" href="{{bk_stts.page_link}}">
                     <iframe width="100%" height="100%" src="{{url}}" title="YouTube video player" frameborder="0" allow="loop; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>     
                     <div class="sendero-session-overlay">

@@ -76,56 +76,6 @@
     "164882807276a2e749": {
       "type": "collection-list",
       "blocks": {
-        "16488280725e7f0d65-0": {
-          "type": "collection",
-          "settings": {
-            "collection": "hats",
-            "img_align": "center",
-            "title": "",
-            "col_link": "#",
-            "url": ""
-          }
-        },
-        "16488280725e7f0d65-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "t-shirts",
-            "img_align": "center",
-            "title": "",
-            "col_link": "#",
-            "url": ""
-          }
-        },
-        "16488280725e7f0d65-2": {
-          "type": "collection",
-          "settings": {
-            "collection": "outerwear",
-            "img_align": "center",
-            "title": "",
-            "col_link": "#",
-            "url": ""
-          }
-        },
-        "16488280725e7f0d65-3": {
-          "type": "collection",
-          "settings": {
-            "collection": "stickers-1",
-            "img_align": "center",
-            "title": "",
-            "col_link": "#",
-            "url": ""
-          }
-        },
-        "6236469b-85c9-4415-9ee4-368d4cfef55b": {
-          "type": "collection",
-          "settings": {
-            "collection": "kids-gear",
-            "img_align": "center",
-            "title": "",
-            "col_link": "#",
-            "url": ""
-          }
-        },
         "c481f40a-8b84-4daf-b50c-f97c5186825f": {
           "type": "collection",
           "settings": {
@@ -145,16 +95,71 @@
             "col_link": "#",
             "url": ""
           }
+        },
+        "16488280725e7f0d65-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "hats",
+            "image": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-2082.jpg",
+            "img_align": "center",
+            "title": "",
+            "col_link": "#",
+            "url": ""
+          }
+        },
+        "16488280725e7f0d65-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "t-shirts",
+            "image": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-2115.jpg",
+            "img_align": "center",
+            "title": "",
+            "col_link": "#",
+            "url": ""
+          }
+        },
+        "16488280725e7f0d65-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "mens-shirts",
+            "image": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-1837.jpg",
+            "img_align": "center",
+            "title": "",
+            "col_link": "#",
+            "url": ""
+          }
+        },
+        "16488280725e7f0d65-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "accessories",
+            "image": "shopify:\/\/shop_images\/sendero-patch_1.webp",
+            "img_align": "center",
+            "title": "",
+            "col_link": "#",
+            "url": ""
+          }
+        },
+        "6236469b-85c9-4415-9ee4-368d4cfef55b": {
+          "type": "collection",
+          "settings": {
+            "collection": "shorts",
+            "image": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-7795.jpg",
+            "img_align": "center",
+            "title": "",
+            "col_link": "#",
+            "url": ""
+          }
         }
       },
       "block_order": [
+        "c481f40a-8b84-4daf-b50c-f97c5186825f",
+        "7c78fa23-aee6-4a9b-b725-28233688b75b",
         "16488280725e7f0d65-0",
         "16488280725e7f0d65-1",
         "16488280725e7f0d65-2",
         "16488280725e7f0d65-3",
-        "6236469b-85c9-4415-9ee4-368d4cfef55b",
-        "c481f40a-8b84-4daf-b50c-f97c5186825f",
-        "7c78fa23-aee6-4a9b-b725-28233688b75b"
+        "6236469b-85c9-4415-9ee4-368d4cfef55b"
       ],
       "settings": {
         "title": "Collection list",
@@ -179,7 +184,7 @@
         "au_time": 6,
         "au_hover": true,
         "button": true,
-        "btn_vi": "2",
+        "btn_vi": "1",
         "btn_owl": "2",
         "btn_color": "1",
         "dot": false,

@@ -40,16 +40,17 @@
             "font": "f_heading",
             "title": "All New For Spring",
             "color": "#ffffff",
+            "text_align": "left",
             "fw_text": 600,
-            "fs_text": 50,
+            "fs_text": 64,
             "lh_text": 0,
             "ls_text": 0,
-            "fs_mb_text": 14,
+            "fs_mb_text": 24,
             "lh_mb_text": 0,
             "ls_mb_text": 0,
             "hide": false,
             "sp": 30,
-            "sp_mb": 20
+            "sp_mb": 16
           }
         },
         "762d1378-8173-406f-80d3-0b676dbea9d4": {
@@ -58,16 +59,17 @@
             "font": "f_body",
             "title": "Pearl snaps, short sleeves, shorts, women's tees, and a lot more!",
             "color": "#ffffff",
+            "text_align": "left",
             "fw_text": 300,
             "fs_text": 22,
             "lh_text": 30,
             "ls_text": 0,
-            "fs_mb_text": 14,
+            "fs_mb_text": 16,
             "lh_mb_text": 20,
             "ls_mb_text": 0,
             "hide": false,
             "sp": 30,
-            "sp_mb": 20
+            "sp_mb": 15
           }
         },
         "25477687-767a-41ba-adf6-170f175c9e14": {

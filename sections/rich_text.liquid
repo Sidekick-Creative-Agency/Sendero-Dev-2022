@@ -2,7 +2,7 @@
   {%- render 'section_title',section:section,section_title:'mb__20' -%}
   <div class="rte_setting {{section.settings.align}}">{{ section.settings.content }}</div>
   {%- if section.settings.show_btn -%}
-    <div class="rich-text-button" style="text-align: {{section.settings.button_align}}">
+    <div class="rich-text-button" style="text-align: {{section.settings.button_align}}; margin-top: {{section.settings.btn_mt}}px">
       <a href="{{section.settings.btn_link}}">
         <button class="btn_icon_true">{{section.settings.btn_text}}</button>
       </a>
@@ -85,6 +85,16 @@
         "label": "Button link",
         "default": "#"
       },
+     {
+      "type": "range",
+      "id": "btn_mt",
+      "label": "Button Spacing",
+      "unit": "px",
+      "min": 0,
+      "max": 64,
+      "step": 1,
+      "default": 16
+     },
       {
         "type": "select",
         "id": "sub_font",

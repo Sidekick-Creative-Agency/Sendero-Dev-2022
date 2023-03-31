@@ -987,7 +987,7 @@
             "type": "menu",
             "settings": {
               "title": "Quick Links",
-              "menu": "store",
+              "menu": "quick-links-new-site",
               "order": "2",
               "cl": "2",
               "cl_tb": "3",

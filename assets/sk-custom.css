@@ -557,7 +557,9 @@
 .footer__top_wrap aside {
     padding-right: 64px;
 }
-
+.footer__middle a:hover {
+    color: #FFFFFF !important;
+}
 @media (min-width: 1430px) {
     .footer__top_wrap .container, .footer__middle_wrap .container {
         max-width: 1400px;
@@ -938,8 +940,8 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     max-width: unset;
     width: auto;
 }
-.sk-collection-top .nt_bg_lz {
-    /* min-height: 250px; */
+.sk-collection-top .cat-top-img .nt_bg_lz {
+    min-height: 250px;
 }
 .flickityt4s-slider {
     width:108%;
@@ -977,6 +979,18 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
         position: sticky;
         top: 70px;
         align-self: flex-start;
+    }
+}
+@media screen and (max-width: 767px) {
+    .sk-collection-top.collection-page-top {
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .type_collection_list .flickityt4s-button.next {
+        right: 0;
+    }
+    .type_collection_list .flickityt4s-button.previous {
+        left: 0;
     }
 }
 
@@ -1062,6 +1076,9 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     justify-content: center;
     
 }
+.sendero-session-slider-container .flickityt4s-viewport {
+    max-height: 300px;
+}
 .sendero-session-img-container {
     display: flex;
     justify-content: center;
@@ -1074,6 +1091,8 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 }
 .sendero-session-slider-vid-container {
     height: 300px;
+    max-width: 533.33px;
+    width: 100%;
     /* min-width: 300px; */
     overflow: hidden;
 }
@@ -1884,6 +1903,7 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 }
 .about-us-img-txt {
     flex: content;
+    padding-right: 96px !important;
 }
 .about-us-text-sig-section {
     gap: 50px;
@@ -1973,7 +1993,9 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 }
 /* ----- Tablet ------ */
 @media screen and (max-width: 1023px) {
-
+    .about-us-img-txt {
+        padding-right: 64px !important;
+    }
 }
 
 /* ----- Mobile ----- */
@@ -2004,6 +2026,7 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     }
     .about-us-img-txt {
         margin: 0;
+        padding-right: 0 !important;
     }
 }
 
@@ -2836,7 +2859,7 @@ a.prev.page-numbers {
         margin:20px 25px;
     }
     
-    .sk-collection-top {
+    .sk-collection-top, .sk-collection-slider {
         margin:25px;
     }
 

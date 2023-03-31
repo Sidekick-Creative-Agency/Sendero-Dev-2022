@@ -108,10 +108,11 @@
         "abc8a595-07ae-45ca-9783-27c47df98d2c"
       ],
       "settings": {
-        "mg": "",
+        "mg": "50px,,,",
         "pd": "",
         "mg_mb": "",
-        "pd_mb": ""
+        "pd_mb": "",
+        "col_pr_mb": "12"
       }
     },
     "main": {
@@ -136,67 +137,92 @@
         "pd_mb": ",25px,,25px"
       }
     },
-    "sendero-sessions-img-grid": {
-      "type": "sendero-sessions-img-grid",
+    "25566ea0-33fa-4176-ac3a-f0902fa4fa23": {
+      "type": "banner2",
       "blocks": {
-        "1649278839f63a16f4-0": {
-          "type": "collection",
+        "template--16713561243867__25566ea0-33fa-4176-ac3a-f0902fa4fa23-16802727701e61057b-0": {
+          "type": "image",
           "settings": {
-            "collection": "",
-            "img_align": "center",
-            "title": "",
-            "url": ""
+            "image": "shopify:\/\/shop_images\/2020-11-8_-_Not_Quite_Nashville_Tapes_-_Balcones-6680.jpg",
+            "url": "",
+            "open_link": "_self",
+            "col_pr": "6",
+            "col_pr_tb": "6",
+            "col_pr_mb": "6",
+            "html": "",
+            "cap_v_pos": 50,
+            "cap_h_pos": 50,
+            "txt_align": "tc",
+            "cl_txt": "#ffffff",
+            "cl_overlay": "#000000",
+            "cl_opacity": 0
           }
         },
-        "1649278839f63a16f4-1": {
-          "type": "collection",
+        "template--16713561243867__25566ea0-33fa-4176-ac3a-f0902fa4fa23-16802727701e61057b-1": {
+          "type": "image",
           "settings": {
-            "collection": "",
-            "img_align": "center",
-            "title": "",
-            "url": ""
+            "image": "shopify:\/\/shop_images\/2021-2-5_-_Saloon_Tapes_-_VS_-_Low_Res-6656.jpg",
+            "url": "",
+            "open_link": "_self",
+            "col_pr": "6",
+            "col_pr_tb": "6",
+            "col_pr_mb": "6",
+            "html": "",
+            "cap_v_pos": 50,
+            "cap_h_pos": 50,
+            "txt_align": "tc",
+            "cl_txt": "#ffffff",
+            "cl_overlay": "#000000",
+            "cl_opacity": 0
           }
         }
       },
       "block_order": [
-        "1649278839f63a16f4-0",
-        "1649278839f63a16f4-1"
+        "template--16713561243867__25566ea0-33fa-4176-ac3a-f0902fa4fa23-16802727701e61057b-0",
+        "template--16713561243867__25566ea0-33fa-4176-ac3a-f0902fa4fa23-16802727701e61057b-1"
       ],
       "settings": {
-        "col": "6",
-        "col_md": "3",
-        "col_mb": "6",
-        "button": false,
-        "btn_vi": "1",
-        "btn_owl": "1",
-        "btn_color": "0",
-        "layout": "wrap",
+        "title": "",
+        "sub_title": "",
+        "sub_font": "2",
+        "style_title": "title_1",
+        "ic_tt": "gem",
+        "show_clpr": false,
+        "cat_space": "30",
+        "hoverz": false,
+        "layout": "container",
         "cl_bg": "",
-        "hide_bgimg": false,
         "mg": "50px,,50px,",
         "pd": "",
-        "mg_mb": "-25px,,-25px,",
+        "mg_mb": "",
         "pd_mb": ""
       }
     },
-    "sendero-session-apply": {
-      "type": "sendero-session-apply",
+    "bfd96e57-db11-467e-8e01-dbb492cee75f": {
+      "type": "rich_text",
       "settings": {
-        "btn_des": "1",
-        "title": "APPLY FOR SENDERO SESSIONS",
+        "title": "Apply for Sendero Sessions",
+        "sub_title": "",
+        "show_btn": true,
+        "btn_text": "Contact To Apply",
+        "button_align": "left",
+        "btn_link": "mailto:sessions@senderopc.com",
+        "btn_mt": 16,
+        "sub_font": "2",
         "header_align": "left",
         "style_title": "title_1",
         "ic_tt": "gem",
         "show_clpr": false,
-        "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store. Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store. Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store. Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+        "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
         "align": "tl",
+        "list_mg_left": 0,
+        "list_mg_top": 0,
+        "ul_marker": true,
         "layout": "container",
-        "apply_link_text": "Contact to Apply",
-        "apply_link": "mailto:sessions@senderopc.com",
         "mg": "50px,,50px,",
-        "pd": ",25px,,25px",
-        "mg_mb": "25px,,50px,",
-        "pd_mb": ",25px,,25px"
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
       }
     }
   },
@@ -205,7 +231,7 @@
     "164865439396016512",
     "main",
     "16492747850b78eade",
-    "sendero-sessions-img-grid",
-    "sendero-session-apply"
+    "25566ea0-33fa-4176-ac3a-f0902fa4fa23",
+    "bfd96e57-db11-467e-8e01-dbb492cee75f"
   ]
 }
