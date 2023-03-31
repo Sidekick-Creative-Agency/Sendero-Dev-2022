@@ -49,47 +49,13 @@
         "pd_mb": ""
       }
     },
-    "main": {
-      "type": "category_page",
-      "settings": {
-        "shop_layout": "default",
-        "shop_des": "default",
-        "limit": 12,
-        "space": 30,
-        "use_pagination": "infinite",
-        "use_bar_lm": true,
-        "col_pr": "3",
-        "col_pr_tb": "3",
-        "col_pr_mb": "6",
-        "pr_des": "1",
-        "show_vendor": false,
-        "breadcrumb_pr": true,
-        "use_cdt": false,
-        "round_cd": false,
-        "cdt_des": "1",
-        "use_eq_height": true,
-        "image_ratio": "ratio1_1",
-        "image_size": "nt_cover",
-        "image_position": "8"
-      }
-    },
     "164882807276a2e749": {
       "type": "collection-list",
       "blocks": {
         "c481f40a-8b84-4daf-b50c-f97c5186825f": {
           "type": "collection",
           "settings": {
-            "collection": "spring-2023",
-            "img_align": "center",
-            "title": "",
-            "col_link": "#",
-            "url": ""
-          }
-        },
-        "7c78fa23-aee6-4a9b-b725-28233688b75b": {
-          "type": "collection",
-          "settings": {
-            "collection": "crop-tee",
+            "collection": "performance",
             "img_align": "center",
             "title": "",
             "col_link": "#",
@@ -129,17 +95,6 @@
             "url": ""
           }
         },
-        "16488280725e7f0d65-3": {
-          "type": "collection",
-          "settings": {
-            "collection": "accessories",
-            "image": "shopify:\/\/shop_images\/sendero-patch_1.webp",
-            "img_align": "center",
-            "title": "",
-            "col_link": "#",
-            "url": ""
-          }
-        },
         "6236469b-85c9-4415-9ee4-368d4cfef55b": {
           "type": "collection",
           "settings": {
@@ -150,16 +105,25 @@
             "col_link": "#",
             "url": ""
           }
+        },
+        "3ae6ddf1-d5a3-477f-a092-356ab6b88bd8": {
+          "type": "collection",
+          "settings": {
+            "collection": "fleece-wear",
+            "img_align": "center",
+            "title": "",
+            "col_link": "#",
+            "url": ""
+          }
         }
       },
       "block_order": [
         "c481f40a-8b84-4daf-b50c-f97c5186825f",
-        "7c78fa23-aee6-4a9b-b725-28233688b75b",
         "16488280725e7f0d65-0",
         "16488280725e7f0d65-1",
         "16488280725e7f0d65-2",
-        "16488280725e7f0d65-3",
-        "6236469b-85c9-4415-9ee4-368d4cfef55b"
+        "6236469b-85c9-4415-9ee4-368d4cfef55b",
+        "3ae6ddf1-d5a3-477f-a092-356ab6b88bd8"
       ],
       "settings": {
         "title": "Collection list",
@@ -170,7 +134,7 @@
         "ic_tt": "gem",
         "show_clpr": false,
         "round": 0,
-        "cat_layout": "2",
+        "cat_layout": "1",
         "hoverz": true,
         "cat_design": "1",
         "cat_space": "10",
@@ -199,11 +163,35 @@
         "mg_mb": "",
         "pd_mb": ""
       }
+    },
+    "main": {
+      "type": "category_page",
+      "settings": {
+        "shop_layout": "default",
+        "shop_des": "default",
+        "limit": 12,
+        "space": 30,
+        "use_pagination": "infinite",
+        "use_bar_lm": true,
+        "col_pr": "3",
+        "col_pr_tb": "3",
+        "col_pr_mb": "6",
+        "pr_des": "1",
+        "show_vendor": false,
+        "breadcrumb_pr": true,
+        "use_cdt": false,
+        "round_cd": false,
+        "cdt_des": "1",
+        "use_eq_height": true,
+        "image_ratio": "ratio1_1",
+        "image_size": "nt_cover",
+        "image_position": "8"
+      }
     }
   },
   "order": [
     "16479809910f68859a",
-    "main",
-    "164882807276a2e749"
+    "164882807276a2e749",
+    "main"
   ]
 }
