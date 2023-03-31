@@ -476,7 +476,7 @@
         "cl_overlay": "#181818",
         "cl_opacity": 60,
         "layout": "nt_full",
-        "mg": "50px,,50px,",
+        "mg": "",
         "pd": "",
         "mg_mb": "",
         "pd_mb": ""
