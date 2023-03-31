@@ -489,12 +489,11 @@
     },
     "16528932861d0f8a07": {
       "type": "instagram_feed2",
-      "disabled": true,
       "blocks": {
         "16528932863acfb535-0": {
           "type": "1",
           "settings": {
-            "title": "@ FOLLOW US ON INSTAGRAM",
+            "title": "LATEST FROM IG",
             "sub_title": "",
             "sub_font": "2",
             "style_title": "title_1",
