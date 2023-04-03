@@ -140,8 +140,8 @@ endif -%}
 {%- else -%}
 
 
-<div class="container container_cat {{settings.pop_style}} cat_{{se_settings.shop_layout}} mb__60" id="content">
-      <div class="cat_toolbar row fl_center al_center mt__30" style="max-width:1450px">
+<div class="container container_cat {{settings.pop_style}} cat_{{se_settings.shop_layout}} mb__50" id="content">
+      <div class="cat_toolbar row fl_center al_center">
         <div class="cat_filter col op__0 pe_none">
         {%- assign ck = true -%}
         {%- if shop_filters -%}
@@ -287,8 +287,8 @@ endif -%}
                           {%- endif -%}
                       {%- endif -%}
                       {%- if p_pages > 1 and use_pagination != 'default' and paginate.previous.is_link -%}
-                        <div class="products-footer tc mt__40 mb__30 is_prev_cat_js">
-                          <a data-get='{{ paginate.previous.url }}' href="{{ paginate.previous.url }}" data-id="{{section.id}}" class="pr nt_cat_lm button">{{ 'products.grid_items.load_prev' | t }}</a>
+                        <div class="products-footer tc mb__30 is_prev_cat_js">
+                          <a data-get='{{ paginate.previous.url }}' href="{{ paginate.previous.url }}" data-id="{{section.id}}" class="pr nt_cat_lm button" style="max-width: none !important">{{ 'products.grid_items.load_prev' | t }}</a>
                         </div>
                       {%- endif -%}
                       <div class="nt_svg_loader dn"></div>

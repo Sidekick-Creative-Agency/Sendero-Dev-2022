@@ -23,37 +23,63 @@
         "c4147d35-86b4-415d-a4e5-dc38c2a798cf": {
           "type": "collection",
           "settings": {
-            "collection": "spring-2022"
+            "collection": "spring-2023"
           }
         },
         "61268911-abee-4e20-9a27-8fc7ffa7f758": {
           "type": "collection",
           "settings": {
-            "collection": "hats"
+            "collection": "hats",
+            "image": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-2082.jpg"
           }
         },
         "70185357-0f75-4930-bf4a-6bd62182a3b0": {
           "type": "collection",
           "settings": {
-            "collection": "t-shirts"
+            "collection": "t-shirts",
+            "image": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-2067.jpg"
           }
         },
-        "429e055c-a8dd-417c-9099-1be534a9fa3a": {
+        "06caaad2-1234-42b4-93e3-6371ce380cf8": {
           "type": "collection",
           "settings": {
-            "collection": "accessories"
+            "collection": "crop-tee",
+            "image": "shopify:\/\/shop_images\/womens_-_crop_tees.jpg"
           }
         },
         "771b8e36-f9d2-43e3-88bd-6852a15b34e2": {
           "type": "collection",
           "settings": {
-            "collection": "outerwear"
+            "collection": "mens-shirts",
+            "image": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-2115.jpg"
+          }
+        },
+        "1fa4d0de-0350-42c1-838f-e059b8c9ef45": {
+          "type": "collection",
+          "settings": {
+            "collection": "shorts",
+            "image": "shopify:\/\/shop_images\/Men_-_Shorts.jpg"
+          }
+        },
+        "429e055c-a8dd-417c-9099-1be534a9fa3a": {
+          "type": "collection",
+          "settings": {
+            "collection": "accessories",
+            "image": "shopify:\/\/shop_images\/sendero-patch_1.webp"
           }
         },
         "14ee0af3-77a6-4cde-8e00-f2b061a9bf06": {
           "type": "collection",
           "settings": {
-            "collection": "kids-gear"
+            "collection": "fleece-wear",
+            "image": "shopify:\/\/shop_images\/2019-11-28_-_Beanie_and_Sweatshirts_on_the_Llano-6193.jpg"
+          }
+        },
+        "9c1138f3-7b64-429c-b974-02de82919e13": {
+          "type": "collection",
+          "settings": {
+            "collection": "performance",
+            "image": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-7779.jpg"
           }
         }
       },
@@ -61,9 +87,15 @@
         "c4147d35-86b4-415d-a4e5-dc38c2a798cf",
         "61268911-abee-4e20-9a27-8fc7ffa7f758",
         "70185357-0f75-4930-bf4a-6bd62182a3b0",
-        "429e055c-a8dd-417c-9099-1be534a9fa3a",
+        "06caaad2-1234-42b4-93e3-6371ce380cf8",
         "771b8e36-f9d2-43e3-88bd-6852a15b34e2",
-        "14ee0af3-77a6-4cde-8e00-f2b061a9bf06"
+        "1fa4d0de-0350-42c1-838f-e059b8c9ef45",
+        "429e055c-a8dd-417c-9099-1be534a9fa3a",
+        "14ee0af3-77a6-4cde-8e00-f2b061a9bf06",
+        "9c1138f3-7b64-429c-b974-02de82919e13"
+      ],
+      "custom_css": [
+        "img {object-position: center center;}"
       ],
       "settings": {
         "layout": "default",
@@ -79,50 +111,10 @@
         "use_eq_height": true,
         "image_ratio": "ratio1_1"
       }
-    },
-    "16523848385fae8dc7": {
-      "type": "featured_collection",
-      "settings": {
-        "title": "Collection Grid",
-        "sub_title": "",
-        "sub_font": "2",
-        "btn_title": "See all products",
-        "style_title": "title_1",
-        "ic_tt": "gem",
-        "show_clpr": false,
-        "collection": "",
-        "limit": 12,
-        "space": 30,
-        "use_pagination": "none",
-        "use_bar_lm": true,
-        "btn_rd": true,
-        "btn_icon": false,
-        "btn_style": "default",
-        "col_pr": "3",
-        "col_pr_tb": "3",
-        "col_pr_mb": "6",
-        "pr_des": "1",
-        "show_vendor": false,
-        "use_cdt": false,
-        "round_cd": false,
-        "cdt_des": "1",
-        "use_eq_height": false,
-        "image_ratio": "ratio_nt",
-        "image_size": "nt_cover",
-        "image_position": "8",
-        "cp_code": false,
-        "layout": "wrap",
-        "cl_bg": "",
-        "mg": "50px,,50px,",
-        "pd": "",
-        "mg_mb": "",
-        "pd_mb": ""
-      }
     }
   },
   "order": [
     "list_cat_heading",
-    "main",
-    "16523848385fae8dc7"
+    "main"
   ]
 }

@@ -126,7 +126,7 @@
         "dot_color": "2",
         "layout": "nt_full",
         "cl_bg": "",
-        "mg": ",,50px,",
+        "mg": ",,,,",
         "pd": "",
         "mg_mb": "",
         "pd_mb": ""
@@ -255,10 +255,10 @@
         "layout": "nt_full",
         "cl_bg": "",
         "hide_bgimg": false,
-        "mg": "50px,,50px,",
-        "pd": "",
-        "mg_mb": "",
-        "pd_mb": ""
+        "mg": ",,,,",
+        "pd": "64px,,32px,64px",
+        "mg_mb": ",,,,",
+        "pd_mb": "32px,32px,,32px"
       }
     },
     "164865439396016512": {
@@ -360,7 +360,7 @@
       "settings": {
         "source": "1",
         "video_url": "https:\/\/youtu.be\/E4e9TPE2a2E?t=20",
-        "btn_link": "https:\/\/youtu.be\/E4e9TPE2a2E",
+        "btn_link": "https:\/\/youtube.com\/embed\/E4e9TPE2a2E",
         "se_height": "cus_h",
         "use_custom_h": "1",
         "h_des": "600px",
@@ -377,9 +377,9 @@
         "cl_overlay": "#181818",
         "cl_opacity": 60,
         "layout": "nt_full",
-        "mg": "50px,,50px,",
+        "mg": "32px,,0px,",
         "pd": "",
-        "mg_mb": "",
+        "mg_mb": "32px,,,",
         "pd_mb": ""
       }
     },
@@ -531,7 +531,7 @@
         "cp_code": false,
         "layout": "wrap",
         "cl_bg": "",
-        "mg": "50px,,50px,",
+        "mg": ",,64px,",
         "pd": "",
         "mg_mb": "",
         "pd_mb": ""

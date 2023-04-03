@@ -290,8 +290,8 @@ endif -%}
                           {%- endif -%}
                       {%- endif -%}
                       {%- if p_pages > 1 and use_pagination != 'default' and paginate.previous.is_link -%}
-                        <div class="products-footer tc mt__40 mb__30 is_prev_cat_js">
-                          <a data-get='{{ paginate.previous.url }}' href="{{ paginate.previous.url }}" data-id="{{section.id}}" class="pr nt_cat_lm button">{{ 'products.grid_items.load_prev' | t }}</a>
+                        <div class="products-footer tc mb__30 is_prev_cat_js">
+                          <a data-get='{{ paginate.previous.url }}' href="{{ paginate.previous.url }}" data-id="{{section.id}}" class="pr nt_cat_lm button" style="max-width: none !important">{{ 'products.grid_items.load_prev' | t }}</a>
                         </div>
                       {%- endif -%}
                       <div class="nt_svg_loader dn"></div>
@@ -326,7 +326,7 @@ endif -%}
 
                       {%- if collection.products.size == 0 -%}<div class="shopify-info cat_emty_noprs"><i class="facl facl-attention"></i>{{ 'collections.general.no_matches' | t }}</div>{%- endif -%}
                       {%- if p_pages > 1 -%}
-                      <div class="products-footer tc mt__40 mb__60">
+                      <div class="products-footer tc mb__60">
                         {%- if paginate.next.is_link and use_pagination != 'default' -%}
                           {%- if use_bar_lm -%}
                           <div class="js_progress_bar" data-tt='{{results_count}}'>

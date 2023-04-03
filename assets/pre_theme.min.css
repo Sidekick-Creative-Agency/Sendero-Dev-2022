@@ -642,7 +642,8 @@ a:focus-visible {
 }
 @media (min-width: 1230px) {
   .container {
-    max-width: 1200px;
+    /* max-width: 1200px; */
+    max-width: 1480px;
   }
 }
 .container-fluid {

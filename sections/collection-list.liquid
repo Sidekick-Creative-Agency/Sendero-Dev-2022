@@ -19,8 +19,10 @@
 	{% endif %}
 
   {%- if se_stts.cp_code and request.design_mode %}<div class="dn tc mt__40 mb__40 cp_cd_js"><input type="text" class="dcp_cd_ip" value='<div class="inc_lz inc_cat_laz" data-rendert4s="/search/?section_id={{sid}}"><div class="lds_bginfinity pr"></div></div>'><button class="dcp_cd_btn">Copy Shortcode</button></div>{% endif -%}
+  {%- assign arr_pd = se_stts.pd | remove:' ' | split:',' -%}
+  {%- assign arr_mg = se_stts.mg | remove:' ' | split:',' -%}
   <div class="sk-collection-slider">
-  <div class="mobile-remove-left-padding nt_se_{{sid}} {{layout}}{%- if image != blank %} hide_bgimg_{{se_stts.hide_bgimg}} lazyloadt4s se_t4_bg nt_parallax_{{se_stts.use_pr}}{%- endif -%}"{% if image != blank %} data-bgset="{{ image | img_url: '1x1' }}" data-ratio="{{image.aspect_ratio}}" data-sizes="auto" data-parent-fit="cover"{% endif %}>
+  <div class="mobile-remove-left-padding {{sid}} {{layout}}{%- if image != blank %} hide_bgimg_{{se_stts.hide_bgimg}} lazyloadt4s se_t4_bg nt_parallax_{{se_stts.use_pr}}{%- endif -%}"{% if image != blank %} data-bgset="{{ image | img_url: '1x1' }}" data-ratio="{{image.aspect_ratio}}" data-sizes="auto" data-parent-fit="cover"{% endif %}>
     {{-html_layout[0]-}}
     <span><h2>{{se_stts.heading}}</h2></span>
     <div class="mt__30 nt_cats_holder row fl_center equal_nt hoverz_{{se_stts.hoverz}} {{se_stts.image_ratio}} cat_space_{{se_stts.cat_space}} cat_design_{{se_stts.cat_design}}{% if se_stts.cat_layout == '2' %} nt_slider js_carousel prev_next_{{se_stts.btn_color}} btn_owl_{{se_stts.btn_owl}} dot_owl_{{se_stts.dot_owl}} dot_color_{{se_stts.dot_color}} btn_vi_{{se_stts.btn_vi}}{% endif %}"{% if se_stts.cat_layout == '2' %} data-flickityt4s-js='{"imagesLoaded": false, "adaptiveHeight": true, "contain": true, "groupCells": "100%", "dragThreshold" : 5, "cellAlign": "left","wrapAround": {{se_stts.loop}},"prevNextButtons": {{se_stts.button}},"percentPosition": true,"pageDots": {{se_stts.dot}}, "autoPlay" : {% if se_stts.autoplay %}{{ se_stts.au_time | times: 1000 }}{% else %}false{% endif %}, "pauseAutoPlayOnHover" : {{se_stts.au_hover}}, "rightToLeft": {{settings.use_rtl}} }'{% endif %}>
@@ -30,8 +32,32 @@
   </div>
 </div>
   {%- render 'section_css' -%}
+  {%- assign arr_pd_mb = se_stts.pd_mb | remove:' ' | split:',' -%}
+  {%- assign arr_mg_mb = se_stts.mg_mb | remove:' ' | split:',' -%}
 {%- style -%}
 .nt_se_{{sid}} .cat_grid_item__link { border-radius:{{se_stts.round}}% }
+.sk-collection-slider {
+  padding-top: 0{{arr_pd[0]}}; 
+  padding-right: 0{{arr_pd[1]}}; 
+  padding-bottom: 0{{arr_pd[2]}}; 
+  padding-left: 0{{arr_pd[3]}};
+  margin-top: 0{{arr_mg[0]}}; 
+  margin-right: 0{{arr_mg[1]}}; 
+  margin-bottom: 0{{arr_mg[2]}}; 
+  margin-left: 0{{arr_mg[3]}};
+}
+@media screen and (max-width: 767px) {
+  .sk-collection-slider {
+    padding-top: 0{{arr_pd_mb[0]}}; 
+    padding-right: 0{{arr_pd_mb[1]}}; 
+    padding-bottom: 0{{arr_pd_mb[2]}}; 
+    padding-left: 0{{arr_pd_mb[3]}};
+    margin-top: 0{{arr_mg_mb[0]}}; 
+    margin-right: 0{{arr_mg_mb[1]}}; 
+    margin-bottom: 0{{arr_mg_mb[2]}}; 
+    margin-left: 0{{arr_mg_mb[3]}};
+  }
+}
 {%- endstyle -%}
 
 {%- schema -%}
@@ -604,7 +630,7 @@
         "id": "mg",
         "label": "Margin",
         "info":"Margin top, margin right, margin bottom, margin left. If you not use to blank",
-        "default": "50px,,50px,",
+        "default": ",,,,",
         "placeholder": "50px,,50px,"
       },
       {
@@ -612,6 +638,7 @@
         "id": "pd",
         "label": "Padding",
         "info":"Padding top, padding right, padding bottom, padding left. If you not use to blank",
+        "default": ",,,,",
         "placeholder": "50px,,50px,"
       },
      {
@@ -622,12 +649,14 @@
         "type": "text",
         "id": "mg_mb",
         "label": "Margin",
+        "default": ",,,,",
         "placeholder": "50px,,50px,"
       },
       {
         "type": "text",
         "id": "pd_mb",
         "label": "Padding",
+        "default": ",,,,",
         "placeholder": "50px,,50px,"
       }
     ],

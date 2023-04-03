@@ -254,9 +254,8 @@
                           {%- assign show_cl_type = settings.show_color_type -%}
                           {%- assign show_size = settings.show_pr_size -%}
                           {%- assign results_count = collection.products_count -%}
-    
                           {%- if nt_ck or current_tags.size > 0 and type_filters == '1' -%}
-                          <div class="result_clear mt__30 mb__20">
+                          <div class="result_clear mb__20">
                              <div class="sp_result_html dib cb clear_filter">{{ 'collections.general.results_with_count_html' | t:count:collection.products_count}}</div>
                              {%- if current_tags.size > 0 -%}{%- for tag in current_tags -%}{%- assign txt_tag = tag | replace: '-', ' ' | replace: '_', ' ' -%}{{ txt_tag | link_to_remove_tag: tag | replace: 'title=', 'class="clear_filter dib bf_icons" aria-label=' }}{%- endfor -%}{%- endif -%}
                              {%- if current_tags.size > 1 -%}<a class="clear_filter clear_filter_all dib" href="{{collection.url}}">{{ 'collections.general.clear_filter' | t}}</a>{%- endif -%}
@@ -279,7 +278,7 @@
                                  {%- endfor -%}
                               {%- endcapture -%}
                               {%- if total_active_values > 0 -%}
-                              <div class="result_clear mt__30 mb__20">
+                              <div class="result_clear mb__20">
                                  <div class="sp_result_html dib cb clear_filter">{{ 'collections.general.results_with_count_html' | t:count:collection.products_count}}</div>
                                  {{result_html}}
                                  {%- if total_active_values > 1 -%}<a class="clear_filter clear_filter_all dib" href="{{collection.url}}">{{ 'collections.general.clear_filter' | t}}</a>{%- endif -%}

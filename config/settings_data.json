@@ -488,7 +488,7 @@
               "collection": "spring-2023",
               "blog": "",
               "page_link": "",
-              "col_link": "#mens",
+              "col_link": "mens",
               "title": "Men's",
               "col": "4"
             }
@@ -560,10 +560,10 @@
               "image": "shopify:\/\/shop_images\/Men_-_Shirts.jpg",
               "cat_design": "1",
               "hoverz": true,
-              "collection": "mens",
+              "collection": "mens-shirts",
               "blog": "",
               "page_link": "",
-              "col_link": "shirts",
+              "col_link": "",
               "title": "Shirts",
               "col": "3"
             }
