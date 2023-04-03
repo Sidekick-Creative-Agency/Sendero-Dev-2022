@@ -17,11 +17,14 @@
         "btn_style": "default",
         "layout": "wrap",
         "mg_bread": ",,16px,",
-        "mg": "32px,96px,16px,96px",
-        "pd": "",
+        "mg": ",,,,",
+        "pd": "32px,96px,16px,96px",
+        "mg_tb_bread": ",,,,",
+        "mg_tb": ",,,,",
+        "pd_tb": "32px,64px,16px,64px",
         "mg_mb_bread": "16px,32px,8px,32px",
         "mg_mb": "0,0,0,0",
-        "pd_mb": ""
+        "pd_mb": "0px,32px,0px,32px"
       }
     },
     "main": {
@@ -34,7 +37,7 @@
         "use_pagination": "more",
         "use_bar_lm": true,
         "col_pr": "3",
-        "col_pr_tb": "3",
+        "col_pr_tb": "4",
         "col_pr_mb": "6",
         "pr_des": "1",
         "show_vendor": false,

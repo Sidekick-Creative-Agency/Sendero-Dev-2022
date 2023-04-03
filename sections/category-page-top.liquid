@@ -28,7 +28,7 @@
   assign current_page = '1' 
 -%} 
 
-  <div class="category-page-top-wrapper">
+  <div class="{{sid}} category-page-top-wrapper">
     <div class="sk-breadcrumbs">
       <nav class="sp-breadcrumb" aria-label="Breadcrumbs"><a href="{{ routes.root_url }}" class="dib">{{ 'general.breadcrumbs.home' | t }}</a><i class="facl facl-angle-right"></i>{{collection.title}}
       {%- assign get_url = '' | link_to_remove_tag: '' | split:'href="' | last | split:'"' | first | remove:'?customer_posted=true' -%}
@@ -59,13 +59,16 @@
   </div>
   
   {%- assign arr_mg = se_stts.mg | remove:' ' | split:',' -%}
+  {%- assign arr_mg_tb = se_stts.mg_tb | remove:' ' | split:',' -%}
   {%- assign arr_mg_mb = se_stts.mg_mb | remove:' ' | split:',' -%}
   {%- assign arr_pd = se_stts.pd | remove:' ' | split:',' -%}
+  {%- assign arr_pd_tb = se_stts.pd_tb | remove:' ' | split:',' -%}
   {%- assign arr_pd_mb = se_stts.pd_mb | remove:' ' | split:',' -%}
   {%- assign arr_mg_bread = se_stts.mg_bread | remove:' ' | split:',' -%}
+  {%- assign arr_mg_tb_bread = se_stts.mg_tb_bread | remove:' ' | split:',' -%}
   {%- assign arr_mg_mb_bread = se_stts.mg_mb_bread | remove:' ' | split:',' -%}
   <style>
-    .category-page-top-wrapper {
+    .{{sid}}.category-page-top-wrapper {
       margin-top: {{arr_mg[0]}}; 
       margin-right: {{arr_mg[1]}}; 
       margin-bottom: {{arr_mg[2]}}; 
@@ -81,8 +84,26 @@
       margin-bottom: {{arr_mg_bread[2]}}; 
       margin-left: {{arr_mg_bread[3]}};
     }
+    @media screen and (max-width: 1023px) {
+      .{{sid}}.category-page-top-wrapper {
+        margin-top: {{arr_mg_tb[0]}}; 
+        margin-right: {{arr_mg_tb[1]}}; 
+        margin-bottom: {{arr_mg_tb[2]}}; 
+        margin-left: {{arr_mg_tb[3]}};
+        padding-top: {{arr_pd_tb[0]}}; 
+        padding-right: {{arr_pd_tb[1]}}; 
+        padding-bottom: {{arr_pd_tb[2]}}; 
+        padding-left: {{arr_pd_tb[3]}};
+      }
+      .sk-breadcrumbs {
+        margin-top: {{arr_mg_tb_bread[0]}}; 
+        margin-right: {{arr_mg_tb_bread[1]}}; 
+        margin-bottom: {{arr_mg_tb_bread[2]}}; 
+        margin-left: {{arr_mg_tb_bread[3]}};
+      }
+    }
     @media screen and (max-width: 767px) {
-      .category-page-top-wrapper {
+      .{{sid}}.category-page-top-wrapper {
         margin-top: {{arr_mg_mb[0]}}; 
         margin-right: {{arr_mg_mb[1]}}; 
         margin-bottom: {{arr_mg_mb[2]}}; 
@@ -307,6 +328,34 @@
       {
         "type": "text",
         "id": "pd",
+        "label": "Padding",
+        "info":"Padding top, padding right, padding bottom, padding left. If you not use to blank",
+        "default": ",,,,",
+        "placeholder": "50px,,50px,"
+      },
+      {
+        "type": "header",
+        "content": "== Design Tablet Options"
+      },
+      {
+        "type": "text",
+        "id": "mg_tb_bread",
+        "label": "Breadcrumbs Margin",
+        "info":"Margin top, margin right, margin bottom, margin left. If you not use to blank",
+        "default": ",,,,",
+        "placeholder": "32px,,32px,"
+      },
+      {
+        "type": "text",
+        "id": "mg_tb",
+        "label": "Margin",
+        "info":"Margin top, margin right, margin bottom, margin left. If you not use to blank",
+        "default": ",,,,",
+        "placeholder": "50px,,50px,"
+      },
+      {
+        "type": "text",
+        "id": "pd_tb",
         "label": "Padding",
         "info":"Padding top, padding right, padding bottom, padding left. If you not use to blank",
         "default": ",,,,",
