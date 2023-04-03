@@ -2537,7 +2537,7 @@ a.prev.page-numbers {
 /*---------------- Sendero Session Individual Group Page -------------------*/
 .sk-session-group-img-text-container {
     margin: auto;
-    max-width: 1200px;
+    max-width: 1480px;
     width: 100%;
     width: fit-content;
     padding: 0 50px;
@@ -2565,12 +2565,12 @@ a.prev.page-numbers {
     /* padding-left: 50px; */
 }
 .sk-session-group-outer-container {
-    max-width: 1200px !important;
+    /* max-width: 1200px !important; */
 }
 .sk-session-group-inner-container {
     display: flex;
     flex-wrap: wrap;
-    max-width: 1200px;
+    /* max-width: 1200px; */
 }
 .sk-session-grid-indiv-container {
     height: 300px;
