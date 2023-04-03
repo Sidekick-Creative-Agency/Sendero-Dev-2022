@@ -1142,6 +1142,10 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     top: 0;
     left: 0;
     overflow: hidden;
+    transition: .3s ease;
+}
+.sendero-session-overlay:hover {
+    background-color: transparent;
 }
 .sendero-session-title, .sendero-session-sub-title, .sk-session-group-sub-title {
     text-align: center;
@@ -1149,13 +1153,6 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     z-index: 1;
     position: relative;
 }
- /* .sendero-sessions-rich-text {
-     max-width: 1100px;
- } */
- /* .sendero-session-flickity-slider {
-     display: flex;
-     flex-wrap: nowrap;
- } */
  .sk-session-slider-container {
      overflow: hidden;
  }
@@ -2588,7 +2585,7 @@ a.prev.page-numbers {
     cursor: pointer;
 }
 .sk-session-grid-video {
-    padding: 5px;
+    padding: 8px;
 }
 .sk-session-grid-indiv-container iframe {
     position: absolute;

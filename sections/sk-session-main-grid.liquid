@@ -1,0 +1,490 @@
+{%- liquid
+    assign sid = section.id
+    assign se_stts = section.settings
+    assign img_ratio = se_stts.image_ratio 
+    assign ck = false 
+   if img_ratio == 'auto' 
+    assign ck = true 
+   endif
+   assign back_image = "/admin/co"
+   if se_stts.cl_txt == 'dark' 
+    assign cl_txt = 'cd,cg' 
+   else 
+    assign cl_txt = 'cw,cw,button-o-w' 
+   endif 
+   assign cl_arr = cl_txt | split:","
+   assign fs_arr = se_stts.text_size2 | split:"," 
+   
+  
+  assign sett_equal = se_stts.use_eq_height
+    assign col = se_stts.col_pr
+    assign col_tb = se_stts.col_pr_tb 
+    assign col_mb = '' | prepend:se_stts.col_pr_mb
+    assign limit = se_stts.limit
+    assign use_pagination = se_stts.use_pagination
+    assign blog_owl = blogs[se_stts.blog]
+    assign date = se_stts.date
+    assign by = 'blogs.article.by' | t
+    assign on = 'blogs.article.on' | t 
+    assign show_au = se_stts.show_au
+    assign show_dt = se_stts.show_dt
+    assign sid = section.id
+    assign video_none = "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+   -%}
+
+<div class="col-12 col-md-6 sk-session-group-outer-container">
+  <h2 style="text-align: center; margin-bottom: {{se_stts.heading_mg_bot}}px" class="sessions-main-grid-heading">{{se_stts.heading}}</h2>
+    <div class="sk-session-group-inner-container {{sid}}">
+      {%- for block in section.blocks -%}  
+          {% assign bk_stts = block.settings %}
+          {% assign video_url = bk_stts.video_url %}
+          {% assign video_id = bk_stts.video_url | remove: "https://youtu.be/" %}
+          {% assign bg_url = video_id | prepend: "https://www.youtube.com/embed/" | append: "?t=20&autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1&rel=0&autohide=1&enablejsapi=1&playlist=" | append: video_id %}
+          {%- if video_url != video_none and video_url != "" -%}
+            <div class="sk-session-grid-video post_2 post-thumbnail pr oh col-lg-{{col}} col-md-{{col_tb}} col-{{col_mb}}">
+              <a href="{{bk_stts.video_link}}">
+                <div class="sk-session-grid-indiv-container">
+                  <iframe width="100%" height="100%" src="{{bg_url}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>     
+                  </iframe>  
+                  <div class="sendero-session-overlay">
+                    <h5 class="sk-session-group-sub-title">{{bk_stts.session_location}}</h5>
+                    <h3 class="sendero-session-title">{{bk_stts.session_title}}</h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+          {%- endif -%}
+      {%- endfor -%}
+       
+            
+
+    </div>
+</div>
+
+
+{%- assign arr_mg = se_stts.mg | remove:' ' | split:',' -%}
+{%- assign arr_mg_mb = se_stts.mg_mb | remove:' ' | split:',' -%}
+  {%- style -%}
+  .sessions-main-grid-heading {
+    font-size: {{se_stts.heading_size}}px;
+  }
+  .sk-session-group-outer-container {
+    margin: 0{{arr_mg[0]}} 0{{arr_mg[1]}} 0{{arr_mg[2]}} 0{{arr_mg[3]}};
+  }
+  @media screen and (max-width: 767px) {
+    .sk-session-group-outer-container {
+      margin: 0{{arr_mg_mb[0]}} 0{{arr_mg_mb[1]}} 0{{arr_mg_mb[2]}} 0{{arr_mg_mb[3]}};
+    }
+    .sessions-main-grid-heading {
+      font-size: {{se_stts.heading_size_mb}}px;
+    }
+  }
+
+.no-gutters {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+.no-gutters .post-thumbnail {
+    padding-right: 0;
+    padding-left: 0;
+}
+{%- assign overlay = se_stts.overlay | divided_by: 100.0 -%}
+.nt_se_{{sid}} .post-thumbnail>div {
+    background: {{ se_stts.bg | color_modify: 'alpha', overlay }};
+    padding: 20px;
+    bottom: 0;
+}
+.nt_se_{{sid}} .post-thumbnail a:not(:hover),.nt_se_{{sid}} .post-thumbnail .post-meta .cw {
+    color: {{ se_stts.cl}};
+}
+.nt_se_{{sid}} .post-thumbnail .post-meta,
+.nt_se_{{sid}} .post-thumbnail .post-time {
+  color: {{ se_stts.cl2}};
+}
+{%- endstyle -%}
+{%- style -%}
+      .nt_se_{{sid}} .txt_col_img p {
+        font-size: {{fs_arr[1]}}px;
+{%- endstyle -%}
+
+{%- render 'section_css' -%}
+
+{%- schema -%}
+  {
+    "name": "sk-session-group-grid",
+    "class": "nt_section type_image_text",
+    "settings": [
+    {
+        "type": "header",
+        "content": "== General Settings"
+      },
+     {
+      "type": "text",
+      "id": "heading",
+      "label": "Section Heading",
+      "default": "Session Videos",
+      "placeholder": "Session Videos"
+     },
+    {
+      "type": "range",
+      "id": "heading_mg_bot",
+      "label": "Heading Spacing",
+      "unit": "px",
+      "min": 0,
+      "max": 64,
+      "step": 1,
+      "default": 32
+    },
+   {
+    "type": "range",
+    "id": "heading_size",
+    "label": "Heading Font Size",
+    "unit": "px",
+    "min": 24,
+    "max": 64,
+    "step": 1,
+    "default": 32
+   },
+   {
+    "type": "range",
+    "id": "heading_size_mb",
+    "label": "Heading Font Size Mobile",
+    "unit": "px",
+    "min": 16,
+    "max": 64,
+    "step": 1,
+    "default": 28
+   },
+    {
+      "type": "select",
+      "id": "col_pr",
+      "label": "Video columns (desktop)",
+      "info": "How many Video you want to show per row",
+      "default": "4",
+      "options": [
+        {
+          "value": "6",
+          "label": "2"
+        },
+        {
+          "value": "4",
+          "label": "3"
+        },
+        {
+          "value": "3",
+          "label": "4"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "col_pr_tb",
+      "label": "Video columns (tablet)",
+      "default": "4",
+      "options": [
+        {
+          "value": "6",
+          "label": "2"
+        },
+        {
+          "value": "4",
+          "label": "3"
+        },
+        {
+          "value": "3",
+          "label": "4"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "col_pr_mb",
+      "label": "Video columns (mobile)",
+      "default": "12",
+      "options": [
+        {
+          "value": "12",
+          "label": "1"
+        },
+        {
+          "value": "6",
+          "label": "2"
+        }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "== Color Articles Design"
+    },
+    {
+      "type": "color",
+      "id": "cl",
+      "label": "Color Text",
+      "default": "#fff"
+    },
+    {
+      "type": "color",
+      "id": "cl2",
+      "label": "Color Text 2",
+      "default": "#878787"
+    },
+      {
+        "type": "color",
+        "id": "bg",
+        "label": "Background color",
+        "default": "#000"
+      },
+      {
+        "type": "range",
+        "id": "overlay",
+        "label": "Background Opacity",
+        "default": 80,
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "%"
+      },
+      {
+        "type": "header",
+        "content": "== Design Image"
+      },
+      {
+        "type": "checkbox",
+        "id": "use_eq_height",
+        "label": "Use equal height images?",
+        "default": true
+      },
+      {
+        "type": "select",
+        "id": "image_ratio",
+        "label": "Aspect Ratio",
+        "default": "ratio4_3",
+        "info": "Aspect Ratio Custom will settings in General panel.",
+        "options": [
+          {
+            "group": "Landscape",
+            "value": "ratio2_1",
+            "label": "2:1"
+          },
+          {
+            "group": "Landscape",
+            "value": "ratio16_9",
+            "label": "16:9"
+          },
+          {
+            "group": "Landscape",
+            "value": "ratio8_5",
+            "label": "8:5"
+          },
+          {
+            "group": "Landscape",
+            "value": "ratio3_2",
+            "label": "3:2"
+          },
+          {
+            "group": "Landscape",
+            "value": "ratio4_3",
+            "label": "4:3"
+          },
+          {
+            "group": "Landscape",
+            "value": "ratio_nt",
+            "label": "Ratio ASOS"
+          },
+          {
+            "group": "Squared",
+            "value": "ratio1_1",
+            "label": "1:1"
+          },
+          {
+            "group": "Portrait",
+            "value": "ratio2_3",
+            "label": "2:3"
+          },
+          {
+            "group": "Portrait",
+            "value": "ratio1_2",
+            "label": "1:2"
+          },
+          {
+            "group": "Custom",
+            "value": "ratio_cus1",
+            "label": "Ratio Custom 1"
+          },
+          {
+            "group": "Custom",
+            "value": "ratio_cus2",
+            "label": "Ratio Custom 2"
+          },
+          {
+            "group": "Custom",
+            "value": "ratio_cus3",
+            "label": "Ratio Custom 3"
+          },
+          {
+            "group": "Custom",
+            "value": "ratio_cus4",
+            "label": "Ratio Custom 4"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "image_size",
+        "label": "Image Size",
+        "default": "nt_cover",
+        "options": [
+          {
+            "value": "nt_cover",
+            "label": "Full"
+          },
+          {
+            "value": "nt_contain",
+            "label": "Auto"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "image_position",
+        "info": "The first value is the horizontal position and the second value is the vertical.",
+        "options": [
+          {
+            "value": "default",
+            "label": "Default"
+          },
+          {
+            "value": "1",
+            "label": "Left Top"
+          },
+          {
+            "value": "2",
+            "label": "Left Center"
+          },
+          {
+            "value": "3",
+            "label": "Left Bottom"
+          },
+          {
+            "value": "4",
+            "label": "Right Top"
+          },
+          {
+            "value": "5",
+            "label": "Right Center"
+          },
+          {
+            "value": "6",
+            "label": "Right Bottom"
+          },
+          {
+            "value": "7",
+            "label": "Center Top"
+          },
+          {
+            "value": "8",
+            "label": "Center Center"
+          },
+          {
+            "value": "9",
+            "label": "Center Bottom"
+          }
+        ],
+        "label": "Image Position",
+        "default": "8"
+      },
+      {
+        "type": "header",
+        "content": "== Design Options"
+      },
+      {
+        "type": "select",
+        "id": "layout",
+        "default": "nt_full",
+        "options": [
+         {
+            "value": "container",
+            "label": "Container"
+         },
+         {
+            "value": "nt_full",
+            "label": "Full Width"
+          }
+        ],
+        "label": "Layout"
+      },
+      {
+        "type": "header",
+        "content": "== Design Options"
+      },
+      {
+        "type": "text",
+        "id": "mg",
+        "label": "Margin",
+        "info":"Margin top, margin right, margin bottom, margin left. If you not use to blank",
+        "default": "50px,,50px,",
+        "placeholder": "50px,,50px,"
+      },
+      {
+        "type": "text",
+        "id": "pd",
+        "label": "Padding",
+        "info":"Padding top, padding right, padding bottom, padding left. If you not use to blank",
+        "placeholder": "50px,,50px,"
+      },
+     {
+        "type": "header",
+        "content": "== Design Mobile Options"
+      },
+      {
+        "type": "text",
+        "id": "mg_mb",
+        "label": "Margin",
+        "placeholder": "50px,,50px,"
+      },
+      {
+        "type": "text",
+        "id": "pd_mb",
+        "label": "Padding",
+        "placeholder": "50px,,50px,"
+      }
+    ],
+    "blocks": [
+    {
+      "type": "main-grid-item",
+      "name": "Session Grid Item",
+      "settings": [
+        {
+           "id": "video_url",
+           "type": "video_url",
+           "label": "1. Video URL",
+           "accept": ["youtube"],
+           "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+           "info": "To remove video block, insert url: https://www.youtube.com/watch?v=_9VUPq3SxOc"
+        },
+        {
+          "id": "session_link",
+          "type": "url",
+          "label": "Session Link"
+        },
+        {
+            "type": "text",
+            "id": "session_title",
+            "label": "Session Title"
+          },
+          {
+            "type": "text",
+            "id": "session_location",
+            "label": "Session Location"
+          }
+      ]
+    }
+    ],
+    "presets": [
+      {
+        "name": "Image with text",
+        "category": "III. Image"
+      }
+    ]
+  }
+{% endschema %}

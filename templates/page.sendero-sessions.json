@@ -31,92 +31,108 @@
         "bg_att": "scroll"
       }
     },
-    "164865439396016512": {
-      "type": "sessions-slider",
+    "sk-session-main-grid": {
+      "type": "sk-session-main-grid",
       "blocks": {
-        "feb9cd00-4197-4f78-bc08-b23df6b99e07": {
-          "type": "1",
+        "8cf0f79e-4f89-4d1d-97c7-b29fa599bd67": {
+          "type": "main-grid-item",
           "settings": {
             "video_url": "https:\/\/youtu.be\/U-db2TFF2_s",
-            "page_link": "",
-            "video_title": "Cosmic Rodeo",
-            "video_location": "Luckenbach, TX"
+            "session_link": "",
+            "session_title": "Cosmic Rodeo",
+            "session_location": "Luckenbach, TX"
           }
         },
-        "c2aec536-a2fd-4a24-97ab-503ec9f0a923": {
-          "type": "1",
+        "18d7c732-19e3-4272-ae28-b35d2b0666a2": {
+          "type": "main-grid-item",
           "settings": {
             "video_url": "https:\/\/youtu.be\/5HHDmQmoUOY",
-            "page_link": "",
-            "video_title": "Road to the Rodeo",
-            "video_location": "Round Rock, TX"
+            "session_link": "",
+            "session_title": "Road to the Rodeo",
+            "session_location": "Round Rock, TX"
           }
         },
-        "1a3e2a52-e817-4744-bf28-6f3c56a41821": {
-          "type": "1",
+        "8f2c6fe1-273f-4e2f-b731-7fc22fe48a8e": {
+          "type": "main-grid-item",
           "settings": {
             "video_url": "https:\/\/youtu.be\/-2icZZ9tbwc",
-            "page_link": "",
-            "video_title": "The Desert Tapes",
-            "video_location": "Mojave Desert"
+            "session_link": "",
+            "session_title": "The Desert Tapes",
+            "session_location": "Mojave Desert"
           }
         },
-        "d453198f-5d72-4e66-8681-67c8de68daab": {
-          "type": "1",
+        "c52b15cd-13c3-4d5b-8777-361a634187ec": {
+          "type": "main-grid-item",
           "settings": {
-            "video_url": "https:\/\/youtu.be\/HmNWXE_hjTI",
-            "page_link": "",
-            "video_title": "The Saloon Tapes",
-            "video_location": "Fredericksburg, TX"
+            "video_url": "https:\/\/youtu.be\/ONcnLW0bb1E",
+            "session_link": "",
+            "session_title": "The Saloon Tapes",
+            "session_location": "Fredericksburg, TX"
           }
         },
-        "27ecce42-b94e-4132-9de7-c44dc01025bc": {
-          "type": "1",
+        "5c36aafe-f41d-4155-a65d-42b9bc1a03cd": {
+          "type": "main-grid-item",
           "settings": {
             "video_url": "https:\/\/youtu.be\/EadUYew2OGE",
-            "page_link": "",
-            "video_title": "The Not Quite Nashville Tapes",
-            "video_location": "Nashville, TN"
+            "session_link": "",
+            "session_title": "The Not Quite Nashville Tapes",
+            "session_location": "Nashville, TN"
           }
         },
-        "4ebb95c8-7344-4b39-860d-bd58ea20d72f": {
-          "type": "1",
+        "f8f12ab7-d777-480b-8513-e9452ad7285f": {
+          "type": "main-grid-item",
           "settings": {
             "video_url": "https:\/\/youtu.be\/0lUElBN5N-I",
-            "page_link": "",
-            "video_title": "The Mountain Tapes",
-            "video_location": "Buena Vista, CO"
+            "session_link": "",
+            "session_title": "The Mountain Tapes",
+            "session_location": "Buena Vista, CO"
           }
         },
-        "abc8a595-07ae-45ca-9783-27c47df98d2c": {
-          "type": "1",
+        "1603d082-9f58-4e0f-8526-07f2ec16a54b": {
+          "type": "main-grid-item",
           "settings": {
             "video_url": "https:\/\/youtu.be\/g6aVTYsh1PA",
-            "page_link": "",
-            "video_title": "The HQ Sessions",
-            "video_location": "Waco, TX"
+            "session_link": "",
+            "session_title": "The HQ Sessions",
+            "session_location": "Waco, TX"
           }
         }
       },
       "block_order": [
-        "feb9cd00-4197-4f78-bc08-b23df6b99e07",
-        "c2aec536-a2fd-4a24-97ab-503ec9f0a923",
-        "1a3e2a52-e817-4744-bf28-6f3c56a41821",
-        "d453198f-5d72-4e66-8681-67c8de68daab",
-        "27ecce42-b94e-4132-9de7-c44dc01025bc",
-        "4ebb95c8-7344-4b39-860d-bd58ea20d72f",
-        "abc8a595-07ae-45ca-9783-27c47df98d2c"
+        "8cf0f79e-4f89-4d1d-97c7-b29fa599bd67",
+        "18d7c732-19e3-4272-ae28-b35d2b0666a2",
+        "8f2c6fe1-273f-4e2f-b731-7fc22fe48a8e",
+        "c52b15cd-13c3-4d5b-8777-361a634187ec",
+        "5c36aafe-f41d-4155-a65d-42b9bc1a03cd",
+        "f8f12ab7-d777-480b-8513-e9452ad7285f",
+        "1603d082-9f58-4e0f-8526-07f2ec16a54b"
       ],
       "settings": {
-        "mg": "50px,,,",
+        "heading": "Session Videos",
+        "heading_mg_bot": 32,
+        "heading_size": 32,
+        "heading_size_mb": 28,
+        "col_pr": "4",
+        "col_pr_tb": "6",
+        "col_pr_mb": "12",
+        "cl": "#ffffff",
+        "cl2": "#878787",
+        "bg": "#000000",
+        "overlay": 80,
+        "use_eq_height": true,
+        "image_ratio": "ratio4_3",
+        "image_size": "nt_cover",
+        "image_position": "8",
+        "layout": "nt_full",
+        "mg": "32px,,50px,",
         "pd": "",
-        "mg_mb": "",
-        "pd_mb": "",
-        "col_pr_mb": "12"
+        "mg_mb": "32px,,,",
+        "pd_mb": ""
       }
     },
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
       }
     },
@@ -133,7 +149,7 @@
         "layout": "container",
         "mg": "50px,,50px,",
         "pd": ",25px,,25px",
-        "mg_mb": ",,-25px,",
+        "mg_mb": "32px,,,",
         "pd_mb": ",25px,,25px"
       }
     },
@@ -188,14 +204,14 @@
         "style_title": "title_1",
         "ic_tt": "gem",
         "show_clpr": false,
-        "cat_space": "30",
+        "cat_space": "10",
         "hoverz": false,
         "layout": "container",
         "cl_bg": "",
         "mg": "50px,,50px,",
         "pd": "",
-        "mg_mb": "",
-        "pd_mb": ""
+        "mg_mb": "32px,,,",
+        "pd_mb": ",,,,"
       }
     },
     "bfd96e57-db11-467e-8e01-dbb492cee75f": {
@@ -221,14 +237,14 @@
         "layout": "container",
         "mg": "50px,,50px,",
         "pd": "",
-        "mg_mb": "",
+        "mg_mb": "32px,,32px,",
         "pd_mb": ""
       }
     }
   },
   "order": [
     "heading",
-    "164865439396016512",
+    "sk-session-main-grid",
     "main",
     "16492747850b78eade",
     "25566ea0-33fa-4176-ac3a-f0902fa4fa23",
