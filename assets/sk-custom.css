@@ -1782,11 +1782,14 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 
 /* ----- Mobile ----- */
 @media screen and (max-width: 767px) {
-    .sk-collection-top .flickityt4s-button.next {
+    .sk-collection-top .flickityt4s-button.next, .products.nt_slider .flickityt4s-button.next {
         right: 0;
     }
-    .sk-collection-top .flickityt4s-button.previous {
+    .sk-collection-top .flickityt4s-button.previous, .products.nt_slider .flickityt4s-button.previous {
         left: 0;
+    }
+    .sk-collection-slider {
+        padding: 0;
     }
 }
 
@@ -2824,24 +2827,13 @@ a.prev.page-numbers {
     .test-outer-container .flickityt4s-viewport {
         width: 100%;
     }
-    .test-outer-container .flickityt4s-slider {
-   
-        /* width: 75%; */
-        /* justify-content: center; */
-        /* padding: 0 75px; */
-
-    }
-    .test-outer-container .flickityt4s-slider div{
-        /* width: 100%; */
-        /* padding: 0 25px; */
-        /* margin: 0 50px; */
-    }
     .test-outer-container .flickityt4s-prev-next-button.previous {
         left: 0;
     }
     .test-outer-container .flickityt4s-prev-next-button.next {
         right: 0;
     }
+
 }
 
 /*---------------- Custom CSS for only tablet -------------------*/

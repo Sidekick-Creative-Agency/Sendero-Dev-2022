@@ -256,9 +256,9 @@
         "cl_bg": "",
         "hide_bgimg": false,
         "mg": "",
-        "pd": "0px, 0px",
+        "pd": "32px,,,64px",
         "mg_mb": "",
-        "pd_mb": ""
+        "pd_mb": "32px,16px,,16px"
       }
     },
     "32e99ee3-89e3-4d48-acf1-df71e30f9bd7": {
@@ -276,7 +276,7 @@
         "show_clpr": false,
         "collection": "best-seller-items",
         "limit": 8,
-        "space": 30,
+        "space": 10,
         "use_pagination": "view-all",
         "btn_rd": false,
         "btn_icon": true,
@@ -304,12 +304,12 @@
         "image_size": "nt_cover",
         "image_position": "8",
         "cp_code": false,
-        "layout": "wrap",
+        "layout": "nt_full",
         "cl_bg": "",
         "mg": "",
-        "pd": "",
+        "pd": "32px,,32px,64px",
         "mg_mb": "",
-        "pd_mb": ""
+        "pd_mb": "32px,16px,32px,16px"
       }
     },
     "best-seller-slider": {
