@@ -32,7 +32,7 @@
     assign video_none = "https://www.youtube.com/watch?v=_9VUPq3SxOc"
    -%}
 
-<div class="col-12 col-md-6 sk-session-group-outer-container">
+<div class="col-12 sk-session-group-outer-container" style="max-width: 1600px">
   <h2 style="text-align: center; margin-bottom: {{se_stts.heading_mg_bot}}px" class="sessions-main-grid-heading">{{se_stts.heading}}</h2>
     <div class="sk-session-group-inner-container {{sid}}">
       {%- for block in section.blocks -%}  
@@ -69,11 +69,11 @@
     font-size: {{se_stts.heading_size}}px;
   }
   .sk-session-group-outer-container {
-    margin: 0{{arr_mg[0]}} 0{{arr_mg[1]}} 0{{arr_mg[2]}} 0{{arr_mg[3]}};
+    margin: {{arr_mg[0]}} {{arr_mg[1]}} {{arr_mg[2]}} {{arr_mg[3]}};
   }
   @media screen and (max-width: 767px) {
     .sk-session-group-outer-container {
-      margin: 0{{arr_mg_mb[0]}} 0{{arr_mg_mb[1]}} 0{{arr_mg_mb[2]}} 0{{arr_mg_mb[3]}};
+      margin: {{arr_mg_mb[0]}} {{arr_mg_mb[1]}} {{arr_mg_mb[2]}} {{arr_mg_mb[3]}};
     }
     .sessions-main-grid-heading {
       font-size: {{se_stts.heading_size_mb}}px;
