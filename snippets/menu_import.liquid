@@ -254,7 +254,7 @@
 						 	<div class="cat_grid_item__wrapper pe_none">
 								<div class="cat_grid_item__title h3">
 									{{ bk_stts.title | default:page.title | default:home_t }}
-									<div class="shop-all" style="font-size: {{section.settings.shop_all_btn_size}}px">View All<i class="las la-arrow-right"></i></div>
+									<div class="shop-all" style="font-size: {{section.settings.shop_all_btn_size}}px">{{bk_stts.button_text}}<i class="las la-arrow-right"></i></div>
 								</div>
 						  	</div>
 
@@ -270,7 +270,7 @@
 						 	<div class="cat_grid_item__wrapper pe_none">
 								<div class="cat_grid_item__title h3">
 									{{ bk_stts.title | default:blog.title | default:home_t }}
-									<div class="shop-all" style="font-size: {{section.settings.shop_all_btn_size}}px">View All<i class="las la-arrow-right"></i></div>
+									<div class="shop-all" style="font-size: {{section.settings.shop_all_btn_size}}px">{{bk_stts.button_text}}<i class="las la-arrow-right"></i></div>
 								</div>
 						  	</div>
 						{% endif %}

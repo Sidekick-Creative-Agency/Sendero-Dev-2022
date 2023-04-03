@@ -490,6 +490,7 @@
               "page_link": "",
               "col_link": "mens",
               "title": "Men's",
+              "button_text": "Shop All",
               "col": "4"
             }
           },
@@ -504,6 +505,7 @@
               "page_link": "",
               "col_link": "womens",
               "title": "Women's",
+              "button_text": "Shop All",
               "col": "4"
             }
           },
@@ -565,6 +567,7 @@
               "page_link": "",
               "col_link": "",
               "title": "NEW ARRIVALS",
+              "button_text": "Shop All",
               "col": "3"
             }
           },
@@ -579,6 +582,7 @@
               "page_link": "",
               "col_link": "",
               "title": "Best Sellers",
+              "button_text": "Shop All",
               "col": "3"
             }
           },
@@ -640,6 +644,7 @@
               "page_link": "",
               "col_link": "womens",
               "title": "Best Sellers",
+              "button_text": "Shop All",
               "col": "3"
             }
           },
@@ -654,6 +659,7 @@
               "page_link": "",
               "col_link": "",
               "title": "",
+              "button_text": "Shop All",
               "col": "3"
             }
           },
@@ -691,7 +697,7 @@
               "url": "",
               "open_link": "_self",
               "menu": "accessories-new-site-left-column-1",
-              "col": "2"
+              "col": "1"
             }
           },
           "d964bd86-2c5e-4cb7-8b1f-0027152aafea": {
@@ -701,7 +707,7 @@
               "url": "",
               "open_link": "_self",
               "menu": "accessories-new-site-right-column",
-              "col": "1"
+              "col": "2"
             }
           },
           "01c7c08b-1e91-40f4-8734-b22e759c1062": {
@@ -715,6 +721,7 @@
               "page_link": "",
               "col_link": "",
               "title": "New Arrivals",
+              "button_text": "Shop All",
               "col": "3"
             }
           },
@@ -729,6 +736,7 @@
               "page_link": "",
               "col_link": "",
               "title": "",
+              "button_text": "Shop All",
               "col": "3"
             }
           },
@@ -790,6 +798,7 @@
               "page_link": "",
               "col_link": "",
               "title": "",
+              "button_text": "Shop All",
               "col": "3"
             }
           },
@@ -804,6 +813,7 @@
               "page_link": "",
               "col_link": "",
               "title": "Signature",
+              "button_text": "Shop All",
               "col": "3"
             }
           },
@@ -855,6 +865,7 @@
               "page_link": "about-us",
               "col_link": "",
               "title": "",
+              "button_text": "Learn More",
               "col": "3"
             }
           },
@@ -869,6 +880,7 @@
               "page_link": "sendero-sessions",
               "col_link": "",
               "title": "",
+              "button_text": "View All",
               "col": "3"
             }
           }

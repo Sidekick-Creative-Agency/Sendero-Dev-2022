@@ -15,7 +15,6 @@
         <div class="col-lg-2 col-md-4 col-6 tc tl_lg">{%- render 'nt_logo' with 'div' -%}</div>
         <div class="col dn db_lg">{%- render 'menu_inc',admin_sp:admin_sp,se_blocks:se_blocks,tp_blocks:tp_blocks -%}</div>
         <div class="col-lg-auto col-md-4 col-3 tr col_group_btns">{%- render 'nt_group_btns' -%}</div>
-        {%- comment -%}col-8 col-lg-2{%- endcomment -%}
      </div>
   </div></div> 
 
@@ -560,18 +559,6 @@
                "value": "2",
                "label": "Design 2"
              },
-             /*{
-               "value": "3",
-               "label": "Design 3"
-             },
-             {
-               "value": "4",
-               "label": "Design 4"
-             },
-             {
-               "value": "5",
-               "label": "Design 5"
-             },*/
              {
                "value": "6",
                "label": "Design 3"
@@ -611,6 +598,12 @@
             "id": "title",
             "label": "Title block (optional)",
             "info": "Leave empty to use 'collection title' title."
+          },
+          {
+            "type": "text",
+            "id": "button_text",
+            "label": "Button Text",
+            "default": "Shop All"
           },
          {
           "type": "select",
