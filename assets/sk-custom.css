@@ -1287,7 +1287,7 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     max-width: 100%;
 }
 .img-text-indiv-product-container {
-    max-width: 1450px;
+    max-width: 1480px;
 }
 .product-info {
     text-align:center;
@@ -1514,7 +1514,7 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
         width: 90vw;
     }
     .indiv-product-text-left, .indiv-product-text-right {
-        padding: 50px;
+        padding: 64px;
     }
 }
 
@@ -1536,7 +1536,7 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
         min-height: 150px;
     }
     .indiv-product-text-right, .indiv-product-text-left {
-        padding: 50px;
+        padding: 32px;
         line-height: 1.25rem;
     }
     .quick-links-wrapper {
