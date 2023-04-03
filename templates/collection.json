@@ -51,42 +51,11 @@
     "164882807276a2e749": {
       "type": "collection-list",
       "blocks": {
-        "c481f40a-8b84-4daf-b50c-f97c5186825f": {
-          "type": "collection",
-          "settings": {
-            "collection": "spring-2023",
-            "img_align": "center",
-            "title": "",
-            "col_link": "#",
-            "url": ""
-          }
-        },
-        "7c78fa23-aee6-4a9b-b725-28233688b75b": {
-          "type": "collection",
-          "settings": {
-            "collection": "crop-tee",
-            "img_align": "center",
-            "title": "",
-            "col_link": "#",
-            "url": ""
-          }
-        },
         "16488280725e7f0d65-0": {
           "type": "collection",
           "settings": {
             "collection": "hats",
             "image": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-2082.jpg",
-            "img_align": "center",
-            "title": "",
-            "col_link": "#",
-            "url": ""
-          }
-        },
-        "16488280725e7f0d65-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "t-shirts",
-            "image": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-2115.jpg",
             "img_align": "center",
             "title": "",
             "col_link": "#",
@@ -104,17 +73,6 @@
             "url": ""
           }
         },
-        "16488280725e7f0d65-3": {
-          "type": "collection",
-          "settings": {
-            "collection": "accessories",
-            "image": "shopify:\/\/shop_images\/sendero-patch_1.webp",
-            "img_align": "center",
-            "title": "",
-            "col_link": "#",
-            "url": ""
-          }
-        },
         "6236469b-85c9-4415-9ee4-368d4cfef55b": {
           "type": "collection",
           "settings": {
@@ -125,32 +83,64 @@
             "col_link": "#",
             "url": ""
           }
+        },
+        "16488280725e7f0d65-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "t-shirts",
+            "image": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-2115.jpg",
+            "img_align": "center",
+            "title": "",
+            "col_link": "#",
+            "url": ""
+          }
+        },
+        "c481f40a-8b84-4daf-b50c-f97c5186825f": {
+          "type": "collection",
+          "settings": {
+            "collection": "performance",
+            "image": "shopify:\/\/shop_images\/SPCS623S12B_Yucatan_Hoodie_Blue_Ls1.jpg",
+            "img_align": "center",
+            "title": "",
+            "col_link": "#",
+            "url": ""
+          }
+        },
+        "3ae6ddf1-d5a3-477f-a092-356ab6b88bd8": {
+          "type": "collection",
+          "settings": {
+            "collection": "fleece-wear",
+            "image": "shopify:\/\/shop_images\/2022-11-6_-_Sweatshirts_at_Pinewood-3558.jpg",
+            "img_align": "center",
+            "title": "",
+            "col_link": "#",
+            "url": ""
+          }
         }
       },
       "block_order": [
-        "c481f40a-8b84-4daf-b50c-f97c5186825f",
-        "7c78fa23-aee6-4a9b-b725-28233688b75b",
         "16488280725e7f0d65-0",
-        "16488280725e7f0d65-1",
         "16488280725e7f0d65-2",
-        "16488280725e7f0d65-3",
-        "6236469b-85c9-4415-9ee4-368d4cfef55b"
+        "6236469b-85c9-4415-9ee4-368d4cfef55b",
+        "16488280725e7f0d65-1",
+        "c481f40a-8b84-4daf-b50c-f97c5186825f",
+        "3ae6ddf1-d5a3-477f-a092-356ab6b88bd8"
       ],
       "settings": {
         "title": "Collection list",
         "sub_title": "Sub Text",
-        "heading": "SHOP BY CATEGORY",
+        "heading": "shop by collection",
         "sub_font": "2",
         "style_title": "title_1",
         "ic_tt": "gem",
         "show_clpr": false,
         "round": 0,
-        "cat_layout": "2",
+        "cat_layout": "1",
         "hoverz": true,
         "cat_design": "1",
         "cat_space": "10",
         "image_ratio": "ratio1_1",
-        "col": "15",
+        "col": "2",
         "col_md": "3",
         "col_mb": "6",
         "pr_txt": "products",
@@ -178,7 +168,7 @@
   },
   "order": [
     "16479809910f68859a",
-    "main",
-    "164882807276a2e749"
+    "164882807276a2e749",
+    "main"
   ]
 }

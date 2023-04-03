@@ -139,9 +139,9 @@
     "bd_line_height": 1.6,
     "hd_letter_spacing": 0,
     "fnt_df_hd": "1",
-    "fw_hd1": 48,
-    "fw_hd2": 40,
-    "fw_hd3": 32,
+    "fw_hd1": 47,
+    "fw_hd2": 22,
+    "fw_hd3": 27.5,
     "fw_hd5": 16,
     "fw_hd6": 14,
     "fw_hd": 500,
@@ -151,7 +151,7 @@
     "fw_nav": 500,
     "ls_nav": 1.2,
     "fnt_df_set": "1",
-    "size_se_tt": 28,
+    "size_se_tt": 22,
     "fw_se_tt": 500,
     "size_se_tt_mb": 28,
     "fnt_df_sub": "2",
@@ -560,11 +560,11 @@
               "image": "shopify:\/\/shop_images\/Men_-_Shirts.jpg",
               "cat_design": "1",
               "hoverz": true,
-              "collection": "mens-shirts",
+              "collection": "new-product-arrivals",
               "blog": "",
               "page_link": "",
               "col_link": "",
-              "title": "Shirts",
+              "title": "NEW ARRIVALS",
               "col": "3"
             }
           },
@@ -574,11 +574,11 @@
               "image": "shopify:\/\/shop_images\/Men_-_Shorts.jpg",
               "cat_design": "1",
               "hoverz": true,
-              "collection": "shorts",
+              "collection": "best-seller-items",
               "blog": "",
               "page_link": "",
               "col_link": "",
-              "title": "Shorts",
+              "title": "Best Sellers",
               "col": "3"
             }
           },
@@ -684,16 +684,6 @@
               "col": "3"
             }
           },
-          "d964bd86-2c5e-4cb7-8b1f-0027152aafea": {
-            "type": "link",
-            "settings": {
-              "tt_hd": "",
-              "url": "",
-              "open_link": "_self",
-              "menu": "accessories-new-site-right-column",
-              "col": "1"
-            }
-          },
           "4e5ad45b-8c9b-48d6-8ccb-93307deb91fa": {
             "type": "link",
             "settings": {
@@ -702,6 +692,16 @@
               "open_link": "_self",
               "menu": "accessories-new-site-left-column-1",
               "col": "2"
+            }
+          },
+          "d964bd86-2c5e-4cb7-8b1f-0027152aafea": {
+            "type": "link",
+            "settings": {
+              "tt_hd": "",
+              "url": "",
+              "open_link": "_self",
+              "menu": "accessories-new-site-right-column",
+              "col": "1"
             }
           },
           "01c7c08b-1e91-40f4-8734-b22e759c1062": {
@@ -713,8 +713,8 @@
               "collection": "accessories",
               "blog": "",
               "page_link": "",
-              "col_link": "best-seller",
-              "title": "Best Sellers",
+              "col_link": "",
+              "title": "New Arrivals",
               "col": "3"
             }
           },
@@ -892,8 +892,8 @@
           "201da3f5-aa3c-4ef4-a95d-fc7d70c9a212",
           "bf2d3716-63bd-4f64-99f9-2d384f8c8dd5",
           "673c217c-c470-4dc4-84c1-cce173cdfe41",
-          "d964bd86-2c5e-4cb7-8b1f-0027152aafea",
           "4e5ad45b-8c9b-48d6-8ccb-93307deb91fa",
+          "d964bd86-2c5e-4cb7-8b1f-0027152aafea",
           "01c7c08b-1e91-40f4-8734-b22e759c1062",
           "655005bb-15f0-419a-8ce4-8698991b63bd",
           "932e6253-0155-4ab3-b3c0-635dd62ee01b",
