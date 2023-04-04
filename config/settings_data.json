@@ -639,11 +639,11 @@
               "image": "shopify:\/\/shop_images\/women_-_best_sellers.jpg",
               "cat_design": "1",
               "hoverz": true,
-              "collection": "best-seller-items",
+              "collection": "womens",
               "blog": "",
               "page_link": "",
               "col_link": "womens",
-              "title": "Best Sellers",
+              "title": "New Arrivals",
               "button_text": "Shop All",
               "col": "3"
             }
@@ -654,11 +654,11 @@
               "image": "shopify:\/\/shop_images\/womens_-_crop_tees.jpg",
               "cat_design": "1",
               "hoverz": true,
-              "collection": "crop-tee",
+              "collection": "best-seller-items",
               "blog": "",
               "page_link": "",
-              "col_link": "",
-              "title": "",
+              "col_link": "Women's",
+              "title": "Best Sellers",
               "button_text": "Shop All",
               "col": "3"
             }
