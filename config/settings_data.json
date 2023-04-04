@@ -489,7 +489,7 @@
               "blog": "",
               "page_link": "",
               "col_link": "mens",
-              "title": "Men's",
+              "title": "mens",
               "button_text": "Shop All",
               "col": "4"
             }
@@ -504,7 +504,7 @@
               "blog": "",
               "page_link": "",
               "col_link": "womens",
-              "title": "Women's",
+              "title": "Womens",
               "button_text": "Shop All",
               "col": "4"
             }
@@ -512,7 +512,7 @@
           "1585641227863": {
             "type": "mega",
             "settings": {
-              "title": "Men's",
+              "title": "Mens",
               "url": "shopify:\/\/collections\/mens",
               "open_link": "_self",
               "icon": "",
@@ -589,7 +589,7 @@
           "922ef6d3-2b8a-4f62-84ae-f7944a9ba720": {
             "type": "mega",
             "settings": {
-              "title": "Women's",
+              "title": "Womens",
               "url": "shopify:\/\/collections\/womens",
               "open_link": "_self",
               "icon": "",
@@ -1187,7 +1187,7 @@
           "183b51d8-d85a-45ae-962f-40e0486c2448": {
             "type": "menu",
             "settings": {
-              "title": "Men's",
+              "title": "Mens",
               "url": "",
               "open_link": "_self",
               "menu": "mens-new-site-mobile",
@@ -1199,7 +1199,7 @@
           "ad4b26fd-d9f8-4717-aa94-f3dcac4ea69d": {
             "type": "menu",
             "settings": {
-              "title": "Women's",
+              "title": "Womens",
               "url": "",
               "open_link": "_self",
               "menu": "womens-new-site-mobile",
@@ -1910,7 +1910,7 @@
           "acc_heading-0": {
             "type": "1",
             "settings": {
-              "color": "#fff"
+              "color": "#ffffff"
             }
           }
         },
@@ -1918,8 +1918,9 @@
           "acc_heading-0"
         ],
         "settings": {
+          "image": "shopify:\/\/shop_images\/Copy_of_2021-5-17_-_Green_River_Float-0065.jpg",
           "parallax": false,
-          "color": "#000",
+          "color": "#000000",
           "overlay": 54,
           "padding": 50,
           "paddingmb": 50,

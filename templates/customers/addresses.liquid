@@ -31,7 +31,7 @@
          {%- comment -%}
            Add address form, hidden by default
          {%- endcomment -%}
-         <div id="AddressNewForm" class="mt__40 login-form hide">
+         <div id="AddressNewForm" class="mt__20 login-form hide">
            {%- form 'customer_address', customer.new_address -%}
              <h2>{{ 'customer.addresses.add_new' | t }}</h2>
 
@@ -47,20 +47,20 @@
                </div>
              </div>
 
-             <p class="form-row tl">
+             <p class="form-row tl mt__20">
                  <label for="AddressCompanyNew">{{ 'customer.addresses.company' | t }}</label>
                  <input type="text" id="AddressCompanyNew" name="address[company]" value="{{ form.company }}" autocomplete="organization">
               </p>
-              <p class="form-row tl">
+              <p class="form-row tl mt__20">
                  <label for="AddressAddress1New">{{ 'customer.addresses.address1' | t }}</label>
                  <input type="text" id="AddressAddress1New" name="address[address1]" value="{{ form.address1 }}" autocomplete="street-address address-line1">
               </p>
-              <p class="form-row tl">
+              <p class="form-row tl mt__20">
                  <label for="AddressAddress2New">{{ 'customer.addresses.address2' | t }}</label>
                  <input type="text" id="AddressAddress2New" name="address[address2]" value="{{ form.address2 }}" autocomplete="street-address address-line2">
                </p>
 
-             <div class="row mb__30 form-row tl">
+             <div class="row mb__30 form-row tl mt__20">
                <div class="col-12 col-md-6">
                  <label for="AddressCityNew">{{ 'customer.addresses.city' | t }}</label>
                  <input type="text" id="AddressCityNew" name="address[city]" value="{{ form.city }}" autocomplete="address-level2">
@@ -72,22 +72,22 @@
                </div>
              </div>
              
-             <p class="form-row tl" id="AddressProvinceContainerNew" style="display:none">
+             <p class="form-row tl mt__20" id="AddressProvinceContainerNew" style="display:none">
                <label for="AddressProvinceNew">{{ 'customer.addresses.province' | t }}</label>
                <select id="AddressProvinceNew" name="address[province]" data-default="{{ form.province }}" autocomplete="address-level1"></select>
              </p>
-             <p class="form-row tl">
+             <p class="form-row tl mt__20">
                 <label for="AddressZipNew">{{ 'customer.addresses.zip' | t }}</label>
                 <input type="text" id="AddressZipNew" name="address[zip]" value="{{ form.zip }}" autocapitalize="characters" autocomplete="postal-code">
              </p>
-             <p class="form-row tl">
+             <p class="form-row tl mt__20">
                 <label for="AddressPhoneNew">{{ 'customer.addresses.phone' | t }}</label>
                 <input type="tel" id="AddressPhoneNew" name="address[phone]" value="{{ form.phone }}" autocomplete="phone">
              </p>
              {{ form.set_as_default_checkbox }}
-             <label for="address_default_address_new">{{ 'customer.addresses.set_default' | t }}</label>
+             <label for="address_default_address_new" style="font-size: 14px" class="mt__20">{{ 'customer.addresses.set_default' | t }}</label>
               <br>
-             <input type="submit" class="btn mt__20 mb__10 js_add_ld" value="{{ 'customer.addresses.add' | t }}">
+             <input type="submit" class="btn mt__20 mb__10 js_add_ld" value="{{ 'customer.addresses.add' | t }}" style="font-family: Oswald; text-transform: uppercase; font-weight: 400">
              <br>
              <button type="button" class="text-link address-new-toggle">{{ 'customer.addresses.cancel' | t }}</button>
            {%- endform -%}

@@ -182,7 +182,7 @@
         "shop_des": "default",
         "limit": 12,
         "space": 30,
-        "use_pagination": "infinite",
+        "use_pagination": "more",
         "use_bar_lm": true,
         "col_pr": "3",
         "col_pr_tb": "3",

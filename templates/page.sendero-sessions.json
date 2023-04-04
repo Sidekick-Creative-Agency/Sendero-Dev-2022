@@ -147,7 +147,7 @@
         "content": "<p>Like most good ideas, Sendero Sessions started in the back of an old van. A Volkswagen Vanagon to be specific. We had been hangin’ with musicians long before there ever was a “Sendero Provisions Co.” and where there’s good musicians and good amigos, there’s bound to be some tunes played. Since those first Van Tapes we’ve been on both coasts, criss crossed the US, and taken the show online with our live stream events like <em>A Very Sendero Christmas<\/em>, <em>Together for Texas<\/em>, and <em>Stumptown Revival<\/em>. <\/p><p>We left behind the van and since then we’ve had our friends record in barns, the high plains of Colorado, California deserts, and on stage at Luckenbach Texas. For the last three years we’ve gotten the chance to feature the talents of David Ramirez, American Aquarium, Shane Smith & the Saints, Charley Crockett, and a bunch of other good amigos. Be on the lookout for new sessions and new tunes coming soon!<\/p>",
         "align": "tl",
         "layout": "container",
-        "mg": "32px,0,32px,0",
+        "mg": "32px,auto,32px,auto",
         "pd": "",
         "mg_mb": "32px,,,",
         "pd_mb": ""

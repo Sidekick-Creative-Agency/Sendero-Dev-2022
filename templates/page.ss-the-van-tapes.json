@@ -89,7 +89,7 @@
         "use_shadow": false,
         "cl_txt": "dark",
         "layout": "container",
-        "mg": "50px,,50px,",
+        "mg": "50px,auto,50px,auto",
         "pd": "",
         "mg_mb": ",,,,",
         "pd_mb": ""
@@ -152,9 +152,9 @@
         "image_size": "nt_cover",
         "image_position": "8",
         "layout": "nt_full",
-        "mg": "100px,, 50px,",
+        "mg": "64px,auto,64px,auto",
         "pd": "",
-        "mg_mb": "100px,,50px,",
+        "mg_mb": "64px,auto,64px,auto",
         "pd_mb": ""
       }
     }

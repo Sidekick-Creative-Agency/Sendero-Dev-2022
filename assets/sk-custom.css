@@ -57,7 +57,7 @@
 .menu-item.sub-column-item {
     display: grid;
     align-content: center;
-    
+    height: fit-content;
 }
 /*---------------- Logo & Icon Spacing -------------------*/
 
@@ -138,7 +138,6 @@
     padding-bottom: 20px;
     box-shadow: none;
     -webkit-box-shadow: none;
-    z-index:-2;
 }
 
 .nt_menu .sub-menu .sub-column-item {
@@ -189,6 +188,10 @@
     position: static !important;
     max-width: unset !important;
     transform: unset !important;
+}
+.sub-menu .lazy_menu {
+    flex-wrap: nowrap;
+    height: fit-content !important;
 }
 
 /* --------- MOBILE MENU --------------- */
@@ -1668,9 +1671,12 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     text-align: center;
 }
 .mini_cart_content {
-    max-height: 450px;
-    min-height: 206px;
+    /* max-height: 450px; */
+    /* min-height: 206px; */
     border-bottom: 1px solid rgba(129, 129, 129, 0.2);
+}
+.mini_cart_content .fixcl-scroll-content {
+    position: relative;
 }
 #nt_cart_canvas {
     overflow-y: visible !important;
@@ -2211,7 +2217,7 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 }
 
 #nt_cart_canvas .nt_mini_cart {
-    padding: 80px;
+    padding: 40px;
 }
 
 #nt_login_canvas, #nt_search_canvas {
@@ -2565,16 +2571,19 @@ a.prev.page-numbers {
     /* padding-left: 50px; */
 }
 .sk-session-group-outer-container {
-    /* max-width: 1200px !important; */
+    max-width: 1480px !important;
+    margin-left: auto;
+    margin-right: auto;
 }
 .sk-session-group-inner-container {
     display: flex;
     flex-wrap: wrap;
-    /* max-width: 1200px; */
+    justify-content: center;
 }
 .sk-session-grid-indiv-container {
     height: 300px;
     width: 100%;
+    max-width: calc(300px * (16 / 9));
     object-fit: contain;
     margin-right: 10px;
     position: relative;
@@ -2586,6 +2595,7 @@ a.prev.page-numbers {
 }
 .sk-session-grid-video {
     padding: 8px;
+    max-width: calc(300px * (16 / 9));
 }
 .sk-session-grid-indiv-container iframe {
     position: absolute;
@@ -2597,6 +2607,9 @@ a.prev.page-numbers {
     left: -175%;
     max-width: none;
     pointer-events: none;
+}
+.sessions-description {
+    padding: 64px;
 }
 .image-text-quote {
     /* padding: 0 50px !important; */
@@ -2652,6 +2665,10 @@ a.prev.page-numbers {
     visibility: visible;
     opacity: 1;
 }
+.sendero-sessions-rich-text {
+    max-width: 1480px;
+    margin: auto;
+}
 /* ----- Tablet ------ */
 @media screen and (max-width: 1023px) {
     .image-text-quote {
@@ -2690,6 +2707,9 @@ a.prev.page-numbers {
    }
    .image-text-quote h3{
        line-height: 30px !important;
+   }
+   .sessions-description {
+    padding: 32px;
    }
 }
 
@@ -2791,6 +2811,28 @@ a.prev.page-numbers {
 #nt_backtop {
     bottom: 24px;
 }
+
+
+
+/*-----------------------------------------------------------------------------/
+/ LOGIN PAGE
+/-----------------------------------------------------------------------------*/
+.login-form {
+    padding: 32px;
+}
+.login-form.divLoginForm {
+    /* padding: 32px; */
+    background-color: #111;
+    /* color: #FFF; */
+}
+.login-form #CustomerLoginForm h2, .login-form #CustomerLoginForm label {
+    color: #FFF;
+}
+ .sign-in-button {
+    border-color: #FFF !important;
+    background-color: transparent;
+}
+
 
 /*-----------------------------------------------------------------------------/
 / Custom CSS For Screen Sizes
