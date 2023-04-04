@@ -957,7 +957,7 @@
             "type": "html",
             "settings": {
               "title": "Subscribe for 15% Off",
-              "content": "<p>Get early access to new releases<\/p>\n<style>\n.klaviyo-form-RrDhF8 button {\nfont-weight: 500 !important;\n}\n<\/style>\n<div class=\"klaviyo-form-RrDhF8\"><\/div>",
+              "content": "<p>Get early access to new releases<\/p><br>\n<style>\n.klaviyo-form-RrDhF8 button {\nfont-weight: 500 !important;\n}\n<\/style>\n<div class=\"klaviyo-form-RrDhF8\"><\/div>",
               "order": "1",
               "cl": "4",
               "cl_tb": "6",
