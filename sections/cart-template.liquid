@@ -55,7 +55,7 @@
   <input type="hidden" data-cart-attr-rm name="attributes[cat_mb_items_per_row]" value=""><input type="hidden" data-cart-attr-rm name="attributes[cat_tb_items_per_row]" value=""><input type="hidden" data-cart-attr-rm name="attributes[cat_dk_items_per_row]" value="">
   <input type="hidden" data-cart-attr-rm name="attributes[auto_hide_ofsock]" value=""><input type="hidden" data-cart-attr-rm name="attributes[paginate_ntt4]" value=""><input type="hidden" data-cart-attr-rm name="attributes[limit_ntt4]" value=""><input type="hidden" data-cart-attr-rm name="attributes[use_bar_lmntt4]" value="">
   <div class="cart_header">
-		<div class="row al_left">
+		<div class="al_left sk-cart-header-container">
       <h3 class="cart-header">Your Cart</h3>
       <h3 class="cart-order">Order Summary</h3>
       {%- comment -%}
@@ -127,7 +127,7 @@
                       {%- endif -%}
                      </div>
                      <div class="total row in_flex fl_between al_center cd fs__18 tu">
-                        <div class="col-auto"><h5>{{ 'cart.general.subtotal' | t }}</h5></div>
+                        <div class="col-auto"><h4>{{ 'cart.general.subtotal' | t }}</h4></div>
                         <div class="col-auto tr js_cat_ttprice fs__18 fwm">
                            {%- if cart.total_discount > 0 -%}
                            <div class="cart_ori_price">{{ cart.original_total_price | money }}</div>
@@ -164,17 +164,7 @@
                             {%- endif -%}
                         {%- endif -%}
                      {%- endcapture -%}
-                     <p class="db txt_tax_ship mb__10 ">{{ taxes_shipping_checkout }}</p>
-                  {%- when 'agree' -%}
-                     {%- capture terms_and_conditions -%}{%- assign page_url = pages[settings.link_conditions].url -%}
-                      {%- if page_url != blank -%}
-                        {{ 'cart.general.terms_and_conditions_html' | t: link: page_url }}
-                      {%- else -%}
-                        {{ 'cart.general.terms_and_conditions' | t }}
-                      {%- endif -%}
-                     {%- endcapture -%} 
-                     <p class="pr dib mb__10 t4s_agree_wrap "><input type="checkbox" id="cart_agree" class="js_agree_ck mr__5" name="{{ck_lumise}}"><label for="cart_agree" class="">{{terms_and_conditions}}</label><svg class="dn scl_selected"><use xlink:href="#scl_selected"/></svg></p>
-                     <div class="clearfix"></div>
+                     <p class="db txt_tax_ship">{{ taxes_shipping_checkout }}</p>
                   {%- when 'btnck' -%}
                      {%- if settings.currency_type == '2' and settings.notify_currency and settings.mess_currency != blank %}{% assign cart_iso_code = cart.currency.iso_code %}{% assign text1 = '{{ currency }}' -%}
                      <p class="db mb__5" data-currency-jsnotify>{{ settings.mess_currency | replace:text1,cart_iso_code | replace:'[currency]',cart_iso_code | replace:'[original_currency]',cart_iso_code | replace:'[current_currency]','<span class="selected-currency"></span>' }}</p>

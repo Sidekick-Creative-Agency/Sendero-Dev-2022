@@ -31,19 +31,19 @@
    <form action="{{ cart_url }}" method="post" novalidate class="nt_mini_cart nt_js_cart flex column h__100 btns_cart_{{se_stts.style}}">
       <input type="hidden" data-cart-attr-rm name="attributes[cat_mb_items_per_row]" value=""><input type="hidden" data-cart-attr-rm name="attributes[cat_tb_items_per_row]" value=""><input type="hidden" data-cart-attr-rm name="attributes[cat_dk_items_per_row]" value="">
       <input type="hidden" data-cart-attr-rm name="attributes[auto_hide_ofsock]" value=""><input type="hidden" data-cart-attr-rm name="attributes[paginate_ntt4]" value=""><input type="hidden" data-cart-attr-rm name="attributes[limit_ntt4]" value=""><input type="hidden" data-cart-attr-rm name="attributes[use_bar_lmntt4]" value="">
-      <div class="mini_cart_header flex fl_between al_center"><div class="h3 widget-title tu fs__16 mg__0">{{ 'cart.general.title' | t }}</div><i class="close_pp pegk pe-7s-close ts__03 cd" ></i></div>
+      <div class="mini_cart_header flex fl_between al_center"><div class="h3 widget-title tu mg__0">{{ 'cart.general.title' | t }}</div><i class="close_pp pegk pe-7s-close ts__03 cd" ></i></div>
       {%- comment %}{%- if settings.use_cart_cd %}<div class="cart_countdown js_cart_cd dn">{{ 'cart.general.countdown_text' | t }} <span class="cart_time cr fwm" data-cart-countdown data-after-cartcd-{{settings.act_after_cart}} data-mn='{{settings.cart_time}}'></span></div>{% endif -%}{% endcomment -%}
       {%- if se_stts.calc_ship and settings.free_ship_pr != blank -%}
       <div class="cart_threshold cart_thres_js op__0">
          <div class="cart_thres_1 dn">{{ 'cart.shipping_threshold.text_1_html' | t: money:'[money]' }}</div>
          <div class="cart_thres_2 dn">{{ 'cart.shipping_threshold.text_2_html' | t: money:'[money]' }}</div>
-         <div class="cart_thres_3 dn">{{ 'cart.shipping_threshold.text_3' | t | replace:'[','<span class="cr fwsb">' | replace:']','</span>' }}</div>
+         <div class="cart_thres_3 dn">{{ 'cart.shipping_threshold.text_3' | t | replace:'[','<span class="fwsb">' | replace:']','</span>' }}</div>
          {%- if settings.show_shipbar %}<div class="cart_bar_w bgt4_svg{{settings.des_shipbar}} dn pr"><span class="pr db h__100"></span></div>{% endif -%}
       </div>
       {%- endif -%}
       <div class="mini_cart_wrap">
         
-         <div class="mini_cart_content fixcl-scroll" {% if cart.items.size > 1 %} style="height: 450px; overflow-y: scroll" {% endif %}>
+         <div class="mini_cart_content fixcl-scroll" {% if cart.items.size > 1 %} style="overflow-y: scroll" {% endif %}>
             <div class="fixcl-scroll-content">
                <div class="empty tc mt__40{% if ccount > 0 %} dn{% endif %}"><i class="las la-shopping-bag pr mb__10"></i><p>{{ 'cart.general.empty' | t }}</p>
                   {%- assign btn_blocks = section_blocks | where: "type", 'btn' -%}
@@ -61,7 +61,7 @@
 
 
                {%- if se_style == '2' or se_style == '1' and se_pos == '2' %}{% assign tooltip = 'tooltip_top' %}<div class="mini_cart_items js_cat_items" data-rendert4s="{{cart_url}}/?view=viewjs"><div class="lds_bginfinity pr mt__10 mb__20"></div></div>{% endif -%}
-{%- comment -%}
+
                {%- if se_style == '1' -%}
                
                <div class="mini_cart_tool js_cart_tool tc {% if ccount == 0 %} dn{% endif %}{%- if se_style == '1' and se_pos == '1' %} mt__20{% endif %}">
@@ -81,7 +81,7 @@
                   {%- if se_stts.show_discount -%}<div data-id="dis" class="mini_cart_tool_dis js_cart_tls pr truncate">{{ 'cart.general.add_coupon' | t }}</div>{%- endif -%}
                </div>
                {%- endif -%}
-               {%- endcomment -%}
+
                {%- if se_style == '1' and se_pos == '1' %}<div class="mini_cart_items js_cat_items" data-rendert4s="{{cart_url}}/?view=viewjs"><div class="lds_bginfinity pr mt__10 mb__20"></div></div>{% endif -%}
             </div>
          </div>
@@ -99,7 +99,7 @@
                {%- case block.type -%}
                   {%- when 'price' -%}
                      <div class="total row fl_between al_center">
-                        <div class="col-auto"><strong>{{ 'cart.general.subtotal' | t }}</strong></div>
+                        <div class="col-auto"><h5>{{ 'cart.general.subtotal' | t }}</h5></div>
                         <div class="col-auto tr js_cat_ttprice">
                            {%- if cart.total_discount > 0 -%}
                            <div class="cart_ori_price dib">{{ cart.original_total_price | money }}</div>
@@ -108,7 +108,7 @@
                            <div class="cart_ori_price dib">{{ compare_tt_price | money }}</div>
                            <div class="cart_dis_price dib"> - {{ compare_tt_price|minus:cart.total_price | money }}</div>
                            {%- endif -%}
-                           <div class="cart_tot_price">{{ cart.total_price | money }}</div>
+                           <div class="cart_tot_price"><h5>{{ cart.total_price | money }}</h5></div>
                         </div>
                      </div>
                   {%- when 'tax' -%}
@@ -135,23 +135,14 @@
                             {%- endif -%}
                         {%- endif -%}
                      {%- endcapture -%}
-                     <p class="txt_tax_ship mb__5 fs__12">{{ taxes_shipping_checkout }}</p>
-                  {%- when 'agree' -%}
-                     {%- capture terms_and_conditions -%}{%- assign page_url = pages[settings.link_conditions].url -%}
-                      {%- if page_url != blank -%}
-                        {{ 'cart.general.terms_and_conditions_html' | t: link: page_url }}
-                      {%- else -%}
-                        {{ 'cart.general.terms_and_conditions' | t }}
-                      {%- endif -%}
-                     {%- endcapture -%}
-                     <p class="pr db mb__5 fs__12"><input type="checkbox" id="cart_agree" class="js_agree_ck mr__5" name="{{ck_lumise}}"><label for="cart_agree">{{terms_and_conditions}}</label><svg class="dn scl_selected"><use xlink:href="#scl_selected"/></svg></p>
-                  {%- when 'btnc' -%}
+                     <p class="txt_tax_ship mb__5 fs__14">{{ taxes_shipping_checkout }}</p>
+                   {%- when 'btnc' -%}
                   <div class="mini-cart-button-container">
                      {%- comment %}<button type="submit" class="button btn-cart mt__10 mb__10 js_add_ld truncate">{{ 'cart.general.view' | t }}</button>{% endcomment -%}
                      <a href="{{cart_url}}" class="button btn-cart tc mt__10 mb__10 js_add_ld"><span class="truncate">{{ 'cart.general.view' | t }}</span></a>
                   {%- when 'btnck' -%}
                      {%- if settings.currency_type == '2' and settings.notify_currency and settings.mess_currency != blank %}{% assign cart_iso_code = cart.currency.iso_code %}{% assign text1 = '{{ currency }}' -%}
-                     <p class="db mb__5 fs__12" data-currency-jsnotify>{{ settings.mess_currency | replace:text1,cart_iso_code | replace:'[currency]',cart_iso_code | replace:'[original_currency]',cart_iso_code | replace:'[current_currency]','<span class="selected-currency"></span>' }}</p>
+                     <p class="db mb__5 fs__14" data-currency-jsnotify>{{ settings.mess_currency | replace:text1,cart_iso_code | replace:'[currency]',cart_iso_code | replace:'[original_currency]',cart_iso_code | replace:'[current_currency]','<span class="selected-currency"></span>' }}</p>
                      {%- endif -%}
                      <button type="submit" data-confirm="{{ck_lumise}}" name="checkout" class="button btn-checkout mt__10 mb__10 js_add_ld truncate">{{ 'cart.general.checkout' | t }}</button>
                     </div>
@@ -166,7 +157,7 @@
             {%- endif -%}
          </div>
       </div>
-{%- comment -%}
+
       {%- if se_stts.show_note -%}
       <div class="mini_cart_note pe_none">             
          <label for="CartSpecialInstructions" class="mb__5 dib"><span class="txt_add_note {{noteclass[0]}}">{{ 'cart.general.note' | t }}</span><span class="txt_edit_note {{noteclass[1]}}">{{ 'cart.general.edit_note' | t }}</span></label>
@@ -232,7 +223,7 @@
        </div>
       </div>
       {%- endif -%}
-      {%- endcomment -%}
+
    </form>
 </div>
 

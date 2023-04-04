@@ -1,7 +1,7 @@
 {
   "current": {
     "general_layout": "full_width",
-    "cus_w_bd": 1450,
+    "cus_w_bd": 1480,
     "body_bg": "#fff",
     "body_bg_image": "",
     "body_bg_repeat": "default",
@@ -236,8 +236,9 @@
     "privacy_policy_link": "",
     "login_side": true,
     "return_login": "",
-    "free_ship_pr": "",
+    "free_ship_pr": "6-shooter-full-zip-hoodie",
     "des_shipbar": "0",
+    "shipconfetti": false,
     "gift_wrap_pr": "gift-wrap",
     "link_ship": "",
     "link_conditions": "privacy-policy-terms-of-service",
@@ -1159,14 +1160,14 @@
           "cart_widget-7"
         ],
         "settings": {
-          "style": "1",
+          "style": "2",
           "pos": "2",
           "enable_pr": true,
           "calc_ship": true,
-          "show_note": true,
-          "show_rates": true,
-          "show_discount": true,
-          "show_gift_wrap": true
+          "show_note": false,
+          "show_rates": false,
+          "show_discount": false,
+          "show_gift_wrap": false
         }
       },
       "mb_cat": {

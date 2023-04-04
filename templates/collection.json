@@ -3,12 +3,11 @@
     "16479809910f68859a": {
       "type": "category-page-top",
       "settings": {
+        "show_bread": false,
         "title": "Category Page Top",
         "sub_title": "Sub Text",
         "sub_font": "2",
         "btn_title": "See all products",
-        "style_title": "title_1",
-        "ic_tt": "gem",
         "show_clpr": false,
         "use_pagination": false,
         "shop_all_font_size": 16,

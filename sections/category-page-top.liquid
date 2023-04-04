@@ -29,14 +29,17 @@
 -%} 
 
   <div class="{{sid}} category-page-top-wrapper">
-    <div class="sk-breadcrumbs">
-      <nav class="sp-breadcrumb" aria-label="Breadcrumbs"><a href="{{ routes.root_url }}" class="dib">{{ 'general.breadcrumbs.home' | t }}</a><i class="facl facl-angle-right"></i>{{collection.title}}
-      {%- assign get_url = '' | link_to_remove_tag: '' | split:'href="' | last | split:'"' | first | remove:'?customer_posted=true' -%}
-      
-      {%- assign sy = collection.sort_by -%}
-      {%- if collection.current_type or sy != blank or collection.current_vendor or get_url contains '?' %}{% assign get_url = get_url | append:'&' %}{% else %}{% assign get_url = get_url | append:'/?' %}{% endif -%}
-      {%- assign sort_by = sy | default: collection.default_sort_by -%}
-    </div>
+    {% if se_stts.show_bread %}
+      <div class="sk-breadcrumbs">
+        <nav class="sp-breadcrumb" aria-label="Breadcrumbs"><a href="{{ routes.root_url }}" class="dib">{{ 'general.breadcrumbs.home' | t }}</a><i class="facl facl-angle-right"></i>{{collection.title}}
+        {%- assign get_url = '' | link_to_remove_tag: '' | split:'href="' | last | split:'"' | first | remove:'?customer_posted=true' -%}
+        
+        {%- assign sy = collection.sort_by -%}
+        {%- if collection.current_type or sy != blank or collection.current_vendor or get_url contains '?' %}{% assign get_url = get_url | append:'&' %}{% else %}{% assign get_url = get_url | append:'/?' %}{% endif -%}
+        {%- assign sort_by = sy | default: collection.default_sort_by -%}
+      </div>
+    {% endif %}
+    
     {% if image != null %}
     <div class="sk-collection-top collection-page-top">
       <div class="row equal_nt auto al_center">
@@ -132,11 +135,17 @@
         "type": "header",
         "content": "== Title Settings"
       },
+     {
+      "type": "checkbox",
+      "id": "show_bread",
+      "label": "Show Breadcrumbs?",
+      "default": false
+     },
       {
         "type": "text",
         "id": "title",
         "label": "Heading",
-        "default": "Collection Slider"
+        "default": "Collection Title"
       },
       {
         "type": "textarea",
@@ -166,71 +175,6 @@
         "label": "See All Title",
         "info":"only working with design title 10",
         "default": "See all products"
-      },
-      {
-        "type": "select",
-        "id": "style_title",
-        "options": [
-         {
-            "value": "title_1",
-            "label": "Design 1"
-         },
-         {
-            "value": "title_2",
-            "label": "Design 2"
-          },
-         {
-            "value": "title_3",
-            "label": "Design 3"
-          },
-         {
-            "value": "title_4",
-            "label": "Design 4"
-          },
-         {
-            "value": "title_5 lazyloadt4s",
-            "label": "Design 5"
-          },
-         {
-            "value": "title_6",
-            "label": "Design 6"
-          },
-         {
-            "value": "title_7 +la",
-            "label": "Design 7 (with line-awesome)"
-          },
-         {
-            "value": "title_8",
-            "label": "Design 8"
-          },
-         {
-            "value": "title_9",
-            "label": "Design 9"
-          },
-         {
-            "value": "title_10",
-            "label": "Design 10"
-          },
-         {
-            "value": "title_11",
-            "label": "Design 11"
-          },
-         {
-            "value": "title_12",
-            "label": "Design 12"
-          },
-         {
-            "value": "title_13",
-            "label": "Design 13"
-          }
-        ],
-        "label": "Design Title:"
-      },
-      {
-        "type": "text",
-        "id": "ic_tt",
-        "label": "Style 7 icon line-awesome",
-        "default": "gem"
       },
       {
         "type": "checkbox",
