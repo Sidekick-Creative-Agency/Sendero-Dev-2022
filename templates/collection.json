@@ -23,7 +23,7 @@
         "pd_tb": "32px,64px,16px,64px",
         "mg_mb_bread": "16px,32px,8px,32px",
         "mg_mb": "0,0,0,0",
-        "pd_mb": "0px,32px,0px,32px"
+        "pd_mb": "16px,32px,0px,32px"
       }
     },
     "main": {
@@ -40,7 +40,7 @@
         "col_pr_mb": "6",
         "pr_des": "1",
         "show_vendor": false,
-        "breadcrumb_pr": true,
+        "breadcrumb_pr": false,
         "use_cdt": false,
         "round_cd": false,
         "cdt_des": "1",

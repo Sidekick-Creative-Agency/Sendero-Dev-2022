@@ -141,12 +141,12 @@ endif -%}
 
 
 <div class="container_cat {{settings.pop_style}} cat_{{se_settings.shop_layout}} mb__50" id="content">
-      <div class="cat_toolbar row fl_center al_center">
-        <div class="cat_filter col op__0 pe_none">
+      <div class="cat_toolbar row al_center">
+        <div class="cat_filter  op__0 pe_none">
         {%- assign ck = true -%}
         {%- if shop_filters -%}
-           <a rel="nofollow" href="#" data-no-instant data-opennt="#shopify-section-{{nt_filter}}" data-pos="left" data-remove="true" data-class="popup_filter" data-bg="hide_btn" class="has_icon btn_filter mgr"><i class="iccl fwb iccl-filter fwb mr__5"></i>{{ 'collections.general.filter' | t }}</a>
-           <a rel="nofollow" href="#" data-no-instant data-id="#shopify-section-{{nt_filter}}" class="btn_filter js_filter dn mgr"><i class="iccl fwb iccl-filter fwb mr__5"></i>{{ 'collections.general.filter' | t }}</a>
+           <a rel="nofollow" href="#" data-no-instant data-opennt="#shopify-section-{{nt_filter}}" data-pos="left" data-remove="true" data-class="popup_filter" data-bg="hide_btn" class="has_icon btn_filter mgr"><i class="iccl fwb iccl-filter fwb mr__5"></i>{{ 'collections.general.filter' | t }} Products</a>
+           <a rel="nofollow" href="#" data-no-instant data-id="#shopify-section-{{nt_filter}}" class="btn_filter js_filter dn mgr"><i class="iccl fwb iccl-filter fwb mr__5"></i>{{ 'collections.general.filter' | t }} Products</a>
         {%- elsif hidden_cat and no_sidebar == false -%}{%- assign ck = false -%}
            <div class="cat_sidebar">
               <a rel="nofollow" data-no-instant href="#" data-opennt="#shopify-section-{{sidebar_shop}}" data-pos="left" data-remove="true" data-class="popup_filter" data-bg="hide_btn" class="has_icon btn_sidebar mgr"><i class="iccl fwb iccl-trello fwb mr__5"></i>{{ 'collections.general.sidebar' | t }}</a>
@@ -181,7 +181,7 @@ endif -%}
         {%- endif -%}
         </div>
         {%- if no_sidebar == false and shop_filters and ck -%}
-        <div class="cat_hidden_{{hidden_cat}} col tr">
+        <div class="cat_hidden_{{hidden_cat}}  tr">
            <div class="cat_sidebar">
               <a rel="nofollow" data-no-instant href="#" data-no-instant data-opennt="#shopify-section-{{sidebar_shop}}" data-pos="right" data-remove="true" data-class="popup_filter" data-bg="hide_btn" class="has_icon btn_sidebar mgr op__0"><i class="iccl fwb iccl-trello fwb mr__5"></i>{{ 'collections.general.sidebar' | t }}</a>
            </div> 
@@ -213,7 +213,8 @@ endif -%}
            {%- endif -%}
         </div>
         {%- elsif settings.sort_enable -%}
-            <div class="cat_sortby cat_sortby_js col tr">{%- assign option_selected = collection.sort_options | where:"value",sort_by -%}
+            <div class="cat_sortby cat_sortby_js tr">{%- assign option_selected = collection.sort_options | where:"value",sort_by -%}
+              <i class="las la-sort-amount-down-alt"></i> 
               <a class="in_flex fl_between al_center sortby_pick" rel="nofollow" data-no-instant href="#"><span class="sr_txt dn">{{- option_selected.first.name -}}</span><span class="sr_txt_mb">{{ 'collections.sorting.title' | t }}</span><i class="ml__5 mr__5 facl facl-angle-down"></i></a>
               <div class="nt_sortby dn">
                 <svg class="ic_triangle_svg" viewBox="0 0 20 9" role="presentation"><path d="M.47108938 9c.2694725-.26871321.57077721-.56867841.90388257-.89986354C3.12384116 6.36134886 5.74788116 3.76338565 9.2467995.30653888c.4145057-.4095171 1.0844277-.40860098 1.4977971.00205122L19.4935156 9H.47108938z" fill="#ffffff"></path></svg>

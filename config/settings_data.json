@@ -205,7 +205,7 @@
     "show_pr_img": "2",
     "hover_img": "2",
     "pr_overlay": 10,
-    "use_quickshop": true,
+    "use_quickshop": false,
     "use_buy_qs": false,
     "swatch_design": "2",
     "style_color": "2",
