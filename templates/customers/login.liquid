@@ -2,14 +2,14 @@
 {%- assign return_login = settings.return_login -%}
 {%- assign return_register = settings.return_register -%}
 
-<div class="container mt__40">
+<div class="container sk-login-container">
   <div class="row">
       <div class="col-12 mb__40 hide" id="ResetSuccess">
          <div class="shopify-message"><i class="facl facl-ok"></i>{{ 'customer.recover_password.success' | t }}</div>
          <p class="text_content_success mt__10 mg__0">{{ 'customer.recover_password.content_success' | t }}</p>
       </div>
    {%- if settings.lr_enable -%}
-     <div class="col-12 col-md-6 divLoginForm login-form mb__20">
+     <div class="col-12 col-md-6 divLoginForm login-form">
         <div id="CustomerLoginForm">
           <h2>{{ 'customer.login.title' | t }}</h2>
           {%- form 'customer_login', novalidate: 'novalidate' -%}
@@ -60,7 +60,7 @@
         </div>
 
      </div>
-     <div class="col-12 col-md-6 divCreateForm login-form mb__20">
+     <div class="col-12 col-md-6 divCreateForm login-form">
        <div id="CustomerRegisterForm">
          <h2>{{ 'customer.register.title' | t }}</h2>
          {%- assign formId = 'RegisterForm' -%}
@@ -158,7 +158,7 @@
 
     {%- comment -%}If accounts are set as optional, the following will be shown as an option during checkout, not on the default /login page.{%- endcomment -%}
     {%- if shop.checkout.guest_login -%}
-    <div class="col-12 pt__30 mb__20 tc frm_guest_login login-form">
+    <div class="col-12 pt__30 tc frm_guest_login login-form">
         <h2 class="mb__20">{{ 'customer.login.guest_title' | t }}</h2>
         {%- form 'guest_login' -%}<input type="submit" class="btn js_add_ld" value="{{ 'customer.login.guest_continue' | t }}" style="font-family: Oswald; text-transform: uppercase">{%- endform -%}
     </div>

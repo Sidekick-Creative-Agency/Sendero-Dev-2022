@@ -27,6 +27,8 @@
   assign use_pagination = se_stts.use_pagination 
   assign current_page = '1' 
 -%} 
+{% if collection.image != null %}
+  
 
   <div class="{{sid}} category-page-top-wrapper">
     {% if se_stts.show_bread %}
@@ -60,7 +62,7 @@
     </div>
     {% endif %}
   </div>
-  
+  {% endif %}
   {%- assign arr_mg = se_stts.mg | remove:' ' | split:',' -%}
   {%- assign arr_mg_tb = se_stts.mg_tb | remove:' ' | split:',' -%}
   {%- assign arr_mg_mb = se_stts.mg_mb | remove:' ' | split:',' -%}

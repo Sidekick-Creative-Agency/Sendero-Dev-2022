@@ -173,8 +173,8 @@
         "layout": "nt_full",
         "cl_bg": "",
         "hide_bgimg": false,
-        "mg": "64px,,64px,64px",
-        "pd": "",
+        "mg": "",
+        "pd": ",,64px,64px",
         "mg_mb": ",,,,",
         "pd_mb": ",32px,,32px"
       }

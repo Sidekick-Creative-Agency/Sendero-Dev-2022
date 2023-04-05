@@ -14,6 +14,9 @@
 .margin_0_force {
     margin: 0 !important;
 }
+.noscroll {
+    overflow: hidden !important;
+}
 /*--------------------------------------------------------/
 / PAGE HEADING
 /--------------------------------------------------------*/
@@ -200,6 +203,7 @@ header {
 /* --------- MOBILE MENU --------------- */
 .nt_fk_canvas {
     background-color: #000;
+    z-index: 999;
 }
 
 .mobile-menu-header-title {
@@ -985,6 +989,7 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 .cat_toolbar {
     justify-content: flex-end;
     margin: 16px 0;
+    gap: 16px;
 }
 .cat_toolbar .btn_filter, .cat_toolbar .cat_sortby, .cat_toolbar .sortby_pick {
     color: #222222;
@@ -1323,7 +1328,7 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     text-align:center;
 }
 .indiv-product-text-right, .indiv-product-text-left {
-    padding: 100px;
+    padding: 32px 96px;
     line-height: 1.25rem;
 }
 .img-text-indiv-product-container p {
@@ -1486,7 +1491,7 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     z-index: 999999;
     top: 0;
     left: 0;
-    padding-top: 100px;
+    padding-top: 64px;
     height: 100vh;
     width: 100vw;
     background-color: #000000CC;
@@ -1535,9 +1540,10 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 .quick-links-popup-content p {
     margin-bottom: 16px;
 }
-.noscroll {
-    overflow: hidden !important;
+.product-images .col_nav .n-item, .product-images .col_nav .n-item .nt_bg_lz {
+    opacity: 1 !important;
 }
+
 /* ----- Tablet ------ */
 @media screen and (max-width: 1023px) {
     .quick-links-popup-content-wrapper {
@@ -1583,8 +1589,8 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 
 /*---------------- SHOPPING CART SIDEBAR ----------------*/
 .mini_cart_wrap {
-    justify-content: center;
-    gap: 16px;
+    justify-content: flex-start;
+    gap: 0;
 }
 .mini_cart_wrap, .mini_cart_header {
     background-color: white;
@@ -1700,7 +1706,7 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 .cart-upsell-col-view {
     text-align: center;
 }
-.mini_cart_content {
+#nt_cart_canvas .mini_cart_content {
     max-height: 402px;
     flex: unset;
     height: fit-content;
@@ -1713,8 +1719,8 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     overflow-y: visible !important;
 }
 .mini_cart_footer {
-    margin-bottom: 80px;
-    padding-top: 35px;
+    /* margin-bottom: 80px; */
+    padding-top: 20px;
 }
 .mini_cart_footer .total {
     font-weight: 600;
@@ -1809,6 +1815,7 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 }
 .cart_threshold {
     box-shadow: none;
+    padding: 16px 20px;
 }
 .cart_bar_w {
     border-radius: 0;
@@ -1825,7 +1832,7 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 .cart_thres_1, .cart_thres_2, .cart_thres_3 {
     font-size: 16px;
 }
-.cart_thres_2 span {
+.cart_thres_1 span, .cart_thres_2 span, .cart_thres_3 span {
     color: #04A4A2;
 }
 .cart_bar_w span::after {
@@ -2272,6 +2279,7 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 
 #nt_cart_canvas .nt_mini_cart {
     padding: 24px;
+    
 }
 
 #nt_login_canvas, #nt_search_canvas {
@@ -2280,7 +2288,7 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 }   
 
 #nt_login_canvas .nt_mini_cart, #nt_search_canvas .nt_mini_cart {
-    padding: 40px;
+    padding: 24px;
 }
 .template-cart .cart_item .mini_cart_actions {
     border: none !important;
@@ -2325,7 +2333,7 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     gap: 8px;
 }
 .mini_cart_meta {
-    display: none;
+    /* display: none; */
 }
 /* ----- Tablet ----- */
 @media screen and (max-width: 1023px) {
@@ -2478,13 +2486,13 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     font-size: 18px;
 }
 .mini_cart_items .mini_cart_meta .cart_price {
-    font-size: 16px !important;
+    /* font-size: 16px !important; */
 }
 
 .mini_cart_content p {
     color: #999;
     font-weight: 400;
-    font-size: 13px;
+    /* font-size: 13px; */
 }
 .mini_cart_content .mini_cart_item:hover {
     background-color: #f6f6f8 !important;
@@ -2493,7 +2501,7 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     background-color: #e6e6e8!important;
 }
 .mini_cart_content .mini_cart_item i {
-    transition: .3s;
+    transition: .3s ease;
 }
 
 /* ----- Tablet ------ */
@@ -2872,12 +2880,16 @@ a.prev.page-numbers {
 / LOGIN PAGE
 /-----------------------------------------------------------------------------*/
 .login-form {
-    padding: 32px;
+    padding: 64px;
+    border: 1px solid #111;
 }
 .login-form.divLoginForm {
     /* padding: 32px; */
     background-color: #111;
     /* color: #FFF; */
+}
+.login-form.divCreateForm {
+    /* border: 1px solid #111; */
 }
 .login-form #CustomerLoginForm h2, .login-form #CustomerLoginForm label {
     color: #FFF;
@@ -2885,6 +2897,10 @@ a.prev.page-numbers {
  .sign-in-button {
     border-color: #FFF !important;
     background-color: transparent;
+}
+.sk-login-container {
+    margin: auto;
+    padding: 64px 96px;
 }
 
 
@@ -2920,6 +2936,13 @@ a.prev.page-numbers {
     .test-outer-container .flickityt4s-prev-next-button.next {
         right: 0;
     }
+    .sk-login-container {
+        padding: 0;
+        margin: 0;
+    }
+    .sk-login-container .login-form {
+        border: none;
+    }
 }
 
 /*---------------- Custom CSS for only tablet -------------------*/
@@ -2930,7 +2953,7 @@ a.prev.page-numbers {
 }
 
 /*---------------- Custom CSS for only mobile -------------------*/
-@media (max-width: 767px){
+@media screen and (max-width: 767px){
     .rich-text-columns-inner-container {
         flex-direction: column;
         justify-content: center;
@@ -2975,18 +2998,19 @@ a.prev.page-numbers {
     .sk-session-grid-video {
         max-width: 100% !important;
     }
-}
-    @media screen and (max-width: 767px) {
-        .product-images .flickityt4s-button {
-            opacity: 1;
-            -webkit-transform: scale(1);
-            transform: scale(1);
-            background-color: #666;
-            color: #fff;
-        }
+    .product-images .flickityt4s-button {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        background-color: #666;
+        color: #fff;
     }
+    .login-form {
+        padding: 32px;
+    }
+}
 
-    /*---------------- Special Custom CSS for Sendero Sessions 'More' Button -------------------*/
+    /*---------------- Special Custom CSS for Smallest Screen Sizes -------------------*/
     @media (max-width: 568px){
         .sendero-session-more-button {
             padding: 0 25px 0 0 !important;

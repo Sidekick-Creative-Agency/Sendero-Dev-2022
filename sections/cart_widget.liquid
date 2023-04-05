@@ -45,11 +45,11 @@
         
          <div class="mini_cart_content fixcl-scroll" {% if cart.items.size > 1 %} style="overflow-y: scroll" {% endif %}>
             <div class="fixcl-scroll-content">
-               <div class="empty tc mt__40{% if ccount > 0 %} dn{% endif %}"><i class="las la-shopping-bag pr mb__10"></i><p>{{ 'cart.general.empty' | t }}</p>
+               <div class="empty tc pt__20 pb__20 {% if ccount > 0 %} dn{% endif %}"><i class="las la-shopping-bag pr mb__10"></i><p>{{ 'cart.general.empty' | t }}</p>
                   {%- assign btn_blocks = section_blocks | where: "type", 'btn' -%}
                   {%- if btn_blocks.size > 0 -%}
                   {%- for block in btn_blocks -%}
-                  <p class="return-to-shop mb__15"><a class="button button_{{block.settings.style}} js_add_ld" href="{{block.settings.url | default:routes.all_products_collection_url}}"><span class="truncate">{{ block.settings.title }}</span></a></p>
+                  <p class="return-to-shop mt__20"><a class="button button_{{block.settings.style}} js_add_ld" href="{{block.settings.url | default:routes.all_products_collection_url}}"><span class="truncate">{{ block.settings.title }}</span></a></p>
                   {%- endfor -%}
                   {%- endif -%}
                </div>
