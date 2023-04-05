@@ -71,13 +71,25 @@ assign gift_pr_id = gift_pr.id
                      <a href="{{cart_change_url}}?quantity=0&amp;id={{item_key}}" rel="nofollow" data-no-instant class="cart_ac_remove js_cart_rem ttip_nt tooltip_top_right" data-id="{{item_key}}"><span class="tt_txt">{{ 'cart.general.remove_item' | t }}</span><svg viewBox="0 0 24 24"><use xlink:href="#scl_remove"/></svg></a>
                   
                   </div>
+                  <div class="tc mini_cart_actions">
+                     <div class="quantity pr mr__10 qty__true">
+                        <div class="qty tc fs__14">
+                           <button type="button" class="minus db cb pd__0 pl__15 tl l__0 qty_{{ item.quantity }}"><i class="facl facl-minus"></i></button>
+                        </div>
+                        <input type="number" id="miniupdates_{{item_key}}" data-id="{{item_key}}" data-price='{{final_price}}' class="input-text qty text tc qty_cart_js" step="1" min="{{min_qty}}" max="{% if item.variant.inventory_management == blank or item.variant.inventory_policy == 'continue' %}9999{% else %}{{ item.variant.inventory_quantity }}{% endif %}" name="updates[]" value="{{ item.quantity }}" size="4" pattern="[0-9]*" inputmode="numeric">
+                        <div class="qty tc fs__14">
+                           <button type="button" class="plus db cb pd__0 tr r__0"><i class="facl facl-plus"></i></button>
+                        </div>
+                     </div>
+                     
+                  </div>
                </div>
             </div>
          </div>
 
-         <!-- <div class="col-12 col-md-4 col-lg-3 tc__ tc_lg"> -->
-            <!-- <div class="cart_meta_prices price"> -->
-               <!-- <div class="cart_price">           -->
+         <div class="col-12 col-md-4 col-lg-3 tc__ tc_lg">
+            <div class="cart_meta_prices price">
+               <div class="cart_price">          
                   {%- assign item_compare_price = item.variant.compare_at_price | default:item.original_price |times:item.quantity -%}
                   {%- assign compare_tt_price = compare_tt_price | plus:item_compare_price -%}
                   {%- if item.original_price != item.final_price -%}{%- assign final_price = item.final_price -%}
@@ -87,7 +99,7 @@ assign gift_pr_id = gift_pr.id
                   {%- else -%}{%- assign final_price = item.original_price -%}
                    {%- comment -%}  {{ item.original_price | money }}{%- endcomment -%}
                   {%- endif -%}
-               <!-- </div> -->
+               </div>
                {%- if item.unit_price_measurement -%}
                   {%- capture unit_price_base_unit -%}
                      {%- if item.unit_price_measurement.reference_value != 1 -%}
@@ -95,19 +107,20 @@ assign gift_pr_id = gift_pr.id
                      {%- endif -%}
                      {{ item.unit_price_measurement.reference_unit }}
                   {%- endcapture -%}
-                  <!-- <div class="cart_unit_price">{{ item.unit_price | money }}<span>/</span>{{- unit_price_base_unit -}}</div> -->
+                  <div class="cart_unit_price">{{ item.unit_price | money }}<span>/</span>{{- unit_price_base_unit -}}</div>
                {%- endif -%}
                {%- if item.line_level_discount_allocations != blank -%}
                {%- comment -%} CHECK HERE FOR DISCOUNT ON CART PAGE {%- endcomment -%}
-                  <!-- <ul class="cart_discount_price ul_none"> -->
+                  <ul class="cart_discount_price ul_none">
                      {%- for discount_allocation in item.line_level_discount_allocations -%}
                         <!-- <li class="order-discount__item"><i class="facl facl-tags"></i> {{ discount_allocation.discount_application.title }} (-{{ discount_allocation.amount | money }})</li> -->
                      {%- endfor -%}
-                  <!-- </ul> -->
+                  </ul>
                {%- endif -%}
-            <!-- </div> -->
-         <!-- </div> -->
-
+            </div>
+            
+         </div>
+{%- comment -%}
          <div class="tc mini_cart_actions">
             <div class="quantity pr mr__10 qty__true">
                <div class="qty tc fs__14">
@@ -118,8 +131,8 @@ assign gift_pr_id = gift_pr.id
                   <button type="button" class="plus db cb pd__0 tr r__0"><i class="facl facl-plus"></i></button>
                </div>
             </div>
-            
          </div>
+         {%- endcomment -%}
          <div class="tc__ tr_lg cart-price-container">
             <span class="cart-item-price fwm cd js_tt_price_it">{{ item.original_line_price | money }}</span>
          </div>
@@ -130,19 +143,3 @@ assign gift_pr_id = gift_pr.id
    </script>
 
 {%- endfor -%}
-
-
-<script>
-   document.addEventListener("DOMContentLoaded", function() {
-      document.querySelectorAll(".minus").forEach((button) => {
-         button.addEventListener("click", function() {
-            let qty = (button.closest(".quantity").querySelector("input.qty").value) - 1;
-            let price = qty;
-            let test = {{itemArray | json}};
-            console.log(test);
-          
-         })
-      })
-   })
- 
-</script>
