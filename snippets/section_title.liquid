@@ -27,5 +27,10 @@
 			text-align: {{section.settings.heading_align}};
 		}
 	{% endif %}
+	{% if section.settings.heading_spacing %}
+		.wrap_title {
+			margin-bottom: {{section.settings.heading_spacing}}px;
+		}
+	{% endif %}
 </style>
 

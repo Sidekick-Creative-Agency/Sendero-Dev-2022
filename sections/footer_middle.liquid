@@ -9,6 +9,19 @@
       	<div class="footer-middle-menu-item col-lg-{{bk_stts.cl}} col-md-{{bk_stts.cl_tb}} col-{{bk_stts.cl_mb}} mb__20 order-lg-{{forloop.index}} order-{{bk_stts.order}}" {{ block.shopify_attributes }}>
       		{%- case block.type -%}
       		   {%- when 'logo' -%}
+             <style>
+              @media screen and (max-width: 1024px) {
+              .footer__middle .footer-middle-menu-item.order-1 {
+                margin-bottom: {{bk_stts.logo_mg_tb}}px;
+            }
+            }
+            @media screen and (max-width: 767px) {
+              .footer__middle .footer-middle-menu-item.order-1 {
+                margin-bottom: {{bk_stts.logo_mg_mb}}px;
+            }
+            }
+             </style>
+             
                 {%- assign image = bk_stts.image -%}
 		            <aside id="block_{{block.id}}" class="widget widget_text widget_logo">
                    {%- if bk_stts.title != blank -%}<h3 class="widget-title fwsb flex al_center fl_between fs__16 mg__0 mb__30{% if image != blank %} dn_md{% endif %}"><span class="txt_title">{{bk_stts.title}}</span><span class="nav_link_icon ml__5"></span></h3>{%- endif -%}
@@ -16,7 +29,7 @@
 		                  <div class="footer-contact">
 		                     {%- if image != blank -%}<p><a class="db" href="/">{%- assign lg_w = bk_stts.logo_width -%}
                           {%- assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-                          <img class="w__100 mb__50 lazyloadt4s lz_op_ef" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20{{image.width}}%20{{image.height}}%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="{{ img_url }}" data-widths="[{{lg_w}}, {{lg_w | times:2}}]" data-sizes="auto" alt="{{ image.alt | default: shop.name | escape}}" style="max-width: {{ lg_w }}px"></a></p>{%- endif -%}
+                          <img class="w__100 mb__20 lazyloadt4s lz_op_ef" src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20{{image.width}}%20{{image.height}}%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="{{ img_url }}" data-widths="[{{lg_w}}, {{lg_w | times:2}}]" data-sizes="auto" alt="{{ image.alt | default: shop.name | escape}}" style="max-width: {{ lg_w }}px"></a></p>{%- endif -%}
 		                     {{- bk_stts.content -}}
                          {%- liquid
                          if bk_stts.social_mode != '1'
@@ -135,6 +148,7 @@
 
 {%- style -%}{% if se_stts.border %}.footer__middle_wrap{border-style: solid;border-width: 1px 0;border-color: {{se_stts.bd_cl}}}{% endif -%}
 .footer__middle a:hover{color: {{se_stts.cl_hover}}}.footer__middle .signup-newsletter-form,.footer__middle .signup-newsletter-form input.input-text {background-color: transparent;}.footer__middle .signup-newsletter-form input.input-text {color: {{se_stts.cl_ip}} }.footer__middle .signup-newsletter-form .submit-btn {color:{{section.settings.cl_txt}};background-color: {{se_stts.cl_btn}} }.footer__middle .widget-title { color: {{se_stts.cl_h}} }.footer__middle a:not(:hover) { color: {{se_stts.cl_a}} }.footer__middle .signup-newsletter-form,.footer__middle .signup-newsletter-form input.input-text{ border-color: {{se_stts.bd_ip}} }.footer__middle .nt_bg_overlay:after{ background-color: {{se_stts.cl_overlay}};opacity: {{se_stts.cl_opacity | divided_by: 100.00}} }.footer__middle_wrap {background-color: {{se_stts.bg}};background-repeat: {{se_stts.bg_repeat}};background-size: {{se_stts.bg_size}};background-attachment: {{se_stts.bg_att}};background-position: {{se_stts.bg_pos}};color:{{se_stts.cl}} }
+
 {%- if se_stts.sticky -%}
 @media (min-width:1025px){.wrapper_boxed #nt_footer {max-width: 1200px;margin-left: auto;margin-right: auto;}#nt_content{z-index:2}#nt_content,.kalles_prefooter{position:relative;background-color:#fff}#nt_footer{position:fixed;right:0;bottom:0;left:0;width:auto;transition:all .25s ease;-webkit-backface-visibility:hidden;backface-visibility:hidden;-webkit-perspective:800px;perspective:800px}.browser-Safari #nt_footer{opacity:0}.browser-Safari #nt_footer.visible_footer{opacity:1}}
 {%- endif -%}
@@ -483,6 +497,26 @@
               "label": "Follow"
             }
           ]
+        },
+        {
+           "type": "header",
+           "content": "== Spacing settings"
+	      },
+        {
+          "type": "range",
+          "id": "logo_mg_tb",
+          "min": 0,
+          "max": 64,
+          "default": 16,
+          "label": "Logo Tablet Spacing"
+        },
+        {
+          "type": "range",
+          "id": "logo_mg_mb",
+          "min": 0,
+          "max": 64,
+          "default": 16,
+          "label": "Logo Mobile Spacing"
         },
          {
            "type": "header",

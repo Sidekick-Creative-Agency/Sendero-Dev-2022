@@ -31,9 +31,9 @@
     endif
   endunless
   if social_icons
-    assign socials = "social_facebook_link social_twitter_link social_instagram_link social_dribbble_link social_linkedin_link social_pinterest_link social_tumblr_link social_youtube_link social_behance_link social_soundcloud_link social_tiktok_link" | split: ' '
-    assign socials_icon = "facebook twitter instagram dribbble linkedin pinterest tumblr youtube-play behance soundcloud tiktok" | split: ' '
-    assign socials_txt = "general.nt_tooltip.follow_fb;general.nt_tooltip.follow_tw;general.nt_tooltip.follow_it;general.nt_tooltip.follow_dr;general.nt_tooltip.follow_ld;general.nt_tooltip.follow_pr;general.nt_tooltip.follow_tu;general.nt_tooltip.follow_yt;general.nt_tooltip.follow_bh;general.nt_tooltip.follow_sc;general.nt_tooltip.follow_tt" | split: ';'  
+    assign socials = "social_facebook_link social_instagram_link social_pinterest_link social_youtube_link" | split: ' '
+    assign socials_icon = "facebook instagram pinterest youtube-play" | split: ' '
+    assign socials_txt = "general.nt_tooltip.follow_fb;general.nt_tooltip.follow_it;general.nt_tooltip.follow_pr;general.nt_tooltip.follow_yt;" | split: ';'  
   endif -%}
 <div class="nt-social border_{{border_bl}} black_{{black_true}}">
   {%- unless follow_social -%}  
@@ -43,6 +43,7 @@
         <i class="facl facl-facebook"></i>
      </a>
     {%- endif -%}
+    {%- comment -%}
     {%- if settings.share_twitter -%}
      <a data-no-instant rel="noopener noreferrer nofollow" href="http://twitter.com/share?text={{ permaTitle }}&amp;url={{ permalinkURL }}" target="{{target}}" class="twitter cb {{class_tooltip}}">
         <span class="tt_txt">{{ 'general.nt_tooltip.share_tw' | t }}</span>
@@ -81,6 +82,7 @@
          <i class="facl facl-whatsapp"></i>
       </a>
       {%- endif -%}
+      {%- endcomment -%}
   {%-else-%}
       {%- if social_icons -%}
         {%- for social_link in socials %}{% if settings[social_link] != blank -%}

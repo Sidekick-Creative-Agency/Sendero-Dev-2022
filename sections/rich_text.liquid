@@ -1,5 +1,5 @@
 <div class="nt_se_{{section.id}} {{section.settings.layout}}">
-  {%- render 'section_title',section:section,section_title:'mb__20' -%}
+  {%- render 'section_title',section:section -%}
   <div class="rte_setting {{section.settings.align}}">{{ section.settings.content }}</div>
   {%- if section.settings.show_btn -%}
     <div class="rich-text-button" style="text-align: {{section.settings.button_align}}; margin-top: {{section.settings.btn_mt}}px">
@@ -42,6 +42,16 @@
         "label": "Heading",
         "default": "Talk about your brand"
       },
+     {
+      "type": "range",
+      "id": "heading_spacing",
+      "label": "Header Spacing",
+      "unit": "px",
+      "min": 0,
+      "max": 32,
+      "step": 1,
+      "default": 16
+     },
       {
         "type": "textarea",
         "id": "sub_title",
@@ -80,10 +90,9 @@
         "default": "left"
       },
       {
-        "type": "text",
+        "type": "url",
         "id": "btn_link",
-        "label": "Button link",
-        "default": "#"
+        "label": "Button link"
       },
      {
       "type": "range",

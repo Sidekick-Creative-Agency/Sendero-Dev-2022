@@ -139,12 +139,12 @@
                    {%- when 'btnc' -%}
                   <div class="mini-cart-button-container">
                      {%- comment %}<button type="submit" class="button btn-cart mt__10 mb__10 js_add_ld truncate">{{ 'cart.general.view' | t }}</button>{% endcomment -%}
-                     <a href="{{cart_url}}" class="button btn-cart tc mt__10 mb__10 js_add_ld"><span class="truncate">{{ 'cart.general.view' | t }}</span></a>
+                     <a href="{{cart_url}}" class="button btn-cart tc mt__5 mb__5 js_add_ld"><span class="truncate">{{ 'cart.general.view' | t }}</span></a>
                   {%- when 'btnck' -%}
                      {%- if settings.currency_type == '2' and settings.notify_currency and settings.mess_currency != blank %}{% assign cart_iso_code = cart.currency.iso_code %}{% assign text1 = '{{ currency }}' -%}
                      <p class="db mb__5 fs__14" data-currency-jsnotify>{{ settings.mess_currency | replace:text1,cart_iso_code | replace:'[currency]',cart_iso_code | replace:'[original_currency]',cart_iso_code | replace:'[current_currency]','<span class="selected-currency"></span>' }}</p>
                      {%- endif -%}
-                     <button type="submit" data-confirm="{{ck_lumise}}" name="checkout" class="button btn-checkout mt__10 mb__10 js_add_ld truncate">{{ 'cart.general.checkout' | t }}</button>
+                     <button type="submit" data-confirm="{{ck_lumise}}" name="checkout" class="button btn-checkout mt__5 mb__5 js_add_ld truncate">{{ 'cart.general.checkout' | t }}</button>
                     </div>
                      {%- when 'btnmr' -%}
                      {%- if additional_checkout_buttons and unadmin_sp and settings.enable_sub_reCharge == false  -%}{{arr_agree[0]}}<div data-add-ckt4 class="additional_checkout_buttons additional-checkout-buttons--vertical mt__10 mb__10{{cl_agree}}">{{ content_for_additional_checkout_buttons }}</div>{{arr_agree[1]}}{%- endif -%}

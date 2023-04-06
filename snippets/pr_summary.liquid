@@ -962,11 +962,11 @@ assign se_stts = section.settings
           <div class="sp-tab-content">{{ bk_stts.custom_liquid }}</div>
         </div>
 
-      {%- comment -%}
+
       {%- when 'metafield' -%}
         {%- if pr_metafields_meta.option -%}{%- continue -%}{%- endif -%}
         <div class="meta_{{block.id}}">{{pr_metafields_meta.option}}</div>
-      {%- endcomment -%}
+
 
    {%- endcase -%}
 {%- endfor -%}
@@ -974,34 +974,55 @@ assign se_stts = section.settings
 </div>
 
 <script>
+  const descriptions = document.querySelectorAll(".sp-tab .sp-tab-content");
+  const des1 = descriptions[0];
+  const desConst1 = des1.innerHTML;
+  const des2 = descriptions[1];
+  const desConst2 = des2.innerHTML;
   document.addEventListener("DOMContentLoaded", function() {
-    var descriptions = document.querySelectorAll(".sp-tab .sp-tab-content");
-    descriptions.forEach((des) => {
-      const temp = des.innerHTML;
-      let short = des.textContent.substring(0, 300).trim() + "...";
-      short += "...";
-      const readMore = document.createElement("a");
-      readMore.appendChild(document.createTextNode("Read More"))
-      readMore.classList.add("read-more", "hidden-button");
-      des.parentElement.appendChild(readMore);
-      const readLess = document.createElement('a');
-      readLess.appendChild(document.createTextNode("Read Less"))
-      readLess.classList.add("read-less", "hidden-button");
-      des.parentElement.appendChild(readLess);
-      if (des.innerText.length > 299) {
-        des.innerHTML = short;
-        readMore.classList.remove("hidden-button");
-        readMore.addEventListener("click", function() {
-          des.innerHTML = temp;
-          readMore.classList.add("hidden-button");
-          readLess.classList.remove("hidden-button");
-        });
-        readLess.addEventListener("click", function() {
-          des.innerHTML = short;
-          readLess.classList.add("hidden-button");
-          readMore.classList.remove("hidden-button");
-        });
-      }
-    });
+    checkLength(des1, desConst1);
+    checkLength(des2, desConst2);
   });
+  window.addEventListener("resize", function() {
+    checkLength(des1, desConst1);
+    checkLength(des2, desConst2);
+  })
+  function checkLength(des, full) {
+        if (window.innerWidth > 1024) {
+          const temp = des.innerHTML;
+          let short = des.textContent.substring(0, 300).trim() + "...";
+          short += "...";
+          const readMore = document.createElement("a");
+          readMore.appendChild(document.createTextNode("Read More"))
+          readMore.classList.add("read-more");
+          const readLess = document.createElement('a');
+          readLess.appendChild(document.createTextNode("Read Less"))
+          readLess.classList.add("read-less");
+
+          if (!des.querySelector(".read-more")) {
+            if (des.innerText.length > 299) {
+              des.innerHTML = short;
+              des.appendChild(readMore);
+              readMore.addEventListener("click", function() {
+                des.innerHTML = temp;
+                des.appendChild(readLess);
+                des.removeChild(readMore);
+              });
+            }
+          }
+          readLess.addEventListener("click", function() {
+            des.innerHTML = short;
+            des.appendChild(readMore);
+            des.removeChild(readLess);
+          });
+        } else {
+          if(des.querySelector(".read-more")) {
+            des.removeChild(document.querySelector(".read-more"));
+          } else if (des.querySelector(".read-less")) {
+            des.removeChild(document.querySelector(".read-less"));
+          }
+          des.innerHTML = full;
+        }
+    }
+    
 </script>

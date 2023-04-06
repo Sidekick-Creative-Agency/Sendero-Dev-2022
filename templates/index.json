@@ -472,7 +472,7 @@
         "cap_h_mb_pos": 50,
         "txt_align": "tl",
         "play_icon_pos": 50,
-        "play_icon_mb_pos": 18,
+        "play_icon_mb_pos": 27,
         "cl_overlay": "#181818",
         "cl_opacity": 60,
         "layout": "nt_full",

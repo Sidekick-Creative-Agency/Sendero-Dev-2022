@@ -55,11 +55,40 @@
         "mg_mb": "",
         "pd_mb": ""
       }
+    },
+    "31b0bca7-f575-45c9-bc5b-b65a8f26f96c": {
+      "type": "rich_text",
+      "settings": {
+        "title": "Become a Dealer",
+        "heading_spacing": 8,
+        "sub_title": "",
+        "show_btn": true,
+        "btn_text": "Contact Us",
+        "button_align": "left",
+        "btn_link": "shopify:\/\/pages\/wholesale-signup",
+        "btn_mt": 12,
+        "sub_font": "2",
+        "header_align": "center",
+        "style_title": "title_1",
+        "ic_tt": "gem",
+        "show_clpr": false,
+        "content": "<p>Follow the link below to contact us about becoming a retailer.<\/p>",
+        "align": "tl",
+        "list_mg_left": 0,
+        "list_mg_top": 0,
+        "ul_marker": true,
+        "layout": "container",
+        "mg": "32px,,32px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
     }
   },
   "order": [
     "heading",
     "main",
-    "fa316e7a-a2b8-4398-aaf4-4a17bdf1009e"
+    "fa316e7a-a2b8-4398-aaf4-4a17bdf1009e",
+    "31b0bca7-f575-45c9-bc5b-b65a8f26f96c"
   ]
 }

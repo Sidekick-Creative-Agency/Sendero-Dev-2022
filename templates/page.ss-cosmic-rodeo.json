@@ -86,12 +86,15 @@
         "title": "About Sendero Sessions: Cosmic Rodeo",
         "sessions_des": "<p>The Cosmic Rodeo Sessions, presented by Lone Star Beer and Sendero Provisions Co, is a Sendero Session series featuring some of our good friends on the historic stage of good ol’ Luckenbach Texas. We thought of nothing better than callin’ up the amigos to join in a lineage of some of the most important names in Country Music to perform some tunes for us. <\/p>",
         "txt_align": "tl",
+        "use_anchor": true,
         "use_shadow": false,
+        "btn_text": "Watch Sessions",
+        "btn_spacing": 16,
         "cl_txt": "dark",
         "layout": "container",
-        "mg": "50px,,50px,",
+        "mg": "32px,auto,32px,auto",
         "pd": "",
-        "mg_mb": "0,,,,",
+        "mg_mb": ",auto,,auto",
         "pd_mb": ""
       }
     },
@@ -152,9 +155,9 @@
         "image_size": "nt_cover",
         "image_position": "8",
         "layout": "nt_full",
-        "mg": "100px, , 50px,",
+        "mg": "64px,auto,64px,auto",
         "pd": "",
-        "mg_mb": "100px,,50px,",
+        "mg_mb": "32px,auto,32px,auto",
         "pd_mb": ""
       }
     }

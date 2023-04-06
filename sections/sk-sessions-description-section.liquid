@@ -11,13 +11,18 @@
  assign cl_arr = cl_txt | split:","
  
  -%}
- {%- assign arr_mg = se_stts.mg | remove:' ' | split:',' -%}
-<div class="{{sid}} {{se_stts.layout}} txt_shadow_{{se_stts.use_shadow}}" style="margin: {{arr_mg[0]}} {{arr_mg[1]}} {{arr_mg[2]}} {{arr_mg[3]}}">
+ {%- assign arr_mg = se_stts.mg | split:',' -%}
+<div class="{{sid}} {{se_stts.layout}} txt_shadow_{{se_stts.use_shadow}}">
   <div class="row no-gutters equal_nt al_center">
     <div class="col-12 col-md-6 txt_col_img mg__0">
       <div class="flex column pr__50 shadow_wrap {{se_stts.txt_align}} {{cl_arr[1]}} sessions-description">
         <h2 class="mb__20 mt__0" style="font-size: {{se_stts.header_text_size}}px; line-height: {{se_stts.header_line_height}}px">{{se_stts.title}}</h2>
         {{se_stts.sessions_des}}
+        {% if section.settings.use_anchor %}
+          <a href="#videos-section" style="margin-top: {{section.settings.btn_spacing}}px">
+            <button class="btn_icon_true">{{section.settings.btn_text}}</button>
+          </a>
+        {% endif %}
       </div>
     </div>
     {%- if section_blocks != null -%}
@@ -35,12 +40,15 @@
 
 
 
-{%- assign arr_mg_mb = se_stts.mg_mb | remove:' ' | split:',' -%}
+{%- assign arr_mg_mb = se_stts.mg_mb  | split:',' -%}
     <style>
       .{{sid}} .sessions-description p {
         font-size: {{se_stts.para_text_size}}px;
         line-height: {{se_stts.para_line_height}}px;
       }
+      .{{sid}} {
+          margin: {{arr_mg[0]}} {{arr_mg[1]}} {{arr_mg[2]}} {{arr_mg[3]}};
+        }
       @media screen and (max-width: 767px) {
         .{{sid}} {
           margin: {{arr_mg_mb[0]}} {{arr_mg_mb[1]}} {{arr_mg_mb[2]}} {{arr_mg_mb[3]}} !important;
@@ -127,6 +135,12 @@
        "default": "tc"
       },
       {
+        "type": "checkbox",
+        "id": "use_anchor",
+        "label": "Use anchor to videos section?",
+        "default": true
+      },
+      {
         "type": "header",
         "content": "== Color"
       },
@@ -135,6 +149,22 @@
         "id": "use_shadow",
         "label": "Use text shadow?",
         "default": false
+      },
+      {
+        "type": "text",
+        "id": "btn_text",
+        "label": "Button Text",
+        "default": "Watch Sessions"
+      },
+      {
+        "type": "range",
+        "id": "btn_spacing",
+        "label": "Button Spacing",
+        "min": 0,
+        "max": 64,
+        "unit": "px",
+        "step": 1,
+        "default": 8
       },
       {
         "type": "select",
