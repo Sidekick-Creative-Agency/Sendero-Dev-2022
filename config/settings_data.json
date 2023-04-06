@@ -56,8 +56,8 @@
     "logo_tr": "shopify:\/\/shop_images\/header-logo-pad.png",
     "logo_tr_retina": "shopify:\/\/shop_images\/header-logo-pad.png",
     "logo_tr_width": 350,
-    "h_banner": true,
-    "h_topbar": false,
+    "h_banner": false,
+    "h_topbar": true,
     "full_header": true,
     "sticky_header": true,
     "scroll_header": false,
@@ -399,45 +399,25 @@
       "header_top": {
         "type": "header_top",
         "blocks": {
-          "header_top-0": {
-            "type": "text",
-            "settings": {
-              "text": "<i class=\"pegk pe-7s-call\"><\/i><a class=\"cg\" href=\"tel:%20+0123456789\"> +01 23456789<\/a> <i class=\"pegk pe-7s-mail ml__15\"><\/i> <a class=\"cg\" href=\"mailto:kalles@domain.com\">Kalles@domain.com<\/a>",
-              "hide": false,
-              "col": "4"
-            }
-          },
           "header_top-1": {
             "type": "text",
             "settings": {
-              "text": "Summer sale discount off <span class=\"cr\">50%<\/span>! <a href=\"\/collections\/trending\">Shop Now<\/a>",
+              "text": "Free shipping over $75!",
               "hide": false,
-              "col": "4"
-            }
-          },
-          "header_top-2": {
-            "type": "cur",
-            "settings": {
-              "hide": false,
-              "show_location": false,
-              "url_location": "",
-              "open_link": "_self",
               "col": "4"
             }
           }
         },
         "block_order": [
-          "header_top-0",
-          "header_top-1",
-          "header_top-2"
+          "header_top-1"
         ],
         "settings": {
-          "height": 41,
-          "fontsize": 12,
-          "cl": "#878787",
-          "cl_a": "#222222",
+          "height": 24,
+          "fontsize": 16,
+          "cl": "#ffffff",
+          "cl_a": "#ffffff",
           "cl_cr": "#ec0101",
-          "bg": "#f6f6f8",
+          "bg": "#04a4a2",
           "bg_op": 100,
           "show_border": false,
           "bd_cl": "#000000",
@@ -851,8 +831,18 @@
               "tt_hd": "",
               "url": "",
               "open_link": "_self",
-              "menu": "company-new-site",
-              "col": "3"
+              "menu": "company-new-site-header-left-column",
+              "col": "1"
+            }
+          },
+          "11acb69c-a430-42a5-859a-485c06df3876": {
+            "type": "link",
+            "settings": {
+              "tt_hd": "",
+              "url": "",
+              "open_link": "_self",
+              "menu": "company-new-site-header-right-column",
+              "col": "2"
             }
           },
           "0f6aa0d1-fe20-4646-8b54-8ca3ca341bfa": {
@@ -918,6 +908,7 @@
           "61dbe468-61f3-4d0d-ba62-6c962bb8d444",
           "ac3b4824-0abf-44d1-9b03-4c4255931750",
           "66d0465a-828c-4e53-834b-3d3364298ba3",
+          "11acb69c-a430-42a5-859a-485c06df3876",
           "0f6aa0d1-fe20-4646-8b54-8ca3ca341bfa",
           "b1c7e75a-cf79-42ab-9240-c2a9e3c59a4e"
         ],
@@ -999,8 +990,8 @@
           "1581503840818": {
             "type": "menu",
             "settings": {
-              "title": "Quick Links",
-              "menu": "quick-links-new-site",
+              "title": "Support",
+              "menu": "support-new-site",
               "order": "2",
               "cl": "2",
               "cl_tb": "3",
@@ -1010,7 +1001,7 @@
           "1581503828337": {
             "type": "menu",
             "settings": {
-              "title": "Support",
+              "title": "Company",
               "menu": "footer3",
               "order": "3",
               "cl": "2",
@@ -1022,7 +1013,7 @@
             "type": "menu",
             "settings": {
               "title": "Retail",
-              "menu": "",
+              "menu": "retail-new-site",
               "order": "4",
               "cl": "2",
               "cl_tb": "3",
@@ -1033,7 +1024,7 @@
             "type": "html",
             "settings": {
               "title": "Contact",
-              "content": "<span><a href=\"mailto:contact@senderopc.com\">contact@senderopc.com<\/a><\/span><br><span>Mon-Fri | 8am-5pm<\/span>",
+              "content": "<span><a href=\"mailto:contact@senderopc.com\">contact@senderopc.com<\/a><\/span><br><span><a href=\"mailto:wholesale@senderopc.com\">wholesale@senderopc.com<\/a><\/span><br><span>Mon-Fri | 8am-5pm<\/span>",
               "order": "5",
               "cl": "15",
               "cl_tb": "3",
@@ -1249,6 +1240,13 @@
             "type": "sea",
             "settings": {
             }
+          },
+          "e87616f7-14f9-4989-863c-4d00e8fa499d": {
+            "type": "login",
+            "settings": {
+              "title": "Account",
+              "icon": "user"
+            }
           }
         },
         "block_order": [
@@ -1258,7 +1256,8 @@
           "d47ecba8-4c3e-4cb3-b20f-6b2dc52343c7",
           "37f77a41-511b-46b4-b7d4-0608238ab54c",
           "ce924d23-336b-4c09-896c-ff0408e657cd",
-          "b985b8aa-eafc-4590-8e25-60f1f8c51d77"
+          "b985b8aa-eafc-4590-8e25-60f1f8c51d77",
+          "e87616f7-14f9-4989-863c-4d00e8fa499d"
         ],
         "settings": {
         }
