@@ -17,6 +17,7 @@
         "title": "Sendero Sessions",
         "button": false,
         "btn_text": "Click Me",
+        "btn_url": "",
         "button_align": "center",
         "btn_background": "black",
         "image": "shopify:\/\/shop_images\/2020-11-8_-_Not_Quite_Nashville_Tapes_-_Wild_Feathers-6129_1.jpg",
@@ -47,7 +48,7 @@
           "type": "main-grid-item",
           "settings": {
             "video_url": "https:\/\/youtu.be\/5HHDmQmoUOY",
-            "session_link": "",
+            "session_link": "shopify:\/\/pages\/road-to-the-rodeo",
             "session_title": "Road to the Rodeo",
             "session_location": "Round Rock, TX"
           }
@@ -56,7 +57,7 @@
           "type": "main-grid-item",
           "settings": {
             "video_url": "https:\/\/youtu.be\/-2icZZ9tbwc",
-            "session_link": "",
+            "session_link": "shopify:\/\/pages\/the-desert-tapes",
             "session_title": "The Desert Tapes",
             "session_location": "Mojave Desert"
           }
@@ -65,7 +66,7 @@
           "type": "main-grid-item",
           "settings": {
             "video_url": "https:\/\/youtu.be\/ONcnLW0bb1E",
-            "session_link": "",
+            "session_link": "shopify:\/\/pages\/the-saloon-tapes",
             "session_title": "The Saloon Tapes",
             "session_location": "Fredericksburg, TX"
           }
@@ -74,8 +75,8 @@
           "type": "main-grid-item",
           "settings": {
             "video_url": "https:\/\/youtu.be\/EadUYew2OGE",
-            "session_link": "",
-            "session_title": "The Not Quite Nashville Tapes",
+            "session_link": "shopify:\/\/pages\/the-nashville-sessions",
+            "session_title": "The Nashville Tapes",
             "session_location": "Nashville, TN"
           }
         },
@@ -83,7 +84,7 @@
           "type": "main-grid-item",
           "settings": {
             "video_url": "https:\/\/youtu.be\/0lUElBN5N-I",
-            "session_link": "",
+            "session_link": "shopify:\/\/pages\/the-mountain-tapes",
             "session_title": "The Mountain Tapes",
             "session_location": "Buena Vista, CO"
           }
@@ -92,7 +93,7 @@
           "type": "main-grid-item",
           "settings": {
             "video_url": "https:\/\/youtu.be\/g6aVTYsh1PA",
-            "session_link": "",
+            "session_link": "shopify:\/\/pages\/the-van-tapes",
             "session_title": "The HQ Sessions",
             "session_location": "Waco, TX"
           }
@@ -126,7 +127,7 @@
         "layout": "nt_full",
         "mg": "32px,auto,0,auto",
         "pd": "32px,32px,32px,32px",
-        "mg_mb": "32px,,,",
+        "mg_mb": "32px,0,32px,0",
         "pd_mb": ""
       }
     },
@@ -208,9 +209,9 @@
         "hoverz": false,
         "layout": "container",
         "cl_bg": "",
-        "mg": "50px,,50px,",
+        "mg": "32px,,32px,",
         "pd": "",
-        "mg_mb": "32px,,,",
+        "mg_mb": "32px,,32px,",
         "pd_mb": ",,,,"
       }
     }

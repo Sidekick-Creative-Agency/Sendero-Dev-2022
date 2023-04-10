@@ -80,7 +80,7 @@
                 {% assign grid_link = se_stts.grid_link8 %}
             {% endif %}
             {%- if video_url != video_none and video_url != "" -%}
-            <div class="sk-session-grid-video post_2 post-thumbnail pr oh col-lg-{{col}} col-md-{{col_tb}} col-{{col_mb}}">
+            <div class="sk-session-grid-video post_2 post-thumbnail pr oh">
               {% assign video_id = video_url | remove: "https://youtu.be/" %}
               {% assign bg_url = video_url | remove: "https://youtu.be/" | prepend: "embed/" | prepend: "https://www.youtube.com/" | append: "?autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1&rel=0&autohide=1&enablejsapi=1&playlist=" | append: video_id %}
               {% assign lightbox_url = video_url | remove: "https://youtu.be/" | prepend: "embed/" | prepend: "https://www.youtube.com/" | append: video_id %}
@@ -96,7 +96,7 @@
                 <div class="sendero-session-item-popup-content-wrapper">
                   <div class="sendero-session-item-popup-content">
                     <i class="las la-times sendero-session-item-popup-close" onclick="senderoSessionPopupClose()"></i>
-                    <iframe class='session-video' width="560px" height="315px" src="{{grid_link}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe class='session-video' width="100%" height="100%" src="{{grid_link}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                   </div>
                 </div>
               </div>

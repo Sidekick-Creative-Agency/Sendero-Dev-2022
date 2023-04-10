@@ -14,11 +14,12 @@
         "89b1a94e-2cf5-4075-a6af-0969fbaeae2c"
       ],
       "settings": {
-        "title": "The Not Quite Nashville Tapes",
-        "button": false,
-        "btn_text": "Click Me",
+        "title": "The Nashville Tapes",
+        "button": true,
+        "btn_text": "See More Sessions",
+        "btn_url": "shopify:\/\/pages\/sendero-sessions",
         "button_align": "center",
-        "btn_background": "black",
+        "btn_background": "transparent",
         "image": "shopify:\/\/shop_images\/2020-11-8_-_Not_Quite_Nashville_Tapes_-_Balcones-6680.jpg",
         "parallax": true,
         "color": "#000000",
@@ -107,10 +108,13 @@
         "title": "About Sendero Sessions: The Nashville Tapes",
         "sessions_des": "<p>The Not Quite Nashville tapes are presented by Balcones Distilling, from a rockin' 80 acre farm in the Franklin, Tennessee countryside. We brought out 12 amazing artists and bands to step away from meetings and label executives in the city to lay down some tunes in and around the barn like a good ole country time, drink some fine Single Malt Balcones whisky, and have a dang good time.<\/p>",
         "txt_align": "tl",
+        "use_anchor": true,
         "use_shadow": false,
+        "btn_text": "Watch Sessions",
+        "btn_spacing": 16,
         "cl_txt": "dark",
         "layout": "container",
-        "mg": "50px,,50px,",
+        "mg": "32px,,32px,",
         "pd": "",
         "mg_mb": ",,,,",
         "pd_mb": ""
@@ -173,9 +177,9 @@
         "image_size": "nt_cover",
         "image_position": "8",
         "layout": "nt_full",
-        "mg": "100px,, 50px,",
+        "mg": "100px,, 32px,",
         "pd": "",
-        "mg_mb": "100px,,50px,",
+        "mg_mb": "100px,,32px,",
         "pd_mb": ""
       }
     }

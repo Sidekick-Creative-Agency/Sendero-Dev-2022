@@ -21,11 +21,13 @@
           {%- endfor -%}
           {%- if section.settings.button -%}
           <div class="rich-text-button w__100 flex" style="justify-content: {{section.settings.button_align}}; padding: {{section.settings.button_padding}};">
+            <a href="{{se_stts.btn_url}}">
             {% if se_stts.btn_background == "transparent" %}
-              <button class="transparent-button btn_icon_true mt__25">{{section.settings.btn_text}}</button>
+              <button class="transparent-button btn_icon_true">{{section.settings.btn_text}}</button>
             {% else %}
-              <button class="btn_icon_true mt__25">{{section.settings.btn_text}}</button>
+              <button class="btn_icon_true">{{section.settings.btn_text}}</button>
             {% endif %}
+          </a>
           </div>
     {%- endif -%}
        </div>
@@ -65,6 +67,12 @@
     background-position: {{se_stts.bg_pos | replace: '_', ' ' }};
 }
 {%- endunless -%}
+{%- if se_stts.btn_background == 'transparent' -%} 
+  .transparent-button:hover {
+    background-color: transparent !important;
+    border: none !important;
+  }
+{%- endif -%}
 {%- endstyle -%}
 {%- schema -%}
   {
@@ -89,6 +97,11 @@
       "label": "Button Text",
       "default": "Click Me"
     },
+   {
+    "type": "url",
+    "id": "btn_url",
+    "label": "Button Link"
+   },
     {
       "type": "select",
       "id": "button_align",
@@ -112,7 +125,7 @@
     {
       "type": "select",
       "id": "btn_background",
-      "default": "black",
+      "default": "transparent",
       "options": [
        {
           "value": "black",
