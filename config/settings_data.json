@@ -927,7 +927,7 @@
             "type": "html",
             "settings": {
               "title": "Live Chat",
-              "content": "<div class=\"ftr-icn-wrap\">\n<div class=\"ftr-icn\"><i class=\"pegk pe-7s-chat\"> <\/i><\/div>\n<div class=\"ftr-icn-txt\">Chat now with one of our sales representatives or email us at <a href=\"mailto:contact@senderopc.com\">contact@senderopc.com<\/a>\n<\/div>\n<\/div>\n\n<div><button type=\"submit\" class=\"submit-btn chat-toggle\" onclick=\"document.getElementById('dummy-chat-button-iframe').contentDocument.querySelector('.chat-toggle').click()\"><span>Live Chat<\/span><\/button><\/div>",
+              "content": "<div class=\"ftr-icn-wrap\">\n<div class=\"ftr-icn\"><i class=\"pegk pe-7s-chat\"> <\/i><\/div>\n<div class=\"ftr-icn-txt\">Chat now with our customer service team or send us an email at <a href=\"mailto:contact@senderopc.com\">contact@senderopc.com<\/a>\n<\/div>\n<\/div>\n\n<div><button type=\"submit\" class=\"submit-btn chat-toggle\" onclick=\"document.getElementById('dummy-chat-button-iframe').contentDocument.querySelector('.chat-toggle').click()\"><span>Live Chat<\/span><\/button><\/div>",
               "order": "1",
               "cl": "4",
               "cl_tb": "6",
@@ -938,7 +938,7 @@
             "type": "html",
             "settings": {
               "title": "Order Status",
-              "content": "<div class=\"ftr-icn-wrap\">\n<div class=\"ftr-icn\"><i class=\"pegk pe-7s-check\"> <\/i><\/div>\n<div class=\"ftr-icn-txt\">Login to view your order status\n<\/div>\n<\/div><a href=\"\/account\" aria-label=\"Login to your account\" role=\"button\"><button type=\"submit\" class=\"submit-btn\"><span>My Orders<\/span><\/button><\/a>",
+              "content": "<div class=\"ftr-icn-wrap\">\n<div class=\"ftr-icn\"><i class=\"pegk pe-7s-check\"> <\/i><\/div>\n<div class=\"ftr-icn-txt\">Login to view your order status, or shoot us an email if you need to make changes.\n<\/div>\n<\/div><a href=\"\/account\" aria-label=\"Login to your account\" role=\"button\"><button type=\"submit\" class=\"submit-btn\"><span>My Orders<\/span><\/button><\/a>",
               "order": "1",
               "cl": "4",
               "cl_tb": "6",
@@ -949,7 +949,7 @@
             "type": "html",
             "settings": {
               "title": "Subscribe for 15% Off",
-              "content": "<p>Get early access to new releases<\/p><br>\n<style>\n.klaviyo-form-RrDhF8 button {\nfont-weight: 500 !important;\n}\n<\/style>\n<div class=\"klaviyo-form-RrDhF8\"><\/div>",
+              "content": "<p>Be the first to know about new releases, crew shenanigans and obligatory queso recipes.<\/p><br>\n<style>\n.klaviyo-form-RrDhF8 button {\nfont-weight: 500 !important;\n}\n<\/style>\n<div class=\"klaviyo-form-RrDhF8\"><\/div>",
               "order": "1",
               "cl": "4",
               "cl_tb": "6",
