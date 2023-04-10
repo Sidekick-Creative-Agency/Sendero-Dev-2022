@@ -78,6 +78,7 @@
     },
     "best-seller-slider": {
       "type": "best-seller-slider",
+      "disabled": true,
       "settings": {
         "title": "Best Sellers",
         "sub_title": "",
@@ -130,10 +131,6 @@
         "title": "Best Sellers",
         "sub_title": "",
         "sub_font": "2",
-        "btn_title": "See all products",
-        "style_title": "title_1",
-        "ic_tt": "gem",
-        "show_clpr": false,
         "collection": "best-seller-items",
         "limit": 20,
         "space": 30,

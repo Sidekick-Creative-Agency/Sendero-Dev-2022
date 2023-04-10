@@ -1,0 +1,55 @@
+{
+  "sections": {
+    "blog-heading": {
+      "type": "blog-heading",
+      "blocks": {
+        "c32e1213-b35d-4cab-a4dc-b59deef433e3": {
+          "type": "1",
+          "settings": {
+            "color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "c32e1213-b35d-4cab-a4dc-b59deef433e3"
+      ],
+      "settings": {
+        "shown": true,
+        "page_title": "Size Guide",
+        "image": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-4602.jpg",
+        "parallax": true,
+        "color": "#000000",
+        "overlay": 45,
+        "padding": 200,
+        "paddingmb": 200,
+        "bg_pos": "center center",
+        "bg_repeat": "no-repeat",
+        "bg_size": "cover",
+        "bg_att": "scroll"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "3bfcd1a6-3da5-4216-b096-a73df2f6967f": {
+      "type": "custom_html",
+      "settings": {
+        "code": "<div class=\"tc\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/1199\/8172\/files\/Shirt_Info_Graphic_Edit_3.15-04_1024x1024_copy.png?v=1680225293\" img=\"\"><\/div>",
+        "css": "#shopify-section-[id] {background-color:transparent}",
+        "layout": "container",
+        "mg": "32px,,32px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
+    }
+  },
+  "order": [
+    "blog-heading",
+    "main",
+    "3bfcd1a6-3da5-4216-b096-a73df2f6967f"
+  ]
+}

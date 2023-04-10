@@ -19,7 +19,7 @@
     "enable_toolbar": false,
     "enable_new_pp": false,
     "enable_pro_pr_pp": false,
-    "enable_ck_pp": false,
+    "enable_ck_pp": true,
     "enable_age_pp": false,
     "enable_salse_pp": false,
     "enable_salse_pp_mb": false,
@@ -29,7 +29,7 @@
     "action_mailchimp": "",
     "ajax_mailChimp": true,
     "checkbox_mail": false,
-    "link_mail": "",
+    "link_mail": "terms-of-service",
     "wishlist_type": "0",
     "app_review": "2",
     "label_settings": "rounded",
@@ -1930,6 +1930,19 @@
           "bg_repeat": "no-repeat",
           "bg_size": "cover",
           "bg_att": "scroll"
+        }
+      },
+      "cookies_law": {
+        "type": "cookies_law",
+        "settings": {
+          "text": "We use cookies to improve your experience on our website. By browsing this website, you agree to our use of cookies.",
+          "accept": "Accept",
+          "more": "More info",
+          "links": "",
+          "pp_version": 1,
+          "day_next": 30,
+          "cl_btn": "#56cfe1",
+          "cl_btn_hover": "#007e91"
         }
       }
     },
