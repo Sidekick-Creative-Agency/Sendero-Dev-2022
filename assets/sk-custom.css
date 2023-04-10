@@ -669,8 +669,8 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     pointer-events: all;
 }
 .hero_video_se .session-video {
-    width: 560px !important;
-    height: 315px !important;
+    height:100%;
+    width:100%;
     position: static !important;
     pointer-events: all !important;
 }
