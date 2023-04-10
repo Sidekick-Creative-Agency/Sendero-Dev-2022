@@ -42,11 +42,12 @@
           {% assign bg_url = video_id | prepend: "https://www.youtube.com/embed/" | append: "?t=20&autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1&rel=0&autohide=1&enablejsapi=1&playlist=" | append: video_id %}
           {%- if video_url != video_none and video_url != "" -%}
             <div class="sk-session-grid-video post_2 post-thumbnail pr oh col-lg-{{col}} col-md-{{col_tb}} col-{{col_mb}}">
-              <a href="{{bk_stts.video_link}}">
+              <a href="{{bk_stts.session_link}}">
                 <div class="sk-session-grid-indiv-container">
                   <iframe width="100%" height="100%" src="{{bg_url}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>     
                   </iframe>  
                   <div class="sendero-session-overlay">
+                    <p>{{bk_stts.session_link}}</p>
                     <h5 class="sk-session-group-sub-title">{{bk_stts.session_location}}</h5>
                     <h3 class="sendero-session-title">{{bk_stts.session_title}}</h3>
                   </div>
