@@ -193,7 +193,7 @@ header {
 /* --------- MOBILE MENU --------------- */
 .nt_fk_canvas {
     background-color: #000;
-    z-index: 999;
+    z-index: 1000;
 }
 
 .mobile-menu-header-title {

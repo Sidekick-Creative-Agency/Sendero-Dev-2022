@@ -938,7 +938,7 @@
             "type": "html",
             "settings": {
               "title": "Order Status",
-              "content": "<div class=\"ftr-icn-wrap\">\n<div class=\"ftr-icn\"><i class=\"pegk pe-7s-check\"> <\/i><\/div>\n<div class=\"ftr-icn-txt\">Chat now with one of our sales representatives or email us at <a href=\"mailto:contact@senderopc.com\">contact@senderopc.com<\/a>\n<\/div>\n<\/div><a href=\"\/account\" aria-label=\"Login to your account\" role=\"button\"><button type=\"submit\" class=\"submit-btn\"><span>My Orders<\/span><\/button><\/a>",
+              "content": "<div class=\"ftr-icn-wrap\">\n<div class=\"ftr-icn\"><i class=\"pegk pe-7s-check\"> <\/i><\/div>\n<div class=\"ftr-icn-txt\">Login to view your order status\n<\/div>\n<\/div><a href=\"\/account\" aria-label=\"Login to your account\" role=\"button\"><button type=\"submit\" class=\"submit-btn\"><span>My Orders<\/span><\/button><\/a>",
               "order": "1",
               "cl": "4",
               "cl_tb": "6",
