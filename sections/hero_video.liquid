@@ -48,8 +48,8 @@
                  {%- when '8' -%}{% assign image = bk_stts.image %}{% if image == blank %}{% continue %}{% endif %}{% assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}<div id="b_{{block.id}}" class="slt4_img"><img src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20{{image.width}}%20{{image.height}}%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="{{ img_url }}" data-widths="[45, 90, 180, 360, 540, 720, 900, 1080]" data-sizes="auto" class="lazyloadt4s lz_op_ef w__100" alt="{{image.alt}}"></div>
                  {%- else -%}
                   {%- assign url = bk_stts.btn_link | default:bk_stts.btn_link2 -%}
-              {%- comment -%}  {%- if bk_stts.btn_link != blank and bk_stts.title -%}<a class="sendero-session-more-button imtt4_btn button pe_auto round_{{bk_stts.btn_round}} btn_icon_{{bk_stts.btn_icon}} btn_w_{{bk_stts.btn_w}}" href="{{bk_stts.btn_link}}" target="_blank">{{bk_stts.title}}</a>{%- endif -%}
-                  {%- if bk_stts.btn_link2 != blank and bk_stts.title2 -%}<a class="sendero-session-more-button imtt4_btn button pe_auto round_{{bk_stts.btn_round}} btn_icon_{{bk_stts.btn_icon}} btn_w_{{bk_stts.btn_w}}" href="{{bk_stts.btn_link2}}" target="_blank">{{bk_stts.title2}}</a>{%- endif -%}{%- endcomment -%}  
+              {%- if bk_stts.btn_link != blank and bk_stts.title -%}<a class="sendero-session-more-button imtt4_btn button pe_auto round_{{bk_stts.btn_round}} btn_icon_{{bk_stts.btn_icon}} btn_w_{{bk_stts.btn_w}}" href="{{bk_stts.btn_link}}" target="_blank">{{bk_stts.title}}</a>{%- endif -%}
+                  {%- if bk_stts.btn_link2 != blank and bk_stts.title2 -%}<a class="sendero-session-more-button imtt4_btn button pe_auto round_{{bk_stts.btn_round}} btn_icon_{{bk_stts.btn_icon}} btn_w_{{bk_stts.btn_w}}" href="{{bk_stts.btn_link2}}" target="_blank">{{bk_stts.title2}}</a>{%- endif -%}
               {%- endcase -%}
             {%- endfor -%}
           </div>
