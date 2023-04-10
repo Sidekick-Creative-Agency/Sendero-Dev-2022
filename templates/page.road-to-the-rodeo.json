@@ -79,10 +79,10 @@
         "btn_spacing": 16,
         "cl_txt": "dark",
         "layout": "container",
-        "mg": "50px,,50px,",
-        "pd": "",
-        "mg_mb": ",,,,",
-        "pd_mb": ""
+        "mg": "32px,auto,32px,auto",
+        "pd": "0,64px,0,64px",
+        "mg_mb": "",
+        "pd_mb": "0,16px,0,16px"
       }
     },
     "sk-session-group-grid": {
@@ -142,10 +142,10 @@
         "image_size": "nt_cover",
         "image_position": "8",
         "layout": "nt_full",
-        "mg": "100px,, 50px,",
+        "mg": "96px,auto, 32px,auto",
         "pd": "",
-        "mg_mb": "100px,,50px,",
-        "pd_mb": ""
+        "mg_mb": "64px,auto,32px,auto",
+        "pd_mb": ",16px,,16px"
       }
     }
   },

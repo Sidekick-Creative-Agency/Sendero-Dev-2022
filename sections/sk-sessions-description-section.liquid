@@ -11,7 +11,7 @@
  assign cl_arr = cl_txt | split:","
  
  -%}
- {%- assign arr_mg = se_stts.mg | split:',' -%}
+
 <div class="{{sid}} {{se_stts.layout}} txt_shadow_{{se_stts.use_shadow}}">
   <div class="row no-gutters equal_nt al_center">
     <div class="col-12 col-md-6 txt_col_img mg__0">
@@ -39,8 +39,10 @@
 </div>
 
 
-
+{%- assign arr_mg = se_stts.mg  | split:',' -%}
 {%- assign arr_mg_mb = se_stts.mg_mb  | split:',' -%}
+{%- assign arr_pd = se_stts.pd  | split:',' -%}
+{%- assign arr_pd_mb = se_stts.pd_mb  | split:',' -%}
     <style>
       .{{sid}} .sessions-description p {
         font-size: {{se_stts.para_text_size}}px;
@@ -48,10 +50,12 @@
       }
       .{{sid}} {
           margin: {{arr_mg[0]}} {{arr_mg[1]}} {{arr_mg[2]}} {{arr_mg[3]}};
+          padding: {{arr_pd[0]}} {{arr_pd[1]}} {{arr_pd[2]}} {{arr_pd[3]}};
         }
       @media screen and (max-width: 767px) {
         .{{sid}} {
           margin: {{arr_mg_mb[0]}} {{arr_mg_mb[1]}} {{arr_mg_mb[2]}} {{arr_mg_mb[3]}} !important;
+          padding: {{arr_pd_mb[0]}} {{arr_pd_mb[1]}} {{arr_pd_mb[2]}} {{arr_pd_mb[3]}} !important;
         }
       }
       

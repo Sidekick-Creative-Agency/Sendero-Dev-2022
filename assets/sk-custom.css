@@ -2672,7 +2672,7 @@ a.prev.page-numbers {
         padding: 0 !important;
     }
     .sk-session-group-outer-container {
-        padding: 0 25px;
+        /* padding: 0 25px; */
     }
    .image-text-quote {
        padding: 0 !important;
@@ -2690,7 +2690,7 @@ a.prev.page-numbers {
        line-height: 30px !important;
    }
    .sessions-description {
-    padding: 32px;
+    padding: 32px 0;
    }
 }
 

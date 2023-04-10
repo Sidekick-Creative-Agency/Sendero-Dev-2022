@@ -94,9 +94,9 @@
         "cl_txt": "dark",
         "layout": "container",
         "mg": "32px,auto,32px,auto",
-        "pd": "",
+        "pd": "0,64px,0,64px",
         "mg_mb": ",auto,,auto",
-        "pd_mb": ""
+        "pd_mb": "0,16px,0,16px"
       }
     },
     "sk-session-group-grid": {
@@ -157,9 +157,9 @@
         "image_position": "8",
         "layout": "nt_full",
         "mg": "64px,auto,64px,auto",
-        "pd": "",
+        "pd": ",64px,,64px",
         "mg_mb": "32px,auto,32px,auto",
-        "pd_mb": ""
+        "pd_mb": ",16px,,16px"
       }
     }
   },

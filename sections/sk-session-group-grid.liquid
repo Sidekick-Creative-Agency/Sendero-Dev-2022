@@ -141,13 +141,17 @@
 
 {%- assign arr_mg = se_stts.mg | remove:' ' | split:',' -%}
 {%- assign arr_mg_mb = se_stts.mg_mb | remove:' ' | split:',' -%}
+{%- assign arr_pd = se_stts.pd | remove:' ' | split:',' -%}
+{%- assign arr_pd_mb = se_stts.pd_mb | remove:' ' | split:',' -%}
   {%- style -%}
   .sk-session-group-outer-container {
     margin: {{arr_mg[0]}} {{arr_mg[1]}} {{arr_mg[2]}} {{arr_mg[3]}};
+    padding: {{arr_pd[0]}} {{arr_pd[1]}} {{arr_pd[2]}} {{arr_pd[3]}};
   }
   @media screen and (max-width: 767px) {
     .sk-session-group-outer-container {
       margin: {{arr_mg_mb[0]}} {{arr_mg_mb[1]}} {{arr_mg_mb[2]}} {{arr_mg_mb[3]}};
+      padding: {{arr_pd_mb[0]}} {{arr_pd_mb[1]}} {{arr_pd_mb[2]}} {{arr_pd_mb[3]}};
     }
   }
 
@@ -801,7 +805,7 @@
         "id": "pd",
         "label": "Padding",
         "info":"Padding top, padding right, padding bottom, padding left. If you not use to blank",
-        "placeholder": "50px,,50px,"
+        "placeholder": ",64px,,64px"
       },
      {
         "type": "header",
@@ -811,13 +815,13 @@
         "type": "text",
         "id": "mg_mb",
         "label": "Margin",
-        "placeholder": "50px,,50px,"
+        "placeholder": "32px,,32px,"
       },
       {
         "type": "text",
         "id": "pd_mb",
         "label": "Padding",
-        "placeholder": "50px,,50px,"
+        "placeholder": ",16px,,16px"
       }
     ],
     "presets": [
