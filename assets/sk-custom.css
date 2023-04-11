@@ -17,6 +17,9 @@
 .noscroll {
     overflow: hidden !important;
 }
+#ShopifyChat {
+    transition: transform .5s ease;
+}
 /*--------------------------------------------------------/
 / PAGE HEADING
 /--------------------------------------------------------*/
@@ -1775,6 +1778,7 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 }
 .cart_thres_1, .cart_thres_2, .cart_thres_3 {
     font-size: 16px;
+    line-height: 1.2;
 }
 .cart_thres_1 span, .cart_thres_2 span, .cart_thres_3 span {
     color: #04A4A2;
@@ -1787,6 +1791,10 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 }
 .cart_bar_w span::after {
     display: none;
+}
+.cart__footer .txt_tax_ship {
+    font-size: 14px;
+    line-height: 1.2;
 }
 /* ----- Tablet ------ */
 @media screen and (max-width: 1023px) {
@@ -2359,7 +2367,7 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     position: static !important;
    }
    .cart_page_section {
-    padding: 0 50px;
+    padding: 0 32px;
 }
     .cart_items {
         gap: 32px;
