@@ -926,8 +926,8 @@
           "e397beeb-6328-4a88-b922-52d9b4407a5a": {
             "type": "html",
             "settings": {
-              "title": "Live Chat",
-              "content": "<div class=\"ftr-icn-wrap\">\n<div class=\"ftr-icn\"><i class=\"pegk pe-7s-chat\"> <\/i><\/div>\n<div class=\"ftr-icn-txt\">Login to view your order status, or shoot us an email if you need to make changes.\n<\/div>\n<\/div><a href=\"mailto:contact@senderopc.com\" aria-label=\"email Sendero\" role=\"button\"><button type=\"submit\" class=\"submit-btn\"><span>Contact<\/span><\/button><\/a>",
+              "title": "Support",
+              "content": "<div class=\"ftr-icn-wrap\">\n<div class=\"ftr-icn\"><i class=\"pegk pe-7s-chat\"> <\/i><\/div>\n<div class=\"ftr-icn-txt\">Chat now with a customer service representative by clicking the chat bubble below or send us an email.\n<\/div>\n<\/div><a href=\"mailto:contact@senderopc.com\" aria-label=\"email Sendero\" role=\"button\"><button type=\"submit\" class=\"submit-btn\"><span>Contact<\/span><\/button><\/a>",
               "order": "1",
               "cl": "4",
               "cl_tb": "6",
