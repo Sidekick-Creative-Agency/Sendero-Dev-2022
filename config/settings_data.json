@@ -992,6 +992,8 @@
             "settings": {
               "title": "Support",
               "menu": "support-new-site",
+              "font_size": 14,
+              "line_height": 24,
               "order": "2",
               "cl": "2",
               "cl_tb": "3",
@@ -1003,6 +1005,8 @@
             "settings": {
               "title": "Company",
               "menu": "company-new-site",
+              "font_size": 14,
+              "line_height": 24,
               "order": "3",
               "cl": "2",
               "cl_tb": "3",
@@ -1014,6 +1018,8 @@
             "settings": {
               "title": "Retail",
               "menu": "retail-new-site",
+              "font_size": 14,
+              "line_height": 24,
               "order": "4",
               "cl": "2",
               "cl_tb": "3",
@@ -1024,7 +1030,7 @@
             "type": "html",
             "settings": {
               "title": "Contact",
-              "content": "<span><a href=\"mailto:contact@senderopc.com\">contact@senderopc.com<\/a><\/span><br><span><a href=\"mailto:wholesale@senderopc.com\">wholesale@senderopc.com<\/a><\/span><br><span>Mon-Fri | 8am-5pm<\/span>",
+              "content": "<span><a href=\"mailto:contact@senderopc.com\" style=\"font-size: 14px; line-height: 24px\">contact@senderopc.com<\/a><\/span><br><span><a href=\"mailto:wholesale@senderopc.com\">wholesale@senderopc.com<\/a><\/span><br><span>Mon-Fri | 8am-5pm<\/span>",
               "order": "5",
               "cl": "15",
               "cl_tb": "3",

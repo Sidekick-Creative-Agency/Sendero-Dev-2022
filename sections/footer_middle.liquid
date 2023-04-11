@@ -131,7 +131,7 @@
 		               	{%- if menu != blank -%}
 		                  <ul class="menu">
 		                  	{%- for link in linklists[menu].links -%}
-		                     <li class="menu-item{% if link.active %} current-menu-item{% endif %}"><a href="{{ link.url }}">{{ link.title | split: '[' | first }}</a></li>
+		                     <li class="menu-item{% if link.active %} current-menu-item{% endif %}" style="font-size: {{bk_stts.font_size}}px; line-height: {{bk_stts.line_height}}px; margin: 0;"><a href="{{ link.url }}">{{ link.title | split: '[' | first }}</a></li>
 		                     {%- endfor -%}
 		                  </ul>
 		                  {%- else -%}Pick a linked list to show here.
@@ -666,6 +666,26 @@
             "type": "link_list",
             "id": "menu",
             "label": "Add menu"
+          },
+          {
+            "type": "range",
+            "id": "font_size",
+            "label": "Font Size",
+            "default": 18,
+            "min": 12,
+            "max": 24,
+            "step": 1,
+            "unit": "px"
+          },
+          {
+            "type": "range",
+            "id": "line_height",
+            "label": "Line Height",
+            "default": 18,
+            "min": 12,
+            "max": 24,
+            "step": 1,
+            "unit": "px"
           },
 	       {
 	         "type": "select",

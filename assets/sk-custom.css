@@ -574,9 +574,6 @@ header {
 .footer__middle .nt-social i {
     font-size: 20px;
 }
-.footer-middle-menu-item .textwidget {
-    font-size: 14px;
-}
 @media (min-width: 1430px) {
     .footer__top_wrap .container, .footer__middle_wrap .container {
         max-width: 1400px;
@@ -621,6 +618,9 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 }
 .widget_nav_menu .widget-title, div aside.widget_text .widget-title {
     margin-bottom: 15px !important;
+}
+.footer-middle-menu-item .widget-title {
+    margin-bottom: 5px !important;
 }
 
 /*--------------------------------------------------------/
