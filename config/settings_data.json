@@ -1002,7 +1002,7 @@
             "type": "menu",
             "settings": {
               "title": "Company",
-              "menu": "footer3",
+              "menu": "company-new-site",
               "order": "3",
               "cl": "2",
               "cl_tb": "3",
