@@ -926,8 +926,8 @@
           "e397beeb-6328-4a88-b922-52d9b4407a5a": {
             "type": "html",
             "settings": {
-              "title": "Live Chat",
-              "content": "<div class=\"ftr-icn-wrap\">\n<div class=\"ftr-icn\"><i class=\"pegk pe-7s-chat\"> <\/i><\/div>\n<div class=\"ftr-icn-txt\">Chat now with our customer service team by clicking the chat bubble below or send us an email at <a href=\"mailto:contact@senderopc.com\">contact@senderopc.com<\/a>\n<\/div>\n<\/div>",
+              "title": "Support",
+              "content": "<div class=\"ftr-icn-wrap\">\n<div class=\"ftr-icn\"><i class=\"pegk pe-7s-chat\"> <\/i><\/div>\n<div class=\"ftr-icn-txt\">Chat now with a customer service representative by clicking the chat bubble below or send us an email.\n<\/div>\n<\/div><a href=\"mailto:contact@senderopc.com\" aria-label=\"email Sendero\" role=\"button\"><button type=\"submit\" class=\"submit-btn\"><span>Contact<\/span><\/button><\/a>",
               "order": "1",
               "cl": "4",
               "cl_tb": "6",
@@ -949,7 +949,7 @@
             "type": "html",
             "settings": {
               "title": "Subscribe for 15% Off",
-              "content": "<p>Be the first to know about new releases, crew shenanigans and obligatory queso recipes.<\/p><br>\n<style>\n.klaviyo-form-RrDhF8 button {\nfont-weight: 500 !important;\n}\n<\/style>\n<div class=\"klaviyo-form-RrDhF8\"><\/div>",
+              "content": "<p style=\"line-height: 1.3\">Be the first to know about new releases, crew shenanigans and obligatory queso recipes.<\/p><br>\n<style>\n.klaviyo-form-RrDhF8 button {\nfont-weight: 500 !important;\n}\n<\/style>\n<div class=\"klaviyo-form-RrDhF8\"><\/div>",
               "order": "1",
               "cl": "4",
               "cl_tb": "6",
