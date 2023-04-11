@@ -949,7 +949,7 @@
             "type": "html",
             "settings": {
               "title": "Subscribe for 15% Off",
-              "content": "<p>Be the first to know about new releases, crew shenanigans and obligatory queso recipes.<\/p><br>\n<style>\n.klaviyo-form-RrDhF8 button {\nfont-weight: 500 !important;\n}\n<\/style>\n<div class=\"klaviyo-form-RrDhF8\"><\/div>",
+              "content": "<p style=\"line-height: 1.3\">Be the first to know about new releases, crew shenanigans and obligatory queso recipes.<\/p><br>\n<style>\n.klaviyo-form-RrDhF8 button {\nfont-weight: 500 !important;\n}\n<\/style>\n<div class=\"klaviyo-form-RrDhF8\"><\/div>",
               "order": "1",
               "cl": "4",
               "cl_tb": "6",
