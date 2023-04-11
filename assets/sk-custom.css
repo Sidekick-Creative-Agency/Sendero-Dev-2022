@@ -2841,8 +2841,12 @@ a.prev.page-numbers {
     margin: auto;
     padding: 64px 96px;
 }
-
-
+#RecoverPasswordForm p, #RecoverPasswordForm label {
+    color: #FFF;
+}
+.reset-btn {
+    border: 2px solid #FFF;
+}
 /*-----------------------------------------------------------------------------/
 / Custom CSS For Screen Sizes
 /-----------------------------------------------------------------------------*/
