@@ -397,8 +397,8 @@
   "contact": {
     "form": {
       "title": "DROP US A LINE",
-      "name": "Your Name (required)",
-      "email": "Your Email (required)",
+      "name": "Your Name*",
+      "email": "Your Email*",
       "phone": "Your Phone Number",
       "message": "Your Message",
       "submit": "Send",

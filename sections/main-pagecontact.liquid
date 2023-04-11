@@ -1,13 +1,13 @@
 {%- assign page_content = page.content -%}
 {%- assign formId = 'contact_form_page' -%}
+{% assign se_stts = section.settings %}
 {%- if settings.show_map and settings.map != blank %}<style>.se_contact_map iframe {margin-bottom: 0;padding: 0;display: block;width: 100%;border: none;}</style><div class="se_contact_map">{{settings.map}}</div>{% endif -%}
-<div class="container mt__100 mb__100">
   <div class="row fl_center">
-      <div class="contact-form col-12 col-md-6 mb__20">
+      <div class="contact-form col-12 mb__20">
          {%- form 'contact', id: formId -%}
            {%- render 'form-status', form: form, form_id: formId -%}
            
-           <h3 class="mb__20">{{ 'contact.form.title' | t }}</h3>
+           <h2 class="mb__20">{{ 'contact.form.title' | t }}</h2>
            <p>
                <label for="{{ formId }}-name">{{ 'contact.form.name' | t }}</label>
                <input required="required" type="text" id="{{ formId }}-name" name="contact[name]" value="{% if form[name] %}{{ form[name] }}{% elsif customer %}{{ customer.name }}{% endif %}">
@@ -46,10 +46,144 @@
            <label for="{{ formId }}-message">{{ 'contact.form.message' | t }}</label>
            <textarea rows="20" id="{{ formId }}-message" name="contact[body]" required="required">{% if form.body %}{{ form.body }}{% endif %}</textarea>
            </p>
-           <input type="submit" class="button w__100" value="{{ 'contact.form.submit' | t }}">
+           <input type="submit" class="button" style="align-self: {{se_stts.btn_align}}" value="{{ 'contact.form.submit' | t }}">
 
          {%- endform -%}
       </div>
     {%- if page_content.size > 0 %}<div class="contact-content col-12 col-md-6">{{ page_content }}</div>{% endif -%}
   </div>
 </div>
+{%- assign arr_mg = se_stts.mg | remove:' ' | split:',' -%}
+{%- assign arr_pd = se_stts.pd | remove:' ' | split:',' -%}
+{%- assign arr_mg_mb = se_stts.mg_mb | remove:' ' | split:',' -%}
+{%- assign arr_pd_mb = se_stts.pd_mb | remove:' ' | split:',' -%}
+<style>
+  div.contact-form:not(.shopify-section) {
+    margin-top: {{arr_mg[0]}};
+    margin-right: {{arr_mg[1]}};
+    margin-bottom: {{arr_mg[2]}};
+    margin-left: {{arr_mg[3]}};
+    padding-top: {{arr_pd[0]}};
+    padding-right: {{arr_pd[1]}};
+    padding-bottom: {{arr_pd[2]}};
+    padding-left: {{arr_pd[3]}};
+    max-width: 900px;
+  }
+  form.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: {{se_stts.field_space}}px;
+  }
+  .contact-form label {
+    display: block;
+    margin-bottom: {{se_stts.label_space}}px;
+  }
+  .contact-form .button {
+    background-color: #000;
+    color: #FFF;
+  }
+  .contact-form .button:hover {
+    background-color: #666;
+  }
+  @media screen and (max-width: 767px) {
+    div.contact-form:not(.shopify-section) {
+    margin-top: {{arr_mg_mb[0]}};
+    margin-right: {{arr_mg_mb[1]}};
+    margin-bottom: {{arr_mg_mb[2]}};
+    margin-left: {{arr_mg_mb[3]}};
+    padding-top: {{arr_pd_mb[0]}};
+    padding-right: {{arr_pd_mb[1]}};
+    padding-bottom: {{arr_pd_mb[2]}};
+    padding-left: {{arr_pd_mb[3]}};
+  }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Contact Form",
+  "class": "contact-form",
+  "settings": [
+   
+  {
+    "type": "range",
+    "id": "label_space",
+    "label": "Label Spacing",
+    "unit": "px",
+    "min": 0,
+    "max": 32,
+    "step": 1,
+    "default": 8
+  },
+  {
+    "type": "range",
+    "id": "field_space",
+    "label": "Field Spacing",
+    "unit": "px",
+    "min": 0,
+    "max": 64,
+    "step": 1,
+    "default": 16
+  },
+ {
+  "type": "select",
+  "id": "btn_align",
+  "label": "Align Button",
+  "options": [
+    {
+      "value": "flex-start",
+      "label": "Left"
+    },
+    {
+      "value": "center",
+      "label": "Center"
+    },
+    {
+      "value": "flex-end",
+      "label": "Right"
+    },
+    {
+      "value": "stretch",
+      "label": "Justify"
+    }
+  ]
+ },
+  {
+    "type": "header",
+    "content": "== Desktop Design Settings"
+   },
+  {
+    "type": "text",
+    "id": "mg",
+    "label": "Margin",
+    "default": "32px,,32px,",
+    "placeholder": "32px,,32px,"
+  },
+ {
+  "type": "text",
+  "id": "pd",
+  "label": "Padding",
+  "default": ",64px,,64px",
+  "placeholder": ",64px,,64px"
+ },
+ {
+    "type": "header",
+    "content": "== Mobile Design Settings"
+   },
+  {
+    "type": "text",
+    "id": "mg_mb",
+    "label": "Margin",
+    "default": "32px,,32px,",
+    "placeholder": "32px,,32px,"
+  },
+ {
+  "type": "text",
+  "id": "pd_mb",
+  "label": "Padding",
+  "default": ",32px,,32px",
+  "placeholder": ",32px,,32px"
+ }
+  ]
+}
+{% endschema %}
