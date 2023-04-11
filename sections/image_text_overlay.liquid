@@ -3,7 +3,8 @@
   assign se_stts = section.settings
   assign se_height = se_stts.se_height
   assign image = se_stts.image
-  assign text_padding = se_stts.pd_text -%}
+  assign text_padding = se_stts.pd_text
+  assign text_padding_mobile = se_stts.pd_text_mb -%}
 
 
 <div class="nt_se_{{sid}} {{se_stts.layout}} txt_shadow_{{se_stts.use_shadow}} se_height_{{se_height}} nt_first">
@@ -19,12 +20,12 @@
           {%- else -%}
             <div class="js_full_ht4 lazyloadt4s item__position bg_rp_norepeat bg_sz_cover {{se_stts.img_align}}" data-bg="{{ 'placeholder.jpg' | asset_url }}" style="padding-top:51.282051282051285%;"></div>
           {%- endif -%}
-        <div class="txt_content pa t__0 l__0 b__0 r__0 caption-w-{{se_stts.caption_w}} flex column shadow_wrap fl_center {{se_stts.txt_align}} {{se_stts.txt_align_mb}} pe_none z__100">
-          <div class=" mb_h_pos{{se_stts.cap_h_pos_mb}} mb_v_pos{{se_stts.cap_v_pos_mb}} h_pos{{se_stts.cap_h_pos}} v_pos{{se_stts.cap_v_pos}}" style="padding: {{text_padding}}px">
+        <div class="txt_content pa t__0 l__0 b__0 r__0 caption-w-{{se_stts.caption_w}} flex column shadow_wrap fl_center {{se_stts.txt_align}} {{se_stts.txt_align_mb}} pe_none z__100 sk-overlay-container">
+          <div class=" mb_h_pos{{se_stts.cap_h_pos_mb}} mb_v_pos{{se_stts.cap_v_pos_mb}} h_pos{{se_stts.cap_h_pos}} v_pos{{se_stts.cap_v_pos}}">
             {%- for block in section.blocks %}{% assign bk_stts = block.settings -%} 
               {%- case block.type -%}
                  {%- when '1' -%}<h3 id="b_{{block.id}}" class="mt__0 mg__0 lh__1" style="text-transform: none; margin-bottom: {{bk_stts.mg_bot_text}}px">{{bk_stts.title}}</h3>
-                 {%- when '2' -%}<h4 id="b_{{block.id}}" class="mt__0 mg__0 lh__1 {{bk_stts.font}}{% if bk_stts.hide %} dn db_md{% endif %}" style="text-transform: none;">{{bk_stts.title}}</h4>
+                 {%- when '2' -%}<span id="b_{{block.id}}" class="mt__0 mg__0 lh__1 {{bk_stts.font}}{% if bk_stts.hide %} dn db_md{% endif %}" style="text-transform: none;">{{bk_stts.title}}</span>
                  {%- when '4' -%}<div id="b_{{block.id}}" class="space_banner dib"></div>
                  {%- when '5' -%}{{bk_stts.html}}
                  {%- when '6' -%}<div id="b_{{block.id}}" class="imtt4_space"></div>
@@ -51,6 +52,14 @@
 
 {%- render 'section_css' -%}
 {%- style -%}
+  .sk-overlay-container {
+    padding: {{se_stts.pd_text}}px !important;
+  }
+  @media screen and (max-width: 767px) {
+    .sk-overlay-container {
+      padding: {{se_stts.pd_text_mb}}px !important;
+    }
+  }
  .nt_se_{{sid}} .nt_img_txt>a:after{ background-color: {{se_stts.cl_overlay}};opacity: {{se_stts.cl_opacity | divided_by: 100.00}} }
  {%- if se_height == 'adapt' and image != blank -%}
      .nt_se_{{sid}}.se_height_adapt .js_full_ht4{padding-top:{{ 1 | divided_by: ratio | times: 100}}%}
@@ -79,7 +88,19 @@
         {%- when '2' -%}
         .nt_se_{{sid}} .nt_img_txt #b_{{bid}}{ {% if bk_stts.ls_mb_text != 0 %}letter-spacing:{{bk_stts.ls_mb_text}}px;{% endif %}{% if bk_stts.lh_mb_text != 0 %}line-height:{{bk_stts.lh_mb_text}}px;{% endif %}font-size: {{bk_stts.fs_mb_text}}px;font-weight: {{bk_stts.fw_text}};color: {{bk_stts.color}} }
         @media (min-width: 768px) {.nt_se_{{sid}} .nt_img_txt #b_{{bid}} { {% if bk_stts.ls_text != 0 %}letter-spacing:{{bk_stts.ls_text}}px;{% endif %}{% if bk_stts.lh_text != 0 %}line-height: {{bk_stts.lh_text}}px;{% endif %}font-size: {{bk_stts.fs_text}}px}}
-
+        .nt_se_{{sid}} ul, .nt_se_{{sid}} ol {
+          margin-left: {{bk_stts.list_mg_left}}px;
+          margin-top: {{bk_stts.list_mg_top}}px;
+        }
+        {% if bk_stts.ul_marker %}
+          .nt_se_{{sid}} ul {
+            list-style-type: none;
+          }
+          .nt_se_{{sid}} ul li::before {
+            content: "–";
+            margin-right: 8px;
+          }
+        {% endif %}
         {%- when '4' -%}
         #b_{{bid}} {width: {{bk_stts.w_mb}}px;margin: {{bk_stts.sp_mb}}px 0 {{bk_stts.spb_mb}}px;height: {{bk_stts.h_mb}}px;background-color: {{bk_stts.color}}}
        @media (min-width: 768px) { #b_{{bid}} {width: {{bk_stts.w}}px;margin: {{bk_stts.sp}}px 0 {{bk_stts.spb}}px;height: {{bk_stts.h}}px} }
@@ -370,6 +391,16 @@
         "info":"Padding top, padding right, padding bottom, padding left. If you not use to blank",
         "placeholder": "50px,,50px,"
       },
+      {
+        "type": "range",
+        "id": "pd_text",
+        "min": 0,
+        "max": 140,
+        "step": 2,
+        "label": "Text Padding",
+        "unit": "px",
+        "default": 0
+      },
      {
         "type": "header",
         "content": "== Design Mobile Options"
@@ -388,10 +419,10 @@
       },
       {
         "type": "range",
-        "id": "pd_text",
+        "id": "pd_text_mb",
         "min": 0,
-        "max": 200,
-        "step": 5,
+        "max": 140,
+        "step": 2,
         "label": "Text Padding",
         "unit": "px",
         "default": 0
@@ -503,7 +534,7 @@
       
       {
       "type": "2",
-      "name": "Sub Heading",
+      "name": "Body Text",
       "limit": 5,
       "settings": [
           {
@@ -521,16 +552,42 @@
              },
              {
                 "value": "f__libre",
-                "label": "Sub title font"
+                "label": "Sub Heading font"
               }
             ],
-            "label": "Sub Heading use font:"
+            "label": "Body text use font:"
           },
           {
-            "type": "textarea",
+            "type": "richtext",
             "id": "title",
             "label": "Heading",
-            "default": "Kalles v1"
+            "default": "<p>Kalles v1</p>"
+          },
+          {
+            "type": "range",
+            "id": "list_mg_left",
+            "label": "List Indent",
+            "unit": "px",
+            "min": 0,
+            "max": 32,
+            "step": 1,
+            "default": 0
+           },
+           {
+            "type": "range",
+            "id": "list_mg_top",
+            "label": "List Margin Top",
+            "unit": "px",
+            "min": 0,
+            "max": 32,
+            "step": 1,
+            "default": 0
+           },
+          {
+            "type": "checkbox",
+            "id": "ul_marker",
+            "label": "Do you want to use a dash instead of a dot for unordered lists?",
+            "default": true
           },
           {
             "type": "color",

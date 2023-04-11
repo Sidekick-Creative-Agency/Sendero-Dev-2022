@@ -1,6 +1,6 @@
 <div class="nt_se_{{section.id}} {{section.settings.layout}}">
   {%- render 'section_title',section:section -%}
-  <div class="rte_setting {{section.settings.align}}">{{ section.settings.content }}</div>
+  <div class="rte_setting {{section.settings.align}}" style="line-height: {{section.settings.text_height}}px">{{ section.settings.content }}</div>
   {%- if section.settings.show_btn -%}
     <div class="rich-text-button" style="text-align: {{section.settings.button_align}}; margin-top: {{section.settings.btn_mt}}px">
       <a href="{{section.settings.btn_link}}">
@@ -24,6 +24,12 @@
     margin-right: 8px;
   }
   {% endif %}
+  .nt_se_{{section.id}} button {
+    background-color: {{section.settings.btn_color}};
+  }
+  .nt_se_{{section.id}} button:hover {
+    background-color: #666;
+  }
 </style>
 
 {%- render 'section_css' -%}
@@ -104,6 +110,12 @@
       "step": 1,
       "default": 16
      },
+    {
+      "type": "color",
+      "id": "btn_color",
+      "label": "Button color",
+      "default": "#000000"
+    },
       {
         "type": "select",
         "id": "sub_font",
@@ -241,6 +253,16 @@
         ],
         "label": "Text Align"
       },
+     {
+      "type": "range",
+      "id": "text_height",
+      "label": "Line Height",
+      "unit": "px",
+      "min": 1,
+      "max": 48,
+      "step": 1,
+      "default": 24
+     },
      {
       "type": "range",
       "id": "list_mg_left",

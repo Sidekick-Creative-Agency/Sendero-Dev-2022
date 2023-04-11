@@ -1938,10 +1938,10 @@
           "text": "We use cookies to improve your experience on our website. By browsing this website, you agree to our use of cookies.",
           "accept": "Accept",
           "more": "More info",
-          "links": "",
+          "links": "shopify:\/\/policies\/privacy-policy",
           "pp_version": 1,
           "day_next": 30,
-          "cl_btn": "#56cfe1",
+          "cl_btn": "#04a4a2",
           "cl_btn_hover": "#007e91"
         }
       }

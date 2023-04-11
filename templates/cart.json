@@ -163,7 +163,7 @@
         "cp_code": false,
         "layout": "wrap",
         "cl_bg": "",
-        "mg": "",
+        "mg": "32px,,,",
         "pd": ",,,64px",
         "mg_mb": "",
         "pd_mb": ",32px,,32px"

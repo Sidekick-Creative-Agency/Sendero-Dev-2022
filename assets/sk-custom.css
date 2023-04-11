@@ -30,7 +30,7 @@ header {
     color: #fff !important;
 }
 .page-head {
-    height: 60vh !important;
+    /* height: 60vh !important; */
     display: flex;
     align-items: center;
 }
@@ -1575,10 +1575,13 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     
 }
 .cart_ac_remove .tt_txt {
-    top: -110%;
+    top: -98%;
     bottom: unset !important;
     right: 4px;
     left: unset !important;
+}
+.mini-cart-edit-delete-container .tt_txt {
+    top: -110%;
 }
 .btns_cart_1 .mini_cart_tool>div {
     box-shadow: none;
@@ -1775,6 +1778,9 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 }
 .cart_thres_1 span, .cart_thres_2 span, .cart_thres_3 span {
     color: #04A4A2;
+}
+.cart_thres_3 {
+    margin-bottom: 8px;
 }
 .remove-space {
     word-spacing: -4px;
@@ -2063,8 +2069,13 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     justify-content: space-between;
     align-items: center;
 }
-.mini-cart-icons {
-    text-align: center;
+.cart_tot_price {
+    font-family: "Oswald";
+}
+.cart-price-remove {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 .frm_cart_ajax_true .btn_checkout, .additional_checkout_buttons {
     min-width: 0 !important;
@@ -2101,6 +2112,10 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 .cart_item {
     max-height: none;
 }
+.cart-product-container .cart_item {
+    /* min-height: calc(150px + 2*1.875rem); */
+    padding-right: 16px;
+}
 .cart_item:first-child {
     border: none !important;
 }
@@ -2113,17 +2128,20 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     gap: 8px;
 }
 .cart-product-container {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     max-height: 520px; 
     height: fit-content;
-    overflow-y: scroll;
+    overflow: scroll;
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
 }
 .page_cart_info {
     justify-content: start;
-    gap: 8px;
+    gap: 32px;
+}
+.cart_item .cart_meta_prices {
+    border: none !important;
 }
 .template-cart .page_cart_info img {
     max-width: 150px !important;
@@ -2275,6 +2293,7 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     gap: 16px;
     justify-content: space-between;
 }
+
 /* ----- Tablet ----- */
 @media screen and (max-width: 1023px) {
     .template-cart .cart_item {
@@ -2599,7 +2618,7 @@ a.prev.page-numbers {
 }
 
 #shopify-section-template--16002783641857__1650466987b717892b, #shopify-section-template--16002783641857__1650467056c6dc0d08, .type_rich_text {
-    margin: 0 25px;
+    /* margin: 0 25px; */
 }
 .sendero-session-item-popup {
     position: fixed;

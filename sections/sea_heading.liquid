@@ -19,7 +19,7 @@
        <div class="container pr z_100">
           {%- for block in se_bks -%}
             {%- case block.type -%}
-               {%- when '1' -%}<h4 class="mt__40 cw" style="color:#000;">{% if search_terms == blank and search.performed == false -%}{{ 'general.search.title' | t }}{% elsif only_search_prs or product_type != '*' and product_type != blank %}{{ 'general.search.results_with_count' | t: terms: search_terms, count: results_count }}{% elsif search.performed %}{{ 'general.search.results_html' | t: terms: search_terms, count: results_count }}{% endif %}</h4>
+               {%- when '1' -%}<h4 class="cw" style="color:#000;">{% if search_terms == blank and search.performed == false -%}{{ 'general.search.title' | t }}{% elsif only_search_prs or product_type != '*' and product_type != blank %}{{ 'general.search.results_with_count' | t: terms: search_terms, count: results_count }}{% elsif search.performed %}{{ 'general.search.results_html' | t: terms: search_terms, count: results_count }}{% endif %}</h4>
                {%- else -%}{% if block.settings.text == blank %}{% continue %}{% endif %}<p class="mg__0" style="color:#000;">{{ block.settings.text }}</p>
             {%- endcase -%}
           {%- endfor -%}
@@ -37,6 +37,9 @@
 {%- endif -%}
 
 {%- style -%}
+.page-head {
+  min-height: {{se_stts.min_height}};
+}
 .page_head_{{se_id}} {padding: {{se_stts.paddingmb}}px 0}@media (min-width: 768px){.page_head_{{se_id}} {padding: {{se_stts.padding}}px 0} }
 .page_head_{{se_id}}:before {
   background-color: {{se_stts.color}};opacity: {{se_stts.overlay | divided_by: 100.0}}
@@ -82,6 +85,14 @@
         "step": 1,
         "unit": "%"
       },
+     {
+      "type": "text",
+      "id": "min_height",
+      "label": "Min height",
+      "default": "60vh",
+      "info": "(Optional)",
+      "placeholder": "60vh"
+     },
       {
         "type": "range",
         "id": "padding",

@@ -14,7 +14,7 @@
         "sea_heading1": {
           "type": "1",
           "settings": {
-            "color": "#fff"
+            "color": "#ffffff"
           }
         }
       },
@@ -25,7 +25,8 @@
         "parallax": false,
         "color": "#000000",
         "overlay": 0,
-        "padding": 30,
+        "min_height": "100px",
+        "padding": 10,
         "paddingmb": 30,
         "bg_pos": "center center",
         "bg_repeat": "no-repeat",

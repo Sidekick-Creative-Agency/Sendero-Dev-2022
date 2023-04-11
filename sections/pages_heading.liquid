@@ -49,6 +49,7 @@
 
   .page-head {
     padding: {{se_stts.padding}}px;
+    min-height: {{se_stts.min_height}};
   }
   @media screen and (max-width: 767px) {
     .page-head {
@@ -85,6 +86,14 @@
       "label": "Heading Title",
       "default": "Page Name"
     },
+    {
+      "type": "text",
+      "id": "min_height",
+      "label": "Min height",
+      "default": "60vh",
+      "info": "(Optional)",
+      "placeholder": "60vh"
+     },
     {
       "type": "checkbox",
       "id": "button",
