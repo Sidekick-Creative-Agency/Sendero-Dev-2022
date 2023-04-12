@@ -327,7 +327,7 @@
             "enable_image": true,
             "image": "shopify:\/\/shop_images\/Hunter_Glaske.jpg",
             "title": "Hunter Glaske",
-            "text": "",
+            "text": "<p>Wholesale Manager<\/p>",
             "button_label": "",
             "button_link": "",
             "open_link": "_blank",
