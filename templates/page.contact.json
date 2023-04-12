@@ -18,7 +18,7 @@
         "parallax": false,
         "color": "#000000",
         "overlay": 54,
-        "min_height": "60vh",
+        "min_height": "400px",
         "padding": 50,
         "paddingmb": 50,
         "bg_pos": "center center",
