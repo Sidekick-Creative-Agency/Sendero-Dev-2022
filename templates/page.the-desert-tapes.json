@@ -15,6 +15,7 @@
       ],
       "settings": {
         "title": "The Desert Tapes",
+        "min_height": "400px",
         "button": true,
         "btn_text": "See More Sessions",
         "btn_url": "shopify:\/\/pages\/sendero-sessions",
@@ -34,6 +35,7 @@
     },
     "main": {
       "type": "main-page",
+      "disabled": true,
       "custom_css": [
 
       ],
@@ -95,10 +97,10 @@
         "btn_spacing": 16,
         "cl_txt": "dark",
         "layout": "container",
-        "mg": "50px,,50px",
-        "pd": "",
-        "mg_mb": "",
-        "pd_mb": ""
+        "mg": "32px,auto,64px,auto",
+        "pd": "0,64px,0,64px",
+        "mg_mb": ",,,,",
+        "pd_mb": ",32px,,32px"
       }
     },
     "sk-session-group-grid": {
@@ -158,10 +160,10 @@
         "image_size": "nt_cover",
         "image_position": "8",
         "layout": "nt_full",
-        "mg": "50px, auto, 50px, auto",
-        "pd": ",,,,",
-        "mg_mb": "50px,,,,",
-        "pd_mb": ",,,,"
+        "mg": "32px, auto, 32px, auto",
+        "pd": "0,64px,0,64px",
+        "mg_mb": "",
+        "pd_mb": ",32px,,32px"
       }
     }
   },

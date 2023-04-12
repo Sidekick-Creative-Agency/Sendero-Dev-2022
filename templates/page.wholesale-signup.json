@@ -38,7 +38,7 @@
     "bc643a28-3e95-43a8-9361-75cccd79b639": {
       "type": "custom_html",
       "settings": {
-        "code": "<div class=\"tc\">\n<iframe src=\"https:\/\/5234121.extforms.netsuite.com\/app\/site\/crm\/externalleadpage.nl?compid=5234121&amp;formid=1&amp;h=AAFdikaIkVD4WjQp5ZgXxLWwD5iiEHgx5yiK4IfcmB7DaT2NlWw\" style=\"min-height: 300px\"><\/iframe>\n<\/div>",
+        "code": "<div class=\"tc\">\n<iframe src=\"https:\/\/5234121.extforms.netsuite.com\/app\/site\/crm\/externalleadpage.nl?compid=5234121&amp;formid=1&amp;h=AAFdikaIkVD4WjQp5ZgXxLWwD5iiEHgx5yiK4IfcmB7DaT2NlWw\" style=\"min-height: 750px; width: 100%\"><\/iframe>\n<\/div>",
         "css": "#shopify-section-[id] {background-color:transparent}",
         "layout": "container",
         "mg": "32px,,32px,",

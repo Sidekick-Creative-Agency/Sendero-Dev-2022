@@ -19,8 +19,9 @@
         "parallax": true,
         "color": "#000000",
         "overlay": 47,
-        "padding": 100,
-        "paddingmb": 66,
+        "min_height": "500px",
+        "padding": 64,
+        "paddingmb": 32,
         "bg_pos": "center center",
         "bg_repeat": "no-repeat",
         "bg_size": "cover",
@@ -29,6 +30,7 @@
     },
     "main": {
       "type": "page_about_us",
+      "disabled": true,
       "settings": {
       }
     },
@@ -36,12 +38,15 @@
       "type": "rich_text",
       "settings": {
         "title": "Our History: To the West",
+        "heading_spacing": 16,
         "sub_title": "",
         "show_btn": false,
         "btn_text": "Click Me",
         "button_align": "left",
         "btn_link": "#",
         "btn_mt": 16,
+        "btn_color": "#000000",
+        "border_color": "#000000",
         "sub_font": "2",
         "header_align": "left",
         "style_title": "title_1",
@@ -49,26 +54,30 @@
         "show_clpr": false,
         "content": "<p>Sendero was born out of one thing: the love for the West. The landscapes, cultures, history, geology, flora, and fauna. All of it. Our very first hat came into being because of the wild West Texas views down Big Bend country. And take it from us, there’s nothing better than putting on a hat that fits juuust right. Our founder, Hunter Harlow, has been chasing that feeling ever since, and although we make a whole lot more than hats these days… that feeling of making our first hat is what keeps us going and pushing the boundaries.<\/p>",
         "align": "tl",
+        "text_height": 24,
         "list_mg_left": 0,
         "list_mg_top": 0,
         "ul_marker": true,
         "layout": "container",
-        "mg": "50px,,50px,",
-        "pd": ",50px,,50px",
+        "mg": "32px,,32px,",
+        "pd": ",64px,,64px",
         "mg_mb": "",
-        "pd_mb": ",,,,"
+        "pd_mb": ",32px,,32px"
       }
     },
     "c099fedd-6696-4f70-9f1f-5c7763827002": {
       "type": "rich_text",
       "settings": {
         "title": "HOMEGROWN RIGHT HERE IN TEJAS",
+        "heading_spacing": 16,
         "sub_title": "",
         "show_btn": false,
         "btn_text": "Click Me",
         "button_align": "left",
         "btn_link": "#",
         "btn_mt": 16,
+        "btn_color": "#000000",
+        "border_color": "#000000",
         "sub_font": "2",
         "header_align": "center",
         "style_title": "title_1",
@@ -76,14 +85,15 @@
         "show_clpr": false,
         "content": "<p>There’s a simple list of things we value that make us who we are here at Sendero: hard day’s work, free-flowing rivers, public land, quality gear, live music, art for art’s sake, craft beverages, and fine Texas BBQ. So naturally, we planted our roots right here in Waco, Tejas. We’re not all Texans here at Sendero, but “Texas” is more a state of mind than a birthright. <\/p>",
         "align": "tl",
+        "text_height": 24,
         "list_mg_left": 0,
         "list_mg_top": 0,
         "ul_marker": true,
         "layout": "container",
-        "mg": "50px,,50px,",
-        "pd": ",50px,,50px",
+        "mg": "32px,,32px,",
+        "pd": ",64px,,64px",
         "mg_mb": "",
-        "pd_mb": ",,,,"
+        "pd_mb": ",32px,,32px"
       }
     },
     "164856885666aace2e": {
@@ -143,9 +153,9 @@
         "align": "tl",
         "layout": "container",
         "mg": ",,,",
-        "pd": "",
+        "pd": ",64px,,64px",
         "mg_mb": "",
-        "pd_mb": ",,,"
+        "pd_mb": ",32px,,32px"
       }
     },
     "1649257609430b6426": {
@@ -170,7 +180,10 @@
           "type": "2",
           "settings": {
             "font": "f_body",
-            "title": "“Sendero” is the Spanish word for “trail” or “path.” Although the origin of the name is uncertain, around these parts if you’re going out to walk a “sendero,” there’s a good chance folks know exactly what you mean and there’s an even better chance you might run into an agave or two. We like to think we’re building our own “sendero” here by following the trails blazed by our role models and industry leaders, but we’re bringing that classic “Sendero style.”",
+            "title": "<p>“Sendero” is the Spanish word for “trail” or “path.” Although the origin of the name is uncertain, around these parts if you’re going out to walk a “sendero,” there’s a good chance folks know exactly what you mean and there’s an even better chance you might run into an agave or two. We like to think we’re building our own “sendero” here by following the trails blazed by our role models and industry leaders, but we’re bringing that classic “Sendero style.”<\/p>",
+            "list_mg_left": 0,
+            "list_mg_top": 0,
+            "ul_marker": true,
             "color": "#ffffff",
             "fw_text": 400,
             "fs_text": 18,
@@ -190,9 +203,9 @@
       "settings": {
         "se_height": "cus_h",
         "use_custom_h": "1",
-        "h_des": "500",
-        "h_tb": "500",
-        "h_mb": "500",
+        "h_des": "500px",
+        "h_tb": "500px",
+        "h_mb": "500px",
         "image": "shopify:\/\/shop_images\/gautier-salles-uffQnKuJ-hc-unsplash.jpg",
         "use_pr": true,
         "img_align": "bottom",
@@ -208,9 +221,10 @@
         "layout": "nt_full",
         "mg": ",,,,",
         "pd": "",
+        "pd_text": 64,
         "mg_mb": "",
         "pd_mb": "",
-        "pd_text": 25
+        "pd_text_mb": 32
       }
     },
     "1649253785b4e78813": {

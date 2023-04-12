@@ -1397,7 +1397,9 @@
     };
 
     geckoShopify.footerCollapse = function () {
-        if ( $(window).width() > 767 || $('.footer_collapse_true').length == 0 ) return;
+        if ( $(window).width() > 767 || $('.footer_collapse_true').length == 0 ) { 
+          // $('.footer_collapse_true .widget-title').off('click'); 
+          return;}
 
         $('.footer_collapse_true .widget-title').off('click').on('click', function () {
           var $title = $(this);
@@ -1415,7 +1417,7 @@
 
     };
 
-
+    // $window.on('resize', geckoShopify.footerCollapse);
     geckoShopify.backToTop = function () {
       var el = $('#nt_backtop');
       if ( ( $(window).width() < 768 && nt_settings.backtop !='3' ) || el.length == 0 ) return;

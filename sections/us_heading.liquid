@@ -30,7 +30,7 @@
 .page-head {
   min-height: {{se_stts.min_height}};
 }
-.page_head_{{se_id}} {padding: {{se_stts.paddingmb}}px 0}@media (min-width: 768px){.page_head_{{se_id}} {padding: {{se_stts.padding}}px 0} }
+.page_head_{{se_id}} {padding: 0 {{se_stts.paddingmb}}px}@media (min-width: 768px){.page_head_{{se_id}} {padding: 0 {{se_stts.padding}}px } }
 .page_head_{{se_id}}:before {
   background-color: {{se_stts.color}};opacity: {{se_stts.overlay | divided_by: 100.0}}
 }

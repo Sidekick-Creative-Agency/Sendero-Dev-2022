@@ -15,6 +15,7 @@
       ],
       "settings": {
         "title": "Road To The Rodeo",
+        "min_height": "400px",
         "button": true,
         "btn_text": "See More Sessions",
         "btn_url": "shopify:\/\/pages\/sendero-sessions",
@@ -79,10 +80,10 @@
         "btn_spacing": 16,
         "cl_txt": "dark",
         "layout": "container",
-        "mg": "32px,auto,32px,auto",
+        "mg": "32px,auto,64px,auto",
         "pd": "0,64px,0,64px",
         "mg_mb": "",
-        "pd_mb": "0,16px,0,16px"
+        "pd_mb": "0,32px,0,32px"
       }
     },
     "sk-session-group-grid": {
@@ -142,10 +143,10 @@
         "image_size": "nt_cover",
         "image_position": "8",
         "layout": "nt_full",
-        "mg": "96px,auto, 32px,auto",
-        "pd": "",
-        "mg_mb": "64px,auto,32px,auto",
-        "pd_mb": ",16px,,16px"
+        "mg": "32px,auto, 32px,auto",
+        "pd": ",64px,,64px",
+        "mg_mb": "",
+        "pd_mb": ",32px,,32px"
       }
     }
   },

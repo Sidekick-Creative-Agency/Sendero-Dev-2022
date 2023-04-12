@@ -139,19 +139,31 @@
   }
  </script>
 
-{%- assign arr_mg = se_stts.mg | remove:' ' | split:',' -%}
-{%- assign arr_mg_mb = se_stts.mg_mb | remove:' ' | split:',' -%}
-{%- assign arr_pd = se_stts.pd | remove:' ' | split:',' -%}
-{%- assign arr_pd_mb = se_stts.pd_mb | remove:' ' | split:',' -%}
+{%- assign arr_mg = se_stts.mg | split:',' -%}
+{%- assign arr_mg_mb = se_stts.mg_mb | split:',' -%}
+{%- assign arr_pd = se_stts.pd | split:',' -%}
+{%- assign arr_pd_mb = se_stts.pd_mb | split:',' -%}
   {%- style -%}
   .sk-session-group-outer-container {
-    margin: {{arr_mg[0]}} {{arr_mg[1]}} {{arr_mg[2]}} {{arr_mg[3]}};
-    padding: {{arr_pd[0]}} {{arr_pd[1]}} {{arr_pd[2]}} {{arr_pd[3]}};
+    margin-top: {{arr_mg[0]}};
+    margin-right: {{arr_mg[1]}};
+    margin-bottom: {{arr_mg[2]}};
+    margin-left: {{arr_mg[3]}};
+    padding-top: {{arr_pd[0]}};
+    padding-right: {{arr_pd[1]}};
+    padding-bottom: {{arr_pd[2]}};
+    padding-left: {{arr_pd[3]}};
   }
   @media screen and (max-width: 767px) {
     .sk-session-group-outer-container {
-      margin: {{arr_mg_mb[0]}} {{arr_mg_mb[1]}} {{arr_mg_mb[2]}} {{arr_mg_mb[3]}};
-      padding: {{arr_pd_mb[0]}} {{arr_pd_mb[1]}} {{arr_pd_mb[2]}} {{arr_pd_mb[3]}};
+      margin-top: {{arr_mg_mb[0]}};
+    margin-right: {{arr_mg_mb[1]}};
+    margin-bottom: {{arr_mg_mb[2]}};
+    margin-left: {{arr_mg_mb[3]}};
+    padding-top: {{arr_pd_mb[0]}};
+    padding-right: {{arr_pd_mb[1]}};
+    padding-bottom: {{arr_pd_mb[2]}};
+    padding-left: {{arr_pd_mb[3]}};
     }
   }
 

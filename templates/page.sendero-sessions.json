@@ -15,6 +15,7 @@
       ],
       "settings": {
         "title": "Sendero Sessions",
+        "min_height": "400px",
         "button": false,
         "btn_text": "Click Me",
         "btn_url": "",
@@ -124,11 +125,11 @@
         "image_ratio": "ratio4_3",
         "image_size": "nt_cover",
         "image_position": "8",
-        "layout": "nt_full",
+        "layout": "container",
         "mg": "32px,auto,0,auto",
-        "pd": "32px,32px,32px,32px",
-        "mg_mb": "32px,0,32px,0",
-        "pd_mb": ""
+        "pd": "32px,64px,32px,64px",
+        "mg_mb": "0,0,0,0",
+        "pd_mb": "32px,32px,32px,32px"
       }
     },
     "main": {
@@ -149,9 +150,9 @@
         "align": "tl",
         "layout": "container",
         "mg": "32px,auto,32px,auto",
-        "pd": "",
-        "mg_mb": "32px,,,",
-        "pd_mb": ""
+        "pd": ",64px,,64px",
+        "mg_mb": ",,,,",
+        "pd_mb": ",32px,,32px"
       }
     },
     "25566ea0-33fa-4176-ac3a-f0902fa4fa23": {
@@ -210,7 +211,7 @@
         "layout": "container",
         "cl_bg": "",
         "mg": "32px,,32px,",
-        "pd": "",
+        "pd": ",64px,,64px",
         "mg_mb": "32px,,32px,",
         "pd_mb": ",,,,"
       }

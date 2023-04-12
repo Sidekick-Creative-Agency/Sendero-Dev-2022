@@ -26,9 +26,11 @@
   {% endif %}
   .nt_se_{{section.id}} button {
     background-color: {{section.settings.btn_color}};
+    border-color: {{section.settings.border_color}};
   }
   .nt_se_{{section.id}} button:hover {
     background-color: #666;
+    border-color: #000;
   }
 </style>
 
@@ -114,6 +116,12 @@
       "type": "color",
       "id": "btn_color",
       "label": "Button color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "label": "Border color",
       "default": "#000000"
     },
       {

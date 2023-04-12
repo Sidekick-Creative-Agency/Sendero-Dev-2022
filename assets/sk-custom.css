@@ -20,6 +20,16 @@
 #ShopifyChat {
     transition: transform .5s ease;
 }
+.shopify-policy__container {
+    max-width: 900px !important;
+}
+.shopify-policy__body h2, .shopify-policy__body h3, .shopify-policy__body h4 {
+    margin-top: 32px;
+    margin-bottom: 8px;
+}
+.shopify-policy__body p {
+    margin-bottom: 8px;
+}
 /*--------------------------------------------------------/
 / PAGE HEADING
 /--------------------------------------------------------*/
@@ -202,8 +212,8 @@ header {
 .mobile-menu-header-title {
     font-family: 'Oswald';
     font-weight: 400;
-    margin-right: 15px;
-    margin-left: 15px;
+    margin-right: 16px;
+    margin-left: 16px;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     align-self: center;
@@ -216,17 +226,22 @@ header {
 .mobile-menu-header-title:after {
     background-color: transparent;
 }
-.mb_nav_tab ul li a{
+.mb_nav_tab .menu-item.item-level-0 > a {
+    border-bottom: 1px solid rgba(255,255,255,.45) !important;
+}
+.mb_nav_tab .menu-item.item-level-0 a {
     font-family: 'Oswald';
     font-weight: 400;
-    margin-right: 15px;
-    margin-left: 15px;
+    margin-right: 16px;
+    margin-left: 16px;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     align-self: center;
     justify-self: center;
     color: white !important;
-    border-bottom: 1px solid rgba(255,255,255,.45) !important;
+}
+.mb_nav_tab .sub-menu a {
+    border: none !important;
 }
 .nt_mb_menu .menu-item .sub-menu .menu-item a {
     margin-left: 40px;
@@ -560,8 +575,8 @@ header {
 
 .footer__top_wrap .container, .footer__middle_wrap .container {
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 32px;
+    padding-left: 32px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -617,7 +632,7 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     line-height: 1.3em;
 }
 .widget_nav_menu .widget-title, div aside.widget_text .widget-title {
-    margin-bottom: 15px !important;
+    /* margin-bottom: 15px !important; */
 }
 .footer-middle-menu-item .widget-title {
     margin-bottom: 5px !important;
@@ -1397,8 +1412,7 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     margin: 10px 0;
 }
 #out_stock_ppr {
-    align-items: center;
-    justify-content: center;
+    line-height: 2;
     font-family: 'Oswald';
     font-weight: 400;
     font-size: 14px;
@@ -1500,6 +1514,7 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 }
 .quick-links-popup-content h4, .quick-links-popup-content h5, .quick-links-popup-content h6 {
     margin-bottom: 8px;
+    margin-top: 32px;
     line-height: 1.4;
 }
 .quick-links-popup-content p {
@@ -1508,7 +1523,9 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 .product-images .col_nav .n-item, .product-images .col_nav .n-item .nt_bg_lz {
     opacity: 1 !important;
 }
-
+.product-infors .form-notify label {
+    font-size: 14px;
+}
 /* ----- Tablet ------ */
 @media screen and (max-width: 1023px) {
     .quick-links-popup-content-wrapper {
@@ -2619,7 +2636,7 @@ a.prev.page-numbers {
     max-height: 550px;
 }
 .sessions-description {
-    padding: 64px;
+    padding-right: 64px;
 }
 .image-text-quote {
     max-width: 1100px !important;
@@ -2711,7 +2728,7 @@ a.prev.page-numbers {
     padding: 0 25px;
    }
    .sendero-sessions-rich-text.container {
-       padding: 0 !important;
+       /* padding: 0 !important; */
    }
    .sk-session-group-text p {
        margin: 0;

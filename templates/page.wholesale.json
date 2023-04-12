@@ -47,6 +47,7 @@
         "btn_link": "shopify:\/\/pages\/wholesale-signup",
         "btn_mt": 16,
         "btn_color": "#04a4a2",
+        "border_color": "#04a4a2",
         "sub_font": "2",
         "header_align": "center",
         "style_title": "title_1",
@@ -62,7 +63,7 @@
         "mg": "32px,,32px,",
         "pd": ",64px,,64px",
         "mg_mb": "",
-        "pd_mb": ",16px,,16px"
+        "pd_mb": ",32px,,32px"
       }
     },
     "d92b0eb0-de21-421d-93a1-0f4d29b845e2": {
@@ -119,8 +120,8 @@
         "se_height": "cus_h",
         "use_custom_h": "1",
         "h_des": "480px",
-        "h_tb": "480px",
-        "h_mb": "880px",
+        "h_tb": "600px",
+        "h_mb": "1000px",
         "image": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-6223.jpg",
         "use_pr": true,
         "img_align": "center",
@@ -154,6 +155,7 @@
         "btn_link": "shopify:\/\/pages\/wholesale-signup-1",
         "btn_mt": 16,
         "btn_color": "#04a4a2",
+        "border_color": "#04a4a2",
         "sub_font": "2",
         "header_align": "center",
         "style_title": "title_1",
@@ -169,7 +171,7 @@
         "mg": "32px,,32px,",
         "pd": ",64px,,64px",
         "mg_mb": "",
-        "pd_mb": ",16px,,16px"
+        "pd_mb": ",32px,,32px"
       }
     }
   },

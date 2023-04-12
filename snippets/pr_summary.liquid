@@ -693,7 +693,7 @@ assign se_stts = section.settings
                     {%- if bk_stts.enable_payment_btn and ck_external == false and no_sold_out -%}
                     {%- assign PR_buy_pr = true -%}
                     {%- endif -%}
-                    <div class="variations_button in_flex column w__100 buy_qv_{{PR_buy_pr}}">
+                    <div class="variations_button in_flex column buy_qv_{{PR_buy_pr}}">
                       <div class="flex wrap" style="flex-direction: column;">
                          {%- if ck_external -%}<a href="{{link}}" rel="nofollow" target="_blank" class="truncate external_btn button">{{title}}</a>{%- render 'nt_add_w',class:"order-3",tooltip:"ttip_nt tooltip_top_left" -%}
                          {%- elsif no_sold_out == false -%}

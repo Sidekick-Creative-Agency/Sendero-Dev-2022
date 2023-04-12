@@ -964,7 +964,7 @@
         ],
         "settings": {
           "sticky2": false,
-          "accordions2": true,
+          "accordions2": false,
           "border2": true,
           "bd_cl2": "#f1f1f1",
           "cl_h2": "#000000",
@@ -1030,7 +1030,9 @@
             "type": "html",
             "settings": {
               "title": "Contact",
-              "content": "<span><a href=\"mailto:contact@senderopc.com\" style=\"font-size: 14px; line-height: 24px\">contact@senderopc.com<\/a><\/span><br><span><a href=\"mailto:wholesale@senderopc.com\">wholesale@senderopc.com<\/a><\/span><br><span>Mon-Fri | 8am-5pm<\/span>",
+              "content": "<span><a href=\"mailto:contact@senderopc.com\">contact@senderopc.com<\/a><\/span><br><span><a href=\"mailto:wholesale@senderopc.com\">wholesale@senderopc.com<\/a><\/span><br><span>Mon-Fri | 8am-5pm<\/span>",
+              "font_size": 14,
+              "line_height": 24,
               "order": "5",
               "cl": "15",
               "cl_tb": "3",
@@ -1065,7 +1067,7 @@
         ],
         "settings": {
           "sticky": false,
-          "accordions": true,
+          "accordions": false,
           "border": false,
           "bd_cl": "#000000",
           "cl_h": "#999999",
@@ -1100,6 +1102,7 @@
         ],
         "settings": {
           "layout": "12",
+          "font_size": 14,
           "bg": "#000000",
           "cl": "#999999",
           "cl_a": "#dcdcdc",

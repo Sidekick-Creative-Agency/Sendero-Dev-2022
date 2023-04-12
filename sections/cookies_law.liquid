@@ -30,27 +30,45 @@
     -webkit-transform: translate3d(0,100%,0);
     transform: translate3d(0,100%,0);
 }
+.popup_cookies_btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
 a.pp_cookies_more_btn {
-    border-bottom: 2px solid #f6f6f8;
-    color: #222;
+    border: 1px solid #000;
+    color: #FFF;
+    background-color: #000;
+    font-family: "Oswald";
     font-weight: 500;
+    min-height: 34px;
     font-size: 13px;
-    margin-right: 20px;
+    padding: 5px 25px;
     transition: all .25s ease;
 }
 a.pp_cookies_more_btn:focus, a.pp_cookies_more_btn:hover {
-    opacity: .7;
+  background-color: #666;
+  border-color: #000;
 }
 a.pp_cookies_accept_btn {
+    border: 1px solid #04a4a2;
+    color: #FFF;
     font-weight: 500;
-    padding: 10px 14px;
-    font-size: 12px;
+    font-family: "Oswald";
+    padding: 5px 25px;
+    min-height: 34px;
+    font-size: 13px;
     background-color: {{section.settings.cl_btn}};
     color: #fff;
     transition: all .25s ease;
 }
 a.pp_cookies_accept_btn:focus, a.pp_cookies_accept_btn:hover {
-    background-color: {{section.settings.cl_btn_hover}};
+    background-color: #666;
+    border-color: #000;
+}
+.popup_cookies_text {
+  line-height: 1.2;
 }
 @media (max-width: 767px) {
   .popup_cookies_text {

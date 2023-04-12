@@ -120,7 +120,7 @@
       		   {%- when 'html' -%}
 		            <aside id="block_{{block.id}}" class="widget widget_text">
 		               {%- if bk_stts.title != blank -%}<h3 class="widget-title fwsb flex al_center fl_between fs__16 mg__0 mb__30"><span class="txt_title">{{bk_stts.title}}</span><span class="nav_link_icon ml__5"></span></h3>{%- endif -%}
-		               <div class="textwidget widget_footer">{{bk_stts.content}}</div>
+		               <div class="textwidget widget_footer" style="font-size: {{bk_stts.font_size}}px; line-height: {{bk_stts.line_height}}px;">{{bk_stts.content}}</div>
 		            </aside>
 
       		  {%- else -%}
@@ -2140,6 +2140,26 @@
             "id": "content",
             "label": "Content",
             "default": "<p>html code</p>"
+          },
+          {
+            "type": "range",
+            "id": "font_size",
+            "label": "Font Size",
+            "default": 18,
+            "min": 12,
+            "max": 24,
+            "step": 1,
+            "unit": "px"
+          },
+          {
+            "type": "range",
+            "id": "line_height",
+            "label": "Line Height",
+            "default": 18,
+            "min": 12,
+            "max": 24,
+            "step": 1,
+            "unit": "px"
           },
 	       {
 	         "type": "select",
