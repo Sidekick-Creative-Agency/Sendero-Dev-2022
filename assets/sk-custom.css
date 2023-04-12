@@ -24,6 +24,7 @@
     max-width: 900px !important;
     margin-left: auto;
     margin-right: auto;
+    padding: 0 32px;
 }
 .shopify-policy__body h2, .shopify-policy__body h3, .shopify-policy__body h4 {
     margin-top: 32px;
