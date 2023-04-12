@@ -471,7 +471,7 @@
               "blog": "",
               "page_link": "",
               "col_link": "mens",
-              "title": "mens",
+              "title": "men's",
               "button_text": "Shop All",
               "col": "4"
             }
@@ -482,11 +482,11 @@
               "image": "shopify:\/\/shop_images\/ss23WomensCropTeeBanner_2048x2048_9a62a007-f446-4766-b003-9d4a15b69b2e.webp",
               "cat_design": "1",
               "hoverz": true,
-              "collection": "spring-2023",
+              "collection": "womens",
               "blog": "",
               "page_link": "",
-              "col_link": "womens",
-              "title": "Womens",
+              "col_link": "Spring-2023",
+              "title": "",
               "button_text": "Shop All",
               "col": "4"
             }
@@ -494,7 +494,7 @@
           "1585641227863": {
             "type": "mega",
             "settings": {
-              "title": "Mens",
+              "title": "Men's",
               "url": "shopify:\/\/collections\/mens",
               "open_link": "_self",
               "icon": "",
@@ -571,7 +571,7 @@
           "922ef6d3-2b8a-4f62-84ae-f7944a9ba720": {
             "type": "mega",
             "settings": {
-              "title": "Womens",
+              "title": "Women's",
               "url": "shopify:\/\/collections\/womens",
               "open_link": "_self",
               "icon": "",
@@ -624,7 +624,7 @@
               "collection": "womens",
               "blog": "",
               "page_link": "",
-              "col_link": "womens",
+              "col_link": "New-Arrival",
               "title": "New Arrivals",
               "button_text": "Shop All",
               "col": "3"
