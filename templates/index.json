@@ -479,11 +479,6 @@
         "pd_mb": ""
       }
     },
-    "16528897230a5c23d9": {
-      "type": "apps",
-      "settings": {
-      }
-    },
     "16528932861d0f8a07": {
       "type": "instagram_feed2",
       "blocks": {
@@ -504,7 +499,7 @@
       ],
       "settings": {
         "acc2": "",
-        "limit": 12,
+        "limit": 9,
         "open_link": "_blank",
         "layout_des": "1",
         "space": "6",
@@ -532,11 +527,6 @@
         "mg_mb": "",
         "pd_mb": ""
       }
-    },
-    "1679664388cf7d88de": {
-      "type": "apps",
-      "settings": {
-      }
     }
   },
   "order": [
@@ -545,8 +535,6 @@
     "32e99ee3-89e3-4d48-acf1-df71e30f9bd7",
     "best-seller-slider",
     "164865439396016512",
-    "16528897230a5c23d9",
-    "16528932861d0f8a07",
-    "1679664388cf7d88de"
+    "16528932861d0f8a07"
   ]
 }
