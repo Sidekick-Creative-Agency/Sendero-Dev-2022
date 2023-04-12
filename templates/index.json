@@ -525,7 +525,7 @@
         "layout": "nt_full",
         "cl_bg": "#ffffff",
         "mg": "32px,,32px,",
-        "pd": "",
+        "pd": ",64px,,64px",
         "mg_mb": "",
         "pd_mb": ",16px,,16px"
       }
