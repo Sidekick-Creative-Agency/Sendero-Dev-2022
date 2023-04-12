@@ -486,6 +486,8 @@
           "type": "1",
           "settings": {
             "title": "LATEST FROM IG",
+            "font_size": 32,
+            "font_size_mb": 24,
             "sub_title": "",
             "sub_font": "2",
             "style_title": "title_1",
@@ -510,7 +512,7 @@
         "loop": true,
         "au_time": 0,
         "au_hover": true,
-        "button": true,
+        "button": false,
         "btn_vi": "1",
         "btn_owl": "1",
         "btn_color": "0",
@@ -522,10 +524,10 @@
         "image_position": "8",
         "layout": "nt_full",
         "cl_bg": "#ffffff",
-        "mg": "50px,,50px,",
+        "mg": "32px,,32px,",
         "pd": "",
         "mg_mb": "",
-        "pd_mb": ""
+        "pd_mb": ",16px,,16px"
       }
     }
   },
