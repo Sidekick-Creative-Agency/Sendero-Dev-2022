@@ -39,7 +39,7 @@
           <div class="hero-video-txt pa pa_txts mb_h_pos{{se_stts.cap_h_mb_pos}} mb_v_pos{{se_stts.cap_v_mb_pos}} h_pos{{se_stts.cap_h_pos}} v_pos{{se_stts.cap_v_pos}}">
             {%- for block in section.blocks -%}{% assign bk_stts = block.settings -%}
               {%- case block.type -%}
-                 {%- when '1' -%}<h2 id="b_{{block.id}}" class="mt__0 mg__0 lh__1">{{bk_stts.title}}</h2>
+                 {%- when '1' -%}<h3 id="b_{{block.id}}" class="mt__0 mg__0 lh__1">{{bk_stts.title}}</h3>
                  {%- when '2' -%}<h4 id="b_{{block.id}}" class="mt__0 mg__0 lh__1 {{bk_stts.font}}{% if bk_stts.hide %} dn db_md{% endif %}">{{bk_stts.title}}</h4>
                  {%- when '4' -%}<div id="b_{{block.id}}" class="space_banner dib"></div>
                  {%- when '5' -%}{{bk_stts.html}}
