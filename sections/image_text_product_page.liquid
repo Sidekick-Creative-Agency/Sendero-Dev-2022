@@ -13,6 +13,9 @@
  
 elsif product.type contains "Shirts"
  assign image = se_stts.imageShirts
+
+ elsif product.type contains "Crop Tee"
+ assign image = se_stts.imageShirts
   
 elsif product.tags contains "Accessories"
  assign image = se_stts.imageAccessories
@@ -28,21 +31,12 @@ endif
   assign cl_txt = 'cw,cw,button-o-w' 
  endif 
  assign cl_arr = cl_txt | split:","
- for i in (0..product.images.size)
-  if product.images[i].alt == "main"
-    assign image1 = product.images[i]
-    break
-  else
-    assign image1 = product.images[0]
-  endif 
-  if product.images[i].alt == "hover"
-    assign image2 = product.images[i]
-    break
-  else 
-    assign image2 = product.images.last
-  endif
-endfor
+  assign image1 = product.images[0]
+  assign image2 = product.images.last
+
  -%}
+
+ <p>{{product.type}}</p>
  {%- capture layout1 -%}
 <div class="img-text-indiv-product-container nt_se_{{sid}} {{se_stts.layout}} txt_shadow_{{se_stts.use_shadow}}" style="margin: 0 auto !important;">
   <div class="row no-gutters equal_nt {{img_ratio}} al_center">
