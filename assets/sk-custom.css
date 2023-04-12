@@ -66,7 +66,7 @@ header {
 }
 .ntheader ul.nt_menu {
     flex-wrap: nowrap;
-    gap: 16px;
+    gap: 0;
 }
 .header__mid .container {
     padding-right: 15px;
@@ -107,6 +107,8 @@ header {
 
 .nt_menu >li>a {
     text-transform: uppercase;
+    padding-left: 32px;
+    padding-right: 32px;
 }
 
 /*---------------- Menu Nav Color & Hover -------------------*/
