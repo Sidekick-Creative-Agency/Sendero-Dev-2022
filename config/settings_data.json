@@ -486,7 +486,7 @@
               "blog": "",
               "page_link": "",
               "col_link": "womens",
-              "title": "Womens",
+              "title": "Women's",
               "button_text": "Shop All",
               "col": "4"
             }
@@ -494,7 +494,7 @@
           "1585641227863": {
             "type": "mega",
             "settings": {
-              "title": "Mens",
+              "title": "Men's",
               "url": "shopify:\/\/collections\/mens",
               "open_link": "_self",
               "icon": "",
