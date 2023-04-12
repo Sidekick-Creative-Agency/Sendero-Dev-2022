@@ -52,10 +52,10 @@
         "code": "<h2 style=\"text-align: left; margin-bottom: 32px\">Dealer Locator<\/h2>\n<div id=\"storepoint-container\" data-map-id=\"16421b05043768\"><\/div><script>(function(){var a=document.createElement(\"script\");a.type=\"text\/javascript\";a.async=!0;a.src=\"https:\/\/cdn.storepoint.co\/api\/v1\/js\/16421b05043768.js\";var b=document.getElementsByTagName(\"script\")[0];b.parentNode.insertBefore(a,b);}());<\/script>",
         "css": "",
         "layout": "container",
-        "mg": "50px,,50px,",
-        "pd": "",
+        "mg": "32px,,32px,",
+        "pd": ",64px,,64px",
         "mg_mb": "",
-        "pd_mb": ""
+        "pd_mb": ",32px,,32px"
       }
     },
     "31b0bca7-f575-45c9-bc5b-b65a8f26f96c": {
@@ -84,9 +84,9 @@
         "ul_marker": true,
         "layout": "container",
         "mg": "32px,,32px,",
-        "pd": "",
+        "pd": ",64px,,64px",
         "mg_mb": "",
-        "pd_mb": ""
+        "pd_mb": ",32px,,32px"
       }
     }
   },
