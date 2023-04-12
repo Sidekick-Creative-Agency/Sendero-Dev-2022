@@ -37,12 +37,12 @@
 
 <div class="nt_se_{{section.id}} {{section.settings.layout}} rich-text-columns-outer-container">
     {%- if mainTitle != "" -%}
-      <h2 class="flex w__100" style="justify-content: {{section.settings.header_align}}; padding: {{header_padding}}">{{mainTitle}}</h2>
+      <h2 class="flex w__100  mb__40" style="justify-content: {{section.settings.header_align}}; padding: {{header_padding}}">{{mainTitle}}</h2>
     {%- endif -%}
 
     <div class="rich-text-columns-inner-container">
     {%- if title1 != ""-%}
-    <div class="rich-text-columns-text-outer-section" style="width: {{col_num}}">
+    <div class="rich-text-columns-text-outer-section" >
       {%- if show_ckmk -%}
       <div class="rich-text-columns-text-inner-section">
       <svg xmlns="http://www.w3.org/2000/svg" class="checkmark circle">
@@ -58,7 +58,7 @@
     {%- endif -%}
 
     {%- if title2 != ""-%}
-    <div class="rich-text-columns-text-outer-section" style="width: {{col_num}}">
+    <div class="rich-text-columns-text-outer-section">
       {%- if show_ckmk -%}
       <div class="rich-text-columns-text-inner-section">
         <svg xmlns="http://www.w3.org/2000/svg" class="checkmark circle">
@@ -73,7 +73,7 @@
     </div>
     {%- endif -%}
     {%- if title3 != ""-%}
-    <div class="rich-text-columns-text-outer-section" style="width: {{col_num}}">
+    <div class="rich-text-columns-text-outer-section">
       {%- if show_ckmk -%}
       <div class="rich-text-columns-text-inner-section">
         <svg xmlns="http://www.w3.org/2000/svg" class="checkmark circle">
@@ -88,7 +88,7 @@
     </div>
     {%- endif -%}
     {%- if title4 != ""-%}
-    <div class="rich-text-columns-text-outer-section" style="width: {{col_num}}">
+    <div class="rich-text-columns-text-outer-section" >
       {%- if show_ckmk -%}
       <div class="rich-text-columns-text-inner-section">
         <svg xmlns="http://www.w3.org/2000/svg" class="checkmark circle">
@@ -103,7 +103,7 @@
     </div>
     {%- endif -%}
     {%- if title5 != ""-%}
-    <div class="rich-text-columns-text-outer-section" style="width: {{col_num}}">
+    <div class="rich-text-columns-text-outer-section">
       {%- if show_ckmk -%}
       <div class="rich-text-columns-text-inner-section">
         <svg xmlns="http://www.w3.org/2000/svg" class="checkmark circle">
@@ -118,7 +118,7 @@
     </div>
     {%- endif -%}
     {%- if title6 != ""-%}
-    <div class="rich-text-columns-text-outer-section" style="width: {{col_num}}">
+    <div class="rich-text-columns-text-outer-section">
       {%- if show_ckmk -%}
       <div class="rich-text-columns-text-inner-section">
         <svg xmlns="http://www.w3.org/2000/svg" class="checkmark circle">

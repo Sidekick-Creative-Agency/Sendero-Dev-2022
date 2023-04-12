@@ -38,6 +38,8 @@
       "type": "rich_text",
       "settings": {
         "title": "Our History: To the West",
+        "heading_size": 32,
+        "heading_size_mb": 24,
         "heading_spacing": 16,
         "sub_title": "",
         "show_btn": false,
@@ -69,6 +71,8 @@
       "type": "rich_text",
       "settings": {
         "title": "HOMEGROWN RIGHT HERE IN TEJAS",
+        "heading_size": 32,
+        "heading_size_mb": 24,
         "heading_spacing": 16,
         "sub_title": "",
         "show_btn": false,
@@ -101,6 +105,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/SenderoRioGrande2017_0601_180845-8416_SAG.jpg",
         "sig_title": "HUNTER HARLOW",
+        "fnt_sig": "Courgette",
         "sig_sub_title": "FOUNDER & CEO",
         "sub_font": "2",
         "img_align": "center",
@@ -109,9 +114,10 @@
         "text_size2": "40,16",
         "title": "FROM EL HEFE",
         "text": "<p>When we started Sendero, it was all about sitting in rivers, cooking tacos over the campfire, getting “Western,” and toe tapping to a good string band. Today, that’s still exactly what it’s about. I hope with every Sendero product we make, we can bring a little piece of that to you guys. Sendero is a lifestyle, and we’ve got a lot of amigos in the family now. <\/p>",
-        "button_label": "Shop Now",
-        "button_link": "",
-        "open_link": "_blank",
+        "heading_mg": 16,
+        "heading_size": 32,
+        "heading_size_mb": 24,
+        "body_line_height": 24,
         "txt_align": "tl",
         "use_shadow": false,
         "cl_txt": "dark",
@@ -152,9 +158,9 @@
         "content": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. <\/p>",
         "align": "tl",
         "layout": "container",
-        "mg": ",,,",
+        "mg": "64px,,64px,",
         "pd": ",64px,,64px",
-        "mg_mb": "",
+        "mg_mb": "32px,,32px,",
         "pd_mb": ",32px,,32px"
       }
     },
@@ -417,7 +423,7 @@
       ],
       "settings": {
         "title": "Team",
-        "heading_size": 40,
+        "heading_size": 32,
         "heading_align": "center",
         "show_clpr": false,
         "round": 0,
