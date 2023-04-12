@@ -469,6 +469,7 @@
         "txt_align": "tl",
         "play_icon_pos": 50,
         "play_icon_mb_pos": 15,
+        "text_pd_mb": 32,
         "cl_overlay": "#181818",
         "cl_opacity": 60,
         "layout": "nt_full",
@@ -502,7 +503,7 @@
         "16528932863acfb535-0"
       ],
       "settings": {
-        "acc2": "IGQVJXNGN6WGFIZAGpWZAUpsQTVXN1d2eGlZAcGFteHRQb2p3TzE1a1piX3g3NG84bzNyUHY4Y2JxZA0xzWGZAoNkVYNkNpaXBzSVpYcm1XbjAtVGZAMbHllQW5HRk5hMWZANaW05WG1ZAS0dCRnlWN3o4aUF4TwZDZD",
+        "acc2": "",
         "limit": 12,
         "open_link": "_blank",
         "layout_des": "1",
