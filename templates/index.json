@@ -479,55 +479,22 @@
         "pd_mb": ""
       }
     },
-    "16528932861d0f8a07": {
-      "type": "instagram_feed2",
+    "1681335197113cd2bb": {
+      "type": "apps",
       "blocks": {
-        "16528932863acfb535-0": {
-          "type": "1",
+        "a56b48e2-5947-44be-8a42-77574a7a5fd1": {
+          "type": "shopify:\/\/apps\/instafeed-instagram-feed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
           "settings": {
-            "title": "LATEST FROM IG",
-            "font_size": 32,
-            "font_size_mb": 24,
-            "sub_title": "",
-            "sub_font": "2",
-            "style_title": "title_1",
-            "ic_tt": "",
-            "show_clpr": false
+            "heading_size": 30,
+            "feed_width": 100,
+            "html_area": "<style>\n#insta-feed {\npadding: 0 64px;\nmargin: 64px 0;\n}\n#insta-feed h2 {\nfont-size: 32px;\n}\n@media (max-width: 767px) {\n#insta-feed {\npadding: 0 16px;\nmargin: 32px 0;\n}\n#insta-feed h2 {\nfont-size: 24px;\n}\n}\n<\/style>"
           }
         }
       },
       "block_order": [
-        "16528932863acfb535-0"
+        "a56b48e2-5947-44be-8a42-77574a7a5fd1"
       ],
       "settings": {
-        "acc2": "IGQVJWWmlOc3BLbFlCd3NUbFhfNTZAILWs0LXUtMUZAocGgyaWN6UFllZA3F1RFFaR1BYQUtpc1hQYmV0U2IwSWlwTFNMcEY3OUlZARDVRQUxnT1NUTXc3OWxPcUNhY1o4YmxmWGhqbl9oSFJ6dGhVMFpNdAZDZD",
-        "limit": 9,
-        "open_link": "_blank",
-        "layout_des": "1",
-        "space": "6",
-        "rounded_ins": "0",
-        "col_pr": "4",
-        "col_pr_tb": "4",
-        "col_pr_mb": "4",
-        "loop": true,
-        "au_time": 0,
-        "au_hover": true,
-        "button": false,
-        "btn_vi": "1",
-        "btn_owl": "1",
-        "btn_color": "0",
-        "dot": false,
-        "dot_owl": "1",
-        "dot_color": "1",
-        "image_ratio": "ratio1_1",
-        "image_size": "nt_cover",
-        "image_position": "8",
-        "layout": "nt_full",
-        "cl_bg": "#ffffff",
-        "mg": "32px,,32px,",
-        "pd": ",64px,,64px",
-        "mg_mb": "",
-        "pd_mb": ",16px,,16px"
       }
     }
   },
@@ -537,6 +504,6 @@
     "32e99ee3-89e3-4d48-acf1-df71e30f9bd7",
     "best-seller-slider",
     "164865439396016512",
-    "16528932861d0f8a07"
+    "1681335197113cd2bb"
   ]
 }
