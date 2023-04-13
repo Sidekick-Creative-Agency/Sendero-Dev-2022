@@ -34,7 +34,7 @@
     margin-bottom: 8px;
 }
 #shopify-section-cookies_law {
-    z-index: 9999999999;
+    z-index: 9999999999 !important;
 }
 /*--------------------------------------------------------/
 / PAGE HEADING
