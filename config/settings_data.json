@@ -467,11 +467,11 @@
               "image": "shopify:\/\/shop_images\/2022-8-30_-_FW22_-_Banner_Images-4946_2048x2048_b54ac4e0-a7f6-4fc0-affe-815f0aa23b85.webp",
               "cat_design": "1",
               "hoverz": true,
-              "collection": "spring-2023",
+              "collection": "mens",
               "blog": "",
               "page_link": "",
-              "col_link": "mens#content",
-              "title": "Men's",
+              "col_link": "spring-2023",
+              "title": "",
               "button_text": "Shop All",
               "col": "4"
             }
@@ -482,11 +482,11 @@
               "image": "shopify:\/\/shop_images\/ss23WomensCropTeeBanner_2048x2048_9a62a007-f446-4766-b003-9d4a15b69b2e.webp",
               "cat_design": "1",
               "hoverz": true,
-              "collection": "spring-2023",
+              "collection": "womens",
               "blog": "",
               "page_link": "",
-              "col_link": "womens#content",
-              "title": "Women's",
+              "col_link": "Spring-2023",
+              "title": "",
               "button_text": "Shop All",
               "col": "4"
             }
@@ -618,7 +618,7 @@
           "3378432e-ed42-4f8c-ab8d-0a6d7d38d8ce": {
             "type": "cat",
             "settings": {
-              "image": "shopify:\/\/shop_images\/women_-_best_sellers.jpg",
+              "image": "shopify:\/\/shop_images\/CropTees_SpringCollectionGrid_66499fca-1ecc-4d93-b8a2-1f9b6603f27a.jpg",
               "cat_design": "1",
               "hoverz": true,
               "collection": "womens",

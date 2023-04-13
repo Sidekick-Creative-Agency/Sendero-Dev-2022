@@ -213,11 +213,24 @@
             "show_shop_all": true,
             "url": ""
           }
+        },
+        "062a6a0d-e7b9-42b5-9b79-3de4638fe7f9": {
+          "type": "collection",
+          "settings": {
+            "collection": "best-seller-items",
+            "image": "shopify:\/\/shop_images\/BestSellers_WomensOtherCollections.jpg",
+            "img_align": "center",
+            "title": "",
+            "col_link": "womens",
+            "show_shop_all": true,
+            "url": ""
+          }
         }
       },
       "block_order": [
         "6236469b-85c9-4415-9ee4-368d4cfef55b",
-        "7d2d449a-83f0-459e-a956-21e212b81841"
+        "7d2d449a-83f0-459e-a956-21e212b81841",
+        "062a6a0d-e7b9-42b5-9b79-3de4638fe7f9"
       ],
       "settings": {
         "title": "Shop Other Collections",
