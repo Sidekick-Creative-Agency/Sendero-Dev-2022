@@ -14,10 +14,10 @@
     assign image = se_stts.imageWomensTees
   elsif product.tags contains "Women's" and product.tags contains "Crop Tee"
     assign image = se_stts.imageWomensTees
-  elsif product.tags contains "Women's"
-    assign image = se_stts.imageWomens
   elsif product.type contains "Hats"
     assign image = se_stts.imageHats
+  elsif product.tags contains "Women's"
+    assign image = se_stts.imageWomens
   elsif product.type contains "Shirts"
     assign image = se_stts.imageShirts
   elsif product.type contains "Shorts"
