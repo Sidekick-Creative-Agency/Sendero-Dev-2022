@@ -233,7 +233,7 @@
         "image_size": "nt_cover",
         "image_position": "8",
         "cp_code": false,
-        "layout": "wrap",
+        "layout": "nt_full",
         "cl_bg": "",
         "mg": "32px,,32px,",
         "pd": ",,,64px",
