@@ -122,10 +122,10 @@
       "settings": {
         "imageHats": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-2082.jpg",
         "imageShirts": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-1837.jpg",
-        "imageShorts": "shopify:\/\/shop_images\/Men_-_Shorts.jpg",
+        "imageShorts": "shopify:\/\/shop_images\/SPCT123S11A_PointBar_Boardshort_Nueces_Detail2.jpg",
         "imageWomens": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-3171.jpg",
         "imagePerformance": "shopify:\/\/shop_images\/SPCS623S12B_Yucatan_Hoodie_Blue_Ls1.jpg",
-        "imageWomensTees": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-2703_53a9907b-527f-4aed-9d33-20fb51e566ee.jpg",
+        "imageWomensTees": "shopify:\/\/shop_images\/Womens_ItsInOurRoots.jpg",
         "imageUnisex": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-5906.jpg",
         "imageAccessories": "shopify:\/\/shop_images\/sendero-patch_1.webp",
         "imageOuterwear": "shopify:\/\/shop_images\/Copy_of_2021-10-11_-_Fall_Browns_with_El_Cap-8978.jpg",
@@ -162,8 +162,12 @@
     "164875753916b49a9b": {
       "type": "image_text_product_page",
       "settings": {
-        "imageHats": "shopify:\/\/shop_images\/2022-8-30---FW22----Banner-Images-5130_2e2fbff7-ba9a-4d1b-b201-28b915aa1865.jpg",
-        "imageShirts": "shopify:\/\/shop_images\/2021-7-23_-_FW_2021_-_Low_Res-3069.jpg",
+        "imageHats": "shopify:\/\/shop_images\/2021-7-23_-_FW_2021_-_Low_Res-1284.jpg",
+        "imageShirts": "shopify:\/\/shop_images\/MensShirts_AboutSenderoGear.jpg",
+        "imageShorts": "shopify:\/\/shop_images\/Shorts_AboutSenderoGear.jpg",
+        "imagePerformance": "shopify:\/\/shop_images\/Performance_AboutSenderoGear.jpg",
+        "imageWomensTees": "shopify:\/\/shop_images\/Womens_AboutSenderoGear.jpg",
+        "imageUnisex": "shopify:\/\/shop_images\/UnisexProducts_AboutSenderoGear.jpg",
         "imageAccessories": "shopify:\/\/shop_images\/2022-4-15_-_SS__22_Shirt_Layouts-2156.jpg",
         "imageOuterwear": "shopify:\/\/shop_images\/Copy_of_2019-9-19_-_Zion_Narrows-6245.jpg",
         "imageDefault": "shopify:\/\/shop_images\/2022-11-6_-_Sweatshirts_at_Pinewood-4304.jpg",
