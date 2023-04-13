@@ -36,6 +36,8 @@
 #shopify-section-cookies_law {
     z-index: 9999999999 !important;
 }
+
+
 /*--------------------------------------------------------/
 / PAGE HEADING
 /--------------------------------------------------------*/
@@ -2752,6 +2754,44 @@ a.prev.page-numbers {
     
 }
 
+/*-----------------------------------------------------------------------------/
+/ WHOLESALE PAGE
+/-----------------------------------------------------------------------------*/
+.image-text-outer-container {
+    display: flex;
+    gap: 64px;
+    flex-wrap: nowrap;
+}
+.image-text-container ul {
+    padding-left: 24px;
+}
+.image-text-container li {
+    position: relative;
+    margin-bottom: 8px;
+}
+.image-text-container li:before {
+    position: absolute;
+    top: 0;
+    left: -24px;
+}
+@media screen and (max-width: 1024px) {
+    .image-text-outer-container {
+        flex-direction: column;
+        gap: 32px;
+    }
+    .image-text-outer-container .col-md-6 {
+        max-width: 100%;
+    }
+    .image-text-outer-container .nt_bg_lz {
+        padding-top: 50% !important;
+    }
+}
+@media screen and (max-width: 767px) {
+
+    .image-text-outer-container .nt_bg_lz {
+        padding-top: 66.66% !important;
+    }
+}
 /*-----------------------------------------------------------------------------/
 / PIONEROS PAGE
 /-----------------------------------------------------------------------------*/

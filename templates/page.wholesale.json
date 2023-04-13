@@ -74,10 +74,18 @@
         "image": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-6223.jpg",
         "img_align": "center",
         "img_position": "1",
-        "image_ratio": "auto",
+        "image_ratio": "ratio1_1",
         "text_size2": "30,14",
         "title": "WHY CARRY SENDERO?",
         "text": "<ul><li><strong>Diversity in Design -<\/strong> We spend countless hours developing each design and every piece of apparel. We truly aspire to bring our own aesthetic and vibe to everything we create so Sendero stands out from the pack. <\/li><li><strong>Traditional Assortment - <\/strong>While we like to be unique, we understand customers want to refresh their wardrobes. We offer two seasonal releases a year making sure our offering is purposefully designed for the season to maximize your sell through.<\/li><li><strong>Curated Distribution -<\/strong> We partner a wide diversity of store types, but we also take a lot of pride in our brand and we only approve applicants that align with our brand vision. This ensures that your store will be set up for success.  <\/li><li><strong>High Quality Service - <\/strong>Here at Sendero we know the value of customer service because, just like you, we also sell to customers. We’re committed to building relationships and treating each Sendero partner… well, like a partner! We’re in it together and we’re dedicated to giving you the necessary resources you need to succeed.<\/li><\/ul>",
+        "heading_size": 32,
+        "heading_size_mb": 24,
+        "heading_spacing": 16,
+        "sub_title": "",
+        "text_height": 24,
+        "list_mg_left": 0,
+        "list_mg_top": 0,
+        "ul_marker": true,
         "button_label": "Shop Now",
         "button_link": "",
         "open_link": "_blank",
@@ -85,10 +93,10 @@
         "use_shadow": false,
         "cl_txt": "dark",
         "layout": "container",
-        "mg": "50px,,50px,",
-        "pd": "",
+        "mg": "32px,,32px,",
+        "pd": ",64px,,64px",
         "mg_mb": "",
-        "pd_mb": ""
+        "pd_mb": ",32px,,32px"
       }
     },
     "ce73857c-ec87-4130-99d4-7cc67fcbe8d3": {

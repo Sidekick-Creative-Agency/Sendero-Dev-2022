@@ -18,10 +18,10 @@
 
 {%- capture image_layout -%}
 <div class="col-12 col-md-6">
-  <div class="nt_img_txt oh pr middle center" style="max-width: 987px;">
+  <div class="nt_img_txt oh pr middle center">
     {%- comment -%}<a href="{{ url | default:'#' }}" class="db">{%- endcomment -%}
       {%- if image != blank -%}
-        <div class="nt_bg_lz lazyloadt4s item__position {{se_stts.img_align}}" data-bgset="{{ image | img_url: '1x1' }}" data-sizes="auto" data-ratio="{{image.aspect_ratio}}" data-parent-fit="cover" style="padding-top:{{ 1 | divided_by: image.aspect_ratio | times: 100}}%;"></div>
+        <div class="nt_bg_lz lazyloadt4s item__position {{se_stts.img_align}}" data-bgset="{{ image | img_url: '1x1' }}" data-sizes="auto" data-ratio="{{image.aspect_ratio}}" data-parent-fit="cover"></div>
       {%- else -%}
         <div class="nt_bg_lz lazyloadt4s item__position {{se_stts.img_align}}" data-bg="{{ 'placeholder.jpg' | asset_url }}" style="padding-top: 111.1111111111111%;"></div>
       {%- endif -%}
@@ -30,10 +30,10 @@
 </div>
 {%- endcapture -%}
 <div class="nt_se_{{sid}} {{se_stts.layout}} txt_shadow_{{se_stts.use_shadow}}" style="margin: 0 auto !important;">
-  <div class="row no-gutters equal_nt {{img_ratio}} al_center">
+  <div class="row no-gutters equal_nt {{img_ratio}} al_center image-text-outer-container">
     {%- if se_stts.img_position == '1' -%}{{- image_layout -}}{%- endif -%}
-    <div class="col-12 col-md-6 txt_col_img">
-      <div class="flex column pl__50 pr__50 shadow_wrap {{se_stts.txt_align}} {{cl_arr[1]}} remove_padding_on_mobile" style="max-width: 635px;">
+    <div class="txt_col_img">
+      <div class="image-text-container flex column shadow_wrap {{se_stts.txt_align}} {{cl_arr[1]}} remove_padding_on_mobile">
           <h2 class="mb__20 mt__0 fs__{{fs_arr[0]}} {{cl_arr[0]}} lh__1 image-text-heading">{{se_stts.title}}</h2>
           {{se_stts.text}}
           {%- if url != blank and se_stts.button_label -%}<p class="mg__0"><a class="button {{cl_arr[2]}}" href="{{url}}" target="{{se_stts.open_link}}">{{se_stts.button_label}}</a></p>{%- endif -%}
