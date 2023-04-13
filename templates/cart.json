@@ -20,6 +20,7 @@
         "parallax": true,
         "color": "#000000",
         "overlay": 35,
+        "min_height": "60vh",
         "padding": 10,
         "paddingmb": 0,
         "bg_pos": "center center",
@@ -163,9 +164,9 @@
         "cp_code": false,
         "layout": "wrap",
         "cl_bg": "",
-        "mg": "32px,,,",
+        "mg": "32px,,32px,",
         "pd": ",,,64px",
-        "mg_mb": "",
+        "mg_mb": ",,,,",
         "pd_mb": ",32px,,32px"
       }
     }
