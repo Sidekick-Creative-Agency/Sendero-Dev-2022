@@ -84,12 +84,12 @@
         "template--16713560588507__7776a30b-1adc-4b83-81ab-4623b33c198c-1680120527ff6e1fe9-0": {
           "type": "collection",
           "settings": {
-            "collection": "hats",
+            "collection": "spring-2023",
             "image": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-2230.jpg",
             "img_align": "center",
             "title": "",
             "url": "",
-            "filter": "spring-2023"
+            "filter": "hat"
           }
         },
         "e24e00f9-3426-4324-83cc-cb764e065e34": {
