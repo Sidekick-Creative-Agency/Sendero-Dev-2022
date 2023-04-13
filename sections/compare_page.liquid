@@ -114,7 +114,7 @@
     <style>.tp_se_compare .la-sync:before {content: "\f021";color: rgba(142,142,142,.2);font-size: 180px;}.products .product-image .nt_add_cp {display: none;}.variations_button .nt_add_cp {display: none;}</style>
 {%- endif -%}
 </div>
-{%- endpaginate -%}
+{% assign sp_paginate_by = paginate.page_size %}{%- endpaginate -%}
 
 {%- schema -%}
   {
@@ -263,4 +263,4 @@
       ]
     }
   }
-{% endschema %}
+{% endschema %}{% if sp_paginate_by %}{% render 'spurit_po2_collection_template_snippet', paginate_by: sp_paginate_by %}{% endif %}
