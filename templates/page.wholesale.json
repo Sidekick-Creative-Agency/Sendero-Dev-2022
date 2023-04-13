@@ -68,81 +68,27 @@
         "pd_mb": ",32px,,32px"
       }
     },
-    "d92b0eb0-de21-421d-93a1-0f4d29b845e2": {
-      "type": "image_text_overlay",
-      "blocks": {
-        "template--16721591566555__d92b0eb0-de21-421d-93a1-0f4d29b845e2-1681220544fd4fed1c-0": {
-          "type": "1",
-          "settings": {
-            "title": "WHY CARRY SENDERO?",
-            "color": "#ffffff",
-            "fw_text": 600,
-            "fs_text": 28,
-            "lh_text": 0,
-            "ls_text": 0,
-            "fs_mb_text": 24,
-            "lh_mb_text": 2,
-            "ls_mb_text": 0,
-            "mg_bot_text": 24
-          }
-        },
-        "template--16721591566555__d92b0eb0-de21-421d-93a1-0f4d29b845e2-1681220544fd4fed1c-1": {
-          "type": "6",
-          "settings": {
-            "sp": 10,
-            "sp_mb": 10
-          }
-        },
-        "template--16721591566555__d92b0eb0-de21-421d-93a1-0f4d29b845e2-1681220544fd4fed1c-2": {
-          "type": "2",
-          "settings": {
-            "font": "f_body",
-            "title": "<ul><li><strong>Diversity in Design -<\/strong> We spend countless hours developing each design and every piece of apparel. We truly aspire to bring our own aesthetic and vibe to everything we create so Sendero stands out from the pack. <\/li><li><strong>Traditional Assortment - <\/strong>While we like to be unique, we understand customers want to refresh their wardrobes. We offer two seasonal releases a year making sure our offering is purposefully designed for the season to maximize your sell through.<\/li><li><strong>Curated Distribution -<\/strong> We partner a wide diversity of store types, but we also take a lot of pride in our brand and we only approve applicants that align with our brand vision. This ensures that your store will be set up for success.  <\/li><li><strong>High Quality Service - <\/strong>Here at Sendero we know the value of customer service because, just like you, we also sell to customers. We’re committed to building relationships and treating each Sendero partner… well, like a partner! We’re in it together and we’re dedicated to giving you the necessary resources you need to succeed.<\/li><\/ul>",
-            "list_mg_left": 0,
-            "list_mg_top": 0,
-            "ul_marker": true,
-            "color": "#ffffff",
-            "fw_text": 400,
-            "fs_text": 18,
-            "lh_text": 28,
-            "ls_text": 0,
-            "fs_mb_text": 18,
-            "lh_mb_text": 24,
-            "ls_mb_text": 0,
-            "hide": false
-          }
-        }
-      },
-      "block_order": [
-        "template--16721591566555__d92b0eb0-de21-421d-93a1-0f4d29b845e2-1681220544fd4fed1c-0",
-        "template--16721591566555__d92b0eb0-de21-421d-93a1-0f4d29b845e2-1681220544fd4fed1c-1",
-        "template--16721591566555__d92b0eb0-de21-421d-93a1-0f4d29b845e2-1681220544fd4fed1c-2"
-      ],
+    "dea659f7-3e8b-4fdc-91a0-3ad9abc7a1ad": {
+      "type": "image_text",
       "settings": {
-        "se_height": "cus_h",
-        "use_custom_h": "1",
-        "h_des": "480px",
-        "h_tb": "600px",
-        "h_mb": "1000px",
         "image": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-6223.jpg",
-        "use_pr": true,
         "img_align": "center",
-        "caption_w": "1",
-        "cap_v_pos": 50,
-        "cap_h_pos": 50,
-        "txt_align": "tl_md",
-        "cap_v_pos_mb": 50,
-        "cap_h_pos_mb": 50,
-        "txt_align_mb": "tl",
-        "cl_overlay": "#000000",
-        "cl_opacity": 50,
-        "layout": "nt_full",
-        "mg": "32px,,32px,",
+        "img_position": "1",
+        "image_ratio": "auto",
+        "text_size2": "30,14",
+        "title": "WHY CARRY SENDERO?",
+        "text": "<ul><li><strong>Diversity in Design -<\/strong> We spend countless hours developing each design and every piece of apparel. We truly aspire to bring our own aesthetic and vibe to everything we create so Sendero stands out from the pack. <\/li><li><strong>Traditional Assortment - <\/strong>While we like to be unique, we understand customers want to refresh their wardrobes. We offer two seasonal releases a year making sure our offering is purposefully designed for the season to maximize your sell through.<\/li><li><strong>Curated Distribution -<\/strong> We partner a wide diversity of store types, but we also take a lot of pride in our brand and we only approve applicants that align with our brand vision. This ensures that your store will be set up for success.  <\/li><li><strong>High Quality Service - <\/strong>Here at Sendero we know the value of customer service because, just like you, we also sell to customers. We’re committed to building relationships and treating each Sendero partner… well, like a partner! We’re in it together and we’re dedicated to giving you the necessary resources you need to succeed.<\/li><\/ul>",
+        "button_label": "Shop Now",
+        "button_link": "",
+        "open_link": "_blank",
+        "txt_align": "tl",
+        "use_shadow": false,
+        "cl_txt": "dark",
+        "layout": "container",
+        "mg": "50px,,50px,",
         "pd": "",
-        "pd_text": 64,
         "mg_mb": "",
-        "pd_mb": "",
-        "pd_text_mb": 32
+        "pd_mb": ""
       }
     },
     "ce73857c-ec87-4130-99d4-7cc67fcbe8d3": {
@@ -183,7 +129,7 @@
     "blog-heading",
     "main",
     "b7b02566-0d64-41c8-9c8c-ee0b2be0b94e",
-    "d92b0eb0-de21-421d-93a1-0f4d29b845e2",
+    "dea659f7-3e8b-4fdc-91a0-3ad9abc7a1ad",
     "ce73857c-ec87-4130-99d4-7cc67fcbe8d3"
   ]
 }
