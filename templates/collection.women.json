@@ -16,6 +16,7 @@
       "settings": {
         "shown": true,
         "page_title": "Women's",
+        "min_height": "400px",
         "image": "shopify:\/\/shop_images\/WomensMainCollectionBanner_2260x_7f5bca88-8661-4282-a286-a781a2862e00.webp",
         "parallax": true,
         "color": "#000000",
@@ -147,9 +148,6 @@
         "title": "",
         "sub_title": "",
         "sub_font": "2",
-        "style_title": "title_1",
-        "ic_tt": "gem",
-        "show_clpr": false,
         "hoverz": true,
         "cat_design": "1",
         "cat_space": "20",
@@ -193,65 +191,10 @@
     "164882807276a2e749": {
       "type": "shop-other-categories",
       "blocks": {
-        "16488280725e7f0d65-0": {
-          "type": "collection",
-          "settings": {
-            "collection": "desert-runner",
-            "img_align": "center",
-            "title": "",
-            "col_link": "#",
-            "show_shop_all": false,
-            "url": ""
-          }
-        },
-        "16488280725e7f0d65-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "geology",
-            "img_align": "center",
-            "title": "",
-            "col_link": "#",
-            "show_shop_all": true,
-            "url": ""
-          }
-        },
-        "16488280725e7f0d65-2": {
-          "type": "collection",
-          "settings": {
-            "collection": "hey-slick",
-            "img_align": "center",
-            "title": "",
-            "col_link": "#",
-            "show_shop_all": true,
-            "url": ""
-          }
-        },
-        "16488280725e7f0d65-3": {
-          "type": "collection",
-          "settings": {
-            "collection": "legends-tall-tales",
-            "img_align": "center",
-            "title": "",
-            "col_link": "#",
-            "show_shop_all": true,
-            "url": ""
-          }
-        },
         "6236469b-85c9-4415-9ee4-368d4cfef55b": {
           "type": "collection",
           "settings": {
             "collection": "national-parks",
-            "img_align": "center",
-            "title": "",
-            "col_link": "#",
-            "show_shop_all": true,
-            "url": ""
-          }
-        },
-        "9ef29566-685e-4ac4-8fc8-52e7b420197d": {
-          "type": "collection",
-          "settings": {
-            "collection": "lone-star-x-sendero",
             "img_align": "center",
             "title": "",
             "col_link": "#",
@@ -273,12 +216,7 @@
         }
       },
       "block_order": [
-        "16488280725e7f0d65-0",
-        "16488280725e7f0d65-1",
-        "16488280725e7f0d65-2",
-        "16488280725e7f0d65-3",
         "6236469b-85c9-4415-9ee4-368d4cfef55b",
-        "9ef29566-685e-4ac4-8fc8-52e7b420197d",
         "7d2d449a-83f0-459e-a956-21e212b81841"
       ],
       "settings": {
