@@ -117,12 +117,12 @@
         "c350d424-5a4e-4003-b0a8-ee7f6b07ab85": {
           "type": "collection",
           "settings": {
-            "collection": "womens",
+            "collection": "t-shirts",
             "image": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-3171.jpg",
             "img_align": "center",
-            "title": "T-Shirts",
+            "title": "",
             "url": "",
-            "filter": "t-shirt"
+            "filter": "womens"
           }
         },
         "template--16713560588507__7776a30b-1adc-4b83-81ab-4623b33c198c-1680120527ff6e1fe9-1": {
