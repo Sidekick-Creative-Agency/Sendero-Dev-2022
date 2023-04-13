@@ -281,7 +281,7 @@ https://shopify.dev/tutorials/use-advanced-query-parameters-in-shopify-online-st
          {%- endif -%}
 {%- endif -%}
 </div>
-{%- endpaginate -%}
+{% assign sp_paginate_by = paginate.page_size %}{%- endpaginate -%}
 <style>
 .clear_filter.clear_filter_all {color: #fff;padding: 0 15px 0 25px;border-radius: 15px;font-size: 15px;}
 .clear_filter.clear_filter_all:after, .clear_filter.clear_filter_all:before {left: 8px;}
@@ -707,4 +707,4 @@ https://shopify.dev/tutorials/use-advanced-query-parameters-in-shopify-online-st
       }
     ]
   }
-{% endschema %}
+{% endschema %}{% if sp_paginate_by %}{% render 'spurit_po2_collection_template_snippet', paginate_by: sp_paginate_by %}{% endif %}

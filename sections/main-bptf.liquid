@@ -203,7 +203,7 @@
 	    </div>
 
 	{%- endif -%}
-	{%- endpaginate -%}
+	{% assign sp_paginate_by = paginate.page_size %}{%- endpaginate -%}
 {%- endif -%}
 
 {%- schema -%}
@@ -579,4 +579,4 @@
        }
     ]
   }
-{% endschema %}
+{% endschema %}{% if sp_paginate_by %}{% render 'spurit_po2_collection_template_snippet', paginate_by: sp_paginate_by %}{% endif %}
