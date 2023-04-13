@@ -99,7 +99,7 @@ header {
     }
 }
 @media screen and (max-width: 1024px) {
-    .header__mid > container > row {
+    .header__mid > .container > .row {
         justify-content: space-around;
     }
 }
