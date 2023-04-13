@@ -199,121 +199,48 @@
         "image_position": "8"
       }
     },
-    "164882807276a2e749": {
-      "type": "shop-other-categories",
-      "blocks": {
-        "16488280725e7f0d65-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "hats",
-            "img_align": "center",
-            "title": "",
-            "col_link": "#",
-            "show_shop_all": true,
-            "url": ""
-          }
-        },
-        "16488280725e7f0d65-2": {
-          "type": "collection",
-          "settings": {
-            "collection": "performance",
-            "img_align": "center",
-            "title": "",
-            "col_link": "#",
-            "show_shop_all": true,
-            "url": ""
-          }
-        },
-        "16488280725e7f0d65-3": {
-          "type": "collection",
-          "settings": {
-            "collection": "shorts",
-            "img_align": "center",
-            "title": "",
-            "col_link": "#",
-            "show_shop_all": true,
-            "url": ""
-          }
-        },
-        "6236469b-85c9-4415-9ee4-368d4cfef55b": {
-          "type": "collection",
-          "settings": {
-            "collection": "national-parks",
-            "img_align": "center",
-            "title": "",
-            "col_link": "#",
-            "show_shop_all": true,
-            "url": ""
-          }
-        },
-        "9ef29566-685e-4ac4-8fc8-52e7b420197d": {
-          "type": "collection",
-          "settings": {
-            "collection": "mens-shirts",
-            "img_align": "center",
-            "title": "",
-            "col_link": "#",
-            "show_shop_all": true,
-            "url": ""
-          }
-        },
-        "7d2d449a-83f0-459e-a956-21e212b81841": {
-          "type": "collection",
-          "settings": {
-            "collection": "rivers-ranges",
-            "image": "shopify:\/\/shop_images\/homepage_hero_image_4.webp",
-            "img_align": "center",
-            "title": "",
-            "col_link": "#",
-            "show_shop_all": true,
-            "url": ""
-          }
-        }
-      },
-      "block_order": [
-        "16488280725e7f0d65-1",
-        "16488280725e7f0d65-2",
-        "16488280725e7f0d65-3",
-        "6236469b-85c9-4415-9ee4-368d4cfef55b",
-        "9ef29566-685e-4ac4-8fc8-52e7b420197d",
-        "7d2d449a-83f0-459e-a956-21e212b81841"
-      ],
+    "eee3d345-3741-4837-a02f-7f7ba710513b": {
+      "type": "featured_collection_owl",
       "settings": {
-        "title": "Shop Other Collections",
-        "sub_title": "Sub Text",
+        "title": "Best Sellers",
+        "sub_title": "",
         "sub_font": "2",
-        "style_title": "title_1",
-        "ic_tt": "gem",
-        "show_clpr": false,
-        "round": 0,
-        "cat_layout": "2",
-        "hoverz": true,
-        "cat_design": "1",
-        "cat_space": "10",
-        "image_ratio": "ratio1_1",
-        "col": "15",
-        "col_md": "3",
-        "col_mb": "6",
-        "pr_txt": "products",
+        "collection": "best-seller-items",
+        "limit": 8,
+        "space": 30,
+        "use_pagination": "view-all",
+        "btn_rd": true,
+        "btn_icon": true,
+        "btn_style": "default",
+        "col_pr": "15",
+        "col_pr_tb": "3",
+        "col_pr_mb": "6",
+        "pr_des": "1",
+        "show_vendor": false,
+        "use_cdt": false,
+        "round_cd": false,
+        "cdt_des": "1",
         "loop": true,
-        "autoplay": true,
-        "au_time": 6,
+        "au_time": 0,
         "au_hover": true,
         "button": true,
-        "btn_vi": "2",
+        "btn_vi": "1",
         "btn_owl": "2",
         "btn_color": "1",
-        "dot": false,
+        "dot": true,
         "dot_owl": "1",
         "dot_color": "1",
+        "use_eq_height": false,
+        "image_ratio": "ratio_nt",
+        "image_size": "nt_cover",
+        "image_position": "8",
         "cp_code": false,
         "layout": "nt_full",
         "cl_bg": "",
-        "hide_bgimg": false,
-        "mg": "50px,,50px,",
-        "pd": "",
+        "mg": "32px,,32px,",
+        "pd": ",,,64px",
         "mg_mb": "",
-        "pd_mb": ""
+        "pd_mb": ",32px,,32px"
       }
     }
   },
@@ -322,6 +249,6 @@
     "16479809910f68859a",
     "7776a30b-1adc-4b83-81ab-4623b33c198c",
     "main",
-    "164882807276a2e749"
+    "eee3d345-3741-4837-a02f-7f7ba710513b"
   ]
 }
