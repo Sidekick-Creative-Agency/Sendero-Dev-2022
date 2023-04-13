@@ -107,7 +107,7 @@
           "type": "collection",
           "settings": {
             "collection": "hats",
-            "image": "shopify:\/\/shop_images\/Collections_-_National_Parks.jpg",
+            "image": "shopify:\/\/shop_images\/Hats_WomensCollectionGrid.jpg",
             "img_align": "center",
             "title": "",
             "url": "",
@@ -118,7 +118,7 @@
           "type": "collection",
           "settings": {
             "collection": "t-shirts",
-            "image": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-3171.jpg",
+            "image": "shopify:\/\/shop_images\/Tshirts_WomensCategoryGrid.jpg",
             "img_align": "center",
             "title": "",
             "url": "",
@@ -188,48 +188,73 @@
         "image_position": "8"
       }
     },
-    "b01322a0-90b5-435d-b23c-a004be2e0964": {
-      "type": "featured_collection_owl",
+    "164882807276a2e749": {
+      "type": "shop-other-categories",
+      "blocks": {
+        "6236469b-85c9-4415-9ee4-368d4cfef55b": {
+          "type": "collection",
+          "settings": {
+            "collection": "national-parks",
+            "img_align": "center",
+            "title": "",
+            "col_link": "#",
+            "show_shop_all": true,
+            "url": ""
+          }
+        },
+        "7d2d449a-83f0-459e-a956-21e212b81841": {
+          "type": "collection",
+          "settings": {
+            "collection": "rivers-ranges",
+            "image": "shopify:\/\/shop_images\/homepage_hero_image_4.webp",
+            "img_align": "center",
+            "title": "",
+            "col_link": "#",
+            "show_shop_all": true,
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "6236469b-85c9-4415-9ee4-368d4cfef55b",
+        "7d2d449a-83f0-459e-a956-21e212b81841"
+      ],
       "settings": {
-        "title": "Best Seller",
-        "sub_title": "",
+        "title": "Shop Other Collections",
+        "sub_title": "Sub Text",
         "sub_font": "2",
-        "collection": "best-seller-items",
-        "limit": 8,
-        "space": 30,
-        "use_pagination": "view-all",
-        "btn_rd": true,
-        "btn_icon": true,
-        "btn_style": "default",
-        "col_pr": "15",
-        "col_pr_tb": "3",
-        "col_pr_mb": "6",
-        "pr_des": "1",
-        "show_vendor": false,
-        "use_cdt": false,
-        "round_cd": false,
-        "cdt_des": "1",
+        "style_title": "title_1",
+        "ic_tt": "gem",
+        "show_clpr": false,
+        "round": 0,
+        "cat_layout": "2",
+        "hoverz": true,
+        "cat_design": "1",
+        "cat_space": "10",
+        "image_ratio": "ratio1_1",
+        "col": "15",
+        "col_md": "3",
+        "col_mb": "6",
+        "pr_txt": "products",
         "loop": true,
-        "au_time": 0,
+        "autoplay": true,
+        "au_time": 6,
         "au_hover": true,
         "button": true,
-        "btn_vi": "1",
+        "btn_vi": "2",
         "btn_owl": "2",
         "btn_color": "1",
-        "dot": true,
+        "dot": false,
         "dot_owl": "1",
         "dot_color": "1",
-        "use_eq_height": false,
-        "image_ratio": "ratio_nt",
-        "image_size": "nt_cover",
-        "image_position": "8",
         "cp_code": false,
         "layout": "nt_full",
         "cl_bg": "",
-        "mg": "32px,,32px,",
-        "pd": ",,,64px",
+        "hide_bgimg": false,
+        "mg": "50px,,50px,",
+        "pd": "",
         "mg_mb": "",
-        "pd_mb": ",32px,,32px"
+        "pd_mb": ""
       }
     }
   },
@@ -238,6 +263,6 @@
     "16479809910f68859a",
     "7776a30b-1adc-4b83-81ab-4623b33c198c",
     "main",
-    "b01322a0-90b5-435d-b23c-a004be2e0964"
+    "164882807276a2e749"
   ]
 }
