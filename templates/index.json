@@ -10,7 +10,7 @@
             "pos_img": "center center",
             "cl_img": "",
             "link_img1": "",
-            "open_link": "_blank",
+            "open_link": "_self",
             "caption_w": "1",
             "cap_v_pos": 50,
             "cap_h_pos": 50,
