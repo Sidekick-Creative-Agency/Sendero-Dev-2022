@@ -100,52 +100,132 @@
         "pd_mb": ",32px,,32px"
       }
     },
-    "164856885666aace2e": {
-      "type": "image_text_sig",
+    "1c4b4a86-dc36-4ba7-bf69-bb2908d30d7f": {
+      "type": "banner2",
+      "blocks": {
+        "template--16722524012763__1c4b4a86-dc36-4ba7-bf69-bb2908d30d7f-1681395393ba312cde-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/SenderoRioGrande2017_0601_180845-8416_SAG.jpg",
+            "url": "",
+            "open_link": "_self",
+            "col_pr": "6",
+            "col_pr_tb": "6",
+            "col_pr_mb": "12",
+            "html": "",
+            "cap_v_pos": 50,
+            "cap_h_pos": 50,
+            "txt_align": "tc",
+            "cl_txt": "#ffffff",
+            "cl_overlay": "#000000",
+            "cl_opacity": 0
+          }
+        },
+        "template--16722524012763__1c4b4a86-dc36-4ba7-bf69-bb2908d30d7f-1681395393ba312cde-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/jefe_blurb-01_1_1.jpg",
+            "url": "",
+            "open_link": "_self",
+            "col_pr": "6",
+            "col_pr_tb": "6",
+            "col_pr_mb": "12",
+            "html": "",
+            "cap_v_pos": 50,
+            "cap_h_pos": 50,
+            "txt_align": "tc",
+            "cl_txt": "#ffffff",
+            "cl_overlay": "#000000",
+            "cl_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "template--16722524012763__1c4b4a86-dc36-4ba7-bf69-bb2908d30d7f-1681395393ba312cde-0",
+        "template--16722524012763__1c4b4a86-dc36-4ba7-bf69-bb2908d30d7f-1681395393ba312cde-1"
+      ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/SenderoRioGrande2017_0601_180845-8416_SAG.jpg",
-        "sig_title": "HUNTER HARLOW",
-        "fnt_sig": "Courgette",
-        "sig_sub_title": "FOUNDER & CEO",
+        "title": "",
+        "sub_title": "",
         "sub_font": "2",
-        "img_align": "center",
-        "img_position": "1",
-        "image_ratio": "auto",
-        "text_size2": "40,16",
-        "title": "FROM EL HEFE",
-        "text": "<p>When we started Sendero, it was all about sitting in rivers, cooking tacos over the campfire, getting “Western,” and toe tapping to a good string band. Today, that’s still exactly what it’s about. I hope with every Sendero product we make, we can bring a little piece of that to you guys. Sendero is a lifestyle, and we’ve got a lot of amigos in the family now. <\/p>",
-        "heading_mg": 16,
-        "heading_size": 32,
-        "heading_size_mb": 24,
-        "body_line_height": 24,
-        "txt_align": "tl",
-        "use_shadow": false,
-        "cl_txt": "dark",
+        "style_title": "title_1",
+        "ic_tt": "gem",
+        "show_clpr": false,
+        "cat_space": "0",
+        "hoverz": false,
         "layout": "nt_full",
-        "mg": ", ,50px,",
-        "pd": ", 50px,,",
-        "mg_mb": "",
-        "pd_mb": ",32px,,32px"
+        "cl_bg": "",
+        "mg": "64px,,32px,",
+        "pd": "",
+        "mg_mb": "32px,,32px,",
+        "pd_mb": ""
       }
     },
     "rich-text-columns": {
       "type": "rich-text-columns",
+      "blocks": {
+        "7b4e921a-ec70-4662-84da-3154f0894e9f": {
+          "type": "rich_text",
+          "settings": {
+            "title": "A NAME YOU CAN TRUST",
+            "body_text": "We’ve been doing this a while now. We made our first product hat back in 2014 and we’ve been making everything better ever since. We craft each product individually and care goes into every detail.",
+            "align": "tl"
+          }
+        },
+        "b1da3fe3-52a4-4a6d-99e9-778e7cc08a95": {
+          "type": "rich_text",
+          "settings": {
+            "title": "ONLY HIGH QUALITY MATERIALS",
+            "body_text": "We hand select every fabric, trim, thread, and color that goes into a Sendero product. We don’t use blanks- we’ve developed our own style and unique fits that folks have come to know and expect.",
+            "align": "tl"
+          }
+        },
+        "6b6deefa-64d7-41e5-a551-44c9d0283801": {
+          "type": "rich_text",
+          "settings": {
+            "title": "DESIGNS THAT INSPIRE",
+            "body_text": "We’re not trying to put “Sendero” in as many different ways as we can onto our gear. We do that sometimes, but what gets us excited is funky cool art with a Western twist and maybe a silly joke or two.",
+            "align": "tl"
+          }
+        },
+        "d1ec4e7e-7eea-4899-9db6-3df75ebe759a": {
+          "type": "rich_text",
+          "settings": {
+            "title": "OUR QUALITY GUARANTEE",
+            "body_text": "We make stuff we believe in, and if you have an issue with a Sendero product then our job is not done. We stand by the quality of our products and we’ll replace anything not up to par or defective.",
+            "align": "tl"
+          }
+        },
+        "1ede605d-ce04-4617-8c35-79c1b32f7db0": {
+          "type": "rich_text",
+          "settings": {
+            "title": "NO QUESTIONS",
+            "body_text": "We’ve been doing this a long time. There’s hundreds of thousands of happy Sendero customers out there, so trust that we’ll take care of your order and keep you updated with all the info you need.",
+            "align": "tl"
+          }
+        },
+        "c2e099d8-72e9-4708-ac8a-6fcd1aba3efc": {
+          "type": "rich_text",
+          "settings": {
+            "title": "NOT SURE YET?",
+            "body_text": "If at any point you’re not happy with your new purchase, as long as your products aren’t damaged and in original condition, we’ll take them back no problem. Our simple return page will walk you through the entire process.",
+            "align": "tl"
+          }
+        }
+      },
+      "block_order": [
+        "7b4e921a-ec70-4662-84da-3154f0894e9f",
+        "b1da3fe3-52a4-4a6d-99e9-778e7cc08a95",
+        "6b6deefa-64d7-41e5-a551-44c9d0283801",
+        "d1ec4e7e-7eea-4899-9db6-3df75ebe759a",
+        "1ede605d-ce04-4617-8c35-79c1b32f7db0",
+        "c2e099d8-72e9-4708-ac8a-6fcd1aba3efc"
+      ],
       "settings": {
         "main_title": "We take our hats seriously – it's in our roots",
         "header_align": "center",
-        "title1": "A NAME YOU CAN TRUST",
-        "title2": "ONLY HIGH QUALITY MATERIALS",
-        "title3": "DESIGNS THAT INSPIRE",
-        "title4": "OUR QUALITY GUARANTEE",
-        "title5": "NO QUESTIONS",
-        "title6": "NOT SURE YET?",
-        "sub_text1": "We’ve been doing this a while now. We made our first product hat back in 2014 and we’ve been making everything better ever since. We craft each product individually and care goes into every detail.",
-        "sub_text2": "We hand select every fabric, trim, thread, and color that goes into a Sendero product. We don’t use blanks- we’ve developed our own style and unique fits that folks have come to know and expect.",
-        "sub_text3": "We’re not trying to put “Sendero” in as many different ways as we can onto our gear. We do that sometimes, but what gets us excited is funky cool art with a Western twist and maybe a silly joke or two.",
-        "sub_text4": "We make stuff we believe in, and if you have an issue with a Sendero product then our job is not done. We stand by the quality of our products and we’ll replace anything not up to par or defective.",
-        "sub_text5": "We’ve been doing this a long time. There’s hundreds of thousands of happy Sendero customers out there, so trust that we’ll take care of your order and keep you updated with all the info you need.",
-        "sub_text6": "If at any point you’re not happy with your new purchase, as long as your products aren’t damaged and in original condition, we’ll take them back no problem. Our simple return page will walk you through the entire process.",
-        "col_num": "1",
+        "col_num": "2",
+        "grid_space": 24,
         "show_ckmk": true,
         "show_btn": false,
         "btn_text": "Click Me",
@@ -155,8 +235,6 @@
         "style_title": "title_1",
         "ic_tt": "gem",
         "show_clpr": false,
-        "content": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. <\/p>",
-        "align": "tl",
         "layout": "container",
         "mg": "64px,,64px,",
         "pd": ",64px,,64px",
@@ -209,9 +287,9 @@
       "settings": {
         "se_height": "cus_h",
         "use_custom_h": "1",
-        "h_des": "500px",
-        "h_tb": "500px",
-        "h_mb": "500px",
+        "h_des": "360px",
+        "h_tb": "400px",
+        "h_mb": "400px",
         "image": "shopify:\/\/shop_images\/gautier-salles-uffQnKuJ-hc-unsplash.jpg",
         "use_pr": true,
         "img_align": "bottom",
@@ -458,7 +536,7 @@
     "main",
     "16492574913de1faed",
     "c099fedd-6696-4f70-9f1f-5c7763827002",
-    "164856885666aace2e",
+    "1c4b4a86-dc36-4ba7-bf69-bb2908d30d7f",
     "rich-text-columns",
     "1649257609430b6426",
     "1649253785b4e78813"

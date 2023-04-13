@@ -147,12 +147,12 @@ assign gift_pr_id = gift_pr.id
               </div>
               <div class="mini-cart-icons mini_cart_tool tr">
                 <a
-                  href="/cart/change?quantity=0&id=40057430802609:437fd1ad29745d28c2abd13a66084e19"
+                  href="/cart/change?quantity=0&amp;id=40057430802609:437fd1ad29745d28c2abd13a66084e19"
                   rel="nofollow"
-                  data-no-instant=""
+                  data-no-instant
                   class="cart_ac_remove js_cart_rem ttip_nt tooltip_top_right"
-                  data-id="40057430802609:437fd1ad29745d28c2abd13a66084e19">
-                  <span class="tt_txt">Remove this item</span>
+                  data-id="{{item_key}}">
+                  <span class="tt_txt">{{ 'cart.general.remove_item' | t }}</span>
                   <svg viewBox="0 0 24 24">
                     <use xlink:href="#scl_remove"></use>
                   </svg>

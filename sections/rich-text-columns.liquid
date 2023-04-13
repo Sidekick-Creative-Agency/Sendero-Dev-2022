@@ -36,113 +36,47 @@
 -%}
 
 <div class="nt_se_{{section.id}} {{section.settings.layout}} rich-text-columns-outer-container">
-    {%- if mainTitle != "" -%}
-      <h2 class="flex w__100  mb__40" style="justify-content: {{section.settings.header_align}}; padding: {{header_padding}}">{{mainTitle}}</h2>
-    {%- endif -%}
-
-    <div class="rich-text-columns-inner-container">
-    {%- if title1 != ""-%}
-    <div class="rich-text-columns-text-outer-section" >
-      {%- if show_ckmk -%}
-      <div class="rich-text-columns-text-inner-section">
-      <svg xmlns="http://www.w3.org/2000/svg" class="checkmark circle">
+  {%- if mainTitle != "" -%}
+    <h2 class="flex w__100  mb__40" style="justify-content: {{section.settings.header_align}}; padding: {{header_padding}}">{{mainTitle}}</h2>
+  {%- endif -%}
+  <div class="rich-text-columns-inner-container">
+    {% for block in section.blocks %}
+      <div class="rich-text-columns-text-outer-section" >
+        {%- if show_ckmk -%}
+          <div class="rich-text-columns-text-inner-section">
+          <svg xmlns="http://www.w3.org/2000/svg" class="checkmark circle">
             <path id="ic_beenhere_24px" d="M14.8,26.983,9.8,21.99l1.408-1.408L14.8,24.157l7.579-7.579L23.782,18Z" transform="translate(-4 -9)" fill="#fff"/>
-      </svg>
-    </div>
-    {%- endif -%}
+          </svg>
+          </div>
+        {%- endif -%}
         <div class="rich-text-columns-text-inner-section">
-        <h3>{{title1}}</h3>
-        <div class="rte_setting {{section.settings.align}}"><p>{{sub_text1}}</p></div>
+          <h3>{{block.settings.title}}</h3>
+          <div class="rte_setting {{block.settings.align}}"><p>{{block.settings.body_text}}</p></div>
+        </div>
       </div>
-    </div>
-    {%- endif -%}
-
-    {%- if title2 != ""-%}
-    <div class="rich-text-columns-text-outer-section">
-      {%- if show_ckmk -%}
-      <div class="rich-text-columns-text-inner-section">
-        <svg xmlns="http://www.w3.org/2000/svg" class="checkmark circle">
-          <path id="ic_beenhere_24px" d="M14.8,26.983,9.8,21.99l1.408-1.408L14.8,24.157l7.579-7.579L23.782,18Z" transform="translate(-4 -9)" fill="#fff"/>
-    </svg>
-    </div>
-    {%- endif -%}
-          <div class="rich-text-columns-text-inner-section">
-          <h3>{{title2}}</h3>
-          <div class="rte_setting {{section.settings.align}}"><p>{{sub_text2}}</p></div>
-        </div>
-    </div>
-    {%- endif -%}
-    {%- if title3 != ""-%}
-    <div class="rich-text-columns-text-outer-section">
-      {%- if show_ckmk -%}
-      <div class="rich-text-columns-text-inner-section">
-        <svg xmlns="http://www.w3.org/2000/svg" class="checkmark circle">
-          <path id="ic_beenhere_24px" d="M14.8,26.983,9.8,21.99l1.408-1.408L14.8,24.157l7.579-7.579L23.782,18Z" transform="translate(-4 -9)" fill="#fff"/>
-    </svg>
-    </div>
-    {%- endif -%}
-          <div class="rich-text-columns-text-inner-section">
-          <h3>{{title3}}</h3>
-          <div class="rte_setting {{section.settings.align}}"><p>{{sub_text3}}</p></div>
-        </div>
-    </div>
-    {%- endif -%}
-    {%- if title4 != ""-%}
-    <div class="rich-text-columns-text-outer-section" >
-      {%- if show_ckmk -%}
-      <div class="rich-text-columns-text-inner-section">
-        <svg xmlns="http://www.w3.org/2000/svg" class="checkmark circle">
-          <path id="ic_beenhere_24px" d="M14.8,26.983,9.8,21.99l1.408-1.408L14.8,24.157l7.579-7.579L23.782,18Z" transform="translate(-4 -9)" fill="#fff"/>
-    </svg>
-    </div>
-    {%- endif -%}
-          <div class="rich-text-columns-text-inner-section">
-          <h3>{{title4}}</h3>
-          <div class="rte_setting {{section.settings.align}}"><p>{{sub_text4}}</p></div>
-        </div>
-    </div>
-    {%- endif -%}
-    {%- if title5 != ""-%}
-    <div class="rich-text-columns-text-outer-section">
-      {%- if show_ckmk -%}
-      <div class="rich-text-columns-text-inner-section">
-        <svg xmlns="http://www.w3.org/2000/svg" class="checkmark circle">
-          <path id="ic_beenhere_24px" d="M14.8,26.983,9.8,21.99l1.408-1.408L14.8,24.157l7.579-7.579L23.782,18Z" transform="translate(-4 -9)" fill="#fff"/>
-    </svg>
-    </div>
-    {%- endif -%}
-          <div class="rich-text-columns-text-inner-section">
-          <h3>{{title5}}</h3>
-          <div class="rte_setting {{section.settings.align}}"><p>{{sub_text5}}</p></div>
-        </div>
-    </div>
-    {%- endif -%}
-    {%- if title6 != ""-%}
-    <div class="rich-text-columns-text-outer-section">
-      {%- if show_ckmk -%}
-      <div class="rich-text-columns-text-inner-section">
-        <svg xmlns="http://www.w3.org/2000/svg" class="checkmark circle">
-          <path id="ic_beenhere_24px" d="M14.8,26.983,9.8,21.99l1.408-1.408L14.8,24.157l7.579-7.579L23.782,18Z" transform="translate(-4 -9)" fill="#fff"/>
-    </svg>
-    </div>
-    {%- endif -%}
-        <div class="rich-text-columns-text-inner-section">
-          <h3>{{title6}}</h3>
-          <div class="rte_setting {{section.settings.align}}"><p>{{sub_text6}}</p></div>
-        </div>
-    </div>
-    {%- endif -%}  
+    {% endfor %}
   </div>
-  
   {%- if section.settings.show_btn -%}
     <div class="rich-text-button w__100 flex" style="justify-content: {{section.settings.button_align}}; padding: {{button_padding}}">
       <a href="{{section.settings.btn_link}}">
         <button class="btn_icon_true">{{section.settings.btn_text}}</button>
       </a>
     </div>
-    {%- endif -%}
+  {%- endif -%}
 </div>
   
+<style>
+  .rich-text-columns-inner-container {
+    grid-template-columns: repeat({{section.settings.col_num}}, 1fr);
+    gap: {{section.settings.grid_space}}px;
+    display: grid;
+  }
+  @media screen and (max-width: 767px) {
+    .rich-text-columns-inner-container {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
   {%- render 'section_css' -%}
   {%- schema -%}
     {
@@ -180,93 +114,35 @@
             "label": "Align Title"
           },
         {
-          "type": "text",
-          "id": "title1",
-          "label": "Heading",
-          "default": "QUALITY LOREM IPSOM"
-        },
-        {
-        "type": "text",
-        "id": "title2",
-        "label": "Heading",
-        "default": "QUALITY LOREM IPSOM"
-        },
-        {
-        "type": "text",
-        "id": "title3",
-        "label": "Heading",
-        "default": "QUALITY LOREM IPSOM"
-        },
-        {
-        "type": "text",
-        "id": "title4",
-        "label": "Heading",
-        "default": "QUALITY LOREM IPSOM"
-        },
-        {
-        "type": "text",
-        "id": "title5",
-        "label": "Heading",
-        "default": "QUALITY LOREM IPSOM"
-        },
-        {
-        "type": "text",
-        "id": "title6",
-        "label": "Heading",
-        "default": "QUALITY LOREM IPSOM"
-        },
-        {
-          "type": "textarea",
-          "id": "sub_text1",
-          "label": "Sub Text",
-          "default": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum."
-        },
-        {
-          "type": "textarea",
-          "id": "sub_text2",
-          "label": "Sub Text",
-          "default": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum."
-        },
-        {
-          "type": "textarea",
-          "id": "sub_text3",
-          "label": "Sub Text",
-          "default": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum."
-        },
-        {
-          "type": "textarea",
-          "id": "sub_text4",
-          "label": "Sub Text",
-          "default": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum."
-        },
-        {
-          "type": "textarea",
-          "id": "sub_text5",
-          "label": "Sub Text",
-          "default": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum."
-        },
-        {
-          "type": "textarea",
-          "id": "sub_text6",
-          "label": "Sub Text",
-          "default": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum."
-        },
-        {
           "type": "select",
           "id": "col_num",
-          "default": "1",
+          "default": "2",
           "options": [
+          {
+            "value": "1",
+            "label": "1"
+         },
            {
-              "value": "1",
+              "value": "2",
               "label": "2"
            },
            {
-              "value": "2",
+              "value": "3",
               "label": "3"
             }
           ],
           "label": "How many columns do you want?"
         },
+       {
+        "type": "range",
+        "id": "grid_space",
+        "label": "Space Between Items",
+        "unit": "px",
+        "min": 0,
+        "max": 96,
+        "step": 1,
+        "default": 24
+       },
         {
           "type": "checkbox",
           "id": "show_ckmk",
@@ -403,32 +279,6 @@
           "content": "== General Settings"
         },
         {
-          "type": "richtext",
-          "id": "content",
-          "label": "Content",
-          "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
-        },
-        {
-          "type": "select",
-          "id": "align",
-          "default": "tc",
-          "options": [
-           {
-              "value": "tl",
-              "label": "Left"
-           },
-           {
-              "value": "tc",
-              "label": "Center"
-            },
-           {
-              "value": "tr",
-              "label": "Right"
-            }
-          ],
-          "label": "Text Align"
-        },
-        {
           "type": "header",
           "content": "== Design Options"
         },
@@ -483,6 +333,44 @@
           "placeholder": "50px,,50px,"
         }
       ],
+      "blocks": [{
+        "type": "rich_text",
+        "name": "Rich Text Grid Item",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Heading",
+            "default": "QUALITY LOREM IPSOM"
+          },
+          {
+            "type": "textarea",
+            "id": "body_text",
+            "label": "Sub Text",
+            "default": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum."
+          },
+          {
+            "type": "select",
+            "id": "align",
+            "default": "tl",
+            "options": [
+             {
+                "value": "tl",
+                "label": "Left"
+             },
+             {
+                "value": "tc",
+                "label": "Center"
+              },
+             {
+                "value": "tr",
+                "label": "Right"
+              }
+            ],
+            "label": "Text Align"
+          }
+        ]
+        }],
       "presets": [
         {
           "name": "Rich text",
