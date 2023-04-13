@@ -2090,6 +2090,9 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
         margin: 0;
         padding-right: 0 !important;
     }
+    .about-team-item {
+        height: 40vw;
+    }
     .about-team-item img {
         object-position: center 30%;
     }
