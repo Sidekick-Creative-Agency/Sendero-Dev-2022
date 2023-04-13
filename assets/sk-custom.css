@@ -2091,7 +2091,8 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
         padding-right: 0 !important;
     }
     .about-team-item {
-        height: 40vw;
+        max-height: unset;
+        min-height: 360px;
     }
     .about-team-item img {
         object-position: center 30%;
