@@ -96,6 +96,7 @@
           "type": "collection",
           "settings": {
             "collection": "t-shirts",
+            "image": "shopify:\/\/shop_images\/2023-3-3_-_SS23_-_Fit_Shots-2387.jpg",
             "img_align": "center",
             "title": "",
             "url": "",
@@ -106,6 +107,7 @@
           "type": "collection",
           "settings": {
             "collection": "crop-tee",
+            "image": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-4602.jpg",
             "img_align": "center",
             "title": "",
             "url": "",
