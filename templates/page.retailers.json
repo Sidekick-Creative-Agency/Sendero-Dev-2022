@@ -35,7 +35,7 @@
         "overlay": 36,
         "padding": 64,
         "paddingmb": 32,
-        "bg_pos": "center center",
+        "bg_pos": "center top",
         "bg_repeat": "no-repeat",
         "bg_size": "cover",
         "bg_att": "scroll"
@@ -62,6 +62,8 @@
       "type": "rich_text",
       "settings": {
         "title": "Become a Dealer",
+        "heading_size": 32,
+        "heading_size_mb": 24,
         "heading_spacing": 8,
         "sub_title": "",
         "show_btn": true,

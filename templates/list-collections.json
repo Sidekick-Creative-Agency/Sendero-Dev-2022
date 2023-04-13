@@ -4,6 +4,7 @@
       "type": "list_cat_heading",
       "settings": {
         "shown": true,
+        "min_height": "400px",
         "image": "shopify:\/\/shop_images\/homepage_hero_image_3.webp",
         "parallax": false,
         "color": "#000000",

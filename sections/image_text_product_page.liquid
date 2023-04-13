@@ -7,22 +7,28 @@
   assign ck = true 
  endif
 
- assign image = se_stts.imageDefault
- if product.type contains "Hats"
- assign image = se_stts.imageHats
- 
-elsif product.type contains "Shirts"
- assign image = se_stts.imageShirts
-
- elsif product.type contains "Crop Tee"
- assign image = se_stts.imageShirts
-  
-elsif product.tags contains "Accessories"
- assign image = se_stts.imageAccessories
-    
-elsif product.type contains "Outerwear"
- assign image = se_stts.imageOuterwear
-endif
+  assign image = se_stts.imageDefault
+  if product.tags contains "Women's" and product.tags contains "Men's" and product.tags contains "T-Shirt"
+    assign image = se_stts.imageUnisex
+  elsif product.tags contains "Women's" and product.tags contains "T-Shirt"
+    assign image = se_stts.imageWomensTees
+  elsif product.tags contains "Women's" and product.tags contains "Crop Tee"
+    assign image = se_stts.imageWomensTees
+  elsif product.tags contains "Women's"
+    assign image = se_stts.imageWomens
+  elsif product.type contains "Hats"
+    assign image = se_stts.imageHats
+  elsif product.type contains "Shirts"
+    assign image = se_stts.imageShirts
+  elsif product.type contains "Shorts"
+    assign image = se_stts.imageShorts
+  elsif product.tags contains "Performance"
+    assign image = se_stts.imagePerformance
+  elsif product.tags contains "Accessories"
+    assign image = se_stts.imageAccessories
+  elsif product.type contains "Outerwear"
+    assign image = se_stts.imageOuterwear
+  endif
 
  assign url = se_stts.button_link 
  if se_stts.cl_txt == 'dark' 
@@ -35,6 +41,7 @@ endif
   assign image2 = product.images.last
 
  -%}
+
  {%- capture layout1 -%}
 <div class="img-text-indiv-product-container nt_se_{{sid}} {{se_stts.layout}} txt_shadow_{{se_stts.use_shadow}}" style="margin: 0 auto !important;">
   <div class="row no-gutters equal_nt {{img_ratio}} al_center">
@@ -127,6 +134,31 @@ endif
          "type": "image_picker",
          "id": "imageShirts",
          "label": "Image for Shirts Products"
+       },
+       {
+         "type": "image_picker",
+         "id": "imageShorts",
+         "label": "Image for Shorts Products"
+       },
+       {
+         "type": "image_picker",
+         "id": "imageWomens",
+         "label": "Image for Women's Products"
+       },
+       {
+         "type": "image_picker",
+         "id": "imagePerformance",
+         "label": "Image for Performance Products"
+       },
+       {
+         "type": "image_picker",
+         "id": "imageWomensTees",
+         "label": "Image for Women's Tees Products"
+       },
+       {
+         "type": "image_picker",
+         "id": "imageUnisex",
+         "label": "Image for Unisex Products"
        },
        {
          "type": "image_picker",

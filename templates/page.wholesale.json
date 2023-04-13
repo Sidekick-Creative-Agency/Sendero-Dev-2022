@@ -16,7 +16,7 @@
       "settings": {
         "shown": true,
         "page_title": "Wholesale",
-        "min_height": "60vh",
+        "min_height": "400px",
         "image": "shopify:\/\/shop_images\/2021-7-23_-_FW_2021_-_Low_Res-3141.jpg",
         "parallax": true,
         "color": "#000000",
@@ -39,6 +39,8 @@
       "type": "rich_text",
       "settings": {
         "title": "AT SENDERO YOU’RE A PARTNER, NOT A DEALER",
+        "heading_size": 32,
+        "heading_size_mb": 24,
         "heading_spacing": 16,
         "sub_title": "",
         "show_btn": true,
@@ -147,6 +149,8 @@
       "type": "rich_text",
       "settings": {
         "title": "HOW TO BECOME A SENDERO PARTNER",
+        "heading_size": 32,
+        "heading_size_mb": 24,
         "heading_spacing": 16,
         "sub_title": "",
         "show_btn": true,
