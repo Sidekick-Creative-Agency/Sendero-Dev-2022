@@ -1191,7 +1191,7 @@
           "183b51d8-d85a-45ae-962f-40e0486c2448": {
             "type": "menu",
             "settings": {
-              "title": "Men's",
+              "title": "Mens",
               "url": "",
               "open_link": "_self",
               "menu": "mens-new-site-mobile",
@@ -1203,7 +1203,7 @@
           "ad4b26fd-d9f8-4717-aa94-f3dcac4ea69d": {
             "type": "menu",
             "settings": {
-              "title": "Women's",
+              "title": "Womens",
               "url": "",
               "open_link": "_self",
               "menu": "womens-new-site-mobile",
