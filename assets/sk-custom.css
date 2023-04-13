@@ -956,6 +956,7 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 .sk-collection-slider {
     max-width: unset;
     width: auto;
+    padding: 0 !important;
 }
 .sk-collection-top {
     max-width: unset;
