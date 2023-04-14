@@ -928,7 +928,7 @@
             "type": "html",
             "settings": {
               "title": "Support",
-              "content": "<div class=\"ftr-icn-wrap\">\n<div class=\"ftr-icn\"><i class=\"pegk pe-7s-chat\"> <\/i><\/div>\n<div class=\"ftr-icn-txt\">Chat now with a customer service representative by clicking the chat bubble below or send us an email.\n<\/div>\n<\/div><a href=\"mailto:contact@senderopc.com\" aria-label=\"email Sendero\" role=\"button\"><button type=\"submit\" class=\"submit-btn\"><span>Contact<\/span><\/button><\/a>",
+              "content": "<div class=\"ftr-icn-wrap\">\n<div class=\"ftr-icn\"><i class=\"pegk pe-7s-chat\"> <\/i><\/div>\n<div class=\"ftr-icn-txt\">Chat now with a customer service amigo by clicking the chat bubble below or send us an email.\n<\/div>\n<\/div><a href=\"mailto:contact@senderopc.com\" aria-label=\"email Sendero\" role=\"button\"><button type=\"submit\" class=\"submit-btn\"><span>Contact<\/span><\/button><\/a>",
               "order": "1",
               "cl": "4",
               "cl_tb": "6",
