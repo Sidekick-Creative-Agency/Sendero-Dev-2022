@@ -6,7 +6,7 @@
         "16357021760efbe511-6": {
           "type": "img",
           "settings": {
-            "image": "shopify:\/\/shop_images\/tshirt_restockbanner4.jpg",
+            "image": "shopify:\/\/shop_images\/TSHIRT_RESTOCK.jpg",
             "pos_img": "center center",
             "cl_img": "",
             "link_img1": "",
@@ -40,7 +40,7 @@
             "font": "f_heading",
             "title": "TEES BACK IN STOCK",
             "color": "#ffffff",
-            "text_align": "left",
+            "text_align": "center",
             "fw_text": 600,
             "fs_text": 64,
             "lh_text": 0,
@@ -105,6 +105,9 @@
         "9b0a18eb-2681-4948-b096-8384eeee1e40",
         "762d1378-8173-406f-80d3-0b676dbea9d4",
         "25477687-767a-41ba-adf6-170f175c9e14"
+      ],
+      "custom_css": [
+
       ],
       "settings": {
         "se_height": "cus_h",
