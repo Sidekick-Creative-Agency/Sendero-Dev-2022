@@ -254,7 +254,7 @@
         "au_time": 6,
         "au_hover": true,
         "button": true,
-        "btn_vi": "2",
+        "btn_vi": "1",
         "btn_owl": "2",
         "btn_color": "1",
         "dot": false,
@@ -264,10 +264,10 @@
         "layout": "nt_full",
         "cl_bg": "",
         "hide_bgimg": false,
-        "mg": "50px,,50px,",
-        "pd": "",
+        "mg": "32px,,32px,",
+        "pd": ",,,64px",
         "mg_mb": "",
-        "pd_mb": ""
+        "pd_mb": ",32px,,32px"
       }
     }
   },
