@@ -88,6 +88,70 @@
     },
     "sk-session-group-grid": {
       "type": "sk-session-group-grid",
+      "blocks": {
+        "1104d90d-27da-4513-969d-1808c36b3dd9": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/youtu.be\/5HHDmQmoUOY",
+            "grid_link": "https:\/\/youtube.com\/embed\/5HHDmQmoUOY",
+            "artist_name": "Shane Smith & The Saints",
+            "song_name": "All I See Is You"
+          }
+        },
+        "1674ed84-5c7e-4f8d-bfaa-8aaa4a893830": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/youtu.be\/KFVLNG4Yy5Q",
+            "grid_link": "https:\/\/youtube.com\/embed\/KFVLNG4Yy5Q",
+            "artist_name": "Shane Smith & The Saints",
+            "song_name": "Fire In The Ocean"
+          }
+        },
+        "1a7b615b-db9b-44d6-9e33-2b79fa243703": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/youtu.be\/w41eH7EBN3k",
+            "grid_link": "https:\/\/youtube.com\/embed\/w41eH7EBN3k",
+            "artist_name": "Shane Smith & The Saints",
+            "song_name": "Right Side of the Ground"
+          }
+        },
+        "65b72b7c-be9f-4189-ac99-fd1a5615982e": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/youtu.be\/E4e9TPE2a2E",
+            "grid_link": "https:\/\/youtube.com\/embed\/E4e9TPE2a2E",
+            "artist_name": "Shane Smith & The Saints",
+            "song_name": "Hummingbird"
+          }
+        },
+        "95a85d26-a7bd-40d3-a070-738b4d8cfaf5": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/youtu.be\/2MDzAw-d8aw",
+            "grid_link": "https:\/\/youtube.com\/embed\/2MDzAw-d8aw",
+            "artist_name": "Shane Smith & The Saints",
+            "song_name": "Hail Mary"
+          }
+        },
+        "a8a65655-eac6-47ef-9ea9-03c1a0f3fce9": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/youtu.be\/-XAQIrgX5O8",
+            "grid_link": "https:\/\/youtube.com\/embed\/-XAQIrgX5O8",
+            "artist_name": "Shane Smith & The Saints",
+            "song_name": "Quite Like You"
+          }
+        }
+      },
+      "block_order": [
+        "1104d90d-27da-4513-969d-1808c36b3dd9",
+        "1674ed84-5c7e-4f8d-bfaa-8aaa4a893830",
+        "1a7b615b-db9b-44d6-9e33-2b79fa243703",
+        "65b72b7c-be9f-4189-ac99-fd1a5615982e",
+        "95a85d26-a7bd-40d3-a070-738b4d8cfaf5",
+        "a8a65655-eac6-47ef-9ea9-03c1a0f3fce9"
+      ],
       "settings": {
         "heading": "Session Videos",
         "heading_mg_bot": 32,

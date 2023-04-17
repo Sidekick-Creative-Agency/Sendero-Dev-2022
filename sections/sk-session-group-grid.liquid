@@ -37,6 +37,7 @@
 <div class="col-12 sk-session-group-outer-container" id="videos-section">
   <h2 style="text-align: center; margin-bottom: {{se_stts.heading_mg_bot}}px">{{se_stts.heading}}</h2>
     <div class="sk-session-group-inner-container {{sid}}">
+      {%- comment -%}
         {% for i in (1..8) %}
             {% if i == 1 %}
                 {% assign video_url = se_stts.video_url1 %}
@@ -79,30 +80,40 @@
                 {% assign song = se_stts.song_name8 %}
                 {% assign grid_link = se_stts.grid_link8 %}
             {% endif %}
-            {%- if video_url != video_none and video_url != "" -%}
-            <div class="sk-session-grid-video post_2 post-thumbnail pr oh">
-              {% assign video_id = video_url | remove: "https://youtu.be/" %}
-              {% assign bg_url = video_url | remove: "https://youtu.be/" | prepend: "embed/" | prepend: "https://www.youtube.com/" | append: "?autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1&rel=0&autohide=1&enablejsapi=1&playlist=" | append: video_id %}
-              {% assign lightbox_url = video_url | remove: "https://youtu.be/" | prepend: "embed/" | prepend: "https://www.youtube.com/" | append: video_id %}
-              <div class="sk-session-grid-indiv-container">
-                <iframe width="100%" height="100%" src="{{bg_url}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen referrerpolicy="no-referrer"></iframe>     
-                </iframe>  
-                <div class="sendero-session-overlay">
-                  <h3 class="sendero-session-title">{{title}}</h3>
-                  <h5 class="sk-session-group-sub-title">"{{song}}"</h5>
+            {% endfor %}
+            {%- endcomment -%}
+            {% for block in section.blocks %}
+              {% assign bk_stts = block.settings %}
+              {% assign video_url = bk_stts.video_url %}
+              {% assign title = bk_stts.artist_name %}
+              {% assign song = bk_stts.song_name %}
+              {% assign grid_link = bk_stts.grid_link %}
+              {%- if video_url != video_none and video_url != "" -%}
+              <div class="sk-session-grid-video post_2 post-thumbnail pr oh">
+                {% assign video_id = video_url | remove: "https://youtu.be/" %}
+                {% assign bg_url = video_url | remove: "https://youtu.be/" | prepend: "embed/" | prepend: "https://www.youtube.com/" | append: "?autoplay=1&mute=1&start=5&showinfo=0&controls=0&modestbranding=1&loop=1&rel=0&autohide=1&enablejsapi=1&playlist=" | append: video_id %}
+                {% assign lightbox_url = video_url | remove: "https://youtu.be/" | prepend: "embed/" | prepend: "https://www.youtube.com/" | append: video_id %}
+                <div class="sk-session-grid-indiv-container">
+                  <iframe width="100%" height="100%" src="{{bg_url}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen referrerpolicy="no-referrer"></iframe>     
+                  </iframe>  
+                  <div class="sendero-session-overlay">
+                    <h3 class="sendero-session-title">{{title}}</h3>
+                    <h5 class="sk-session-group-sub-title">"{{song}}"</h5>
+                  </div>
                 </div>
-              </div>
-              <div class="sendero-session-item-popup">
-                <div class="sendero-session-item-popup-content-wrapper">
-                  <div class="sendero-session-item-popup-content">
-                    <i class="las la-times sendero-session-item-popup-close" onclick="senderoSessionPopupClose()"></i>
-                    <iframe class='session-video' width="100%" height="100%" src="{{grid_link}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen referrerpolicy="no-referrer"></iframe>
+                <div class="sendero-session-item-popup">
+                  <div class="sendero-session-item-popup-content-wrapper">
+                    <div class="sendero-session-item-popup-content">
+                      <i class="las la-times sendero-session-item-popup-close" onclick="senderoSessionPopupClose()"></i>
+                      <iframe class='session-video' width="100%" height="100%" src="{{grid_link}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen referrerpolicy="no-referrer"></iframe>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          {%- endif -%}
-        {% endfor %}
+            {%- endif -%}
+          {% endfor %}
+            
+        
     </div>
 </div>
 <script>
@@ -834,6 +845,45 @@
         "id": "pd_mb",
         "label": "Padding",
         "placeholder": ",16px,,16px"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "video",
+        "name": "Session Video",
+        "settings": [
+          
+            {
+               "id": "video_url",
+               "type": "video_url",
+               "label": "1. Video URL",
+               "accept": ["youtube"],
+               "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+               "info": "To remove video block, insert url: https://www.youtube.com/watch?v=_9VUPq3SxOc"
+            },
+           {
+            "type": "image_picker",
+            "id": "cover_img",
+            "label": "Fallback Image"
+           },
+            {
+              "id": "grid_link",
+              "type": "text",
+              "label": "Link on click:",
+              "default": "#"
+            },
+            {
+                "type": "text",
+                "id": "artist_name",
+                "label": "Artist Name"
+              },
+              {
+                "type": "text",
+                "id": "song_name",
+                "label": "Song Name"
+              }
+          
+        ]
       }
     ],
     "presets": [

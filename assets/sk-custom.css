@@ -2640,12 +2640,13 @@ a.prev.page-numbers {
 }
 .sk-session-grid-indiv-container iframe {
     position: absolute;
-    height:100%;
-    top: 0;
+    height:150%;
+    top: 50%;
     right: 0;
-    bottom: 0;
-    width: 450%;
-    left: -175%;
+    /* bottom: 0; */
+    width: 200%;
+    left: -50%;
+    transform: translateY(-50%);
     max-width: none;
     pointer-events: none;
 }
