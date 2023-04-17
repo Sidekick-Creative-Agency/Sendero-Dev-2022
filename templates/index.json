@@ -49,8 +49,8 @@
             "lh_mb_text": 32,
             "ls_mb_text": 0,
             "hide": false,
-            "sp": 30,
-            "sp_mb": 16
+            "sp": 16,
+            "sp_mb": 8
           }
         },
         "762d1378-8173-406f-80d3-0b676dbea9d4": {
@@ -68,8 +68,8 @@
             "lh_mb_text": 20,
             "ls_mb_text": 0,
             "hide": false,
-            "sp": 30,
-            "sp_mb": 15
+            "sp": 16,
+            "sp_mb": 8
           }
         },
         "25477687-767a-41ba-adf6-170f175c9e14": {

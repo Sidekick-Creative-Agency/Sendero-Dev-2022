@@ -12,7 +12,7 @@
   <div class="header__mid{% if h__bgimg != blank %} lazyloadt4s h__lz_img" data-bgset="{{ h__bgimg | img_url: '1x1' }}" data-ratio="{{h__bgimg.aspect_ratio}}" data-sizes="auto"{% else %}"{% endif %}><div class="container">
      <div class="row al_center css_h_se" style="flex-wrap: nowrap">
         <div class="col-md-4 col-3 dn_lg">{%- render 'push_menu' -%}</div>
-        <div class="tc tl_lg header-logo" style="padding: 0 15px;">{%- render 'nt_logo' with 'div' -%}</div>
+        <div class="tc tl_lg header-logo">{%- render 'nt_logo' with 'div' -%}</div>
         <div class="dn db_lg" style="flex-grow:1">{%- render 'menu_inc',admin_sp:admin_sp,se_blocks:se_blocks,tp_blocks:tp_blocks -%}</div>
         <div class="col-lg-auto col-md-4 col-3 tr col_group_btns">{%- render 'nt_group_btns' -%}</div>
      </div>
@@ -29,7 +29,8 @@
 <style>
   @media screen and (min-width: 1025px) {
      .header-logo {
-      max-width: 16.66% !important;
+      width: 16.66%;
+      max-width: 300px !important;
     }
   }
   @media screen and (max-width: 1024px) {

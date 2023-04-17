@@ -87,8 +87,18 @@ header {
     gap: 0;
 }
 .header__mid .container {
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 2%;
+    padding-left: 2%;
+}
+.header__mid .container > .row {
+    margin: 0;
+}
+#ntheader:not(.live_stuck) .header__mid .container {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+#ntheader .header__mid .col_group_btns {
+    padding: 0;
 }
 .menu-item.sub-column-item {
     display: grid;
