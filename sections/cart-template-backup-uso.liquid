@@ -127,19 +127,13 @@
                             <div class="col-auto"><h4>{{ 'cart.general.subtotal' | t }}</h4></div>
                             <div class="col-auto tr js_cat_ttprice fs__18 fwm">
                               {%- if cart.total_discount > 0 -%}
-                              
-<span class="saso-cart-original-total"><div class="cart_ori_price">{{ cart.original_total_price | money }}</div></span>
-<span class="saso-cart-total"></span>
-
+                              <div class="cart_ori_price">{{ cart.original_total_price | money }}</div>
                               <div class="cart_dis_price">-{{ cart.total_discount | money }}</div>
                               {%- elsif compare_tt_price > cart.total_price and none-%}
                               <div class="cart_ori_price">{{ compare_tt_price | money }}</div>
                               <div class="cart_dis_price">-{{ compare_tt_price|minus:cart.total_price | money }}</div>
                               {%- endif -%}
-                              
-<span class="saso-cart-original-total"><div class="cart_tot_price">{{ cart.total_price | money }}</div></span>
-<span class="saso-cart-total"></span>
-
+                              <div class="cart_tot_price">{{ cart.total_price | money }}</div>
                             </div>
                           </div>
                           <div class="clearfix"></div>
