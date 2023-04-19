@@ -1562,6 +1562,27 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
 .product-infors .form-notify label {
     font-size: 14px;
 }
+#pre_order_custom .pre-order-2-button {
+    font-family: "Oswald", sans-serif !important;
+    background-color: #000 !important;
+    border-color: #000;
+    font-weight: 400;
+}
+#pre_order_custom .pre-order-2-button.hover {
+    background-color: #666 !important;
+    font-weight: 400;
+}
+.pre-order-2-message {
+    font-family: "Kameron", serif !important;
+    font-size: 13px !important;
+    font-weight: 400 !important;
+}
+.pre-order-counter-wrapper .counter-text {
+    margin: 0 !important;
+}
+.spurit-po-wrapper {
+    padding-bottom: 15px;
+}
 /* ----- Tablet ------ */
 @media screen and (max-width: 1023px) {
     .quick-links-popup-content-wrapper {
@@ -1596,6 +1617,14 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     }
     .quick-links-popup-content-wrapper {
         padding: 96px 32px;
+    }
+    .spurit-po-wrapper .pre-order-2-message {
+        top: 50% !important;
+        transform: translateY(-50%) !important;
+        left: 105% !important;
+        margin: 0 !important;
+        right: unset !important;
+        min-width: 100px;
     }
 }
 
