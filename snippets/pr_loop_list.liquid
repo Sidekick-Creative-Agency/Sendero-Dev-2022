@@ -35,16 +35,21 @@
     endfor
   endif
   assign countdown = time_meta| default:product.metafields.meta.countdown
-  assign images_0 = product.images[0] | default:settings.placeholder_img
+  assign images_0 = product.images.first | default:settings.placeholder_img
   assign pr_id = product.id
   assign description_excerpt = product.metafields.meta.description_excerpt
   assign tooltip = "ttip_nt_"  -%}
+
+
+    
+
   {%- if settings.within_cat and collection -%}
     {%- assign pr_url = product.url | within:collection -%}
   {%- else -%}
     {%- assign pr_url = product.url -%}
   {%- endif -%}
   {%- assign pr_url_js = pr_url |split:'?' | first -%}
+
 
 <div data-page="{{page_t4}}" class="col-lg-{{col}} col-md-{{col_tb}} col-{{col_mb}} pr_grid_item pr_list_item product nt_pr desgin__{{inc_pr}}">
   <div class="product-inner pr">
@@ -79,3 +84,67 @@
     </div>
   </div>
 </div>
+
+
+
+
+
+{%- comment -%}
+
+{% for option in product.options %}
+      {% if option == 'Color' %}
+        {% assign index = forloop.index0 %}
+        {% assign colorlist = '' %}
+        {% assign color = '' %}
+        {% for variant in product.variants %}
+          {% capture color %}
+            {{ variant.options[index] }}
+          {% endcapture %}
+
+          {% unless colorlist contains color %}
+          {% assign image = variant.featured_image %}
+          <div data-page="{{page_t4}}" class="col-lg-{{col}} col-md-{{col_tb}} col-{{col_mb}} pr_grid_item pr_list_item product nt_pr desgin__{{inc_pr}}">
+          <img class="pr_lazy_img main-img nt_img_ratio" loading="lazy" src="{{ image | img_url: '600x' }}" alt="{{ image.alt | escape }}">
+            
+            <div class="product-inner pr">
+              {%- if countdown != blank and use_cdt -%}
+                <div class="pr_wr_dcimg pr oh">
+                  <div class="product-image pr oh lazyloadt4s" data-set4url="/?section_id=main-img{{sett_equal}}" data-rendert4s="{{pr_url_js}}">{%- if image != blank %}<noscript><img class="pr_lazy_img main-img nt_img_ratio" loading="lazy" src="{{ image | img_url: '600x' }}" alt="{{ image.alt | escape }}"></noscript>{% endif %}<div class="nt_bg_lz nt_fk_lz"{% unless sett_equal %} style="padding-top:{{ 1 | divided_by: image.aspect_ratio | times: 100}}%;"{% endunless %}></div></div>
+                  <div class="pr_deal_dt pa pe_none op__0">
+                    <span class="pr_title_dt">{{txt_cd}}</span> <span class="pr_coun_dt" data-date="{{countdown}}"></span>
+                  </div>
+                </div>
+              {%- else -%}
+                 <div class="product-image pr oh lazyloadt4s" data-set4url="/?section_id=main-img{{sett_equal}}" data-rendert4s="{{pr_url_js}}">{%- if image != blank %}<noscript><img class="pr_lazy_img main-img nt_img_ratio" loading="lazy" src="{{ image | img_url: '600x' }}" alt="{{ image.alt | escape }}"></noscript>{% endif %}<div class="nt_bg_lz nt_fk_lz"{% unless sett_equal %} style="padding-top:{{ 1 | divided_by: image.aspect_ratio | times: 100}}%;"{% endunless %}></div></div>
+              {%- endif -%}
+              <div class="product-info">
+                <div class="product-info__inner">
+                   {%- if product.vendor.size > 0 and show_vendor -%}<div class="product-brand"><a class="cg chp" href="{{ product.vendor | url_for_vendor }}">{{ product.vendor }}</a></div>{%- endif -%}
+                   <h3 class="product-title pr fs__14 mg__0 fwm"><a class="cd chp" href="{{pr_url}}">{{product.title}}</a></h3>
+                   <span class="price dib mb__5">{%- render 'product_price',product:product,inc_price:inc_price -%}</span>
+                   <div class="rte dn"><p class="mb__5">{% if description_excerpt != blank %}{{ description_excerpt }}{% else %}{{ product.content | strip_html | truncatewords: 30 }}{% endif %}</p></div>
+                   {%- if use_rating -%}{%- render 'rating',product:product,inc_rating:inc_rating -%}{%- endif -%}
+                   {%- if color_count > 0 -%}
+                   <div class="swatch__list_js swatch__list lh__1 nt_swatches_on_grid lazyloadt4s" data-colorCount="{{color_count}}" data-set4url="/?section_id=main-sw{{sett_equal}}" data-rendert4s="{{pr_url_js}}"></div>
+                   {%- endif -%}
+                   {%- if size_count > 0 and settings.pr_size_pos == '2' -%}
+                   <div class="product-attr pe_none"><p class="truncate mg__0 w__100">{{size_variants | join: ", "}}</p></div>
+                   {%- endif -%}
+                </div>
+                <div class="product-info__btns flex column mt__20">
+                   {%- render 'nt_add_qvcp',product:product,tooltip:tooltip,pr_id:pr_id,url_last:pr_url -%}
+                   {%- unless settings.hide_btns %}{% render 'nt_add_btn',product:product,tooltip:tooltip,url_last:pr_url %}{% endunless -%}
+                </div>
+              </div>
+            </div>
+          </div>
+            {% capture tempList %}
+              {{colorlist | append: color | append: " " }}
+            {% endcapture %}
+            {% assign colorlist = tempList %}
+          {% endunless %}
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
+
+    {%- endcomment -%}
