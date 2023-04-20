@@ -2,10 +2,108 @@
   "sections": {
     "main": {
       "type": "main-404",
+      "disabled": true,
       "custom_css": [
         "p {letter-spacing: 0px;}"
       ],
       "settings": {
+      }
+    },
+    "10852792-fc11-413e-a932-faef7d06b6d7": {
+      "type": "image_text_overlay",
+      "blocks": {
+        "template--16713548169435__10852792-fc11-413e-a932-faef7d06b6d7-16820204318e549370-2": {
+          "type": "2",
+          "settings": {
+            "font": "f_heading",
+            "title": "<p>404<\/p>",
+            "list_mg_left": 0,
+            "list_mg_top": 0,
+            "ul_marker": true,
+            "color": "#fff",
+            "fw_text": 600,
+            "fs_text": 28,
+            "lh_text": 0,
+            "ls_text": 0,
+            "fs_mb_text": 14,
+            "lh_mb_text": 0,
+            "ls_mb_text": 0,
+            "hide": false
+          }
+        },
+        "template--16713548169435__10852792-fc11-413e-a932-faef7d06b6d7-16820204318e549370-0": {
+          "type": "1",
+          "settings": {
+            "title": "Nothin' To See Here",
+            "color": "#fff",
+            "fw_text": 600,
+            "fs_text": 48,
+            "lh_text": 90,
+            "ls_text": 0,
+            "fs_mb_text": 15,
+            "lh_mb_text": 0,
+            "ls_mb_text": 0,
+            "mg_bot_text": 0
+          }
+        },
+        "template--16713548169435__10852792-fc11-413e-a932-faef7d06b6d7-16820204318e549370-4": {
+          "type": "3",
+          "settings": {
+            "title": "Keep Shopping",
+            "btn_link": "https:\/\/senderopc.com",
+            "open_link": "_blank",
+            "title2": "Shop Now 2",
+            "btn_link2": "",
+            "open_link2": "_blank",
+            "btn_w": false,
+            "btn_icon": true,
+            "cl_txt": "#fff",
+            "cl_bg": "#222",
+            "cl_bd": "#222",
+            "fs_text": 14,
+            "fw_text": 600,
+            "h": 40,
+            "ls_text": 0,
+            "bdr": 0,
+            "pd": 13,
+            "fs_mb_text": 14,
+            "h_mb": 40,
+            "ls_mb_text": 0,
+            "bdr_mb": 0,
+            "pd_mb": 15
+          }
+        }
+      },
+      "block_order": [
+        "template--16713548169435__10852792-fc11-413e-a932-faef7d06b6d7-16820204318e549370-2",
+        "template--16713548169435__10852792-fc11-413e-a932-faef7d06b6d7-16820204318e549370-0",
+        "template--16713548169435__10852792-fc11-413e-a932-faef7d06b6d7-16820204318e549370-4"
+      ],
+      "settings": {
+        "se_height": "cus_h",
+        "use_custom_h": "1",
+        "h_des": "400px",
+        "h_tb": "400px",
+        "h_mb": "350px",
+        "image": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-5736.jpg",
+        "use_pr": false,
+        "img_align": "center",
+        "caption_w": "2",
+        "cap_v_pos": 50,
+        "cap_h_pos": 50,
+        "txt_align": "tc_md",
+        "cap_v_pos_mb": 50,
+        "cap_h_pos_mb": 50,
+        "txt_align_mb": "tc",
+        "cl_overlay": "#000",
+        "cl_opacity": 47,
+        "layout": "nt_full",
+        "mg": ",,64px,",
+        "pd": "0",
+        "pd_text": 0,
+        "mg_mb": "0",
+        "pd_mb": "0",
+        "pd_text_mb": 0
       }
     },
     "da50bd93-8bcb-44d7-88c1-20ee125620c3": {
@@ -32,10 +130,10 @@
         "loop": true,
         "au_time": 0,
         "au_hover": true,
-        "button": false,
+        "button": true,
         "btn_vi": "1",
-        "btn_owl": "1",
-        "btn_color": "0",
+        "btn_owl": "2",
+        "btn_color": "1",
         "dot": true,
         "dot_owl": "1",
         "dot_color": "1",
@@ -55,6 +153,7 @@
   },
   "order": [
     "main",
+    "10852792-fc11-413e-a932-faef7d06b6d7",
     "da50bd93-8bcb-44d7-88c1-20ee125620c3"
   ]
 }
