@@ -11,28 +11,3 @@
     {%- assign image = product.images[1] | default:settings.placeholder_img -%}
     <div {% if image.alt contains 'imgt4_colorsolid' %}data-widths="[1]" {% endif %}class="hover_img pa pe_none t__0 l__0 r__0 b__0 op__0"><div class="pr_lazy_img back-img pa lazyloadt4s nt_bg_lz" data-id="{{image.id}}" data-bgset="{{ image | img_url: '1x1' }}" data-parent-fit="width" data-wiis data-ratio="{{image.ratio}}" data-sizes="auto" style="padding-top:{{ 1 | divided_by: ratio | times: 100}}%"></div></div>
 {%- endif -%} 
-
-
-{%- comment -%}
-{% if product.options contains "Color" %}
-              {% assign values = product.variants | map: "option1" | uniq %}
-              <p>{{values}}</p>
-            {% endif %}
-            {% if values %}
-        	  {% for value in values %}
-        	    {% assign variant = product.variants | where: "option1", value %}
-        	    {% if variant[0].featured_image %}
-	         	  {% assign featured_image = variant[0].featured_image %}
-                {% else %}
-        		  {% assign featured_image = product.featured_image %}
-                {% endif %}
-	          
-                <a class="db" href="{{url_last}}">
-                    <div {% if featured_image.alt contains 'imgt4_colorsolid' %}data-widths="[1]" {% endif %}class="pr_lazy_img main-img nt_img_ratio lazyloadt4s nt_bg_lz" data-id="{{featured_image.id}}" data-bgset="{{ featured_image | img_url: '1x1' }}" data-parent-fit="width" data-wiis data-ratio="{{featured_image.ratio}}" data-sizes="auto" style="padding-top:{{ 1 | divided_by: ratio | times: 100}}%;"></div>
-                </a>
-            
-             {% endfor %}
-          {% else %}
-
-          {% endif %}
-          {%- endcomment -%}

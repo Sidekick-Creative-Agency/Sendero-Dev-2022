@@ -51,6 +51,83 @@
   {%- assign pr_url_js = pr_url |split:'?' | first -%}
 
 
+
+
+
+
+
+
+
+{% if product.options contains 'Color' %}
+
+{% for option in product.options %}
+{% if option == 'Color' %}
+  {% assign index = forloop.index0 %}
+  {% assign colorlist = '' %}
+  {% assign color = '' %}
+  {% for variant in product.variants %}
+    {% capture color %}
+      {{ variant.options[index] }}
+    {% endcapture %}
+
+    {% unless colorlist contains color %}
+    {% assign image = variant.featured_image %}
+    <div data-page="{{page_t4}}" class="col-lg-{{col}} col-md-{{col_tb}} col-{{col_mb}} pr_grid_item pr_list_item product nt_pr desgin__{{inc_pr}}">
+      
+      <div class="product-inner pr">
+        {%- if countdown != blank and use_cdt -%}
+          <div class="pr_wr_dcimg pr oh">
+            <div class="product-image pr oh lazyloadt4s" data-set4url="/?section_id=main-img{{sett_equal}}" data-rendert4s="{{pr_url_js}}">{%- if image != blank %}<noscript><img class="pr_lazy_img main-img nt_img_ratio" loading="lazy" src="{{ image | img_url: '600x' }}" alt="{{ image.alt | escape }}"></noscript>{% endif %}<div class="nt_bg_lz nt_fk_lz"{% unless sett_equal %} style="padding-top:{{ 1 | divided_by: image.aspect_ratio | times: 100}}%;"{% endunless %}></div></div>
+            <div class="pr_deal_dt pa pe_none op__0">
+              <span class="pr_title_dt">{{txt_cd}}</span> <span class="pr_coun_dt" data-date="{{countdown}}"></span>
+            </div>
+          </div>
+        {%- else -%}
+          {%- render 'product_labels',product:product -%}
+
+          {%- assign ratio = image.aspect_ratio -%}
+          <div class="product-image pr oh lazyloadt4s">
+          <a class="db" href="{{pr_url_js}}">
+              <div {% if image.alt contains 'imgt4_colorsolid' %}data-widths="[1]" {% endif %}class="pr_lazy_img main-img nt_img_ratio lazyloadt4s nt_bg_lz" data-id="{{image.id}}" data-bgset="{{ image | img_url: '1x1' }}" data-parent-fit="width" data-wiis data-ratio="{{image.ratio}}" data-sizes="auto" style="padding-top:{{ 1 | divided_by: ratio | times: 100}}%;"></div>
+          </a>
+          {%- if product.images.size > 1 -%}
+            {%- assign image = product.images[1] | default:settings.placeholder_img -%}         
+            <div {% if image.alt contains 'imgt4_colorsolid' %}data-widths="[1]" {% endif %}class="hover_img pa pe_none t__0 l__0 r__0 b__0 op__0"><div class="pr_lazy_img back-img pa lazyloadt4s nt_bg_lz" data-id="{{image.id}}" data-bgset="{{ image | img_url: '1x1' }}" data-parent-fit="width" data-wiis data-ratio="{{image.ratio}}" data-sizes="auto" style="padding-top:{{ 1 | divided_by: ratio | times: 100}}%"></div></div>  
+          {%- endif -%} 
+        </div>
+         {%- comment -%}  <div class="product-image pr oh lazyloadt4s" data-set4url="/?section_id=main-img{{sett_equal}}" data-rendert4s="{{pr_url_js}}">{%- if image != blank %}<h1>hello</h1><noscript><img class="pr_lazy_img main-img nt_img_ratio" loading="lazy" src="{{ image | img_url: '600x' }}" alt="{{ image.alt | escape }}"></noscript>{% endif %}<div class="nt_bg_lz nt_fk_lz"{% unless sett_equal %} style="padding-top:{{ 1 | divided_by: image.aspect_ratio | times: 100}}%;"{% endunless %}></div></div>{%- endcomment -%}
+        {%- endif -%}
+        <div class="product-info">
+          <div class="product-info__inner">
+             {%- if product.vendor.size > 0 and show_vendor -%}<div class="product-brand"><a class="cg chp" href="{{ product.vendor | url_for_vendor }}">{{ product.vendor }}</a></div>{%- endif -%}
+             <h3 class="product-title pr fs__14 mg__0 fwm"><a class="cd chp" href="{{pr_url}}">{{product.title}}</a></h3>
+             <span class="price dib mb__5">{%- render 'product_price',product:product,inc_price:inc_price -%}</span>
+             <div class="rte dn"><p class="mb__5">{% if description_excerpt != blank %}{{ description_excerpt }}{% else %}{{ product.content | strip_html | truncatewords: 30 }}{% endif %}</p></div>
+             {%- if use_rating -%}{%- render 'rating',product:product,inc_rating:inc_rating -%}{%- endif -%}
+             {%- if color_count > 0 -%}
+             <div class="swatch__list_js swatch__list lh__1 nt_swatches_on_grid lazyloadt4s" data-colorCount="{{color_count}}" data-set4url="/?section_id=main-sw{{sett_equal}}" data-rendert4s="{{pr_url_js}}"></div>
+             {%- endif -%}
+             {%- if size_count > 0 and settings.pr_size_pos == '2' -%}
+             <div class="product-attr pe_none"><p class="truncate mg__0 w__100">{{size_variants | join: ", "}}</p></div>
+             {%- endif -%}
+          </div>
+          <div class="product-info__btns flex column mt__20">
+             {%- render 'nt_add_qvcp',product:product,tooltip:tooltip,pr_id:pr_id,url_last:pr_url -%}
+             {%- unless settings.hide_btns %}{% render 'nt_add_btn',product:product,tooltip:tooltip,url_last:pr_url %}{% endunless -%}
+          </div>
+        </div>
+      </div>
+    </div>
+      {% capture tempList %}
+        {{colorlist | append: color | append: " " }}
+      {% endcapture %}
+      {% assign colorlist = tempList %}
+    {% endunless %}
+  {% endfor %}
+{% endif %}
+
+{% endfor %}
+{% else %}
 <div data-page="{{page_t4}}" class="col-lg-{{col}} col-md-{{col_tb}} col-{{col_mb}} pr_grid_item pr_list_item product nt_pr desgin__{{inc_pr}}">
   <div class="product-inner pr">
     {%- if countdown != blank and use_cdt -%}
@@ -84,67 +161,4 @@
     </div>
   </div>
 </div>
-
-
-
-
-
-{%- comment -%}
-
-{% for option in product.options %}
-      {% if option == 'Color' %}
-        {% assign index = forloop.index0 %}
-        {% assign colorlist = '' %}
-        {% assign color = '' %}
-        {% for variant in product.variants %}
-          {% capture color %}
-            {{ variant.options[index] }}
-          {% endcapture %}
-
-          {% unless colorlist contains color %}
-          {% assign image = variant.featured_image %}
-          <div data-page="{{page_t4}}" class="col-lg-{{col}} col-md-{{col_tb}} col-{{col_mb}} pr_grid_item pr_list_item product nt_pr desgin__{{inc_pr}}">
-          <img class="pr_lazy_img main-img nt_img_ratio" loading="lazy" src="{{ image | img_url: '600x' }}" alt="{{ image.alt | escape }}">
-            
-            <div class="product-inner pr">
-              {%- if countdown != blank and use_cdt -%}
-                <div class="pr_wr_dcimg pr oh">
-                  <div class="product-image pr oh lazyloadt4s" data-set4url="/?section_id=main-img{{sett_equal}}" data-rendert4s="{{pr_url_js}}">{%- if image != blank %}<noscript><img class="pr_lazy_img main-img nt_img_ratio" loading="lazy" src="{{ image | img_url: '600x' }}" alt="{{ image.alt | escape }}"></noscript>{% endif %}<div class="nt_bg_lz nt_fk_lz"{% unless sett_equal %} style="padding-top:{{ 1 | divided_by: image.aspect_ratio | times: 100}}%;"{% endunless %}></div></div>
-                  <div class="pr_deal_dt pa pe_none op__0">
-                    <span class="pr_title_dt">{{txt_cd}}</span> <span class="pr_coun_dt" data-date="{{countdown}}"></span>
-                  </div>
-                </div>
-              {%- else -%}
-                 <div class="product-image pr oh lazyloadt4s" data-set4url="/?section_id=main-img{{sett_equal}}" data-rendert4s="{{pr_url_js}}">{%- if image != blank %}<noscript><img class="pr_lazy_img main-img nt_img_ratio" loading="lazy" src="{{ image | img_url: '600x' }}" alt="{{ image.alt | escape }}"></noscript>{% endif %}<div class="nt_bg_lz nt_fk_lz"{% unless sett_equal %} style="padding-top:{{ 1 | divided_by: image.aspect_ratio | times: 100}}%;"{% endunless %}></div></div>
-              {%- endif -%}
-              <div class="product-info">
-                <div class="product-info__inner">
-                   {%- if product.vendor.size > 0 and show_vendor -%}<div class="product-brand"><a class="cg chp" href="{{ product.vendor | url_for_vendor }}">{{ product.vendor }}</a></div>{%- endif -%}
-                   <h3 class="product-title pr fs__14 mg__0 fwm"><a class="cd chp" href="{{pr_url}}">{{product.title}}</a></h3>
-                   <span class="price dib mb__5">{%- render 'product_price',product:product,inc_price:inc_price -%}</span>
-                   <div class="rte dn"><p class="mb__5">{% if description_excerpt != blank %}{{ description_excerpt }}{% else %}{{ product.content | strip_html | truncatewords: 30 }}{% endif %}</p></div>
-                   {%- if use_rating -%}{%- render 'rating',product:product,inc_rating:inc_rating -%}{%- endif -%}
-                   {%- if color_count > 0 -%}
-                   <div class="swatch__list_js swatch__list lh__1 nt_swatches_on_grid lazyloadt4s" data-colorCount="{{color_count}}" data-set4url="/?section_id=main-sw{{sett_equal}}" data-rendert4s="{{pr_url_js}}"></div>
-                   {%- endif -%}
-                   {%- if size_count > 0 and settings.pr_size_pos == '2' -%}
-                   <div class="product-attr pe_none"><p class="truncate mg__0 w__100">{{size_variants | join: ", "}}</p></div>
-                   {%- endif -%}
-                </div>
-                <div class="product-info__btns flex column mt__20">
-                   {%- render 'nt_add_qvcp',product:product,tooltip:tooltip,pr_id:pr_id,url_last:pr_url -%}
-                   {%- unless settings.hide_btns %}{% render 'nt_add_btn',product:product,tooltip:tooltip,url_last:pr_url %}{% endunless -%}
-                </div>
-              </div>
-            </div>
-          </div>
-            {% capture tempList %}
-              {{colorlist | append: color | append: " " }}
-            {% endcapture %}
-            {% assign colorlist = tempList %}
-          {% endunless %}
-        {% endfor %}
-      {% endif %}
-    {% endfor %}
-
-    {%- endcomment -%}
+{% endif %}
