@@ -82,9 +82,9 @@
       "settings": {
         "se_height": "cus_h",
         "use_custom_h": "1",
-        "h_des": "400px",
-        "h_tb": "400px",
-        "h_mb": "350px",
+        "h_des": "600px",
+        "h_tb": "600px",
+        "h_mb": "40px",
         "image": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-5736.jpg",
         "use_pr": false,
         "img_align": "center",
