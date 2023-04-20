@@ -15,11 +15,12 @@
       ],
       "settings": {
         "title": "Los Pioneros",
+        "min_height": "400px",
         "button": false,
         "btn_text": "Click Me",
+        "btn_url": "",
         "button_align": "center",
         "btn_background": "black",
-        "image": "shopify:\/\/shop_images\/Page_Header_1024x1024_9e175322-e038-452d-9378-3cf290e25993.jpg",
         "parallax": true,
         "color": "#000000",
         "overlay": 26,
@@ -40,11 +41,17 @@
       "type": "rich_text",
       "settings": {
         "title": "what is a pionero",
+        "heading_size": 32,
+        "heading_size_mb": 24,
+        "heading_spacing": 16,
         "sub_title": "",
-        "show_btn": true,
+        "show_btn": false,
         "btn_text": "apply to become a pionero",
         "button_align": "left",
         "btn_link": "#",
+        "btn_mt": 16,
+        "btn_color": "#000000",
+        "border_color": "#000000",
         "sub_font": "2",
         "header_align": "left",
         "style_title": "title_1",
@@ -52,6 +59,10 @@
         "show_clpr": false,
         "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus sit amet nisl sit amet tempus. Aliquam consequat neque nec ante condimentum, et aliquam ipsum fermentum. Suspendisse posuere enim non sem sollicitudin volutpat. In pellentesque nunc lacus, quis vehicula felis faucibus vitae. Mauris eget justo sit amet dolor tincidunt rutrum ut id mi. Fusce facilisis ligula vel scelerisque posuere. Curabitur massa ante, pretium ut dignissim vitae, placerat eget turpis. Praesent laoreet velit nec condimentum vulputate. In feugiat tortor a felis pretium, ac euismod dolor tincidunt. Etiam tristique dictum aliquam. In imperdiet dolor nulla, eu euismod metus tristique in. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras non felis at ex elementum vestibulum vitae sed est. Suspendisse sit amet velit fringilla, feugiat elit eget, hendrerit nulla.<\/p>",
         "align": "tl",
+        "text_height": 24,
+        "list_mg_left": 0,
+        "list_mg_top": 0,
+        "ul_marker": true,
         "layout": "container",
         "mg": "100px,,50px,",
         "pd": ",50px,,50px",
@@ -66,7 +77,6 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-06_at_8.52.30_AM.png",
             "title": "Cameron Cushman",
             "text": "<p>Fly Fisher<\/p>",
             "button_label": "",
@@ -79,7 +89,6 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-06_at_8.52.34_AM.png",
             "title": "Katie Cahn",
             "text": "<p>Fly Fisher<\/p>",
             "button_label": "",
@@ -92,7 +101,6 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-06_at_8.52.38_AM.png",
             "title": "Phil Helberg",
             "text": "<p>BBQ Pitmaster<\/p>",
             "button_label": "",
@@ -105,7 +113,6 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-06_at_8.52.44_AM.png",
             "title": "Jimmy Paenkhay",
             "text": "<p>Rock Climber<\/p>",
             "button_label": "",
@@ -118,7 +125,6 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-06_at_8.52.47_AM.png",
             "title": "Ruth Sims",
             "text": "<p>Fly Fisher<\/p>",
             "button_label": "",
@@ -131,7 +137,6 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-06_at_8.52.50_AM.png",
             "title": "Emily McCartney",
             "text": "<p>Western Lifestyle<\/p>",
             "button_label": "",
@@ -144,7 +149,6 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-06_at_8.52.55_AM.png",
             "title": "Thomas Csorba",
             "text": "<p>Musician<\/p>",
             "button_label": "",
@@ -157,7 +161,6 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-06_at_8.52.59_AM.png",
             "title": "Mike Tavares",
             "text": "<p>Whitewater Paddle Boarder<\/p>",
             "button_label": "",
@@ -170,7 +173,6 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-06_at_8.53.03_AM.png",
             "title": "Ben Woodward",
             "text": "<p>Fly Fisher<\/p>",
             "button_label": "",
@@ -183,7 +185,6 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-06_at_8.53.07_AM.png",
             "title": "Molo",
             "text": "<p>Surfer<\/p>",
             "button_label": "",
@@ -196,7 +197,6 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-06_at_8.53.10_AM.png",
             "title": "Natalie Bennion",
             "text": "<p>Fly Fisher<\/p>",
             "button_label": "",
@@ -209,7 +209,6 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-06_at_8.53.14_AM.png",
             "title": "Troy Gray",
             "text": "<p>Biker<\/p>",
             "button_label": "",
@@ -222,7 +221,6 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-06_at_8.53.19_AM.png",
             "title": "Doug Adams",
             "text": "<p>Head Chef<\/p>",
             "button_label": "",
@@ -235,7 +233,6 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-06_at_8.53.21_AM.png",
             "title": "Wade Morris",
             "text": "<p>Mountaineer<\/p>",
             "button_label": "",
@@ -248,7 +245,6 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-06_at_8.53.25_AM.png",
             "title": "Gabe Richarde",
             "text": "<p>Distiller<\/p>",
             "button_label": "",
@@ -261,7 +257,6 @@
           "type": "text_block",
           "settings": {
             "enable_image": true,
-            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-04-06_at_8.53.30_AM.png",
             "title": "Micah Horn",
             "text": "<p>Western Lifestyle<\/p>",
             "button_label": "",
@@ -331,11 +326,17 @@
       "type": "rich_text",
       "settings": {
         "title": "",
+        "heading_size": 32,
+        "heading_size_mb": 24,
+        "heading_spacing": 16,
         "sub_title": "",
         "show_btn": true,
         "btn_text": "Apply to become a pionero",
         "button_align": "left",
         "btn_link": "#",
+        "btn_mt": 16,
+        "btn_color": "#000000",
+        "border_color": "#000000",
         "sub_font": "2",
         "header_align": "center",
         "style_title": "title_1",
@@ -343,6 +344,10 @@
         "show_clpr": false,
         "content": "",
         "align": "tc",
+        "text_height": 24,
+        "list_mg_left": 0,
+        "list_mg_top": 0,
+        "ul_marker": true,
         "layout": "container",
         "mg": "50px,,100px,",
         "pd": ",,,50px",

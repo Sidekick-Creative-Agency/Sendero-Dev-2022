@@ -822,7 +822,7 @@
             "settings": {
               "mmtitle": "Company",
               "mm_btn_text": "Learn More",
-              "url": "",
+              "url": "shopify:\/\/pages\/about-us",
               "open_link": "_self",
               "col": "3"
             }
