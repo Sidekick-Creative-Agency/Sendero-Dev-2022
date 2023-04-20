@@ -2509,7 +2509,9 @@ a.slt4_btn.button:hover, a.slt4_btn.button {
     text-transform: uppercase;
 }
 .mini_cart_content p {
-    color: #999;
+    color: #696969;
+    font-size: 16px;
+    margin-top: 4px;
 }
 .mini_cart_content .mini_cart_item:hover {
     background-color: #f6f6f8 !important;
