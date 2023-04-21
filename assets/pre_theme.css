@@ -3291,7 +3291,7 @@ html.wf-fontawesome5free-n4-loading .fas:before {opacity: 0}
   .equal_nt.position_7 .nt_bg_lz img {object-position: center top}
   .equal_nt.position_8 .nt_bg_lz img {object-position: center center}
   .equal_nt.position_9 .nt_bg_lz img {object-position: center bottom}
-  .nt_pr .hover_img {
+  .nt_pr .hover_img, .nt_pr_sk .hover_img {
       width: 100%;
       -webkit-transition: all .4s ease-in-out;
       transition: all .4s ease-in-out;
@@ -6416,7 +6416,7 @@ font-weight: 400;
 .agree_checkbox a.text-link {
     text-decoration: underline;
 }
-.prs_bordered_grid_2 .products .nt_pr .product-image {
+.prs_bordered_grid_2 .products .nt_pr .product-image, .prs_bordered_grid_2 .products .nt_pr_sk .product-image {
     border: 1px solid #eee;
 }
 .prs_bordered_grid_3 .products:not(.articles) .flickityt4s-viewport:before {
@@ -6429,7 +6429,7 @@ font-weight: 400;
     pointer-events: none;
     display: block !important;
 }
-.prs_bordered_grid_3 .products:not(.articles) .flickityt4s-viewport .nt_pr {
+.prs_bordered_grid_3 .products:not(.articles) .flickityt4s-viewport .nt_pr, .prs_bordered_grid_3 .products:not(.articles) .flickityt4s-viewport .nt_pr_sk {
     min-height: 100%;
 }
 .prs_bordered_grid_3 .products .nt_pr, 
