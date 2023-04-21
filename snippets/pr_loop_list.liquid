@@ -69,9 +69,16 @@
     {% capture color %}
       {{ variant.options[index] }}
     {% endcapture %}
-
     {% unless colorlist contains color %}
+
     {% assign image = variant.featured_image %}
+    {% for pr_image in product.images %}
+    {% assign image_index = forloop.index %}
+      {% if image == pr_image %}
+        {% assign hoverImage = product.images[image_index] %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
     <div data-page="{{page_t4}}" class="col-lg-{{col}} col-md-{{col_tb}} col-{{col_mb}} pr_grid_item pr_list_item product nt_pr desgin__{{inc_pr}}">
       
       <div class="product-inner pr">
@@ -87,12 +94,18 @@
 
           {%- assign ratio = image.aspect_ratio -%}
           <div class="product-image pr oh lazyloadt4s">
-          <a class="db" href="{{pr_url_js}}">
+          <a class="db variant-link" href="{{pr_url}}">
               <div {% if image.alt contains 'imgt4_colorsolid' %}data-widths="[1]" {% endif %}class="pr_lazy_img main-img nt_img_ratio lazyloadt4s nt_bg_lz" data-id="{{image.id}}" data-bgset="{{ image | img_url: '1x1' }}" data-parent-fit="width" data-wiis data-ratio="{{image.ratio}}" data-sizes="auto" style="padding-top:{{ 1 | divided_by: ratio | times: 100}}%;"></div>
           </a>
+          <script>
+            document.addEventListener("DOMContentLoaded", function() {
+              document.querySelector('.variant-link').setAttribute('href', "{{pr_url}}?{{variant.id}}");
+            })
+            
+          </script>
           {%- if product.images.size > 1 -%}
-            {%- assign image = product.images[1] | default:settings.placeholder_img -%}         
-            <div {% if image.alt contains 'imgt4_colorsolid' %}data-widths="[1]" {% endif %}class="hover_img pa pe_none t__0 l__0 r__0 b__0 op__0"><div class="pr_lazy_img back-img pa lazyloadt4s nt_bg_lz" data-id="{{image.id}}" data-bgset="{{ image | img_url: '1x1' }}" data-parent-fit="width" data-wiis data-ratio="{{image.ratio}}" data-sizes="auto" style="padding-top:{{ 1 | divided_by: ratio | times: 100}}%"></div></div>  
+         
+            <div {% if hoverImage.alt contains 'imgt4_colorsolid' %}data-widths="[1]" {% endif %}class="hover_img pa pe_none t__0 l__0 r__0 b__0 op__0"><div class="pr_lazy_img back-img pa lazyloadt4s nt_bg_lz" data-id="{{hoverImage.id}}" data-bgset="{{ hoverImage | img_url: '1x1' }}" data-parent-fit="width" data-wiis data-ratio="{{hoverImage.ratio}}" data-sizes="auto" style="padding-top:{{ 1 | divided_by: ratio | times: 100}}%"></div></div>  
           {%- endif -%} 
         </div>
          {%- comment -%}  <div class="product-image pr oh lazyloadt4s" data-set4url="/?section_id=main-img{{sett_equal}}" data-rendert4s="{{pr_url_js}}">{%- if image != blank %}<h1>hello</h1><noscript><img class="pr_lazy_img main-img nt_img_ratio" loading="lazy" src="{{ image | img_url: '600x' }}" alt="{{ image.alt | escape }}"></noscript>{% endif %}<div class="nt_bg_lz nt_fk_lz"{% unless sett_equal %} style="padding-top:{{ 1 | divided_by: image.aspect_ratio | times: 100}}%;"{% endunless %}></div></div>{%- endcomment -%}
@@ -162,3 +175,4 @@
   </div>
 </div>
 {% endif %}
+
