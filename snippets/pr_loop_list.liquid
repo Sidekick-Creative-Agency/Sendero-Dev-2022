@@ -79,7 +79,7 @@
         {% break %}
       {% endif %}
     {% endfor %}
-    <div data-page="{{page_t4}}" class="col-lg-{{col}} col-md-{{col_tb}} col-{{col_mb}} pr_grid_item pr_list_item product nt_pr desgin__{{inc_pr}}">
+    <div data-page="{{page_t4}}" class="col-lg-{{col}} col-md-{{col_tb}} col-{{col_mb}} pr_grid_item pr_list_item product  nt_pr_{{variant.id}} desgin__{{inc_pr}}">
       
       <div class="product-inner pr">
         {%- if countdown != blank and use_cdt -%}
@@ -91,24 +91,21 @@
           </div>
         {%- else -%}
           {%- render 'product_labels',product:product -%}
-
           {%- assign ratio = image.aspect_ratio -%}
           <div class="product-image pr oh lazyloadt4s">
-          <a class="db variant-link" href="{{pr_url}}">
+            <a class="db variant-link" href="{{pr_url}}">
               <div {% if image.alt contains 'imgt4_colorsolid' %}data-widths="[1]" {% endif %}class="pr_lazy_img main-img nt_img_ratio lazyloadt4s nt_bg_lz" data-id="{{image.id}}" data-bgset="{{ image | img_url: '1x1' }}" data-parent-fit="width" data-wiis data-ratio="{{image.ratio}}" data-sizes="auto" style="padding-top:{{ 1 | divided_by: ratio | times: 100}}%;"></div>
-          </a>
+            </a>
+            {%- if product.images.size > 1 -%}
+              <div {% if hoverImage.alt contains 'imgt4_colorsolid' %}data-widths="[1]" {% endif %}class="hover_img pa pe_none t__0 l__0 r__0 b__0 op__0"><div class="pr_lazy_img back-img pa lazyloadt4s nt_bg_lz" data-id="{{hoverImage.id}}" data-bgset="{{ hoverImage | img_url: '1x1' }}" data-parent-fit="width" data-wiis data-ratio="{{hoverImage.ratio}}" data-sizes="auto" style="padding-top:{{ 1 | divided_by: ratio | times: 100}}%"></div></div>  
+            {%- endif -%} 
+          </div>
           <script>
-            document.addEventListener("DOMContentLoaded", function() {
-              document.querySelector('.variant-link').setAttribute('href', "{{pr_url}}?{{variant.id}}");
-            })
-            
+            var varProduct = $(".nt_pr_{{variant.id}}");
+            var href = '{{pr_url}}';
+            var vid = '{{variant.id}}';
+            UpdateVariantIDforPrGrid(href, varProduct, vid);
           </script>
-          {%- if product.images.size > 1 -%}
-         
-            <div {% if hoverImage.alt contains 'imgt4_colorsolid' %}data-widths="[1]" {% endif %}class="hover_img pa pe_none t__0 l__0 r__0 b__0 op__0"><div class="pr_lazy_img back-img pa lazyloadt4s nt_bg_lz" data-id="{{hoverImage.id}}" data-bgset="{{ hoverImage | img_url: '1x1' }}" data-parent-fit="width" data-wiis data-ratio="{{hoverImage.ratio}}" data-sizes="auto" style="padding-top:{{ 1 | divided_by: ratio | times: 100}}%"></div></div>  
-          {%- endif -%} 
-        </div>
-         {%- comment -%}  <div class="product-image pr oh lazyloadt4s" data-set4url="/?section_id=main-img{{sett_equal}}" data-rendert4s="{{pr_url_js}}">{%- if image != blank %}<h1>hello</h1><noscript><img class="pr_lazy_img main-img nt_img_ratio" loading="lazy" src="{{ image | img_url: '600x' }}" alt="{{ image.alt | escape }}"></noscript>{% endif %}<div class="nt_bg_lz nt_fk_lz"{% unless sett_equal %} style="padding-top:{{ 1 | divided_by: image.aspect_ratio | times: 100}}%;"{% endunless %}></div></div>{%- endcomment -%}
         {%- endif -%}
         <div class="product-info">
           <div class="product-info__inner">
@@ -176,3 +173,17 @@
 </div>
 {% endif %}
 
+<script>
+  function UpdateVariantIDforPrGrid(href,product,vid) {
+
+if (href.indexOf("?variant=") > -1) {
+product.find('a').attr('href',href.split('?variant=')[0]+'?variant='+vid);
+} else if (href.indexOf("?") > -1) {
+product.find('a').attr('href',href.split('&variant=')[0]+'&variant='+vid);
+} else {
+product.find('a').attr('href',href+'?variant='+vid);
+}
+product.find('.js_add_qv, .js__qs').attr('data-id',vid);
+console.log(product.find('a').attr('href'));
+};
+</script>
