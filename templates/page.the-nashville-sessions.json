@@ -159,13 +159,23 @@
             "artist_name": "American Aquarium",
             "song_name": "The Long Haul"
           }
+        },
+        "ba973d53-3875-4dd6-88a9-4851a992971d": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/youtu.be\/sUUwcvHLmfA",
+            "grid_link": "https:\/\/youtube.com\/embed\/sUUwcvHLmfA",
+            "artist_name": "Mary Bragg",
+            "song_name": "Nothing More To The Story"
+          }
         }
       },
       "block_order": [
         "d9ee8fce-30ae-4fcd-8626-8a3eb3658f57",
         "3d90176d-ed62-4877-91fb-3bad8b0bc45d",
         "f8a559ce-7caf-4f6a-aaed-420b7eb732d0",
-        "b95bd555-62be-4d43-a7f7-7ecd5f230e8f"
+        "b95bd555-62be-4d43-a7f7-7ecd5f230e8f",
+        "ba973d53-3875-4dd6-88a9-4851a992971d"
       ],
       "settings": {
         "heading": "Session Videos",
