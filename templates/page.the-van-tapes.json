@@ -129,12 +129,32 @@
             "artist_name": "John Baumann",
             "song_name": "Here I Come"
           }
+        },
+        "43f6a8ef-88da-48bf-9794-1a1f51516c68": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/youtu.be\/46YlAu5-0So",
+            "grid_link": "https:\/\/youtube.com\/embed\/46YlAu5-0So",
+            "artist_name": "Silvie",
+            "song_name": "Wild World"
+          }
+        },
+        "96103c12-5f06-40ab-9f26-318ccb717636": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/youtu.be\/R2i6HF_kp7A",
+            "grid_link": "https:\/\/youtube.com\/embed\/R2i6HF_kp7A",
+            "artist_name": "Brody Price & The Tasteful Nudes",
+            "song_name": "Daddy Lessons"
+          }
         }
       },
       "block_order": [
         "014deede-b8b4-4b43-9c68-23be9945d862",
         "d93d4ee2-bb7f-4459-8fef-9adf1a62b949",
-        "03f0121e-a467-48f7-9729-57a194d49786"
+        "03f0121e-a467-48f7-9729-57a194d49786",
+        "43f6a8ef-88da-48bf-9794-1a1f51516c68",
+        "96103c12-5f06-40ab-9f26-318ccb717636"
       ],
       "settings": {
         "heading": "Session Videos",
