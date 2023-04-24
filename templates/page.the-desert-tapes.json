@@ -123,11 +123,31 @@
             "artist_name": "The Lagoons",
             "song_name": "Morning"
           }
+        },
+        "11c8aa68-8af8-4ce5-8efe-3cdf52877115": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/youtu.be\/mErKbub1xpc",
+            "grid_link": "https:\/\/youtube.com\/embed\/mErKbub1xpc",
+            "artist_name": "Gene Evaro Jr",
+            "song_name": "Take You There"
+          }
+        },
+        "14ce89fc-9ec6-43ed-bfe2-2900d58f3324": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/youtu.be\/RfNSRPs8TBc",
+            "grid_link": "https:\/\/youtube.com\/embed\/RfNSRPs8TBc",
+            "artist_name": "Gene Evaro Jr",
+            "song_name": "Music's My Girlfriend"
+          }
         }
       },
       "block_order": [
         "110a63a2-1457-4d56-800e-819bfa6b9ae2",
-        "35572ec2-f6ab-46fe-b3b2-eba9768ef915"
+        "35572ec2-f6ab-46fe-b3b2-eba9768ef915",
+        "11c8aa68-8af8-4ce5-8efe-3cdf52877115",
+        "14ce89fc-9ec6-43ed-bfe2-2900d58f3324"
       ],
       "settings": {
         "heading": "Session Videos",
