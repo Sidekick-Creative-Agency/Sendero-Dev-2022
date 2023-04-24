@@ -123,6 +123,30 @@
     },
     "sk-session-group-grid": {
       "type": "sk-session-group-grid",
+      "blocks": {
+        "d9ee8fce-30ae-4fcd-8626-8a3eb3658f57": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/youtu.be\/EadUYew2OGE",
+            "grid_link": "https:\/\/youtube.com\/embed\/EadUYew2OGE",
+            "artist_name": "The Wild Feathers",
+            "song_name": "No Man's Land"
+          }
+        },
+        "3d90176d-ed62-4877-91fb-3bad8b0bc45d": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/youtu.be\/lmWi9p0YJHE",
+            "grid_link": "https:\/\/youtube.com\/embed\/lmWi9p0YJHE",
+            "artist_name": "The Wild Feathers",
+            "song_name": "Fire"
+          }
+        }
+      },
+      "block_order": [
+        "d9ee8fce-30ae-4fcd-8626-8a3eb3658f57",
+        "3d90176d-ed62-4877-91fb-3bad8b0bc45d"
+      ],
       "settings": {
         "heading": "Session Videos",
         "heading_mg_bot": 32,
