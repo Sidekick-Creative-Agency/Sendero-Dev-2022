@@ -186,6 +186,15 @@
             "artist_name": "Thad Cockrell",
             "song_name": "Slow And Steady"
           }
+        },
+        "9dfbeb6b-f431-47d6-a080-87d512c85147": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/youtu.be\/PsIJQjVPpoA",
+            "grid_link": "https:\/\/youtube.com\/embed\/PsIJQjVPpoA",
+            "artist_name": "Matthew Perryman Jones",
+            "song_name": "Happy"
+          }
         }
       },
       "block_order": [
@@ -195,7 +204,8 @@
         "b95bd555-62be-4d43-a7f7-7ecd5f230e8f",
         "ba973d53-3875-4dd6-88a9-4851a992971d",
         "0da747cf-dc74-43bd-b316-2c677a942e7c",
-        "d7b3a199-19a8-4fb4-91a5-00c9e8155ce9"
+        "d7b3a199-19a8-4fb4-91a5-00c9e8155ce9",
+        "9dfbeb6b-f431-47d6-a080-87d512c85147"
       ],
       "settings": {
         "heading": "Session Videos",
