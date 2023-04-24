@@ -102,6 +102,30 @@
     },
     "sk-session-group-grid": {
       "type": "sk-session-group-grid",
+      "blocks": {
+        "014deede-b8b4-4b43-9c68-23be9945d862": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/youtu.be\/g6aVTYsh1PA",
+            "grid_link": "https:\/\/youtube.com\/embed\/g6aVTYsh1PA",
+            "artist_name": "Thomas Csorba",
+            "song_name": "Jericho"
+          }
+        },
+        "d93d4ee2-bb7f-4459-8fef-9adf1a62b949": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/youtu.be\/wvW9Gl74nuU",
+            "grid_link": "https:\/\/youtube.com\/embed\/wvW9Gl74nuU",
+            "artist_name": "Dylan Washington",
+            "song_name": "Biscuits & Honey"
+          }
+        }
+      },
+      "block_order": [
+        "014deede-b8b4-4b43-9c68-23be9945d862",
+        "d93d4ee2-bb7f-4459-8fef-9adf1a62b949"
+      ],
       "settings": {
         "heading": "Session Videos",
         "heading_mg_bot": 32,
