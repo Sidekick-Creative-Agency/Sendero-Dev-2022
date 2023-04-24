@@ -231,6 +231,15 @@
             "artist_name": "Molly Parden",
             "song_name": "These Are The Times"
           }
+        },
+        "f13721a5-a0ff-4e7e-b380-0c8b4b3588b8": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/youtu.be\/2XtVL1k7LrE",
+            "grid_link": "https:\/\/youtube.com\/embed\/2XtVL1k7LrE",
+            "artist_name": "James McNair",
+            "song_name": "Find The Matches"
+          }
         }
       },
       "block_order": [
@@ -245,7 +254,8 @@
         "aa033d76-1bdb-44cf-996a-bd5744a6ea8b",
         "8d53c839-8f2e-4323-b530-d54488f74cca",
         "c4855005-e729-4287-9861-789b95660e1a",
-        "1aeb7caf-00bd-4197-aac2-45c333008bdb"
+        "1aeb7caf-00bd-4197-aac2-45c333008bdb",
+        "f13721a5-a0ff-4e7e-b380-0c8b4b3588b8"
       ],
       "settings": {
         "heading": "Session Videos",
