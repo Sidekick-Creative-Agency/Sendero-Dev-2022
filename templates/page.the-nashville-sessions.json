@@ -204,6 +204,15 @@
             "artist_name": "Silvie",
             "song_name": "Selfish Love"
           }
+        },
+        "8d53c839-8f2e-4323-b530-d54488f74cca": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/youtu.be\/CoR_U0VfZss",
+            "grid_link": "https:\/\/youtube.com\/embed\/CoR_U0VfZss",
+            "artist_name": "Smooth Hound Smith",
+            "song_name": "Friend Of The Devil"
+          }
         }
       },
       "block_order": [
@@ -215,7 +224,8 @@
         "0da747cf-dc74-43bd-b316-2c677a942e7c",
         "d7b3a199-19a8-4fb4-91a5-00c9e8155ce9",
         "9dfbeb6b-f431-47d6-a080-87d512c85147",
-        "aa033d76-1bdb-44cf-996a-bd5744a6ea8b"
+        "aa033d76-1bdb-44cf-996a-bd5744a6ea8b",
+        "8d53c839-8f2e-4323-b530-d54488f74cca"
       ],
       "settings": {
         "heading": "Session Videos",
