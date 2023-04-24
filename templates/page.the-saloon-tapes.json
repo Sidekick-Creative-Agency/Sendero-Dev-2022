@@ -120,11 +120,21 @@
             "artist_name": "Cody Hibbard",
             "song_name": "The Truth"
           }
+        },
+        "fe861f5c-7d7b-4bf4-9add-9340bcca0dba": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/youtu.be\/ONcnLW0bb1E",
+            "grid_link": "https:\/\/youtube.com\/embed\/ONcnLW0bb1E",
+            "artist_name": "The Vandoliers",
+            "song_name": "Every Saturday Night"
+          }
         }
       },
       "block_order": [
         "ad73d8e4-2ad7-4b65-8222-79775e96a0fd",
-        "76368b81-1ba6-4afb-8e07-34753007b555"
+        "76368b81-1ba6-4afb-8e07-34753007b555",
+        "fe861f5c-7d7b-4bf4-9add-9340bcca0dba"
       ],
       "settings": {
         "heading": "Session Videos",
