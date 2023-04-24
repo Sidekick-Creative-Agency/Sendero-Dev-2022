@@ -16,7 +16,7 @@
             "show_pr_vendor": false,
             "show_sku": false,
             "show_barcode": false,
-            "show_available": true,
+            "show_available": false,
             "show_category_product": false,
             "show_tag_product": false
           }
@@ -77,11 +77,6 @@
           "type": "add",
           "settings": {
             "title": "Details"
-          }
-        },
-        "7a332198-4c02-40d4-932e-a0b39c794fc3": {
-          "type": "shopify:\/\/apps\/amai-preorder-manager-notify\/blocks\/preorder-button-block\/7053ce2a-18da-4e24-98b3-3fdd20b313e7",
-          "settings": {
           }
         }
       },
