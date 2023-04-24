@@ -129,12 +129,22 @@
             "artist_name": "Joel Ansett",
             "song_name": "Ease"
           }
+        },
+        "592fb197-60c6-431f-ad0a-8271d54a55e4": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/youtu.be\/A0mag9ZwQcM",
+            "grid_link": "https:\/\/youtube.com\/embed\/A0mag9ZwQcM",
+            "artist_name": "Dan Decristofaro",
+            "song_name": "Give Me Your Love"
+          }
         }
       },
       "block_order": [
         "f7128a5b-16b0-487b-b920-9c87a671b49e",
         "a76962d0-235d-4caa-8c94-aadcc471a6eb",
-        "b1606dd2-fd13-4740-850a-56f1bf5184fe"
+        "b1606dd2-fd13-4740-850a-56f1bf5184fe",
+        "592fb197-60c6-431f-ad0a-8271d54a55e4"
       ],
       "settings": {
         "heading": "Session Videos",
