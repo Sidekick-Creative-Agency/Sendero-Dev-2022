@@ -168,6 +168,15 @@
             "artist_name": "Mary Bragg",
             "song_name": "Nothing More To The Story"
           }
+        },
+        "0da747cf-dc74-43bd-b316-2c677a942e7c": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/youtu.be\/-ngsbIh4Qew",
+            "grid_link": "https:\/\/youtube.com\/embed\/-ngsbIh4Qew",
+            "artist_name": "Moda Spira",
+            "song_name": "Bed"
+          }
         }
       },
       "block_order": [
@@ -175,7 +184,8 @@
         "3d90176d-ed62-4877-91fb-3bad8b0bc45d",
         "f8a559ce-7caf-4f6a-aaed-420b7eb732d0",
         "b95bd555-62be-4d43-a7f7-7ecd5f230e8f",
-        "ba973d53-3875-4dd6-88a9-4851a992971d"
+        "ba973d53-3875-4dd6-88a9-4851a992971d",
+        "0da747cf-dc74-43bd-b316-2c677a942e7c"
       ],
       "settings": {
         "heading": "Session Videos",
