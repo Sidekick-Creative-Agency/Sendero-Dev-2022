@@ -138,13 +138,23 @@
             "artist_name": "Dan Decristofaro",
             "song_name": "Give Me Your Love"
           }
+        },
+        "429288fa-9968-4054-af38-89c1f5f7d36a": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/youtu.be\/Jvqz0U2kuHQ",
+            "grid_link": "https:\/\/youtube.com\/embed\/Jvqz0U2kuHQ",
+            "artist_name": "Alright Alright",
+            "song_name": "Over The Edge"
+          }
         }
       },
       "block_order": [
         "f7128a5b-16b0-487b-b920-9c87a671b49e",
         "a76962d0-235d-4caa-8c94-aadcc471a6eb",
         "b1606dd2-fd13-4740-850a-56f1bf5184fe",
-        "592fb197-60c6-431f-ad0a-8271d54a55e4"
+        "592fb197-60c6-431f-ad0a-8271d54a55e4",
+        "429288fa-9968-4054-af38-89c1f5f7d36a"
       ],
       "settings": {
         "heading": "Session Videos",
