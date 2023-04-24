@@ -222,6 +222,15 @@
             "artist_name": "Seth Alley",
             "song_name": "Love or a Lover"
           }
+        },
+        "1aeb7caf-00bd-4197-aac2-45c333008bdb": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/youtu.be\/lv9uNBjjiD4",
+            "grid_link": "https:\/\/youtube.com\/embed\/lv9uNBjjiD4",
+            "artist_name": "Molly Parden",
+            "song_name": "These Are The Times"
+          }
         }
       },
       "block_order": [
@@ -235,7 +244,8 @@
         "9dfbeb6b-f431-47d6-a080-87d512c85147",
         "aa033d76-1bdb-44cf-996a-bd5744a6ea8b",
         "8d53c839-8f2e-4323-b530-d54488f74cca",
-        "c4855005-e729-4287-9861-789b95660e1a"
+        "c4855005-e729-4287-9861-789b95660e1a",
+        "1aeb7caf-00bd-4197-aac2-45c333008bdb"
       ],
       "settings": {
         "heading": "Session Videos",
