@@ -147,6 +147,15 @@
             "artist_name": "Brody Price & The Tasteful Nudes",
             "song_name": "Daddy Lessons"
           }
+        },
+        "2e3a64c4-ace2-4275-8ac6-4f6c9639fb0c": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/youtu.be\/dTXJkHPr9uM",
+            "grid_link": "https:\/\/youtube.com\/embed\/dTXJkHPr9uM",
+            "artist_name": "River Tramps",
+            "song_name": "Mare And The Maiden"
+          }
         }
       },
       "block_order": [
@@ -154,7 +163,8 @@
         "d93d4ee2-bb7f-4459-8fef-9adf1a62b949",
         "03f0121e-a467-48f7-9729-57a194d49786",
         "43f6a8ef-88da-48bf-9794-1a1f51516c68",
-        "96103c12-5f06-40ab-9f26-318ccb717636"
+        "96103c12-5f06-40ab-9f26-318ccb717636",
+        "2e3a64c4-ace2-4275-8ac6-4f6c9639fb0c"
       ],
       "settings": {
         "heading": "Session Videos",
