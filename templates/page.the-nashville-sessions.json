@@ -195,6 +195,15 @@
             "artist_name": "Matthew Perryman Jones",
             "song_name": "Happy"
           }
+        },
+        "aa033d76-1bdb-44cf-996a-bd5744a6ea8b": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/youtu.be\/Tisl88FApks",
+            "grid_link": "https:\/\/youtube.com\/embed\/Tisl88FApks",
+            "artist_name": "Silvie",
+            "song_name": "Selfish Love"
+          }
         }
       },
       "block_order": [
@@ -205,7 +214,8 @@
         "ba973d53-3875-4dd6-88a9-4851a992971d",
         "0da747cf-dc74-43bd-b316-2c677a942e7c",
         "d7b3a199-19a8-4fb4-91a5-00c9e8155ce9",
-        "9dfbeb6b-f431-47d6-a080-87d512c85147"
+        "9dfbeb6b-f431-47d6-a080-87d512c85147",
+        "aa033d76-1bdb-44cf-996a-bd5744a6ea8b"
       ],
       "settings": {
         "heading": "Session Videos",
