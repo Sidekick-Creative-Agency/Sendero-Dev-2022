@@ -213,6 +213,15 @@
             "artist_name": "Smooth Hound Smith",
             "song_name": "Friend Of The Devil"
           }
+        },
+        "c4855005-e729-4287-9861-789b95660e1a": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/youtu.be\/wWrqmfidzrQ",
+            "grid_link": "https:\/\/youtube.com\/embed\/wWrqmfidzrQ",
+            "artist_name": "Seth Alley",
+            "song_name": "Love or a Lover"
+          }
         }
       },
       "block_order": [
@@ -225,7 +234,8 @@
         "d7b3a199-19a8-4fb4-91a5-00c9e8155ce9",
         "9dfbeb6b-f431-47d6-a080-87d512c85147",
         "aa033d76-1bdb-44cf-996a-bd5744a6ea8b",
-        "8d53c839-8f2e-4323-b530-d54488f74cca"
+        "8d53c839-8f2e-4323-b530-d54488f74cca",
+        "c4855005-e729-4287-9861-789b95660e1a"
       ],
       "settings": {
         "heading": "Session Videos",
