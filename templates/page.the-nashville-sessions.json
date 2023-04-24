@@ -150,12 +150,22 @@
             "artist_name": "American Aquarium",
             "song_name": "The Luckier You Get"
           }
+        },
+        "b95bd555-62be-4d43-a7f7-7ecd5f230e8f": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/youtu.be\/nyzR4mmN1fM",
+            "grid_link": "https:\/\/youtube.com\/embed\/nyzR4mmN1fM",
+            "artist_name": "American Aquarium",
+            "song_name": "The Long Haul"
+          }
         }
       },
       "block_order": [
         "d9ee8fce-30ae-4fcd-8626-8a3eb3658f57",
         "3d90176d-ed62-4877-91fb-3bad8b0bc45d",
-        "f8a559ce-7caf-4f6a-aaed-420b7eb732d0"
+        "f8a559ce-7caf-4f6a-aaed-420b7eb732d0",
+        "b95bd555-62be-4d43-a7f7-7ecd5f230e8f"
       ],
       "settings": {
         "heading": "Session Videos",
