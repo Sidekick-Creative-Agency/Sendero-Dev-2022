@@ -1,0 +1,72 @@
+{%- liquid 
+    assign se_stts = section.settings
+    assign backImg = se_stts.back_img
+    assign foreImg = se_stts.fore_img
+    -%} 
+<div class="troub-container">
+    <div class='troub-slider-container'>
+        <div class="troub-img troub-background-img lazyloadt4s nt_bg_lz pa t__0 l__0 r__0 b__0" data-bgset="{{ backImg | img_url: '1x1' }}" data-ratio="{{backImg.aspect_ratio}}" data-sizes="auto" data-parent-fit="cover"></div>
+        <div class="troub-img troub-foreground-img lazyloadt4s nt_bg_lz pa t__0 l__0 r__0 b__0" data-bgset="{{ foreImg | img_url: '1x1' }}" data-ratio="{{foreImg.aspect_ratio}}" data-sizes="auto" data-parent-fit="cover"></div>
+        <input type="range" min="1" max="100" value="50" class="troub-slider" name='slider' id="troub-slider">
+        <div class='troub-slider-button'></div>
+    </div>
+</div>
+
+
+<script>
+    $("#troub-slider").on("input change", (e)=>{
+  const sliderPos = e.target.value;
+  // Update the width of the foreground image
+  $('.troub-foreground-img').css('width', `${sliderPos}%`)
+  // Update the position of the slider button
+  $('.troub-slider-button').css('left', `calc(${sliderPos}% - 18px)`)
+});
+</script>
+
+{%- assign arr_mg = se_stts.mg | split:',' -%}
+{%- assign arr_mg_mb = se_stts.mg_mb | split:',' -%}
+{%- assign arr_pd = se_stts.pd | split:',' -%}
+{%- assign arr_pd_mb = se_stts.pd_mb | split:',' -%}
+<style>
+    .troub-container {
+    margin-top: {{arr_mg[0]}};
+    margin-right: {{arr_mg[1]}};
+    margin-bottom: {{arr_mg[2]}};
+    margin-left: {{arr_mg[3]}};
+    padding-top: {{arr_pd[0]}};
+    padding-right: {{arr_pd[1]}};
+    padding-bottom: {{arr_pd[2]}};
+    padding-left: {{arr_pd[3]}};
+  }
+</style>
+{% schema %}
+{
+   "name": "Troubadours Image Compare",
+  "settings": [
+   {
+    "type": "image_picker",
+    "id": "back_img",
+    "label": "Old Image"
+   },
+   {
+    "type": "image_picker",
+    "id": "fore_img",
+    "label": "New Image"
+   },
+  {
+    "type": "text",
+    "id": "mg",
+    "label": "Margin",
+    "default": "32px,,32px,",
+    "placeholder": "32px,,32px,"
+  },
+  {
+    "type": "text",
+    "id": "pd",
+    "label": "Padding",
+    "default": ",64px,,64px",
+    "placeholder": ",64px,,64px"
+  }
+  ]
+}
+{% endschema %}

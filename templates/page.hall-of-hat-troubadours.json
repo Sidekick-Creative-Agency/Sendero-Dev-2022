@@ -1,0 +1,48 @@
+{
+  "sections": {
+    "heading": {
+      "type": "pages_heading",
+      "blocks": {
+        "dc6f0dbe-378a-446b-aebc-6631552caa2c": {
+          "type": "1",
+          "settings": {
+            "color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "dc6f0dbe-378a-446b-aebc-6631552caa2c"
+      ],
+      "settings": {
+        "title": "Hall of Hat Troubadours",
+        "min_height": "400px",
+        "button": false,
+        "btn_text": "",
+        "btn_url": "",
+        "button_align": "center",
+        "btn_background": "transparent",
+        "image": "shopify:\/\/shop_images\/TSHIRT_RESTOCK.jpg",
+        "parallax": true,
+        "color": "#000000",
+        "overlay": 48,
+        "padding": 50,
+        "paddingmb": 50,
+        "bg_pos": "center center",
+        "bg_repeat": "no-repeat",
+        "bg_size": "cover",
+        "bg_att": "scroll"
+      }
+    },
+    "troubadours-slider": {
+      "type": "troubadours-slider",
+      "settings": {
+        "back_img": "shopify:\/\/shop_images\/Womens_AboutSenderoGear2.jpg",
+        "fore_img": "shopify:\/\/shop_images\/Salmon-Boise_Email_Shoot-0019.jpg"
+      }
+    }
+  },
+  "order": [
+    "heading",
+    "troubadours-slider"
+  ]
+}

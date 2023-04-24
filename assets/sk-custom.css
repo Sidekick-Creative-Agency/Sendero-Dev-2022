@@ -2655,7 +2655,6 @@ a.prev.page-numbers {
     width: 100%;
     height: 100%;
     aspect-ratio: 16/9;
-    /* max-width: calc(300px * (16 / 9)); */
     object-fit: contain;
     margin-right: 10px;
     position: relative;
@@ -2665,16 +2664,11 @@ a.prev.page-numbers {
 .sk-session-grid-indiv-container a {
     cursor: pointer;
 }
-.sk-session-grid-video {
-    /* padding: 8px; */
-    /* max-width: calc(300px * (16 / 9)); */
-}
 .sk-session-grid-indiv-container iframe {
     position: absolute;
     height:150%;
     top: 50%;
     right: 0;
-    /* bottom: 0; */
     width: 200%;
     left: -50%;
     transform: translateY(-50%);
@@ -2692,10 +2686,6 @@ a.prev.page-numbers {
 }
 .image-text-quote.container {
     padding: 0;
-}
-
-#shopify-section-template--16002783641857__1650466987b717892b, #shopify-section-template--16002783641857__1650467056c6dc0d08, .type_rich_text {
-    /* margin: 0 25px; */
 }
 .sendero-session-item-popup {
     position: fixed;
@@ -2790,22 +2780,57 @@ a.prev.page-numbers {
    }
 }
 
+/*-------------------------------------------
 
+HALL OF HAT TROUBADOURS Page 
 
-/* ----- Tablet ------ */
-@media screen and (max-width: 1023px) {
+--------------------------------------------*/
+  
+    .troub-slider-container {
+        position: relative;
+        width: 900px;
+        height: 600px;
+    }
+    .troub-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background-size: cover;
+        z-index: 1;
+    }
+    .troub-background-img {
+        width: 100%;
+    }
+    .troub-foreground-img {
+      width: 50%;
+      z-index: 2;
+    }
     
-}
+    .troub-slider {
+        position: absolute;
+        -webkit-appearance: none;
+        appearance: none;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        outline: none;
+        margin: 0;
+        transition: all .2s;
+        z-index: 3;
+    }
+    .slider-button {
+      pointer-events: none;
+      position: absolute;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background-color: white;
+      left: calc(50%);
+      top: calc(50%);
+      z-index: 3;
+    }
 
-/* ----- Mobile ----- */
-@media screen and (max-width: 767px) {
-    
-}
-
-/*---------------- Remove color swatches on grid pages -------------------*/
-.nt_swatches_on_grid {
-    /* display: none !important; */
-}
 
 /* ----- Tablet ------ */
 @media screen and (max-width: 1023px) {
