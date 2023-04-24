@@ -141,11 +141,21 @@
             "artist_name": "The Wild Feathers",
             "song_name": "Fire"
           }
+        },
+        "f8a559ce-7caf-4f6a-aaed-420b7eb732d0": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/youtu.be\/58QSqL3QAho",
+            "grid_link": "https:\/\/youtube.com\/embed\/58QSqL3QAho",
+            "artist_name": "American Aquarium",
+            "song_name": "The Luckier You Get"
+          }
         }
       },
       "block_order": [
         "d9ee8fce-30ae-4fcd-8626-8a3eb3658f57",
-        "3d90176d-ed62-4877-91fb-3bad8b0bc45d"
+        "3d90176d-ed62-4877-91fb-3bad8b0bc45d",
+        "f8a559ce-7caf-4f6a-aaed-420b7eb732d0"
       ],
       "settings": {
         "heading": "Session Videos",
