@@ -120,11 +120,21 @@
             "artist_name": "Dylan Washington",
             "song_name": "Biscuits & Honey"
           }
+        },
+        "03f0121e-a467-48f7-9729-57a194d49786": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/youtu.be\/obb0YPtSxnU",
+            "grid_link": "https:\/\/youtube.com\/embed\/obb0YPtSxnU",
+            "artist_name": "John Baumann",
+            "song_name": "Here I Come"
+          }
         }
       },
       "block_order": [
         "014deede-b8b4-4b43-9c68-23be9945d862",
-        "d93d4ee2-bb7f-4459-8fef-9adf1a62b949"
+        "d93d4ee2-bb7f-4459-8fef-9adf1a62b949",
+        "03f0121e-a467-48f7-9729-57a194d49786"
       ],
       "settings": {
         "heading": "Session Videos",
