@@ -2793,12 +2793,11 @@ HALL OF HAT TROUBADOURS Page
     display: flex;
     justify-content: center;
     align-items: stretch;
-    overflow: hidden;
-    max-width:
 }
 .troub-slider-container {
     position: relative;
     display: flex;
+    overflow: hidden;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -2855,8 +2854,6 @@ HALL OF HAT TROUBADOURS Page
     height: 32px;
     border-radius: 50%;
     background-color: white;
-    /* left: calc(50% - 19.5px);
-    top: calc(50% - 19px); */
     z-index: 3;
 }
 .troub-slider-button {
@@ -2918,9 +2915,168 @@ HALL OF HAT TROUBADOURS Page
     content: "–";
     position: absolute;
     left: -24px;
-    top: 50%;
-    transform: translateY(-50%);
-
+    top: 0;
+}
+.troubadours-grid {
+    max-width: 1480px;
+    margin: auto;
+}
+.troub-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.troub-grid-item-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 100%;
+    overflow: hidden;
+}
+.troub-grid-item-visible-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+.troub-grid-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    /* z-index: 1; */
+}
+.troub-grid-hover-image {
+    z-index: -1;
+    transition: transform 1.25s ease;
+}
+.troub-grid-item-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+}
+.troub-grid-item-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity .3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #CCC;
+    z-index: 1;
+    opacity: 0;
+    padding: 16px;
+    text-align: center;
+}
+.troub-grid-item-content h3 {
+    color: #FFF;
+    z-index: 2;
+}
+.troub-grid-item-product {
+    font-family: "Oswald", sans-serif;
+    z-index: 2;
+}
+.troub-grid-item-container:hover .troub-grid-item-content, .troub-grid-item-container:focus .troub-grid-item-content {
+    opacity: 1;
+}
+.troub-grid-item-container:hover .troub-grid-item-content .troub-grid-hover-image, .troub-grid-item-container:focus .troub-grid-item-content .troub-grid-hover-image {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.troub-grid-item-lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,.5);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s ease;
+}
+.troub-grid-item-lightbox.active {
+    opacity: 1;
+    visibility: visible;
+}
+.troub-grid-item-lightbox-images-container {
+    width: 100%;
+    max-width: 900px;
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    position: relative;
+    background-color: #000;
+    padding: 32px;
+}
+.troub-grid-item-lightbox-featured-image {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 66.66%;
+    overflow: hidden;
+    position: relative;
+    aspect-ratio: 3/2;
+}
+.troub-grid-item-lightbox-thumbnails-container {
+    width: 100%;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    height: 100%;
+    flex-grow: 1;
+    
+    /* min-height: 144px; */
+}
+.troub-grid-item-lightbox-thumbnail {
+    position: relative;
+    width: 20%;
+    height: 100%;
+    /* padding-bottom: 25%; */
+    aspect-ratio: 3/2;
+    cursor: pointer;
+}
+.troub-lightbox-close {
+    position: absolute;
+    top: -32px;
+    right: -32px;
+    cursor: pointer;
+    font-size: 28px;
+    color: #FFFFFF;
+    cursor: pointer;
+    width: fit-content;
+    height: fit-content;
+    
+}
+.troub-lightbox-close:hover {
+    color: #FFF;
+}
+.troub-lightbox-close:focus {
+    border: 1px solid #04A4A2;
+}
+.troub-grid-item-lightbox-button-container {
+    display: flex;
+}
+.troub-grid-item-lightbox-button-container button {
+    border: none !important
+}
+.troub-grid-item-lightbox-button-container button:hover {
+    background-color: #000 !important;
 }
 /* ----- Tablet ------ */
 @media screen and (max-width: 1023px) {
@@ -2929,7 +3085,35 @@ HALL OF HAT TROUBADOURS Page
 
 /* ----- Mobile ----- */
 @media screen and (max-width: 767px) {
-    
+    .troub-container {
+        flex-direction: column;
+    }
+    .troub-grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+    .troub-grid-item-lightbox-images-container {
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+        /* height: 40vh; */
+        /* min-height: 400px; */
+        min-height: unset;
+        max-height: 100vw;
+        padding: 16px;
+        width: calc(100vw - 64px);
+    }
+    .troub-grid-item-lightbox-thumbnails-container {
+        flex-direction: column;
+        width: 25%;
+    }
+    .troub-grid-item-lightbox-thumbnail, .troub-grid-item-lightbox-featured-image {
+        /* aspect-ratio: unset; */
+    }
+    .troub-grid-item-lightbox-thumbnail {
+        width: 100%;
+    }
+    .troub-lightbox-close {
+        right: -24px;
+    }
 }
 
 /*-----------------------------------------------------------------------------/

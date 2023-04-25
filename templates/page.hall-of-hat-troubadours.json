@@ -33,21 +33,124 @@
         "bg_att": "scroll"
       }
     },
+    "908fad79-28b4-4367-92ec-2563d8a4b4b8": {
+      "type": "rich_text",
+      "settings": {
+        "title": "About The Hat Troubadours",
+        "heading_size": 32,
+        "heading_size_mb": 24,
+        "heading_spacing": 16,
+        "sub_title": "",
+        "show_btn": true,
+        "btn_text": "Submit Your Own",
+        "button_align": "left",
+        "btn_link": "",
+        "btn_mt": 16,
+        "btn_color": "#000000",
+        "border_color": "#000000",
+        "sub_font": "2",
+        "header_align": "center",
+        "style_title": "title_1",
+        "ic_tt": "gem",
+        "show_clpr": false,
+        "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>",
+        "align": "tl",
+        "text_height": 24,
+        "list_mg_left": 0,
+        "list_mg_top": 0,
+        "ul_marker": true,
+        "layout": "container",
+        "mg": "64px,,64px,",
+        "pd": ",64px,,64px",
+        "mg_mb": "32px,,32px,",
+        "pd_mb": ",32px,,32px"
+      }
+    },
     "troubadours-slider": {
       "type": "troubadours-slider",
       "settings": {
         "back_img": "shopify:\/\/shop_images\/Womens_AboutSenderoGear2.jpg",
-        "fore_img": "shopify:\/\/shop_images\/Salmon-Boise_Email_Shoot-0019.jpg",
+        "fore_img": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-2082.jpg",
+        "label": "Featured Troubadour",
+        "label_color": "#999999",
+        "label_space": 8,
         "name": "Joe Dirt",
+        "name_size": 32,
+        "name_space": 8,
+        "content_size": 18,
+        "content_lh": 24,
+        "content_space": 16,
         "hat_title": "Cowboy  Hat",
         "about": "<ul><li>Hometown: Waco, TX<\/li><li>Wearing Hat for: 4 years<\/li><li>Favorite Place Hat has been: Grand Canyon<\/li><\/ul>",
+        "content_pd": 64,
+        "content_pd_mb": 32,
         "mg": "32px,,32px,",
-        "pd": ",64px,,64px"
+        "pd": ",64px,,64px",
+        "mg_mb": "",
+        "pd_mb": "0,0,0,0"
+      }
+    },
+    "troubadours-grid": {
+      "type": "troubadours-grid",
+      "blocks": {
+        "d34c46ef-2507-4684-bedd-7a302bf24063": {
+          "type": "grid-item",
+          "settings": {
+            "product": "arches-national-park-hat-meshback",
+            "image": "shopify:\/\/shop_images\/SAG_4451.jpg",
+            "name": "Joe Dirt",
+            "troub_image_1": "shopify:\/\/shop_images\/CropTees_SpringCollectionGrid_66499fca-1ecc-4d93-b8a2-1f9b6603f27a.jpg",
+            "troub_image_2": "shopify:\/\/shop_images\/Tees_WomensCollectionGrid.jpg",
+            "troub_image_3": "shopify:\/\/shop_images\/Womens_AboutSenderoGear2.jpg",
+            "shop_text": "Shop This Hat",
+            "btn_align": "center"
+          }
+        },
+        "f8ddc666-fe28-4d67-ba9c-efa1d00ac269": {
+          "type": "grid-item",
+          "settings": {
+            "product": "acadia-national-park-hat",
+            "image": "shopify:\/\/shop_images\/Hats_WomensCollectionGrid.jpg",
+            "name": "Lindsay Lohan",
+            "troub_image_1": "shopify:\/\/shop_images\/UnisexProducts_AboutSenderoGear.jpg",
+            "troub_image_2": "shopify:\/\/shop_images\/Performance_AboutSenderoGear.jpg",
+            "troub_image_3": "shopify:\/\/shop_images\/SPCS623S12B_Yucatan_Hoodie_Blue_Ls1.jpg",
+            "shop_text": "Shop This Hat",
+            "btn_align": "center"
+          }
+        },
+        "cf7f8eb1-8ac8-412c-a35c-4ad8bf0c2fb9": {
+          "type": "grid-item",
+          "settings": {
+            "product": "agave-de-sendero-hat",
+            "image": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-2230.jpg",
+            "name": "Burt Reynolds",
+            "troub_image_1": "shopify:\/\/shop_images\/2020-7-25_-_Bandanas_at_Indian_Meadows_-_Social_Edits-4619.jpg",
+            "troub_image_2": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-3171.jpg",
+            "troub_image_3": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-0178.jpg",
+            "shop_text": "Shop This Hat",
+            "btn_align": "center"
+          }
+        }
+      },
+      "block_order": [
+        "d34c46ef-2507-4684-bedd-7a302bf24063",
+        "f8ddc666-fe28-4d67-ba9c-efa1d00ac269",
+        "cf7f8eb1-8ac8-412c-a35c-4ad8bf0c2fb9"
+      ],
+      "settings": {
+        "gap": 32,
+        "mg": "64px,,64px,",
+        "pd": ",64px,,64px",
+        "mg_mb": "",
+        "pd_mb": ",32px,,32px"
       }
     }
   },
   "order": [
     "heading",
-    "troubadours-slider"
+    "908fad79-28b4-4367-92ec-2563d8a4b4b8",
+    "troubadours-slider",
+    "troubadours-grid"
   ]
 }

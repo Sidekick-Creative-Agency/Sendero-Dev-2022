@@ -1,0 +1,266 @@
+{%- liquid
+    assign se_stts = section.settings 
+
+-%}
+
+<div class='troub-grid-container'>
+    {% for block in section.blocks %}
+        {% assign bk_stts = block.settings %}
+        {% assign product = bk_stts.product %}
+        {% assign image = bk_stts.image %}
+        {% assign name = bk_stts.name %}
+        {% if bk_stts.hover_image %}
+            {% assign hover_image = bk_stts.hover_image %}
+        {% else %}
+            {% assign hover_image = product.images.first %}
+        {% endif %}
+        <div class="troub-grid-item-container">
+            <div class="troub-grid-item-visible-container">
+                <div class="troub-grid-img lazyloadt4s nt_bg_lz pa t__0 l__0 r__0 b__0" data-bgset="{{ image | img_url: '1x1' }}" data-ratio="{{image.aspect_ratio}}" data-sizes="auto" data-parent-fit="cover"></div>
+                <div class="troub-grid-item-content">
+                    <div class="troub-grid-item-overlay"></div>
+                    <h3 class="troub-grid-item-name">{{name}}</h3>
+                    <span class="troub-grid-item-product">{{product.title}}</span>
+                    <div class="troub-grid-img troub-grid-hover-image lazyloadt4s nt_bg_lz pa t__0 l__0 r__0 b__0" data-bgset="{{ hover_image | img_url: '1x1' }}" data-ratio="{{hover_image.aspect_ratio}}" data-sizes="auto" data-parent-fit="cover"></div>
+                </div>
+            </div>
+            <div class="troub-grid-item-lightbox" role="dialog">
+                <div class="troub-grid-item-lightbox-images-container">
+                    <div class="troub-grid-item-lightbox-featured-image">
+                    <div class="troub-grid-img lazyloadt4s nt_bg_lz pa t__0 l__0 r__0 b__0" data-bgset="{{ image | img_url: '1x1' }}" data-ratio="{{image.aspect_ratio}}" data-sizes="auto" data-parent-fit="cover"></div>
+
+                    </div>
+                    <div class="troub-grid-item-lightbox-thumbnails-container">
+                        <div class="troub-grid-item-lightbox-thumbnail">
+                            <div class="troub-grid-img lazyloadt4s nt_bg_lz pa t__0 l__0 r__0 b__0" data-bgset="{{ image | img_url: '1x1' }}" data-ratio="{{image.aspect_ratio}}" data-sizes="auto" data-parent-fit="cover"></div>
+                        </div>
+                    <div class="troub-grid-item-lightbox-thumbnail">
+                        <div class="troub-grid-img lazyloadt4s nt_bg_lz pa t__0 l__0 r__0 b__0" data-bgset="{{ hover_image | img_url: '1x1' }}" data-ratio="{{hover_image.aspect_ratio}}" data-sizes="auto" data-parent-fit="cover"></div>
+                    </div>
+                        {% if bk_stts.troub_image_1 %}
+                        <div class="troub-grid-item-lightbox-thumbnail">
+                            <div class="troub-grid-img lazyloadt4s nt_bg_lz pa t__0 l__0 r__0 b__0" data-bgset="{{ bk_stts.troub_image_1 | img_url: '1x1' }}" data-ratio="{{bk_stts.troub_image_1.aspect_ratio}}" data-sizes="auto" data-parent-fit="cover"></div>
+                        </div>
+                            
+                        {% endif %}
+                        {% if bk_stts.troub_image_2 %}
+                        <div class="troub-grid-item-lightbox-thumbnail">
+                            <div class="troub-grid-img lazyloadt4s nt_bg_lz pa t__0 l__0 r__0 b__0" data-bgset="{{ bk_stts.troub_image_2 | img_url: '1x1' }}" data-ratio="{{bk_stts.troub_image_3.aspect_ratio}}" data-sizes="auto" data-parent-fit="cover"></div>
+                        </div>
+                        {% endif %}
+                        {% if bk_stts.troub_image_3 %}
+                        <div class="troub-grid-item-lightbox-thumbnail">
+                            <div class="troub-grid-img lazyloadt4s nt_bg_lz pa t__0 l__0 r__0 b__0" data-bgset="{{ bk_stts.troub_image_3 | img_url: '1x1' }}" data-ratio="{{bk_stts.troub_image_3.aspect_ratio}}" data-sizes="auto" data-parent-fit="cover"></div>
+                        </div>
+                        {% endif %}
+                    </div>
+                    <div class="troub-grid-item-lightbox-button-container" style="justify-content: {{bk_stts.btn_align}}">
+                        <a href={{product.url}} target="_self" class="troub-grid-item-lightbox-shop"><button class="btn_icon_true">{{bk_stts.shop_text}}</button></a>
+                    </div>
+                    <a class="troub-lightbox-close" onclick="troubLightboxClose()" role="button" aria-label="close lightbox">
+                        <i class="las la-times"></i>
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        document.querySelectorAll(".troub-grid-item-lightbox").forEach((lightbox) => {
+            lightbox.addEventListener("click", function(e) {
+                trackLightboxClicks(e)});
+        })
+        document.querySelectorAll(".troub-grid-item-visible-container").forEach((frame) => {
+            frame.addEventListener("click", () => troubGridItemClick(frame.parentNode.querySelector(".troub-grid-item-lightbox")));
+        })
+        document.querySelectorAll(".troub-grid-item-lightbox-thumbnail").forEach((thumbnail) => {
+            thumbnail.addEventListener("click", () => {
+                const lightbox = thumbnail.parentNode.parentNode;
+                updateFeaturedImage(lightbox, thumbnail);
+            })
+        })
+    })
+
+
+    function troubGridItemClick(item) {
+        if (!item.classList.contains("active")){
+            item.classList.add('active'); 
+            document.body.classList.add('noscroll');
+        }
+    }
+    function troubLightboxClose() {
+        document.body.classList.remove('noscroll');
+        document.querySelectorAll(".troub-grid-item-lightbox").forEach((lightbox) => {
+            lightbox.classList.remove("active");
+        })
+    }
+    function trackLightboxClicks(e) {
+        if (e.target.contains(e.target.querySelector(".troub-grid-item-lightbox-images-container"))) {
+            troubLightboxClose();
+        }
+    }
+    function updateFeaturedImage(lightbox, image) {
+        const bgSet = image.querySelector(".troub-grid-img").getAttribute("data-bgset");
+        lightbox.querySelector(".troub-grid-item-lightbox-featured-image .troub-grid-img").setAttribute("data-bgset", bgSet);
+    }
+</script>
+
+{%- assign arr_mg = se_stts.mg | split:',' -%}
+{%- assign arr_mg_mb = se_stts.mg_mb | split:',' -%}
+{%- assign arr_pd = se_stts.pd | split:',' -%}
+{%- assign arr_pd_mb = se_stts.pd_mb | split:',' -%}
+<style>
+    .troub-grid-container {
+        gap: {{se_stts.gap}}px;
+        margin-top: {{arr_mg[0]}};
+        margin-right: {{arr_mg[1]}};
+        margin-bottom: {{arr_mg[2]}};
+        margin-left: {{arr_mg[3]}};
+        padding-top: {{arr_pd[0]}};
+        padding-right: {{arr_pd[1]}};
+        padding-bottom: {{arr_pd[2]}};
+        padding-left: {{arr_pd[3]}};
+    }
+    @media screen and (max-width: 767px) {
+        .troub-grid-container {
+            margin-top: {{arr_mg_mb[0]}};
+            margin-right: {{arr_mg_mb[1]}};
+            margin-bottom: {{arr_mg_mb[2]}};
+            margin-left: {{arr_mg_mb[3]}};
+            padding-top: {{arr_pd_mb[0]}};
+            padding-right: {{arr_pd_mb[1]}};
+            padding-bottom: {{arr_pd_mb[2]}};
+            padding-left: {{arr_pd_mb[3]}};
+        }
+    }
+</style>
+
+{% schema %}
+{
+   "name": "Troubadours Grid",
+   "class": "troubadours-grid",
+    "settings": [
+       {
+        "type": "range",
+        "id": "gap",
+        "label": "Space Between Grid Items",
+        "unit": "px",
+        "min": 0,
+        "max": 64,
+        "step": 1,
+        "default": 32
+       },
+        {
+            "type": "header",
+            "content": "== Desktop Design Styles"
+        },
+        {
+            "type": "text",
+            "id": "mg",
+            "label": "Margin",
+            "default": "32px,,32px,",
+            "placeholder": "32px,,32px,"
+        },
+        {
+            "type": "text",
+            "id": "pd",
+            "label": "Padding",
+            "default": ",64px,,64px",
+            "placeholder": ",64px,,64px"
+        },
+        {
+            "type": "header",
+            "content": "== Mobile Design Styles"
+        },
+        {
+            "type": "text",
+            "id": "mg_mb",
+            "label": "Margin"
+        },
+        {
+            "type": "text",
+            "id": "pd_mb",
+            "label": "Padding",
+            "default": ",32px,,32px",
+            "placeholder": ",32px,,32px"
+        }
+    ],
+    "blocks": [
+        {
+            "name": "Troubadour Grid Item",
+            "type": "grid-item",
+            "settings": [
+                {
+                    "type": "product",
+                    "id": "product",
+                    "label": "Featured Hat",
+                    "info": "Select the hat worn by this Hat Troubadour"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "Featured Troubadour Image"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "hover_image",
+                    "label": "Hover Image",
+                    "info": "Optional. If left blank, the first product image will show on hover."
+                },
+                {
+                    "type": "text",
+                    "id": "name",
+                    "label": "Troubadour's Name",
+                    "placeholder": "Joe Dirt"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "troub_image_1",
+                    "label": "Troubadour Image 1",
+                    "info": "Optional"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "troub_image_2",
+                    "label": "Troubadour Image 2",
+                    "info": "Optional"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "troub_image_3",
+                    "label": "Troubadour Image 3",
+                    "info": "Optional"
+                },
+               {
+                "type": "text",
+                "id": "shop_text",
+                "label": "Lightbox Shop Button Text",
+                "default": "Shop This Hat"
+               },
+              {
+                "type": "select",
+                "id": "btn_align",
+                "label": "Align Button",
+                "options": [
+                    {
+                        "value": "flex-start",
+                        "label": "Left"
+                    },
+                    {
+                        "value": "center",
+                        "label": "Center"
+                    },
+                    {
+                        "value": "flex-end",
+                        "label": "Right"
+                    }
+                ]
+              }
+            ]   
+        }
+    ]
+}
+{% endschema %}
