@@ -69,8 +69,8 @@
     "troubadours-slider": {
       "type": "troubadours-slider",
       "settings": {
-        "back_img": "shopify:\/\/shop_images\/Womens_AboutSenderoGear2.jpg",
-        "fore_img": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-2082.jpg",
+        "back_img": "shopify:\/\/shop_images\/Jackalope_Hat_1.jpg",
+        "fore_img": "shopify:\/\/shop_images\/Old_Hat_Placeholder.jpg",
         "label": "Featured Troubadour",
         "label_color": "#999999",
         "label_space": 8,
