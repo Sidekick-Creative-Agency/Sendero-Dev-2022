@@ -7,8 +7,22 @@
     <div class='troub-slider-container'>
         <div class="troub-img troub-background-img lazyloadt4s nt_bg_lz pa t__0 l__0 r__0 b__0" data-bgset="{{ backImg | img_url: '1x1' }}" data-ratio="{{backImg.aspect_ratio}}" data-sizes="auto" data-parent-fit="cover"></div>
         <div class="troub-img troub-foreground-img lazyloadt4s nt_bg_lz pa t__0 l__0 r__0 b__0" data-bgset="{{ foreImg | img_url: '1x1' }}" data-ratio="{{foreImg.aspect_ratio}}" data-sizes="auto" data-parent-fit="cover"></div>
-        <input type="range" min="1" max="100" value="50" class="troub-slider" name='slider' id="troub-slider">
-        <div class='troub-slider-button'></div>
+        <input type="range" min="0" max="100" value="50" class="troub-slider" name='slider' id="troub-slider">
+        <div class='troub-slider-button-container'>
+            <div class='troub-slider-button'>
+                <div class="troub-slider-button-arrows"></div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="troub-content-container">
+        <span class="troub-label"><em>{{se_stts.label}}</em></span>
+        <h2 class="troub-name">{{se_stts.name}}</h2>
+        <span class="troub-hat-title">{{se_stts.hat_title}}</span>
+        <div class="troub-about">
+            {{se_stts.about}}
+        </div>
+        
     </div>
 </div>
 
@@ -17,9 +31,9 @@
     $("#troub-slider").on("input change", (e)=>{
   const sliderPos = e.target.value;
   // Update the width of the foreground image
-  $('.troub-foreground-img').css('width', `${sliderPos}%`)
+  $('.troub-foreground-img').css('clipPath', `polygon(0% 0%,${sliderPos}% 0%, ${sliderPos}% 100%, 0% 100%)`)
   // Update the position of the slider button
-  $('.troub-slider-button').css('left', `calc(${sliderPos}% - 18px)`)
+  $('.troub-slider-button-container').css('left', `calc(${sliderPos}% - 19.5px`)
 });
 </script>
 
@@ -38,10 +52,26 @@
     padding-bottom: {{arr_pd[2]}};
     padding-left: {{arr_pd[3]}};
   }
+  .troub-content-container {
+    padding: {{se_stts.content_pd}}px;
+  }
+  .troub-label {
+    margin-bottom: {{se_stts.label_space}}px;
+  }
+.troub-name {
+    font-size: {{se_stts.name_size}}px;
+    margin-bottom: {{se_stts.name_space}}px;
+}
+.troub-about {
+    font-size: {{se_stts.content_size}}px;
+    margin-top: {{se_stts.content_space}}px;
+    line-height: {{se_stts.content_lh}}px;
+}
 </style>
 {% schema %}
 {
    "name": "Troubadours Image Compare",
+   "class": "troubadours-slider",
   "settings": [
    {
     "type": "image_picker",
@@ -53,6 +83,105 @@
     "id": "fore_img",
     "label": "New Image"
    },
+   {
+    "type": "text",
+    "id": "label",
+    "label": "Featured Label",
+    "default": "Featured Troubadour",
+    "placeholder": "Featured Troubadour"
+  },
+  {
+    "type": "range",
+    "id": "label_space",
+    "label": "Label Spacing",
+    "unit": "px",
+    "min": 0,
+    "max": 32,
+    "step": 1,
+    "default": 8
+ },
+  {
+    "type": "text",
+    "id": "name",
+    "label": "Name",
+    "default": "Joe Dirt",
+    "info": "Featured Troubadour Name",
+    "placeholder": "Joe Dirt"
+  },
+ {
+    "type": "range",
+    "id": "name_size",
+    "label": "Name Font Size Desktop",
+    "unit": "px",
+    "min": 16,
+    "max": 64,
+    "step": 1,
+    "default": 32
+ },
+ {
+    "type": "range",
+    "id": "name_space",
+    "label": "Name Spacing",
+    "unit": "px",
+    "min": 0,
+    "max": 32,
+    "step": 1,
+    "default": 8
+ },
+ {
+    "type": "range",
+    "id": "content_size",
+    "label": "Content Font Size Desktop",
+    "unit": "px",
+    "min": 16,
+    "max": 64,
+    "step": 1,
+    "default": 18
+ },
+ {
+    "type": "range",
+    "id": "content_lh",
+    "label": "Content Line Height",
+    "unit": "px",
+    "min": 0,
+    "max": 96,
+    "step": 1,
+    "default": 24
+ },
+ {
+    "type": "range",
+    "id": "content_space",
+    "label": "Content Spacing",
+    "unit": "px",
+    "min": 0,
+    "max": 32,
+    "step": 1,
+    "default": 16
+ },
+  {
+    "type": "text",
+    "id": "hat_title",
+    "label": "Hat Title",
+    "default": "Cowboy  Hat",
+    "info": "Featured Hat Title",
+    "placeholder": "Cowboy Hat"
+  },
+ {
+    "type": "richtext",
+    "id": "about",
+    "label": "About",
+    "default": "<p>lorem ipsum</p>"
+ },
+ {
+    "type": "range",
+    "id": "content_pd",
+    "label": "Content Container Padding",
+    "unit": "px",
+    "min": 0,
+    "max": 196,
+    "step": 2,
+    "default": 64
+  },
   {
     "type": "text",
     "id": "mg",

@@ -37,7 +37,12 @@
       "type": "troubadours-slider",
       "settings": {
         "back_img": "shopify:\/\/shop_images\/Womens_AboutSenderoGear2.jpg",
-        "fore_img": "shopify:\/\/shop_images\/Salmon-Boise_Email_Shoot-0019.jpg"
+        "fore_img": "shopify:\/\/shop_images\/Salmon-Boise_Email_Shoot-0019.jpg",
+        "name": "Joe Dirt",
+        "hat_title": "Cowboy  Hat",
+        "about": "<ul><li>Hometown: Waco, TX<\/li><li>Wearing Hat for: 4 years<\/li><li>Favorite Place Hat has been: Grand Canyon<\/li><\/ul>",
+        "mg": "32px,,32px,",
+        "pd": ",64px,,64px"
       }
     }
   },
