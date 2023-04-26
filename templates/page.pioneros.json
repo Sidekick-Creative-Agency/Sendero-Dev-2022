@@ -21,6 +21,7 @@
         "btn_url": "",
         "button_align": "center",
         "btn_background": "black",
+        "image": "shopify:\/\/shop_images\/Copy_of_2021-5-14_-_Baylor_Geology_-_Low_Res-4359.jpg",
         "parallax": true,
         "color": "#000000",
         "overlay": 26,
@@ -34,6 +35,7 @@
     },
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
       }
     },
@@ -64,10 +66,10 @@
         "list_mg_top": 0,
         "ul_marker": true,
         "layout": "container",
-        "mg": "100px,,50px,",
-        "pd": ",50px,,50px",
+        "mg": "32px,,32px,",
+        "pd": ",64px,,64px",
         "mg_mb": "",
-        "pd_mb": ""
+        "pd_mb": ",32px,,32px"
       }
     },
     "1649253785b4e78813": {
