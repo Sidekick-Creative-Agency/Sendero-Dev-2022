@@ -12,6 +12,7 @@
 	else 
 	  assign remove_soldout = false 
 	endif 
+	assign remove_soldout = settings.remove_sold_out 
 	assign select_id = 'nt_select' | append:call_cl 
 	assign select_class = 'nt_select'| append:call_cl 
 	assign bclass = 'is-selected-none'
@@ -29,6 +30,7 @@
 		  if current_variant.available == false and remove_soldout and product.available 
 		    assign current_variant = product.first_available_variant  
 		  endif
+		  
 	  else 
 	    assign current_variant = product.selected_or_first_available_variant
 	    assign bclass = 'is-selected-nt'
@@ -40,9 +42,10 @@
 	endif
 	assign img_variants = pr_variants | where: "featured_image" -%}
 
+	
 <div class="fimg_{{settings.use_fimg}} variations mb__20 style__rectangle size_{{block.settings.swatch_size | default:settings.swatch_size }} style_color des_color_{{block.settings.style_color | default:settings.style_color }} remove_soldout_{{remove_soldout}}">
 	{%- for option in product.options_with_values -%}{%- assign name = option.name | downcase -%}{%- assign svc = '' -%}{%- assign option_index = forloop.index0 -%}{%- assign color_class = '' -%}
-		{%- case option_index -%}{%- when 0 -%}{%- assign selected_value = current_variant.option1 |default:choose_an_option -%}{%- when 1 -%}{%- assign selected_value = current_variant.option2 |default:choose_an_option -%}{%- else -%}{%- assign selected_value = current_variant.option3 |default:choose_an_option -%}{%- endcase -%}
+	{%- case option_index -%}{%- when 0 -%}{%- assign selected_value = current_variant.option1 |default:choose_an_option -%}{%- when 1 -%}{%- assign selected_value = current_variant.option2 |default:choose_an_option -%}{%- else -%}{%- assign selected_value = current_variant.option3 |default:choose_an_option -%}{%- endcase -%}
 		{%- if get_color contains name -%}
 		    {%- if ck and has_img == '2' and img_variants.size > 0 -%}{%- assign color_class = 'fimg_ratio' -%}<div class="lazypreloadt4s nt_pre_img op__0" data-rendert4s="{% if se_id != blank %}{{routes.search_url}}/?section_id={{se_id}}{% else %}{{locale_url}}/products/{{product.handle}}/?view=cl{{call_cl}}{% endif %}"></div>{%- assign ck = false -%}{%- endif -%}
 			<div data-opname="{{option.name | handleize}}" class="{{select_class}}{{ option_index }} {{color_class}} swatch is-color{% cycle ' is-ntcolor','','' %}" id="{{select_id}}_{{ option_index }}">
