@@ -97,6 +97,7 @@
           "type": "grid-item",
           "settings": {
             "product": "arches-national-park-hat-meshback",
+            "hat_title": "",
             "image": "shopify:\/\/shop_images\/Old_Hat_Placeholder.jpg",
             "hover_image": "shopify:\/\/shop_images\/Jackalope_Hat_1.jpg",
             "name": "Joe Dirt",
@@ -110,8 +111,10 @@
         "f8ddc666-fe28-4d67-ba9c-efa1d00ac269": {
           "type": "grid-item",
           "settings": {
-            "product": "acadia-national-park-hat",
+            "product": "",
+            "hat_title": "Example Hat",
             "image": "shopify:\/\/shop_images\/Hats_WomensCollectionGrid.jpg",
+            "hover_image": "shopify:\/\/shop_images\/Tees_WomensCollectionGrid.jpg",
             "name": "Lindsay Lohan",
             "troub_image_1": "shopify:\/\/shop_images\/UnisexProducts_AboutSenderoGear.jpg",
             "troub_image_2": "shopify:\/\/shop_images\/Performance_AboutSenderoGear.jpg",
@@ -124,6 +127,7 @@
           "type": "grid-item",
           "settings": {
             "product": "agave-de-sendero-hat",
+            "hat_title": "",
             "image": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-2230.jpg",
             "name": "Burt Reynolds",
             "troub_image_1": "shopify:\/\/shop_images\/2020-7-25_-_Bandanas_at_Indian_Meadows_-_Social_Edits-4619.jpg",
