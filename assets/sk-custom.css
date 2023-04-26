@@ -3139,58 +3139,84 @@ HALL OF HAT TROUBADOURS Page
 /*-----------------------------------------------------------------------------/
 / PIONEROS PAGE
 /-----------------------------------------------------------------------------*/
-.pioneros-outer-container {
-    margin: 50px 0;
-}
 .pioneros-row {
-    justify-content: center;
+    max-width: 1480px;
+    margin: auto;
+}
+.pioneros-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 16px;
 }
 .pioneros-item {
     overflow: hidden;
-    margin-bottom: 0 !important;
-    max-height: 370px;
-    max-width: 370px;
-    padding: 0 5px !important;
+    padding-bottom: 100%;
+    position: relative;
 }
-.pioneros-img {
-    margin: 0 !important;
-    height: 100%;   
-}
-.pioneros-image-overlay {
+
+.pionero-content {
     position: absolute;
     top: 0;
-    width: calc(100% - 10px);
+    left: 0;
+    width: 100%;
     height: 100%;
+    opacity: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: rgba(0,0,0,.4);
-    opacity: 0;
-    transition: .5s;
+    transition: .3s ease;
+}
+.pioneros-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;  
 }
 .pioneros-title, .pioneros-title a {
     color: white !important;
+    text-align: center;
 }
 .pioneros-text {
     color: #D1D1D1;
+    text-align: center;
 }
-.pioneros-item:hover .pioneros-image-overlay {
+.pionero-insta-link {
+    width: 32px;
+    height: 32px;
+    color: #FFF !important;
+    
+}
+.pionero-insta-link i {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pionero-insta-link i:before {
+    font-size: 24px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+.pioneros-item:hover .pionero-content {
     opacity: 1;
-}
-.pioneros-row .nt_banner_holder {
-    row-gap: 10px;
-    justify-content: left;
 }
 /* ----- Tablet ------ */
 @media screen and (max-width: 1023px) {
-    
+
 }
 
 /* ----- Mobile ----- */
 @media screen and (max-width: 767px) {
-    .pioneros-item {
-        width: 50%;
+
+    .pioneros-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     }
 }
 
