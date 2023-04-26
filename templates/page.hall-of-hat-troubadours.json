@@ -69,8 +69,8 @@
     "troubadours-slider": {
       "type": "troubadours-slider",
       "settings": {
-        "back_img": "shopify:\/\/shop_images\/Womens_AboutSenderoGear2.jpg",
-        "fore_img": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-2082.jpg",
+        "back_img": "shopify:\/\/shop_images\/Jackalope_Hat_1.jpg",
+        "fore_img": "shopify:\/\/shop_images\/Old_Hat_Placeholder.jpg",
         "label": "Featured Troubadour",
         "label_color": "#999999",
         "label_space": 8,
@@ -97,7 +97,8 @@
           "type": "grid-item",
           "settings": {
             "product": "arches-national-park-hat-meshback",
-            "image": "shopify:\/\/shop_images\/SAG_4451.jpg",
+            "image": "shopify:\/\/shop_images\/Old_Hat_Placeholder.jpg",
+            "hover_image": "shopify:\/\/shop_images\/Jackalope_Hat_1.jpg",
             "name": "Joe Dirt",
             "troub_image_1": "shopify:\/\/shop_images\/CropTees_SpringCollectionGrid_66499fca-1ecc-4d93-b8a2-1f9b6603f27a.jpg",
             "troub_image_2": "shopify:\/\/shop_images\/Tees_WomensCollectionGrid.jpg",
