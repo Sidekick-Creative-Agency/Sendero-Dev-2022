@@ -2996,16 +2996,21 @@ HALL OF HAT TROUBADOURS Page
     opacity: 1;
     visibility: visible;
 }
-.troub-grid-item-lightbox-images-container {
+.troub-grid-item-lightbox-wrapper {
     width: 100%;
     max-width: 900px;
-    min-height: 700px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+    min-height: 700px;  
     position: relative;
     background-color: #000;
     padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.troub-grid-item-lightbox-images-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 .troub-grid-item-lightbox-featured-image {
     width: 100%;
@@ -3073,15 +3078,16 @@ HALL OF HAT TROUBADOURS Page
     .troub-grid-container {
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     }
+    .troub-grid-item-lightbox-wrapper {
+        min-height: unset;
+        max-height: 200vw;
+        padding: 16px;
+        width: calc(100vw - 64px);
+    }
     .troub-grid-item-lightbox-images-container {
         flex-direction: row-reverse;
         flex-wrap: nowrap;
-        /* height: 40vh; */
-        /* min-height: 400px; */
-        min-height: unset;
-        max-height: 100vw;
-        padding: 16px;
-        width: calc(100vw - 64px);
+        
     }
     .troub-grid-item-lightbox-thumbnails-container {
         flex-direction: column;

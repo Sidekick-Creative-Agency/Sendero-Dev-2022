@@ -28,13 +28,13 @@
 
 
 <script>
-    $("#troub-slider").on("input change", (e)=>{
-  const sliderPos = e.target.value;
-  // Update the width of the foreground image
-  $('.troub-foreground-img').css('clipPath', `polygon(0% 0%,${sliderPos}% 0%, ${sliderPos}% 100%, 0% 100%)`)
-  // Update the position of the slider button
-  $('.troub-slider-button-container').css('left', `calc(${sliderPos}% - 19.5px`)
-});
+  ["input", "change"].forEach((evt) => {
+    document.getElementById("troub-slider").addEventListener(evt, function(e) {
+      const sliderPos = e.target.value;
+      document.querySelector(".troub-foreground-img").style.clipPath = `polygon(0% 0%,${sliderPos}% 0%, ${sliderPos}% 100%, 0% 100%)`
+      document.querySelector(".troub-slider-button-container").style.left = `calc(${sliderPos}% - 19.5px`;
+    })
+  })
 </script>
 
 {%- assign arr_mg = se_stts.mg | split:',' -%}

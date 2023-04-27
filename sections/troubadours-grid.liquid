@@ -29,45 +29,45 @@
                 {% endif %}
             </div>
             <div class="troub-grid-item-lightbox" role="dialog">
-                <div class="troub-grid-item-lightbox-images-container">
-                    <div class="troub-grid-item-lightbox-featured-image">
-                    <div class="troub-grid-img lazyloadt4s nt_bg_lz pa t__0 l__0 r__0 b__0" data-bgset="{{ image | img_url: '1x1' }}" data-ratio="{{image.aspect_ratio}}" data-sizes="auto" data-parent-fit="cover"></div>
+                <div class="troub-grid-item-lightbox-wrapper">
+                    <div class="troub-grid-item-lightbox-images-container">
+                        <div class="troub-grid-item-lightbox-featured-image">
+                        <div class="troub-grid-img lazyloadt4s nt_bg_lz pa t__0 l__0 r__0 b__0" data-bgset="{{ image | img_url: '1x1' }}" data-ratio="{{image.aspect_ratio}}" data-sizes="auto" data-parent-fit="cover"></div>
 
-                    </div>
-                    <div class="troub-grid-item-lightbox-thumbnails-container">
-                        <div class="troub-grid-item-lightbox-thumbnail">
-                            <div class="troub-grid-img lazyloadt4s nt_bg_lz pa t__0 l__0 r__0 b__0" data-bgset="{{ image | img_url: '1x1' }}" data-ratio="{{image.aspect_ratio}}" data-sizes="auto" data-parent-fit="cover"></div>
                         </div>
-                    <div class="troub-grid-item-lightbox-thumbnail">
-                        <div class="troub-grid-img lazyloadt4s nt_bg_lz pa t__0 l__0 r__0 b__0" data-bgset="{{ hover_image | img_url: '1x1' }}" data-ratio="{{hover_image.aspect_ratio}}" data-sizes="auto" data-parent-fit="cover"></div>
-                    </div>
-                        {% if bk_stts.troub_image_1 %}
+                        <div class="troub-grid-item-lightbox-thumbnails-container">
+                            <div class="troub-grid-item-lightbox-thumbnail">
+                                <div class="troub-grid-img lazyloadt4s nt_bg_lz pa t__0 l__0 r__0 b__0" data-bgset="{{ image | img_url: '1x1' }}" data-ratio="{{image.aspect_ratio}}" data-sizes="auto" data-parent-fit="cover"></div>
+                            </div>
                         <div class="troub-grid-item-lightbox-thumbnail">
-                            <div class="troub-grid-img lazyloadt4s nt_bg_lz pa t__0 l__0 r__0 b__0" data-bgset="{{ bk_stts.troub_image_1 | img_url: '1x1' }}" data-ratio="{{bk_stts.troub_image_1.aspect_ratio}}" data-sizes="auto" data-parent-fit="cover"></div>
+                            <div class="troub-grid-img lazyloadt4s nt_bg_lz pa t__0 l__0 r__0 b__0" data-bgset="{{ hover_image | img_url: '1x1' }}" data-ratio="{{hover_image.aspect_ratio}}" data-sizes="auto" data-parent-fit="cover"></div>
                         </div>
-                            
-                        {% endif %}
-                        {% if bk_stts.troub_image_2 %}
-                        <div class="troub-grid-item-lightbox-thumbnail">
-                            <div class="troub-grid-img lazyloadt4s nt_bg_lz pa t__0 l__0 r__0 b__0" data-bgset="{{ bk_stts.troub_image_2 | img_url: '1x1' }}" data-ratio="{{bk_stts.troub_image_3.aspect_ratio}}" data-sizes="auto" data-parent-fit="cover"></div>
+                            {% if bk_stts.troub_image_1 %}
+                            <div class="troub-grid-item-lightbox-thumbnail">
+                                <div class="troub-grid-img lazyloadt4s nt_bg_lz pa t__0 l__0 r__0 b__0" data-bgset="{{ bk_stts.troub_image_1 | img_url: '1x1' }}" data-ratio="{{bk_stts.troub_image_1.aspect_ratio}}" data-sizes="auto" data-parent-fit="cover"></div>
+                            </div>
+                                
+                            {% endif %}
+                            {% if bk_stts.troub_image_2 %}
+                            <div class="troub-grid-item-lightbox-thumbnail">
+                                <div class="troub-grid-img lazyloadt4s nt_bg_lz pa t__0 l__0 r__0 b__0" data-bgset="{{ bk_stts.troub_image_2 | img_url: '1x1' }}" data-ratio="{{bk_stts.troub_image_3.aspect_ratio}}" data-sizes="auto" data-parent-fit="cover"></div>
+                            </div>
+                            {% endif %}
+                            {% if bk_stts.troub_image_3 %}
+                            <div class="troub-grid-item-lightbox-thumbnail">
+                                <div class="troub-grid-img lazyloadt4s nt_bg_lz pa t__0 l__0 r__0 b__0" data-bgset="{{ bk_stts.troub_image_3 | img_url: '1x1' }}" data-ratio="{{bk_stts.troub_image_3.aspect_ratio}}" data-sizes="auto" data-parent-fit="cover"></div>
+                            </div>
+                            {% endif %}
                         </div>
-                        {% endif %}
-                        {% if bk_stts.troub_image_3 %}
-                        <div class="troub-grid-item-lightbox-thumbnail">
-                            <div class="troub-grid-img lazyloadt4s nt_bg_lz pa t__0 l__0 r__0 b__0" data-bgset="{{ bk_stts.troub_image_3 | img_url: '1x1' }}" data-ratio="{{bk_stts.troub_image_3.aspect_ratio}}" data-sizes="auto" data-parent-fit="cover"></div>
-                        </div>
-                        {% endif %}
                     </div>
                     {% if product != null %}
                         <div class="troub-grid-item-lightbox-button-container" style="justify-content: {{bk_stts.btn_align}}">
                             <a href={{product.url}} target="_self" class="troub-grid-item-lightbox-shop"><button class="btn_icon_true">{{bk_stts.shop_text}}</button></a>
                         </div>
                     {% endif %}
-                    
                     <a class="troub-lightbox-close" onclick="troubLightboxClose()" role="button" aria-label="close lightbox">
                         <i class="las la-times"></i>
                     </a>
-                    
                 </div>
             </div>
         </div>
@@ -106,7 +106,7 @@
         })
     }
     function trackLightboxClicks(e) {
-        if (e.target.contains(e.target.querySelector(".troub-grid-item-lightbox-images-container"))) {
+        if (e.target.contains(e.target.querySelector(".troub-grid-item-lightbox-wrapper"))) {
             troubLightboxClose();
         }
     }
