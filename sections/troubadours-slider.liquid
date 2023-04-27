@@ -38,18 +38,27 @@
         })
       })
     } else {
-      document.getElementById("troub-slider").addEventListener("mousemove", function(e) {
-        var posX = e.clientX;
-        var rect = this.getBoundingClientRect();
-        var left = rect.left
-        var width = this.offsetWidth;
-        var percent = ((posX - left) / width) * 100;
-        this.value = percent;
-        document.querySelector(".troub-foreground-img").style.clipPath = `polygon(0% 0%,${this.value}% 0%, ${this.value}% 100%, 0% 100%)`
-        document.querySelector(".troub-slider-button-container").style.left = `calc(${this.value}% - 19.5px`;
-      })
+      document.getElementById("troub-slider").addEventListener('touchstart', touchHandler, false);
+      document.getElementById("troub-slider").addEventListener('touchmove', touchHandler, false);
     }
   })
+  let touchHandler = function(event) {
+    let x = 0
+    if (event.touches && event.touches[0]) {
+        x = event.touches[0].clientX;
+    } else if (event.originalEvent && event.originalEvent.changedTouches[0]) {
+        x = event.originalEvent.changedTouches[0].clientX;
+    } else if (event.clientX) {
+        x = event.clientX;
+    }
+    var rect = this.getBoundingClientRect();
+    var left = rect.left
+    var width = this.offsetWidth;
+    var percent = ((x - left) / width) * 100;
+    this.value = percent;
+    document.querySelector(".troub-foreground-img").style.clipPath = `polygon(0% 0%,${this.value}% 0%, ${this.value}% 100%, 0% 100%)`
+    document.querySelector(".troub-slider-button-container").style.left = `calc(${this.value}% - 19.5px`;
+  }
 </script>
 
 {%- assign arr_mg = se_stts.mg | split:',' -%}
