@@ -41,11 +41,20 @@
 		assign bclass = 'is-selected' 
 	endif
 	assign img_variants = pr_variants | where: "featured_image" -%}
-
+{%- comment -%}
+{% for variant in product.variants %}
+	{% capture soldOut %}
+		{% if variant.metafields.custom.hide_sold_out_variant %}
+			{{soldOut | append: variant.title | append: ","}}
+		{% endif %}
+	{% endcapture %}
+	<h3>{{soldOut}}</h3>
+{% endfor %}
+{%- endcomment -%}
 <div class="fimg_{{settings.use_fimg}} variations mb__20 style__rectangle size_{{block.settings.swatch_size | default:settings.swatch_size }} style_color des_color_{{block.settings.style_color | default:settings.style_color }} remove_soldout_{{remove_soldout}}">
 	{%- for option in product.options_with_values -%}{%- assign name = option.name | downcase -%}{%- assign svc = '' -%}{%- assign option_index = forloop.index0 -%}{%- assign color_class = '' -%}
 	{%- case option_index -%}{%- when 0 -%}{%- assign selected_value = current_variant.option1 |default:choose_an_option -%}{%- when 1 -%}{%- assign selected_value = current_variant.option2 |default:choose_an_option -%}{%- else -%}{%- assign selected_value = current_variant.option3 |default:choose_an_option -%}{%- endcase -%}
-		{%- if get_color contains name -%}
+	{%- if get_color contains name -%}
 		    {%- if ck and has_img == '2' and img_variants.size > 0 -%}{%- assign color_class = 'fimg_ratio' -%}<div class="lazypreloadt4s nt_pre_img op__0" data-rendert4s="{% if se_id != blank %}{{routes.search_url}}/?section_id={{se_id}}{% else %}{{locale_url}}/products/{{product.handle}}/?view=cl{{call_cl}}{% endif %}"></div>{%- assign ck = false -%}{%- endif -%}
 			<div data-opname="{{option.name | handleize}}" class="{{select_class}}{{ option_index }} {{color_class}} swatch is-color{% cycle ' is-ntcolor','','' %}" id="{{select_id}}_{{ option_index }}">
 				{%- comment -%} EDITED BY SIDEKICK {%- endcomment -%}
@@ -53,7 +62,8 @@
 				<ul class="swatches-select swatch__list_pr" data-id="{{ option_index }}" data-size="{{size}}">
 			   	   {%- for value in option.values -%}
 			   	      {%- assign vh = value | handle -%}{%- assign sclass = '' -%}{%- if selected_value == value -%}{%- assign sclass = bclass -%}{%- endif -%}
-			   		   <li data-index="{{ forloop.index0 }}" data-value='{{ vh }}' class="ttip_nt tooltip_top{%- if forloop.first == true -%}_right{%- endif %} nt-swatch swatch_pr_item bg_css_{{ vh }} {{sclass}} {% if current_variant.inventory_quantity == 0 %} nt_soldout {% endif %}" data-escape="{{ value | escape }}"><span class="tt_txt">{{ value }}</span><span class="swatch__value_pr pr bg_color_{{ vh }} lazyloadt4s"></span></li>
+					  
+			   		   <li data-index="{{ forloop.index0 }}" data-value='{{ vh }}' class="ttip_nt tooltip_top{%- if forloop.first == true -%}_right{%- endif %} nt-swatch swatch_pr_item bg_css_{{ vh }} {{sclass}}" data-escape="{{ value | escape }}"><span class="tt_txt">{{ value }}</span><span class="swatch__value_pr pr bg_color_{{ vh }} lazyloadt4s"></span></li>
 			   	   {%- endfor -%}
 				</ul>
 			</div>
@@ -64,10 +74,12 @@
 				<ul class="swatches-select swatch__list_pr" data-id="{{ option_index }}" data-size="{{size}}">
 		   	   {%- for value in option.values -%}
 		   	      {%- assign vh = value | handle -%}{%- assign sclass = '' -%}{%- if selected_value == value -%}{%- assign sclass = bclass -%}{%- endif -%}
-		   		   <li data-index="{{ forloop.index0 }}" data-value='{{ vh }}' class="nt-swatch swatch_pr_item pr bg_css_{{ vh }} {{sclass}} {% if current_variant.inventory_quantity == 0 %} nt_soldout {% endif %}" data-escape="{{ value | escape }}"><span class="swatch__value_pr">{{ value }}</span></li>
-		   	   {%- endfor -%}
+		   		   <li data-index="{{ forloop.index0 }}" data-value='{{ vh }}' class="nt-swatch swatch_pr_item pr bg_css_{{ vh }} {{sclass}}" data-escape="{{ value | escape }}"><span class="swatch__value_pr">{{ value }}</span></li>
+				   {%- endfor -%}
 				</ul>
 			</div>
 		{%- endif -%}
 	{%- endfor -%}
 </div>
+	
+
