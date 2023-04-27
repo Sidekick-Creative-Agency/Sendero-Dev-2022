@@ -28,12 +28,27 @@
 
 
 <script>
-  ["input", "change"].forEach((evt) => {
-    document.getElementById("troub-slider").addEventListener(evt, function(e) {
-      const sliderPos = e.target.value;
-      document.querySelector(".troub-foreground-img").style.clipPath = `polygon(0% 0%,${sliderPos}% 0%, ${sliderPos}% 100%, 0% 100%)`
-      document.querySelector(".troub-slider-button-container").style.left = `calc(${sliderPos}% - 19.5px`;
-    })
+  document.addEventListener("DOMContentLoaded", function() {
+    if (window.innerWidth > 768) {
+      ["input", "change"].forEach((evt) => {
+        document.getElementById("troub-slider").addEventListener(evt, function(e) {
+          const sliderPos = e.target.value;
+          document.querySelector(".troub-foreground-img").style.clipPath = `polygon(0% 0%,${sliderPos}% 0%, ${sliderPos}% 100%, 0% 100%)`
+          document.querySelector(".troub-slider-button-container").style.left = `calc(${sliderPos}% - 19.5px`;
+        })
+      })
+    } else {
+      document.getElementById("troub-slider").addEventListener("mousemove", function(e) {
+        var posX = e.clientX;
+        var rect = this.getBoundingClientRect();
+        var left = rect.left
+        var width = this.offsetWidth;
+        var percent = ((posX - left) / width) * 100;
+        this.value = percent;
+        document.querySelector(".troub-foreground-img").style.clipPath = `polygon(0% 0%,${this.value}% 0%, ${this.value}% 100%, 0% 100%)`
+        document.querySelector(".troub-slider-button-container").style.left = `calc(${this.value}% - 19.5px`;
+      })
+    }
   })
 </script>
 
