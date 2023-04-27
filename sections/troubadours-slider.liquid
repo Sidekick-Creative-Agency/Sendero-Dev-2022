@@ -29,7 +29,6 @@
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {
-    if (window.innerWidth > 768) {
       ["input", "change"].forEach((evt) => {
         document.getElementById("troub-slider").addEventListener(evt, function(e) {
           const sliderPos = e.target.value;
@@ -37,10 +36,8 @@
           document.querySelector(".troub-slider-button-container").style.left = `calc(${sliderPos}% - 19.5px`;
         })
       })
-    } else {
       document.getElementById("troub-slider").addEventListener('touchstart', touchHandler, false);
       document.getElementById("troub-slider").addEventListener('touchmove', touchHandler, false);
-    }
   })
   let touchHandler = function(event) {
     let x = 0
