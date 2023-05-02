@@ -542,14 +542,14 @@
           "0f6b55f0-194b-497d-8d7e-0377f59f3023": {
             "type": "cat",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Men_-_Shirts.jpg",
+              "image": "shopify:\/\/shop_images\/DESERT_BLOOM-Collection_Menu.jpg",
               "cat_design": "1",
               "hoverz": true,
-              "collection": "new-product-arrivals",
+              "collection": "desert-bloom",
               "blog": "",
               "page_link": "",
               "col_link": "Men's",
-              "title": "NEW ARRIVALS",
+              "title": "-",
               "button_text": "Shop All",
               "col": "3"
             }
