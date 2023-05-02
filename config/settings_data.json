@@ -619,15 +619,15 @@
           "3378432e-ed42-4f8c-ab8d-0a6d7d38d8ce": {
             "type": "cat",
             "settings": {
-              "image": "shopify:\/\/shop_images\/CropTees_SpringCollectionGrid_66499fca-1ecc-4d93-b8a2-1f9b6603f27a.jpg",
+              "image": "shopify:\/\/shop_images\/DESERT_BLOOM-Collection_Menu2.jpg",
               "cat_design": "1",
               "hoverz": true,
-              "collection": "womens",
+              "collection": "desert-bloom",
               "blog": "",
               "page_link": "",
-              "col_link": "New-Arrival",
-              "title": "New Arrivals",
-              "button_text": "Shop All",
+              "col_link": "women's",
+              "title": "Desert Bloom",
+              "button_text": "Shop Collection",
               "col": "3"
             }
           },
