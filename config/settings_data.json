@@ -773,15 +773,15 @@
           "f988129b-b17e-4e4a-b4fb-6a68e9940ad0": {
             "type": "cat",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Collections_-_National_Parks.jpg",
+              "image": "shopify:\/\/shop_images\/DESERT_BLOOM-Collection_Menu2.jpg",
               "cat_design": "1",
               "hoverz": true,
-              "collection": "national-parks",
+              "collection": "desert-bloom",
               "blog": "",
               "page_link": "",
               "col_link": "",
-              "title": "",
-              "button_text": "Shop All",
+              "title": "Desert Bloom",
+              "button_text": "Shop Collection",
               "col": "3"
             }
           },
