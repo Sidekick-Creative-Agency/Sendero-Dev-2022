@@ -56,6 +56,8 @@
 
     {{ content_for_header }}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+{% render 'gsf-conversion-pixels' %}
 </head>
 <body {{class_body_theme | strip_newlines-}}>
   {%- render 'lazypreload' -%}
