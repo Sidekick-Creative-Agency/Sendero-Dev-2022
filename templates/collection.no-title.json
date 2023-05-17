@@ -4,6 +4,7 @@
       "type": "category-page-top",
       "settings": {
         "show_bread": false,
+        "show_title": false,
         "title": "Category Page Top",
         "sub_title": "Sub Text",
         "sub_font": "2",
