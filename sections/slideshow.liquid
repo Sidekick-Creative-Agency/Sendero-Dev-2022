@@ -30,7 +30,8 @@
                 {%- endif -%}
 
                  <div class="caption-wrap caption-w-{{bk_stts.caption_w}} pe_none z_100 {{bk_stts.txt_align}} {{bk_stts.txt_align_mb}}">
-                  <div class="pa_txts mb_h_pos{{bk_stts.cap_h_pos_mb}} mb_v_pos{{bk_stts.cap_v_pos_mb}} h_pos{{bk_stts.cap_h_pos}} v_pos{{bk_stts.cap_v_pos}} caption sk-slideshow-content-wrapper">
+               {%- comment -%}  <div class=" mb_h_pos{{bk_stts.cap_h_pos_mb}} mb_v_pos{{bk_stts.cap_v_pos_mb}} h_pos{{bk_stts.cap_h_pos}} v_pos{{bk_stts.cap_v_pos}} caption sk-slideshow-content-wrapper" style="transform: none; padding: {{bk_stts.content_padding}}px;">{%- endcomment -%} 
+                    <div class="sk-slideshow-content-wrapper">
                      <div class="{{bk_stts.ani_txt}}">
                         {%- for block in se_blocks offset:index -%}{%- assign index = index|plus:1 -%}{% assign bk_stts = block.settings -%}
                            {%- case block.type -%}
@@ -50,6 +51,30 @@
                            {%- endcase -%}
                         {%- endfor -%}
                      </div>
+                     <style>
+                      .sk-slideshow-content-wrapper {
+                        height: 100%; 
+                        transform: none; 
+                        padding-left: {{block.settings.content_hor_padding}}px; 
+                        padding-right: {{block.settings.content_hor_padding}}px; 
+                        padding-top: {{block.settings.content_top_padding}}px; 
+                        padding-bottom: {{block.settings.content_bottom_padding}}px; 
+                        display: flex; 
+                        justify-content: {{block.settings.hor_pos}}; 
+                        align-items: {{block.settings.vert_pos}};
+                      }
+                      @media screen and (max-width: 767px) {
+                        .sk-slideshow-content-wrapper {
+
+                        padding-left: {{block.settings.content_hor_padding_mb}}px; 
+                        padding-right: {{block.settings.content_hor_padding_mb}}px; 
+                        padding-top: {{block.settings.content_top_padding_mb}}px; 
+                        padding-bottom: {{block.settings.content_bottom_padding_mb}}px; 
+                        justify-content: {{block.settings.hor_pos_mb}}; 
+                        align-items: {{block.settings.vert_pos_mb}};
+                      }
+                      }
+                     </style>
                   </div> 
                  </div>
                  <a href="{{url}}" target="{{open_link}}" class="pa t__0 l__0 b__0 r__0{% if url == blank %} pe_none{% endif %}"></a>
@@ -647,36 +672,74 @@
       },
      {
       "type": "range",
-      "id": "content_padding",
-      "label": "Content Padding",
+      "id": "content_top_padding",
+      "label": "Content Top Padding",
       "unit": "px",
       "min": 0,
       "max": 200,
       "step": 2,
       "default": 0
      },
-      {
-         "type": "range",
-         "id": "cap_v_pos",
-         "label": "Caption vertical position",
-           "info":" <= 50: Top position , > 50 bottom position",
-         "default": 50,
-         "min": 0,
-         "max": 100,
-         "step": 1,
-         "unit": "%"
-      },
-      {
-         "type": "range",
-         "id": "cap_h_pos",
-         "label": "Caption horizontal position",
-         "info":" <= 50: Left position , > 50 right position",
-         "default": 39,
-         "min": 0,
-         "max": 100,
-         "step": 1,
-         "unit": "%"
-      },
+     {
+      "type": "range",
+      "id": "content_bottom_padding",
+      "label": "Content Bottom Padding",
+      "unit": "px",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 0
+     },
+     {
+      "type": "range",
+      "id": "content_hor_padding",
+      "label": "Content Horizontal Padding",
+      "unit": "px",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 0
+     },
+     {
+      "type": "select",
+      "id": "vert_pos",
+      "label": "Content Vertical Position",
+      "options": [
+        {
+          "value": "flex-start",
+          "label": "Top"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "flex-end",
+          "label": "Bottom"
+        }
+      ],
+      "default": "center"
+     },
+     {
+      "type": "select",
+      "id": "hor_pos",
+      "label": "Content Horizontal Position",
+      "options": [
+        {
+          "value": "flex-start",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "flex-end",
+          "label": "Right"
+        }
+      ],
+      "default": "center"
+     },
       {
         "type": "select",
         "id": "txt_align",
@@ -702,27 +765,75 @@
          "content": "== Caption mobile settings"
        },
       {
-         "type": "range",
-         "id": "cap_v_pos_mb",
-         "label": "Caption vertical position",
-         "info":" <= 50: Top position , > 50 bottom position",
-         "default": 50,
-         "min": 0,
-         "max": 100,
-         "step": 1,
-         "unit": "%"
-      },
-      {
-         "type": "range",
-         "id": "cap_h_pos_mb",
-         "label": "Caption horizontal position",
-         "info":" <= 50: Left position , > 50 right position",
-         "default": 39,
-         "min": 0,
-         "max": 100,
-         "step": 1,
-         "unit": "%"
-      },
+      "type": "range",
+      "id": "content_top_padding_mb",
+      "label": "Content Top Padding",
+      "unit": "px",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 0
+     },
+     {
+      "type": "range",
+      "id": "content_bottom_padding_mb",
+      "label": "Content Bottom Padding",
+      "unit": "px",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 0
+     },
+     {
+      "type": "range",
+      "id": "content_hor_padding_mb",
+      "label": "Content Horizontal Padding",
+      "unit": "px",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 0
+     },
+     {
+      "type": "select",
+      "id": "vert_pos_mb",
+      "label": "Content Vertical Position",
+      "options": [
+        {
+          "value": "flex-start",
+          "label": "Top"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "flex-end",
+          "label": "Bottom"
+        }
+      ],
+      "default": "center"
+     },
+     {
+      "type": "select",
+      "id": "hor_pos_mb",
+      "label": "Content Horizontal Position",
+      "options": [
+        {
+          "value": "flex-start",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "flex-end",
+          "label": "Right"
+        }
+      ],
+      "default": "center"
+     },
       {
         "type": "select",
         "id": "txt_align_mb",

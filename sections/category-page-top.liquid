@@ -50,9 +50,18 @@
             <a href="#content">
               <div class="nt_bg_lz lazyloadt4s item__position center" data-bgset="{{ image | img_url: '1x1' }}" style="padding-top: 30%;">
                 <div class="txt_content pa t__0 l__0 b__0 r__0 caption-w-2 flex column shadow_wrap tc_md tc pe_none z__100">
-                  <div class="pa pa_txts mb_h_pos50 mb_v_pos50 h_pos50 v_pos50">
-                    <h1 class="image-title">{{collection.title}}</h1>{% if use_pagination %}<h6 class="shop-all pt__10" style="font-size: {{se_stts.shop_all_font_size}}px">Shop All {% if se_stts.btn_icon %}<i class="las la-arrow-right"></i>{% endif %}</h6>{% endif %}
-                  </div>
+                  {% if section.settings.show_title == true %}
+                    <div class="pa pa_txts mb_h_pos50 mb_v_pos50 h_pos50 v_pos50">
+                      <h1 class="image-title">{{collection.title}}</h1>
+                      {% if use_pagination %}
+                        <h6 class="shop-all pt__10" style="font-size: {{se_stts.shop_all_font_size}}px">Shop All 
+                          {% if se_stts.btn_icon %}
+                            <i class="las la-arrow-right"></i>
+                          {% endif %}
+                        </h6>
+                      {% endif %}
+                    </div>
+                  {% endif %}
                 </div>
               </div>
             </a>
@@ -143,11 +152,17 @@
       "label": "Show Breadcrumbs?",
       "default": false
      },
+    {
+      "type": "checkbox",
+      "id": "show_title",
+      "label": "Show Title?",
+      "default": true
+    },
       {
         "type": "text",
         "id": "title",
         "label": "Heading",
-        "default": "Collection Title"
+        "default": "Heading"
       },
       {
         "type": "textarea",

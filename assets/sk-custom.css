@@ -708,8 +708,8 @@ div aside.widget_text .widget-title {
 .hero-block {
 	margin: 0;
 	padding: 0;
-	width: 110%;
-	transform: translateX(-4.25%);
+	/* width: 110%; */
+	/* transform: translateX(-4.25%); */
 }
 
 .sendero-session-txt-container {
