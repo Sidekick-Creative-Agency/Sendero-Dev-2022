@@ -1,5 +1,7 @@
 {%- liquid
-  assign arr_id_size = arr_id |split:Current_id | first |split:',' | size -%}
+  assign arr_id_size = arr_id |split:Current_id | first |split:',' | size
+  
+  -%}
 
 {%- if block.type == 'simnt-drop' -%}{%- assign bk_stts = block.settings -%}{%- assign llists = linklists[bk_stts.menu].links -%} 
          
@@ -85,6 +87,7 @@
                        <div class="cat_grid_item__overlay item__position nt_bg_lz lazyloadt4s" data-bg="{{ 'placeholder.jpg' | asset_url }}" style="padding-top:127%;"></div>
                      {%- endif -%}
                    </a>
+
                    <div class="cat_grid_item__wrapper pe_none">
                      <div class="cat_grid_item__title h3">{{ bk_stts.title | default:collection.title | default:home_t }}</div>
                      <div class="cat_grid_item__count dn">{{collection.all_products_count}} {{pr_txt}}</div>

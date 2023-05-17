@@ -95,6 +95,7 @@ header {
 }
 .header__mid .container > .row {
 	margin: 0;
+	justify-content: center;
 }
 #ntheader:not(.live_stuck) .header__mid .container {
 	padding-top: 8px;
@@ -113,7 +114,10 @@ header {
 	z-index: 1000;
 	position: relative;
 }
-
+.col-13 {
+	flex: 0 0 12.5%;
+	max-width: 12.5%;
+}
 @media screen and (min-width: 1025px) {
 	.type_mega .sub-menu {
 		position: fixed !important;
@@ -908,7 +912,7 @@ div aside.widget_text .widget-title {
 
 @media screen and (min-width: 768px) {
 	.caption-wrap .slt4_txt {
-		padding: 0 125px;
+		/* padding: 0 125px; */
 	}
 }
 /*---------------- ADD TO CART BUTTON -------------------*/
@@ -954,7 +958,7 @@ div aside.widget_text .widget-title {
 		width: 100%;
 	}
 	.caption-wrap .caption {
-		padding: 0 32px;
+		/* padding: 0 32px; */
 	}
 	.caption-wrap .slt4_btn {
 		font-weight: 600;

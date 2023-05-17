@@ -472,6 +472,8 @@
               "blog": "",
               "page_link": "",
               "col_link": "spring-2023",
+              "show_title_text": true,
+              "show_button_text": true,
               "title": "",
               "button_text": "Shop All",
               "col": "4"
@@ -487,6 +489,8 @@
               "blog": "",
               "page_link": "",
               "col_link": "Spring-2023",
+              "show_title_text": true,
+              "show_button_text": true,
               "title": "",
               "button_text": "Shop All",
               "col": "4"
@@ -516,7 +520,7 @@
               "mm_btn_text": "Shop All",
               "url": "shopify:\/\/collections\/mens",
               "open_link": "_self",
-              "col": "3"
+              "col": "2"
             }
           },
           "3237df59-19be-4aea-b04a-b0f1e8c10f56": {
@@ -526,7 +530,7 @@
               "url": "",
               "open_link": "_self",
               "menu": "mens-new-site-left-column",
-              "col": "1"
+              "col": "13"
             }
           },
           "321dc9c2-00b3-46de-b52d-9b60ac580c7a": {
@@ -536,7 +540,7 @@
               "url": "",
               "open_link": "_self",
               "menu": "mens-new-site-right-column",
-              "col": "2"
+              "col": "13"
             }
           },
           "0f6b55f0-194b-497d-8d7e-0377f59f3023": {
@@ -549,6 +553,8 @@
               "blog": "",
               "page_link": "",
               "col_link": "Men's",
+              "show_title_text": true,
+              "show_button_text": true,
               "title": "Desert Bloom",
               "button_text": "Shop Collection",
               "col": "3"
@@ -564,6 +570,8 @@
               "blog": "",
               "page_link": "",
               "col_link": "",
+              "show_title_text": true,
+              "show_button_text": true,
               "title": "Best Sellers",
               "button_text": "Shop All",
               "col": "3"
@@ -593,7 +601,7 @@
               "mm_btn_text": "Shop All",
               "url": "shopify:\/\/collections\/womens",
               "open_link": "_self",
-              "col": "3"
+              "col": "2"
             }
           },
           "61fda3d2-5725-4d65-8f36-62eee9e6b1cc": {
@@ -603,7 +611,7 @@
               "url": "",
               "open_link": "_self",
               "menu": "womens-new-site-left-column",
-              "col": "1"
+              "col": "13"
             }
           },
           "5aedc4d9-42ea-4018-be76-632a6fa1571a": {
@@ -613,7 +621,7 @@
               "url": "",
               "open_link": "_self",
               "menu": "womens-new-site-right-column",
-              "col": "2"
+              "col": "13"
             }
           },
           "3378432e-ed42-4f8c-ab8d-0a6d7d38d8ce": {
@@ -626,6 +634,8 @@
               "blog": "",
               "page_link": "",
               "col_link": "women's",
+              "show_title_text": true,
+              "show_button_text": true,
               "title": "Desert Bloom",
               "button_text": "Shop Collection",
               "col": "3"
@@ -641,6 +651,8 @@
               "blog": "",
               "page_link": "",
               "col_link": "Women's",
+              "show_title_text": true,
+              "show_button_text": true,
               "title": "Best Sellers",
               "button_text": "Shop All",
               "col": "3"
@@ -670,7 +682,7 @@
               "mm_btn_text": "Shop All",
               "url": "shopify:\/\/collections\/accessories",
               "open_link": "_self",
-              "col": "3"
+              "col": "2"
             }
           },
           "4e5ad45b-8c9b-48d6-8ccb-93307deb91fa": {
@@ -680,7 +692,7 @@
               "url": "",
               "open_link": "_self",
               "menu": "accessories-new-site-left-column-1",
-              "col": "1"
+              "col": "13"
             }
           },
           "d964bd86-2c5e-4cb7-8b1f-0027152aafea": {
@@ -690,7 +702,7 @@
               "url": "",
               "open_link": "_self",
               "menu": "accessories-new-site-right-column",
-              "col": "2"
+              "col": "13"
             }
           },
           "01c7c08b-1e91-40f4-8734-b22e759c1062": {
@@ -703,6 +715,8 @@
               "blog": "",
               "page_link": "",
               "col_link": "",
+              "show_title_text": true,
+              "show_button_text": true,
               "title": "New Arrivals",
               "button_text": "Shop All",
               "col": "3"
@@ -718,6 +732,8 @@
               "blog": "",
               "page_link": "",
               "col_link": "",
+              "show_title_text": true,
+              "show_button_text": true,
               "title": "",
               "button_text": "Shop All",
               "col": "3"
@@ -780,6 +796,8 @@
               "blog": "",
               "page_link": "",
               "col_link": "",
+              "show_title_text": true,
+              "show_button_text": true,
               "title": "Desert Bloom",
               "button_text": "Shop Collection",
               "col": "3"
@@ -795,6 +813,8 @@
               "blog": "",
               "page_link": "",
               "col_link": "",
+              "show_title_text": true,
+              "show_button_text": true,
               "title": "Signature",
               "button_text": "Shop All",
               "col": "3"
@@ -824,7 +844,7 @@
               "mm_btn_text": "Learn More",
               "url": "shopify:\/\/pages\/about-us",
               "open_link": "_self",
-              "col": "3"
+              "col": "2"
             }
           },
           "66d0465a-828c-4e53-834b-3d3364298ba3": {
@@ -834,7 +854,7 @@
               "url": "",
               "open_link": "_self",
               "menu": "company-new-site-header-left-column",
-              "col": "1"
+              "col": "2"
             }
           },
           "11acb69c-a430-42a5-859a-485c06df3876": {
@@ -844,7 +864,7 @@
               "url": "",
               "open_link": "_self",
               "menu": "company-new-site-header-right-column",
-              "col": "2"
+              "col": "13"
             }
           },
           "0f6aa0d1-fe20-4646-8b54-8ca3ca341bfa": {
@@ -857,6 +877,8 @@
               "blog": "",
               "page_link": "about-us",
               "col_link": "",
+              "show_title_text": true,
+              "show_button_text": true,
               "title": "",
               "button_text": "Learn More",
               "col": "3"
@@ -872,6 +894,8 @@
               "blog": "",
               "page_link": "sendero-sessions",
               "col_link": "",
+              "show_title_text": true,
+              "show_button_text": true,
               "title": "",
               "button_text": "View All",
               "col": "3"

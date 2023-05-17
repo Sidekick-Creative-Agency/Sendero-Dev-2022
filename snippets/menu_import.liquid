@@ -8,7 +8,8 @@
   assign arr_id = se_blocks | map: 'id'
   assign arr_id_size = arr_id |split:bid | first |split:',' | size
   assign block = se_blocks | where: "id", bid | first
-  assign arrType = "dropdown,logo,btn,simple,mega,list" -%}
+  assign arrType = "dropdown,logo,btn,simple,mega,list"
+  -%}
  
 {% if Current_id == blank %}[t4splitlz]{% endif %}
 {%- if block.type == 'dropdown' -%}{%- assign bk_stts = block.settings -%}{%- assign llists = linklists[bk_stts.menu].links -%} 
@@ -231,13 +232,18 @@
 									<div class="cat_grid_item__overlay item__position nt_bg_lz lazyloadt4s" data-bg="{{ 'placeholder.jpg' | asset_url }}" style="padding-top:127%;"></div>
 								{%- endif -%}
 							</a>
-							<div class="cat_grid_item__wrapper pe_none">
-								<div class="cat_grid_item__title h3">
-									{{ bk_stts.title | default:collection.title | default:home_t }}
-									<div class="shop-all" style="font-size: {{section.settings.shop_all_btn_size}}px">Shop All<i class="las la-arrow-right"></i></div>
-								</div>
-								<div class="cat_grid_item__count dn">{{collection.all_products_count}} {{pr_txt}}</div>
-							</div>
+							{% if bk_stts.show_title_text == true or bk_stts.show_button_text == true %}
+								<div class="cat_grid_item__wrapper pe_none">
+									<div class="cat_grid_item__title h3">
+										{% if bk_stts.show_title_text == true %}
+											{{ bk_stts.title | default:bk_stts.collection.title | default:home_t }}
+										{% endif %}
+										{% if bk_stts.show_button_text == true %}
+											<div class="shop-all" style="font-size: {{section.settings.shop_all_btn_size}}px">{{bk_stts.button_text}}<i class="las la-arrow-right"></i></div>
+										{% endif %}
+									</div>
+						  		</div>
+							{% endif %}
 							{% endif %}
  
 							
@@ -251,12 +257,19 @@
 								<div class="cat_grid_item__overlay item__position nt_bg_lz lazyloadt4s" data-bg="{{ 'placeholder.jpg' | asset_url }}" style="padding-top:127%;"></div>
 								{%- endif -%}
 						  	</a>
-						 	<div class="cat_grid_item__wrapper pe_none">
-								<div class="cat_grid_item__title h3">
-									{{ bk_stts.title | default:page.title | default:home_t }}
-									<div class="shop-all" style="font-size: {{section.settings.shop_all_btn_size}}px">{{bk_stts.button_text}}<i class="las la-arrow-right"></i></div>
-								</div>
-						  	</div>
+							{% if bk_stts.show_title_text == true or bk_stts.show_button_text == true %}
+								<div class="cat_grid_item__wrapper pe_none">
+									<div class="cat_grid_item__title h3">
+										{% if bk_stts.show_title_text == true %}
+											{{ bk_stts.title | default:page.title | default:home_t }}
+										{% endif %}
+										{% if bk_stts.show_button_text == true %}
+											<div class="shop-all" style="font-size: {{section.settings.shop_all_btn_size}}px">{{bk_stts.button_text}}<i class="las la-arrow-right"></i></div>
+										{% endif %}
+									</div>
+						  		</div>
+							{% endif %}
+						 	
 
 						{% elsif bk_stts.blog %} 
 						  	<a href="{{ blog_url| default:'/' }}" class="db cat_grid_item__link" style="max-height: 210px !important">
@@ -267,12 +280,18 @@
 								<div class="cat_grid_item__overlay item__position nt_bg_lz lazyloadt4s" data-bg="{{ 'placeholder.jpg' | asset_url }}" style="padding-top:127%;"></div>
 								{%- endif -%}
 						  	</a>
-						 	<div class="cat_grid_item__wrapper pe_none">
-								<div class="cat_grid_item__title h3">
-									{{ bk_stts.title | default:blog.title | default:home_t }}
-									<div class="shop-all" style="font-size: {{section.settings.shop_all_btn_size}}px">{{bk_stts.button_text}}<i class="las la-arrow-right"></i></div>
-								</div>
-						  	</div>
+						 	{% if bk_stts.show_title_text == true or bk_stts.show_button_text == true %}
+								<div class="cat_grid_item__wrapper pe_none">
+									<div class="cat_grid_item__title h3">
+										{% if bk_stts.show_title_text == true %}
+											{{ bk_stts.title | default:page.title | default:home_t }}
+										{% endif %}
+										{% if bk_stts.show_button_text == true %}
+											<div class="shop-all" style="font-size: {{section.settings.shop_all_btn_size}}px">{{bk_stts.button_text}}<i class="las la-arrow-right"></i></div>
+										{% endif %}
+									</div>
+						  		</div>
+							{% endif %}
 						{% endif %}
 					</div>
 				</div>
