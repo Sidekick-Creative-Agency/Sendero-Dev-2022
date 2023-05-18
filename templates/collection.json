@@ -4,6 +4,7 @@
       "type": "category-page-top",
       "settings": {
         "show_bread": false,
+        "show_title": true,
         "title": "Category Page Top",
         "sub_title": "Sub Text",
         "sub_font": "2",
@@ -31,7 +32,7 @@
       "settings": {
         "shop_layout": "default",
         "shop_des": "default",
-        "limit": 12,
+        "limit": 24,
         "space": 30,
         "use_pagination": "more",
         "use_bar_lm": true,
