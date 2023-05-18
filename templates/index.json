@@ -25,7 +25,7 @@
             "hor_pos_mb": "center",
             "txt_align_mb": "tc",
             "cl_overlay": "#000000",
-            "cl_opacity": 7,
+            "cl_opacity": 0,
             "ani_img": "none",
             "ani_txt": "bottom_top",
             "bg_content_bl": false,
@@ -63,7 +63,7 @@
           "type": "txt",
           "settings": {
             "font": "f_body",
-            "title": "About dang time!",
+            "title": "...about dang time!",
             "color": "#ffffff",
             "text_align": "right",
             "fw_text": 300,
