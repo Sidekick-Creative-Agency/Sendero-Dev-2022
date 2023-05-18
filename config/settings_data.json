@@ -627,17 +627,17 @@
           "3378432e-ed42-4f8c-ab8d-0a6d7d38d8ce": {
             "type": "cat",
             "settings": {
-              "image": "shopify:\/\/shop_images\/DESERT_BLOOM-Collection_Menu2.jpg",
+              "image": "shopify:\/\/shop_images\/Men_-_SS23_hats.jpg",
               "cat_design": "1",
               "hoverz": true,
-              "collection": "desert-bloom",
+              "collection": "womens-hats",
               "blog": "",
               "page_link": "",
               "col_link": "women's",
               "show_title_text": true,
               "show_button_text": true,
-              "title": "Desert Bloom",
-              "button_text": "Shop Collection",
+              "title": "NEW HATS",
+              "button_text": "Shop ALL",
               "col": "3"
             }
           },
