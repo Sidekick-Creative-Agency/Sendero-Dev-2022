@@ -2431,12 +2431,44 @@ div aside.widget_text .widget-title {
 	font-weight: 500;
 	font-family: 'Oswald', sans-serif;
 }
-.cart-note__input {
+.cart-note__input,
+#CartSpecialInstructions {
 	font-family: 'Kameron', serif;
 	font-size: 16px;
 }
+.txt_edit_note,
+.txt_add_note {
+	margin-top: 32px;
+	font-size: 14px;
+	/* padding-bottom: 4px; */
+	text-transform: uppercase;
+	font-weight: 500;
+	font-family: 'Oswald', sans-serif;
+}
 .cart-note__input::placeholder {
 	color: #666;
+}
+.mini_cart_tool {
+	margin-top: 16px;
+	background-color: transparent !important;
+}
+.mini_cart_tool_note {
+	/* border: 1px solid #000 !important; */
+	height: 32px !important;
+
+	border: none !important;
+	border-bottom: 1px solid #000 !important;
+	box-shadow: none !important;
+	width: fit-content;
+	margin: auto !important;
+}
+.mini_cart_tool_note:hover {
+	box-shadow: none !important;
+	background-color: transparent !important;
+	opacity: 0.8;
+}
+.mini_cart_tool_note::before {
+	display: none;
 }
 
 /* ----- Tablet ----- */

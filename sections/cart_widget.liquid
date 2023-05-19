@@ -62,29 +62,13 @@
 
                {%- if se_style == '2' or se_style == '1' and se_pos == '2' %}{% assign tooltip = 'tooltip_top' %}<div class="mini_cart_items js_cat_items" data-rendert4s="{{cart_url}}/?view=viewjs"><div class="lds_bginfinity pr mt__10 mb__20"></div></div>{% endif -%}
 
-               {%- if se_style == '1' -%}
                
-               <div class="mini_cart_tool js_cart_tool tc {% if ccount == 0 %} dn{% endif %}{%- if se_style == '1' and se_pos == '1' %} mt__20{% endif %}">
-                  {%- if se_stts.show_note -%}<div data-id="note" class="mini_cart_tool_note js_cart_tls ttip_nt {{tooltip}}">
-                    <span class="txt_add_note {{noteclass[0]}}"><i class="lar la-clipboard"></i><span class="tt_txt">{{ 'cart.general.note' | t }}</span></span>
-                    <span class="txt_edit_note {{noteclass[1]}}"><i class="las la-clipboard-list"></i><span class="tt_txt">{{ 'cart.general.edit_note' | t }}</span></span></div>
-                  {%- endif -%}
-                  {%- if show_gift_wrap and gift_wrap_pr != blank -%}<div data-id="gift" class="mini_cart_tool_gift js_cart_tls js_gift_wrap ttip_nt {{tooltip}}"><i class="las la-gift"></i><span class="tt_txt">{{ 'cart.general.add_gift_wrap' | t }}</span></div>{%- endif -%}
-                  {%- if se_stts.show_rates -%}<div data-id="ship" class="mini_cart_tool_ship js_cart_tls ttip_nt {{tooltip}}"><i class="las la-truck-moving"></i><span class="tt_txt">{{ 'cart.general.estimate_ship' | t }}</span></div>{%- endif -%}
-                  {%- if se_stts.show_discount -%}<div data-id="dis" class="mini_cart_tool_dis js_cart_tls ttip_nt {{tooltip}}"><i class="las la-tag"></i><span class="tt_txt">{{ 'cart.general.add_coupon' | t }}</span></div>{%- endif -%}
-               </div>
-               {%- else -%}
-               <div class="mini_cart_tool js_cart_tool{% if ccount == 0 %} dn{% endif %}">
-                  {%- if se_stts.show_note -%}<div data-id="note" class="mini_cart_tool_note js_cart_tls pr truncate"><span class="txt_add_note {{noteclass[0]}}">{{ 'cart.general.note' | t }}</span><span class="txt_edit_note {{noteclass[1]}}">{{ 'cart.general.edit_note' | t }}</span></div>{%- endif -%}
-                  {%- if show_gift_wrap and gift_wrap_pr != blank -%}<div data-id="gift" class="mini_cart_tool_gift js_cart_tls pr truncate js_gift_wrap">{{ 'cart.general.add_gift_wrap' | t }}</div>{%- endif -%}
-                  {%- if se_stts.show_rates -%}<div data-id="ship" class="mini_cart_tool_ship js_cart_tls pr truncate">{{ 'cart.general.estimate_ship' | t }}</div>{%- endif -%}
-                  {%- if se_stts.show_discount -%}<div data-id="dis" class="mini_cart_tool_dis js_cart_tls pr truncate">{{ 'cart.general.add_coupon' | t }}</div>{%- endif -%}
-               </div>
-               {%- endif -%}
 
                {%- if se_style == '1' and se_pos == '1' %}<div class="mini_cart_items js_cat_items" data-rendert4s="{{cart_url}}/?view=viewjs"><div class="lds_bginfinity pr mt__10 mb__20"></div></div>{% endif -%}
             </div>
          </div>
+
+       
          {%- if se_stts.enable_pr %}<div data-cart-upsell-js data-baseurl="{{ routes.product_recommendations_url }}" data-limit="10" data-id="{{cart.items.first.product_id}}"></div>{% endif -%}
          <div class="mini_cart_footer js_cart_footer{% if ccount == 0 %} dn{% endif %}">
             <div class="js_cat_dics">
@@ -156,6 +140,27 @@
                {%- endfor -%}
             {%- endif -%}
          </div>
+
+           {%- if se_style == '1' -%}
+               
+               <div class="mini_cart_tool js_cart_tool tc {% if ccount == 0 %} dn{% endif %}{%- if se_style == '1' and se_pos == '1' %} mt__20{% endif %}">
+                  {%- if se_stts.show_note -%}<div data-id="note" class="mini_cart_tool_note js_cart_tls ttip_nt {{tooltip}}">
+                    <span class="txt_add_note {{noteclass[0]}}"><i class="lar la-clipboard"></i><span class="tt_txt">{{ 'cart.general.note' | t }}</span></span>
+                    <span class="txt_edit_note {{noteclass[1]}}"><i class="las la-clipboard-list"></i><span class="tt_txt">{{ 'cart.general.edit_note' | t }}</span></span></div>
+                  {%- endif -%}
+                  {%- if show_gift_wrap and gift_wrap_pr != blank -%}<div data-id="gift" class="mini_cart_tool_gift js_cart_tls js_gift_wrap ttip_nt {{tooltip}}"><i class="las la-gift"></i><span class="tt_txt">{{ 'cart.general.add_gift_wrap' | t }}</span></div>{%- endif -%}
+                  {%- if se_stts.show_rates -%}<div data-id="ship" class="mini_cart_tool_ship js_cart_tls ttip_nt {{tooltip}}"><i class="las la-truck-moving"></i><span class="tt_txt">{{ 'cart.general.estimate_ship' | t }}</span></div>{%- endif -%}
+                  {%- if se_stts.show_discount -%}<div data-id="dis" class="mini_cart_tool_dis js_cart_tls ttip_nt {{tooltip}}"><i class="las la-tag"></i><span class="tt_txt">{{ 'cart.general.add_coupon' | t }}</span></div>{%- endif -%}
+               </div>
+               {%- else -%}
+               <div class="mini_cart_tool js_cart_tool{% if ccount == 0 %} dn{% endif %}">
+                  {%- if se_stts.show_note -%}<div data-id="note" class="mini_cart_tool_note js_cart_tls pr truncate"><span class="txt_add_note {{noteclass[0]}}">{{ 'cart.general.note' | t }}</span><span class="txt_edit_note {{noteclass[1]}}">{{ 'cart.general.edit_note' | t }}</span></div>{%- endif -%}
+                  {%- if show_gift_wrap and gift_wrap_pr != blank -%}<div data-id="gift" class="mini_cart_tool_gift js_cart_tls pr truncate js_gift_wrap">{{ 'cart.general.add_gift_wrap' | t }}</div>{%- endif -%}
+                  {%- if se_stts.show_rates -%}<div data-id="ship" class="mini_cart_tool_ship js_cart_tls pr truncate">{{ 'cart.general.estimate_ship' | t }}</div>{%- endif -%}
+                  {%- if se_stts.show_discount -%}<div data-id="dis" class="mini_cart_tool_dis js_cart_tls pr truncate">{{ 'cart.general.add_coupon' | t }}</div>{%- endif -%}
+               </div>
+               {%- endif -%}
+               
       </div>
 
       {%- if se_stts.show_note -%}
@@ -229,19 +234,19 @@
 
 <script>
 
-  // var note = $(".mini_cart_tool_note");
+   var note = $(".mini_cart_tool_note");
   // var ship = $(".mini_cart_tool_ship");
   // var coupon = $(".mini_cart_tool_dis");
-  // var noteField = $(".mini_cart_note");
+   var noteField = $(".mini_cart_note");
   // var shipField = $(".mini_cart_ship");
   // var couponField = $(".mini_cart_dis");
   // var backButton = $(".js_cart_tls_back");
 
-  // noteField.addClass("mini-cart-hidden")
+   noteField.addClass("mini-cart-hidden")
   // shipField.addClass("mini-cart-hidden")
   // couponField.addClass("mini-cart-hidden")
   // note.click(() => {
-  //   $(".mini_cart_note").removeClass("mini-cart-hidden");
+    // $(".mini_cart_note").removeClass("mini-cart-hidden");
   // });
   // backButton.click(() => {
   //   $(".mini_cart_note").addClass("mini-cart-hidden");
