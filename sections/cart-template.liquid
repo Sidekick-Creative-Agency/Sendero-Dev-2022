@@ -65,13 +65,18 @@
             {% render 'cart_items_page' %}
           </div>
         </div>
+        {%- if se_stts.show_note -%}
+            <label for="CartSpecialInstructions" class="cart-note__label dib cd mb__10"><span class="txt_add_note {{noteclass[0]}}">{{ 'cart.general.note' | t }}</span><span class="txt_edit_note {{noteclass[1]}}">{{ 'cart.general.edit_note' | t }}</span></label>
+            <textarea name="note" id="CartSpecialInstructions" class="cart-note__input" placeholder="{{ 'cart.general.placeholder_note' | t }}">{{ cart.note }}</textarea>
+        {%- endif -%}
       </div>
       <div class="cart-column">
         <div class="cart-footer-container">
           <h3 class="cart-order">Order Summary</h3>
           <div class="cart__footer">
             <div class="row">
-              {%- if se_stts.show_note or se_stts.show_discount or se_stts.show_gift_wrap and gift_pr != blank -%}{%- assign ck_col = true -%}
+              {%- comment -%} SIDEKICK AGENCY REMOVED se_stts.show_note FROM THE BELOW IF STATEMENT {%- endcomment -%} 
+              {%- if se_stts.show_discount or se_stts.show_gift_wrap and gift_pr != blank -%}{%- assign ck_col = true -%}
                 <div class="col-12 col-md-6 cart_actions tl_md tc order-md-2 order-2 mb__50">
                   {%- if se_stts.show_gift_wrap and gift_pr != blank -%}
                     <div class="gift_wrap row al_center tc tl_md mb__25 js_gift_wrap{% if arr_gift_id.size > 0 %} dn{% endif %}">
@@ -84,10 +89,12 @@
                       </div>
                     </div>
                   {%- endif -%}
+                  {%- comment -%} //// PASTED ABOVE UNDER CART_ITEMS
                   {%- if se_stts.show_note -%}
                     <label for="CartSpecialInstructions" class="cart-note__label dib cd mb__10"><span class="txt_add_note {{noteclass[0]}}">{{ 'cart.general.note' | t }}</span><span class="txt_edit_note {{noteclass[1]}}">{{ 'cart.general.edit_note' | t }}</span></label>
                     <textarea name="note" id="CartSpecialInstructions" class="cart-note__input" placeholder="{{ 'cart.general.placeholder_note' | t }}">{{ cart.note }}</textarea>
                   {%- endif -%}
+                {%- endcomment -%}
                   {%- if se_stts.show_discount -%}
                     <label for="couponcode" class="cart-couponcode__label db cd mt__20 mb__10">{{ 'cart.general.coupon' | t }}</label>
                     <p>{{ 'cart.general.info_coupon' | t }}</p>

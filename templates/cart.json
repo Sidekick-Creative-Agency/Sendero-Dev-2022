@@ -71,7 +71,7 @@
       "settings": {
         "ajax_enable": true,
         "calc_ship": true,
-        "show_note": false,
+        "show_note": true,
         "show_rates": false,
         "show_discount": false,
         "show_gift_wrap": false
