@@ -78,6 +78,11 @@
           "settings": {
             "title": "Details"
           }
+        },
+        "14b3e6e5-d50f-482f-bad5-e53b8638a199": {
+          "type": "shopify:\/\/apps\/amai-preorder-manager-notify\/blocks\/preorder-button-block\/7053ce2a-18da-4e24-98b3-3fdd20b313e7",
+          "settings": {
+          }
         }
       },
       "block_order": [
