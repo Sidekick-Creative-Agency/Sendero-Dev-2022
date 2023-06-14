@@ -35,6 +35,9 @@
     },
     "16492574913de1faed": {
       "type": "rich_text",
+      "custom_css": [
+
+      ],
       "settings": {
         "title": "",
         "heading_size": 32,
@@ -65,11 +68,24 @@
         "mg_mb": "",
         "pd_mb": ",32px,,32px"
       }
+    },
+    "45035bd6-83ea-4f54-b1d3-2eebe88e2480": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "",
+        "layout": "nt_full",
+        "cl_bg": "#fff",
+        "mg": "50px,,20px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
     }
   },
   "order": [
     "heading",
     "main",
-    "16492574913de1faed"
+    "16492574913de1faed",
+    "45035bd6-83ea-4f54-b1d3-2eebe88e2480"
   ]
 }
