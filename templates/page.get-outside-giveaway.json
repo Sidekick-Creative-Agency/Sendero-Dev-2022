@@ -1,0 +1,544 @@
+{
+  "sections": {
+    "heading": {
+      "type": "us_heading",
+      "blocks": {
+        "89b1a94e-2cf5-4075-a6af-0969fbaeae2c": {
+          "type": "1",
+          "settings": {
+            "title": "SPIRIT OF THE WEST, SOUL OF THE WILD",
+            "color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "89b1a94e-2cf5-4075-a6af-0969fbaeae2c"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/SAG_5440_1.jpg",
+        "parallax": true,
+        "color": "#000000",
+        "overlay": 47,
+        "min_height": "500px",
+        "padding": 64,
+        "paddingmb": 32,
+        "bg_pos": "center center",
+        "bg_repeat": "no-repeat",
+        "bg_size": "cover",
+        "bg_att": "scroll"
+      }
+    },
+    "main": {
+      "type": "page_about_us",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "16492574913de1faed": {
+      "type": "rich_text",
+      "settings": {
+        "title": "Our History: To the West",
+        "heading_size": 32,
+        "heading_size_mb": 24,
+        "heading_spacing": 16,
+        "sub_title": "",
+        "show_btn": false,
+        "btn_text": "Click Me",
+        "button_align": "left",
+        "btn_link": "#",
+        "btn_mt": 16,
+        "btn_color": "#000000",
+        "border_color": "#000000",
+        "sub_font": "2",
+        "header_align": "left",
+        "style_title": "title_1",
+        "ic_tt": "gem",
+        "show_clpr": false,
+        "content": "<p>Sendero was born out of one thing: the love for the West. The landscapes, cultures, history, geology, flora, and fauna. All of it. Our very first hat came into being because of the wild West Texas views down in Big Bend country. And take it from us, there’s nothing better than putting on a hat that fits juuust right. We've been chasing that feeling ever since, and although we make a whole lot more than hats these days… that feeling of making our first hat is what keeps us going and pushing the boundaries.<\/p>",
+        "align": "tl",
+        "text_height": 24,
+        "list_mg_left": 0,
+        "list_mg_top": 0,
+        "ul_marker": true,
+        "layout": "container",
+        "mg": "32px,,32px,",
+        "pd": ",64px,,64px",
+        "mg_mb": "",
+        "pd_mb": ",32px,,32px"
+      }
+    },
+    "c099fedd-6696-4f70-9f1f-5c7763827002": {
+      "type": "rich_text",
+      "settings": {
+        "title": "HOMEGROWN RIGHT HERE IN TEJAS",
+        "heading_size": 32,
+        "heading_size_mb": 24,
+        "heading_spacing": 16,
+        "sub_title": "",
+        "show_btn": false,
+        "btn_text": "Click Me",
+        "button_align": "left",
+        "btn_link": "#",
+        "btn_mt": 16,
+        "btn_color": "#000000",
+        "border_color": "#000000",
+        "sub_font": "2",
+        "header_align": "center",
+        "style_title": "title_1",
+        "ic_tt": "gem",
+        "show_clpr": false,
+        "content": "<p>There’s a simple list of things we value that make us who we are here at Sendero: a hard day’s work, free-flowing rivers, public land, quality gear, live music, art for art’s sake, craft beverages, and fine Texas BBQ. So naturally, we planted our roots right here in Waco, Tejas. We’re not all Texans here at Sendero, but “Texas” is more a state of mind than a birthright. <\/p>",
+        "align": "tl",
+        "text_height": 24,
+        "list_mg_left": 0,
+        "list_mg_top": 0,
+        "ul_marker": true,
+        "layout": "container",
+        "mg": "32px,,32px,",
+        "pd": ",64px,,64px",
+        "mg_mb": "",
+        "pd_mb": ",32px,,32px"
+      }
+    },
+    "1c4b4a86-dc36-4ba7-bf69-bb2908d30d7f": {
+      "type": "banner2",
+      "blocks": {
+        "template--16722524012763__1c4b4a86-dc36-4ba7-bf69-bb2908d30d7f-1681395393ba312cde-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/SenderoRioGrande2017_0601_180845-8416_SAG.jpg",
+            "url": "",
+            "open_link": "_self",
+            "col_pr": "6",
+            "col_pr_tb": "6",
+            "col_pr_mb": "12",
+            "html": "",
+            "cap_v_pos": 50,
+            "cap_h_pos": 50,
+            "txt_align": "tc",
+            "cl_txt": "#ffffff",
+            "cl_overlay": "#000000",
+            "cl_opacity": 0
+          }
+        },
+        "template--16722524012763__1c4b4a86-dc36-4ba7-bf69-bb2908d30d7f-1681395393ba312cde-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/jefe_blurb-01_1_1.jpg",
+            "url": "",
+            "open_link": "_self",
+            "col_pr": "6",
+            "col_pr_tb": "6",
+            "col_pr_mb": "12",
+            "html": "",
+            "cap_v_pos": 50,
+            "cap_h_pos": 50,
+            "txt_align": "tc",
+            "cl_txt": "#ffffff",
+            "cl_overlay": "#000000",
+            "cl_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "template--16722524012763__1c4b4a86-dc36-4ba7-bf69-bb2908d30d7f-1681395393ba312cde-0",
+        "template--16722524012763__1c4b4a86-dc36-4ba7-bf69-bb2908d30d7f-1681395393ba312cde-1"
+      ],
+      "settings": {
+        "title": "",
+        "sub_title": "",
+        "sub_font": "2",
+        "style_title": "title_1",
+        "ic_tt": "gem",
+        "show_clpr": false,
+        "cat_space": "0",
+        "hoverz": false,
+        "layout": "nt_full",
+        "cl_bg": "",
+        "mg": "64px,,32px,",
+        "pd": "",
+        "mg_mb": "32px,,32px,",
+        "pd_mb": ""
+      }
+    },
+    "rich-text-columns": {
+      "type": "rich-text-columns",
+      "blocks": {
+        "7b4e921a-ec70-4662-84da-3154f0894e9f": {
+          "type": "rich_text",
+          "settings": {
+            "title": "A NAME YOU CAN TRUST",
+            "body_text": "We’ve been doing this a while now. We made our first hat back in 2014 and we’ve been making everything better ever since. We craft each product individually and care goes into every detail.",
+            "align": "tl"
+          }
+        },
+        "b1da3fe3-52a4-4a6d-99e9-778e7cc08a95": {
+          "type": "rich_text",
+          "settings": {
+            "title": "ONLY HIGH QUALITY MATERIALS",
+            "body_text": "We hand select every fabric, trim, thread, and color that goes into a Sendero product. We don’t use blanks- we’ve developed our own style and unique fits that folks have come to know and expect.",
+            "align": "tl"
+          }
+        },
+        "6b6deefa-64d7-41e5-a551-44c9d0283801": {
+          "type": "rich_text",
+          "settings": {
+            "title": "DESIGNS THAT INSPIRE",
+            "body_text": "We’re not trying to put “Sendero” in as many different ways as we can onto our gear. We do that sometimes, but what gets us excited is funky cool art with a Western twist and maybe a silly joke or two.",
+            "align": "tl"
+          }
+        },
+        "d1ec4e7e-7eea-4899-9db6-3df75ebe759a": {
+          "type": "rich_text",
+          "settings": {
+            "title": "OUR QUALITY GUARANTEE",
+            "body_text": "We make stuff we believe in, and if you have an issue with a Sendero product then our job is not done. We stand by the quality of our products and we’ll replace anything not up to par or defective.",
+            "align": "tl"
+          }
+        },
+        "1ede605d-ce04-4617-8c35-79c1b32f7db0": {
+          "type": "rich_text",
+          "settings": {
+            "title": "NO QUESTIONS",
+            "body_text": "There’s hundreds of thousands of happy Sendero customers out there, so trust that we’ll take care of your order and keep you updated with all the info you need.",
+            "align": "tl"
+          }
+        },
+        "c2e099d8-72e9-4708-ac8a-6fcd1aba3efc": {
+          "type": "rich_text",
+          "settings": {
+            "title": "NOT SURE YET?",
+            "body_text": "If at any point you’re not happy with your new purchase, as long as your products aren’t damaged and in original condition, we’ll take them back no problem. Our simple return page will walk you through the entire process.",
+            "align": "tl"
+          }
+        }
+      },
+      "block_order": [
+        "7b4e921a-ec70-4662-84da-3154f0894e9f",
+        "b1da3fe3-52a4-4a6d-99e9-778e7cc08a95",
+        "6b6deefa-64d7-41e5-a551-44c9d0283801",
+        "d1ec4e7e-7eea-4899-9db6-3df75ebe759a",
+        "1ede605d-ce04-4617-8c35-79c1b32f7db0",
+        "c2e099d8-72e9-4708-ac8a-6fcd1aba3efc"
+      ],
+      "settings": {
+        "main_title": "We take our stuff seriously – it's in our roots",
+        "header_align": "center",
+        "col_num": "2",
+        "grid_space": 24,
+        "show_ckmk": true,
+        "show_btn": false,
+        "btn_text": "Click Me",
+        "button_align": "center",
+        "btn_link": "#",
+        "sub_font": "2",
+        "style_title": "title_1",
+        "ic_tt": "gem",
+        "show_clpr": false,
+        "layout": "container",
+        "mg": "64px,,64px,",
+        "pd": ",64px,,64px",
+        "mg_mb": "32px,,32px,",
+        "pd_mb": ",32px,,32px"
+      }
+    },
+    "1649257609430b6426": {
+      "type": "image_text_overlay",
+      "blocks": {
+        "16492576096b122d98-0": {
+          "type": "1",
+          "settings": {
+            "title": "THE NAME & THE AGAVE",
+            "color": "#ffffff",
+            "fw_text": 600,
+            "fs_text": 28,
+            "lh_text": 0,
+            "ls_text": 0,
+            "fs_mb_text": 22,
+            "lh_mb_text": 0,
+            "ls_mb_text": 0,
+            "mg_bot_text": 16
+          }
+        },
+        "16492576096b122d98-2": {
+          "type": "2",
+          "settings": {
+            "font": "f_body",
+            "title": "<p>“Sendero” is the Spanish word for “trail” or “path.” Although the origin of the name is uncertain, around these parts if you’re going out to walk a “sendero,” there’s a good chance folks know exactly what you mean and there’s an even better chance you might run into an agave or two. We like to think we’re building our own “sendero,” by following the trails blazed by our role models and industry leaders, but we’re bringing that classic “Sendero style.”<\/p>",
+            "list_mg_left": 0,
+            "list_mg_top": 0,
+            "ul_marker": true,
+            "color": "#ffffff",
+            "fw_text": 400,
+            "fs_text": 18,
+            "lh_text": 28,
+            "ls_text": 0,
+            "fs_mb_text": 16,
+            "lh_mb_text": 22,
+            "ls_mb_text": 0,
+            "hide": false
+          }
+        }
+      },
+      "block_order": [
+        "16492576096b122d98-0",
+        "16492576096b122d98-2"
+      ],
+      "settings": {
+        "se_height": "cus_h",
+        "use_custom_h": "1",
+        "h_des": "360px",
+        "h_tb": "400px",
+        "h_mb": "400px",
+        "image": "shopify:\/\/shop_images\/gautier-salles-uffQnKuJ-hc-unsplash.jpg",
+        "use_pr": true,
+        "img_align": "bottom",
+        "caption_w": "1",
+        "cap_v_pos": 50,
+        "cap_h_pos": 50,
+        "txt_align": "tc_md",
+        "cap_v_pos_mb": 50,
+        "cap_h_pos_mb": 50,
+        "txt_align_mb": "tl",
+        "cl_overlay": "#000000",
+        "cl_opacity": 40,
+        "layout": "nt_full",
+        "mg": ",,,,",
+        "pd": "",
+        "pd_text": 64,
+        "mg_mb": "",
+        "pd_mb": "",
+        "pd_text_mb": 32
+      }
+    },
+    "1649253785b4e78813": {
+      "type": "feature_columns_about",
+      "blocks": {
+        "7002b360-4df7-41a9-8e7c-909434ffd075": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Mike_Cannaday.jpg",
+            "title": "Mike Cannaday",
+            "text": "<p>Brand Manager<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "open_link": "_blank",
+            "btn_style": "1"
+          }
+        },
+        "50ee8cd1-1749-4564-842d-b2e523c0084e": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/John_Dale.jpg",
+            "title": "John Dale",
+            "text": "<p>Director of Photography<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "open_link": "_blank",
+            "btn_style": "1"
+          }
+        },
+        "164925378551f6e47c-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Cameron_Frymark.jpg",
+            "title": "Cameron Frymark",
+            "text": "<p>Warehouse Manager<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "open_link": "_blank",
+            "btn_style": "1"
+          }
+        },
+        "e664680c-2fbf-4cef-9110-9faac905c98d": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Hunter_Glaske.jpg",
+            "title": "Hunter Glaske",
+            "text": "<p>Wholesale Manager<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "open_link": "_blank",
+            "btn_style": "1"
+          }
+        },
+        "164925378551f6e47c-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Hunter_Harlow.jpg",
+            "title": "Hunter Harlow",
+            "text": "<p>El Jefe<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "open_link": "_blank",
+            "btn_style": "1"
+          }
+        },
+        "811de73e-a1a3-4392-ade4-b75d9332a991": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Rachel_Harlow.jpg",
+            "title": "Rachel Harlow",
+            "text": "<p>Office Manager<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "open_link": "_blank",
+            "btn_style": "1"
+          }
+        },
+        "44711518-d59a-4e5f-95f7-26e327035d12": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Devin_Jackson.jpg",
+            "title": "Devin Jackson",
+            "text": "<p>Warehouse<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "open_link": "_blank",
+            "btn_style": "1"
+          }
+        },
+        "164925378551f6e47c-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Brent_Losak.jpg",
+            "title": "Brent Losak",
+            "text": "<p>Warehouse<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "open_link": "_blank",
+            "btn_style": "1"
+          }
+        },
+        "99e986bc-e538-4140-8fc3-05a7469e91ad": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Jenny_Passavant.jpg",
+            "title": "Jenny Passavant",
+            "text": "<p>Fashion Director<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "open_link": "_blank",
+            "btn_style": "1"
+          }
+        },
+        "1f6da668-fc44-4caf-99be-dbe96aa90c59": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Mike_Penney.jpg",
+            "title": "Mike Penney",
+            "text": "<p>Warehouse<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "open_link": "_blank",
+            "btn_style": "1"
+          }
+        },
+        "0ee31f8b-fd02-4e77-90bd-634130e0eff5": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Red_Rankin.jpg",
+            "title": "Red Rankin",
+            "text": "<p>Social Media & Customer Service<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "open_link": "_blank",
+            "btn_style": "1"
+          }
+        },
+        "64a5cd04-0a91-408f-a86d-6ecbe599bb82": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Kevin_Schupp.jpg",
+            "title": "Kevin Schupp",
+            "text": "<p>Sales Director<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "open_link": "_blank",
+            "btn_style": "1"
+          }
+        },
+        "be80789c-2e95-4ea8-8ddb-ba4a2dd943e4": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Will_Suarez.jpg",
+            "title": "Will Suarez",
+            "text": "<p>Art Director<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "open_link": "_blank",
+            "btn_style": "1"
+          }
+        }
+      },
+      "block_order": [
+        "7002b360-4df7-41a9-8e7c-909434ffd075",
+        "50ee8cd1-1749-4564-842d-b2e523c0084e",
+        "164925378551f6e47c-2",
+        "e664680c-2fbf-4cef-9110-9faac905c98d",
+        "164925378551f6e47c-0",
+        "811de73e-a1a3-4392-ade4-b75d9332a991",
+        "44711518-d59a-4e5f-95f7-26e327035d12",
+        "164925378551f6e47c-1",
+        "99e986bc-e538-4140-8fc3-05a7469e91ad",
+        "1f6da668-fc44-4caf-99be-dbe96aa90c59",
+        "0ee31f8b-fd02-4e77-90bd-634130e0eff5",
+        "64a5cd04-0a91-408f-a86d-6ecbe599bb82",
+        "be80789c-2e95-4ea8-8ddb-ba4a2dd943e4"
+      ],
+      "settings": {
+        "title": "Team",
+        "heading_size": 32,
+        "heading_align": "center",
+        "show_clpr": false,
+        "round": 0,
+        "section_layout": "1",
+        "pos_text": "default",
+        "align_text": "tc",
+        "fs_hd": 22,
+        "fs_txt": 16,
+        "w_img": 0,
+        "loop": false,
+        "autoplay": false,
+        "au_time": 6,
+        "au_hover": false,
+        "button": false,
+        "btn_vi": "1",
+        "btn_owl": "1",
+        "btn_color": "0",
+        "dot": true,
+        "dot_owl": "1",
+        "dot_color": "1",
+        "layout": "container",
+        "cl_bg": "",
+        "mg": "64px,,64px,",
+        "pd": ",96px,,96px",
+        "mg_mb": "32px,,32px,",
+        "pd_mb": ",32px,,32px"
+      }
+    }
+  },
+  "order": [
+    "heading",
+    "main",
+    "16492574913de1faed",
+    "c099fedd-6696-4f70-9f1f-5c7763827002",
+    "1c4b4a86-dc36-4ba7-bf69-bb2908d30d7f",
+    "rich-text-columns",
+    "1649257609430b6426",
+    "1649253785b4e78813"
+  ]
+}
