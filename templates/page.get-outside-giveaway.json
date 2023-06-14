@@ -41,7 +41,7 @@
         "layout": "nt_full",
         "cl_bg": "#fff",
         "mg": "50px,,20px,",
-        "pd": "",
+        "pd": "500px",
         "mg_mb": "",
         "pd_mb": ""
       }
