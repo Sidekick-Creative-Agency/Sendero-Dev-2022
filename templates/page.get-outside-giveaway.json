@@ -30,20 +30,6 @@
     },
     "0dd5f1cd-4ba6-4e90-af62-31bb2c15745f": {
       "type": "custom_section",
-      "blocks": {
-        "39c6fc3f-936e-406d-8b8b-bf53618f88c7": {
-          "type": "html",
-          "settings": {
-            "html": "<body>\n\n\n<meta http-equiv=\"Content-Type\" content=\"text\/html\" charset=\"utf-8\">\n<meta property=\"fb:app_id\" content=\"424426844274364\">\n\n<meta name=\"twitter:card\" content=\"summary_large_image\">\n<meta name=\"twitter:title\" content=\"WELCOME TO THE\" go on get outside giveaway>\n<meta name=\"twitter:description\" content=\"We’ll do the packing! $7,000 in gear from Yeti, Nomad, Bote, Turtlebox, Hari Mari, Kammok, Sendero and a 3-night stay from Camp Fimfo!\">\n<meta name=\"twitter:image\" content=\"https:\/\/res.cloudinary.com\/viralsweep\/image\/upload\/v1686592227\/w7ujhvtt2k82pgvtmj5o.png\">\n        \n<meta property=\"og:url\" content=\"https:\/\/app.viralsweep.com\/sweeps\/full\/58452b-137574?framed=1\">\n<meta property=\"og:type\" content=\"article\">\n<meta property=\"og:title\" content=\"WELCOME TO THE\" go on get outside giveaway>\n<meta property=\"og:image\" content=\"https:\/\/res.cloudinary.com\/viralsweep\/image\/upload\/v1686592227\/w7ujhvtt2k82pgvtmj5o.png\">\n<meta property=\"og:site_name\" content=\"WELCOME TO THE\" go on get outside giveaway>\n<meta property=\"fb:admins\" content=\"1088490351\">\n<meta property=\"fb:admins\" content=\"11512735\">\n<meta property=\"fb:admins\" content=\"1088490312\">\n<meta property=\"og:description\" content=\"We’ll do the packing! $7,000 in gear from Yeti, Nomad, Bote, Turtlebox, Hari Mari, Kammok, Sendero and a 3-night stay from Camp Fimfo!\">\n<title>WELCOME TO THE\"GO ON! GET OUTSIDE GIVEAWAY\"<\/title>\n<style type=\"text\/css\">\nbody { border: 0; margin: 0; padding: 0; }\n<\/style>\n\n<meta name=\"viewport\" content=\"user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width\">\n<meta name=\"apple-mobile-web-app-capable\" content=\"yes\">\n\n\n\n<div id=\"vsscript_137574_950883\"><\/div>\n<script async type=\"text\/javascript\" src=\"https:\/\/app.viralsweep.com\/vsa-full-58452b-137574.js?sid=137574_950883\"><\/script>\n\n<\/body>",
-            "cl": "6",
-            "cl_tb": "6",
-            "cl_mb": "12"
-          }
-        }
-      },
-      "block_order": [
-        "39c6fc3f-936e-406d-8b8b-bf53618f88c7"
-      ],
       "settings": {
         "layout": "nt_full",
         "cl_bg": "#fff",
@@ -58,11 +44,24 @@
       "disabled": true,
       "settings": {
       }
+    },
+    "a7e65326-8a19-4bcf-9d0f-5cbf13e87004": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "",
+        "layout": "nt_full",
+        "cl_bg": "#fff",
+        "mg": "50px,,20px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
     }
   },
   "order": [
     "heading",
     "0dd5f1cd-4ba6-4e90-af62-31bb2c15745f",
-    "main"
+    "main",
+    "a7e65326-8a19-4bcf-9d0f-5cbf13e87004"
   ]
 }
