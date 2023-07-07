@@ -6,8 +6,8 @@
         "16357021760efbe511-6": {
           "type": "img",
           "settings": {
-            "image": "shopify:\/\/shop_images\/SS23NEWHATS_Banner2.jpg",
-            "pos_img": "center center",
+            "image": "shopify:\/\/shop_images\/7_7_Banner_-_Cowboy_Hat_-_Popular_Restock_B.jpg",
+            "pos_img": "center top",
             "cl_img": "",
             "link_img1": "",
             "open_link": "_self",
@@ -15,7 +15,7 @@
             "content_top_padding": 0,
             "content_bottom_padding": 122,
             "content_hor_padding": 72,
-            "vert_pos": "center",
+            "vert_pos": "flex-end",
             "hor_pos": "center",
             "txt_align": "tc_md",
             "content_top_padding_mb": 0,
@@ -44,9 +44,9 @@
           "type": "txt",
           "settings": {
             "font": "f_heading",
-            "title": "Slick NEW HATS",
+            "title": "hat restock",
             "color": "#ffffff",
-            "text_align": "right",
+            "text_align": "center",
             "fw_text": 600,
             "fs_text": 64,
             "lh_text": 0,
@@ -63,9 +63,9 @@
           "type": "txt",
           "settings": {
             "font": "f_body",
-            "title": "...about dang time!",
+            "title": "some ol' classics just hit the shop",
             "color": "#ffffff",
-            "text_align": "right",
+            "text_align": "left",
             "fw_text": 300,
             "fs_text": 22,
             "lh_text": 30,
@@ -82,7 +82,7 @@
           "type": "btn",
           "settings": {
             "title": "snag one",
-            "btn_link": "https:\/\/senderopc.com\/collections\/hats\/mens",
+            "btn_link": "shopify:\/\/collections\/new-product-arrivals",
             "title2": "",
             "btn_link2": "",
             "btn_w": true,
