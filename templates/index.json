@@ -44,7 +44,7 @@
           "type": "txt",
           "settings": {
             "font": "f_heading",
-            "title": "hat restock",
+            "title": "heavy hittin' hats",
             "color": "#ffffff",
             "text_align": "center",
             "fw_text": 600,
@@ -63,7 +63,7 @@
           "type": "txt",
           "settings": {
             "font": "f_body",
-            "title": "some ol' classics just hit the shop",
+            "title": "Back in stock!",
             "color": "#ffffff",
             "text_align": "left",
             "fw_text": 300,
