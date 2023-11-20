@@ -15,9 +15,9 @@
       ],
       "settings": {
         "shown": true,
-        "page_title": "Spring 2023",
+        "page_title": "Fall 2023",
         "min_height": "400px",
-        "image": "shopify:\/\/shop_images\/Men_-_Shirts.jpg",
+        "image": "shopify:\/\/shop_images\/Collection-Banner-FW23_c7c13355-f1d6-4b7e-8dea-82153312b093.jpg",
         "parallax": true,
         "color": "#000000",
         "overlay": 35,
@@ -84,56 +84,56 @@
         "template--16713560588507__7776a30b-1adc-4b83-81ab-4623b33c198c-1680120527ff6e1fe9-0": {
           "type": "collection",
           "settings": {
-            "collection": "hats",
-            "image": "shopify:\/\/shop_images\/Hats_Mason_Grid.jpg",
+            "collection": "denim",
+            "image": "shopify:\/\/shop_images\/Collection-Banner---Denim.jpg",
             "img_align": "center",
             "title": "",
             "url": "",
-            "filter": "spring-2023"
+            "filter": ""
           }
         },
         "e24e00f9-3426-4324-83cc-cb764e065e34": {
           "type": "collection",
           "settings": {
             "collection": "t-shirts",
-            "image": "shopify:\/\/shop_images\/2023-3-3_-_SS23_-_Fit_Shots-2387.jpg",
+            "image": "shopify:\/\/shop_images\/F23-Grid-Tees_6974b9e0-adc6-4051-8e05-2a86275fa675.jpg",
             "img_align": "center",
             "title": "",
             "url": "",
-            "filter": "spring-2023"
+            "filter": "fall-2023"
           }
         },
         "59b990a0-cb4a-43fc-89b4-5da68f8e104c": {
           "type": "collection",
           "settings": {
-            "collection": "crop-tee",
-            "image": "shopify:\/\/shop_images\/CropTees_SpringCollectionGrid_66499fca-1ecc-4d93-b8a2-1f9b6603f27a.jpg",
+            "collection": "hats",
+            "image": "shopify:\/\/shop_images\/F23-Grid-Hats_df5421a3-6470-4b3f-a55d-ac8232a7c616.jpg",
             "img_align": "center",
             "title": "",
             "url": "",
-            "filter": ""
+            "filter": "fall-2023"
           }
         },
         "055ee3d5-486b-4c54-afef-b4c4164ee054": {
           "type": "collection",
           "settings": {
-            "collection": "shorts",
-            "image": "shopify:\/\/shop_images\/Shorts_CollectionGrid.jpg",
+            "collection": "crop-tee",
+            "image": "shopify:\/\/shop_images\/Womens-Grid-CropTee_0d3be0f1-9c32-4490-8d2c-b66d2495e190.jpg",
             "img_align": "center",
             "title": "",
             "url": "",
-            "filter": ""
+            "filter": "fall-2023"
           }
         },
         "template--16713560588507__7776a30b-1adc-4b83-81ab-4623b33c198c-1680120527ff6e1fe9-2": {
           "type": "collection",
           "settings": {
-            "collection": "accessories",
-            "image": "shopify:\/\/shop_images\/Accessories-Bandanas.jpg",
+            "collection": "performance",
+            "image": "shopify:\/\/shop_images\/Mens-Grid-Shirts3_62830860-80ce-43ac-a0d0-76d9b7d9124e.jpg",
             "img_align": "center",
             "title": "",
             "url": "",
-            "filter": "spring-2023"
+            "filter": ""
           }
         },
         "template--16713560588507__7776a30b-1adc-4b83-81ab-4623b33c198c-1680120527ff6e1fe9-3": {
@@ -143,7 +143,7 @@
             "img_align": "center",
             "title": "",
             "url": "",
-            "filter": "spring-2023"
+            "filter": ""
           }
         }
       },

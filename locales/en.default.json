@@ -575,5 +575,28 @@
     "9": "%b %d",
     "month_day_year": "%B %d, %Y",
     "full_day": "%A %d\/%m\/%Y"
+  },
+  "shopify": {
+    "errors": {
+      "discount_limit_reached": "$20 hats has ended. But just for you, use Code: ROUNDTWO for $20 hats",
+      "discount_expired": "$20 hats has ended. But just for you, use Code: ROUNDTWO for $20 hats",
+      "discount_not_found": "$20 hats has ended. But just for you, use Code: ROUNDTWO for $20 hats"
+    },
+    "checkout": {
+      "order_summary": {
+        "discount_not_found": "$20 hats has ended. But just for you, use Code: ROUNDTWO for $20 hats"
+      },
+      "field_errors": {
+        "reduction_code_code_not_found": "$20 hats has ended. But just for you, use Code: ROUNDTWO for $20 hats",
+        "reduction_code_discount_not_found": "$20 hats has ended. But just for you, use Code: ROUNDTWO for $20 hats"
+      },
+      "wallets": {
+        "errors": {
+          "invalid": {
+            "reduction_code": "$20 hats has ended. But just for you, use Code: ROUNDTWO for $20 hats"
+          }
+        }
+      }
+    }
   }
 }

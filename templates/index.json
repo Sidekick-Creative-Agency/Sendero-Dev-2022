@@ -6,13 +6,14 @@
         "16357021760efbe511-6": {
           "type": "img",
           "settings": {
-            "image": "shopify:\/\/shop_images\/7_7_Banner_-_Cowboy_Hat_-_Popular_Restock_B.jpg",
-            "pos_img": "center top",
+            "image": "shopify:\/\/shop_images\/Collection-Banner-FW23v2.jpg",
+            "image_mb": "shopify:\/\/shop_images\/2023-6-18-FW23LaunchShoot-Uncropped-230619-691A1233.jpg",
+            "pos_img": "center center",
             "cl_img": "",
-            "link_img1": "",
+            "link_img1": "shopify:\/\/collections\/sendero-fall-2023",
             "open_link": "_self",
             "caption_w": "1",
-            "content_top_padding": 0,
+            "content_top_padding": 44,
             "content_bottom_padding": 122,
             "content_hor_padding": 72,
             "vert_pos": "flex-end",
@@ -21,7 +22,7 @@
             "content_top_padding_mb": 0,
             "content_bottom_padding_mb": 0,
             "content_hor_padding_mb": 0,
-            "vert_pos_mb": "center",
+            "vert_pos_mb": "flex-end",
             "hor_pos_mb": "center",
             "txt_align_mb": "tc",
             "cl_overlay": "#000000",
@@ -42,6 +43,7 @@
         },
         "9b0a18eb-2681-4948-b096-8384eeee1e40": {
           "type": "txt",
+          "disabled": true,
           "settings": {
             "font": "f_heading",
             "title": "heavy hittin' hats",
@@ -61,6 +63,7 @@
         },
         "762d1378-8173-406f-80d3-0b676dbea9d4": {
           "type": "txt",
+          "disabled": true,
           "settings": {
             "font": "f_body",
             "title": "Back in stock!",
@@ -81,28 +84,28 @@
         "25477687-767a-41ba-adf6-170f175c9e14": {
           "type": "btn",
           "settings": {
-            "title": "snag one",
-            "btn_link": "shopify:\/\/collections\/new-product-arrivals",
+            "title": "SHOP FALL",
+            "btn_link": "shopify:\/\/collections\/fall-2023",
             "title2": "",
             "btn_link2": "",
             "btn_w": true,
-            "btn_icon": true,
+            "btn_icon": false,
             "cl_txt": "#ffffff",
             "cl_bg": "#222222",
             "cl_bd": "#222222",
-            "fs_text": 14,
+            "fs_text": 15,
             "fw_text": 600,
             "h": 40,
             "ls_text": 0,
             "bdr": 0,
-            "pd": 28,
-            "fs_mb_text": 12,
-            "h_mb": 40,
+            "pd": 29,
+            "fs_mb_text": 17,
+            "h_mb": 43,
             "ls_mb_text": 0,
             "bdr_mb": 0,
             "pd_mb": 15,
             "sp": 0,
-            "sp_mb": 0
+            "sp_mb": 35.5
           }
         }
       },
@@ -116,9 +119,9 @@
 
       ],
       "settings": {
-        "se_height": "cus_h",
+        "se_height": "adapt",
         "use_custom_h": "1",
-        "h_des": "800px",
+        "h_des": "801px",
         "h_tb": "500px",
         "h_mb": "350px",
         "effect": "0",
@@ -147,21 +150,22 @@
         "cbef2b0c-b5a4-4a97-a230-4ade91689880": {
           "type": "collection",
           "settings": {
-            "collection": "sendero-fall-2023",
-            "image": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-5906.jpg",
+            "collection": "denim",
+            "image": "shopify:\/\/shop_images\/2023-6-18_-_FW23_Launch_Shoot_-_Fit_Shots-230621-JDPR5849.jpg",
             "img_align": "center",
-            "title": "",
-            "col_link": "#",
+            "title": "mens denim",
+            "col_link": "Men's",
             "url": ""
           }
         },
-        "16488280725e7f0d65-0": {
+        "bf53f1e0-48fc-4432-b71f-ec80df62cc94": {
           "type": "collection",
+          "disabled": true,
           "settings": {
-            "collection": "hats",
-            "image": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-2082.jpg",
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/2023-6-18_-_FW23_Launch_Shoot_-_Uncropped-230621-JDPR2670.jpg",
             "img_align": "center",
-            "title": "",
+            "title": "Performance pearl snaps",
             "col_link": "#",
             "url": ""
           }
@@ -170,9 +174,9 @@
           "type": "collection",
           "settings": {
             "collection": "t-shirts",
-            "image": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-2115.jpg",
+            "image": "shopify:\/\/shop_images\/2023-8-1_-_FW23_-_Studio_Models-230802-Studio_Models_to_be_Squared-230802-2023-8-1_-_FW_23-2476.jpg",
             "img_align": "center",
-            "title": "",
+            "title": "t-shirts",
             "col_link": "#",
             "url": ""
           }
@@ -180,11 +184,11 @@
         "64e45c15-1460-4e52-b7b7-fc22c2d0bcb6": {
           "type": "collection",
           "settings": {
-            "collection": "mens-shirts",
-            "image": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-1837.jpg",
+            "collection": "outerwear",
+            "image": "shopify:\/\/shop_images\/2023-6-18_-_FW23_Launch_Shoot_-_Fit_Shots-230619-691A0761.jpg",
             "img_align": "center",
-            "title": "",
-            "col_link": "#",
+            "title": "Men's jackets",
+            "col_link": "Men's",
             "url": ""
           }
         },
@@ -192,7 +196,7 @@
           "type": "collection",
           "settings": {
             "collection": "crop-tee",
-            "image": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-2703.jpg",
+            "image": "shopify:\/\/shop_images\/2023-8-1_-_FW23_-_Studio_Models-230801-Studio_Models_to_be_Squared-230801-2023-8-1_-_FW_23-1063.jpg",
             "img_align": "center",
             "title": "",
             "col_link": "#",
@@ -201,11 +205,12 @@
         },
         "16488280725e7f0d65-3": {
           "type": "collection",
+          "disabled": true,
           "settings": {
             "collection": "accessories",
-            "image": "shopify:\/\/shop_images\/sendero-patch_1.webp",
+            "image": "shopify:\/\/shop_images\/2023-8-1_-_FW23_-_Studio_Models-230801-Studio_Models_to_be_Squared-230801-2023-8-1_-_FW_23-1478.jpg",
             "img_align": "center",
-            "title": "",
+            "title": "Women's jeans",
             "col_link": "#",
             "url": ""
           }
@@ -213,10 +218,43 @@
         "034256d3-cb44-453f-9a16-f3fb0e17f8e8": {
           "type": "collection",
           "settings": {
-            "collection": "shorts",
-            "image": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-7795.jpg",
+            "collection": "denim",
+            "image": "shopify:\/\/shop_images\/2023-8-1_-_FW23_-_Studio_Models-230801-2023-8-1_-_FW_23-380.jpg",
+            "img_align": "center",
+            "title": "women's denim",
+            "col_link": "Women's",
+            "url": ""
+          }
+        },
+        "874d0044-f93b-4fc5-8751-643390564071": {
+          "type": "collection",
+          "settings": {
+            "collection": "long-sleeve-shirts",
+            "image": "shopify:\/\/shop_images\/2023-6-18-FW23LaunchShoot-FitShots-230621-JDPR4230.jpg",
+            "img_align": "center",
+            "title": "Long Sleeves",
+            "col_link": "",
+            "url": ""
+          }
+        },
+        "16488280725e7f0d65-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "hats",
+            "image": "shopify:\/\/shop_images\/2023-6-18_-_FW23_Launch_Shoot_-_Uncropped-230622-691A9911.jpg",
             "img_align": "center",
             "title": "",
+            "col_link": "#",
+            "url": ""
+          }
+        },
+        "dfe458ba-4360-49fc-96ac-913cd32eb085": {
+          "type": "collection",
+          "settings": {
+            "collection": "mens-shirts",
+            "image": "shopify:\/\/shop_images\/2023-6-18_-_FW23_Launch_Shoot_-_Uncropped-230620-JDPR6636.jpg",
+            "img_align": "center",
+            "title": "mens shirts",
             "col_link": "#",
             "url": ""
           }
@@ -224,12 +262,15 @@
       },
       "block_order": [
         "cbef2b0c-b5a4-4a97-a230-4ade91689880",
-        "16488280725e7f0d65-0",
+        "bf53f1e0-48fc-4432-b71f-ec80df62cc94",
         "16488280725e7f0d65-1",
         "64e45c15-1460-4e52-b7b7-fc22c2d0bcb6",
         "7cbee7b2-bbb0-445e-b9e3-9c9535fbac44",
         "16488280725e7f0d65-3",
-        "034256d3-cb44-453f-9a16-f3fb0e17f8e8"
+        "034256d3-cb44-453f-9a16-f3fb0e17f8e8",
+        "874d0044-f93b-4fc5-8751-643390564071",
+        "16488280725e7f0d65-0",
+        "dfe458ba-4360-49fc-96ac-913cd32eb085"
       ],
       "settings": {
         "title": "Collection list",
@@ -240,12 +281,12 @@
         "ic_tt": "gem",
         "show_clpr": false,
         "round": 0,
-        "cat_layout": "2",
+        "cat_layout": "1",
         "hoverz": true,
         "cat_design": "1",
         "cat_space": "10",
         "image_ratio": "ratio1_1",
-        "col": "15",
+        "col": "3",
         "col_md": "3",
         "col_mb": "6",
         "pr_txt": "products",
@@ -280,7 +321,7 @@
         "sub_title": "",
         "sub_font": "2",
         "collection": "best-seller-items",
-        "limit": 8,
+        "limit": 16,
         "space": 10,
         "use_pagination": "view-all",
         "btn_rd": false,
@@ -492,10 +533,8 @@
       "type": "apps",
       "blocks": {
         "a56b48e2-5947-44be-8a42-77574a7a5fd1": {
-          "type": "shopify:\/\/apps\/instafeed-instagram-feed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
           "settings": {
-            "heading_size": 30,
-            "feed_width": 100,
             "html_area": "<style>\n#insta-feed {\npadding: 0 64px;\nmargin: 64px 0;\n}\n#insta-feed h2 {\nfont-size: 32px;\n}\n@media (max-width: 767px) {\n#insta-feed {\npadding: 0 16px;\nmargin: 32px 0;\n}\n#insta-feed h2 {\nfont-size: 24px;\n}\n}\n<\/style>"
           }
         }

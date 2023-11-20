@@ -17,7 +17,7 @@
         "shown": true,
         "page_title": "Men's",
         "min_height": "400px",
-        "image": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-2067.jpg",
+        "image": "shopify:\/\/shop_images\/Mens-Banner.jpg",
         "parallax": true,
         "color": "#000000",
         "overlay": 35,
@@ -85,7 +85,7 @@
           "type": "collection",
           "settings": {
             "collection": "mens-shirts",
-            "image": "shopify:\/\/shop_images\/2022-8-30_-_FW22_-_Banner_Images-4946_2048x2048_b54ac4e0-a7f6-4fc0-affe-815f0aa23b85.webp",
+            "image": "shopify:\/\/shop_images\/Mens-Grid-Shirts2.jpg",
             "img_align": "center",
             "title": "",
             "url": "",
@@ -95,30 +95,30 @@
         "c350d424-5a4e-4003-b0a8-ee7f6b07ab85": {
           "type": "collection",
           "settings": {
-            "collection": "shorts",
-            "image": "shopify:\/\/shop_images\/Shorts_CollectionGrid.jpg",
+            "collection": "jeans-1",
+            "image": "shopify:\/\/shop_images\/2023-8-1_-_FW23_-_Studio_Models-230802-2023-8-1_-_FW_23-2820.jpg",
             "img_align": "center",
-            "title": "",
+            "title": "JEANS",
             "url": "",
-            "filter": ""
+            "filter": "Men's"
           }
         },
         "template--16713560588507__7776a30b-1adc-4b83-81ab-4623b33c198c-1680120527ff6e1fe9-0": {
           "type": "collection",
           "settings": {
             "collection": "t-shirts",
-            "image": "shopify:\/\/shop_images\/2023-3-3_-_SS23_-_Fit_Shots-2387.jpg",
+            "image": "shopify:\/\/shop_images\/2023-6-18_-_FW23_Launch_Shoot_-_Fit_Shots-230620-JDPR8642.jpg",
             "img_align": "center",
-            "title": "",
+            "title": "Graphic Tees",
             "url": "",
-            "filter": "mens"
+            "filter": "fall-2023"
           }
         },
         "template--16713560588507__7776a30b-1adc-4b83-81ab-4623b33c198c-1680120527ff6e1fe9-2": {
           "type": "collection",
           "settings": {
             "collection": "performance",
-            "image": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-7779.jpg",
+            "image": "shopify:\/\/shop_images\/Mens-Grid-Shirts3.jpg",
             "img_align": "center",
             "title": "",
             "url": "",
@@ -128,23 +128,23 @@
         "9393d391-7487-4644-ae03-cd2178d01864": {
           "type": "collection",
           "settings": {
-            "collection": "fleece-wear",
-            "image": "shopify:\/\/shop_images\/2022-11-6_-_Sweatshirts_at_Pinewood-3479.jpg",
+            "collection": "outerwear",
+            "image": "shopify:\/\/shop_images\/Mens-Grid-Jacket.jpg",
             "img_align": "center",
-            "title": "",
+            "title": "Jackets",
             "url": "",
-            "filter": "mens"
+            "filter": "Men's"
           }
         },
         "template--16713560588507__7776a30b-1adc-4b83-81ab-4623b33c198c-1680120527ff6e1fe9-1": {
           "type": "collection",
           "settings": {
             "collection": "hats",
-            "image": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-2082.jpg",
+            "image": "shopify:\/\/shop_images\/Mens-Grid---Hats.jpg",
             "img_align": "center",
             "title": "",
             "url": "",
-            "filter": "mens"
+            "filter": "fall-2023"
           }
         }
       },

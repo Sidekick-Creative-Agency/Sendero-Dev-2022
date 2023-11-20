@@ -1,0 +1,72 @@
+{
+  "sections": {
+    "blog-heading": {
+      "type": "blog-heading",
+      "blocks": {
+        "c32e1213-b35d-4cab-a4dc-b59deef433e3": {
+          "type": "1",
+          "settings": {
+            "color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "c32e1213-b35d-4cab-a4dc-b59deef433e3"
+      ],
+      "settings": {
+        "shown": true,
+        "page_title": "email sign up",
+        "min_height": "400px",
+        "image": "shopify:\/\/shop_images\/Newsletter_banner_2.jpg",
+        "parallax": false,
+        "color": "#000000",
+        "overlay": 40,
+        "padding": 60,
+        "paddingmb": 35,
+        "bg_pos": "center center",
+        "bg_repeat": "no-repeat",
+        "bg_size": "cover",
+        "bg_att": "scroll"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "a084e817-92e2-4105-8230-29ef02e35514": {
+      "type": "custom_section",
+      "blocks": {
+        "23a59322-26a2-462b-a64a-8edc0bbe718e": {
+          "type": "html",
+          "settings": {
+            "html": "<div class=\"klaviyo-form-W7Yv5U\"><\/div>\n<style>\n@media screen and (max-width: 767px) {\nform.klaviyo-form {\nflex-direction: column !important;\n}\n.needsclick.kl-private-reset-css-Xuajs1 {\nmin-width: 100% !important;\nmin-height: unset !important;\n}\nform.klaviyo-form > .needsclick.kl-private-reset-css-Xuajs1:last-child {\ndisplay: none !important;\n}\n}\n\n<\/style>",
+            "cl": "12",
+            "cl_tb": "12",
+            "cl_mb": "12"
+          }
+        }
+      },
+      "block_order": [
+        "23a59322-26a2-462b-a64a-8edc0bbe718e"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "layout": "nt_full",
+        "cl_bg": "#ffffff",
+        "mg": "50px,,50px,",
+        "pd": "",
+        "mg_mb": ",,50px,",
+        "pd_mb": ""
+      }
+    }
+  },
+  "order": [
+    "blog-heading",
+    "main",
+    "a084e817-92e2-4105-8230-29ef02e35514"
+  ]
+}

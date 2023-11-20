@@ -10,6 +10,14 @@
   assign image = se_stts.imageDefault
   if product.tags contains "Women's" and product.tags contains "Men's" and product.tags contains "T-Shirt"
     assign image = se_stts.imageUnisex
+      elsif product.tags contains "Women's" and product.tags contains "Jeans"
+    assign image = se_stts.imageWomensDenim
+          elsif product.type contains "Women's Jacket"
+    assign image = se_stts.imageWomensOuterwear
+      elsif product.type contains "Men's Jacket"
+    assign image = se_stts.imageMensOuterwear
+      elsif product.tags contains "Men's" and product.tags contains "Jeans"
+    assign image = se_stts.imageMensDenim
   elsif product.tags contains "Women's" and product.tags contains "T-Shirt"
     assign image = se_stts.imageWomensTees
   elsif product.tags contains "Women's" and product.tags contains "Crop Tee"
@@ -18,16 +26,18 @@
     assign image = se_stts.imageHats
   elsif product.tags contains "Women's"
     assign image = se_stts.imageWomens
-  elsif product.type contains "Shirts" or product.type contains "Short Sleeve"
-    assign image = se_stts.imageShirts
+  elsif product.type contains "Men's Shirts" or product.type contains "Men's Short Sleeve"
+    assign image = se_stts.imageMensShirts
+      elsif product.tag contains "Women's Top"
+    assign image = se_stts.imageWomensShirts
   elsif product.type contains "Shorts"
     assign image = se_stts.imageShorts
-  elsif product.tags contains "Performance"
+  elsif product.tags contains "Performance" and product.tags contains "Men's"
     assign image = se_stts.imagePerformance
   elsif product.tags contains "Accessories"
     assign image = se_stts.imageAccessories
-  elsif product.type contains "Outerwear"
-    assign image = se_stts.imageOuterwear
+
+
   endif
 
  assign url = se_stts.button_link 
@@ -132,8 +142,8 @@
        },
        {
          "type": "image_picker",
-         "id": "imageShirts",
-         "label": "Image for Shirts Products"
+         "id": "imageMensShirts",
+         "label": "Image for Men's Shirts Products"
        },
        {
          "type": "image_picker",
@@ -148,12 +158,21 @@
        {
          "type": "image_picker",
          "id": "imagePerformance",
-         "label": "Image for Performance Products"
+         "label": "Image for Men's Performance Products"
        },
        {
          "type": "image_picker",
+         "id": "imageWomensDenim",
+         "label": "Image for Women's Jeans"
+       },
+      {
+         "type": "image_picker",
          "id": "imageWomensTees",
          "label": "Image for Women's Tees Products"
+       },{
+         "type": "image_picker",
+         "id": "imageMensDenim",
+         "label": "Image for Men's Jeans"
        },
        {
          "type": "image_picker",
@@ -167,8 +186,18 @@
        },
        {
          "type": "image_picker",
-         "id": "imageOuterwear",
-         "label": "Image for Outerwear Products"
+         "id": "imageMensOuterwear",
+         "label": "Image for Mens Outerwear Products"
+       },
+       {
+         "type": "image_picker",
+         "id": "imageWomensOuterwear",
+         "label": "Image for Womens Outerwear Products"
+       },
+      {
+         "type": "image_picker",
+         "id": "imageWomensShirts",
+         "label": "Image for Women's Shirts"
        },
        {
          "type": "image_picker",

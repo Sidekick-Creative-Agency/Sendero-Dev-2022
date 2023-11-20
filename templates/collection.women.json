@@ -17,7 +17,7 @@
         "shown": true,
         "page_title": "Women's",
         "min_height": "400px",
-        "image": "shopify:\/\/shop_images\/WomensMainCollectionBanner_2260x_7f5bca88-8661-4282-a286-a781a2862e00.webp",
+        "image": "shopify:\/\/shop_images\/Womens-Banner.jpg",
         "parallax": true,
         "color": "#000000",
         "overlay": 35,
@@ -85,9 +85,9 @@
           "type": "collection",
           "settings": {
             "collection": "crop-tee",
-            "image": "shopify:\/\/shop_images\/womens_-_crop_tees.jpg",
+            "image": "shopify:\/\/shop_images\/Womens-Grid-CropTee2.jpg",
             "img_align": "center",
-            "title": "",
+            "title": "CROP TEES",
             "url": "",
             "filter": "womens"
           }
@@ -96,7 +96,7 @@
           "type": "collection",
           "settings": {
             "collection": "bandanas",
-            "image": "shopify:\/\/shop_images\/2020-7-25_-_Bandanas_at_Indian_Meadows-4586.jpg",
+            "image": "shopify:\/\/shop_images\/2023-8-1_-_FW23_-_Studio_Models-230801-Studio_Models_to_be_Squared-230801-2023-8-1_-_FW_23-1858.jpg",
             "img_align": "center",
             "title": "",
             "url": "",
@@ -106,32 +106,32 @@
         "template--16713560588507__7776a30b-1adc-4b83-81ab-4623b33c198c-1680120527ff6e1fe9-0": {
           "type": "collection",
           "settings": {
-            "collection": "hats",
-            "image": "shopify:\/\/shop_images\/Hats_WomensCollectionGrid.jpg",
+            "collection": "denim",
+            "image": "shopify:\/\/shop_images\/Womens-Grid-Denim.jpg",
             "img_align": "center",
-            "title": "",
+            "title": "DENIM",
             "url": "",
-            "filter": "womens"
+            "filter": "Women's"
           }
         },
         "c350d424-5a4e-4003-b0a8-ee7f6b07ab85": {
           "type": "collection",
           "settings": {
-            "collection": "t-shirts",
-            "image": "shopify:\/\/shop_images\/Tees_WomensCollectionGrid.jpg",
+            "collection": "womens-sweatshirts",
+            "image": "shopify:\/\/shop_images\/2023-8-1_-_FW23_-_Studio_Models-230801-Studio_Models_to_be_Squared-230801-2023-8-1_-_FW_23-1139.jpg",
             "img_align": "center",
-            "title": "",
+            "title": "FLEECE",
             "url": "",
-            "filter": "womens"
+            "filter": "Women's"
           }
         },
         "template--16713560588507__7776a30b-1adc-4b83-81ab-4623b33c198c-1680120527ff6e1fe9-1": {
           "type": "collection",
           "settings": {
-            "collection": "fleece-wear",
-            "image": "shopify:\/\/shop_images\/2021-11-14_-_Holiday_Shoot__21_-_Social-4074.jpg",
+            "collection": "womens-hats",
+            "image": "shopify:\/\/shop_images\/Womens-Grid-Hats.jpg",
             "img_align": "center",
-            "title": "",
+            "title": "HATS",
             "url": "",
             "filter": ""
           }

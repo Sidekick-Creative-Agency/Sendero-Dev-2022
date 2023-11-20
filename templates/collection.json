@@ -58,9 +58,8 @@
           "type": "collection",
           "settings": {
             "collection": "sendero-fall-2023",
-            "image": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-5906_8c711ece-5ddd-4664-9d49-5359b15bab21.jpg",
             "img_align": "center",
-            "title": "",
+            "title": "FALL 2023",
             "col_link": "#",
             "url": ""
           }
@@ -69,7 +68,6 @@
           "type": "collection",
           "settings": {
             "collection": "crop-tee",
-            "image": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-2703_53a9907b-527f-4aed-9d33-20fb51e566ee.jpg",
             "img_align": "center",
             "title": "",
             "col_link": "#",
@@ -80,7 +78,7 @@
           "type": "collection",
           "settings": {
             "collection": "hats",
-            "image": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-2082.jpg",
+            "image": "shopify:\/\/shop_images\/2023-6-18_-_FW23_Launch_Shoot_-_Uncropped-230622-691A2206.jpg",
             "img_align": "center",
             "title": "",
             "col_link": "#",
@@ -91,7 +89,7 @@
           "type": "collection",
           "settings": {
             "collection": "t-shirts",
-            "image": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-2115.jpg",
+            "image": "shopify:\/\/shop_images\/F23-Grid-Tees_6974b9e0-adc6-4051-8e05-2a86275fa675.jpg",
             "img_align": "center",
             "title": "",
             "col_link": "#",
@@ -102,7 +100,6 @@
           "type": "collection",
           "settings": {
             "collection": "mens-shirts",
-            "image": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-1837.jpg",
             "img_align": "center",
             "title": "",
             "col_link": "#",
@@ -112,8 +109,7 @@
         "16488280725e7f0d65-3": {
           "type": "collection",
           "settings": {
-            "collection": "accessories",
-            "image": "shopify:\/\/shop_images\/sendero-patch_1.webp",
+            "collection": "outerwear",
             "img_align": "center",
             "title": "",
             "col_link": "#",
@@ -123,11 +119,41 @@
         "6236469b-85c9-4415-9ee4-368d4cfef55b": {
           "type": "collection",
           "settings": {
-            "collection": "shorts",
-            "image": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-7795.jpg",
+            "collection": "denim",
             "img_align": "center",
             "title": "",
             "col_link": "#",
+            "url": ""
+          }
+        },
+        "3e5403a6-0a42-4a11-a75b-91950b683e03": {
+          "type": "collection",
+          "settings": {
+            "collection": "bandanas",
+            "image": "shopify:\/\/shop_images\/F23-Grid-bandanas.jpg",
+            "img_align": "center",
+            "title": "",
+            "col_link": "#",
+            "url": ""
+          }
+        },
+        "85d75c76-4961-4fa6-bd4a-ed73060db6b5": {
+          "type": "collection",
+          "settings": {
+            "collection": "jeans-1",
+            "img_align": "center",
+            "title": "",
+            "col_link": "#",
+            "url": ""
+          }
+        },
+        "1268cefa-d2ea-4b4a-b581-d7cdb7077618": {
+          "type": "collection",
+          "settings": {
+            "collection": "womens",
+            "img_align": "center",
+            "title": "all new women's",
+            "col_link": "",
             "url": ""
           }
         }
@@ -139,7 +165,10 @@
         "16488280725e7f0d65-1",
         "16488280725e7f0d65-2",
         "16488280725e7f0d65-3",
-        "6236469b-85c9-4415-9ee4-368d4cfef55b"
+        "6236469b-85c9-4415-9ee4-368d4cfef55b",
+        "3e5403a6-0a42-4a11-a75b-91950b683e03",
+        "85d75c76-4961-4fa6-bd4a-ed73060db6b5",
+        "1268cefa-d2ea-4b4a-b581-d7cdb7077618"
       ],
       "settings": {
         "title": "Collection list",

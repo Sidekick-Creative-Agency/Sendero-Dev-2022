@@ -62,9 +62,9 @@
             "second_link_href": "https:\/\/senderopc.com\/contact",
             "third_link_title": "Size Chart",
             "third_link_type": "popup",
-            "third_link_popup_content": "<h3><strong>Our Own Shirt. Our Own Way.<\/strong><\/h3><h4>Our new shirts also come with all the bells and whistles you’d expect out of a dagum $34 shirt…<\/h4><p>– Comfy seam tape for your neck<\/p><p>– Slick Sendero agave label on the hem<\/p><p>– High quality prints that hold up to washing<\/p><p>– Our own 60% cotton and 40% polyester fabric blend<\/p><p>– Custom colors, dyed just for you<\/p>",
+            "third_link_popup_content": "",
             "third_link_href": "",
-            "third_image": "shopify:\/\/shop_images\/Shirt_Info_Graphic_Edit_3.15-04_1024x1024_copy.png"
+            "third_image": "shopify:\/\/shop_images\/FW23_WOMENS_SIZE_GUIDE-01_51e0f5ec-9c66-4a1a-bc63-0d26bfa3f192.jpg"
           }
         },
         "aa99e24b-8dc5-4b03-8f69-cb5bc50149f6": {
@@ -79,7 +79,7 @@
             "title": "Details"
           }
         },
-        "14b3e6e5-d50f-482f-bad5-e53b8638a199": {
+        "49579e27-854e-473c-af81-a5eb6964e07c": {
           "type": "shopify:\/\/apps\/amai-preorder-manager-notify\/blocks\/preorder-button-block\/7053ce2a-18da-4e24-98b3-3fdd20b313e7",
           "settings": {
           }
@@ -125,16 +125,20 @@
     "1648757478999cc57a": {
       "type": "image_text_product_page",
       "settings": {
-        "imageHats": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-2082.jpg",
-        "imageShirts": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-1837.jpg",
+        "imageHats": "shopify:\/\/shop_images\/2023-6-18_-_FW23_Launch_Shoot_-_Uncropped-230622-691A9907.jpg",
+        "imageMensShirts": "shopify:\/\/shop_images\/2023-6-18_-_FW23_Launch_Shoot_-_Uncropped-230622-JDPR3486.jpg",
         "imageShorts": "shopify:\/\/shop_images\/SPCT123S11A_PointBar_Boardshort_Nueces_Detail2.jpg",
-        "imageWomens": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-3171.jpg",
+        "imageWomens": "shopify:\/\/shop_images\/2023-6-18_-_FW23_Launch_Shoot_-_Uncropped-230622-JDPR2674.jpg",
         "imagePerformance": "shopify:\/\/shop_images\/SPCS623S12B_Yucatan_Hoodie_Blue_Ls1.jpg",
-        "imageWomensTees": "shopify:\/\/shop_images\/Womens_ItsInOurRoots.jpg",
-        "imageUnisex": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-5906.jpg",
+        "imageWomensDenim": "shopify:\/\/shop_images\/Womens-Grid-Denim_b04eeba5-cfc4-4170-a484-8a87e2a6fe79.jpg",
+        "imageWomensTees": "shopify:\/\/shop_images\/2023-6-18_-_FW23_Launch_Shoot_-_Uncropped-230619-JDPR7957.jpg",
+        "imageMensDenim": "shopify:\/\/shop_images\/Product-Details-mens-denim.jpg",
+        "imageUnisex": "shopify:\/\/shop_images\/2023-6-18_-_FW23_Launch_Shoot_-_Uncropped-230619-JDPR3897_95443fe8-92c4-4767-9ebd-451e25f039cd.jpg",
         "imageAccessories": "shopify:\/\/shop_images\/sendero-patch_1.webp",
-        "imageOuterwear": "shopify:\/\/shop_images\/Copy_of_2021-10-11_-_Fall_Browns_with_El_Cap-8978.jpg",
-        "imageDefault": "shopify:\/\/shop_images\/2023-3-3_-_SS23_Launch_Shoot-0540.jpg",
+        "imageMensOuterwear": "shopify:\/\/shop_images\/Mens-Grid-Jacket_47ecbf53-5a84-4f45-9656-8e8077d584c6.jpg",
+        "imageWomensOuterwear": "shopify:\/\/shop_images\/2023-6-18_-_FW23_Launch_Shoot_-_Uncropped-230620-JDPR1342.jpg",
+        "imageWomensShirts": "shopify:\/\/shop_images\/Womens-Grid-CropTee_de236420-b365-4ceb-9682-5c6129a5a788.jpg",
+        "imageDefault": "shopify:\/\/shop_images\/2023-6-18_-_FW23_Launch_Shoot_-_Uncropped-230619-JDPR3897.jpg",
         "img_align": "bottom",
         "img_position": "1",
         "image_ratio": "ratio1_1",
@@ -167,16 +171,20 @@
     "164875753916b49a9b": {
       "type": "image_text_product_page",
       "settings": {
-        "imageHats": "shopify:\/\/shop_images\/2021-7-23_-_FW_2021_-_Low_Res-1284.jpg",
-        "imageShirts": "shopify:\/\/shop_images\/MensShirts_AboutSenderoGear.jpg",
+        "imageHats": "shopify:\/\/shop_images\/2023-6-18_-_FW23_Launch_Shoot_-_Uncropped-230621-JDPR1955.jpg",
+        "imageMensShirts": "shopify:\/\/shop_images\/Product-Details-Mens-Shirts-1.jpg",
         "imageShorts": "shopify:\/\/shop_images\/Shorts_AboutSenderoGear.jpg",
-        "imageWomens": "shopify:\/\/shop_images\/Womens_AboutSenderoGear2.jpg",
-        "imagePerformance": "shopify:\/\/shop_images\/Performance_AboutSenderoGear.jpg",
-        "imageWomensTees": "shopify:\/\/shop_images\/Womens_AboutSenderoGear.jpg",
-        "imageUnisex": "shopify:\/\/shop_images\/UnisexProducts_AboutSenderoGear.jpg",
+        "imageWomens": "shopify:\/\/shop_images\/Womens-Grid-CropTee2_d79a7b1b-4370-4f1e-9726-63cd60ca0d6a.jpg",
+        "imagePerformance": "shopify:\/\/shop_images\/Product-Details-performance.jpg",
+        "imageWomensDenim": "shopify:\/\/shop_images\/2023-8-1_-_FW23_-_Studio_Models-230801-2023-8-1_-_FW_23-214.jpg",
+        "imageWomensTees": "shopify:\/\/shop_images\/Product-Details-Womens1.jpg",
+        "imageMensDenim": "shopify:\/\/shop_images\/Nav-denim-collection_f61a6109-17b7-477f-a9b5-4d5d3a449dd3.jpg",
+        "imageUnisex": "shopify:\/\/shop_images\/2023-6-18_-_FW23_Launch_Shoot_-_Uncropped-230622-JDPR1335.jpg",
         "imageAccessories": "shopify:\/\/shop_images\/2022-4-15_-_SS__22_Shirt_Layouts-2156.jpg",
-        "imageOuterwear": "shopify:\/\/shop_images\/Copy_of_2019-9-19_-_Zion_Narrows-6245.jpg",
-        "imageDefault": "shopify:\/\/shop_images\/2022-11-6_-_Sweatshirts_at_Pinewood-4304.jpg",
+        "imageMensOuterwear": "shopify:\/\/shop_images\/Product-Details-Mens-Outerwear2.jpg",
+        "imageWomensOuterwear": "shopify:\/\/shop_images\/2023-8-1_-_FW23_-_Studio_Models-230801-Studio_Models_to_be_Squared-230801-2023-8-1_-_FW_23-481.jpg",
+        "imageWomensShirts": "shopify:\/\/shop_images\/Product-Details-shirts-2.jpg",
+        "imageDefault": "shopify:\/\/shop_images\/2023-6-18_-_FW23_Launch_Shoot_-_Uncropped-230619-JDPR2884.jpg",
         "img_align": "center",
         "img_position": "2",
         "image_ratio": "auto",
